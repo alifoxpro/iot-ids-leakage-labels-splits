@@ -1,0 +1,117 @@
+{
+ "chosen": {
+  "hidden": [
+   512,
+   256,
+   128
+  ],
+  "dropout": 0.2,
+  "tag": "h512-256-128-d0.2"
+ },
+ "criterion": "validation macro-F1 of the weights selected by early stopping (random/raw, seed 42); ties -> first configuration in the grid order; the test set is not used",
+ "condition": {
+  "split": "random",
+  "cleaning": "raw",
+  "seed": 42,
+  "protocol": "earlystop",
+  "max_epochs": 30
+ },
+ "grid": [
+  {
+   "hidden": [
+    256,
+    128,
+    64
+   ],
+   "dropout": 0.2
+  },
+  {
+   "hidden": [
+    256,
+    128,
+    64
+   ],
+   "dropout": 0.4
+  },
+  {
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.2
+  },
+  {
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.4
+  }
+ ],
+ "trials": [
+  {
+   "tag": "h256-128-64-d0.2",
+   "hidden": [
+    256,
+    128,
+    64
+   ],
+   "dropout": 0.2,
+   "run": "MLP-h256-128-64-d0.2_random_raw_s42",
+   "val_macro_f1_selected": 0.46739243928262786,
+   "best_epoch": 23,
+   "epochs_run": 30,
+   "val_loss_selected": 1.1087742543706844,
+   "test_macro_f1_not_used": 0.4679957394823929
+  },
+  {
+   "tag": "h256-128-64-d0.4",
+   "hidden": [
+    256,
+    128,
+    64
+   ],
+   "dropout": 0.4,
+   "run": "MLP-h256-128-64-d0.4_random_raw_s42",
+   "val_macro_f1_selected": 0.4689131091971226,
+   "best_epoch": 30,
+   "epochs_run": 30,
+   "val_loss_selected": 1.1545620864564266,
+   "test_macro_f1_not_used": 0.4688049831149145
+  },
+  {
+   "tag": "h512-256-128-d0.2",
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.2,
+   "run": "MLP-h512-256-128-d0.2_random_raw_s42",
+   "val_macro_f1_selected": 0.4889025648563999,
+   "best_epoch": 29,
+   "epochs_run": 30,
+   "val_loss_selected": 1.0403616301709786,
+   "test_macro_f1_not_used": 0.4898638220564484
+  },
+  {
+   "tag": "h512-256-128-d0.4",
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.4,
+   "run": "MLP-h512-256-128-d0.4_random_raw_s42",
+   "val_macro_f1_selected": 0.4708753591114305,
+   "best_epoch": 26,
+   "epochs_run": 30,
+   "val_loss_selected": 1.1200762671007907,
+   "test_macro_f1_not_used": 0.4709778206103664
+  }
+ ],
+ "chosen_run": "MLP-h512-256-128-d0.2_random_raw_s42",
+ "created": "2026-09-30 16:17:20"
+}

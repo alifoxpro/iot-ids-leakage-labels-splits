@@ -1,0 +1,1582 @@
+{
+ "name": "Recon",
+ "class": "Recon",
+ "capture_group": "Recon",
+ "kinds": [
+  "recon"
+ ],
+ "max_rows": null,
+ "files": [
+  "VulnerabilityScan.pcap_Flow.csv"
+ ],
+ "flows": 442158,
+ "packets": 3626033,
+ "rule_flag_share": {
+  "R1_external": 0.5593,
+  "R2_service": 0.3236,
+  "R3_benign_pair": 0.5456,
+  "any": 0.8275
+ },
+ "rule_packet_share": {
+  "R1_external": 0.7342,
+  "R2_service": 0.1041,
+  "R3_benign_pair": 0.3524,
+  "any": 0.8141
+ },
+ "stratum_counts": {
+  "R1_external": {
+   "flagged": 247313,
+   "kept": 194845
+  },
+  "R2_service": {
+   "flagged": 143079,
+   "kept": 299079
+  },
+  "R3_benign_pair": {
+   "flagged": 241224,
+   "kept": 200934
+  },
+  "any": {
+   "flagged": 365902,
+   "kept": 76256
+  }
+ },
+ "attackers_all_kinds": [
+  "192.168.137.116",
+  "192.168.137.154",
+  "192.168.137.167",
+  "192.168.137.178",
+  "192.168.137.187",
+  "192.168.137.206",
+  "192.168.137.212",
+  "192.168.137.236",
+  "192.168.137.52",
+  "205.174.165.69"
+ ],
+ "signatures": {
+  "recon": {
+   "signature": "TCP/UDP flows from a testbed host (not the gateway) with >= 50 distinct destination ports or >= 30 distinct testbed destination hosts (scanner) to testbed hosts",
+   "attackers": [
+    "192.168.137.178",
+    "192.168.137.154",
+    "192.168.137.212",
+    "192.168.137.187",
+    "205.174.165.69",
+    "192.168.137.167",
+    "192.168.137.116",
+    "192.168.137.206",
+    "192.168.137.236",
+    "192.168.137.52"
+   ],
+   "victims": [
+    "192.168.137.41",
+    "192.168.137.86",
+    "192.168.137.175",
+    "192.168.137.187",
+    "192.168.137.133",
+    "192.168.137.148",
+    "192.168.137.167",
+    "192.168.137.82",
+    "192.168.137.224",
+    "192.168.137.249",
+    "192.168.137.181",
+    "192.168.137.154",
+    "192.168.137.58",
+    "192.168.137.45",
+    "192.168.137.132",
+    "192.168.137.66",
+    "192.168.137.1",
+    "192.168.137.128",
+    "192.168.137.71",
+    "192.168.137.173",
+    "192.168.137.57",
+    "192.168.137.40",
+    "205.174.165.69",
+    "192.168.137.74",
+    "192.168.137.4",
+    "192.168.137.178",
+    "192.168.137.234",
+    "192.168.137.252",
+    "192.168.137.208",
+    "192.168.137.100",
+    "192.168.137.242",
+    "192.168.137.212",
+    "192.168.137.241",
+    "192.168.137.108",
+    "192.168.137.75",
+    "192.168.137.52",
+    "192.168.137.189",
+    "192.168.137.196",
+    "192.168.137.59",
+    "192.168.137.177",
+    "192.168.137.206",
+    "192.168.137.15",
+    "192.168.137.109",
+    "192.168.137.107",
+    "192.168.137.223",
+    "192.168.137.50",
+    "192.168.137.180",
+    "192.168.137.137",
+    "192.168.137.174",
+    "192.168.137.164",
+    "192.168.137.248",
+    "192.168.137.93",
+    "192.168.137.20",
+    "192.168.137.67",
+    "192.168.137.101",
+    "192.168.137.116",
+    "192.168.137.106",
+    "192.168.137.226",
+    "192.168.137.244",
+    "192.168.137.237",
+    "192.168.137.169",
+    "192.168.137.205",
+    "192.168.137.238",
+    "192.168.137.55",
+    "192.168.137.217",
+    "192.168.137.236"
+   ],
+   "attackers_also_derived_in_benign": [
+    "192.168.137.154",
+    "192.168.137.187",
+    "205.174.165.69"
+   ],
+   "victims_also_derived_in_benign": [
+    "192.168.137.1",
+    "192.168.137.128",
+    "192.168.137.148",
+    "192.168.137.154",
+    "192.168.137.187",
+    "192.168.137.224",
+    "192.168.137.58",
+    "192.168.137.66",
+    "205.174.165.69"
+   ],
+   "candidate_flows": 130243,
+   "fanout_top": [
+    {
+     "host": "192.168.137.178",
+     "distinct_targets": 55416,
+     "distinct_hosts": 59,
+     "distinct_ports": 1479
+    },
+    {
+     "host": "192.168.137.154",
+     "distinct_targets": 1400,
+     "distinct_hosts": 3,
+     "distinct_ports": 1386
+    },
+    {
+     "host": "192.168.137.212",
+     "distinct_targets": 1000,
+     "distinct_hosts": 4,
+     "distinct_ports": 992
+    },
+    {
+     "host": "192.168.137.187",
+     "distinct_targets": 336,
+     "distinct_hosts": 4,
+     "distinct_ports": 336
+    },
+    {
+     "host": "205.174.165.69",
+     "distinct_targets": 299,
+     "distinct_hosts": 1,
+     "distinct_ports": 299
+    },
+    {
+     "host": "192.168.137.167",
+     "distinct_targets": 212,
+     "distinct_hosts": 10,
+     "distinct_ports": 208
+    },
+    {
+     "host": "192.168.137.116",
+     "distinct_targets": 95,
+     "distinct_hosts": 3,
+     "distinct_ports": 95
+    },
+    {
+     "host": "192.168.137.206",
+     "distinct_targets": 77,
+     "distinct_hosts": 4,
+     "distinct_ports": 77
+    },
+    {
+     "host": "192.168.137.236",
+     "distinct_targets": 56,
+     "distinct_hosts": 31,
+     "distinct_ports": 2
+    },
+    {
+     "host": "192.168.137.52",
+     "distinct_targets": 52,
+     "distinct_hosts": 2,
+     "distinct_ports": 52
+    }
+   ],
+   "scanners": [
+    "192.168.137.178",
+    "192.168.137.154",
+    "192.168.137.212",
+    "192.168.137.187",
+    "205.174.165.69",
+    "192.168.137.167",
+    "192.168.137.116",
+    "192.168.137.206",
+    "192.168.137.236",
+    "192.168.137.52"
+   ],
+   "probed_hosts": 66,
+   "scanner_flows_to_non_testbed": 15173,
+   "scanner_flows_to_non_testbed_top": [
+    {
+     "value": "52.91.195.103",
+     "flows": 1953,
+     "share": 0.1287
+    },
+    {
+     "value": "239.255.255.250",
+     "flows": 1056,
+     "share": 0.0696
+    },
+    {
+     "value": "224.0.0.251",
+     "flows": 982,
+     "share": 0.0647
+    },
+    {
+     "value": "13.225.196.108",
+     "flows": 882,
+     "share": 0.0581
+    },
+    {
+     "value": "34.158.253.218",
+     "flows": 648,
+     "share": 0.0427
+    }
+   ],
+   "scanner_flows_as_destination": 5934,
+   "signature_destination_ports_top": [
+    {
+     "value": "53",
+     "flows": 3066,
+     "share": 0.0409
+    },
+    {
+     "value": "7",
+     "flows": 1910,
+     "share": 0.0255
+    },
+    {
+     "value": "443",
+     "flows": 1464,
+     "share": 0.0195
+    },
+    {
+     "value": "80",
+     "flows": 1372,
+     "share": 0.0183
+    },
+    {
+     "value": "40872",
+     "flows": 999,
+     "share": 0.0133
+    },
+    {
+     "value": "55443",
+     "flows": 830,
+     "share": 0.0111
+    },
+    {
+     "value": "6668",
+     "flows": 608,
+     "share": 0.0081
+    },
+    {
+     "value": "55444",
+     "flows": 486,
+     "share": 0.0065
+    },
+    {
+     "value": "30000",
+     "flows": 423,
+     "share": 0.0056
+    },
+    {
+     "value": "8009",
+     "flows": 295,
+     "share": 0.0039
+    }
+   ],
+   "signature_raw": {
+    "flows": 130243,
+    "share_of_capture": 0.2946,
+    "packet_share_of_capture": 0.22,
+    "testbed_pairs": 130243,
+    "with_non_testbed_endpoint": 0,
+    "flag_share": {
+     "R1_external": 0.0,
+     "R2_service": 0.4332,
+     "R3_benign_pair": 0.3199,
+     "any": 0.4383
+    },
+    "flag_share_testbed_pairs": {
+     "R1_external": 0.0,
+     "R2_service": 0.4332,
+     "R3_benign_pair": 0.3199,
+     "any": 0.4383
+    },
+    "flag_share_non_testbed_pairs": {
+     "R1_external": null,
+     "R2_service": null,
+     "R3_benign_pair": null,
+     "any": null
+    },
+    "top_pairs": [
+     {
+      "pair": "192.168.137.1|192.168.137.41",
+      "flows": 32835,
+      "main_proto_port": "UDP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.177",
+      "flows": 5951,
+      "main_proto_port": "UDP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.133",
+      "flows": 5212,
+      "main_proto_port": "UDP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.206",
+      "flows": 2766,
+      "main_proto_port": "TCP/7"
+     },
+     {
+      "pair": "192.168.137.154|192.168.137.178",
+      "flows": 2145,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.178|192.168.137.86",
+      "flows": 2089,
+      "main_proto_port": "TCP/443"
+     },
+     {
+      "pair": "192.168.137.178|192.168.137.4",
+      "flows": 2083,
+      "main_proto_port": "TCP/43727"
+     },
+     {
+      "pair": "192.168.137.178|192.168.137.217",
+      "flows": 2072,
+      "main_proto_port": "TCP/43208"
+     }
+    ],
+    "top_destination_hosts": [
+     {
+      "value": "192.168.137.1",
+      "flows": 57841,
+      "share": 0.4441,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.178",
+      "flows": 4420,
+      "share": 0.0339,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.167",
+      "flows": 2325,
+      "share": 0.0179,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.212",
+      "flows": 2101,
+      "share": 0.0161,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.154",
+      "flows": 1679,
+      "share": 0.0129,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.4",
+      "flows": 1610,
+      "share": 0.0124,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.177",
+      "flows": 1569,
+      "share": 0.012,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.187",
+      "flows": 1422,
+      "share": 0.0109,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.86",
+      "flows": 1410,
+      "share": 0.0108,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.59",
+      "flows": 1363,
+      "share": 0.0105,
+      "testbed": true
+     }
+    ],
+    "top_source_hosts": [
+     {
+      "value": "192.168.137.178",
+      "flows": 61362,
+      "share": 0.4711,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.41",
+      "flows": 32835,
+      "share": 0.2521,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.177",
+      "flows": 6330,
+      "share": 0.0486,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.133",
+      "flows": 5235,
+      "share": 0.0402,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.206",
+      "flows": 4380,
+      "share": 0.0336,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.167",
+      "flows": 2442,
+      "share": 0.0187,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.212",
+      "flows": 2055,
+      "share": 0.0158,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.163",
+      "flows": 1964,
+      "share": 0.0151,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.154",
+      "flows": 1652,
+      "share": 0.0127,
+      "testbed": true
+     },
+     {
+      "value": "192.168.137.234",
+      "flows": 1411,
+      "share": 0.0108,
+      "testbed": true
+     }
+    ]
+   },
+   "benign_baseline": {
+    "signature_raw_flows": 117742,
+    "signature_raw_share": 0.2956,
+    "signature_raw_packet_share": 0.0921,
+    "signature_flows": 30583,
+    "signature_share": 0.0768,
+    "attacker_victim_flows": 36288,
+    "attacker_victim_share": 0.0911,
+    "attacker_any_flows": 76964,
+    "attacker_any_share": 0.1932,
+    "would_be_attackers": [
+     "192.168.137.154",
+     "192.168.137.172",
+     "192.168.137.253",
+     "192.168.137.249",
+     "192.168.137.51",
+     "192.168.137.128",
+     "205.174.165.69",
+     "192.168.137.187",
+     "192.168.137.16",
+     "192.168.137.58"
+    ],
+    "n_would_be_victims": 17
+   }
+  }
+ },
+ "time": {
+  "capture_start": "2022-10-03 11:02:00",
+  "capture_end": "2022-10-04 09:31:03",
+  "unparsed_timestamps": 0,
+  "signature_start": "2022-10-03 11:02:02",
+  "signature_end": "2022-10-04 09:30:41",
+  "signature_window_minutes": 1348.7,
+  "share_of_flows_in_window": 0.9997,
+  "share_of_attack_related_in_window": 1.0
+ },
+ "definitions": {
+  "signature": {
+   "attack_related": 74947,
+   "attack_share_before_cleaning": 0.1695,
+   "packet_share_before_cleaning": 0.178,
+   "median_duration_s": 0.044,
+   "median_duration_s_other_flows": 0.145,
+   "rules": {
+    "R1_external": {
+     "flagged": 247313,
+     "kept": 194845,
+     "attack_flagged": 0,
+     "attack_kept": 74947,
+     "false_removal_rate": 0.0,
+     "flagged_attack_share": 0.0,
+     "kept_attack_share": 0.3846,
+     "packet_false_removal_rate": 0.0,
+     "packet_flagged_attack_share": 0.0,
+     "packet_kept_attack_share": 0.6696
+    },
+    "R2_service": {
+     "flagged": 143079,
+     "kept": 299079,
+     "attack_flagged": 5168,
+     "attack_kept": 69779,
+     "false_removal_rate": 0.069,
+     "flagged_attack_share": 0.0361,
+     "kept_attack_share": 0.2333,
+     "packet_false_removal_rate": 0.0777,
+     "packet_flagged_attack_share": 0.1328,
+     "packet_kept_attack_share": 0.1833
+    },
+    "R3_benign_pair": {
+     "flagged": 241224,
+     "kept": 200934,
+     "attack_flagged": 1819,
+     "attack_kept": 73128,
+     "false_removal_rate": 0.0243,
+     "flagged_attack_share": 0.0075,
+     "kept_attack_share": 0.3639,
+     "packet_false_removal_rate": 0.0441,
+     "packet_flagged_attack_share": 0.0223,
+     "packet_kept_attack_share": 0.2627
+    },
+    "any": {
+     "flagged": 365902,
+     "kept": 76256,
+     "attack_flagged": 5835,
+     "attack_kept": 69112,
+     "false_removal_rate": 0.0779,
+     "flagged_attack_share": 0.0159,
+     "kept_attack_share": 0.9063,
+     "packet_false_removal_rate": 0.085,
+     "packet_flagged_attack_share": 0.0186,
+     "packet_kept_attack_share": 0.8762
+    }
+   },
+   "false_removal_by_pair": {
+    "R1_external": [],
+    "R2_service": [
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1293,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1094,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.154|192.168.137.178",
+      "flows": 1002,
+      "main_proto_port": "UDP/1900"
+     }
+    ],
+    "R3_benign_pair": [
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1111,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.187|205.174.165.69",
+      "flows": 650,
+      "main_proto_port": "UDP/26298"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.187",
+      "flows": 58,
+      "main_proto_port": "UDP/53"
+     }
+    ],
+    "any": [
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1293,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1111,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.154|192.168.137.178",
+      "flows": 1002,
+      "main_proto_port": "UDP/1900"
+     }
+    ]
+   }
+  },
+  "attacker_victim": {
+   "attack_related": 80451,
+   "attack_share_before_cleaning": 0.182,
+   "packet_share_before_cleaning": 0.1927,
+   "median_duration_s": 0.044,
+   "median_duration_s_other_flows": 0.148,
+   "rules": {
+    "R1_external": {
+     "flagged": 247313,
+     "kept": 194845,
+     "attack_flagged": 0,
+     "attack_kept": 80451,
+     "false_removal_rate": 0.0,
+     "flagged_attack_share": 0.0,
+     "kept_attack_share": 0.4129,
+     "packet_false_removal_rate": 0.0,
+     "packet_flagged_attack_share": 0.0,
+     "packet_kept_attack_share": 0.725
+    },
+    "R2_service": {
+     "flagged": 143079,
+     "kept": 299079,
+     "attack_flagged": 5861,
+     "attack_kept": 74590,
+     "false_removal_rate": 0.0729,
+     "flagged_attack_share": 0.041,
+     "kept_attack_share": 0.2494,
+     "packet_false_removal_rate": 0.0741,
+     "packet_flagged_attack_share": 0.1373,
+     "packet_kept_attack_share": 0.1992
+    },
+    "R3_benign_pair": {
+     "flagged": 241224,
+     "kept": 200934,
+     "attack_flagged": 1922,
+     "attack_kept": 78529,
+     "false_removal_rate": 0.0239,
+     "flagged_attack_share": 0.008,
+     "kept_attack_share": 0.3908,
+     "packet_false_removal_rate": 0.0415,
+     "packet_flagged_attack_share": 0.0227,
+     "packet_kept_attack_share": 0.2853
+    },
+    "any": {
+     "flagged": 365902,
+     "kept": 76256,
+     "attack_flagged": 6573,
+     "attack_kept": 73878,
+     "false_removal_rate": 0.0817,
+     "flagged_attack_share": 0.018,
+     "kept_attack_share": 0.9688,
+     "packet_false_removal_rate": 0.0814,
+     "packet_flagged_attack_share": 0.0193,
+     "packet_kept_attack_share": 0.9523
+    }
+   },
+   "false_removal_by_pair": {
+    "R1_external": [],
+    "R2_service": [
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1405,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.206",
+      "flows": 1178,
+      "main_proto_port": "UDP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1127,
+      "main_proto_port": "UDP/1900"
+     }
+    ],
+    "R3_benign_pair": [
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1188,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.187|205.174.165.69",
+      "flows": 650,
+      "main_proto_port": "UDP/26298"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.187",
+      "flows": 84,
+      "main_proto_port": "UDP/53"
+     }
+    ],
+    "any": [
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1405,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1188,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.206",
+      "flows": 1178,
+      "main_proto_port": "UDP/53"
+     }
+    ]
+   }
+  },
+  "attacker_any": {
+   "attack_related": 98887,
+   "attack_share_before_cleaning": 0.2236,
+   "packet_share_before_cleaning": 0.2664,
+   "median_duration_s": 0.05,
+   "median_duration_s_other_flows": 0.131,
+   "rules": {
+    "R1_external": {
+     "flagged": 247313,
+     "kept": 194845,
+     "attack_flagged": 17550,
+     "attack_kept": 81337,
+     "false_removal_rate": 0.1775,
+     "flagged_attack_share": 0.071,
+     "kept_attack_share": 0.4174,
+     "packet_false_removal_rate": 0.2702,
+     "packet_flagged_attack_share": 0.0981,
+     "packet_kept_attack_share": 0.7314
+    },
+    "R2_service": {
+     "flagged": 143079,
+     "kept": 299079,
+     "attack_flagged": 9501,
+     "attack_kept": 89386,
+     "false_removal_rate": 0.0961,
+     "flagged_attack_share": 0.0664,
+     "kept_attack_share": 0.2989,
+     "packet_false_removal_rate": 0.0703,
+     "packet_flagged_attack_share": 0.1799,
+     "packet_kept_attack_share": 0.2765
+    },
+    "R3_benign_pair": {
+     "flagged": 241224,
+     "kept": 200934,
+     "attack_flagged": 6921,
+     "attack_kept": 91966,
+     "false_removal_rate": 0.07,
+     "flagged_attack_share": 0.0287,
+     "kept_attack_share": 0.4577,
+     "packet_false_removal_rate": 0.0632,
+     "packet_flagged_attack_share": 0.0478,
+     "packet_kept_attack_share": 0.3854
+    },
+    "any": {
+     "flagged": 365902,
+     "kept": 76256,
+     "attack_flagged": 24123,
+     "attack_kept": 74764,
+     "false_removal_rate": 0.2439,
+     "flagged_attack_share": 0.0659,
+     "kept_attack_share": 0.9804,
+     "packet_false_removal_rate": 0.3291,
+     "packet_flagged_attack_share": 0.1077,
+     "packet_kept_attack_share": 0.9615
+    }
+   },
+   "false_removal_by_pair": {
+    "R1_external": [
+     {
+      "pair": "192.168.137.116|52.91.195.103",
+      "flows": 1985,
+      "main_proto_port": "UDP/8813"
+     },
+     {
+      "pair": "192.168.137.187|3.208.160.215",
+      "flows": 650,
+      "main_proto_port": "UDP/3478"
+     },
+     {
+      "pair": "13.225.196.108|192.168.137.212",
+      "flows": 603,
+      "main_proto_port": "TCP/443"
+     }
+    ],
+    "R2_service": [
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1405,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.206",
+      "flows": 1178,
+      "main_proto_port": "UDP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1127,
+      "main_proto_port": "UDP/1900"
+     }
+    ],
+    "R3_benign_pair": [
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1188,
+      "main_proto_port": "UDP/1900"
+     },
+     {
+      "pair": "192.168.137.187|3.208.160.215",
+      "flows": 650,
+      "main_proto_port": "UDP/3478"
+     },
+     {
+      "pair": "192.168.137.187|205.174.165.69",
+      "flows": 650,
+      "main_proto_port": "UDP/26298"
+     }
+    ],
+    "any": [
+     {
+      "pair": "192.168.137.116|52.91.195.103",
+      "flows": 1985,
+      "main_proto_port": "UDP/8813"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.116",
+      "flows": 1405,
+      "main_proto_port": "TCP/53"
+     },
+     {
+      "pair": "192.168.137.1|192.168.137.154",
+      "flows": 1188,
+      "main_proto_port": "UDP/1900"
+     }
+    ]
+   }
+  }
+ },
+ "r1_audit": {
+  "r1_flows": 247313,
+  "r1_share": 0.5593,
+  "r1_packet_share": 0.7342,
+  "both_endpoints_external": 1347,
+  "external_address_in_benign": {
+   "flows": 222795,
+   "share_of_r1": 0.9009,
+   "packet_share_of_r1": 0.8454
+  },
+  "external_address_port_in_benign": {
+   "flows": 219130,
+   "share_of_r1": 0.886,
+   "packet_share_of_r1": 0.8244
+  },
+  "external_address_not_in_benign": {
+   "flows": 24518,
+   "share_of_r1": 0.0991,
+   "packet_share_of_r1": 0.1546
+  },
+  "ip_pair_in_benign_R3": {
+   "flows": 148859,
+   "share_of_r1": 0.6019,
+   "packet_share_of_r1": 0.4006
+  },
+  "on_service_port_R2": {
+   "flows": 25641,
+   "share_of_r1": 0.1037,
+   "packet_share_of_r1": 0.0353
+  },
+  "by_protocol": {
+   "TCP": 168412,
+   "UDP": 76679,
+   "proto0": 2222
+  },
+  "distinct_external_addresses": 1717,
+  "top_external_addresses": [
+   {
+    "value": "157.249.81.141",
+    "flows": 111617,
+    "share": 0.4513,
+    "packets": 703577,
+    "benign_flows": 37197
+   },
+   {
+    "value": "255.255.255.255",
+    "flows": 11107,
+    "share": 0.0449,
+    "packets": 239776,
+    "benign_flows": 19557
+   },
+   {
+    "value": "8.8.8.8",
+    "flows": 10490,
+    "share": 0.0424,
+    "packets": 25910,
+    "benign_flows": 21967
+   },
+   {
+    "value": "47.254.83.84",
+    "flows": 7626,
+    "share": 0.0308,
+    "packets": 25679,
+    "benign_flows": 0
+   },
+   {
+    "value": "18.182.200.45",
+    "flows": 6152,
+    "share": 0.0249,
+    "packets": 15112,
+    "benign_flows": 10483
+   },
+   {
+    "value": "47.112.162.49",
+    "flows": 6144,
+    "share": 0.0248,
+    "packets": 15080,
+    "benign_flows": 10600
+   },
+   {
+    "value": "3.221.182.58",
+    "flows": 6136,
+    "share": 0.0248,
+    "packets": 15072,
+    "benign_flows": 10584
+   },
+   {
+    "value": "8.8.4.4",
+    "flows": 4524,
+    "share": 0.0183,
+    "packets": 9056,
+    "benign_flows": 12002
+   },
+   {
+    "value": "120.76.210.199",
+    "flows": 3920,
+    "share": 0.0159,
+    "packets": 14278,
+    "benign_flows": 0
+   },
+   {
+    "value": "224.0.0.251",
+    "flows": 3451,
+    "share": 0.014,
+    "packets": 26113,
+    "benign_flows": 7007
+   },
+   {
+    "value": "109.95.152.66",
+    "flows": 2940,
+    "share": 0.0119,
+    "packets": 20101,
+    "benign_flows": 5035
+   },
+   {
+    "value": "239.255.255.250",
+    "flows": 2739,
+    "share": 0.0111,
+    "packets": 23810,
+    "benign_flows": 5167
+   },
+   {
+    "value": "34.158.253.218",
+    "flows": 2348,
+    "share": 0.0095,
+    "packets": 96639,
+    "benign_flows": 3314
+   },
+   {
+    "value": "52.91.195.103",
+    "flows": 1985,
+    "share": 0.008,
+    "packets": 6695,
+    "benign_flows": 3375
+   },
+   {
+    "value": "13.225.196.108",
+    "flows": 1913,
+    "share": 0.0077,
+    "packets": 34749,
+    "benign_flows": 2257
+   }
+  ],
+  "top_external_addresses_not_in_benign": [
+   {
+    "value": "47.254.83.84",
+    "flows": 7626,
+    "share": 0.311,
+    "packets": 25679
+   },
+   {
+    "value": "120.76.210.199",
+    "flows": 3920,
+    "share": 0.1599,
+    "packets": 14278
+   },
+   {
+    "value": "142.251.111.188",
+    "flows": 520,
+    "share": 0.0212,
+    "packets": 8948
+   },
+   {
+    "value": "54.202.68.76",
+    "flows": 496,
+    "share": 0.0202,
+    "packets": 3026
+   },
+   {
+    "value": "3.130.18.40",
+    "flows": 488,
+    "share": 0.0199,
+    "packets": 2919
+   },
+   {
+    "value": "45.35.33.242",
+    "flows": 487,
+    "share": 0.0199,
+    "packets": 14428
+   },
+   {
+    "value": "62.210.208.47",
+    "flows": 487,
+    "share": 0.0199,
+    "packets": 14437
+   },
+   {
+    "value": "118.107.244.35",
+    "flows": 487,
+    "share": 0.0199,
+    "packets": 14436
+   },
+   {
+    "value": "18.206.157.45",
+    "flows": 487,
+    "share": 0.0199,
+    "packets": 1672
+   },
+   {
+    "value": "172.253.63.188",
+    "flows": 472,
+    "share": 0.0193,
+    "packets": 4526
+   }
+  ],
+  "top_external_address_ports": [
+   {
+    "value": "157.249.81.141:80",
+    "flows": 55822,
+    "share": 0.2257,
+    "packets": 351816,
+    "in_benign": true
+   },
+   {
+    "value": "157.249.81.141:443",
+    "flows": 55795,
+    "share": 0.2256,
+    "packets": 351761,
+    "in_benign": true
+   },
+   {
+    "value": "8.8.8.8:53",
+    "flows": 10077,
+    "share": 0.0407,
+    "packets": 22608,
+    "in_benign": true
+   },
+   {
+    "value": "255.255.255.255:6667",
+    "flows": 9123,
+    "share": 0.0369,
+    "packets": 216729,
+    "in_benign": true
+   },
+   {
+    "value": "18.182.200.45:32100",
+    "flows": 6152,
+    "share": 0.0249,
+    "packets": 15112,
+    "in_benign": true
+   },
+   {
+    "value": "47.112.162.49:32100",
+    "flows": 6144,
+    "share": 0.0248,
+    "packets": 15080,
+    "in_benign": true
+   },
+   {
+    "value": "3.221.182.58:32100",
+    "flows": 6136,
+    "share": 0.0248,
+    "packets": 15072,
+    "in_benign": true
+   },
+   {
+    "value": "8.8.4.4:53",
+    "flows": 4524,
+    "share": 0.0183,
+    "packets": 9056,
+    "in_benign": true
+   },
+   {
+    "value": "120.76.210.199:80",
+    "flows": 3920,
+    "share": 0.0159,
+    "packets": 14278,
+    "in_benign": false
+   },
+   {
+    "value": "224.0.0.251:5353",
+    "flows": 3447,
+    "share": 0.0139,
+    "packets": 26105,
+    "in_benign": true
+   },
+   {
+    "value": "109.95.152.66:443",
+    "flows": 2745,
+    "share": 0.0111,
+    "packets": 19711,
+    "in_benign": true
+   },
+   {
+    "value": "47.254.83.84:7788",
+    "flows": 2375,
+    "share": 0.0096,
+    "packets": 4944,
+    "in_benign": false
+   },
+   {
+    "value": "239.255.255.250:1900",
+    "flows": 2228,
+    "share": 0.009,
+    "packets": 14352,
+    "in_benign": true
+   },
+   {
+    "value": "13.225.196.108:443",
+    "flows": 1913,
+    "share": 0.0077,
+    "packets": 34749,
+    "in_benign": true
+   },
+   {
+    "value": "54.188.109.168:8886",
+    "flows": 1712,
+    "share": 0.0069,
+    "packets": 10940,
+    "in_benign": false
+   }
+  ],
+  "top_external_ports": [
+   {
+    "value": "443",
+    "flows": 83763,
+    "share": 0.3387,
+    "packets": 1062806
+   },
+   {
+    "value": "80",
+    "flows": 66794,
+    "share": 0.2701,
+    "packets": 651695
+   },
+   {
+    "value": "32100",
+    "flows": 25519,
+    "share": 0.1032,
+    "packets": 115144
+   },
+   {
+    "value": "53",
+    "flows": 14924,
+    "share": 0.0603,
+    "packets": 32453
+   },
+   {
+    "value": "6667",
+    "flows": 9123,
+    "share": 0.0369,
+    "packets": 216729
+   },
+   {
+    "value": "8886",
+    "flows": 8512,
+    "share": 0.0344,
+    "packets": 57711
+   },
+   {
+    "value": "123",
+    "flows": 4393,
+    "share": 0.0178,
+    "packets": 9530
+   },
+   {
+    "value": "5353",
+    "flows": 3447,
+    "share": 0.0139,
+    "packets": 26105
+   },
+   {
+    "value": "10001",
+    "flows": 2910,
+    "share": 0.0118,
+    "packets": 69137
+   },
+   {
+    "value": "1900",
+    "flows": 2423,
+    "share": 0.0098,
+    "packets": 14937
+   },
+   {
+    "value": "7788",
+    "flows": 2376,
+    "share": 0.0096,
+    "packets": 4946
+   },
+   {
+    "value": "0",
+    "flows": 2222,
+    "share": 0.009,
+    "packets": 140617
+   },
+   {
+    "value": "8877",
+    "flows": 1502,
+    "share": 0.0061,
+    "packets": 5405
+   },
+   {
+    "value": "8883",
+    "flows": 1454,
+    "share": 0.0059,
+    "packets": 16462
+   },
+   {
+    "value": "1340",
+    "flows": 1287,
+    "share": 0.0052,
+    "packets": 7968
+   }
+  ],
+  "top_internal_endpoints": [
+   {
+    "value": "192.168.137.41",
+    "flows": 116800,
+    "share": 0.4749,
+    "packets": 765152
+   },
+   {
+    "value": "192.168.137.133",
+    "flows": 18440,
+    "share": 0.075,
+    "packets": 45740
+   },
+   {
+    "value": "192.168.137.208",
+    "flows": 15185,
+    "share": 0.0617,
+    "packets": 64894
+   },
+   {
+    "value": "192.168.137.163",
+    "flows": 12817,
+    "share": 0.0521,
+    "packets": 42766
+   },
+   {
+    "value": "192.168.137.59",
+    "flows": 5331,
+    "share": 0.0217,
+    "packets": 49230
+   },
+   {
+    "value": "192.168.137.177",
+    "flows": 4138,
+    "share": 0.0168,
+    "packets": 35854
+   },
+   {
+    "value": "192.168.137.212",
+    "flows": 4024,
+    "share": 0.0164,
+    "packets": 123485
+   },
+   {
+    "value": "192.168.137.206",
+    "flows": 3844,
+    "share": 0.0156,
+    "packets": 68217
+   },
+   {
+    "value": "192.168.137.224",
+    "flows": 3594,
+    "share": 0.0146,
+    "packets": 31776
+   },
+   {
+    "value": "192.168.137.234",
+    "flows": 2972,
+    "share": 0.0121,
+    "packets": 70269
+   }
+  ],
+  "spoofed_source_check": {
+   "definition": "routable IPv4 external source address that occurs in exactly one flow of the capture, no backward packet, never in Benign",
+   "external_source_flows": 36863,
+   "distinct_external_sources": 649,
+   "single_flow_external_sources": 59,
+   "excluded_non_routable_or_ipv6_flows": 0,
+   "flows": 1,
+   "share_of_r1": 0.0,
+   "share_of_external_source_flows": 0.0,
+   "packet_share_of_r1": 0.0,
+   "top_protocol_ports": [
+    {
+     "value": "TCP/49414",
+     "flows": 1
+    }
+   ],
+   "in_attack_related": 0
+  },
+  "r1_flows_attack_related": 0,
+  "r1_flows_attacker_any": 17550,
+  "share_inside_signature_window": 0.9996
+ },
+ "summary": {
+  "signature": {
+   "flows": 442158,
+   "attack_related": 74947,
+   "attack_share_before_cleaning": 0.1695,
+   "packet_share_before_cleaning": 0.178,
+   "false_removal_rate": {
+    "R1_external": 0.0,
+    "R2_service": 0.069,
+    "R3_benign_pair": 0.0243,
+    "any": 0.0779
+   },
+   "packet_false_removal_rate": {
+    "R1_external": 0.0,
+    "R2_service": 0.0777,
+    "R3_benign_pair": 0.0441,
+    "any": 0.085
+   },
+   "flagged_attack_share": {
+    "R1_external": 0.0,
+    "R2_service": 0.0361,
+    "R3_benign_pair": 0.0075,
+    "any": 0.0159
+   },
+   "kept_attack_share": {
+    "R1_external": 0.3846,
+    "R2_service": 0.2333,
+    "R3_benign_pair": 0.3639,
+    "any": 0.9063
+   },
+   "packet_flagged_attack_share": {
+    "R1_external": 0.0,
+    "R2_service": 0.1328,
+    "R3_benign_pair": 0.0223,
+    "any": 0.0186
+   },
+   "packet_kept_attack_share": {
+    "R1_external": 0.6696,
+    "R2_service": 0.1833,
+    "R3_benign_pair": 0.2627,
+    "any": 0.8762
+   }
+  },
+  "attacker_victim": {
+   "flows": 442158,
+   "attack_related": 80451,
+   "attack_share_before_cleaning": 0.182,
+   "packet_share_before_cleaning": 0.1927,
+   "false_removal_rate": {
+    "R1_external": 0.0,
+    "R2_service": 0.0729,
+    "R3_benign_pair": 0.0239,
+    "any": 0.0817
+   },
+   "packet_false_removal_rate": {
+    "R1_external": 0.0,
+    "R2_service": 0.0741,
+    "R3_benign_pair": 0.0415,
+    "any": 0.0814
+   },
+   "flagged_attack_share": {
+    "R1_external": 0.0,
+    "R2_service": 0.041,
+    "R3_benign_pair": 0.008,
+    "any": 0.018
+   },
+   "kept_attack_share": {
+    "R1_external": 0.4129,
+    "R2_service": 0.2494,
+    "R3_benign_pair": 0.3908,
+    "any": 0.9688
+   },
+   "packet_flagged_attack_share": {
+    "R1_external": 0.0,
+    "R2_service": 0.1373,
+    "R3_benign_pair": 0.0227,
+    "any": 0.0193
+   },
+   "packet_kept_attack_share": {
+    "R1_external": 0.725,
+    "R2_service": 0.1992,
+    "R3_benign_pair": 0.2853,
+    "any": 0.9523
+   }
+  },
+  "attacker_any": {
+   "flows": 442158,
+   "attack_related": 98887,
+   "attack_share_before_cleaning": 0.2236,
+   "packet_share_before_cleaning": 0.2664,
+   "false_removal_rate": {
+    "R1_external": 0.1775,
+    "R2_service": 0.0961,
+    "R3_benign_pair": 0.07,
+    "any": 0.2439
+   },
+   "packet_false_removal_rate": {
+    "R1_external": 0.2702,
+    "R2_service": 0.0703,
+    "R3_benign_pair": 0.0632,
+    "any": 0.3291
+   },
+   "flagged_attack_share": {
+    "R1_external": 0.071,
+    "R2_service": 0.0664,
+    "R3_benign_pair": 0.0287,
+    "any": 0.0659
+   },
+   "kept_attack_share": {
+    "R1_external": 0.4174,
+    "R2_service": 0.2989,
+    "R3_benign_pair": 0.4577,
+    "any": 0.9804
+   },
+   "packet_flagged_attack_share": {
+    "R1_external": 0.0981,
+    "R2_service": 0.1799,
+    "R3_benign_pair": 0.0478,
+    "any": 0.1077
+   },
+   "packet_kept_attack_share": {
+    "R1_external": 0.7314,
+    "R2_service": 0.2765,
+    "R3_benign_pair": 0.3854,
+    "any": 0.9615
+   }
+  }
+ },
+ "address_flow_counts": {
+  "192.168.137.41": 193781,
+  "192.168.137.86": 2228,
+  "192.168.137.175": 1790,
+  "192.168.137.187": 4725,
+  "192.168.137.133": 30814,
+  "192.168.137.148": 3146,
+  "192.168.137.51": 1466,
+  "192.168.137.167": 4813,
+  "192.168.137.82": 2062,
+  "192.168.137.192": 3,
+  "192.168.137.224": 5388,
+  "192.168.137.171": 572,
+  "192.168.137.249": 3544,
+  "192.168.137.181": 2035,
+  "205.174.165.65": 466,
+  "192.168.137.154": 5822,
+  "192.168.137.58": 9,
+  "192.168.137.45": 1523,
+  "192.168.137.132": 1538,
+  "192.168.137.66": 1649,
+  "192.168.137.1": 122005,
+  "192.168.137.128": 2062,
+  "192.168.137.71": 2056,
+  "192.168.137.173": 1496,
+  "192.168.137.57": 1028,
+  "192.168.137.40": 2168,
+  "205.174.165.69": 650,
+  "192.168.137.74": 4313,
+  "192.168.137.4": 2219,
+  "192.168.137.178": 66283,
+  "192.168.137.234": 5806,
+  "192.168.137.163": 17802,
+  "192.168.137.252": 4257,
+  "192.168.137.208": 17026,
+  "192.168.137.100": 3193,
+  "192.168.137.242": 3289,
+  "192.168.137.212": 8612,
+  "192.168.137.241": 2073,
+  "192.168.137.108": 2042,
+  "192.168.137.75": 2173,
+  "192.168.137.52": 1946,
+  "192.168.137.189": 3270,
+  "192.168.137.196": 1612,
+  "192.168.137.59": 7348,
+  "192.168.137.177": 17851,
+  "192.168.137.206": 9611,
+  "192.168.137.15": 2079,
+  "192.168.137.109": 2193,
+  "192.168.137.142": 5,
+  "192.168.137.107": 2161,
+  "192.168.137.223": 2205,
+  "192.168.137.50": 2222,
+  "192.168.137.180": 2988,
+  "192.168.137.137": 2078,
+  "192.168.137.174": 2644,
+  "192.168.137.164": 2026,
+  "192.168.137.248": 2134,
+  "192.168.137.93": 1634,
+  "192.168.137.20": 2657,
+  "192.168.137.67": 2165,
+  "192.168.137.101": 2063,
+  "192.168.137.116": 5388,
+  "192.168.137.106": 1596,
+  "192.168.137.226": 2712,
+  "192.168.137.244": 2667,
+  "192.168.137.237": 913,
+  "192.168.137.169": 1595,
+  "192.168.137.205": 1662,
+  "192.168.137.238": 2735,
+  "192.168.137.55": 1214,
+  "192.168.137.217": 2199,
+  "192.168.137.236": 2156
+ },
+ "sample_candidates": 59,
+ "seconds": 2.8
+}

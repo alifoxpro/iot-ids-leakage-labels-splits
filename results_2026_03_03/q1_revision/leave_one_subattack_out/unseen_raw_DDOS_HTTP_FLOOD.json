@@ -1,0 +1,104 @@
+{
+ "held_out_class": "DDOS",
+ "held_out_subattack": "DDOS HTTP FLOOD",
+ "labels": "raw",
+ "model": "XGBoost",
+ "split": "temporal",
+ "n_train": 2433854,
+ "n_train_base": 2538543,
+ "n_train_removed": 104689,
+ "n_train_class_left": 595309,
+ "n_test": 22434,
+ "recall_seen": 0.9443,
+ "recall_unseen": 0.1173,
+ "delta": -0.827,
+ "attack_detection_seen": 0.9977,
+ "attack_detection_unseen": 0.5848,
+ "seen_predicted_as": {
+  "Benign": 0.0023,
+  "BruteForce": 0.0025,
+  "DDOS": 0.9443,
+  "DOS": 0.0218,
+  "Mirai": 0.0226,
+  "Recon": 0.0008,
+  "Spoofing": 0.0039,
+  "Web-Based": 0.0019
+ },
+ "unseen_predicted_as": {
+  "Benign": 0.4152,
+  "BruteForce": 0.0053,
+  "DDOS": 0.1173,
+  "DOS": 0.0561,
+  "Mirai": 0.3693,
+  "Recon": 0.0063,
+  "Spoofing": 0.0071,
+  "Web-Based": 0.0234
+ },
+ "discordant": {
+  "seen_only_correct": 18556,
+  "unseen_only_correct": 4
+ },
+ "sibling_recall": {
+  "DDOS / DDOS ACK Fragmentation": {
+   "seen": 0.9445,
+   "unseen": 0.9468
+  },
+  "DDOS / DDOS ICMP FLOOD": {
+   "seen": 0.1179,
+   "unseen": 0.1204
+  },
+  "DDOS / DDOS ICMP Fragmentation": {
+   "seen": 0.1863,
+   "unseen": 0.1925
+  }
+ },
+ "full_test_unseen_model": {
+  "accuracy": 0.6325806178835485,
+  "balanced_accuracy": 0.5242401352048198,
+  "macro_f1": 0.4128010753807067,
+  "per_class_f1": {
+   "Benign": 0.454,
+   "BruteForce": 0.0232,
+   "DDOS": 0.801,
+   "DOS": 0.8131,
+   "Mirai": 0.2944,
+   "Recon": 0.5207,
+   "Spoofing": 0.3333,
+   "Web-Based": 0.0626
+  },
+  "per_class_recall": {
+   "Benign": 0.5109,
+   "BruteForce": 0.4713,
+   "DDOS": 0.687,
+   "DOS": 0.6907,
+   "Mirai": 0.7291,
+   "Recon": 0.4786,
+   "Spoofing": 0.3579,
+   "Web-Based": 0.2684
+  },
+  "per_subattack_recall": {
+   "Benign / Benign": 0.5109,
+   "BruteForce / BruteForce": 0.4713,
+   "DDOS / DDOS ACK Fragmentation": 0.9468,
+   "DDOS / DDOS HTTP FLOOD": 0.1173,
+   "DDOS / DDOS ICMP FLOOD": 0.1204,
+   "DDOS / DDOS ICMP Fragmentation": 0.1925,
+   "DOS / DOS HTTP FLOOD": 0.7507,
+   "DOS / DOS SYN FLOOD": 0.9492,
+   "DOS / DOS UDP FLOOD": 0.2803,
+   "Mirai / Mirai": 0.7291,
+   "Recon / Recon": 0.4786,
+   "Spoofing / ARP Spoofing": 0.3761,
+   "Spoofing / DNS Spoofing": 0.3387,
+   "Web-Based / Sqlinjection": 0.1042,
+   "Web-Based / Uploading Attack": 0.56,
+   "Web-Based / XSS": 0.4713
+  }
+ },
+ "full_test_seen_model": {
+  "accuracy": 0.6555187082020493,
+  "balanced_accuracy": 0.536351955251656,
+  "macro_f1": 0.4268506256740967
+ },
+ "fit_seconds": 31.4
+}

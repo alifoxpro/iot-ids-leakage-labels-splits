@@ -1,0 +1,213 @@
+{
+ "description": "Per-flow background flags and split membership of the flagged sample (flagged_loader.py), keyed by source CSV and record number",
+ "dataset_root": "data/CIC IoT-DIAD 2024/",
+ "full_export": false,
+ "classes": [
+  "BruteForce",
+  "Web-Based"
+ ],
+ "n_flows": 14812,
+ "verified": true,
+ "problems": [],
+ "class_counts": {
+  "BruteForce": 3601,
+  "Web-Based": 11211
+ },
+ "note": "selftest: split columns are omitted (the partitions need all eight classes)",
+ "flag_counts": {
+  "BruteForce": {
+   "r1_external": 2315,
+   "r2_service": 1654,
+   "r3_benign_pair": 573
+  },
+  "Web-Based": {
+   "r1_external": 6977,
+   "r2_service": 4018,
+   "r3_benign_pair": 3879
+  }
+ },
+ "per_class": [
+  {
+   "class": "BruteForce",
+   "y": 1,
+   "n_flows": 3601,
+   "build_seconds": 0.1,
+   "verification": {
+    "n_rebuilt": 3601,
+    "n_cache": 3601,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "ok": true,
+    "note": "r3 approximate: Benign pairs taken from the de-duplicated Benign rows of the cache"
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 3601,
+    "files_checked": 1,
+    "features_exact": 3601,
+    "features_close": 3601,
+    "ts_equal": 3601,
+    "ips_equal": 3601,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "BruteForce/BruteForce.pcap_Flow.csv": {
+     "records": 3619,
+     "after_thinning": 3619,
+     "in_sample": 3601
+    }
+   }
+  },
+  {
+   "class": "Web-Based",
+   "y": 7,
+   "n_flows": 11211,
+   "build_seconds": 0.3,
+   "verification": {
+    "n_rebuilt": 11211,
+    "n_cache": 11211,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "ok": true,
+    "note": "r3 approximate: Benign pairs taken from the de-duplicated Benign rows of the cache"
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 11211,
+    "files_checked": 3,
+    "features_exact": 11211,
+    "features_close": 11211,
+    "ts_equal": 11211,
+    "ips_equal": 11211,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv": {
+     "records": 6603,
+     "after_thinning": 6603,
+     "in_sample": 6521
+    },
+    "Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv": {
+     "records": 1348,
+     "after_thinning": 1348,
+     "in_sample": 1328
+    },
+    "Web-Based/XSS/XSS.pcap_Flow.csv": {
+     "records": 3377,
+     "after_thinning": 3377,
+     "in_sample": 3362
+    }
+   }
+  }
+ ],
+ "columns": {
+  "csv": "source CSV, relative to data/CIC IoT-DIAD 2024/ (forward slashes)",
+  "row": "0-based record number in that CSV (row 0 = first line after the header; pandas.read_csv numbering)",
+  "idx": "row position in results_2026_03_03/split_pilot/flagged_data.parquet = global row position used by the experiments (selftest: position in the cache)",
+  "y": "class index: 0 Benign, 1 BruteForce, 2 DDOS, 3 DOS, 4 Mirai, 5 Recon, 6 Spoofing, 7 Web-Based",
+  "sub": "capture group (sub-folder, or the class when it has none)",
+  "r1_external": "R1: an endpoint outside 192.168.137.0/24 and 205.174.165.0/24 (attack classes only)",
+  "r2_service": "R2: service port 53, 67, 68, 123, 137, 138, 1900 or 5353 (DNS kept in DNS Spoofing)",
+  "r3_benign_pair": "R3: the unordered IP pair also occurs in the Benign captures",
+  "split_random": "stratified random 70/15/15 (seed 42) on all rows: train | val | test",
+  "split_temporal": "70/15/15 by time inside each of the 16 capture groups, on all rows",
+  "split_random_r1": "split_random drawn on the rows not flagged by R1; excluded = R1-flagged",
+  "split_temporal_r1": "split_temporal on the rows not flagged by R1; excluded = R1-flagged"
+ },
+ "outputs": {
+  "flow_flags.csv.gz": {
+   "bytes": 89054,
+   "sha256": "9a987a1ba024cf41dab638558708084987b88b2caac842abbc2cd809d164e1f6"
+  },
+  "flow_flags.parquet": {
+   "bytes": 147171,
+   "sha256": "44cdeaddb87bd2eb66d7ff5b7beef9df30434a5b66b8aa021f5112927ac0a017"
+  },
+  "files.csv": {
+   "bytes": 369
+  }
+ },
+ "files": [
+  {
+   "csv": "BruteForce/BruteForce.pcap_Flow.csv",
+   "class": "BruteForce",
+   "sub": "BruteForce",
+   "records": 3619,
+   "after_thinning": 3619,
+   "in_sample": 3601
+  },
+  {
+   "csv": "Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "Sqlinjection",
+   "records": 6603,
+   "after_thinning": 6603,
+   "in_sample": 6521
+  },
+  {
+   "csv": "Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "Uploading Attack",
+   "records": 1348,
+   "after_thinning": 1348,
+   "in_sample": 1328
+  },
+  {
+   "csv": "Web-Based/XSS/XSS.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "XSS",
+   "records": 3377,
+   "after_thinning": 3377,
+   "in_sample": 3362
+  }
+ ],
+ "versions": {
+  "python": "3.11.14",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "pyarrow": "23.0.1",
+  "git_commit": "61a5b3d2c252113f64844a48cb31753b5883e13e",
+  "git_experiments_uncommitted": [
+   "experiments/flagged_loader.py",
+   "experiments/pilot_temporal_split.py",
+   "experiments/cicids2017_replication.py",
+   "experiments/cleaning_train_only.py",
+   "experiments/day_disjoint_split.py",
+   "experiments/deep_protocol_study.py",
+   "experiments/deep_protocol_summary.py",
+   "experiments/drift_calibration.py",
+   "experiments/export_flags.py",
+   "experiments/leave_one_subattack_out.py",
+   "experiments/pcap_validation.py",
+   "experiments/published_deep_control.py",
+   "experiments/published_protocol_control.py",
+   "experiments/revision_analyses.py",
+   "experiments/revision_analyses2.py",
+   "experiments/rule_validation.py",
+   "experiments/rule_validation2.py",
+   "experiments/split_replication.py",
+   "experiments/symmetric_r1.py",
+   "experiments/train_only_bootstrap.py",
+   "experiments/tree_seeds_proba.py",
+   "experiments/tree_seeds_summary.py",
+   "experiments/variant_seeds.py"
+  ],
+  "sha256_scripts": {
+   "export_flags.py": "0eb4b2528dc8e429907f4baab69e3f15ab05c51a942553efda7fe82e76fd7743",
+   "flagged_loader.py": "ca29c4951cdc7826a16051ff1d9822fb51e993f03611173675af6c1be5f72ab2",
+   "pilot_temporal_split.py": "2f894e8616b19f9a3498b8aecf65a83fa5ddb7642ec28c77a4f205bda88f7bd9",
+   "relabel_background.py": "86525886951e645f573de402acd8c6a2ff73e687e4b71d2c0823b6e9a87698b1",
+   "deep_split_noise_study.py": "b14e5e2aae40e0a37a6eac62f3dee2ad8f4a1d61f689c36831b1c7009f8d16ec",
+   "temporal_split_by_subattack.py": "da1c7bcb524e3f22abddcee7f9701ac05a63fe63046527fbe056b18e68f8df8b"
+  }
+ },
+ "elapsed_seconds": 1.1
+}

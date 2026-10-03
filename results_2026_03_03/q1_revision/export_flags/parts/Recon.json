@@ -1,0 +1,39 @@
+{
+ "class": "Recon",
+ "y": 5,
+ "n_flows": 415687,
+ "build_seconds": 5.4,
+ "verification": {
+  "n_rebuilt": 415687,
+  "n_cache": 415687,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "cache_rows": [
+   3048719,
+   3464406
+  ],
+  "contiguous_at_expected_offset": true,
+  "ok": true
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 20,
+  "files_checked": 1,
+  "features_exact": 20,
+  "features_close": 20,
+  "ts_equal": 20,
+  "ips_equal": 20,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "Recon/VulnerabilityScan.pcap_Flow.csv": {
+   "records": 442158,
+   "after_thinning": 442158,
+   "in_sample": 415687
+  }
+ }
+}

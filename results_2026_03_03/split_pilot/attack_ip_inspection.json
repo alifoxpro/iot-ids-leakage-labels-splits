@@ -1,0 +1,855 @@
+{
+  "Benign": {
+    "flows": 398330,
+    "top1_pair_share": 0.0934,
+    "top5_pairs_share": 0.3178,
+    "top3_dst_share": 0.3915,
+    "benign_pair_overlap": null,
+    "top_pairs": [
+      {
+        "pair": "157.249.81.141 <-> 192.168.137.41",
+        "flows": 37197,
+        "share": 0.0934,
+        "main_proto_port": [
+          "TCP/443",
+          "TCP/80"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.41",
+        "flows": 36301,
+        "share": 0.0911,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/55760"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.47",
+        "flows": 20356,
+        "share": 0.0511,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/44069"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.133",
+        "flows": 19446,
+        "share": 0.0488,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/38313"
+        ]
+      },
+      {
+        "pair": "192.168.137.227 <-> 8.8.8.8",
+        "flows": 13289,
+        "share": 0.0334,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/36178"
+        ]
+      }
+    ]
+  },
+  "BruteForce": {
+    "flows": 3619,
+    "top1_pair_share": 0.1069,
+    "top5_pairs_share": 0.3258,
+    "top3_dst_share": 0.2979,
+    "benign_pair_overlap": 0.1605,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.173",
+        "flows": 387,
+        "share": 0.1069,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/58648"
+        ]
+      },
+      {
+        "pair": "18.182.200.45 <-> 192.168.137.173",
+        "flows": 203,
+        "share": 0.0561,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      },
+      {
+        "pair": "192.168.137.173 <-> 3.221.182.58",
+        "flows": 201,
+        "share": 0.0555,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      },
+      {
+        "pair": "192.168.137.163 <-> 47.254.83.84",
+        "flows": 200,
+        "share": 0.0553,
+        "main_proto_port": [
+          "UDP/7788",
+          "UDP/9001"
+        ]
+      },
+      {
+        "pair": "192.168.137.173 <-> 47.112.162.49",
+        "flows": 188,
+        "share": 0.0519,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      }
+    ]
+  },
+  "DDOS / DDOS ACK Fragmentation": {
+    "flows": 2450086,
+    "top1_pair_share": 0.0351,
+    "top5_pairs_share": 0.152,
+    "top3_dst_share": 0.1441,
+    "benign_pair_overlap": 0.0058,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.123 <-> 192.168.137.65",
+        "flows": 86095,
+        "share": 0.0351,
+        "main_proto_port": [
+          "TCP/53",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.17 <-> 192.168.137.194",
+        "flows": 78501,
+        "share": 0.032,
+        "main_proto_port": [
+          "TCP/6668",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.131 <-> 192.168.137.17",
+        "flows": 76313,
+        "share": 0.0311,
+        "main_proto_port": [
+          "TCP/554",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.17 <-> 192.168.137.71",
+        "flows": 68006,
+        "share": 0.0278,
+        "main_proto_port": [
+          "TCP/6668",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.20 <-> 192.168.137.204",
+        "flows": 63464,
+        "share": 0.0259,
+        "main_proto_port": [
+          "TCP/80",
+          "proto0/0"
+        ]
+      }
+    ]
+  },
+  "DDOS / DDOS HTTP FLOOD": {
+    "flows": 505720,
+    "top1_pair_share": 0.0754,
+    "top5_pairs_share": 0.3077,
+    "top3_dst_share": 0.5514,
+    "benign_pair_overlap": 0.0102,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.132 <-> 192.168.137.89",
+        "flows": 38154,
+        "share": 0.0754,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/51138"
+        ]
+      },
+      {
+        "pair": "192.168.137.132 <-> 192.168.137.225",
+        "flows": 31703,
+        "share": 0.0627,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/58974"
+        ]
+      },
+      {
+        "pair": "192.168.137.132 <-> 192.168.137.64",
+        "flows": 30095,
+        "share": 0.0595,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/59918"
+        ]
+      },
+      {
+        "pair": "192.168.137.132 <-> 192.168.137.178",
+        "flows": 29395,
+        "share": 0.0581,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/37486"
+        ]
+      },
+      {
+        "pair": "192.168.137.132 <-> 192.168.137.238",
+        "flows": 26247,
+        "share": 0.0519,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/52158"
+        ]
+      }
+    ]
+  },
+  "DDOS / DDOS ICMP FLOOD": {
+    "flows": 202251,
+    "top1_pair_share": 0.0731,
+    "top5_pairs_share": 0.1838,
+    "top3_dst_share": 0.3067,
+    "benign_pair_overlap": 0.1405,
+    "top_pairs": [
+      {
+        "pair": "157.249.81.141 <-> 192.168.137.94",
+        "flows": 14777,
+        "share": 0.0731,
+        "main_proto_port": [
+          "TCP/443",
+          "TCP/80"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.94",
+        "flows": 9338,
+        "share": 0.0462,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/44349"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.10",
+        "flows": 6898,
+        "share": 0.0341,
+        "main_proto_port": [
+          "UDP/53",
+          "TCP/53"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.45",
+        "flows": 3089,
+        "share": 0.0153,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/42974"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.24",
+        "flows": 3076,
+        "share": 0.0152,
+        "main_proto_port": [
+          "UDP/53",
+          "proto0/0"
+        ]
+      }
+    ]
+  },
+  "DDOS / DDOS ICMP Fragmentation": {
+    "flows": 320757,
+    "top1_pair_share": 0.1782,
+    "top5_pairs_share": 0.4032,
+    "top3_dst_share": 0.5664,
+    "benign_pair_overlap": 0.7383,
+    "top_pairs": [
+      {
+        "pair": "157.249.81.141 <-> 192.168.137.41",
+        "flows": 57146,
+        "share": 0.1782,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/443"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.41",
+        "flows": 49337,
+        "share": 0.1538,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/40647"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.187",
+        "flows": 9366,
+        "share": 0.0292,
+        "main_proto_port": [
+          "UDP/53",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.16",
+        "flows": 8070,
+        "share": 0.0252,
+        "main_proto_port": [
+          "UDP/53",
+          "TCP/53"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.249",
+        "flows": 5407,
+        "share": 0.0169,
+        "main_proto_port": [
+          "UDP/53",
+          "proto0/0"
+        ]
+      }
+    ]
+  },
+  "DOS / DOS HTTP FLOOD": {
+    "flows": 1642744,
+    "top1_pair_share": 0.412,
+    "top5_pairs_share": 0.8528,
+    "top3_dst_share": 0.7824,
+    "benign_pair_overlap": 0.0012,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.211 <-> 192.168.137.66",
+        "flows": 676791,
+        "share": 0.412,
+        "main_proto_port": [
+          "TCP/8080",
+          "TCP/46684"
+        ]
+      },
+      {
+        "pair": "192.168.137.254 <-> 192.168.137.66",
+        "flows": 490252,
+        "share": 0.2984,
+        "main_proto_port": [
+          "TCP/8009",
+          "TCP/34287"
+        ]
+      },
+      {
+        "pair": "192.168.137.235 <-> 192.168.137.66",
+        "flows": 87224,
+        "share": 0.0531,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/42300"
+        ]
+      },
+      {
+        "pair": "192.168.137.174 <-> 192.168.137.66",
+        "flows": 78372,
+        "share": 0.0477,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/37118"
+        ]
+      },
+      {
+        "pair": "192.168.137.131 <-> 192.168.137.66",
+        "flows": 68231,
+        "share": 0.0415,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/54622"
+        ]
+      }
+    ]
+  },
+  "DOS / DOS SYN FLOOD": {
+    "flows": 7999807,
+    "top1_pair_share": 0.1398,
+    "top5_pairs_share": 0.384,
+    "top3_dst_share": 0.2436,
+    "benign_pair_overlap": 0.0019,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.144 <-> 192.168.137.240",
+        "flows": 1118751,
+        "share": 0.1398,
+        "main_proto_port": [
+          "TCP/49153",
+          "TCP/2372"
+        ]
+      },
+      {
+        "pair": "192.168.137.254 <-> 192.168.137.66",
+        "flows": 641741,
+        "share": 0.0802,
+        "main_proto_port": [
+          "TCP/8009",
+          "TCP/51902"
+        ]
+      },
+      {
+        "pair": "192.168.137.165 <-> 192.168.137.66",
+        "flows": 442636,
+        "share": 0.0553,
+        "main_proto_port": [
+          "TCP/443",
+          "TCP/3107"
+        ]
+      },
+      {
+        "pair": "192.168.137.182 <-> 192.168.137.95",
+        "flows": 435098,
+        "share": 0.0544,
+        "main_proto_port": [
+          "TCP/6668",
+          "TCP/34978"
+        ]
+      },
+      {
+        "pair": "192.168.137.182 <-> 192.168.137.218",
+        "flows": 433822,
+        "share": 0.0542,
+        "main_proto_port": [
+          "TCP/554",
+          "TCP/9041"
+        ]
+      }
+    ]
+  },
+  "DOS / DOS UDP FLOOD": {
+    "flows": 5210536,
+    "top1_pair_share": 0.1195,
+    "top5_pairs_share": 0.4444,
+    "top3_dst_share": 0.2488,
+    "benign_pair_overlap": 0.0034,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.195 <-> 192.168.137.68",
+        "flows": 622755,
+        "share": 0.1195,
+        "main_proto_port": [
+          "UDP/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.195 <-> 192.168.137.247",
+        "flows": 458754,
+        "share": 0.088,
+        "main_proto_port": [
+          "UDP/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.195 <-> 192.168.137.199",
+        "flows": 437350,
+        "share": 0.0839,
+        "main_proto_port": [
+          "UDP/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.18 <-> 192.168.137.195",
+        "flows": 403567,
+        "share": 0.0775,
+        "main_proto_port": [
+          "UDP/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.160 <-> 192.168.137.66",
+        "flows": 393219,
+        "share": 0.0755,
+        "main_proto_port": [
+          "UDP/55442"
+        ]
+      }
+    ]
+  },
+  "Mirai": {
+    "flows": 174588,
+    "top1_pair_share": 0.1145,
+    "top5_pairs_share": 0.2904,
+    "top3_dst_share": 0.4791,
+    "benign_pair_overlap": 0.0375,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.120",
+        "flows": 19985,
+        "share": 0.1145,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/68"
+        ]
+      },
+      {
+        "pair": "192.168.137.120 <-> 8.8.8.8",
+        "flows": 11388,
+        "share": 0.0652,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/55100"
+        ]
+      },
+      {
+        "pair": "192.168.137.248 <-> 8.8.8.8",
+        "flows": 6995,
+        "share": 0.0401,
+        "main_proto_port": [
+          "UDP/53",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.248",
+        "flows": 6669,
+        "share": 0.0382,
+        "main_proto_port": [
+          "UDP/53",
+          "proto0/0"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.242",
+        "flows": 5655,
+        "share": 0.0324,
+        "main_proto_port": [
+          "UDP/53",
+          "TCP/53"
+        ]
+      }
+    ]
+  },
+  "Recon": {
+    "flows": 442158,
+    "top1_pair_share": 0.2524,
+    "top5_pairs_share": 0.4941,
+    "top3_dst_share": 0.4904,
+    "benign_pair_overlap": 0.5456,
+    "top_pairs": [
+      {
+        "pair": "157.249.81.141 <-> 192.168.137.41",
+        "flows": 111617,
+        "share": 0.2524,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/443"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.41",
+        "flows": 75865,
+        "share": 0.1716,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/33189"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.177",
+        "flows": 11760,
+        "share": 0.0266,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/58937"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.133",
+        "flows": 11235,
+        "share": 0.0254,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/42901"
+        ]
+      },
+      {
+        "pair": "192.168.137.208 <-> 8.8.8.8",
+        "flows": 8005,
+        "share": 0.0181,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/50449"
+        ]
+      }
+    ]
+  },
+  "Spoofing / ARP Spoofing": {
+    "flows": 82382,
+    "top1_pair_share": 0.247,
+    "top5_pairs_share": 0.3492,
+    "top3_dst_share": 0.3968,
+    "benign_pair_overlap": 0.313,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.23",
+        "flows": 20352,
+        "share": 0.247,
+        "main_proto_port": [
+          "UDP/53",
+          "TCP/53"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.173",
+        "flows": 2818,
+        "share": 0.0342,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/39249"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.197",
+        "flows": 2323,
+        "share": 0.0282,
+        "main_proto_port": [
+          "UDP/53",
+          "TCP/49152"
+        ]
+      },
+      {
+        "pair": "192.168.137.163 <-> 47.254.83.84",
+        "flows": 1726,
+        "share": 0.021,
+        "main_proto_port": [
+          "UDP/7788",
+          "UDP/8877"
+        ]
+      },
+      {
+        "pair": "192.168.137.173 <-> 47.112.162.49",
+        "flows": 1552,
+        "share": 0.0188,
+        "main_proto_port": [
+          "UDP/32100",
+          "UDP/19749"
+        ]
+      }
+    ]
+  },
+  "Spoofing / DNS Spoofing": {
+    "flows": 74856,
+    "top1_pair_share": 0.0879,
+    "top5_pairs_share": 0.2474,
+    "top3_dst_share": 0.3731,
+    "benign_pair_overlap": 0.0264,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.42 <-> 205.174.165.69",
+        "flows": 6582,
+        "share": 0.0879,
+        "main_proto_port": [
+          "UDP/63257",
+          "UDP/63638"
+        ]
+      },
+      {
+        "pair": "192.168.137.49 <-> 205.174.165.69",
+        "flows": 3846,
+        "share": 0.0514,
+        "main_proto_port": [
+          "UDP/63628",
+          "UDP/63633"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.199",
+        "flows": 3248,
+        "share": 0.0434,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/49819"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.121",
+        "flows": 2881,
+        "share": 0.0385,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/39600"
+        ]
+      },
+      {
+        "pair": "192.168.137.163 <-> 47.254.83.84",
+        "flows": 1962,
+        "share": 0.0262,
+        "main_proto_port": [
+          "UDP/7788",
+          "UDP/8877"
+        ]
+      }
+    ]
+  },
+  "Web-Based / Sqlinjection": {
+    "flows": 6603,
+    "top1_pair_share": 0.2728,
+    "top5_pairs_share": 0.5358,
+    "top3_dst_share": 0.5298,
+    "benign_pair_overlap": 0.5731,
+    "top_pairs": [
+      {
+        "pair": "157.249.81.141 <-> 192.168.137.41",
+        "flows": 1801,
+        "share": 0.2728,
+        "main_proto_port": [
+          "TCP/443",
+          "TCP/80"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.41",
+        "flows": 1167,
+        "share": 0.1767,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/51101"
+        ]
+      },
+      {
+        "pair": "192.168.137.178 <-> 192.168.137.86",
+        "flows": 215,
+        "share": 0.0326,
+        "main_proto_port": [
+          "TCP/80",
+          "TCP/42222"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.177",
+        "flows": 181,
+        "share": 0.0274,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/56594"
+        ]
+      },
+      {
+        "pair": "192.168.137.208 <-> 8.8.4.4",
+        "flows": 174,
+        "share": 0.0264,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/54347"
+        ]
+      }
+    ]
+  },
+  "Web-Based / Uploading Attack": {
+    "flows": 1348,
+    "top1_pair_share": 0.1751,
+    "top5_pairs_share": 0.3754,
+    "top3_dst_share": 0.3798,
+    "benign_pair_overlap": 0.0334,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.13",
+        "flows": 236,
+        "share": 0.1751,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/47378"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.91",
+        "flows": 124,
+        "share": 0.092,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/39387"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.206",
+        "flows": 70,
+        "share": 0.0519,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/44717"
+        ]
+      },
+      {
+        "pair": "192.168.137.163 <-> 47.254.83.84",
+        "flows": 38,
+        "share": 0.0282,
+        "main_proto_port": [
+          "UDP/7788",
+          "TCP/1340"
+        ]
+      },
+      {
+        "pair": "192.168.137.206 <-> 3.221.182.58",
+        "flows": 38,
+        "share": 0.0282,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      }
+    ]
+  },
+  "Web-Based / XSS": {
+    "flows": 3377,
+    "top1_pair_share": 0.1096,
+    "top5_pairs_share": 0.2724,
+    "top3_dst_share": 0.2961,
+    "benign_pair_overlap": 0.0346,
+    "top_pairs": [
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.91",
+        "flows": 370,
+        "share": 0.1096,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/36783"
+        ]
+      },
+      {
+        "pair": "192.168.137.1 <-> 192.168.137.206",
+        "flows": 203,
+        "share": 0.0601,
+        "main_proto_port": [
+          "UDP/53",
+          "UDP/47949"
+        ]
+      },
+      {
+        "pair": "192.168.137.163 <-> 47.254.83.84",
+        "flows": 128,
+        "share": 0.0379,
+        "main_proto_port": [
+          "UDP/7788",
+          "TCP/1340"
+        ]
+      },
+      {
+        "pair": "18.182.200.45 <-> 192.168.137.206",
+        "flows": 110,
+        "share": 0.0326,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      },
+      {
+        "pair": "192.168.137.206 <-> 3.221.182.58",
+        "flows": 109,
+        "share": 0.0323,
+        "main_proto_port": [
+          "UDP/32100"
+        ]
+      }
+    ]
+  }
+}

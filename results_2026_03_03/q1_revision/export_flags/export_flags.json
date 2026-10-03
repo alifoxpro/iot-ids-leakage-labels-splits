@@ -1,0 +1,2422 @@
+{
+ "description": "Per-flow background flags and split membership of the flagged sample (flagged_loader.py), keyed by source CSV and record number",
+ "dataset_root": "data/CIC IoT-DIAD 2024/",
+ "full_export": true,
+ "classes": [
+  "Benign",
+  "BruteForce",
+  "DDOS",
+  "DOS",
+  "Mirai",
+  "Recon",
+  "Spoofing",
+  "Web-Based"
+ ],
+ "n_flows": 3626502,
+ "verified": true,
+ "problems": [],
+ "class_counts": {
+  "Benign": 385394,
+  "BruteForce": 3601,
+  "DDOS": 1000000,
+  "DOS": 1500000,
+  "Mirai": 159724,
+  "Recon": 415687,
+  "Spoofing": 150885,
+  "Web-Based": 11211
+ },
+ "cross_checks": [
+  {
+   "check": "tree_protocol test rows (random, raw)",
+   "file": "tree_protocol/main/XGBoost_random_raw_s42.npz",
+   "ok": true,
+   "n": 543976,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "tree_protocol sizes (random, raw)",
+   "file": "tree_protocol/main/XGBoost_random_raw_s42.json",
+   "ok": true,
+   "n_train": 2538550,
+   "n_test": 543976,
+   "expected": {
+    "n_train": 2538550,
+    "n_test": 543976
+   }
+  },
+  {
+   "check": "deep_split sizes incl. validation (random, raw)",
+   "file": "deep_split/ResNet1D_random_raw_s42.json",
+   "ok": true,
+   "n_train": 2538550,
+   "n_val": 543976,
+   "n_test": 543976,
+   "expected": {
+    "n_train": 2538550,
+    "n_val": 543976,
+    "n_test": 543976
+   }
+  },
+  {
+   "check": "tree_seeds test rows (random, raw)",
+   "file": "q1_revision/tree_seeds/runs/XGBoost_random_raw_s42.npz",
+   "ok": true,
+   "n": 543976,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "tree_protocol test rows (random, r1)",
+   "file": "tree_protocol/main/XGBoost_random_r1_s42.npz",
+   "ok": true,
+   "n": 454909,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "tree_protocol sizes (random, r1)",
+   "file": "tree_protocol/main/XGBoost_random_r1_s42.json",
+   "ok": true,
+   "n_train": 2122905,
+   "n_test": 454909,
+   "expected": {
+    "n_train": 2122905,
+    "n_test": 454909
+   }
+  },
+  {
+   "check": "deep_split sizes incl. validation (random, r1)",
+   "file": "deep_split/ResNet1D_random_r1_s42.json",
+   "ok": true,
+   "n_train": 2122905,
+   "n_val": 454909,
+   "n_test": 454909,
+   "expected": {
+    "n_train": 2122905,
+    "n_val": 454909,
+    "n_test": 454909
+   }
+  },
+  {
+   "check": "tree_seeds test rows (random, r1)",
+   "file": "q1_revision/tree_seeds/runs/XGBoost_random_r1_s42.npz",
+   "ok": true,
+   "n": 454909,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "tree_protocol decomp test-r1 rows (random)",
+   "file": "tree_protocol/decomp/XGBoost_random_train-raw_test-r1.npz",
+   "ok": true,
+   "n": 454704,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "cleaning_train_only test_R1 rows (random)",
+   "file": "q1_revision/cleaning_train_only/XGBoost_random_train-none_test-R1.npz",
+   "ok": true,
+   "n": 454704,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "symmetric_r1 relabel test rows (random)",
+   "file": "q1_revision/symmetric_r1/XGBoost_random_relabel.npz",
+   "ok": true,
+   "n": 543976,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "tree_protocol test rows (temporal, raw)",
+   "file": "tree_protocol/main/XGBoost_temporal_raw_s42.npz",
+   "ok": true,
+   "n": 543986,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "tree_protocol sizes (temporal, raw)",
+   "file": "tree_protocol/main/XGBoost_temporal_raw_s42.json",
+   "ok": true,
+   "n_train": 2538543,
+   "n_test": 543986,
+   "expected": {
+    "n_train": 2538543,
+    "n_test": 543986
+   }
+  },
+  {
+   "check": "deep_split sizes incl. validation (temporal, raw)",
+   "file": "deep_split/ResNet1D_temporal_raw_s42.json",
+   "ok": true,
+   "n_train": 2538543,
+   "n_val": 543973,
+   "n_test": 543986,
+   "expected": {
+    "n_train": 2538543,
+    "n_val": 543973,
+    "n_test": 543986
+   }
+  },
+  {
+   "check": "tree_seeds test rows (temporal, raw)",
+   "file": "q1_revision/tree_seeds/runs/XGBoost_temporal_raw_s42.npz",
+   "ok": true,
+   "n": 543986,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "tree_protocol test rows (temporal, r1)",
+   "file": "tree_protocol/main/XGBoost_temporal_r1_s42.npz",
+   "ok": true,
+   "n": 454916,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "tree_protocol sizes (temporal, r1)",
+   "file": "tree_protocol/main/XGBoost_temporal_r1_s42.json",
+   "ok": true,
+   "n_train": 2122898,
+   "n_test": 454916,
+   "expected": {
+    "n_train": 2122898,
+    "n_test": 454916
+   }
+  },
+  {
+   "check": "deep_split sizes incl. validation (temporal, r1)",
+   "file": "deep_split/ResNet1D_temporal_r1_s42.json",
+   "ok": true,
+   "n_train": 2122898,
+   "n_val": 454909,
+   "n_test": 454916,
+   "expected": {
+    "n_train": 2122898,
+    "n_val": 454909,
+    "n_test": 454916
+   }
+  },
+  {
+   "check": "tree_seeds test rows (temporal, r1)",
+   "file": "q1_revision/tree_seeds/runs/XGBoost_temporal_r1_s42.npz",
+   "ok": true,
+   "n": 454916,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "tree_protocol decomp test-r1 rows (temporal)",
+   "file": "tree_protocol/decomp/XGBoost_temporal_train-raw_test-r1.npz",
+   "ok": true,
+   "n": 434675,
+   "y_equal": true,
+   "sub_equal": true
+  },
+  {
+   "check": "cleaning_train_only test_R1 rows (temporal)",
+   "file": "q1_revision/cleaning_train_only/XGBoost_temporal_train-none_test-R1.npz",
+   "ok": true,
+   "n": 434675,
+   "same_order": true,
+   "same_rows": true
+  },
+  {
+   "check": "symmetric_r1 relabel test rows (temporal)",
+   "file": "q1_revision/symmetric_r1/XGBoost_temporal_relabel.npz",
+   "ok": true,
+   "n": 543986,
+   "same_order": true,
+   "same_rows": true
+  }
+ ],
+ "split_counts": {
+  "split_random": {
+   "Benign": {
+    "train": 269776,
+    "val": 57809,
+    "test": 57809
+   },
+   "BruteForce": {
+    "train": 2521,
+    "val": 540,
+    "test": 540
+   },
+   "DDOS": {
+    "train": 700000,
+    "val": 150000,
+    "test": 150000
+   },
+   "DOS": {
+    "train": 1050000,
+    "val": 225000,
+    "test": 225000
+   },
+   "Mirai": {
+    "train": 111806,
+    "val": 23959,
+    "test": 23959
+   },
+   "Recon": {
+    "train": 290981,
+    "val": 62353,
+    "test": 62353
+   },
+   "Spoofing": {
+    "train": 105619,
+    "val": 22633,
+    "test": 22633
+   },
+   "Web-Based": {
+    "train": 7847,
+    "val": 1682,
+    "test": 1682
+   }
+  },
+  "split_temporal": {
+   "Benign": {
+    "train": 269775,
+    "val": 57809,
+    "test": 57810
+   },
+   "BruteForce": {
+    "train": 2520,
+    "val": 540,
+    "test": 541
+   },
+   "DDOS": {
+    "train": 699998,
+    "val": 150000,
+    "test": 150002
+   },
+   "DOS": {
+    "train": 1049999,
+    "val": 224999,
+    "test": 225002
+   },
+   "Mirai": {
+    "train": 111806,
+    "val": 23959,
+    "test": 23959
+   },
+   "Recon": {
+    "train": 290980,
+    "val": 62353,
+    "test": 62354
+   },
+   "Spoofing": {
+    "train": 105619,
+    "val": 22632,
+    "test": 22634
+   },
+   "Web-Based": {
+    "train": 7846,
+    "val": 1681,
+    "test": 1684
+   }
+  },
+  "split_random_r1": {
+   "Benign": {
+    "train": 269776,
+    "val": 57809,
+    "test": 57809,
+    "excluded": 0
+   },
+   "BruteForce": {
+    "train": 900,
+    "val": 193,
+    "test": 193,
+    "excluded": 2315
+   },
+   "DDOS": {
+    "train": 613398,
+    "val": 131443,
+    "test": 131443,
+    "excluded": 123716
+   },
+   "DOS": {
+    "train": 1027680,
+    "val": 220217,
+    "test": 220217,
+    "excluded": 31886
+   },
+   "Mirai": {
+    "train": 43584,
+    "val": 9340,
+    "test": 9340,
+    "excluded": 97460
+   },
+   "Recon": {
+    "train": 120226,
+    "val": 25763,
+    "test": 25763,
+    "excluded": 243935
+   },
+   "Spoofing": {
+    "train": 44377,
+    "val": 9509,
+    "test": 9509,
+    "excluded": 87490
+   },
+   "Web-Based": {
+    "train": 2964,
+    "val": 635,
+    "test": 635,
+    "excluded": 6977
+   }
+  },
+  "split_temporal_r1": {
+   "Benign": {
+    "train": 269775,
+    "val": 57809,
+    "test": 57810,
+    "excluded": 0
+   },
+   "BruteForce": {
+    "train": 900,
+    "val": 193,
+    "test": 193,
+    "excluded": 2315
+   },
+   "DDOS": {
+    "train": 613396,
+    "val": 131443,
+    "test": 131445,
+    "excluded": 123716
+   },
+   "DOS": {
+    "train": 1027679,
+    "val": 220217,
+    "test": 220218,
+    "excluded": 31886
+   },
+   "Mirai": {
+    "train": 43584,
+    "val": 9340,
+    "test": 9340,
+    "excluded": 97460
+   },
+   "Recon": {
+    "train": 120226,
+    "val": 25763,
+    "test": 25763,
+    "excluded": 243935
+   },
+   "Spoofing": {
+    "train": 44375,
+    "val": 9509,
+    "test": 9511,
+    "excluded": 87490
+   },
+   "Web-Based": {
+    "train": 2963,
+    "val": 635,
+    "test": 636,
+    "excluded": 6977
+   }
+  }
+ },
+ "flag_counts": {
+  "Benign": {
+   "r1_external": 0,
+   "r2_service": 0,
+   "r3_benign_pair": 0
+  },
+  "BruteForce": {
+   "r1_external": 2315,
+   "r2_service": 1654,
+   "r3_benign_pair": 573
+  },
+  "DDOS": {
+   "r1_external": 123716,
+   "r2_service": 141321,
+   "r3_benign_pair": 94542
+  },
+  "DOS": {
+   "r1_external": 31886,
+   "r2_service": 20719,
+   "r3_benign_pair": 3711
+  },
+  "Mirai": {
+   "r1_external": 97460,
+   "r2_service": 89133,
+   "r3_benign_pair": 6483
+  },
+  "Recon": {
+   "r1_external": 243935,
+   "r2_service": 133102,
+   "r3_benign_pair": 229851
+  },
+  "Spoofing": {
+   "r1_external": 87490,
+   "r2_service": 37079,
+   "r3_benign_pair": 23563
+  },
+  "Web-Based": {
+   "r1_external": 6977,
+   "r2_service": 4018,
+   "r3_benign_pair": 3879
+  }
+ },
+ "per_class": [
+  {
+   "class": "Benign",
+   "y": 0,
+   "n_flows": 385394,
+   "build_seconds": 4.8,
+   "verification": {
+    "n_rebuilt": 385394,
+    "n_cache": 385394,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     0,
+     385394
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 80,
+    "files_checked": 4,
+    "features_exact": 80,
+    "features_close": 80,
+    "ts_equal": 80,
+    "ips_equal": 80,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Benign/BenignTraffic.pcap_Flow.csv": {
+     "records": 183630,
+     "after_thinning": 183630,
+     "in_sample": 176752
+    },
+    "Benign/BenignTraffic1.pcap_Flow.csv": {
+     "records": 84526,
+     "after_thinning": 84526,
+     "in_sample": 82501
+    },
+    "Benign/BenignTraffic2.pcap_Flow.csv": {
+     "records": 91279,
+     "after_thinning": 91279,
+     "in_sample": 88500
+    },
+    "Benign/BenignTraffic3.pcap_Flow.csv": {
+     "records": 38895,
+     "after_thinning": 38895,
+     "in_sample": 37641
+    }
+   }
+  },
+  {
+   "class": "BruteForce",
+   "y": 1,
+   "n_flows": 3601,
+   "build_seconds": 0.1,
+   "verification": {
+    "n_rebuilt": 3601,
+    "n_cache": 3601,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     385394,
+     388995
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 20,
+    "files_checked": 1,
+    "features_exact": 20,
+    "features_close": 20,
+    "ts_equal": 20,
+    "ips_equal": 20,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "BruteForce/BruteForce.pcap_Flow.csv": {
+     "records": 3619,
+     "after_thinning": 3619,
+     "in_sample": 3601
+    }
+   }
+  },
+  {
+   "class": "DDOS",
+   "y": 2,
+   "n_flows": 1000000,
+   "build_seconds": 32.6,
+   "verification": {
+    "n_rebuilt": 1000000,
+    "n_cache": 1000000,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     388995,
+     1388995
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 1220,
+    "files_checked": 61,
+    "features_exact": 1220,
+    "features_close": 1220,
+    "ts_equal": 1220,
+    "ips_equal": 1220,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation.pcap_Flow.csv": {
+     "records": 323886,
+     "after_thinning": 145749,
+     "in_sample": 67933
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation1.pcap_Flow.csv": {
+     "records": 137172,
+     "after_thinning": 61727,
+     "in_sample": 45980
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation10.pcap_Flow.csv": {
+     "records": 166796,
+     "after_thinning": 75058,
+     "in_sample": 55052
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation11.pcap_Flow.csv": {
+     "records": 198622,
+     "after_thinning": 89380,
+     "in_sample": 65317
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation12.pcap_Flow.csv": {
+     "records": 37292,
+     "after_thinning": 16781,
+     "in_sample": 12389
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation2.pcap_Flow.csv": {
+     "records": 121409,
+     "after_thinning": 54634,
+     "in_sample": 40505
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation3.pcap_Flow.csv": {
+     "records": 174443,
+     "after_thinning": 78499,
+     "in_sample": 57904
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation4.pcap_Flow.csv": {
+     "records": 152216,
+     "after_thinning": 68497,
+     "in_sample": 50803
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation5.pcap_Flow.csv": {
+     "records": 209344,
+     "after_thinning": 94205,
+     "in_sample": 69317
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation6.pcap_Flow.csv": {
+     "records": 209790,
+     "after_thinning": 94406,
+     "in_sample": 69282
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation7.pcap_Flow.csv": {
+     "records": 127543,
+     "after_thinning": 57394,
+     "in_sample": 42317
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation8.pcap_Flow.csv": {
+     "records": 179379,
+     "after_thinning": 80721,
+     "in_sample": 58883
+    },
+    "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation9.pcap_Flow.csv": {
+     "records": 412194,
+     "after_thinning": 185487,
+     "in_sample": 41249
+    },
+    "DDOS/DDOS HTTP FLOOD/DDoS-HTTP_Flood-.pcap_Flow.csv": {
+     "records": 505720,
+     "after_thinning": 227574,
+     "in_sample": 149556
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood.pcap_Flow.csv": {
+     "records": 10415,
+     "after_thinning": 4687,
+     "in_sample": 3481
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood1.pcap_Flow.csv": {
+     "records": 8263,
+     "after_thinning": 3718,
+     "in_sample": 2785
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood10.pcap_Flow.csv": {
+     "records": 7558,
+     "after_thinning": 3401,
+     "in_sample": 2527
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood11.pcap_Flow.csv": {
+     "records": 8312,
+     "after_thinning": 3740,
+     "in_sample": 2774
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood12.pcap_Flow.csv": {
+     "records": 7204,
+     "after_thinning": 3242,
+     "in_sample": 2383
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood13.pcap_Flow.csv": {
+     "records": 5552,
+     "after_thinning": 2498,
+     "in_sample": 1830
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood14.pcap_Flow.csv": {
+     "records": 6572,
+     "after_thinning": 2957,
+     "in_sample": 2164
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood15.pcap_Flow.csv": {
+     "records": 10323,
+     "after_thinning": 4645,
+     "in_sample": 3437
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood16.pcap_Flow.csv": {
+     "records": 10270,
+     "after_thinning": 4622,
+     "in_sample": 3341
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood17.pcap_Flow.csv": {
+     "records": 4643,
+     "after_thinning": 2089,
+     "in_sample": 1555
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood18.pcap_Flow.csv": {
+     "records": 4062,
+     "after_thinning": 1828,
+     "in_sample": 1360
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood19.pcap_Flow.csv": {
+     "records": 8121,
+     "after_thinning": 3654,
+     "in_sample": 2722
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood2.pcap_Flow.csv": {
+     "records": 10958,
+     "after_thinning": 4931,
+     "in_sample": 3714
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood20.pcap_Flow.csv": {
+     "records": 7322,
+     "after_thinning": 3295,
+     "in_sample": 2449
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood21.pcap_Flow.csv": {
+     "records": 7293,
+     "after_thinning": 3282,
+     "in_sample": 2415
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood22.pcap_Flow.csv": {
+     "records": 5993,
+     "after_thinning": 2697,
+     "in_sample": 1956
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood23.pcap_Flow.csv": {
+     "records": 5193,
+     "after_thinning": 2337,
+     "in_sample": 1770
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood24.pcap_Flow.csv": {
+     "records": 6055,
+     "after_thinning": 2725,
+     "in_sample": 2025
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood25.pcap_Flow.csv": {
+     "records": 9442,
+     "after_thinning": 4249,
+     "in_sample": 3122
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood26.pcap_Flow.csv": {
+     "records": 5432,
+     "after_thinning": 2444,
+     "in_sample": 1821
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood3.pcap_Flow.csv": {
+     "records": 7845,
+     "after_thinning": 3530,
+     "in_sample": 2556
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood4.pcap_Flow.csv": {
+     "records": 16190,
+     "after_thinning": 7286,
+     "in_sample": 5382
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood5.pcap_Flow.csv": {
+     "records": 7840,
+     "after_thinning": 3528,
+     "in_sample": 2609
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood6.pcap_Flow.csv": {
+     "records": 4783,
+     "after_thinning": 2152,
+     "in_sample": 1588
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood7.pcap_Flow.csv": {
+     "records": 3244,
+     "after_thinning": 1460,
+     "in_sample": 1085
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood8.pcap_Flow.csv": {
+     "records": 6411,
+     "after_thinning": 2885,
+     "in_sample": 2176
+    },
+    "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood9.pcap_Flow.csv": {
+     "records": 6955,
+     "after_thinning": 3130,
+     "in_sample": 2369
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation.pcap_Flow.csv": {
+     "records": 14479,
+     "after_thinning": 6516,
+     "in_sample": 4797
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation1.pcap_Flow.csv": {
+     "records": 17480,
+     "after_thinning": 7866,
+     "in_sample": 5865
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation10.pcap_Flow.csv": {
+     "records": 14420,
+     "after_thinning": 6489,
+     "in_sample": 4780
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation11.pcap_Flow.csv": {
+     "records": 11479,
+     "after_thinning": 5166,
+     "in_sample": 3754
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation12.pcap_Flow.csv": {
+     "records": 18026,
+     "after_thinning": 8112,
+     "in_sample": 5940
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation13.pcap_Flow.csv": {
+     "records": 12980,
+     "after_thinning": 5841,
+     "in_sample": 4307
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation14.pcap_Flow.csv": {
+     "records": 13411,
+     "after_thinning": 6035,
+     "in_sample": 4396
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation15.pcap_Flow.csv": {
+     "records": 9890,
+     "after_thinning": 4450,
+     "in_sample": 3266
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation16.pcap_Flow.csv": {
+     "records": 16489,
+     "after_thinning": 7420,
+     "in_sample": 5422
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation17.pcap_Flow.csv": {
+     "records": 41632,
+     "after_thinning": 18734,
+     "in_sample": 13571
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation18.pcap_Flow.csv": {
+     "records": 9106,
+     "after_thinning": 4098,
+     "in_sample": 3043
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation19.pcap_Flow.csv": {
+     "records": 10963,
+     "after_thinning": 4933,
+     "in_sample": 3646
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation2.pcap_Flow.csv": {
+     "records": 13462,
+     "after_thinning": 6058,
+     "in_sample": 4511
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation3.pcap_Flow.csv": {
+     "records": 23405,
+     "after_thinning": 10532,
+     "in_sample": 7815
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation4.pcap_Flow.csv": {
+     "records": 25593,
+     "after_thinning": 11517,
+     "in_sample": 8484
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation5.pcap_Flow.csv": {
+     "records": 10617,
+     "after_thinning": 4778,
+     "in_sample": 3498
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation6.pcap_Flow.csv": {
+     "records": 10138,
+     "after_thinning": 4562,
+     "in_sample": 3394
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation7.pcap_Flow.csv": {
+     "records": 14235,
+     "after_thinning": 6406,
+     "in_sample": 4721
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation8.pcap_Flow.csv": {
+     "records": 12572,
+     "after_thinning": 5657,
+     "in_sample": 4116
+    },
+    "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation9.pcap_Flow.csv": {
+     "records": 20380,
+     "after_thinning": 9171,
+     "in_sample": 6791
+    }
+   }
+  },
+  {
+   "class": "DOS",
+   "y": 3,
+   "n_flows": 1500000,
+   "build_seconds": 119.6,
+   "verification": {
+    "n_rebuilt": 1500000,
+    "n_cache": 1500000,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     1388995,
+     2888995
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 440,
+    "files_checked": 22,
+    "features_exact": 440,
+    "features_close": 440,
+    "ts_equal": 440,
+    "ips_equal": 440,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood.pcap_Flow.csv": {
+     "records": 932513,
+     "after_thinning": 139877,
+     "in_sample": 67408
+    },
+    "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood1.pcap_Flow.csv": {
+     "records": 710231,
+     "after_thinning": 106535,
+     "in_sample": 56068
+    },
+    "DOS/DOS SYN FLOOD/DoS-SYN_Flood1.pcap_Flow.csv": {
+     "records": 1373103,
+     "after_thinning": 205965,
+     "in_sample": 143126
+    },
+    "DOS/DOS SYN FLOOD/DoS-SYN_Flood3.pcap_Flow.csv": {
+     "records": 1923524,
+     "after_thinning": 288529,
+     "in_sample": 200691
+    },
+    "DOS/DOS SYN FLOOD/DoS-SYN_Flood5.pcap_Flow.csv": {
+     "records": 1795088,
+     "after_thinning": 269263,
+     "in_sample": 186778
+    },
+    "DOS/DOS SYN FLOOD/DoS-SYN_Flood6.pcap_Flow.csv": {
+     "records": 1503778,
+     "after_thinning": 225567,
+     "in_sample": 156960
+    },
+    "DOS/DOS SYN FLOOD/DoS-SYN_Flood7.pcap_Flow.csv": {
+     "records": 1404314,
+     "after_thinning": 210647,
+     "in_sample": 145941
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood.pcap_Flow.csv": {
+     "records": 934001,
+     "after_thinning": 140100,
+     "in_sample": 98638
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood10.pcap_Flow.csv": {
+     "records": 61907,
+     "after_thinning": 9286,
+     "in_sample": 6498
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood11.pcap_Flow.csv": {
+     "records": 57086,
+     "after_thinning": 8563,
+     "in_sample": 5694
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood12.pcap_Flow.csv": {
+     "records": 50017,
+     "after_thinning": 7503,
+     "in_sample": 5210
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood13.pcap_Flow.csv": {
+     "records": 59885,
+     "after_thinning": 8983,
+     "in_sample": 6309
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood14.pcap_Flow.csv": {
+     "records": 64565,
+     "after_thinning": 9685,
+     "in_sample": 6598
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood15.pcap_Flow.csv": {
+     "records": 66453,
+     "after_thinning": 9968,
+     "in_sample": 6922
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood16.pcap_Flow.csv": {
+     "records": 35173,
+     "after_thinning": 5276,
+     "in_sample": 3659
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood3.pcap_Flow.csv": {
+     "records": 589185,
+     "after_thinning": 88378,
+     "in_sample": 60710
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood4.pcap_Flow.csv": {
+     "records": 901794,
+     "after_thinning": 135269,
+     "in_sample": 94514
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood5.pcap_Flow.csv": {
+     "records": 842995,
+     "after_thinning": 126449,
+     "in_sample": 87790
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood6.pcap_Flow.csv": {
+     "records": 862694,
+     "after_thinning": 129404,
+     "in_sample": 88949
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood7.pcap_Flow.csv": {
+     "records": 539459,
+     "after_thinning": 80919,
+     "in_sample": 56271
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood8.pcap_Flow.csv": {
+     "records": 74524,
+     "after_thinning": 11179,
+     "in_sample": 7796
+    },
+    "DOS/DOS UDP FLOOD/DoS-UDP_Flood9.pcap_Flow.csv": {
+     "records": 70798,
+     "after_thinning": 10620,
+     "in_sample": 7470
+    }
+   }
+  },
+  {
+   "class": "Mirai",
+   "y": 4,
+   "n_flows": 159724,
+   "build_seconds": 2.2,
+   "verification": {
+    "n_rebuilt": 159724,
+    "n_cache": 159724,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     2888995,
+     3048719
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 580,
+    "files_checked": 29,
+    "features_exact": 580,
+    "features_close": 580,
+    "ts_equal": 580,
+    "ips_equal": 580,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Mirai/Mirai-greeth_flood.pcap_Flow.csv": {
+     "records": 5172,
+     "after_thinning": 5172,
+     "in_sample": 4965
+    },
+    "Mirai/Mirai-greeth_flood1.pcap_Flow.csv": {
+     "records": 10856,
+     "after_thinning": 10856,
+     "in_sample": 7588
+    },
+    "Mirai/Mirai-greeth_flood10.pcap_Flow.csv": {
+     "records": 8187,
+     "after_thinning": 8187,
+     "in_sample": 7979
+    },
+    "Mirai/Mirai-greeth_flood11.pcap_Flow.csv": {
+     "records": 8377,
+     "after_thinning": 8377,
+     "in_sample": 8175
+    },
+    "Mirai/Mirai-greeth_flood12.pcap_Flow.csv": {
+     "records": 6423,
+     "after_thinning": 6423,
+     "in_sample": 6290
+    },
+    "Mirai/Mirai-greeth_flood13.pcap_Flow.csv": {
+     "records": 10306,
+     "after_thinning": 10306,
+     "in_sample": 10015
+    },
+    "Mirai/Mirai-greeth_flood14.pcap_Flow.csv": {
+     "records": 2977,
+     "after_thinning": 2977,
+     "in_sample": 2947
+    },
+    "Mirai/Mirai-greeth_flood15.pcap_Flow.csv": {
+     "records": 3247,
+     "after_thinning": 3247,
+     "in_sample": 3187
+    },
+    "Mirai/Mirai-greeth_flood16.pcap_Flow.csv": {
+     "records": 4438,
+     "after_thinning": 4438,
+     "in_sample": 4380
+    },
+    "Mirai/Mirai-greeth_flood17.pcap_Flow.csv": {
+     "records": 2790,
+     "after_thinning": 2790,
+     "in_sample": 2757
+    },
+    "Mirai/Mirai-greeth_flood18.pcap_Flow.csv": {
+     "records": 3265,
+     "after_thinning": 3265,
+     "in_sample": 3230
+    },
+    "Mirai/Mirai-greeth_flood19.pcap_Flow.csv": {
+     "records": 3481,
+     "after_thinning": 3481,
+     "in_sample": 3407
+    },
+    "Mirai/Mirai-greeth_flood2.pcap_Flow.csv": {
+     "records": 4071,
+     "after_thinning": 4071,
+     "in_sample": 3892
+    },
+    "Mirai/Mirai-greeth_flood20.pcap_Flow.csv": {
+     "records": 4100,
+     "after_thinning": 4100,
+     "in_sample": 4013
+    },
+    "Mirai/Mirai-greeth_flood21.pcap_Flow.csv": {
+     "records": 4507,
+     "after_thinning": 4507,
+     "in_sample": 4429
+    },
+    "Mirai/Mirai-greeth_flood22.pcap_Flow.csv": {
+     "records": 6609,
+     "after_thinning": 6609,
+     "in_sample": 6420
+    },
+    "Mirai/Mirai-greeth_flood23.pcap_Flow.csv": {
+     "records": 4572,
+     "after_thinning": 4572,
+     "in_sample": 4505
+    },
+    "Mirai/Mirai-greeth_flood24.pcap_Flow.csv": {
+     "records": 2546,
+     "after_thinning": 2546,
+     "in_sample": 2525
+    },
+    "Mirai/Mirai-greeth_flood25.pcap_Flow.csv": {
+     "records": 2500,
+     "after_thinning": 2500,
+     "in_sample": 2487
+    },
+    "Mirai/Mirai-greeth_flood26.pcap_Flow.csv": {
+     "records": 5482,
+     "after_thinning": 5482,
+     "in_sample": 5388
+    },
+    "Mirai/Mirai-greeth_flood27.pcap_Flow.csv": {
+     "records": 7602,
+     "after_thinning": 7602,
+     "in_sample": 7418
+    },
+    "Mirai/Mirai-greeth_flood28.pcap_Flow.csv": {
+     "records": 8451,
+     "after_thinning": 8451,
+     "in_sample": 8290
+    },
+    "Mirai/Mirai-greeth_flood3.pcap_Flow.csv": {
+     "records": 4647,
+     "after_thinning": 4647,
+     "in_sample": 3299
+    },
+    "Mirai/Mirai-greeth_flood4.pcap_Flow.csv": {
+     "records": 9012,
+     "after_thinning": 9012,
+     "in_sample": 5806
+    },
+    "Mirai/Mirai-greeth_flood5.pcap_Flow.csv": {
+     "records": 3873,
+     "after_thinning": 3873,
+     "in_sample": 3836
+    },
+    "Mirai/Mirai-greeth_flood6.pcap_Flow.csv": {
+     "records": 11786,
+     "after_thinning": 11786,
+     "in_sample": 9304
+    },
+    "Mirai/Mirai-greeth_flood7.pcap_Flow.csv": {
+     "records": 7789,
+     "after_thinning": 7789,
+     "in_sample": 7090
+    },
+    "Mirai/Mirai-greeth_flood8.pcap_Flow.csv": {
+     "records": 5443,
+     "after_thinning": 5443,
+     "in_sample": 4484
+    },
+    "Mirai/Mirai-greeth_flood9.pcap_Flow.csv": {
+     "records": 12079,
+     "after_thinning": 12079,
+     "in_sample": 11618
+    }
+   }
+  },
+  {
+   "class": "Recon",
+   "y": 5,
+   "n_flows": 415687,
+   "build_seconds": 5.4,
+   "verification": {
+    "n_rebuilt": 415687,
+    "n_cache": 415687,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     3048719,
+     3464406
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 20,
+    "files_checked": 1,
+    "features_exact": 20,
+    "features_close": 20,
+    "ts_equal": 20,
+    "ips_equal": 20,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Recon/VulnerabilityScan.pcap_Flow.csv": {
+     "records": 442158,
+     "after_thinning": 442158,
+     "in_sample": 415687
+    }
+   }
+  },
+  {
+   "class": "Spoofing",
+   "y": 6,
+   "n_flows": 150885,
+   "build_seconds": 1.8,
+   "verification": {
+    "n_rebuilt": 150885,
+    "n_cache": 150885,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     3464406,
+     3615291
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 60,
+    "files_checked": 3,
+    "features_exact": 60,
+    "features_close": 60,
+    "ts_equal": 60,
+    "ips_equal": 60,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Spoofing/ARP Spoofing/MITM-ArpSpoofing.pcap_Flow.csv": {
+     "records": 73033,
+     "after_thinning": 73033,
+     "in_sample": 68385
+    },
+    "Spoofing/ARP Spoofing/MITM-ArpSpoofing1.pcap_Flow.csv": {
+     "records": 9349,
+     "after_thinning": 9349,
+     "in_sample": 8871
+    },
+    "Spoofing/DNS Spoofing/DNS_Spoofing.pcap_Flow.csv": {
+     "records": 74856,
+     "after_thinning": 74856,
+     "in_sample": 73629
+    }
+   }
+  },
+  {
+   "class": "Web-Based",
+   "y": 7,
+   "n_flows": 11211,
+   "build_seconds": 0.2,
+   "verification": {
+    "n_rebuilt": 11211,
+    "n_cache": 11211,
+    "columns_checked": 91,
+    "columns_identical": 91,
+    "mismatch": {},
+    "stats_rounding": {},
+    "cache_rows": [
+     3615291,
+     3626502
+    ],
+    "contiguous_at_expected_offset": true,
+    "ok": true
+   },
+   "verified": true,
+   "spot_check": {
+    "rows_checked": 60,
+    "files_checked": 3,
+    "features_exact": 60,
+    "features_close": 60,
+    "ts_equal": 60,
+    "ips_equal": 60,
+    "max_rel_diff": 0.0,
+    "failures": [],
+    "ok": true
+   },
+   "files": {
+    "Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv": {
+     "records": 6603,
+     "after_thinning": 6603,
+     "in_sample": 6521
+    },
+    "Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv": {
+     "records": 1348,
+     "after_thinning": 1348,
+     "in_sample": 1328
+    },
+    "Web-Based/XSS/XSS.pcap_Flow.csv": {
+     "records": 3377,
+     "after_thinning": 3377,
+     "in_sample": 3362
+    }
+   }
+  }
+ ],
+ "columns": {
+  "csv": "source CSV, relative to data/CIC IoT-DIAD 2024/ (forward slashes)",
+  "row": "0-based record number in that CSV (row 0 = first line after the header; pandas.read_csv numbering)",
+  "idx": "row position in results_2026_03_03/split_pilot/flagged_data.parquet = global row position used by the experiments",
+  "y": "class index: 0 Benign, 1 BruteForce, 2 DDOS, 3 DOS, 4 Mirai, 5 Recon, 6 Spoofing, 7 Web-Based",
+  "sub": "capture group (sub-folder, or the class when it has none)",
+  "r1_external": "R1: an endpoint outside 192.168.137.0/24 and 205.174.165.0/24 (attack classes only)",
+  "r2_service": "R2: service port 53, 67, 68, 123, 137, 138, 1900 or 5353 (DNS kept in DNS Spoofing)",
+  "r3_benign_pair": "R3: the unordered IP pair also occurs in the Benign captures",
+  "split_random": "stratified random 70/15/15 (seed 42) on all rows: train | val | test",
+  "split_temporal": "70/15/15 by time inside each of the 16 capture groups, on all rows",
+  "split_random_r1": "split_random drawn on the rows not flagged by R1; excluded = R1-flagged",
+  "split_temporal_r1": "split_temporal on the rows not flagged by R1; excluded = R1-flagged"
+ },
+ "outputs": {
+  "flow_flags.csv.gz": {
+   "bytes": 25107937,
+   "sha256": "74e7e78ee49d6af6332ef671e30249227046febffa74cdb5ed6f17d1bb873576"
+  },
+  "flow_flags.parquet": {
+   "bytes": 34588871,
+   "sha256": "cdf4795f9cf914ec9a97fe8319f417135f6a3e28f24c173d38476f7fd7462729"
+  },
+  "files.csv": {
+   "bytes": 11047
+  }
+ },
+ "files": [
+  {
+   "csv": "Benign/BenignTraffic.pcap_Flow.csv",
+   "class": "Benign",
+   "sub": "Benign",
+   "records": 183630,
+   "after_thinning": 183630,
+   "in_sample": 176752
+  },
+  {
+   "csv": "Benign/BenignTraffic1.pcap_Flow.csv",
+   "class": "Benign",
+   "sub": "Benign",
+   "records": 84526,
+   "after_thinning": 84526,
+   "in_sample": 82501
+  },
+  {
+   "csv": "Benign/BenignTraffic2.pcap_Flow.csv",
+   "class": "Benign",
+   "sub": "Benign",
+   "records": 91279,
+   "after_thinning": 91279,
+   "in_sample": 88500
+  },
+  {
+   "csv": "Benign/BenignTraffic3.pcap_Flow.csv",
+   "class": "Benign",
+   "sub": "Benign",
+   "records": 38895,
+   "after_thinning": 38895,
+   "in_sample": 37641
+  },
+  {
+   "csv": "BruteForce/BruteForce.pcap_Flow.csv",
+   "class": "BruteForce",
+   "sub": "BruteForce",
+   "records": 3619,
+   "after_thinning": 3619,
+   "in_sample": 3601
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 323886,
+   "after_thinning": 145749,
+   "in_sample": 67933
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation1.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 137172,
+   "after_thinning": 61727,
+   "in_sample": 45980
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation10.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 166796,
+   "after_thinning": 75058,
+   "in_sample": 55052
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation11.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 198622,
+   "after_thinning": 89380,
+   "in_sample": 65317
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation12.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 37292,
+   "after_thinning": 16781,
+   "in_sample": 12389
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation2.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 121409,
+   "after_thinning": 54634,
+   "in_sample": 40505
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation3.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 174443,
+   "after_thinning": 78499,
+   "in_sample": 57904
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation4.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 152216,
+   "after_thinning": 68497,
+   "in_sample": 50803
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation5.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 209344,
+   "after_thinning": 94205,
+   "in_sample": 69317
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation6.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 209790,
+   "after_thinning": 94406,
+   "in_sample": 69282
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation7.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 127543,
+   "after_thinning": 57394,
+   "in_sample": 42317
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation8.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 179379,
+   "after_thinning": 80721,
+   "in_sample": 58883
+  },
+  {
+   "csv": "DDOS/DDOS ACK Fragmentation/DDoS-ACK_Fragmentation9.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ACK Fragmentation",
+   "records": 412194,
+   "after_thinning": 185487,
+   "in_sample": 41249
+  },
+  {
+   "csv": "DDOS/DDOS HTTP FLOOD/DDoS-HTTP_Flood-.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS HTTP FLOOD",
+   "records": 505720,
+   "after_thinning": 227574,
+   "in_sample": 149556
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 10415,
+   "after_thinning": 4687,
+   "in_sample": 3481
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood1.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 8263,
+   "after_thinning": 3718,
+   "in_sample": 2785
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood10.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7558,
+   "after_thinning": 3401,
+   "in_sample": 2527
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood11.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 8312,
+   "after_thinning": 3740,
+   "in_sample": 2774
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood12.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7204,
+   "after_thinning": 3242,
+   "in_sample": 2383
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood13.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 5552,
+   "after_thinning": 2498,
+   "in_sample": 1830
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood14.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 6572,
+   "after_thinning": 2957,
+   "in_sample": 2164
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood15.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 10323,
+   "after_thinning": 4645,
+   "in_sample": 3437
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood16.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 10270,
+   "after_thinning": 4622,
+   "in_sample": 3341
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood17.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 4643,
+   "after_thinning": 2089,
+   "in_sample": 1555
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood18.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 4062,
+   "after_thinning": 1828,
+   "in_sample": 1360
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood19.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 8121,
+   "after_thinning": 3654,
+   "in_sample": 2722
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood2.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 10958,
+   "after_thinning": 4931,
+   "in_sample": 3714
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood20.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7322,
+   "after_thinning": 3295,
+   "in_sample": 2449
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood21.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7293,
+   "after_thinning": 3282,
+   "in_sample": 2415
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood22.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 5993,
+   "after_thinning": 2697,
+   "in_sample": 1956
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood23.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 5193,
+   "after_thinning": 2337,
+   "in_sample": 1770
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood24.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 6055,
+   "after_thinning": 2725,
+   "in_sample": 2025
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood25.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 9442,
+   "after_thinning": 4249,
+   "in_sample": 3122
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood26.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 5432,
+   "after_thinning": 2444,
+   "in_sample": 1821
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood3.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7845,
+   "after_thinning": 3530,
+   "in_sample": 2556
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood4.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 16190,
+   "after_thinning": 7286,
+   "in_sample": 5382
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood5.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 7840,
+   "after_thinning": 3528,
+   "in_sample": 2609
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood6.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 4783,
+   "after_thinning": 2152,
+   "in_sample": 1588
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood7.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 3244,
+   "after_thinning": 1460,
+   "in_sample": 1085
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood8.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 6411,
+   "after_thinning": 2885,
+   "in_sample": 2176
+  },
+  {
+   "csv": "DDOS/DDOS ICMP FLOOD/DDoS-ICMP_Flood9.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP FLOOD",
+   "records": 6955,
+   "after_thinning": 3130,
+   "in_sample": 2369
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 14479,
+   "after_thinning": 6516,
+   "in_sample": 4797
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation1.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 17480,
+   "after_thinning": 7866,
+   "in_sample": 5865
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation10.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 14420,
+   "after_thinning": 6489,
+   "in_sample": 4780
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation11.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 11479,
+   "after_thinning": 5166,
+   "in_sample": 3754
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation12.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 18026,
+   "after_thinning": 8112,
+   "in_sample": 5940
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation13.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 12980,
+   "after_thinning": 5841,
+   "in_sample": 4307
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation14.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 13411,
+   "after_thinning": 6035,
+   "in_sample": 4396
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation15.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 9890,
+   "after_thinning": 4450,
+   "in_sample": 3266
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation16.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 16489,
+   "after_thinning": 7420,
+   "in_sample": 5422
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation17.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 41632,
+   "after_thinning": 18734,
+   "in_sample": 13571
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation18.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 9106,
+   "after_thinning": 4098,
+   "in_sample": 3043
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation19.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 10963,
+   "after_thinning": 4933,
+   "in_sample": 3646
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation2.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 13462,
+   "after_thinning": 6058,
+   "in_sample": 4511
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation3.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 23405,
+   "after_thinning": 10532,
+   "in_sample": 7815
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation4.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 25593,
+   "after_thinning": 11517,
+   "in_sample": 8484
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation5.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 10617,
+   "after_thinning": 4778,
+   "in_sample": 3498
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation6.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 10138,
+   "after_thinning": 4562,
+   "in_sample": 3394
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation7.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 14235,
+   "after_thinning": 6406,
+   "in_sample": 4721
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation8.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 12572,
+   "after_thinning": 5657,
+   "in_sample": 4116
+  },
+  {
+   "csv": "DDOS/DDOS ICMP Fragmentation/DDoS-ICMP_Fragmentation9.pcap_Flow.csv",
+   "class": "DDOS",
+   "sub": "DDOS ICMP Fragmentation",
+   "records": 20380,
+   "after_thinning": 9171,
+   "in_sample": 6791
+  },
+  {
+   "csv": "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS HTTP FLOOD",
+   "records": 932513,
+   "after_thinning": 139877,
+   "in_sample": 67408
+  },
+  {
+   "csv": "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood1.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS HTTP FLOOD",
+   "records": 710231,
+   "after_thinning": 106535,
+   "in_sample": 56068
+  },
+  {
+   "csv": "DOS/DOS SYN FLOOD/DoS-SYN_Flood1.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS SYN FLOOD",
+   "records": 1373103,
+   "after_thinning": 205965,
+   "in_sample": 143126
+  },
+  {
+   "csv": "DOS/DOS SYN FLOOD/DoS-SYN_Flood3.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS SYN FLOOD",
+   "records": 1923524,
+   "after_thinning": 288529,
+   "in_sample": 200691
+  },
+  {
+   "csv": "DOS/DOS SYN FLOOD/DoS-SYN_Flood5.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS SYN FLOOD",
+   "records": 1795088,
+   "after_thinning": 269263,
+   "in_sample": 186778
+  },
+  {
+   "csv": "DOS/DOS SYN FLOOD/DoS-SYN_Flood6.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS SYN FLOOD",
+   "records": 1503778,
+   "after_thinning": 225567,
+   "in_sample": 156960
+  },
+  {
+   "csv": "DOS/DOS SYN FLOOD/DoS-SYN_Flood7.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS SYN FLOOD",
+   "records": 1404314,
+   "after_thinning": 210647,
+   "in_sample": 145941
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 934001,
+   "after_thinning": 140100,
+   "in_sample": 98638
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood10.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 61907,
+   "after_thinning": 9286,
+   "in_sample": 6498
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood11.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 57086,
+   "after_thinning": 8563,
+   "in_sample": 5694
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood12.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 50017,
+   "after_thinning": 7503,
+   "in_sample": 5210
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood13.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 59885,
+   "after_thinning": 8983,
+   "in_sample": 6309
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood14.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 64565,
+   "after_thinning": 9685,
+   "in_sample": 6598
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood15.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 66453,
+   "after_thinning": 9968,
+   "in_sample": 6922
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood16.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 35173,
+   "after_thinning": 5276,
+   "in_sample": 3659
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood3.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 589185,
+   "after_thinning": 88378,
+   "in_sample": 60710
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood4.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 901794,
+   "after_thinning": 135269,
+   "in_sample": 94514
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood5.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 842995,
+   "after_thinning": 126449,
+   "in_sample": 87790
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood6.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 862694,
+   "after_thinning": 129404,
+   "in_sample": 88949
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood7.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 539459,
+   "after_thinning": 80919,
+   "in_sample": 56271
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood8.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 74524,
+   "after_thinning": 11179,
+   "in_sample": 7796
+  },
+  {
+   "csv": "DOS/DOS UDP FLOOD/DoS-UDP_Flood9.pcap_Flow.csv",
+   "class": "DOS",
+   "sub": "DOS UDP FLOOD",
+   "records": 70798,
+   "after_thinning": 10620,
+   "in_sample": 7470
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 5172,
+   "after_thinning": 5172,
+   "in_sample": 4965
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood1.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 10856,
+   "after_thinning": 10856,
+   "in_sample": 7588
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood10.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 8187,
+   "after_thinning": 8187,
+   "in_sample": 7979
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood11.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 8377,
+   "after_thinning": 8377,
+   "in_sample": 8175
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood12.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 6423,
+   "after_thinning": 6423,
+   "in_sample": 6290
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood13.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 10306,
+   "after_thinning": 10306,
+   "in_sample": 10015
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood14.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 2977,
+   "after_thinning": 2977,
+   "in_sample": 2947
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood15.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 3247,
+   "after_thinning": 3247,
+   "in_sample": 3187
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood16.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4438,
+   "after_thinning": 4438,
+   "in_sample": 4380
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood17.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 2790,
+   "after_thinning": 2790,
+   "in_sample": 2757
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood18.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 3265,
+   "after_thinning": 3265,
+   "in_sample": 3230
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood19.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 3481,
+   "after_thinning": 3481,
+   "in_sample": 3407
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood2.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4071,
+   "after_thinning": 4071,
+   "in_sample": 3892
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood20.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4100,
+   "after_thinning": 4100,
+   "in_sample": 4013
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood21.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4507,
+   "after_thinning": 4507,
+   "in_sample": 4429
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood22.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 6609,
+   "after_thinning": 6609,
+   "in_sample": 6420
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood23.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4572,
+   "after_thinning": 4572,
+   "in_sample": 4505
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood24.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 2546,
+   "after_thinning": 2546,
+   "in_sample": 2525
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood25.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 2500,
+   "after_thinning": 2500,
+   "in_sample": 2487
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood26.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 5482,
+   "after_thinning": 5482,
+   "in_sample": 5388
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood27.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 7602,
+   "after_thinning": 7602,
+   "in_sample": 7418
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood28.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 8451,
+   "after_thinning": 8451,
+   "in_sample": 8290
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood3.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 4647,
+   "after_thinning": 4647,
+   "in_sample": 3299
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood4.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 9012,
+   "after_thinning": 9012,
+   "in_sample": 5806
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood5.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 3873,
+   "after_thinning": 3873,
+   "in_sample": 3836
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood6.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 11786,
+   "after_thinning": 11786,
+   "in_sample": 9304
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood7.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 7789,
+   "after_thinning": 7789,
+   "in_sample": 7090
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood8.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 5443,
+   "after_thinning": 5443,
+   "in_sample": 4484
+  },
+  {
+   "csv": "Mirai/Mirai-greeth_flood9.pcap_Flow.csv",
+   "class": "Mirai",
+   "sub": "Mirai",
+   "records": 12079,
+   "after_thinning": 12079,
+   "in_sample": 11618
+  },
+  {
+   "csv": "Recon/VulnerabilityScan.pcap_Flow.csv",
+   "class": "Recon",
+   "sub": "Recon",
+   "records": 442158,
+   "after_thinning": 442158,
+   "in_sample": 415687
+  },
+  {
+   "csv": "Spoofing/ARP Spoofing/MITM-ArpSpoofing.pcap_Flow.csv",
+   "class": "Spoofing",
+   "sub": "ARP Spoofing",
+   "records": 73033,
+   "after_thinning": 73033,
+   "in_sample": 68385
+  },
+  {
+   "csv": "Spoofing/ARP Spoofing/MITM-ArpSpoofing1.pcap_Flow.csv",
+   "class": "Spoofing",
+   "sub": "ARP Spoofing",
+   "records": 9349,
+   "after_thinning": 9349,
+   "in_sample": 8871
+  },
+  {
+   "csv": "Spoofing/DNS Spoofing/DNS_Spoofing.pcap_Flow.csv",
+   "class": "Spoofing",
+   "sub": "DNS Spoofing",
+   "records": 74856,
+   "after_thinning": 74856,
+   "in_sample": 73629
+  },
+  {
+   "csv": "Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "Sqlinjection",
+   "records": 6603,
+   "after_thinning": 6603,
+   "in_sample": 6521
+  },
+  {
+   "csv": "Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "Uploading Attack",
+   "records": 1348,
+   "after_thinning": 1348,
+   "in_sample": 1328
+  },
+  {
+   "csv": "Web-Based/XSS/XSS.pcap_Flow.csv",
+   "class": "Web-Based",
+   "sub": "XSS",
+   "records": 3377,
+   "after_thinning": 3377,
+   "in_sample": 3362
+  }
+ ],
+ "versions": {
+  "python": "3.11.14",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "pyarrow": "23.0.1",
+  "git_commit": "61a5b3d2c252113f64844a48cb31753b5883e13e",
+  "git_experiments_uncommitted": [
+   "experiments/flagged_loader.py",
+   "experiments/pilot_temporal_split.py",
+   "experiments/cicids2017_replication.py",
+   "experiments/cleaning_train_only.py",
+   "experiments/day_disjoint_split.py",
+   "experiments/deep_protocol_study.py",
+   "experiments/deep_protocol_summary.py",
+   "experiments/drift_calibration.py",
+   "experiments/export_flags.py",
+   "experiments/leave_one_subattack_out.py",
+   "experiments/pcap_validation.py",
+   "experiments/published_deep_control.py",
+   "experiments/published_protocol_control.py",
+   "experiments/revision_analyses.py",
+   "experiments/revision_analyses2.py",
+   "experiments/rule_validation.py",
+   "experiments/rule_validation2.py",
+   "experiments/split_replication.py",
+   "experiments/symmetric_r1.py",
+   "experiments/train_only_bootstrap.py",
+   "experiments/tree_seeds_proba.py",
+   "experiments/tree_seeds_summary.py",
+   "experiments/variant_seeds.py"
+  ],
+  "sha256_scripts": {
+   "export_flags.py": "0eb4b2528dc8e429907f4baab69e3f15ab05c51a942553efda7fe82e76fd7743",
+   "flagged_loader.py": "ca29c4951cdc7826a16051ff1d9822fb51e993f03611173675af6c1be5f72ab2",
+   "pilot_temporal_split.py": "2f894e8616b19f9a3498b8aecf65a83fa5ddb7642ec28c77a4f205bda88f7bd9",
+   "relabel_background.py": "86525886951e645f573de402acd8c6a2ff73e687e4b71d2c0823b6e9a87698b1",
+   "deep_split_noise_study.py": "b14e5e2aae40e0a37a6eac62f3dee2ad8f4a1d61f689c36831b1c7009f8d16ec",
+   "temporal_split_by_subattack.py": "da1c7bcb524e3f22abddcee7f9701ac05a63fe63046527fbe056b18e68f8df8b"
+  }
+ },
+ "elapsed_seconds": 220.4
+}

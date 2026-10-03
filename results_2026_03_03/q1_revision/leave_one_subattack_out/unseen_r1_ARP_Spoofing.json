@@ -1,0 +1,96 @@
+{
+ "held_out_class": "Spoofing",
+ "held_out_subattack": "ARP Spoofing",
+ "labels": "r1",
+ "model": "XGBoost",
+ "split": "temporal",
+ "n_train": 2100302,
+ "n_train_base": 2122898,
+ "n_train_removed": 22596,
+ "n_train_class_left": 21779,
+ "n_test": 4843,
+ "recall_seen": 0.4774,
+ "recall_unseen": 0.1664,
+ "delta": -0.311,
+ "attack_detection_seen": 0.9445,
+ "attack_detection_unseen": 0.949,
+ "seen_predicted_as": {
+  "Benign": 0.0555,
+  "BruteForce": 0.0708,
+  "DDOS": 0.0021,
+  "DOS": 0.0,
+  "Mirai": 0.2344,
+  "Recon": 0.0948,
+  "Spoofing": 0.4774,
+  "Web-Based": 0.065
+ },
+ "unseen_predicted_as": {
+  "Benign": 0.051,
+  "BruteForce": 0.0869,
+  "DDOS": 0.0021,
+  "DOS": 0.0,
+  "Mirai": 0.5059,
+  "Recon": 0.1041,
+  "Spoofing": 0.1664,
+  "Web-Based": 0.0836
+ },
+ "discordant": {
+  "seen_only_correct": 1689,
+  "unseen_only_correct": 183
+ },
+ "sibling_recall": {
+  "Spoofing / DNS Spoofing": {
+   "seen": 0.331,
+   "unseen": 0.602
+  }
+ },
+ "full_test_unseen_model": {
+  "accuracy": 0.769511294392811,
+  "balanced_accuracy": 0.6033409166046061,
+  "macro_f1": 0.47114888934809696,
+  "per_class_f1": {
+   "Benign": 0.7896,
+   "BruteForce": 0.0222,
+   "DDOS": 0.903,
+   "DOS": 0.8431,
+   "Mirai": 0.2017,
+   "Recon": 0.6131,
+   "Spoofing": 0.305,
+   "Web-Based": 0.0915
+  },
+  "per_class_recall": {
+   "Benign": 0.731,
+   "BruteForce": 0.2953,
+   "DDOS": 0.9121,
+   "DOS": 0.7314,
+   "Mirai": 0.7367,
+   "Recon": 0.6217,
+   "Spoofing": 0.3802,
+   "Web-Based": 0.4182
+  },
+  "per_subattack_recall": {
+   "Benign / Benign": 0.731,
+   "BruteForce / BruteForce": 0.2953,
+   "DDOS / DDOS ACK Fragmentation": 0.9786,
+   "DDOS / DDOS HTTP FLOOD": 0.9665,
+   "DDOS / DDOS ICMP FLOOD": 0.1553,
+   "DDOS / DDOS ICMP Fragmentation": 0.2631,
+   "DOS / DOS HTTP FLOOD": 0.4873,
+   "DOS / DOS SYN FLOOD": 0.9548,
+   "DOS / DOS UDP FLOOD": 0.4346,
+   "Mirai / Mirai": 0.7367,
+   "Recon / Recon": 0.6217,
+   "Spoofing / ARP Spoofing": 0.1664,
+   "Spoofing / DNS Spoofing": 0.602,
+   "Web-Based / Sqlinjection": 0.2283,
+   "Web-Based / Uploading Attack": 0.7527,
+   "Web-Based / XSS": 0.64
+  }
+ },
+ "full_test_seen_model": {
+  "accuracy": 0.7705026862102015,
+  "balanced_accuracy": 0.5811986168928069,
+  "macro_f1": 0.4619320425255602
+ },
+ "fit_seconds": 27.8
+}

@@ -1,0 +1,572 @@
+{
+ "dataset": "CICIDS2017, generated labelled flows (TrafficLabelling), D:\\My Project\\xai_ids_benchmark\\data\\cic-ids-2017\\labelled-flows",
+ "smoke_test_nrows_per_file": null,
+ "files": [
+  {
+   "file": "Monday-WorkingHours.pcap_ISCX.csv",
+   "day": "Monday",
+   "rows_read": 529918,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 529918,
+   "rows_read_as_pm": 222799,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 529918
+   },
+   "ts_min": "2017-07-03T08:55:58.000000000",
+   "ts_max": "2017-07-03T17:01:34.000000000"
+  },
+  {
+   "file": "Tuesday-WorkingHours.pcap_ISCX.csv",
+   "day": "Tuesday",
+   "rows_read": 445909,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 445909,
+   "rows_read_as_pm": 220766,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 432074,
+    "FTP-Patator": 7938,
+    "SSH-Patator": 5897
+   },
+   "ts_min": "2017-07-04T08:53:00.000000000",
+   "ts_max": "2017-07-04T17:00:00.000000000"
+  },
+  {
+   "file": "Wednesday-workingHours.pcap_ISCX.csv",
+   "day": "Wednesday",
+   "rows_read": 692703,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 692703,
+   "rows_read_as_pm": 227337,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 440031,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499,
+    "DoS Hulk": 231073,
+    "DoS GoldenEye": 10293,
+    "Heartbleed": 11
+   },
+   "ts_min": "2017-07-05T08:42:00.000000000",
+   "ts_max": "2017-07-05T17:10:00.000000000"
+  },
+  {
+   "file": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+   "day": "Thursday",
+   "rows_read": 458968,
+   "rows_without_label": 288602,
+   "rows_repeated_header": 0,
+   "rows_kept": 170366,
+   "rows_read_as_pm": 0,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 168186,
+    "Web Attack - Brute Force": 1507,
+    "Web Attack - XSS": 652,
+    "Web Attack - Sql Injection": 21
+   },
+   "ts_min": "2017-07-06T08:59:00.000000000",
+   "ts_max": "2017-07-06T12:59:00.000000000"
+  },
+  {
+   "file": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+   "day": "Thursday",
+   "rows_read": 288602,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 288602,
+   "rows_read_as_pm": 288602,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 288566,
+    "Infiltration": 36
+   },
+   "ts_min": "2017-07-06T13:00:00.000000000",
+   "ts_max": "2017-07-06T17:04:00.000000000"
+  },
+  {
+   "file": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+   "day": "Friday",
+   "rows_read": 191033,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 191033,
+   "rows_read_as_pm": 0,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 189067,
+    "Bot": 1966
+   },
+   "ts_min": "2017-07-07T08:59:00.000000000",
+   "ts_max": "2017-07-07T12:59:00.000000000"
+  },
+  {
+   "file": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+   "day": "Friday",
+   "rows_read": 286467,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 286467,
+   "rows_read_as_pm": 286467,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 127537,
+    "PortScan": 158930
+   },
+   "ts_min": "2017-07-07T13:00:00.000000000",
+   "ts_max": "2017-07-07T15:29:00.000000000"
+  },
+  {
+   "file": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+   "day": "Friday",
+   "rows_read": 225745,
+   "rows_without_label": 0,
+   "rows_repeated_header": 0,
+   "rows_kept": 225745,
+   "rows_read_as_pm": 225745,
+   "rows_unparsed_ts": 0,
+   "rows_off_expected_date": 0,
+   "labels": {
+    "BENIGN": 97718,
+    "DDoS": 128027
+   },
+   "ts_min": "2017-07-07T15:30:00.000000000",
+   "ts_max": "2017-07-07T17:02:00.000000000"
+  }
+ ],
+ "timestamp_rule": "text d/m/yyyy h:mm[:ss] on a 12-hour clock without AM/PM; hours 1-7 read as 13-19 h",
+ "features": {
+  "F0": [
+   "Flow Duration",
+   "Total Fwd Packets",
+   "Total Backward Packets",
+   "Total Length of Fwd Packets",
+   "Total Length of Bwd Packets",
+   "Fwd Packet Length Max",
+   "Fwd Packet Length Min",
+   "Fwd Packet Length Mean",
+   "Fwd Packet Length Std",
+   "Bwd Packet Length Max",
+   "Bwd Packet Length Min",
+   "Bwd Packet Length Mean",
+   "Bwd Packet Length Std",
+   "Flow Bytes/s",
+   "Flow Packets/s",
+   "Flow IAT Mean",
+   "Flow IAT Std",
+   "Flow IAT Max",
+   "Flow IAT Min",
+   "Fwd IAT Total",
+   "Fwd IAT Mean",
+   "Fwd IAT Std",
+   "Fwd IAT Max",
+   "Fwd IAT Min",
+   "Bwd IAT Total",
+   "Bwd IAT Mean",
+   "Bwd IAT Std",
+   "Bwd IAT Max",
+   "Bwd IAT Min",
+   "Fwd PSH Flags",
+   "Bwd PSH Flags",
+   "Fwd URG Flags",
+   "Bwd URG Flags",
+   "Fwd Header Length",
+   "Bwd Header Length",
+   "Fwd Packets/s",
+   "Bwd Packets/s",
+   "Min Packet Length",
+   "Max Packet Length",
+   "Packet Length Mean",
+   "Packet Length Std",
+   "Packet Length Variance",
+   "FIN Flag Count",
+   "SYN Flag Count",
+   "RST Flag Count",
+   "PSH Flag Count",
+   "ACK Flag Count",
+   "URG Flag Count",
+   "CWE Flag Count",
+   "ECE Flag Count",
+   "Down/Up Ratio",
+   "Average Packet Size",
+   "Avg Fwd Segment Size",
+   "Avg Bwd Segment Size",
+   "Fwd Header Length.1",
+   "Fwd Avg Bytes/Bulk",
+   "Fwd Avg Packets/Bulk",
+   "Fwd Avg Bulk Rate",
+   "Bwd Avg Bytes/Bulk",
+   "Bwd Avg Packets/Bulk",
+   "Bwd Avg Bulk Rate",
+   "Subflow Fwd Packets",
+   "Subflow Fwd Bytes",
+   "Subflow Bwd Packets",
+   "Subflow Bwd Bytes",
+   "Init_Win_bytes_forward",
+   "Init_Win_bytes_backward",
+   "act_data_pkt_fwd",
+   "min_seg_size_forward",
+   "Active Mean",
+   "Active Std",
+   "Active Max",
+   "Active Min",
+   "Idle Mean",
+   "Idle Std",
+   "Idle Max",
+   "Idle Min"
+  ],
+  "n_F0": 77,
+  "F78": [
+   "Destination Port",
+   "Flow Duration",
+   "Total Fwd Packets",
+   "Total Backward Packets",
+   "Total Length of Fwd Packets",
+   "Total Length of Bwd Packets",
+   "Fwd Packet Length Max",
+   "Fwd Packet Length Min",
+   "Fwd Packet Length Mean",
+   "Fwd Packet Length Std",
+   "Bwd Packet Length Max",
+   "Bwd Packet Length Min",
+   "Bwd Packet Length Mean",
+   "Bwd Packet Length Std",
+   "Flow Bytes/s",
+   "Flow Packets/s",
+   "Flow IAT Mean",
+   "Flow IAT Std",
+   "Flow IAT Max",
+   "Flow IAT Min",
+   "Fwd IAT Total",
+   "Fwd IAT Mean",
+   "Fwd IAT Std",
+   "Fwd IAT Max",
+   "Fwd IAT Min",
+   "Bwd IAT Total",
+   "Bwd IAT Mean",
+   "Bwd IAT Std",
+   "Bwd IAT Max",
+   "Bwd IAT Min",
+   "Fwd PSH Flags",
+   "Bwd PSH Flags",
+   "Fwd URG Flags",
+   "Bwd URG Flags",
+   "Fwd Header Length",
+   "Bwd Header Length",
+   "Fwd Packets/s",
+   "Bwd Packets/s",
+   "Min Packet Length",
+   "Max Packet Length",
+   "Packet Length Mean",
+   "Packet Length Std",
+   "Packet Length Variance",
+   "FIN Flag Count",
+   "SYN Flag Count",
+   "RST Flag Count",
+   "PSH Flag Count",
+   "ACK Flag Count",
+   "URG Flag Count",
+   "CWE Flag Count",
+   "ECE Flag Count",
+   "Down/Up Ratio",
+   "Average Packet Size",
+   "Avg Fwd Segment Size",
+   "Avg Bwd Segment Size",
+   "Fwd Header Length.1",
+   "Fwd Avg Bytes/Bulk",
+   "Fwd Avg Packets/Bulk",
+   "Fwd Avg Bulk Rate",
+   "Bwd Avg Bytes/Bulk",
+   "Bwd Avg Packets/Bulk",
+   "Bwd Avg Bulk Rate",
+   "Subflow Fwd Packets",
+   "Subflow Fwd Bytes",
+   "Subflow Bwd Packets",
+   "Subflow Bwd Bytes",
+   "Init_Win_bytes_forward",
+   "Init_Win_bytes_backward",
+   "act_data_pkt_fwd",
+   "min_seg_size_forward",
+   "Active Mean",
+   "Active Std",
+   "Active Max",
+   "Active Min",
+   "Idle Mean",
+   "Idle Std",
+   "Idle Max",
+   "Idle Min"
+  ],
+  "identifiers": [
+   "Flow ID",
+   "Source IP",
+   "Source Port",
+   "Destination IP",
+   "Destination Port",
+   "Protocol",
+   "Timestamp"
+  ],
+  "feature_sets": {
+   "F0": "77 CICFlowMeter flow features (no identifier column)",
+   "F78": "F0 + Destination Port (the 78 features of the MachineLearningCVE release)",
+   "FT": "F78 + Timestamp (raw text, label-encoded in sorted text order over the whole table)",
+   "FA": "F78 + Flow ID, Source IP, Source Port, Destination IP, Protocol, Timestamp (all seven identifiers; text columns label-encoded in sorted order, ports and protocol numeric)"
+  }
+ },
+ "deduplication": "inside each class: time order (stable), exact duplicates of the 77 F0 features (NaN == NaN, -0 == +0, 64-bit row hash) removed, earliest flow kept",
+ "min_flows_per_class": 100,
+ "labels": {
+  "BENIGN": {
+   "class": "BENIGN",
+   "flows_all_rows": 2273097,
+   "flows_deduplicated": 1863293,
+   "duplicate_share": 0.1803
+  },
+  "FTP-Patator": {
+   "class": "FTP-Patator",
+   "flows_all_rows": 7938,
+   "flows_deduplicated": 5933,
+   "duplicate_share": 0.2526
+  },
+  "SSH-Patator": {
+   "class": "SSH-Patator",
+   "flows_all_rows": 5897,
+   "flows_deduplicated": 3219,
+   "duplicate_share": 0.4541
+  },
+  "DoS slowloris": {
+   "class": "DoS slowloris",
+   "flows_all_rows": 5796,
+   "flows_deduplicated": 5374,
+   "duplicate_share": 0.0728
+  },
+  "DoS Slowhttptest": {
+   "class": "DoS Slowhttptest",
+   "flows_all_rows": 5499,
+   "flows_deduplicated": 5228,
+   "duplicate_share": 0.0493
+  },
+  "DoS Hulk": {
+   "class": "DoS Hulk",
+   "flows_all_rows": 231073,
+   "flows_deduplicated": 172849,
+   "duplicate_share": 0.252
+  },
+  "DoS GoldenEye": {
+   "class": "DoS GoldenEye",
+   "flows_all_rows": 10293,
+   "flows_deduplicated": 10282,
+   "duplicate_share": 0.0011
+  },
+  "Heartbleed": {
+   "class": "dropped (Heartbleed: fewer than 100 flows after de-duplication)",
+   "flows_all_rows": 11,
+   "flows_deduplicated": 11,
+   "duplicate_share": 0.0
+  },
+  "Web Attack - Brute Force": {
+   "class": "Web Attack",
+   "flows_all_rows": 1507,
+   "flows_deduplicated": 1470,
+   "duplicate_share": 0.0246
+  },
+  "Web Attack - XSS": {
+   "class": "Web Attack",
+   "flows_all_rows": 652,
+   "flows_deduplicated": 652,
+   "duplicate_share": 0.0
+  },
+  "Web Attack - Sql Injection": {
+   "class": "Web Attack",
+   "flows_all_rows": 21,
+   "flows_deduplicated": 21,
+   "duplicate_share": 0.0
+  },
+  "Infiltration": {
+   "class": "dropped (Infiltration: fewer than 100 flows after de-duplication)",
+   "flows_all_rows": 36,
+   "flows_deduplicated": 36,
+   "duplicate_share": 0.0
+  },
+  "Bot": {
+   "class": "Bot",
+   "flows_all_rows": 1966,
+   "flows_deduplicated": 1441,
+   "duplicate_share": 0.267
+  },
+  "PortScan": {
+   "class": "PortScan",
+   "flows_all_rows": 158930,
+   "flows_deduplicated": 1958,
+   "duplicate_share": 0.9877
+  },
+  "DDoS": {
+   "class": "DDoS",
+   "flows_all_rows": 128027,
+   "flows_deduplicated": 128016,
+   "duplicate_share": 0.0001
+  }
+ },
+ "class_mapping": {
+  "BENIGN": "BENIGN",
+  "FTP-Patator": "FTP-Patator",
+  "SSH-Patator": "SSH-Patator",
+  "DoS slowloris": "DoS slowloris",
+  "DoS Slowhttptest": "DoS Slowhttptest",
+  "DoS Hulk": "DoS Hulk",
+  "DoS GoldenEye": "DoS GoldenEye",
+  "Heartbleed": null,
+  "Web Attack - Brute Force": "Web Attack",
+  "Web Attack - XSS": "Web Attack",
+  "Web Attack - Sql Injection": "Web Attack",
+  "Infiltration": null,
+  "Bot": "Bot",
+  "PortScan": "PortScan",
+  "DDoS": "DDoS"
+ },
+ "classes_before_threshold": {
+  "BENIGN": {
+   "flows_all_rows": 2273097,
+   "flows_deduplicated": 1863293,
+   "kept": true
+  },
+  "Bot": {
+   "flows_all_rows": 1966,
+   "flows_deduplicated": 1441,
+   "kept": true
+  },
+  "DDoS": {
+   "flows_all_rows": 128027,
+   "flows_deduplicated": 128016,
+   "kept": true
+  },
+  "DoS GoldenEye": {
+   "flows_all_rows": 10293,
+   "flows_deduplicated": 10282,
+   "kept": true
+  },
+  "DoS Hulk": {
+   "flows_all_rows": 231073,
+   "flows_deduplicated": 172849,
+   "kept": true
+  },
+  "DoS Slowhttptest": {
+   "flows_all_rows": 5499,
+   "flows_deduplicated": 5228,
+   "kept": true
+  },
+  "DoS slowloris": {
+   "flows_all_rows": 5796,
+   "flows_deduplicated": 5374,
+   "kept": true
+  },
+  "FTP-Patator": {
+   "flows_all_rows": 7938,
+   "flows_deduplicated": 5933,
+   "kept": true
+  },
+  "Heartbleed": {
+   "flows_all_rows": 11,
+   "flows_deduplicated": 11,
+   "kept": false
+  },
+  "Infiltration": {
+   "flows_all_rows": 36,
+   "flows_deduplicated": 36,
+   "kept": false
+  },
+  "PortScan": {
+   "flows_all_rows": 158930,
+   "flows_deduplicated": 1958,
+   "kept": true
+  },
+  "SSH-Patator": {
+   "flows_all_rows": 5897,
+   "flows_deduplicated": 3219,
+   "kept": true
+  },
+  "Web Attack": {
+   "flows_all_rows": 2180,
+   "flows_deduplicated": 2143,
+   "kept": true
+  }
+ },
+ "classes": [
+  "BENIGN",
+  "Bot",
+  "DDoS",
+  "DoS GoldenEye",
+  "DoS Hulk",
+  "DoS Slowhttptest",
+  "DoS slowloris",
+  "FTP-Patator",
+  "PortScan",
+  "SSH-Patator",
+  "Web Attack"
+ ],
+ "class_counts": {
+  "BENIGN": 1863293,
+  "Bot": 1441,
+  "DDoS": 128016,
+  "DoS GoldenEye": 10282,
+  "DoS Hulk": 172849,
+  "DoS Slowhttptest": 5228,
+  "DoS slowloris": 5374,
+  "FTP-Patator": 5933,
+  "PortScan": 1958,
+  "SSH-Patator": 3219,
+  "Web Attack": 2143
+ },
+ "n_flows": 2199736,
+ "temporal_groups": {
+  "BENIGN / Monday": 459015,
+  "BENIGN / Tuesday": 369571,
+  "BENIGN / Wednesday": 366916,
+  "BENIGN / Friday": 342124,
+  "BENIGN / Thursday": 325667,
+  "Bot / Friday": 1441,
+  "DDoS / Friday": 128016,
+  "DoS GoldenEye / Wednesday": 10282,
+  "DoS Hulk / Wednesday": 172849,
+  "DoS Slowhttptest / Wednesday": 5228,
+  "DoS slowloris / Wednesday": 5374,
+  "FTP-Patator / Tuesday": 5933,
+  "PortScan / Friday": 1958,
+  "SSH-Patator / Tuesday": 3219,
+  "Web Attack / Thursday / Brute Force": 1470,
+  "Web Attack / Thursday / XSS": 652,
+  "Web Attack / Thursday / Sql Injection": 21
+ },
+ "rows_whose_feature_vector_occurs_under_another_class": 0.0003,
+ "distinct_values": {
+  "Flow ID": 846753,
+  "Timestamp": 27295,
+  "Source IP": 15342,
+  "Destination IP": 19049,
+  "Destination Port": 48898,
+  "Source Port": 64558,
+  "Protocol": 3
+ },
+ "rows_with_unparsed_timestamp": 0,
+ "r1_outside_share_deduplicated": {
+  "strict": 0.5854,
+  "with_nat": 0.4138
+ },
+ "rule_shares_deduplicated_attack_flows": {
+  "r1_strict": 0.9957,
+  "r1_with_nat": 0.0,
+  "r2_service_port": 0.0,
+  "r3_benign_pair": 1.0,
+  "any_rule_with_nat": 1.0
+ }
+}

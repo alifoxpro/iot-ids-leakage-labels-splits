@@ -1,0 +1,45 @@
+{
+ "class": "Web-Based",
+ "y": 7,
+ "n_flows": 11211,
+ "build_seconds": 0.3,
+ "verification": {
+  "n_rebuilt": 11211,
+  "n_cache": 11211,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "ok": true,
+  "note": "r3 approximate: Benign pairs taken from the de-duplicated Benign rows of the cache"
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 11211,
+  "files_checked": 3,
+  "features_exact": 11211,
+  "features_close": 11211,
+  "ts_equal": 11211,
+  "ips_equal": 11211,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv": {
+   "records": 6603,
+   "after_thinning": 6603,
+   "in_sample": 6521
+  },
+  "Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv": {
+   "records": 1348,
+   "after_thinning": 1348,
+   "in_sample": 1328
+  },
+  "Web-Based/XSS/XSS.pcap_Flow.csv": {
+   "records": 3377,
+   "after_thinning": 3377,
+   "in_sample": 3362
+  }
+ }
+}

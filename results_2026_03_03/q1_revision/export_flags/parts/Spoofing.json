@@ -1,0 +1,49 @@
+{
+ "class": "Spoofing",
+ "y": 6,
+ "n_flows": 150885,
+ "build_seconds": 1.8,
+ "verification": {
+  "n_rebuilt": 150885,
+  "n_cache": 150885,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "cache_rows": [
+   3464406,
+   3615291
+  ],
+  "contiguous_at_expected_offset": true,
+  "ok": true
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 60,
+  "files_checked": 3,
+  "features_exact": 60,
+  "features_close": 60,
+  "ts_equal": 60,
+  "ips_equal": 60,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "Spoofing/ARP Spoofing/MITM-ArpSpoofing.pcap_Flow.csv": {
+   "records": 73033,
+   "after_thinning": 73033,
+   "in_sample": 68385
+  },
+  "Spoofing/ARP Spoofing/MITM-ArpSpoofing1.pcap_Flow.csv": {
+   "records": 9349,
+   "after_thinning": 9349,
+   "in_sample": 8871
+  },
+  "Spoofing/DNS Spoofing/DNS_Spoofing.pcap_Flow.csv": {
+   "records": 74856,
+   "after_thinning": 74856,
+   "in_sample": 73629
+  }
+ }
+}

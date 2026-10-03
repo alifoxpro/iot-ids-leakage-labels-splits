@@ -1,0 +1,591 @@
+{
+ "runs": [
+  {
+   "run": "identifiers_F0",
+   "split": "random80",
+   "set": "F0",
+   "accuracy": 0.9989,
+   "bal_acc": 0.9928,
+   "macro_f1": 0.962,
+   "attack_f1": 0.9583,
+   "macro_ap": 0.9864,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1759788,
+   "n_test": 439948,
+   "device": "cuda:0",
+   "fit_min": 0.4733
+  },
+  {
+   "run": "identifiers_F78",
+   "split": "random80",
+   "set": "F78",
+   "accuracy": 0.9992,
+   "bal_acc": 0.9935,
+   "macro_f1": 0.9686,
+   "attack_f1": 0.9655,
+   "macro_ap": 0.9886,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1759788,
+   "n_test": 439948,
+   "device": "cuda:0",
+   "fit_min": 0.4383
+  },
+  {
+   "run": "identifiers_FT",
+   "split": "random80",
+   "set": "FT",
+   "accuracy": 0.9998,
+   "bal_acc": 0.9985,
+   "macro_f1": 0.9921,
+   "attack_f1": 0.9913,
+   "macro_ap": 0.9991,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1759788,
+   "n_test": 439948,
+   "device": "cuda:0",
+   "fit_min": 0.3917
+  },
+  {
+   "run": "identifiers_FA",
+   "split": "random80",
+   "set": "FA",
+   "accuracy": 0.9999,
+   "bal_acc": 0.9998,
+   "macro_f1": 0.9966,
+   "attack_f1": 0.9963,
+   "macro_ap": 0.9999,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1759788,
+   "n_test": 439948,
+   "device": "cuda:0",
+   "fit_min": 0.375
+  },
+  {
+   "run": "split_random_F0",
+   "split": "random",
+   "set": "F0",
+   "accuracy": 0.9989,
+   "bal_acc": 0.9946,
+   "macro_f1": 0.9638,
+   "attack_f1": 0.9602,
+   "macro_ap": 0.9849,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1539814,
+   "n_test": 329961,
+   "device": "cuda:0",
+   "fit_min": 0.4083
+  },
+  {
+   "run": "split_temporal_F0",
+   "split": "temporal",
+   "set": "F0",
+   "accuracy": 0.9685,
+   "bal_acc": 0.9383,
+   "macro_f1": 0.8654,
+   "attack_f1": 0.8535,
+   "macro_ap": 0.9236,
+   "test_dup": 0.0001,
+   "test_ties": 0.0,
+   "n_train": 1539807,
+   "n_test": 329970,
+   "device": "cuda:0",
+   "fit_min": 0.3917
+  },
+  {
+   "run": "split_random_F78",
+   "split": "random",
+   "set": "F78",
+   "accuracy": 0.9992,
+   "bal_acc": 0.9949,
+   "macro_f1": 0.9683,
+   "attack_f1": 0.9652,
+   "macro_ap": 0.9868,
+   "test_dup": 0.0002,
+   "test_ties": NaN,
+   "n_train": 1539814,
+   "n_test": 329961,
+   "device": "cuda:0",
+   "fit_min": 0.375
+  },
+  {
+   "run": "split_temporal_F78",
+   "split": "temporal",
+   "set": "F78",
+   "accuracy": 0.9712,
+   "bal_acc": 0.9423,
+   "macro_f1": 0.8631,
+   "attack_f1": 0.8508,
+   "macro_ap": 0.9394,
+   "test_dup": 0.0001,
+   "test_ties": 0.0,
+   "n_train": 1539807,
+   "n_test": 329970,
+   "device": "cuda:0",
+   "fit_min": 0.3717
+  }
+ ],
+ "per_class_F0": {
+  "BENIGN": {
+   "recall_random": 0.9989,
+   "recall_temporal": 0.972,
+   "f1_random": 0.9994,
+   "f1_temporal": 0.984,
+   "n_test_temporal": 279497
+  },
+  "Bot": {
+   "recall_random": 0.9861,
+   "recall_temporal": 0.9493,
+   "f1_random": 0.7307,
+   "f1_temporal": 0.8047,
+   "n_test_temporal": 217
+  },
+  "DDoS": {
+   "recall_random": 0.9997,
+   "recall_temporal": 0.9977,
+   "f1_random": 0.9998,
+   "f1_temporal": 0.8337,
+   "n_test_temporal": 19203
+  },
+  "DoS GoldenEye": {
+   "recall_random": 0.9968,
+   "recall_temporal": 1.0,
+   "f1_random": 0.9935,
+   "f1_temporal": 0.9519,
+   "n_test_temporal": 1543
+  },
+  "DoS Hulk": {
+   "recall_random": 0.9994,
+   "recall_temporal": 0.9135,
+   "f1_random": 0.9986,
+   "f1_temporal": 0.9531,
+   "n_test_temporal": 25928
+  },
+  "DoS Slowhttptest": {
+   "recall_random": 0.9923,
+   "recall_temporal": 0.9694,
+   "f1_random": 0.9605,
+   "f1_temporal": 0.9054,
+   "n_test_temporal": 785
+  },
+  "DoS slowloris": {
+   "recall_random": 0.9926,
+   "recall_temporal": 0.8587,
+   "f1_random": 0.9901,
+   "f1_temporal": 0.9161,
+   "n_test_temporal": 807
+  },
+  "FTP-Patator": {
+   "recall_random": 1.0,
+   "recall_temporal": 0.9921,
+   "f1_random": 0.9972,
+   "f1_temporal": 0.9938,
+   "n_test_temporal": 890
+  },
+  "PortScan": {
+   "recall_random": 0.9864,
+   "recall_temporal": 0.7959,
+   "f1_random": 0.9477,
+   "f1_temporal": 0.2559,
+   "n_test_temporal": 294
+  },
+  "SSH-Patator": {
+   "recall_random": 0.9979,
+   "recall_temporal": 0.9068,
+   "f1_random": 0.9979,
+   "f1_temporal": 0.947,
+   "n_test_temporal": 483
+  },
+  "Web Attack": {
+   "recall_random": 0.9907,
+   "recall_temporal": 0.9659,
+   "f1_random": 0.9861,
+   "f1_temporal": 0.9735,
+   "n_test_temporal": 323
+  }
+ },
+ "per_class_F78": {
+  "BENIGN": {
+   "recall_random": 0.9992,
+   "recall_temporal": 0.9742,
+   "f1_random": 0.9996,
+   "f1_temporal": 0.986,
+   "n_test_temporal": 279497
+  },
+  "Bot": {
+   "recall_random": 0.9861,
+   "recall_temporal": 0.9355,
+   "f1_random": 0.7448,
+   "f1_temporal": 0.8494,
+   "n_test_temporal": 217
+  },
+  "DDoS": {
+   "recall_random": 0.9998,
+   "recall_temporal": 0.9985,
+   "f1_random": 0.9998,
+   "f1_temporal": 0.8436,
+   "n_test_temporal": 19203
+  },
+  "DoS GoldenEye": {
+   "recall_random": 0.9974,
+   "recall_temporal": 1.0,
+   "f1_random": 0.9951,
+   "f1_temporal": 0.9557,
+   "n_test_temporal": 1543
+  },
+  "DoS Hulk": {
+   "recall_random": 0.9995,
+   "recall_temporal": 0.9219,
+   "f1_random": 0.999,
+   "f1_temporal": 0.9582,
+   "n_test_temporal": 25928
+  },
+  "DoS Slowhttptest": {
+   "recall_random": 0.9923,
+   "recall_temporal": 0.9758,
+   "f1_random": 0.9854,
+   "f1_temporal": 0.9246,
+   "n_test_temporal": 785
+  },
+  "DoS slowloris": {
+   "recall_random": 0.9926,
+   "recall_temporal": 0.8699,
+   "f1_random": 0.9932,
+   "f1_temporal": 0.9188,
+   "n_test_temporal": 807
+  },
+  "FTP-Patator": {
+   "recall_random": 1.0,
+   "recall_temporal": 0.9921,
+   "f1_random": 0.9989,
+   "f1_temporal": 0.9961,
+   "n_test_temporal": 890
+  },
+  "PortScan": {
+   "recall_random": 0.9864,
+   "recall_temporal": 0.7483,
+   "f1_random": 0.9493,
+   "f1_temporal": 0.2327,
+   "n_test_temporal": 294
+  },
+  "SSH-Patator": {
+   "recall_random": 1.0,
+   "recall_temporal": 0.971,
+   "f1_random": 1.0,
+   "f1_temporal": 0.9853,
+   "n_test_temporal": 483
+  },
+  "Web Attack": {
+   "recall_random": 0.9907,
+   "recall_temporal": 0.9783,
+   "f1_random": 0.9861,
+   "f1_temporal": 0.8438,
+   "n_test_temporal": 323
+  }
+ },
+ "effects": {
+  "identifiers F78 - F0": {
+   "accuracy": 0.0003,
+   "balanced_accuracy": 0.0007,
+   "macro_f1": 0.0066
+  },
+  "identifiers FT - F78": {
+   "accuracy": 0.0006,
+   "balanced_accuracy": 0.005,
+   "macro_f1": 0.0234
+  },
+  "identifiers FA - F78": {
+   "accuracy": 0.0007,
+   "balanced_accuracy": 0.0063,
+   "macro_f1": 0.028
+  },
+  "identifiers FA - F0": {
+   "accuracy": 0.0011,
+   "balanced_accuracy": 0.007,
+   "macro_f1": 0.0346
+  },
+  "split random - temporal (F0)": {
+   "accuracy": 0.0304,
+   "balanced_accuracy": 0.0563,
+   "macro_f1": 0.0984,
+   "attack_macro_f1": 0.1067
+  },
+  "split random - temporal (F78)": {
+   "accuracy": 0.028,
+   "balanced_accuracy": 0.0526,
+   "macro_f1": 0.1052,
+   "attack_macro_f1": 0.1143
+  }
+ },
+ "reference_cic_iot_diad_2024": {
+  "identifier_leakage_v2 (de-duplicated, 8 folder classes, random 80/20, balanced XGBoost)": {
+   "F0 81 flow features": {
+    "accuracy": 0.8294,
+    "balanced_accuracy": 0.7407,
+    "macro_f1": 0.5791
+   },
+   "F1 + destination port, protocol": {
+    "accuracy": 0.8362,
+    "balanced_accuracy": 0.7442,
+    "macro_f1": 0.5842
+   },
+   "F3 + timestamp (seconds)": {
+    "accuracy": 0.9983,
+    "balanced_accuracy": 0.995,
+    "macro_f1": 0.9933
+   },
+   "F4 + five identifiers": {
+    "accuracy": 0.9989,
+    "balanced_accuracy": 0.9958,
+    "macro_f1": 0.9954
+   }
+  },
+  "published_control (no de-duplication, published class set, random 80/20, balanced XGBoost)": {
+   "F0": {
+    "accuracy": 0.8705,
+    "balanced_accuracy": 0.7541,
+    "macro_f1": 0.5408
+   },
+   "FT (+ label-encoded timestamp)": {
+    "accuracy": 0.9945,
+    "balanced_accuracy": 0.9946,
+    "macro_f1": 0.9886
+   },
+   "FA (+ all seven identifiers)": {
+    "accuracy": 0.998,
+    "balanced_accuracy": 0.9978,
+    "macro_f1": 0.9951
+   }
+  },
+  "tree_protocol (raw labels, XGBoost seed 42, 81 features)": {
+   "random 70/15/15": {
+    "accuracy": 0.8297,
+    "balanced_accuracy": 0.7388,
+    "macro_f1": 0.5792
+   },
+   "temporal (Algorithm 2)": {
+    "accuracy": 0.6555,
+    "balanced_accuracy": 0.5364,
+    "macro_f1": 0.4269
+   }
+  }
+ },
+ "r1_analogue_all_rows": {
+  "BENIGN": {
+   "flows": 2273097,
+   "share_any_endpoint_outside_strict": 0.518,
+   "share_any_endpoint_outside_with_nat": 0.4952,
+   "share_documented_attacker_endpoint": 0.0233,
+   "r2_share_service_port": null,
+   "r3_share_benign_pair": null,
+   "any_rule_share_with_nat": null
+  },
+  "FTP-Patator": {
+   "flows": 7938,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "SSH-Patator": {
+   "flows": 5897,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "DoS slowloris": {
+   "flows": 5796,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "DoS Slowhttptest": {
+   "flows": 5499,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "DoS Hulk": {
+   "flows": 231073,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "DoS GoldenEye": {
+   "flows": 10293,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Heartbleed": {
+   "flows": 11,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Web Attack - Brute Force": {
+   "flows": 1507,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Web Attack - XSS": {
+   "flows": 652,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Web Attack - Sql Injection": {
+   "flows": 21,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Infiltration": {
+   "flows": 36,
+   "share_any_endpoint_outside_strict": 0.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "Bot": {
+   "flows": 1966,
+   "share_any_endpoint_outside_strict": 0.002,
+   "share_any_endpoint_outside_with_nat": 0.002,
+   "share_documented_attacker_endpoint": 0.998,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 0.999,
+   "any_rule_share_with_nat": 1.0
+  },
+  "PortScan": {
+   "flows": 158930,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.002,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  },
+  "DDoS": {
+   "flows": 128027,
+   "share_any_endpoint_outside_strict": 1.0,
+   "share_any_endpoint_outside_with_nat": 0.0,
+   "share_documented_attacker_endpoint": 1.0,
+   "r2_share_service_port": 0.0,
+   "r3_share_benign_pair": 1.0,
+   "any_rule_share_with_nat": 1.0
+  }
+ },
+ "protocol0_all_rows": {
+  "BENIGN": {
+   "flow_share_proto0": 0.0007,
+   "packet_share_proto0": 0.0035,
+   "largest_proto0_flow_packets": 545
+  },
+  "FTP-Patator": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "SSH-Patator": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "DoS slowloris": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "DoS Slowhttptest": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "DoS Hulk": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "DoS GoldenEye": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Heartbleed": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Web Attack - Brute Force": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Web Attack - XSS": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Web Attack - Sql Injection": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Infiltration": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "Bot": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  },
+  "PortScan": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0007,
+   "largest_proto0_flow_packets": 180
+  },
+  "DDoS": {
+   "flow_share_proto0": 0.0,
+   "packet_share_proto0": 0.0,
+   "largest_proto0_flow_packets": 0
+  }
+ }
+}

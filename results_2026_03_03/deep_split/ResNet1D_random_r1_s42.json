@@ -1,0 +1,53 @@
+{
+  "accuracy": 0.8714709974962025,
+  "balanced_accuracy": 0.7097220590596404,
+  "macro_f1": 0.5785738393658705,
+  "per_class_f1": {
+    "Benign": 0.8025,
+    "BruteForce": 0.1352,
+    "DDOS": 0.8961,
+    "DOS": 0.9579,
+    "Mirai": 0.4742,
+    "Recon": 0.7246,
+    "Spoofing": 0.4574,
+    "Web-Based": 0.1807
+  },
+  "per_class_recall": {
+    "Benign": 0.723,
+    "BruteForce": 0.342,
+    "DDOS": 0.9,
+    "DOS": 0.9212,
+    "Mirai": 0.7901,
+    "Recon": 0.7267,
+    "Spoofing": 0.7331,
+    "Web-Based": 0.5417
+  },
+  "per_subattack_recall": {
+    "Benign / Benign": 0.723,
+    "BruteForce / BruteForce": 0.342,
+    "DDOS / DDOS ACK Fragmentation": 0.9809,
+    "DDOS / DDOS HTTP FLOOD": 0.9553,
+    "DDOS / DDOS ICMP FLOOD": 0.0954,
+    "DDOS / DDOS ICMP Fragmentation": 0.0795,
+    "DOS / DOS HTTP FLOOD": 0.1845,
+    "DOS / DOS SYN FLOOD": 0.9935,
+    "DOS / DOS UDP FLOOD": 0.9757,
+    "Mirai / Mirai": 0.7901,
+    "Recon / Recon": 0.7267,
+    "Spoofing / ARP Spoofing": 0.7551,
+    "Spoofing / DNS Spoofing": 0.7101,
+    "Web-Based / Sqlinjection": 0.4856,
+    "Web-Based / Uploading Attack": 0.6914,
+    "Web-Based / XSS": 0.5965
+  },
+  "model": "ResNet1D",
+  "split": "random",
+  "cleaning": "r1",
+  "seed": 42,
+  "max_epochs": 30,
+  "epochs_run": 25,
+  "fit_seconds": 907.5,
+  "n_train": 2122905,
+  "n_val": 454909,
+  "n_test": 454909
+}

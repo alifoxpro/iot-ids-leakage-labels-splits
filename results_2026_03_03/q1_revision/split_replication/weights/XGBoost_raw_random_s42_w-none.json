@@ -1,0 +1,151 @@
+{
+ "accuracy": 0.8586812653499419,
+ "balanced_accuracy": 0.595600402963667,
+ "macro_f1": 0.6183813552322652,
+ "per_class_f1": {
+  "Benign": 0.7093,
+  "BruteForce": 0.1793,
+  "DDOS": 0.8934,
+  "DOS": 0.975,
+  "Mirai": 0.5644,
+  "Recon": 0.7296,
+  "Spoofing": 0.5983,
+  "Web-Based": 0.2977
+ },
+ "per_class_recall": {
+  "Benign": 0.8511,
+  "BruteForce": 0.1074,
+  "DDOS": 0.8729,
+  "DOS": 0.9641,
+  "Mirai": 0.5509,
+  "Recon": 0.7248,
+  "Spoofing": 0.4975,
+  "Web-Based": 0.1962
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.8511,
+  "BruteForce / BruteForce": 0.1074,
+  "DDOS / DDOS ACK Fragmentation": 0.9719,
+  "DDOS / DDOS HTTP FLOOD": 0.9088,
+  "DDOS / DDOS ICMP FLOOD": 0.4797,
+  "DDOS / DDOS ICMP Fragmentation": 0.448,
+  "DOS / DOS HTTP FLOOD": 0.8671,
+  "DOS / DOS SYN FLOOD": 0.9875,
+  "DOS / DOS UDP FLOOD": 0.9502,
+  "Mirai / Mirai": 0.5509,
+  "Recon / Recon": 0.7248,
+  "Spoofing / ARP Spoofing": 0.5405,
+  "Spoofing / DNS Spoofing": 0.4524,
+  "Web-Based / Sqlinjection": 0.1459,
+  "Web-Based / Uploading Attack": 0.3256,
+  "Web-Based / XSS": 0.2389
+ },
+ "attack_macro_f1": 0.6053861668261705,
+ "per_class_precision": {
+  "Benign": 0.6081,
+  "BruteForce": 0.5421,
+  "DDOS": 0.9149,
+  "DOS": 0.9862,
+  "Mirai": 0.5787,
+  "Recon": 0.7344,
+  "Spoofing": 0.7503,
+  "Web-Based": 0.6168
+ },
+ "confusion": [
+  [
+   49200,
+   12,
+   1463,
+   149,
+   1158,
+   5228,
+   548,
+   51
+  ],
+  [
+   169,
+   58,
+   10,
+   3,
+   16,
+   169,
+   115,
+   0
+  ],
+  [
+   5649,
+   1,
+   130938,
+   2246,
+   5843,
+   4091,
+   1166,
+   66
+  ],
+  [
+   984,
+   3,
+   3222,
+   216928,
+   974,
+   2587,
+   286,
+   16
+  ],
+  [
+   3044,
+   6,
+   5457,
+   294,
+   13198,
+   1070,
+   889,
+   1
+  ],
+  [
+   14773,
+   13,
+   893,
+   173,
+   656,
+   45191,
+   595,
+   59
+  ],
+  [
+   6590,
+   7,
+   1037,
+   165,
+   926,
+   2637,
+   11259,
+   12
+  ],
+  [
+   501,
+   7,
+   94,
+   6,
+   37,
+   560,
+   147,
+   330
+  ]
+ ],
+ "study": "weights",
+ "model": "XGBoost",
+ "model_seed": 42,
+ "cleaning": "raw",
+ "split": "random",
+ "replicate": "s42",
+ "split_seed": 42,
+ "cut_train_val_test": null,
+ "weights": "none",
+ "weights_definition": "unweighted",
+ "class_weights": null,
+ "n_train": 2538550,
+ "n_val": 543976,
+ "n_test": 543976,
+ "fit_seconds": 33.3
+}

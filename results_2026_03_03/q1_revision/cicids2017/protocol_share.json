@@ -1,0 +1,986 @@
+{
+ "dataset": "CICIDS2017 (TrafficLabelling / labelled flows)",
+ "files": [
+  "Monday-WorkingHours.pcap_ISCX.csv",
+  "Tuesday-WorkingHours.pcap_ISCX.csv",
+  "Wednesday-workingHours.pcap_ISCX.csv",
+  "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+  "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+  "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+  "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+  "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
+ ],
+ "definition": "per group: share of flows and of packets (Total Fwd Packets + Total Backward Packets) of every Protocol value; largest protocol-0 flow (packets); protocol-0 flows with a non-zero source or destination port (as protocol_packet_share.py)",
+ "all_rows": {
+  "description": "every labelled row of the eight CSV files, no de-duplication",
+  "per_label": {
+   "BENIGN": {
+    "flows": 2273097,
+    "packets": 51810267,
+    "flow_share": {
+     "0": 0.0007,
+     "6": 0.5596,
+     "17": 0.4397
+    },
+    "packet_share": {
+     "0": 0.0035,
+     "6": 0.9222,
+     "17": 0.0743
+    },
+    "largest_proto0_flow_packets": 545,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "FTP-Patator": {
+    "flows": 7938,
+    "packets": 105618,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "SSH-Patator": {
+    "flows": 5897,
+    "packets": 163095,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS slowloris": {
+    "flows": 5796,
+    "packets": 46327,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Slowhttptest": {
+    "flows": 5499,
+    "packets": 36874,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Hulk": {
+    "flows": 231073,
+    "packets": 2191807,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS GoldenEye": {
+    "flows": 10293,
+    "packets": 99003,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Heartbleed": {
+    "flows": 11,
+    "packets": 49290,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - Brute Force": {
+    "flows": 1507,
+    "packets": 27771,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - XSS": {
+    "flows": 652,
+    "packets": 7483,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - Sql Injection": {
+    "flows": 21,
+    "packets": 120,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Infiltration": {
+    "flows": 36,
+    "packets": 59754,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Bot": {
+    "flows": 1966,
+    "packets": 12853,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "PortScan": {
+    "flows": 158930,
+    "packets": 321442,
+    "flow_share": {
+     "0": 0.0,
+     "6": 1.0,
+     "17": 0.0
+    },
+    "packet_share": {
+     "0": 0.0007,
+     "6": 0.9993,
+     "17": 0.0
+    },
+    "largest_proto0_flow_packets": 180,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DDoS": {
+    "flows": 128027,
+    "packets": 989426,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   }
+  },
+  "per_class": {
+   "BENIGN": {
+    "flows": 2273097,
+    "packets": 51810267,
+    "flow_share": {
+     "0": 0.0007,
+     "6": 0.5596,
+     "17": 0.4397
+    },
+    "packet_share": {
+     "0": 0.0035,
+     "6": 0.9222,
+     "17": 0.0743
+    },
+    "largest_proto0_flow_packets": 545,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Bot": {
+    "flows": 1966,
+    "packets": 12853,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DDoS": {
+    "flows": 128027,
+    "packets": 989426,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS GoldenEye": {
+    "flows": 10293,
+    "packets": 99003,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Hulk": {
+    "flows": 231073,
+    "packets": 2191807,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Slowhttptest": {
+    "flows": 5499,
+    "packets": 36874,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS slowloris": {
+    "flows": 5796,
+    "packets": 46327,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "FTP-Patator": {
+    "flows": 7938,
+    "packets": 105618,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Heartbleed": {
+    "flows": 11,
+    "packets": 49290,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Infiltration": {
+    "flows": 36,
+    "packets": 59754,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "PortScan": {
+    "flows": 158930,
+    "packets": 321442,
+    "flow_share": {
+     "0": 0.0,
+     "6": 1.0,
+     "17": 0.0
+    },
+    "packet_share": {
+     "0": 0.0007,
+     "6": 0.9993,
+     "17": 0.0
+    },
+    "largest_proto0_flow_packets": 180,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "SSH-Patator": {
+    "flows": 5897,
+    "packets": 163095,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack": {
+    "flows": 2180,
+    "packets": 35374,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   }
+  },
+  "per_file_and_label": {
+   "Monday-WorkingHours.pcap_ISCX.csv | BENIGN": {
+    "flows": 529918,
+    "packets": 11609136,
+    "flow_share": {
+     "0": 0.0006,
+     "6": 0.5764,
+     "17": 0.423
+    },
+    "packet_share": {
+     "0": 0.0031,
+     "6": 0.9187,
+     "17": 0.0782
+    },
+    "largest_proto0_flow_packets": 409,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Tuesday-WorkingHours.pcap_ISCX.csv | BENIGN": {
+    "flows": 432074,
+    "packets": 11194575,
+    "flow_share": {
+     "0": 0.0007,
+     "6": 0.5368,
+     "17": 0.4624
+    },
+    "packet_share": {
+     "0": 0.003,
+     "6": 0.9291,
+     "17": 0.0678
+    },
+    "largest_proto0_flow_packets": 477,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Tuesday-WorkingHours.pcap_ISCX.csv | FTP-Patator": {
+    "flows": 7938,
+    "packets": 105618,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Tuesday-WorkingHours.pcap_ISCX.csv | SSH-Patator": {
+    "flows": 5897,
+    "packets": 163095,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | BENIGN": {
+    "flows": 440031,
+    "packets": 11271673,
+    "flow_share": {
+     "0": 0.0007,
+     "6": 0.5381,
+     "17": 0.4612
+    },
+    "packet_share": {
+     "0": 0.0033,
+     "6": 0.9292,
+     "17": 0.0676
+    },
+    "largest_proto0_flow_packets": 244,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | DoS slowloris": {
+    "flows": 5796,
+    "packets": 46327,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | DoS Slowhttptest": {
+    "flows": 5499,
+    "packets": 36874,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | DoS Hulk": {
+    "flows": 231073,
+    "packets": 2191807,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | DoS GoldenEye": {
+    "flows": 10293,
+    "packets": 99003,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Wednesday-workingHours.pcap_ISCX.csv | Heartbleed": {
+    "flows": 11,
+    "packets": 49290,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv | BENIGN": {
+    "flows": 168186,
+    "packets": 5611730,
+    "flow_share": {
+     "0": 0.0008,
+     "6": 0.513,
+     "17": 0.4862
+    },
+    "packet_share": {
+     "0": 0.0028,
+     "6": 0.9413,
+     "17": 0.0559
+    },
+    "largest_proto0_flow_packets": 288,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv | Web Attack - Brute Force": {
+    "flows": 1507,
+    "packets": 27771,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv | Web Attack - XSS": {
+    "flows": 652,
+    "packets": 7483,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv | Web Attack - Sql Injection": {
+    "flows": 21,
+    "packets": 120,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv | BENIGN": {
+    "flows": 288566,
+    "packets": 3533729,
+    "flow_share": {
+     "0": 0.001,
+     "6": 0.645,
+     "17": 0.354
+    },
+    "packet_share": {
+     "0": 0.006,
+     "6": 0.8844,
+     "17": 0.1097
+    },
+    "largest_proto0_flow_packets": 327,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv | Infiltration": {
+    "flows": 36,
+    "packets": 59754,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Morning.pcap_ISCX.csv | BENIGN": {
+    "flows": 189067,
+    "packets": 5764035,
+    "flow_share": {
+     "0": 0.0008,
+     "6": 0.4931,
+     "17": 0.5061
+    },
+    "packet_share": {
+     "0": 0.0032,
+     "6": 0.9331,
+     "17": 0.0637
+    },
+    "largest_proto0_flow_packets": 545,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Morning.pcap_ISCX.csv | Bot": {
+    "flows": 1966,
+    "packets": 12853,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv | BENIGN": {
+    "flows": 127537,
+    "packets": 1682046,
+    "flow_share": {
+     "0": 0.0007,
+     "6": 0.528,
+     "17": 0.4713
+    },
+    "packet_share": {
+     "0": 0.0063,
+     "6": 0.858,
+     "17": 0.1356
+    },
+    "largest_proto0_flow_packets": 198,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv | PortScan": {
+    "flows": 158930,
+    "packets": 321442,
+    "flow_share": {
+     "0": 0.0,
+     "6": 1.0,
+     "17": 0.0
+    },
+    "packet_share": {
+     "0": 0.0007,
+     "6": 0.9993,
+     "17": 0.0
+    },
+    "largest_proto0_flow_packets": 180,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv | BENIGN": {
+    "flows": 97718,
+    "packets": 1143343,
+    "flow_share": {
+     "0": 0.0006,
+     "6": 0.6631,
+     "17": 0.3364
+    },
+    "packet_share": {
+     "0": 0.0055,
+     "6": 0.8833,
+     "17": 0.1112
+    },
+    "largest_proto0_flow_packets": 245,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv | DDoS": {
+    "flows": 128027,
+    "packets": 989426,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   }
+  }
+ },
+ "deduplicated": {
+  "description": "the de-duplicated table of the experiments (kept classes only)",
+  "per_label": {
+   "BENIGN": {
+    "flows": 1863293,
+    "packets": 50679300,
+    "flow_share": {
+     "0": 0.0008,
+     "6": 0.5213,
+     "17": 0.4778
+    },
+    "packet_share": {
+     "0": 0.0035,
+     "6": 0.9293,
+     "17": 0.0671
+    },
+    "largest_proto0_flow_packets": 545,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "FTP-Patator": {
+    "flows": 5933,
+    "packets": 101035,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "SSH-Patator": {
+    "flows": 3219,
+    "packets": 157739,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS slowloris": {
+    "flows": 5374,
+    "packets": 45451,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Slowhttptest": {
+    "flows": 5228,
+    "packets": 36272,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Hulk": {
+    "flows": 172849,
+    "packets": 2071300,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS GoldenEye": {
+    "flows": 10282,
+    "packets": 98981,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - Brute Force": {
+    "flows": 1470,
+    "packets": 27697,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - XSS": {
+    "flows": 652,
+    "packets": 7483,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack - Sql Injection": {
+    "flows": 21,
+    "packets": 120,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Bot": {
+    "flows": 1441,
+    "packets": 11803,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "PortScan": {
+    "flows": 1958,
+    "packets": 7492,
+    "flow_share": {
+     "0": 0.0031,
+     "6": 0.9964,
+     "17": 0.0005
+    },
+    "packet_share": {
+     "0": 0.0312,
+     "6": 0.9685,
+     "17": 0.0003
+    },
+    "largest_proto0_flow_packets": 180,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DDoS": {
+    "flows": 128016,
+    "packets": 989394,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   }
+  },
+  "per_class": {
+   "BENIGN": {
+    "flows": 1863293,
+    "packets": 50679300,
+    "flow_share": {
+     "0": 0.0008,
+     "6": 0.5213,
+     "17": 0.4778
+    },
+    "packet_share": {
+     "0": 0.0035,
+     "6": 0.9293,
+     "17": 0.0671
+    },
+    "largest_proto0_flow_packets": 545,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Bot": {
+    "flows": 1441,
+    "packets": 11803,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DDoS": {
+    "flows": 128016,
+    "packets": 989394,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS GoldenEye": {
+    "flows": 10282,
+    "packets": 98981,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Hulk": {
+    "flows": 172849,
+    "packets": 2071300,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS Slowhttptest": {
+    "flows": 5228,
+    "packets": 36272,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "DoS slowloris": {
+    "flows": 5374,
+    "packets": 45451,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "FTP-Patator": {
+    "flows": 5933,
+    "packets": 101035,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "PortScan": {
+    "flows": 1958,
+    "packets": 7492,
+    "flow_share": {
+     "0": 0.0031,
+     "6": 0.9964,
+     "17": 0.0005
+    },
+    "packet_share": {
+     "0": 0.0312,
+     "6": 0.9685,
+     "17": 0.0003
+    },
+    "largest_proto0_flow_packets": 180,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "SSH-Patator": {
+    "flows": 3219,
+    "packets": 157739,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   },
+   "Web Attack": {
+    "flows": 2143,
+    "packets": 35300,
+    "flow_share": {
+     "6": 1.0
+    },
+    "packet_share": {
+     "6": 1.0
+    },
+    "largest_proto0_flow_packets": 0,
+    "proto0_flows_with_nonzero_port": 0
+   }
+  }
+ }
+}

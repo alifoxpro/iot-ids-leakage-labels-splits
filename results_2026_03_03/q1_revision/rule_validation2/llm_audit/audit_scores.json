@@ -1,0 +1,689 @@
+{
+ "source": "results_2026_03_03\\q1_revision\\rule_validation2\\llm_audit\\audit_template_blind_filled.md",
+ "decided": 472,
+ "sampled": 472,
+ "unrecognised_decisions": [],
+ "per_class": {
+  "BruteForce": {
+   "R1_external": {
+    "flagged_flows": 2322,
+    "kept_flows": 1297,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 1,
+    "kept_background": 18,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.0526,
+    "kept_attack_share_ci95": [
+     0.0094,
+     0.2464
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 1667,
+    "kept_flows": 1952,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 1,
+    "kept_background": 18,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.0526,
+    "kept_attack_share_ci95": [
+     0.0094,
+     0.2464
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 581,
+    "kept_flows": 3038,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 0,
+    "kept_background": 20,
+    "kept_unclear": 0,
+    "kept_attack_share": 0.0,
+    "kept_attack_share_ci95": [
+     0.0,
+     0.1611
+    ],
+    "estimated_false_removal_rate": null
+   },
+   "any": {
+    "flagged_flows": 3361,
+    "kept_flows": 258,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 6,
+    "kept_background": 12,
+    "kept_unclear": 2,
+    "kept_attack_share": 0.3333,
+    "kept_attack_share_ci95": [
+     0.1628,
+     0.5625
+    ],
+    "estimated_false_removal_rate": 0.0
+   }
+  },
+  "DDOS": {
+   "R1_external": {
+    "flagged_flows": 372482,
+    "kept_flows": 3106332,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 19,
+    "kept_background": 0,
+    "kept_unclear": 1,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8318,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 546826,
+    "kept_flows": 2931988,
+    "flagged_sampled": 20,
+    "flagged_background": 11,
+    "flagged_attack": 9,
+    "flagged_unclear": 0,
+    "precision_background": 0.55,
+    "precision_ci95": [
+     0.3421,
+     0.7418
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 17,
+    "kept_background": 2,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.8947,
+    "kept_attack_share_ci95": [
+     0.6861,
+     0.9706
+    ],
+    "estimated_false_removal_rate": 0.0858
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 284516,
+    "kept_flows": 3194298,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 19,
+    "kept_background": 1,
+    "kept_unclear": 0,
+    "kept_attack_share": 0.95,
+    "kept_attack_share_ci95": [
+     0.7639,
+     0.9911
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "any": {
+    "flagged_flows": 849665,
+    "kept_flows": 2629149,
+    "flagged_sampled": 20,
+    "flagged_background": 12,
+    "flagged_attack": 8,
+    "flagged_unclear": 0,
+    "precision_background": 0.6,
+    "precision_ci95": [
+     0.3866,
+     0.7812
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 19,
+    "kept_background": 0,
+    "kept_unclear": 1,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8318,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.1145
+   }
+  },
+  "DOS": {
+   "R1_external": {
+    "flagged_flows": 308310,
+    "kept_flows": 14544777,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 20,
+    "kept_background": 0,
+    "kept_unclear": 0,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8389,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 198537,
+    "kept_flows": 14654550,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 20,
+    "kept_background": 0,
+    "kept_unclear": 0,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8389,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 35284,
+    "kept_flows": 14817803,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 20,
+    "kept_background": 0,
+    "kept_unclear": 0,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8389,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "any": {
+    "flagged_flows": 448529,
+    "kept_flows": 14404558,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 20,
+    "kept_background": 0,
+    "kept_unclear": 0,
+    "kept_attack_share": 1.0,
+    "kept_attack_share_ci95": [
+     0.8389,
+     1.0
+    ],
+    "estimated_false_removal_rate": 0.0
+   }
+  },
+  "Mirai": {
+   "R1_external": {
+    "flagged_flows": 101001,
+    "kept_flows": 73587,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 1,
+    "kept_background": 16,
+    "kept_unclear": 3,
+    "kept_attack_share": 0.0588,
+    "kept_attack_share_ci95": [
+     0.0105,
+     0.2698
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 102041,
+    "kept_flows": 72547,
+    "flagged_sampled": 20,
+    "flagged_background": 19,
+    "flagged_attack": 0,
+    "flagged_unclear": 1,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8318,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 1,
+    "kept_background": 17,
+    "kept_unclear": 2,
+    "kept_attack_share": 0.0556,
+    "kept_attack_share_ci95": [
+     0.0099,
+     0.2576
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 6545,
+    "kept_flows": 168043,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 1,
+    "kept_background": 17,
+    "kept_unclear": 2,
+    "kept_attack_share": 0.0556,
+    "kept_attack_share_ci95": [
+     0.0099,
+     0.2576
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "any": {
+    "flagged_flows": 168642,
+    "kept_flows": 5946,
+    "flagged_sampled": 20,
+    "flagged_background": 19,
+    "flagged_attack": 0,
+    "flagged_unclear": 1,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8318,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 6,
+    "kept_background": 8,
+    "kept_unclear": 6,
+    "kept_attack_share": 0.4286,
+    "kept_attack_share_ci95": [
+     0.2138,
+     0.6741
+    ],
+    "estimated_false_removal_rate": 0.0
+   }
+  },
+  "Recon": {
+   "R1_external": {
+    "flagged_flows": 247313,
+    "kept_flows": 194845,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 7,
+    "kept_background": 12,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.3684,
+    "kept_attack_share_ci95": [
+     0.1915,
+     0.5896
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 143079,
+    "kept_flows": 299079,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 5,
+    "kept_background": 14,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.2632,
+    "kept_attack_share_ci95": [
+     0.1181,
+     0.4879
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 241224,
+    "kept_flows": 200934,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 6,
+    "kept_background": 13,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.3158,
+    "kept_attack_share_ci95": [
+     0.1536,
+     0.5399
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "any": {
+    "flagged_flows": 365902,
+    "kept_flows": 76256,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 16,
+    "kept_background": 2,
+    "kept_unclear": 2,
+    "kept_attack_share": 0.8889,
+    "kept_attack_share_ci95": [
+     0.672,
+     0.969
+    ],
+    "estimated_false_removal_rate": 0.0
+   }
+  },
+  "Spoofing": {
+   "R1_external": {
+    "flagged_flows": 89194,
+    "kept_flows": 68044,
+    "flagged_sampled": 20,
+    "flagged_background": 19,
+    "flagged_attack": 0,
+    "flagged_unclear": 1,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8318,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 0,
+    "kept_background": 13,
+    "kept_unclear": 7,
+    "kept_attack_share": 0.0,
+    "kept_attack_share_ci95": [
+     0.0,
+     0.2281
+    ],
+    "estimated_false_removal_rate": null
+   },
+   "R2_service": {
+    "flagged_flows": 41377,
+    "kept_flows": 115861,
+    "flagged_sampled": 20,
+    "flagged_background": 14,
+    "flagged_attack": 0,
+    "flagged_unclear": 6,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.7847,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 0,
+    "kept_background": 16,
+    "kept_unclear": 4,
+    "kept_attack_share": 0.0,
+    "kept_attack_share_ci95": [
+     0.0,
+     0.1936
+    ],
+    "estimated_false_removal_rate": null
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 27761,
+    "kept_flows": 129477,
+    "flagged_sampled": 20,
+    "flagged_background": 19,
+    "flagged_attack": 0,
+    "flagged_unclear": 1,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8318,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 0,
+    "kept_background": 16,
+    "kept_unclear": 4,
+    "kept_attack_share": 0.0,
+    "kept_attack_share_ci95": [
+     0.0,
+     0.1936
+    ],
+    "estimated_false_removal_rate": null
+   },
+   "any": {
+    "flagged_flows": 124216,
+    "kept_flows": 33022,
+    "flagged_sampled": 20,
+    "flagged_background": 19,
+    "flagged_attack": 0,
+    "flagged_unclear": 1,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8318,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 0,
+    "kept_background": 10,
+    "kept_unclear": 10,
+    "kept_attack_share": 0.0,
+    "kept_attack_share_ci95": [
+     0.0,
+     0.2775
+    ],
+    "estimated_false_removal_rate": null
+   }
+  },
+  "Web-Based": {
+   "R1_external": {
+    "flagged_flows": 7026,
+    "kept_flows": 4302,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 4,
+    "kept_background": 15,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.2105,
+    "kept_attack_share_ci95": [
+     0.0851,
+     0.4333
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R2_service": {
+    "flagged_flows": 4086,
+    "kept_flows": 7242,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 2,
+    "kept_background": 18,
+    "kept_unclear": 0,
+    "kept_attack_share": 0.1,
+    "kept_attack_share_ci95": [
+     0.0279,
+     0.301
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "R3_benign_pair": {
+    "flagged_flows": 3946,
+    "kept_flows": 7382,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 2,
+    "kept_background": 17,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.1053,
+    "kept_attack_share_ci95": [
+     0.0294,
+     0.3139
+    ],
+    "estimated_false_removal_rate": 0.0
+   },
+   "any": {
+    "flagged_flows": 10319,
+    "kept_flows": 1009,
+    "flagged_sampled": 20,
+    "flagged_background": 20,
+    "flagged_attack": 0,
+    "flagged_unclear": 0,
+    "precision_background": 1.0,
+    "precision_ci95": [
+     0.8389,
+     1.0
+    ],
+    "kept_sampled": 20,
+    "kept_attack": 13,
+    "kept_background": 6,
+    "kept_unclear": 1,
+    "kept_attack_share": 0.6842,
+    "kept_attack_share_ci95": [
+     0.4601,
+     0.8464
+    ],
+    "estimated_false_removal_rate": 0.0
+   }
+  }
+ },
+ "pooled": {
+  "R1_external": {
+   "estimated_attack_flows_removed": 0.0,
+   "estimated_attack_flows_kept": 17728196.6,
+   "estimated_false_removal_rate": 0.0
+  },
+  "R2_service": {
+   "estimated_attack_flows_removed": 246071.7,
+   "estimated_attack_flows_kept": 17361470.0,
+   "estimated_false_removal_rate": 0.014
+  },
+  "R3_benign_pair": {
+   "estimated_attack_flows_removed": 0.0,
+   "estimated_attack_flows_kept": 17925951.7,
+   "estimated_false_removal_rate": 0.0
+  },
+  "any": {
+   "estimated_attack_flows_removed": 339866.0,
+   "estimated_attack_flows_kept": 17104814.8,
+   "estimated_false_removal_rate": 0.0195
+  }
+ },
+ "note": "precision_background = share of sampled flagged flows judged background (unclear excluded); kept_attack_share = share of sampled kept flows judged attack; estimated_false_removal_rate = F(1-precision) / (F(1-precision) + K kept_attack_share) with the stratum sizes F, K of the class."
+}

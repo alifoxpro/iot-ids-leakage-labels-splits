@@ -1,0 +1,179 @@
+{
+ "class": "Mirai",
+ "y": 4,
+ "n_flows": 159724,
+ "build_seconds": 2.2,
+ "verification": {
+  "n_rebuilt": 159724,
+  "n_cache": 159724,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "cache_rows": [
+   2888995,
+   3048719
+  ],
+  "contiguous_at_expected_offset": true,
+  "ok": true
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 580,
+  "files_checked": 29,
+  "features_exact": 580,
+  "features_close": 580,
+  "ts_equal": 580,
+  "ips_equal": 580,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "Mirai/Mirai-greeth_flood.pcap_Flow.csv": {
+   "records": 5172,
+   "after_thinning": 5172,
+   "in_sample": 4965
+  },
+  "Mirai/Mirai-greeth_flood1.pcap_Flow.csv": {
+   "records": 10856,
+   "after_thinning": 10856,
+   "in_sample": 7588
+  },
+  "Mirai/Mirai-greeth_flood10.pcap_Flow.csv": {
+   "records": 8187,
+   "after_thinning": 8187,
+   "in_sample": 7979
+  },
+  "Mirai/Mirai-greeth_flood11.pcap_Flow.csv": {
+   "records": 8377,
+   "after_thinning": 8377,
+   "in_sample": 8175
+  },
+  "Mirai/Mirai-greeth_flood12.pcap_Flow.csv": {
+   "records": 6423,
+   "after_thinning": 6423,
+   "in_sample": 6290
+  },
+  "Mirai/Mirai-greeth_flood13.pcap_Flow.csv": {
+   "records": 10306,
+   "after_thinning": 10306,
+   "in_sample": 10015
+  },
+  "Mirai/Mirai-greeth_flood14.pcap_Flow.csv": {
+   "records": 2977,
+   "after_thinning": 2977,
+   "in_sample": 2947
+  },
+  "Mirai/Mirai-greeth_flood15.pcap_Flow.csv": {
+   "records": 3247,
+   "after_thinning": 3247,
+   "in_sample": 3187
+  },
+  "Mirai/Mirai-greeth_flood16.pcap_Flow.csv": {
+   "records": 4438,
+   "after_thinning": 4438,
+   "in_sample": 4380
+  },
+  "Mirai/Mirai-greeth_flood17.pcap_Flow.csv": {
+   "records": 2790,
+   "after_thinning": 2790,
+   "in_sample": 2757
+  },
+  "Mirai/Mirai-greeth_flood18.pcap_Flow.csv": {
+   "records": 3265,
+   "after_thinning": 3265,
+   "in_sample": 3230
+  },
+  "Mirai/Mirai-greeth_flood19.pcap_Flow.csv": {
+   "records": 3481,
+   "after_thinning": 3481,
+   "in_sample": 3407
+  },
+  "Mirai/Mirai-greeth_flood2.pcap_Flow.csv": {
+   "records": 4071,
+   "after_thinning": 4071,
+   "in_sample": 3892
+  },
+  "Mirai/Mirai-greeth_flood20.pcap_Flow.csv": {
+   "records": 4100,
+   "after_thinning": 4100,
+   "in_sample": 4013
+  },
+  "Mirai/Mirai-greeth_flood21.pcap_Flow.csv": {
+   "records": 4507,
+   "after_thinning": 4507,
+   "in_sample": 4429
+  },
+  "Mirai/Mirai-greeth_flood22.pcap_Flow.csv": {
+   "records": 6609,
+   "after_thinning": 6609,
+   "in_sample": 6420
+  },
+  "Mirai/Mirai-greeth_flood23.pcap_Flow.csv": {
+   "records": 4572,
+   "after_thinning": 4572,
+   "in_sample": 4505
+  },
+  "Mirai/Mirai-greeth_flood24.pcap_Flow.csv": {
+   "records": 2546,
+   "after_thinning": 2546,
+   "in_sample": 2525
+  },
+  "Mirai/Mirai-greeth_flood25.pcap_Flow.csv": {
+   "records": 2500,
+   "after_thinning": 2500,
+   "in_sample": 2487
+  },
+  "Mirai/Mirai-greeth_flood26.pcap_Flow.csv": {
+   "records": 5482,
+   "after_thinning": 5482,
+   "in_sample": 5388
+  },
+  "Mirai/Mirai-greeth_flood27.pcap_Flow.csv": {
+   "records": 7602,
+   "after_thinning": 7602,
+   "in_sample": 7418
+  },
+  "Mirai/Mirai-greeth_flood28.pcap_Flow.csv": {
+   "records": 8451,
+   "after_thinning": 8451,
+   "in_sample": 8290
+  },
+  "Mirai/Mirai-greeth_flood3.pcap_Flow.csv": {
+   "records": 4647,
+   "after_thinning": 4647,
+   "in_sample": 3299
+  },
+  "Mirai/Mirai-greeth_flood4.pcap_Flow.csv": {
+   "records": 9012,
+   "after_thinning": 9012,
+   "in_sample": 5806
+  },
+  "Mirai/Mirai-greeth_flood5.pcap_Flow.csv": {
+   "records": 3873,
+   "after_thinning": 3873,
+   "in_sample": 3836
+  },
+  "Mirai/Mirai-greeth_flood6.pcap_Flow.csv": {
+   "records": 11786,
+   "after_thinning": 11786,
+   "in_sample": 9304
+  },
+  "Mirai/Mirai-greeth_flood7.pcap_Flow.csv": {
+   "records": 7789,
+   "after_thinning": 7789,
+   "in_sample": 7090
+  },
+  "Mirai/Mirai-greeth_flood8.pcap_Flow.csv": {
+   "records": 5443,
+   "after_thinning": 5443,
+   "in_sample": 4484
+  },
+  "Mirai/Mirai-greeth_flood9.pcap_Flow.csv": {
+   "records": 12079,
+   "after_thinning": 12079,
+   "in_sample": 11618
+  }
+ }
+}

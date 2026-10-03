@@ -1,0 +1,5 @@
+csv,class,sub,records,after_thinning,in_sample
+BruteForce/BruteForce.pcap_Flow.csv,BruteForce,BruteForce,3619,3619,3601
+Web-Based/Sqlinjection/SqlInjection.pcap_Flow.csv,Web-Based,Sqlinjection,6603,6603,6521
+Web-Based/Uploading Attack/Uploading_Attack.pcap_Flow.csv,Web-Based,Uploading Attack,1348,1348,1328
+Web-Based/XSS/XSS.pcap_Flow.csv,Web-Based,XSS,3377,3377,3362

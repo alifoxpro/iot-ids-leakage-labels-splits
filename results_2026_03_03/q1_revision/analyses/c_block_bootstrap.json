@@ -1,0 +1,3247 @@
+{
+ "settings": {
+  "B": 1000,
+  "blocks": [
+   1000,
+   5000
+  ],
+  "min_blocks": 5,
+  "seed": 42,
+  "variants": {
+   "iid_class": "i.i.d. rows, stratified by true class (bootstrap_ci.py)",
+   "iid_group": "i.i.d. rows, stratified by capture group",
+   "blockL": "circular moving blocks of L time-consecutive test rows inside each capture group; L shortened to n // min_blocks for small groups (block_lengths)"
+  },
+  "ci": "percentile 2.5 / 97.5; half_width = (hi - lo) / 2",
+  "split_effect": "independent bootstraps of the random and the temporal test set",
+  "train_cleaning_effect": "paired: the same resampled R1 test rows for both models"
+ },
+ "runs": [
+  {
+   "model": "LightGBM",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "r1",
+   "n_test": 454909,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.5713,
+   "bal_acc": 0.7285,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.5686,
+       0.57389
+      ],
+      "half_width": 0.00265,
+      "sd": 0.00132,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.71903,
+       0.73762
+      ],
+      "half_width": 0.0093,
+      "sd": 0.00496,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.56885,
+       0.57375
+      ],
+      "half_width": 0.00245,
+      "sd": 0.00129,
+      "ratio_to_iid_class": 0.925
+     },
+     "bal_acc": {
+      "ci": [
+       0.71834,
+       0.73738
+      ],
+      "half_width": 0.00952,
+      "sd": 0.005,
+      "ratio_to_iid_class": 1.024
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.5605,
+       0.5843
+      ],
+      "half_width": 0.0119,
+      "sd": 0.0059,
+      "ratio_to_iid_class": 4.495
+     },
+     "bal_acc": {
+      "ci": [
+       0.71094,
+       0.74574
+      ],
+      "half_width": 0.0174,
+      "sd": 0.00888,
+      "ratio_to_iid_class": 1.871
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.5558,
+       0.58895
+      ],
+      "half_width": 0.01658,
+      "sd": 0.00865,
+      "ratio_to_iid_class": 6.26
+     },
+     "bal_acc": {
+      "ci": [
+       0.70935,
+       0.74911
+      ],
+      "half_width": 0.01988,
+      "sd": 0.01036,
+      "ratio_to_iid_class": 2.138
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4392,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1392,
+     "DOS / DOS HTTP FLOOD": 3591,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    }
+   }
+  },
+  {
+   "model": "LightGBM",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "raw",
+   "n_test": 543976,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.5984,
+   "bal_acc": 0.7354,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.5966,
+       0.60018
+      ],
+      "half_width": 0.00179,
+      "sd": 0.00087,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.72944,
+       0.7412
+      ],
+      "half_width": 0.00588,
+      "sd": 0.00301,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.59673,
+       0.59998
+      ],
+      "half_width": 0.00163,
+      "sd": 0.00084,
+      "ratio_to_iid_class": 0.907
+     },
+     "bal_acc": {
+      "ci": [
+       0.72912,
+       0.74102
+      ],
+      "half_width": 0.00595,
+      "sd": 0.00305,
+      "ratio_to_iid_class": 1.012
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.58942,
+       0.60762
+      ],
+      "half_width": 0.0091,
+      "sd": 0.00468,
+      "ratio_to_iid_class": 5.075
+     },
+     "bal_acc": {
+      "ci": [
+       0.71904,
+       0.75009
+      ],
+      "half_width": 0.01553,
+      "sd": 0.00807,
+      "ratio_to_iid_class": 2.641
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.58492,
+       0.61211
+      ],
+      "half_width": 0.0136,
+      "sd": 0.0068,
+      "ratio_to_iid_class": 7.581
+     },
+     "bal_acc": {
+      "ci": [
+       0.71673,
+       0.75172
+      ],
+      "half_width": 0.0175,
+      "sd": 0.00882,
+      "ratio_to_iid_class": 2.977
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4514,
+     "DDOS / DDOS ICMP FLOOD": 2037,
+     "DDOS / DDOS ICMP Fragmentation": 3211,
+     "DOS / DOS HTTP FLOOD": 3712,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2313,
+     "Spoofing / DNS Spoofing": 2213,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    }
+   }
+  },
+  {
+   "model": "LightGBM",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "r1",
+   "n_test": 454916,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4434,
+   "bal_acc": 0.5383,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.44169,
+       0.44505
+      ],
+      "half_width": 0.00168,
+      "sd": 0.00088,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.53202,
+       0.54532
+      ],
+      "half_width": 0.00665,
+      "sd": 0.00342,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.44186,
+       0.44504
+      ],
+      "half_width": 0.00159,
+      "sd": 0.00081,
+      "ratio_to_iid_class": 0.944
+     },
+     "bal_acc": {
+      "ci": [
+       0.53244,
+       0.54449
+      ],
+      "half_width": 0.00602,
+      "sd": 0.00316,
+      "ratio_to_iid_class": 0.906
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.43246,
+       0.45455
+      ],
+      "half_width": 0.01105,
+      "sd": 0.00574,
+      "ratio_to_iid_class": 6.563
+     },
+     "bal_acc": {
+      "ci": [
+       0.5172,
+       0.56083
+      ],
+      "half_width": 0.02181,
+      "sd": 0.01139,
+      "ratio_to_iid_class": 3.28
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.42327,
+       0.46338
+      ],
+      "half_width": 0.02005,
+      "sd": 0.01023,
+      "ratio_to_iid_class": 11.913
+     },
+     "bal_acc": {
+      "ci": [
+       0.51337,
+       0.56276
+      ],
+      "half_width": 0.0247,
+      "sd": 0.01283,
+      "ratio_to_iid_class": 3.713
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4363,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1390,
+     "DOS / DOS HTTP FLOOD": 3602,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    }
+   }
+  },
+  {
+   "model": "LightGBM",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "raw",
+   "n_test": 543986,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4369,
+   "bal_acc": 0.5201,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.43535,
+       0.43833
+      ],
+      "half_width": 0.00149,
+      "sd": 0.00074,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.51445,
+       0.52529
+      ],
+      "half_width": 0.00542,
+      "sd": 0.00274,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.43539,
+       0.43826
+      ],
+      "half_width": 0.00143,
+      "sd": 0.00075,
+      "ratio_to_iid_class": 0.961
+     },
+     "bal_acc": {
+      "ci": [
+       0.51462,
+       0.52504
+      ],
+      "half_width": 0.00521,
+      "sd": 0.00272,
+      "ratio_to_iid_class": 0.962
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.42459,
+       0.44865
+      ],
+      "half_width": 0.01203,
+      "sd": 0.00612,
+      "ratio_to_iid_class": 8.071
+     },
+     "bal_acc": {
+      "ci": [
+       0.50224,
+       0.53702
+      ],
+      "half_width": 0.01739,
+      "sd": 0.00866,
+      "ratio_to_iid_class": 3.21
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.41536,
+       0.45852
+      ],
+      "half_width": 0.02158,
+      "sd": 0.011,
+      "ratio_to_iid_class": 14.474
+     },
+     "bal_acc": {
+      "ci": [
+       0.49564,
+       0.5431
+      ],
+      "half_width": 0.02373,
+      "sd": 0.01172,
+      "ratio_to_iid_class": 4.38
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4486,
+     "DDOS / DDOS ICMP FLOOD": 2022,
+     "DDOS / DDOS ICMP Fragmentation": 3183,
+     "DOS / DOS HTTP FLOOD": 3704,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2317,
+     "Spoofing / DNS Spoofing": 2209,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    }
+   }
+  },
+  {
+   "model": "RandomForest",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "r1",
+   "n_test": 454909,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.6813,
+   "bal_acc": 0.7313,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.67238,
+       0.68914
+      ],
+      "half_width": 0.00838,
+      "sd": 0.00421,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.72159,
+       0.73982
+      ],
+      "half_width": 0.00912,
+      "sd": 0.00475,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.67343,
+       0.69
+      ],
+      "half_width": 0.00829,
+      "sd": 0.00426,
+      "ratio_to_iid_class": 0.989
+     },
+     "bal_acc": {
+      "ci": [
+       0.72263,
+       0.741
+      ],
+      "half_width": 0.00919,
+      "sd": 0.00479,
+      "ratio_to_iid_class": 1.008
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.66278,
+       0.70154
+      ],
+      "half_width": 0.01938,
+      "sd": 0.01006,
+      "ratio_to_iid_class": 2.313
+     },
+     "bal_acc": {
+      "ci": [
+       0.71165,
+       0.75232
+      ],
+      "half_width": 0.02033,
+      "sd": 0.00987,
+      "ratio_to_iid_class": 2.23
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.66289,
+       0.70536
+      ],
+      "half_width": 0.02124,
+      "sd": 0.01158,
+      "ratio_to_iid_class": 2.535
+     },
+     "bal_acc": {
+      "ci": [
+       0.71289,
+       0.75336
+      ],
+      "half_width": 0.02024,
+      "sd": 0.01057,
+      "ratio_to_iid_class": 2.219
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4392,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1392,
+     "DOS / DOS HTTP FLOOD": 3591,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    }
+   }
+  },
+  {
+   "model": "RandomForest",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "raw",
+   "n_test": 543976,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.6174,
+   "bal_acc": 0.6707,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.61437,
+       0.6209
+      ],
+      "half_width": 0.00326,
+      "sd": 0.00166,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.66524,
+       0.67635
+      ],
+      "half_width": 0.00556,
+      "sd": 0.0029,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.61428,
+       0.62048
+      ],
+      "half_width": 0.0031,
+      "sd": 0.00163,
+      "ratio_to_iid_class": 0.949
+     },
+     "bal_acc": {
+      "ci": [
+       0.66506,
+       0.67635
+      ],
+      "half_width": 0.00564,
+      "sd": 0.00286,
+      "ratio_to_iid_class": 1.016
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.60652,
+       0.6296
+      ],
+      "half_width": 0.01154,
+      "sd": 0.00587,
+      "ratio_to_iid_class": 3.535
+     },
+     "bal_acc": {
+      "ci": [
+       0.65581,
+       0.68522
+      ],
+      "half_width": 0.01471,
+      "sd": 0.00765,
+      "ratio_to_iid_class": 2.647
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.60246,
+       0.63487
+      ],
+      "half_width": 0.01621,
+      "sd": 0.00789,
+      "ratio_to_iid_class": 4.964
+     },
+     "bal_acc": {
+      "ci": [
+       0.65265,
+       0.68844
+      ],
+      "half_width": 0.0179,
+      "sd": 0.00889,
+      "ratio_to_iid_class": 3.222
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4514,
+     "DDOS / DDOS ICMP FLOOD": 2037,
+     "DDOS / DDOS ICMP Fragmentation": 3211,
+     "DOS / DOS HTTP FLOOD": 3712,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2313,
+     "Spoofing / DNS Spoofing": 2213,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    }
+   }
+  },
+  {
+   "model": "RandomForest",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "r1",
+   "n_test": 454916,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4835,
+   "bal_acc": 0.548,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.47991,
+       0.48707
+      ],
+      "half_width": 0.00358,
+      "sd": 0.00186,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.54302,
+       0.55303
+      ],
+      "half_width": 0.005,
+      "sd": 0.00261,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.48029,
+       0.48683
+      ],
+      "half_width": 0.00327,
+      "sd": 0.00168,
+      "ratio_to_iid_class": 0.914
+     },
+     "bal_acc": {
+      "ci": [
+       0.54351,
+       0.55253
+      ],
+      "half_width": 0.00451,
+      "sd": 0.00238,
+      "ratio_to_iid_class": 0.901
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.4676,
+       0.50136
+      ],
+      "half_width": 0.01688,
+      "sd": 0.00861,
+      "ratio_to_iid_class": 4.715
+     },
+     "bal_acc": {
+      "ci": [
+       0.5263,
+       0.57183
+      ],
+      "half_width": 0.02276,
+      "sd": 0.01161,
+      "ratio_to_iid_class": 4.549
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.46216,
+       0.50882
+      ],
+      "half_width": 0.02333,
+      "sd": 0.01241,
+      "ratio_to_iid_class": 6.518
+     },
+     "bal_acc": {
+      "ci": [
+       0.52412,
+       0.57379
+      ],
+      "half_width": 0.02484,
+      "sd": 0.01278,
+      "ratio_to_iid_class": 4.963
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4363,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1390,
+     "DOS / DOS HTTP FLOOD": 3602,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    }
+   }
+  },
+  {
+   "model": "RandomForest",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "raw",
+   "n_test": 543986,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4433,
+   "bal_acc": 0.49,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.441,
+       0.44562
+      ],
+      "half_width": 0.00231,
+      "sd": 0.0012,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.48657,
+       0.49357
+      ],
+      "half_width": 0.0035,
+      "sd": 0.00176,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.44085,
+       0.44587
+      ],
+      "half_width": 0.00251,
+      "sd": 0.00122,
+      "ratio_to_iid_class": 1.086
+     },
+     "bal_acc": {
+      "ci": [
+       0.48642,
+       0.49374
+      ],
+      "half_width": 0.00366,
+      "sd": 0.00181,
+      "ratio_to_iid_class": 1.045
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.43013,
+       0.45624
+      ],
+      "half_width": 0.01306,
+      "sd": 0.00651,
+      "ratio_to_iid_class": 5.657
+     },
+     "bal_acc": {
+      "ci": [
+       0.47574,
+       0.50328
+      ],
+      "half_width": 0.01377,
+      "sd": 0.00706,
+      "ratio_to_iid_class": 3.932
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.42195,
+       0.46551
+      ],
+      "half_width": 0.02178,
+      "sd": 0.01121,
+      "ratio_to_iid_class": 9.435
+     },
+     "bal_acc": {
+      "ci": [
+       0.46827,
+       0.51199
+      ],
+      "half_width": 0.02186,
+      "sd": 0.01118,
+      "ratio_to_iid_class": 6.241
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4486,
+     "DDOS / DDOS ICMP FLOOD": 2022,
+     "DDOS / DDOS ICMP Fragmentation": 3183,
+     "DOS / DOS HTTP FLOOD": 3704,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2317,
+     "Spoofing / DNS Spoofing": 2209,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    }
+   }
+  },
+  {
+   "model": "XGBoost",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "r1",
+   "n_test": 454909,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.6263,
+   "bal_acc": 0.8208,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.62404,
+       0.62868
+      ],
+      "half_width": 0.00232,
+      "sd": 0.00116,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.81171,
+       0.82907
+      ],
+      "half_width": 0.00868,
+      "sd": 0.00441,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.62397,
+       0.62865
+      ],
+      "half_width": 0.00234,
+      "sd": 0.00119,
+      "ratio_to_iid_class": 1.008
+     },
+     "bal_acc": {
+      "ci": [
+       0.8119,
+       0.82925
+      ],
+      "half_width": 0.00868,
+      "sd": 0.0044,
+      "ratio_to_iid_class": 0.999
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.61463,
+       0.63837
+      ],
+      "half_width": 0.01187,
+      "sd": 0.00596,
+      "ratio_to_iid_class": 5.118
+     },
+     "bal_acc": {
+      "ci": [
+       0.80291,
+       0.83608
+      ],
+      "half_width": 0.01658,
+      "sd": 0.00851,
+      "ratio_to_iid_class": 1.91
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.61168,
+       0.64537
+      ],
+      "half_width": 0.01684,
+      "sd": 0.00871,
+      "ratio_to_iid_class": 7.263
+     },
+     "bal_acc": {
+      "ci": [
+       0.80361,
+       0.84033
+      ],
+      "half_width": 0.01836,
+      "sd": 0.00942,
+      "ratio_to_iid_class": 2.115
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4392,
+     "DDOS / DDOS ICMP FLOOD": 859,
+     "DDOS / DDOS ICMP Fragmentation": 1392,
+     "DOS / DOS HTTP FLOOD": 3591,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 971,
+     "Spoofing / DNS Spoofing": 930,
+     "Web-Based / Sqlinjection": 76,
+     "Web-Based / Uploading Attack": 16,
+     "Web-Based / XSS": 34
+    }
+   }
+  },
+  {
+   "model": "XGBoost",
+   "seed": 42,
+   "split": "random",
+   "cleaning": "raw",
+   "n_test": 543976,
+   "row_order": "time order (reconstructed)",
+   "macro_f1": 0.5792,
+   "bal_acc": 0.7388,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.57766,
+       0.58085
+      ],
+      "half_width": 0.0016,
+      "sd": 0.00081,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.73378,
+       0.7437
+      ],
+      "half_width": 0.00496,
+      "sd": 0.00251,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.57766,
+       0.58068
+      ],
+      "half_width": 0.00151,
+      "sd": 0.00078,
+      "ratio_to_iid_class": 0.946
+     },
+     "bal_acc": {
+      "ci": [
+       0.73353,
+       0.74363
+      ],
+      "half_width": 0.00505,
+      "sd": 0.00257,
+      "ratio_to_iid_class": 1.018
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.56978,
+       0.58974
+      ],
+      "half_width": 0.00998,
+      "sd": 0.00513,
+      "ratio_to_iid_class": 6.256
+     },
+     "bal_acc": {
+      "ci": [
+       0.72394,
+       0.75293
+      ],
+      "half_width": 0.0145,
+      "sd": 0.00738,
+      "ratio_to_iid_class": 2.922
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.56549,
+       0.59363
+      ],
+      "half_width": 0.01407,
+      "sd": 0.00716,
+      "ratio_to_iid_class": 8.819
+     },
+     "bal_acc": {
+      "ci": [
+       0.72247,
+       0.75514
+      ],
+      "half_width": 0.01634,
+      "sd": 0.00804,
+      "ratio_to_iid_class": 3.292
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4514,
+     "DDOS / DDOS ICMP FLOOD": 2037,
+     "DDOS / DDOS ICMP Fragmentation": 3211,
+     "DOS / DOS HTTP FLOOD": 3712,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2313,
+     "Spoofing / DNS Spoofing": 2213,
+     "Web-Based / Sqlinjection": 194,
+     "Web-Based / Uploading Attack": 43,
+     "Web-Based / XSS": 98
+    }
+   }
+  },
+  {
+   "model": "XGBoost",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "r1",
+   "n_test": 454916,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4619,
+   "bal_acc": 0.5812,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.46002,
+       0.46365
+      ],
+      "half_width": 0.00181,
+      "sd": 0.00093,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.57304,
+       0.58855
+      ],
+      "half_width": 0.00776,
+      "sd": 0.004,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.46026,
+       0.46368
+      ],
+      "half_width": 0.00171,
+      "sd": 0.00088,
+      "ratio_to_iid_class": 0.943
+     },
+     "bal_acc": {
+      "ci": [
+       0.57388,
+       0.5891
+      ],
+      "half_width": 0.00761,
+      "sd": 0.00392,
+      "ratio_to_iid_class": 0.98
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.44943,
+       0.47408
+      ],
+      "half_width": 0.01232,
+      "sd": 0.00638,
+      "ratio_to_iid_class": 6.792
+     },
+     "bal_acc": {
+      "ci": [
+       0.55699,
+       0.60612
+      ],
+      "half_width": 0.02457,
+      "sd": 0.01228,
+      "ratio_to_iid_class": 3.167
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.44185,
+       0.48546
+      ],
+      "half_width": 0.02181,
+      "sd": 0.0112,
+      "ratio_to_iid_class": 12.018
+     },
+     "bal_acc": {
+      "ci": [
+       0.55458,
+       0.60958
+      ],
+      "half_width": 0.0275,
+      "sd": 0.01374,
+      "ratio_to_iid_class": 3.544
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 38,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4363,
+     "DDOS / DDOS ICMP FLOOD": 850,
+     "DDOS / DDOS ICMP Fragmentation": 1390,
+     "DOS / DOS HTTP FLOOD": 3602,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 1868,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 968,
+     "Spoofing / DNS Spoofing": 933,
+     "Web-Based / Sqlinjection": 73,
+     "Web-Based / Uploading Attack": 18,
+     "Web-Based / XSS": 35
+    }
+   }
+  },
+  {
+   "model": "XGBoost",
+   "seed": 42,
+   "split": "temporal",
+   "cleaning": "raw",
+   "n_test": 543986,
+   "row_order": "time order (stored)",
+   "macro_f1": 0.4269,
+   "bal_acc": 0.5364,
+   "variants": {
+    "iid_class": {
+     "macro_f1": {
+      "ci": [
+       0.4255,
+       0.42824
+      ],
+      "half_width": 0.00137,
+      "sd": 0.00068,
+      "ratio_to_iid_class": 1.0
+     },
+     "bal_acc": {
+      "ci": [
+       0.53066,
+       0.54237
+      ],
+      "half_width": 0.00585,
+      "sd": 0.00301,
+      "ratio_to_iid_class": 1.0
+     }
+    },
+    "iid_group": {
+     "macro_f1": {
+      "ci": [
+       0.42557,
+       0.42809
+      ],
+      "half_width": 0.00126,
+      "sd": 0.00063,
+      "ratio_to_iid_class": 0.919
+     },
+     "bal_acc": {
+      "ci": [
+       0.53049,
+       0.54231
+      ],
+      "half_width": 0.00591,
+      "sd": 0.00297,
+      "ratio_to_iid_class": 1.01
+     }
+    },
+    "block1000": {
+     "macro_f1": {
+      "ci": [
+       0.41649,
+       0.43843
+      ],
+      "half_width": 0.01097,
+      "sd": 0.00561,
+      "ratio_to_iid_class": 8.005
+     },
+     "bal_acc": {
+      "ci": [
+       0.51868,
+       0.55386
+      ],
+      "half_width": 0.01759,
+      "sd": 0.00905,
+      "ratio_to_iid_class": 3.004
+     }
+    },
+    "block5000": {
+     "macro_f1": {
+      "ci": [
+       0.40561,
+       0.44944
+      ],
+      "half_width": 0.02191,
+      "sd": 0.01054,
+      "ratio_to_iid_class": 15.991
+     },
+     "bal_acc": {
+      "ci": [
+       0.51278,
+       0.56173
+      ],
+      "half_width": 0.02448,
+      "sd": 0.01237,
+      "ratio_to_iid_class": 4.181
+     }
+    }
+   },
+   "block_lengths": {
+    "block1000": {
+     "Benign / Benign": 1000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 1000,
+     "DDOS / DDOS HTTP FLOOD": 1000,
+     "DDOS / DDOS ICMP FLOOD": 1000,
+     "DDOS / DDOS ICMP Fragmentation": 1000,
+     "DOS / DOS HTTP FLOOD": 1000,
+     "DOS / DOS SYN FLOOD": 1000,
+     "DOS / DOS UDP FLOOD": 1000,
+     "Mirai / Mirai": 1000,
+     "Recon / Recon": 1000,
+     "Spoofing / ARP Spoofing": 1000,
+     "Spoofing / DNS Spoofing": 1000,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    },
+    "block5000": {
+     "Benign / Benign": 5000,
+     "BruteForce / BruteForce": 108,
+     "DDOS / DDOS ACK Fragmentation": 5000,
+     "DDOS / DDOS HTTP FLOOD": 4486,
+     "DDOS / DDOS ICMP FLOOD": 2022,
+     "DDOS / DDOS ICMP Fragmentation": 3183,
+     "DOS / DOS HTTP FLOOD": 3704,
+     "DOS / DOS SYN FLOOD": 5000,
+     "DOS / DOS UDP FLOOD": 5000,
+     "Mirai / Mirai": 4791,
+     "Recon / Recon": 5000,
+     "Spoofing / ARP Spoofing": 2317,
+     "Spoofing / DNS Spoofing": 2209,
+     "Web-Based / Sqlinjection": 195,
+     "Web-Based / Uploading Attack": 40,
+     "Web-Based / XSS": 101
+    }
+   }
+  }
+ ],
+ "effects": [
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.1279,
+   "ci_lo": 0.12495,
+   "ci_hi": 0.13102,
+   "half_width": 0.00303,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.19018,
+   "ci_lo": 0.17843,
+   "ci_hi": 0.20186,
+   "half_width": 0.01171,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.1279,
+   "ci_lo": 0.12494,
+   "ci_hi": 0.13086,
+   "half_width": 0.00296,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.19018,
+   "ci_lo": 0.17766,
+   "ci_hi": 0.20159,
+   "half_width": 0.01196,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.1279,
+   "ci_lo": 0.11225,
+   "ci_hi": 0.14501,
+   "half_width": 0.01638,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.19018,
+   "ci_lo": 0.16112,
+   "ci_hi": 0.2169,
+   "half_width": 0.02789,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.1279,
+   "ci_lo": 0.10314,
+   "ci_hi": 0.15546,
+   "half_width": 0.02616,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.19018,
+   "ci_lo": 0.16075,
+   "ci_hi": 0.22441,
+   "half_width": 0.03183,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.16147,
+   "ci_lo": 0.15918,
+   "ci_hi": 0.16376,
+   "half_width": 0.00229,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.21536,
+   "ci_lo": 0.20744,
+   "ci_hi": 0.22334,
+   "half_width": 0.00795,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.16147,
+   "ci_lo": 0.15934,
+   "ci_hi": 0.16353,
+   "half_width": 0.00209,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.21536,
+   "ci_lo": 0.20734,
+   "ci_hi": 0.22286,
+   "half_width": 0.00776,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.16147,
+   "ci_lo": 0.1478,
+   "ci_hi": 0.17609,
+   "half_width": 0.01414,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.21536,
+   "ci_lo": 0.19342,
+   "ci_hi": 0.23922,
+   "half_width": 0.0229,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.16147,
+   "ci_lo": 0.1345,
+   "ci_hi": 0.18739,
+   "half_width": 0.02645,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.21536,
+   "ci_lo": 0.18639,
+   "ci_hi": 0.24506,
+   "half_width": 0.02934,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.19778,
+   "ci_lo": 0.18845,
+   "ci_hi": 0.20667,
+   "half_width": 0.00911,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.18325,
+   "ci_lo": 0.17212,
+   "ci_hi": 0.19397,
+   "half_width": 0.01092,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.19778,
+   "ci_lo": 0.18907,
+   "ci_hi": 0.20734,
+   "half_width": 0.00913,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.18325,
+   "ci_lo": 0.17316,
+   "ci_hi": 0.19417,
+   "half_width": 0.0105,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.19778,
+   "ci_lo": 0.17145,
+   "ci_hi": 0.22264,
+   "half_width": 0.02559,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.18325,
+   "ci_lo": 0.15398,
+   "ci_hi": 0.21185,
+   "half_width": 0.02893,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.19778,
+   "ci_lo": 0.16598,
+   "ci_hi": 0.23299,
+   "half_width": 0.0335,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.18325,
+   "ci_lo": 0.15053,
+   "ci_hi": 0.21654,
+   "half_width": 0.033,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.17411,
+   "ci_lo": 0.1703,
+   "ci_hi": 0.1781,
+   "half_width": 0.0039,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.18068,
+   "ci_lo": 0.17389,
+   "ci_hi": 0.18712,
+   "half_width": 0.00661,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.17411,
+   "ci_lo": 0.16976,
+   "ci_hi": 0.17809,
+   "half_width": 0.00417,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.18068,
+   "ci_lo": 0.17421,
+   "ci_hi": 0.18744,
+   "half_width": 0.00661,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.17411,
+   "ci_lo": 0.15668,
+   "ci_hi": 0.1923,
+   "half_width": 0.01781,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.18068,
+   "ci_lo": 0.16031,
+   "ci_hi": 0.20078,
+   "half_width": 0.02023,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.17411,
+   "ci_lo": 0.14782,
+   "ci_hi": 0.20224,
+   "half_width": 0.02721,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.18068,
+   "ci_lo": 0.15179,
+   "ci_hi": 0.20829,
+   "half_width": 0.02825,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.16441,
+   "ci_lo": 0.16144,
+   "ci_hi": 0.16727,
+   "half_width": 0.00291,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.23958,
+   "ci_lo": 0.22791,
+   "ci_hi": 0.25131,
+   "half_width": 0.0117,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.16441,
+   "ci_lo": 0.16157,
+   "ci_hi": 0.16744,
+   "half_width": 0.00294,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.23958,
+   "ci_lo": 0.22776,
+   "ci_hi": 0.25104,
+   "half_width": 0.01164,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.16441,
+   "ci_lo": 0.14682,
+   "ci_hi": 0.18146,
+   "half_width": 0.01732,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.23958,
+   "ci_lo": 0.20796,
+   "ci_hi": 0.26793,
+   "half_width": 0.02998,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.16441,
+   "ci_lo": 0.13604,
+   "ci_hi": 0.19019,
+   "half_width": 0.02708,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=r1",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.23958,
+   "ci_lo": 0.2084,
+   "ci_hi": 0.27333,
+   "half_width": 0.03246,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.15233,
+   "ci_lo": 0.15026,
+   "ci_hi": 0.15435,
+   "half_width": 0.00204,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.20247,
+   "ci_lo": 0.19502,
+   "ci_hi": 0.21051,
+   "half_width": 0.00775,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.15233,
+   "ci_lo": 0.15033,
+   "ci_hi": 0.15422,
+   "half_width": 0.00195,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.20247,
+   "ci_lo": 0.19447,
+   "ci_hi": 0.20992,
+   "half_width": 0.00773,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.15233,
+   "ci_lo": 0.13818,
+   "ci_hi": 0.16772,
+   "half_width": 0.01477,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.20247,
+   "ci_lo": 0.18017,
+   "ci_hi": 0.22732,
+   "half_width": 0.02358,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.15233,
+   "ci_lo": 0.1262,
+   "ci_hi": 0.17569,
+   "half_width": 0.02474,
+   "p": 0.002
+  },
+  {
+   "effect": "split (random - temporal)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "cleaning=raw",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.20247,
+   "ci_lo": 0.1726,
+   "ci_hi": 0.22927,
+   "half_width": 0.02834,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": -0.0849,
+   "ci_lo": -0.08681,
+   "ci_hi": -0.0831,
+   "half_width": 0.00185,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": -0.05645,
+   "ci_lo": -0.06527,
+   "ci_hi": -0.04789,
+   "half_width": 0.00869,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": -0.0849,
+   "ci_lo": -0.08689,
+   "ci_hi": -0.08312,
+   "half_width": 0.00188,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": -0.05645,
+   "ci_lo": -0.06511,
+   "ci_hi": -0.04802,
+   "half_width": 0.00854,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": -0.0849,
+   "ci_lo": -0.09764,
+   "ci_hi": -0.07286,
+   "half_width": 0.01239,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": -0.05645,
+   "ci_lo": -0.07259,
+   "ci_hi": -0.04013,
+   "half_width": 0.01623,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": -0.0849,
+   "ci_lo": -0.10085,
+   "ci_hi": -0.06869,
+   "half_width": 0.01608,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": -0.05645,
+   "ci_lo": -0.07436,
+   "ci_hi": -0.03809,
+   "half_width": 0.01814,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.04135,
+   "ci_lo": 0.03986,
+   "ci_hi": 0.04291,
+   "half_width": 0.00153,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.03795,
+   "ci_lo": 0.03176,
+   "ci_hi": 0.04444,
+   "half_width": 0.00634,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.04135,
+   "ci_lo": 0.03976,
+   "ci_hi": 0.04283,
+   "half_width": 0.00153,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.03795,
+   "ci_lo": 0.03153,
+   "ci_hi": 0.04429,
+   "half_width": 0.00638,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.04135,
+   "ci_lo": 0.03286,
+   "ci_hi": 0.04928,
+   "half_width": 0.00821,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.03795,
+   "ci_lo": 0.02868,
+   "ci_hi": 0.04685,
+   "half_width": 0.00908,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.04135,
+   "ci_lo": 0.02933,
+   "ci_hi": 0.05496,
+   "half_width": 0.01282,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 7,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.03795,
+   "ci_lo": 0.02714,
+   "ci_hi": 0.05041,
+   "half_width": 0.01164,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": -0.06818,
+   "ci_lo": -0.07023,
+   "ci_hi": -0.06646,
+   "half_width": 0.00188,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": -0.04886,
+   "ci_lo": -0.05707,
+   "ci_hi": -0.04039,
+   "half_width": 0.00834,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": -0.06818,
+   "ci_lo": -0.06993,
+   "ci_hi": -0.06627,
+   "half_width": 0.00183,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": -0.04886,
+   "ci_lo": -0.05651,
+   "ci_hi": -0.04086,
+   "half_width": 0.00782,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": -0.06818,
+   "ci_lo": -0.0798,
+   "ci_hi": -0.05554,
+   "half_width": 0.01213,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": -0.04886,
+   "ci_lo": -0.05948,
+   "ci_hi": -0.03791,
+   "half_width": 0.01079,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": -0.06818,
+   "ci_lo": -0.08532,
+   "ci_hi": -0.05196,
+   "half_width": 0.01668,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": -0.04886,
+   "ci_lo": -0.06144,
+   "ci_hi": -0.03724,
+   "half_width": 0.0121,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.00403,
+   "ci_lo": 0.00246,
+   "ci_hi": 0.00544,
+   "half_width": 0.00149,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.00838,
+   "ci_lo": 0.00146,
+   "ci_hi": 0.01495,
+   "half_width": 0.00675,
+   "p": 0.01598
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.00403,
+   "ci_lo": 0.00254,
+   "ci_hi": 0.00557,
+   "half_width": 0.00152,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.00838,
+   "ci_lo": 0.0014,
+   "ci_hi": 0.01477,
+   "half_width": 0.00668,
+   "p": 0.03197
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.00403,
+   "ci_lo": -0.00377,
+   "ci_hi": 0.01248,
+   "half_width": 0.00812,
+   "p": 0.33566
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.00838,
+   "ci_lo": -0.00429,
+   "ci_hi": 0.0221,
+   "half_width": 0.01319,
+   "p": 0.20779
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.00403,
+   "ci_lo": -0.00829,
+   "ci_hi": 0.01524,
+   "half_width": 0.01176,
+   "p": 0.51948
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 17,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.00838,
+   "ci_lo": -0.00644,
+   "ci_hi": 0.02224,
+   "half_width": 0.01434,
+   "p": 0.3017
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": -0.02695,
+   "ci_lo": -0.02865,
+   "ci_hi": -0.02513,
+   "half_width": 0.00176,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": -0.00492,
+   "ci_lo": -0.01351,
+   "ci_hi": 0.00361,
+   "half_width": 0.00856,
+   "p": 0.28771
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": -0.02695,
+   "ci_lo": -0.02863,
+   "ci_hi": -0.02516,
+   "half_width": 0.00174,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": -0.00492,
+   "ci_lo": -0.01324,
+   "ci_hi": 0.00335,
+   "half_width": 0.0083,
+   "p": 0.22977
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": -0.02695,
+   "ci_lo": -0.03671,
+   "ci_hi": -0.01614,
+   "half_width": 0.01028,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": -0.00492,
+   "ci_lo": -0.01346,
+   "ci_hi": 0.00352,
+   "half_width": 0.00849,
+   "p": 0.27173
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": -0.02695,
+   "ci_lo": -0.0402,
+   "ci_hi": -0.01249,
+   "half_width": 0.01385,
+   "p": 0.00599
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": -0.00492,
+   "ci_lo": -0.01605,
+   "ci_hi": 0.0064,
+   "half_width": 0.01123,
+   "p": 0.34965
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": -0.03697,
+   "ci_lo": -0.0385,
+   "ci_hi": -0.0354,
+   "half_width": 0.00155,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": -0.02848,
+   "ci_lo": -0.03506,
+   "ci_hi": -0.02141,
+   "half_width": 0.00682,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": -0.03697,
+   "ci_lo": -0.03844,
+   "ci_hi": -0.03543,
+   "half_width": 0.00151,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": -0.02848,
+   "ci_lo": -0.03544,
+   "ci_hi": -0.02176,
+   "half_width": 0.00684,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": -0.03697,
+   "ci_lo": -0.04502,
+   "ci_hi": -0.02834,
+   "half_width": 0.00834,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": -0.02848,
+   "ci_lo": -0.03905,
+   "ci_hi": -0.01686,
+   "half_width": 0.01109,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": -0.03697,
+   "ci_lo": -0.05123,
+   "ci_hi": -0.02348,
+   "half_width": 0.01388,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "LightGBM",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": -0.02848,
+   "ci_lo": -0.04306,
+   "ci_hi": -0.015,
+   "half_width": 0.01403,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.0467,
+   "ci_lo": 0.04163,
+   "ci_hi": 0.05213,
+   "half_width": 0.00525,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.01228,
+   "ci_lo": 0.00699,
+   "ci_hi": 0.01701,
+   "half_width": 0.00501,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.0467,
+   "ci_lo": 0.0414,
+   "ci_hi": 0.05193,
+   "half_width": 0.00526,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.01228,
+   "ci_lo": 0.00667,
+   "ci_hi": 0.01737,
+   "half_width": 0.00535,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.0467,
+   "ci_lo": 0.03774,
+   "ci_hi": 0.05517,
+   "half_width": 0.00871,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.01228,
+   "ci_lo": 0.00475,
+   "ci_hi": 0.01907,
+   "half_width": 0.00716,
+   "p": 0.00599
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.0467,
+   "ci_lo": 0.03809,
+   "ci_hi": 0.0552,
+   "half_width": 0.00856,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.01228,
+   "ci_lo": 0.00317,
+   "ci_hi": 0.02087,
+   "half_width": 0.00885,
+   "p": 0.00799
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.0491,
+   "ci_lo": 0.0472,
+   "ci_hi": 0.05092,
+   "half_width": 0.00186,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.03721,
+   "ci_lo": 0.03467,
+   "ci_hi": 0.03962,
+   "half_width": 0.00248,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.0491,
+   "ci_lo": 0.04746,
+   "ci_hi": 0.05104,
+   "half_width": 0.00179,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.03721,
+   "ci_lo": 0.03464,
+   "ci_hi": 0.03948,
+   "half_width": 0.00242,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.0491,
+   "ci_lo": 0.04329,
+   "ci_hi": 0.05487,
+   "half_width": 0.00579,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.03721,
+   "ci_lo": 0.03084,
+   "ci_hi": 0.04308,
+   "half_width": 0.00612,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.0491,
+   "ci_lo": 0.03915,
+   "ci_hi": 0.05821,
+   "half_width": 0.00953,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "RandomForest",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.03721,
+   "ci_lo": 0.02868,
+   "ci_hi": 0.04525,
+   "half_width": 0.00828,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.03236,
+   "ci_lo": 0.03058,
+   "ci_hi": 0.03404,
+   "half_width": 0.00173,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.03891,
+   "ci_lo": 0.03233,
+   "ci_hi": 0.04481,
+   "half_width": 0.00624,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.03236,
+   "ci_lo": 0.03058,
+   "ci_hi": 0.0341,
+   "half_width": 0.00176,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.03891,
+   "ci_lo": 0.03302,
+   "ci_hi": 0.04514,
+   "half_width": 0.00606,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.03236,
+   "ci_lo": 0.02526,
+   "ci_hi": 0.03958,
+   "half_width": 0.00716,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.03891,
+   "ci_lo": 0.02919,
+   "ci_hi": 0.0492,
+   "half_width": 0.01001,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.03236,
+   "ci_lo": 0.02488,
+   "ci_hi": 0.04075,
+   "half_width": 0.00794,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=random",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.03891,
+   "ci_lo": 0.02722,
+   "ci_hi": 0.0508,
+   "half_width": 0.01179,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "macro_f1",
+   "diff": 0.05759,
+   "ci_lo": 0.0561,
+   "ci_hi": 0.05915,
+   "half_width": 0.00153,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_class",
+   "metric": "bal_acc",
+   "diff": 0.0453,
+   "ci_lo": 0.03766,
+   "ci_hi": 0.052,
+   "half_width": 0.00717,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "macro_f1",
+   "diff": 0.05759,
+   "ci_lo": 0.05618,
+   "ci_hi": 0.05915,
+   "half_width": 0.00149,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "iid_group",
+   "metric": "bal_acc",
+   "diff": 0.0453,
+   "ci_lo": 0.03789,
+   "ci_hi": 0.05236,
+   "half_width": 0.00723,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "macro_f1",
+   "diff": 0.05759,
+   "ci_lo": 0.05002,
+   "ci_hi": 0.06488,
+   "half_width": 0.00743,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block1000",
+   "metric": "bal_acc",
+   "diff": 0.0453,
+   "ci_lo": 0.03516,
+   "ci_hi": 0.05549,
+   "half_width": 0.01017,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "macro_f1",
+   "diff": 0.05759,
+   "ci_lo": 0.04623,
+   "ci_hi": 0.06971,
+   "half_width": 0.01174,
+   "p": 0.002
+  },
+  {
+   "effect": "train cleaning (train R1 - train raw, test R1)",
+   "model": "XGBoost",
+   "seed": 42,
+   "condition": "split=temporal",
+   "variant": "block5000",
+   "metric": "bal_acc",
+   "diff": 0.0453,
+   "ci_lo": 0.03371,
+   "ci_hi": 0.05806,
+   "half_width": 0.01217,
+   "p": 0.002
+  }
+ ]
+}

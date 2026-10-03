@@ -1,0 +1,16 @@
+group,is_attack,n_test_period,drift_auc_sd,drift_auc,top20_port_jaccard,test_dst_ip_seen_in_train,loss_XGBoost_s42,loss_RandomForest_seed_mean,loss_pilot_raw_XGBoost
+Benign / Benign,False,57810,0.0,0.819,0.905,0.968,0.0283,0.0347,0.2323
+BruteForce / BruteForce,True,193,0.004,0.902,0.081,0.984,0.6373,0.266,0.3656
+DDOS / DDOS ACK Fragmentation,True,98427,0.001,0.789,0.25,0.74,0.0029,0.0032,0.0075
+DDOS / DDOS HTTP FLOOD,True,21816,0.0,0.993,0.143,1.0,-0.0271,-0.0212,-0.0381
+DDOS / DDOS ICMP FLOOD,True,4251,0.001,0.803,0.333,0.942,0.0357,0.0107,0.0228
+DDOS / DDOS ICMP Fragmentation,True,6951,0.001,0.82,0.25,0.948,-0.0934,-0.0888,-0.0398
+DOS / DOS HTTP FLOOD,True,18013,0.0,0.95,0.25,0.973,0.3284,0.3055,0.3831
+DOS / DOS SYN FLOOD,True,123829,0.0,1.0,0.25,1.0,0.0398,0.0378,0.0396
+DOS / DOS UDP FLOOD,True,78376,0.0,1.0,0.29,0.46,0.5455,0.5462,0.6656
+Mirai / Mirai,True,9340,0.001,0.857,0.212,0.982,0.0962,0.1463,0.0736
+Recon / Recon,True,25763,0.0,0.92,0.25,1.0,0.2243,0.2344,0.1524
+Spoofing / ARP Spoofing,True,4843,0.001,0.891,0.143,0.996,0.2437,0.3008,0.1765
+Spoofing / DNS Spoofing,True,4668,0.0,0.938,0.143,0.998,0.4369,0.4315,0.1941
+Web-Based / Sqlinjection,True,368,0.002,0.987,0.111,0.973,0.597,0.3539,0.533
+Web-Based / XSS,True,175,0.009,0.674,0.143,0.994,0.0607,0.0086,0.0918

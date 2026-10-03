@@ -1,0 +1,237 @@
+{
+ "all_ok": true,
+ "reference": "D:\\My Project\\xai_ids_benchmark\\results_2026_03_03\\split_pilot\\rule_sensitivity.json",
+ "cells": [
+  {
+   "variant": "none",
+   "label": "none",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.0,
+    0.0
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     2538550,
+     2538550
+    ],
+    "n_test": [
+     543976,
+     543976
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     2538543,
+     2538543
+    ],
+    "n_test": [
+     543986,
+     543986
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "R1",
+   "label": "R1",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.1637,
+    0.1637
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     2122905,
+     2122905
+    ],
+    "n_test": [
+     454909,
+     454909
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     2122898,
+     2122898
+    ],
+    "n_test": [
+     454916,
+     454916
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "R2",
+   "label": "R2",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.1178,
+    0.1178
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     2239632,
+     2239632
+    ],
+    "n_test": [
+     479922,
+     479922
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     2239625,
+     2239625
+    ],
+    "n_test": [
+     479930,
+     479930
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "R3",
+   "label": "R3",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.1,
+    0.1
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     2284729,
+     2284729
+    ],
+    "n_test": [
+     489585,
+     489585
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     2284723,
+     2284723
+    ],
+    "n_test": [
+     489593,
+     489593
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "R1+R3",
+   "label": "R1+R3",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.2087,
+    0.2087
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     2008676,
+     2008676
+    ],
+    "n_test": [
+     430431,
+     430431
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     2008670,
+     2008670
+    ],
+    "n_test": [
+     430437,
+     430437
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "all",
+   "label": "All",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.2556,
+    0.2556
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     1889734,
+     1889734
+    ],
+    "n_test": [
+     404944,
+     404944
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     1889726,
+     1889726
+    ],
+    "n_test": [
+     404952,
+     404952
+    ],
+    "equal": true
+   },
+   "ok": true
+  },
+  {
+   "variant": "all, floods-R2",
+   "label": "All*",
+   "class_counts_equal": true,
+   "dropped_fraction": [
+    0.2335,
+    0.2335
+   ],
+   "dropped_fraction_equal": true,
+   "random": {
+    "n_train": [
+     1945767,
+     1945767
+    ],
+    "n_test": [
+     416951,
+     416951
+    ],
+    "equal": true
+   },
+   "temporal": {
+    "n_train": [
+     1945761,
+     1945761
+    ],
+    "n_test": [
+     416957,
+     416957
+    ],
+    "equal": true
+   },
+   "ok": true
+  }
+ ]
+}

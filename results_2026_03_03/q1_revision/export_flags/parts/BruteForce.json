@@ -1,0 +1,39 @@
+{
+ "class": "BruteForce",
+ "y": 1,
+ "n_flows": 3601,
+ "build_seconds": 0.1,
+ "verification": {
+  "n_rebuilt": 3601,
+  "n_cache": 3601,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "cache_rows": [
+   385394,
+   388995
+  ],
+  "contiguous_at_expected_offset": true,
+  "ok": true
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 20,
+  "files_checked": 1,
+  "features_exact": 20,
+  "features_close": 20,
+  "ts_equal": 20,
+  "ips_equal": 20,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "BruteForce/BruteForce.pcap_Flow.csv": {
+   "records": 3619,
+   "after_thinning": 3619,
+   "in_sample": 3601
+  }
+ }
+}

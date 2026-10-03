@@ -1,0 +1,164 @@
+{
+ "accuracy": 0.6791038739967573,
+ "balanced_accuracy": 0.4911071935732915,
+ "macro_f1": 0.44456648814724836,
+ "per_class_f1": {
+  "Benign": 0.5404,
+  "BruteForce": 0.0326,
+  "DDOS": 0.8152,
+  "DOS": 0.7965,
+  "Mirai": 0.3322,
+  "Recon": 0.5481,
+  "Spoofing": 0.3427,
+  "Web-Based": 0.1488
+ },
+ "per_class_recall": {
+  "Benign": 0.6359,
+  "BruteForce": 0.0832,
+  "DDOS": 0.8357,
+  "DOS": 0.6673,
+  "Mirai": 0.6164,
+  "Recon": 0.5408,
+  "Spoofing": 0.3672,
+  "Web-Based": 0.1823
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.6359,
+  "BruteForce / BruteForce": 0.0832,
+  "DDOS / DDOS ACK Fragmentation": 0.954,
+  "DDOS / DDOS HTTP FLOOD": 0.942,
+  "DDOS / DDOS ICMP FLOOD": 0.2335,
+  "DDOS / DDOS ICMP Fragmentation": 0.314,
+  "DOS / DOS HTTP FLOOD": 0.4471,
+  "DOS / DOS SYN FLOOD": 0.9486,
+  "DOS / DOS UDP FLOOD": 0.2856,
+  "Mirai / Mirai": 0.6164,
+  "Recon / Recon": 0.5408,
+  "Spoofing / ARP Spoofing": 0.4119,
+  "Spoofing / DNS Spoofing": 0.3202,
+  "Web-Based / Sqlinjection": 0.0705,
+  "Web-Based / Uploading Attack": 0.485,
+  "Web-Based / XSS": 0.2792
+ },
+ "attack_macro_f1": 0.43087554713263626,
+ "per_class_precision": {
+  "Benign": 0.4698,
+  "BruteForce": 0.0203,
+  "DDOS": 0.7957,
+  "DOS": 0.9877,
+  "Mirai": 0.2274,
+  "Recon": 0.5556,
+  "Spoofing": 0.3213,
+  "Web-Based": 0.1257
+ },
+ "confusion": [
+  [
+   36762,
+   713,
+   213,
+   95,
+   3298,
+   13263,
+   3027,
+   439
+  ],
+  [
+   99,
+   45,
+   2,
+   0,
+   28,
+   83,
+   277,
+   7
+  ],
+  [
+   6460,
+   98,
+   125362,
+   1308,
+   11992,
+   2167,
+   2509,
+   106
+  ],
+  [
+   3576,
+   154,
+   27650,
+   150146,
+   29285,
+   8324,
+   5319,
+   548
+  ],
+  [
+   3576,
+   47,
+   3685,
+   150,
+   14769,
+   389,
+   1299,
+   44
+  ],
+  [
+   19978,
+   907,
+   207,
+   125,
+   1717,
+   33721,
+   4868,
+   831
+  ],
+  [
+   7568,
+   195,
+   385,
+   193,
+   3805,
+   2016,
+   8311,
+   161
+  ],
+  [
+   225,
+   60,
+   44,
+   2,
+   59,
+   729,
+   258,
+   307
+  ]
+ ],
+ "study": "weights",
+ "model": "XGBoost",
+ "model_seed": 42,
+ "cleaning": "raw",
+ "split": "temporal",
+ "replicate": "70-15-15",
+ "split_seed": null,
+ "cut_train_val_test": [
+  0.7,
+  0.15,
+  0.15
+ ],
+ "weights": "sqrt",
+ "weights_definition": "sqrt(balanced) rescaled to mean 1",
+ "class_weights": {
+  "Benign": 1.3144,
+  "BruteForce": 13.6,
+  "DDOS": 0.816,
+  "DOS": 0.6663,
+  "Mirai": 2.0418,
+  "Recon": 1.2656,
+  "Spoofing": 2.1007,
+  "Web-Based": 7.7075
+ },
+ "n_train": 2538543,
+ "n_val": 543973,
+ "n_test": 543986,
+ "fit_seconds": 31.4
+}

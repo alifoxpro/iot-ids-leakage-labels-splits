@@ -1,0 +1,577 @@
+{
+  "Benign": {
+    "flows_clean": 385394,
+    "n_train_period": 269775,
+    "n_test_period": 57810,
+    "train_span": "10-07 14:15..10-08 07:40",
+    "test_span": "10-08 12:54..10-08 18:15",
+    "protocol_train": {
+      "UDP": 0.612,
+      "TCP": 0.369,
+      "proto0": 0.019
+    },
+    "protocol_test": {
+      "UDP": 0.635,
+      "TCP": 0.34,
+      "proto0": 0.025
+    },
+    "top_dst_ports_train": {
+      "53": 90500,
+      "443": 42922,
+      "32100": 26850,
+      "80": 20047,
+      "6667": 9259
+    },
+    "top_dst_ports_test": {
+      "53": 11449,
+      "443": 8344,
+      "32100": 8016,
+      "6667": 2851,
+      "8886": 2644
+    },
+    "top20_port_jaccard": 0.905,
+    "test_src_ip_seen_in_train": 0.988,
+    "test_dst_ip_seen_in_train": 0.968,
+    "drift_auc": 0.819,
+    "drift_auc_sd": 0.0
+  },
+  "BruteForce": {
+    "flows_clean": 1286,
+    "n_train_period": 900,
+    "n_test_period": 193,
+    "train_span": "10-14 13:18..10-17 10:42",
+    "test_span": "10-17 10:48..10-17 12:01",
+    "protocol_train": {
+      "UDP": 0.788,
+      "TCP": 0.206,
+      "proto0": 0.007
+    },
+    "protocol_test": {
+      "UDP": 0.705,
+      "TCP": 0.259,
+      "proto0": 0.036
+    },
+    "top_dst_ports_train": {
+      "53": 292,
+      "22": 52,
+      "7": 45,
+      "80": 26,
+      "55443": 8
+    },
+    "top_dst_ports_test": {
+      "53": 54,
+      "554": 38,
+      "0": 7,
+      "55443": 4,
+      "42140": 3
+    },
+    "top20_port_jaccard": 0.081,
+    "test_src_ip_seen_in_train": 0.979,
+    "test_dst_ip_seen_in_train": 0.984,
+    "drift_auc": 0.902,
+    "drift_auc_sd": 0.004
+  },
+  "DDOS / DDOS ACK Fragmentation": {
+    "flows_clean": 656177,
+    "n_train_period": 459323,
+    "n_test_period": 98427,
+    "train_span": "10-25 09:26..10-26 12:51",
+    "test_span": "10-26 15:48..10-26 17:20",
+    "protocol_train": {
+      "TCP": 0.983,
+      "UDP": 0.015,
+      "proto0": 0.001
+    },
+    "protocol_test": {
+      "TCP": 0.978,
+      "UDP": 0.021,
+      "proto0": 0.001
+    },
+    "top_dst_ports_train": {
+      "6668": 284395,
+      "554": 78325,
+      "443": 31574,
+      "8080": 15997,
+      "53": 11301
+    },
+    "top_dst_ports_test": {
+      "1443": 27323,
+      "55442": 25561,
+      "10002": 20779,
+      "8008": 18705,
+      "6668": 3496
+    },
+    "top20_port_jaccard": 0.25,
+    "test_src_ip_seen_in_train": 0.998,
+    "test_dst_ip_seen_in_train": 0.74,
+    "drift_auc": 0.789,
+    "drift_auc_sd": 0.001
+  },
+  "DDOS / DDOS HTTP FLOOD": {
+    "flows_clean": 145434,
+    "n_train_period": 101803,
+    "n_test_period": 21816,
+    "train_span": "09-14 10:47..11-07 12:01",
+    "test_span": "11-07 15:09..11-07 15:45",
+    "protocol_train": {
+      "TCP": 0.989,
+      "UDP": 0.01,
+      "proto0": 0.001
+    },
+    "protocol_test": {
+      "TCP": 0.997,
+      "UDP": 0.003,
+      "proto0": 0.0
+    },
+    "top_dst_ports_train": {
+      "8080": 48485,
+      "80": 19090,
+      "53": 178,
+      "55443": 105,
+      "0": 62
+    },
+    "top_dst_ports_test": {
+      "53": 39,
+      "55443": 22,
+      "7": 10,
+      "0": 9,
+      "60334": 8
+    },
+    "top20_port_jaccard": 0.143,
+    "test_src_ip_seen_in_train": 0.664,
+    "test_dst_ip_seen_in_train": 1.0,
+    "drift_auc": 0.993,
+    "drift_auc_sd": 0.0
+  },
+  "DDOS / DDOS ICMP FLOOD": {
+    "flows_clean": 28337,
+    "n_train_period": 19835,
+    "n_test_period": 4251,
+    "train_span": "09-06 12:57..09-12 10:34",
+    "test_span": "09-12 14:01..11-28 16:01",
+    "protocol_train": {
+      "UDP": 0.79,
+      "TCP": 0.154,
+      "proto0": 0.056
+    },
+    "protocol_test": {
+      "UDP": 0.809,
+      "TCP": 0.123,
+      "proto0": 0.068
+    },
+    "top_dst_ports_train": {
+      "53": 8231,
+      "55443": 1490,
+      "0": 1117,
+      "68": 379,
+      "80": 363
+    },
+    "top_dst_ports_test": {
+      "53": 1821,
+      "0": 291,
+      "55443": 139,
+      "68": 93,
+      "80": 49
+    },
+    "top20_port_jaccard": 0.333,
+    "test_src_ip_seen_in_train": 0.867,
+    "test_dst_ip_seen_in_train": 0.942,
+    "drift_auc": 0.803,
+    "drift_auc_sd": 0.001
+  },
+  "DDOS / DDOS ICMP Fragmentation": {
+    "flows_clean": 46336,
+    "n_train_period": 32435,
+    "n_test_period": 6951,
+    "train_span": "10-04 13:55..10-06 16:19",
+    "test_span": "10-13 12:27..11-29 16:40",
+    "protocol_train": {
+      "UDP": 0.895,
+      "TCP": 0.067,
+      "proto0": 0.037
+    },
+    "protocol_test": {
+      "UDP": 0.861,
+      "TCP": 0.101,
+      "proto0": 0.038
+    },
+    "top_dst_ports_train": {
+      "53": 22881,
+      "0": 1209,
+      "55443": 1050,
+      "68": 399,
+      "80": 157
+    },
+    "top_dst_ports_test": {
+      "53": 5681,
+      "55443": 409,
+      "0": 263,
+      "68": 75,
+      "55444": 22
+    },
+    "top20_port_jaccard": 0.25,
+    "test_src_ip_seen_in_train": 0.736,
+    "test_dst_ip_seen_in_train": 0.948,
+    "drift_auc": 0.82,
+    "drift_auc_sd": 0.001
+  },
+  "DOS / DOS HTTP FLOOD": {
+    "flows_clean": 120086,
+    "n_train_period": 84060,
+    "n_test_period": 18013,
+    "train_span": "08-08 13:25..08-09 11:49",
+    "test_span": "08-09 11:51..08-09 13:22",
+    "protocol_train": {
+      "TCP": 0.985,
+      "UDP": 0.014,
+      "proto0": 0.0
+    },
+    "protocol_test": {
+      "TCP": 0.976,
+      "UDP": 0.023,
+      "proto0": 0.001
+    },
+    "top_dst_ports_train": {
+      "8080": 44657,
+      "80": 22749,
+      "8009": 6054,
+      "53": 280,
+      "55443": 96
+    },
+    "top_dst_ports_test": {
+      "8009": 12467,
+      "80": 1442,
+      "34287": 1050,
+      "443": 522,
+      "53": 343
+    },
+    "top20_port_jaccard": 0.25,
+    "test_src_ip_seen_in_train": 0.983,
+    "test_dst_ip_seen_in_train": 0.973,
+    "drift_auc": 0.95,
+    "drift_auc_sd": 0.0
+  },
+  "DOS / DOS SYN FLOOD": {
+    "flows_clean": 825523,
+    "n_train_period": 577866,
+    "n_test_period": 123829,
+    "train_span": "08-02 12:06..08-05 11:24",
+    "test_span": "08-05 13:44..08-05 16:07",
+    "protocol_train": {
+      "TCP": 0.995,
+      "UDP": 0.005,
+      "proto0": 0.0
+    },
+    "protocol_test": {
+      "TCP": 0.996,
+      "UDP": 0.004,
+      "proto0": 0.0
+    },
+    "top_dst_ports_train": {
+      "6668": 306796,
+      "8008": 41180,
+      "554": 39604,
+      "8800": 27251,
+      "55443": 23567
+    },
+    "top_dst_ports_test": {
+      "443": 85864,
+      "8009": 28562,
+      "53": 486,
+      "55443": 51,
+      "0": 29
+    },
+    "top20_port_jaccard": 0.25,
+    "test_src_ip_seen_in_train": 0.999,
+    "test_dst_ip_seen_in_train": 1.0,
+    "drift_auc": 1.0,
+    "drift_auc_sd": 0.0
+  },
+  "DOS / DOS UDP FLOOD": {
+    "flows_clean": 522505,
+    "n_train_period": 365753,
+    "n_test_period": 78376,
+    "train_span": "08-09 15:37..08-10 17:17",
+    "test_span": "08-11 10:19..08-16 13:04",
+    "protocol_train": {
+      "UDP": 0.999,
+      "TCP": 0.001,
+      "proto0": 0.0
+    },
+    "protocol_test": {
+      "UDP": 0.982,
+      "TCP": 0.015,
+      "proto0": 0.003
+    },
+    "top_dst_ports_train": {
+      "0": 107237,
+      "554": 96309,
+      "1080": 41679,
+      "55442": 41615,
+      "80": 41405
+    },
+    "top_dst_ports_test": {
+      "0": 34634,
+      "53": 2821,
+      "55443": 511,
+      "62847": 121,
+      "63304": 115
+    },
+    "top20_port_jaccard": 0.29,
+    "test_src_ip_seen_in_train": 0.862,
+    "test_dst_ip_seen_in_train": 0.46,
+    "drift_auc": 1.0,
+    "drift_auc_sd": 0.0
+  },
+  "Mirai": {
+    "flows_clean": 62264,
+    "n_train_period": 43584,
+    "n_test_period": 9340,
+    "train_span": "01-12 11:19..01-16 10:19",
+    "test_span": "01-17 12:10..01-18 11:52",
+    "protocol_train": {
+      "UDP": 0.909,
+      "proto0": 0.066,
+      "TCP": 0.024
+    },
+    "protocol_test": {
+      "UDP": 0.898,
+      "proto0": 0.067,
+      "TCP": 0.036
+    },
+    "top_dst_ports_train": {
+      "53": 27968,
+      "0": 2897,
+      "68": 824,
+      "8009": 236,
+      "80": 125
+    },
+    "top_dst_ports_test": {
+      "53": 7468,
+      "0": 625,
+      "68": 141,
+      "10008": 124,
+      "8009": 86
+    },
+    "top20_port_jaccard": 0.212,
+    "test_src_ip_seen_in_train": 0.973,
+    "test_dst_ip_seen_in_train": 0.982,
+    "drift_auc": 0.857,
+    "drift_auc_sd": 0.001
+  },
+  "Recon": {
+    "flows_clean": 171752,
+    "n_train_period": 120226,
+    "n_test_period": 25763,
+    "train_span": "10-03 11:02..10-04 02:20",
+    "test_span": "10-04 05:47..10-04 09:30",
+    "protocol_train": {
+      "UDP": 0.516,
+      "TCP": 0.467,
+      "proto0": 0.017
+    },
+    "protocol_test": {
+      "UDP": 0.907,
+      "TCP": 0.063,
+      "proto0": 0.029
+    },
+    "top_dst_ports_train": {
+      "53": 28775,
+      "0": 2029,
+      "80": 1283,
+      "55443": 1223,
+      "443": 1174
+    },
+    "top_dst_ports_test": {
+      "53": 11767,
+      "0": 755,
+      "7": 396,
+      "68": 166,
+      "55443": 145
+    },
+    "top20_port_jaccard": 0.25,
+    "test_src_ip_seen_in_train": 0.991,
+    "test_dst_ip_seen_in_train": 1.0,
+    "drift_auc": 0.92,
+    "drift_auc_sd": 0.0
+  },
+  "Spoofing / ARP Spoofing": {
+    "flows_clean": 32281,
+    "n_train_period": 22596,
+    "n_test_period": 4843,
+    "train_span": "10-17 17:20..10-18 15:00",
+    "test_span": "10-18 16:15..10-18 17:55",
+    "protocol_train": {
+      "UDP": 0.9,
+      "TCP": 0.07,
+      "proto0": 0.03
+    },
+    "protocol_test": {
+      "UDP": 0.938,
+      "TCP": 0.032,
+      "proto0": 0.031
+    },
+    "top_dst_ports_train": {
+      "53": 9624,
+      "0": 685,
+      "55443": 401,
+      "7": 304,
+      "8009": 160
+    },
+    "top_dst_ports_test": {
+      "53": 3001,
+      "0": 148,
+      "7": 70,
+      "8009": 42,
+      "68": 31
+    },
+    "top20_port_jaccard": 0.143,
+    "test_src_ip_seen_in_train": 0.977,
+    "test_dst_ip_seen_in_train": 0.996,
+    "drift_auc": 0.891,
+    "drift_auc_sd": 0.001
+  },
+  "Spoofing / DNS Spoofing": {
+    "flows_clean": 31114,
+    "n_train_period": 21779,
+    "n_test_period": 4668,
+    "train_span": "11-15 12:16..11-16 11:27",
+    "test_span": "11-16 14:22..11-16 16:25",
+    "protocol_train": {
+      "UDP": 0.829,
+      "TCP": 0.136,
+      "proto0": 0.034
+    },
+    "protocol_test": {
+      "UDP": 0.679,
+      "TCP": 0.281,
+      "proto0": 0.04
+    },
+    "top_dst_ports_train": {
+      "53": 7351,
+      "443": 1218,
+      "55443": 767,
+      "0": 751,
+      "7": 315
+    },
+    "top_dst_ports_test": {
+      "53": 2902,
+      "443": 896,
+      "0": 187,
+      "55443": 175,
+      "7": 84
+    },
+    "top20_port_jaccard": 0.143,
+    "test_src_ip_seen_in_train": 0.966,
+    "test_dst_ip_seen_in_train": 0.998,
+    "drift_auc": 0.938,
+    "drift_auc_sd": 0.0
+  },
+  "Web-Based / Sqlinjection": {
+    "flows_clean": 2450,
+    "n_train_period": 1715,
+    "n_test_period": 368,
+    "train_span": "10-03 14:17..10-03 15:04",
+    "test_span": "10-03 15:06..10-03 15:09",
+    "protocol_train": {
+      "UDP": 0.721,
+      "TCP": 0.254,
+      "proto0": 0.025
+    },
+    "protocol_test": {
+      "UDP": 0.75,
+      "TCP": 0.236,
+      "proto0": 0.014
+    },
+    "top_dst_ports_train": {
+      "53": 1129,
+      "80": 211,
+      "55443": 48,
+      "0": 43,
+      "7": 23
+    },
+    "top_dst_ports_test": {
+      "80": 73,
+      "53": 9,
+      "55443": 7,
+      "0": 5,
+      "46473": 3
+    },
+    "top20_port_jaccard": 0.111,
+    "test_src_ip_seen_in_train": 0.995,
+    "test_dst_ip_seen_in_train": 0.973,
+    "drift_auc": 0.987,
+    "drift_auc_sd": 0.002
+  },
+  "Web-Based / Uploading Attack": {
+    "flows_clean": 619,
+    "n_train_period": 433,
+    "n_test_period": 93,
+    "train_span": "02-14 12:52..02-14 13:03",
+    "test_span": "02-14 13:04..02-14 13:05",
+    "protocol_train": {
+      "UDP": 0.836,
+      "TCP": 0.113,
+      "proto0": 0.051
+    },
+    "protocol_test": {
+      "UDP": 0.849,
+      "TCP": 0.151
+    },
+    "top_dst_ports_train": {
+      "53": 86,
+      "80": 38,
+      "0": 22,
+      "8009": 6,
+      "68": 5
+    },
+    "top_dst_ports_test": {
+      "53": 16,
+      "80": 10,
+      "48682": 1,
+      "51456": 1,
+      "58130": 1
+    },
+    "top20_port_jaccard": 0.053,
+    "test_src_ip_seen_in_train": 0.968,
+    "test_dst_ip_seen_in_train": 1.0,
+    "drift_auc": null,
+    "drift_auc_sd": null
+  },
+  "Web-Based / XSS": {
+    "flows_clean": 1165,
+    "n_train_period": 815,
+    "n_test_period": 175,
+    "train_span": "02-14 11:46..02-14 12:17",
+    "test_span": "02-14 12:22..02-14 12:25",
+    "protocol_train": {
+      "UDP": 0.813,
+      "TCP": 0.118,
+      "proto0": 0.069
+    },
+    "protocol_test": {
+      "UDP": 0.817,
+      "TCP": 0.137,
+      "proto0": 0.046
+    },
+    "top_dst_ports_train": {
+      "53": 264,
+      "80": 68,
+      "0": 56,
+      "68": 15,
+      "8009": 14
+    },
+    "top_dst_ports_test": {
+      "53": 55,
+      "80": 17,
+      "0": 8,
+      "40756": 3,
+      "58303": 3
+    },
+    "top20_port_jaccard": 0.143,
+    "test_src_ip_seen_in_train": 0.989,
+    "test_dst_ip_seen_in_train": 0.994,
+    "drift_auc": 0.674,
+    "drift_auc_sd": 0.009
+  }
+}

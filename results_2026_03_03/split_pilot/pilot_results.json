@@ -1,0 +1,77 @@
+{
+  "n_total": 3626502,
+  "caps": {
+    "DOS": 1500000,
+    "DDOS": 1000000
+  },
+  "A_random": {
+    "accuracy": 0.829549465417592,
+    "balanced_accuracy": 0.7381553164822775,
+    "macro_f1": 0.5787404959087296,
+    "per_class_f1": {
+      "Benign": 0.6917,
+      "BruteForce": 0.0592,
+      "DDOS": 0.8823,
+      "DOS": 0.9752,
+      "Mirai": 0.566,
+      "Recon": 0.7079,
+      "Spoofing": 0.5657,
+      "Web-Based": 0.1821
+    },
+    "per_class_recall": {
+      "Benign": 0.7407,
+      "BruteForce": 0.8185,
+      "DDOS": 0.8051,
+      "DOS": 0.9572,
+      "Mirai": 0.8078,
+      "Recon": 0.6293,
+      "Spoofing": 0.5408,
+      "Web-Based": 0.6058
+    },
+    "n_train": 2538550,
+    "n_test": 543976,
+    "fit_seconds": 35.0
+  },
+  "B_temporal": {
+    "accuracy": 0.538052020390493,
+    "balanced_accuracy": 0.49279201900735126,
+    "macro_f1": 0.36805842092956187,
+    "per_class_f1": {
+      "Benign": 0.4401,
+      "BruteForce": 0.0255,
+      "DDOS": 0.6827,
+      "DOS": 0.6884,
+      "Mirai": 0.2509,
+      "Recon": 0.5418,
+      "Spoofing": 0.238,
+      "Web-Based": 0.077
+    },
+    "per_class_recall": {
+      "Benign": 0.516,
+      "BruteForce": 0.4603,
+      "DDOS": 0.5362,
+      "DOS": 0.5621,
+      "Mirai": 0.7199,
+      "Recon": 0.4763,
+      "Spoofing": 0.3642,
+      "Web-Based": 0.3074
+    },
+    "n_train": 2538547,
+    "n_test": 543979,
+    "fit_seconds": 32.7
+  },
+  "C_unseen_uploading": {
+    "web_based_recall": 0.29518072289156627,
+    "n_test": 1328,
+    "predicted_as": {
+      "Benign": 104,
+      "BruteForce": 571,
+      "DDOS": 2,
+      "DOS": 2,
+      "Mirai": 44,
+      "Recon": 29,
+      "Spoofing": 184,
+      "Web-Based": 392
+    }
+  }
+}

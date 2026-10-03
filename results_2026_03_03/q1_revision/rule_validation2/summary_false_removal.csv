@@ -1,0 +1,205 @@
+capture,class,kinds,definition,flows,attack_related,attack_share,attack_packet_share,rule,false_removal_rate,packet_false_removal_rate,flagged_attack_share,kept_attack_share,packet_kept_attack_share
+Web-Based / Uploading Attack,Web-Based,web,signature,1348,59,0.0438,0.0296,R1_external,0.0,0.0,0.0,0.0929,0.1295
+Web-Based / Uploading Attack,Web-Based,web,signature,1348,59,0.0438,0.0296,R2_service,0.0,0.0,0.0,0.0796,0.035
+Web-Based / Uploading Attack,Web-Based,web,signature,1348,59,0.0438,0.0296,R3_benign_pair,0.0,0.0,0.0,0.0453,0.0324
+Web-Based / Uploading Attack,Web-Based,web,signature,1348,59,0.0438,0.0296,any,0.0,0.0,0.0,0.5728,0.2938
+Web-Based / Uploading Attack,Web-Based,web,attacker_victim,1348,59,0.0438,0.0296,R1_external,0.0,0.0,0.0,0.0929,0.1295
+Web-Based / Uploading Attack,Web-Based,web,attacker_victim,1348,59,0.0438,0.0296,R2_service,0.0,0.0,0.0,0.0796,0.035
+Web-Based / Uploading Attack,Web-Based,web,attacker_victim,1348,59,0.0438,0.0296,R3_benign_pair,0.0,0.0,0.0,0.0453,0.0324
+Web-Based / Uploading Attack,Web-Based,web,attacker_victim,1348,59,0.0438,0.0296,any,0.0,0.0,0.0,0.5728,0.2938
+Web-Based / Uploading Attack,Web-Based,web,attacker_any,1348,74,0.0549,0.0573,R1_external,0.0405,0.017,0.0042,0.1118,0.2465
+Web-Based / Uploading Attack,Web-Based,web,attacker_any,1348,74,0.0549,0.0573,R2_service,0.1216,0.1631,0.0148,0.0877,0.0567
+Web-Based / Uploading Attack,Web-Based,web,attacker_any,1348,74,0.0549,0.0573,R3_benign_pair,0.0,0.0,0.0,0.0568,0.0627
+Web-Based / Uploading Attack,Web-Based,web,attacker_any,1348,74,0.0549,0.0573,any,0.1216,0.1631,0.0072,0.6311,0.4762
+BruteForce,BruteForce,bruteforce,signature,3619,79,0.0218,0.0139,R1_external,0.0,0.0,0.0,0.0609,0.0487
+BruteForce,BruteForce,bruteforce,signature,3619,79,0.0218,0.0139,R2_service,0.0,0.0,0.0,0.0405,0.0195
+BruteForce,BruteForce,bruteforce,signature,3619,79,0.0218,0.0139,R3_benign_pair,0.0,0.0,0.0,0.026,0.0154
+BruteForce,BruteForce,bruteforce,signature,3619,79,0.0218,0.0139,any,0.0,0.0,0.0,0.3062,0.1388
+BruteForce,BruteForce,bruteforce,attacker_victim,3619,79,0.0218,0.0139,R1_external,0.0,0.0,0.0,0.0609,0.0487
+BruteForce,BruteForce,bruteforce,attacker_victim,3619,79,0.0218,0.0139,R2_service,0.0,0.0,0.0,0.0405,0.0195
+BruteForce,BruteForce,bruteforce,attacker_victim,3619,79,0.0218,0.0139,R3_benign_pair,0.0,0.0,0.0,0.026,0.0154
+BruteForce,BruteForce,bruteforce,attacker_victim,3619,79,0.0218,0.0139,any,0.0,0.0,0.0,0.3062,0.1388
+BruteForce,BruteForce,bruteforce,attacker_any,3619,186,0.0514,0.0727,R1_external,0.1022,0.0668,0.0082,0.1288,0.2381
+BruteForce,BruteForce,bruteforce,attacker_any,3619,186,0.0514,0.0727,R2_service,0.2581,0.4881,0.0288,0.0707,0.0522
+BruteForce,BruteForce,bruteforce,attacker_any,3619,186,0.0514,0.0727,R3_benign_pair,0.0,0.0,0.0,0.0612,0.0806
+BruteForce,BruteForce,bruteforce,attacker_any,3619,186,0.0514,0.0727,any,0.2742,0.4987,0.0152,0.5233,0.3647
+Web-Based / XSS,Web-Based,web,signature,3377,96,0.0284,0.0172,R1_external,0.0,0.0,0.0,0.0823,0.0933
+Web-Based / XSS,Web-Based,web,signature,3377,96,0.0284,0.0172,R2_service,0.0,0.0,0.0,0.0444,0.0197
+Web-Based / XSS,Web-Based,web,signature,3377,96,0.0284,0.0172,R3_benign_pair,0.0,0.0,0.0,0.0294,0.0188
+Web-Based / XSS,Web-Based,web,signature,3377,96,0.0284,0.0172,any,0.0,0.0,0.0,0.4068,0.1825
+Web-Based / XSS,Web-Based,web,attacker_victim,3377,96,0.0284,0.0172,R1_external,0.0,0.0,0.0,0.0823,0.0933
+Web-Based / XSS,Web-Based,web,attacker_victim,3377,96,0.0284,0.0172,R2_service,0.0,0.0,0.0,0.0444,0.0197
+Web-Based / XSS,Web-Based,web,attacker_victim,3377,96,0.0284,0.0172,R3_benign_pair,0.0,0.0,0.0,0.0294,0.0188
+Web-Based / XSS,Web-Based,web,attacker_victim,3377,96,0.0284,0.0172,any,0.0,0.0,0.0,0.4068,0.1825
+Web-Based / XSS,Web-Based,web,attacker_any,3377,141,0.0418,0.0441,R1_external,0.0638,0.0216,0.0041,0.1132,0.2334
+Web-Based / XSS,Web-Based,web,attacker_any,3377,141,0.0418,0.0441,R2_service,0.1915,0.2006,0.0222,0.0528,0.0403
+Web-Based / XSS,Web-Based,web,attacker_any,3377,141,0.0418,0.0441,R3_benign_pair,0.0,0.0,0.0,0.0433,0.0482
+Web-Based / XSS,Web-Based,web,attacker_any,3377,141,0.0418,0.0441,any,0.1915,0.2006,0.0086,0.4831,0.373
+Web-Based / Sqlinjection,Web-Based,web,signature,6603,484,0.0733,0.0717,R1_external,0.0,0.0,0.0,0.1935,0.2679
+Web-Based / Sqlinjection,Web-Based,web,signature,6603,484,0.0733,0.0717,R2_service,0.0,0.0,0.0,0.1115,0.0813
+Web-Based / Sqlinjection,Web-Based,web,signature,6603,484,0.0733,0.0717,R3_benign_pair,0.0,0.0,0.0,0.1717,0.1158
+Web-Based / Sqlinjection,Web-Based,web,signature,6603,484,0.0733,0.0717,any,0.0,0.0,0.0,0.7224,0.4021
+Web-Based / Sqlinjection,Web-Based,web,attacker_victim,6603,484,0.0733,0.0717,R1_external,0.0,0.0,0.0,0.1935,0.2679
+Web-Based / Sqlinjection,Web-Based,web,attacker_victim,6603,484,0.0733,0.0717,R2_service,0.0,0.0,0.0,0.1115,0.0813
+Web-Based / Sqlinjection,Web-Based,web,attacker_victim,6603,484,0.0733,0.0717,R3_benign_pair,0.0,0.0,0.0,0.1717,0.1158
+Web-Based / Sqlinjection,Web-Based,web,attacker_victim,6603,484,0.0733,0.0717,any,0.0,0.0,0.0,0.7224,0.4021
+Web-Based / Sqlinjection,Web-Based,web,attacker_any,6603,526,0.0797,0.0896,R1_external,0.0152,0.007,0.002,0.2071,0.3326
+Web-Based / Sqlinjection,Web-Based,web,attacker_any,6603,526,0.0797,0.0896,R2_service,0.0456,0.072,0.0106,0.1157,0.0943
+Web-Based / Sqlinjection,Web-Based,web,attacker_any,6603,526,0.0797,0.0896,R3_benign_pair,0.0,0.0,0.0,0.1866,0.1448
+Web-Based / Sqlinjection,Web-Based,web,attacker_any,6603,526,0.0797,0.0896,any,0.0456,0.072,0.004,0.7493,0.4666
+Spoofing / DNS Spoofing,Spoofing,dns,signature,74856,1605,0.0214,0.0021,R1_external,0.0,0.0,0.0,0.051,0.0126
+Spoofing / DNS Spoofing,Spoofing,dns,signature,74856,1605,0.0214,0.0021,R2_service,0.0,0.0,0.0,0.0225,0.0021
+Spoofing / DNS Spoofing,Spoofing,dns,signature,74856,1605,0.0214,0.0021,R3_benign_pair,0.0916,0.1729,0.0744,0.02,0.0018
+Spoofing / DNS Spoofing,Spoofing,dns,signature,74856,1605,0.0214,0.0021,any,0.0916,0.1729,0.0033,0.049,0.0109
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_victim,74856,1862,0.0249,0.0025,R1_external,0.0,0.0,0.0,0.0592,0.0152
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_victim,74856,1862,0.0249,0.0025,R2_service,0.0,0.0,0.0,0.0261,0.0026
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_victim,74856,1862,0.0249,0.0025,R3_benign_pair,0.217,0.3153,0.2046,0.02,0.0018
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_victim,74856,1862,0.0249,0.0025,any,0.217,0.3153,0.009,0.049,0.0109
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_any,74856,13802,0.1844,0.237,R1_external,0.3839,0.7812,0.1221,0.2703,0.3104
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_any,74856,13802,0.1844,0.237,R2_service,0.0037,0.0006,0.0145,0.1928,0.2404
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_any,74856,13802,0.1844,0.237,R3_benign_pair,0.0293,0.0034,0.2046,0.1838,0.2445
+Spoofing / DNS Spoofing,Spoofing,dns,attacker_any,74856,13802,0.1844,0.237,any,0.4131,0.7845,0.1265,0.272,0.3194
+Spoofing / ARP Spoofing,Spoofing,arp,signature,82382,146,0.0018,0.0142,R1_external,1.0,1.0,0.0032,0.0,0.0
+Spoofing / ARP Spoofing,Spoofing,arp,signature,82382,146,0.0018,0.0142,R2_service,0.0,0.0,0.0,0.0033,0.0147
+Spoofing / ARP Spoofing,Spoofing,arp,signature,82382,146,0.0018,0.0142,R3_benign_pair,1.0,1.0,0.0057,0.0,0.0
+Spoofing / ARP Spoofing,Spoofing,arp,signature,82382,146,0.0018,0.0142,any,1.0,1.0,0.0018,0.0,0.0
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_victim,82382,438,0.0053,0.0148,R1_external,0.3333,0.9621,0.0032,0.008,0.0113
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_victim,82382,438,0.0053,0.0148,R2_service,0.0,0.0,0.0,0.0098,0.0152
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_victim,82382,438,0.0053,0.0148,R3_benign_pair,0.3333,0.9621,0.0057,0.0052,0.0006
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_victim,82382,438,0.0053,0.0148,any,0.3333,0.9621,0.0018,0.0902,0.0233
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_any,82382,438,0.0053,0.0148,R1_external,0.3333,0.9621,0.0032,0.008,0.0113
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_any,82382,438,0.0053,0.0148,R2_service,0.0,0.0,0.0,0.0098,0.0152
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_any,82382,438,0.0053,0.0148,R3_benign_pair,0.3333,0.9621,0.0057,0.0052,0.0006
+Spoofing / ARP Spoofing,Spoofing,arp,attacker_any,82382,438,0.0053,0.0148,any,0.3333,0.9621,0.0018,0.0902,0.0233
+Mirai,Mirai,proto0flood+mirai_scan,signature,174588,646,0.0037,0.4335,R1_external,0.0,0.0,0.0,0.0088,0.4405
+Mirai,Mirai,proto0flood+mirai_scan,signature,174588,646,0.0037,0.4335,R2_service,0.0,0.0,0.0,0.0089,0.435
+Mirai,Mirai,proto0flood+mirai_scan,signature,174588,646,0.0037,0.4335,R3_benign_pair,0.0,0.0,0.0,0.0038,0.4397
+Mirai,Mirai,proto0flood+mirai_scan,signature,174588,646,0.0037,0.4335,any,0.0,0.0,0.0,0.1086,0.446
+Mirai,Mirai,proto0flood+mirai_scan,attacker_victim,174588,773,0.0044,0.5078,R1_external,0.0,0.0,0.0,0.0105,0.5159
+Mirai,Mirai,proto0flood+mirai_scan,attacker_victim,174588,773,0.0044,0.5078,R2_service,0.0,0.0,0.0,0.0107,0.5095
+Mirai,Mirai,proto0flood+mirai_scan,attacker_victim,174588,773,0.0044,0.5078,R3_benign_pair,0.0078,0.0078,0.0009,0.0046,0.511
+Mirai,Mirai,proto0flood+mirai_scan,attacker_victim,174588,773,0.0044,0.5078,any,0.0078,0.0078,0.0,0.129,0.5183
+Mirai,Mirai,proto0flood+mirai_scan,attacker_any,174588,3786,0.0217,0.9152,R1_external,0.0917,0.0,0.0034,0.0467,0.9298
+Mirai,Mirai,proto0flood+mirai_scan,attacker_any,174588,3786,0.0217,0.9152,R2_service,0.2427,0.0001,0.009,0.0395,0.9182
+Mirai,Mirai,proto0flood+mirai_scan,attacker_any,174588,3786,0.0217,0.9152,R3_benign_pair,0.0071,0.0108,0.0041,0.0224,0.9182
+Mirai,Mirai,proto0flood+mirai_scan,attacker_any,174588,3786,0.0217,0.9152,any,0.2475,0.0109,0.0056,0.4791,0.9311
+Mirai,Mirai,proto0flood,signature,174588,646,0.0037,0.4335,R1_external,0.0,0.0,0.0,0.0088,0.4405
+Mirai,Mirai,proto0flood,signature,174588,646,0.0037,0.4335,R2_service,0.0,0.0,0.0,0.0089,0.435
+Mirai,Mirai,proto0flood,signature,174588,646,0.0037,0.4335,R3_benign_pair,0.0,0.0,0.0,0.0038,0.4397
+Mirai,Mirai,proto0flood,signature,174588,646,0.0037,0.4335,any,0.0,0.0,0.0,0.1086,0.446
+Mirai,Mirai,proto0flood,attacker_victim,174588,773,0.0044,0.5078,R1_external,0.0,0.0,0.0,0.0105,0.5159
+Mirai,Mirai,proto0flood,attacker_victim,174588,773,0.0044,0.5078,R2_service,0.0,0.0,0.0,0.0107,0.5095
+Mirai,Mirai,proto0flood,attacker_victim,174588,773,0.0044,0.5078,R3_benign_pair,0.0078,0.0078,0.0009,0.0046,0.511
+Mirai,Mirai,proto0flood,attacker_victim,174588,773,0.0044,0.5078,any,0.0078,0.0078,0.0,0.129,0.5183
+Mirai,Mirai,proto0flood,attacker_any,174588,3786,0.0217,0.9152,R1_external,0.0917,0.0,0.0034,0.0467,0.9298
+Mirai,Mirai,proto0flood,attacker_any,174588,3786,0.0217,0.9152,R2_service,0.2427,0.0001,0.009,0.0395,0.9182
+Mirai,Mirai,proto0flood,attacker_any,174588,3786,0.0217,0.9152,R3_benign_pair,0.0071,0.0108,0.0041,0.0224,0.9182
+Mirai,Mirai,proto0flood,attacker_any,174588,3786,0.0217,0.9152,any,0.2475,0.0109,0.0056,0.4791,0.9311
+Mirai,Mirai,mirai_scan,signature,174588,0,0.0,0.0,R1_external,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,signature,174588,0,0.0,0.0,R2_service,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,signature,174588,0,0.0,0.0,R3_benign_pair,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,signature,174588,0,0.0,0.0,any,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_victim,174588,0,0.0,0.0,R1_external,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_victim,174588,0,0.0,0.0,R2_service,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_victim,174588,0,0.0,0.0,R3_benign_pair,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_victim,174588,0,0.0,0.0,any,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_any,174588,0,0.0,0.0,R1_external,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_any,174588,0,0.0,0.0,R2_service,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_any,174588,0,0.0,0.0,R3_benign_pair,,,0.0,0.0,0.0
+Mirai,Mirai,mirai_scan,attacker_any,174588,0,0.0,0.0,any,,,0.0,0.0,0.0
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,signature,202251,797,0.0039,0.4209,R1_external,0.0,0.0,0.0,0.0094,0.4222
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,signature,202251,797,0.0039,0.4209,R2_service,0.0,0.0,0.0,0.0072,0.4211
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,signature,202251,797,0.0039,0.4209,R3_benign_pair,0.0,0.0,0.0,0.0046,0.4245
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,signature,202251,797,0.0039,0.4209,any,0.0,0.0,0.0,0.0468,0.4255
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_victim,202251,946,0.0047,0.4959,R1_external,0.0,0.0,0.0,0.0111,0.4975
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_victim,202251,946,0.0047,0.4959,R2_service,0.0,0.0,0.0,0.0085,0.4961
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_victim,202251,946,0.0047,0.4959,R3_benign_pair,0.0,0.0,0.0,0.0054,0.5002
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_victim,202251,946,0.0047,0.4959,any,0.0,0.0,0.0,0.0556,0.5014
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_any,202251,3895,0.0193,0.9421,R1_external,0.1715,0.0,0.0057,0.038,0.9451
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_any,202251,3895,0.0193,0.9421,R2_service,0.1795,0.0,0.0077,0.0288,0.9425
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_any,202251,3895,0.0193,0.9421,R3_benign_pair,0.0,0.0,0.0,0.0224,0.9503
+DDOS / DDOS ICMP FLOOD,DDOS,proto0flood,attacker_any,202251,3895,0.0193,0.9421,any,0.3338,0.0,0.007,0.1524,0.9525
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,signature,320757,645,0.002,0.4024,R1_external,0.0,0.0,0.0,0.0046,0.4266
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,signature,320757,645,0.002,0.4024,R2_service,0.0,0.0,0.0,0.004,0.4075
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,signature,320757,645,0.002,0.4024,R3_benign_pair,0.0,0.0,0.0,0.0077,0.4249
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,signature,320757,645,0.002,0.4024,any,0.0,0.0,0.0,0.0722,0.4328
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_victim,320757,1374,0.0043,0.498,R1_external,0.0,0.0,0.0,0.0097,0.528
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_victim,320757,1374,0.0043,0.498,R2_service,0.0,0.0,0.0,0.0086,0.5044
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_victim,320757,1374,0.0043,0.498,R3_benign_pair,0.3617,0.0002,0.0021,0.0104,0.5258
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_victim,320757,1374,0.0043,0.498,any,0.3617,0.0002,0.0016,0.0981,0.5355
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_any,320757,5379,0.0168,0.8262,R1_external,0.2586,0.0003,0.0077,0.0283,0.8757
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_any,320757,5379,0.0168,0.8262,R2_service,0.2034,0.0003,0.0068,0.0268,0.8365
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_any,320757,5379,0.0168,0.8262,R3_benign_pair,0.5284,0.0024,0.012,0.0302,0.8702
+DDOS / DDOS ICMP Fragmentation,DDOS,proto0flood,attacker_any,320757,5379,0.0168,0.8262,any,0.5891,0.0025,0.0102,0.2473,0.8863
+Recon,Recon,recon,signature,442158,74947,0.1695,0.178,R1_external,0.0,0.0,0.0,0.3846,0.6696
+Recon,Recon,recon,signature,442158,74947,0.1695,0.178,R2_service,0.069,0.0777,0.0361,0.2333,0.1833
+Recon,Recon,recon,signature,442158,74947,0.1695,0.178,R3_benign_pair,0.0243,0.0441,0.0075,0.3639,0.2627
+Recon,Recon,recon,signature,442158,74947,0.1695,0.178,any,0.0779,0.085,0.0159,0.9063,0.8762
+Recon,Recon,recon,attacker_victim,442158,80451,0.182,0.1927,R1_external,0.0,0.0,0.0,0.4129,0.725
+Recon,Recon,recon,attacker_victim,442158,80451,0.182,0.1927,R2_service,0.0729,0.0741,0.041,0.2494,0.1992
+Recon,Recon,recon,attacker_victim,442158,80451,0.182,0.1927,R3_benign_pair,0.0239,0.0415,0.008,0.3908,0.2853
+Recon,Recon,recon,attacker_victim,442158,80451,0.182,0.1927,any,0.0817,0.0814,0.018,0.9688,0.9523
+Recon,Recon,recon,attacker_any,442158,98887,0.2236,0.2664,R1_external,0.1775,0.2702,0.071,0.4174,0.7314
+Recon,Recon,recon,attacker_any,442158,98887,0.2236,0.2664,R2_service,0.0961,0.0703,0.0664,0.2989,0.2765
+Recon,Recon,recon,attacker_any,442158,98887,0.2236,0.2664,R3_benign_pair,0.07,0.0632,0.0287,0.4577,0.3854
+Recon,Recon,recon,attacker_any,442158,98887,0.2236,0.2664,any,0.2439,0.3291,0.0659,0.9804,0.9615
+DDOS / DDOS HTTP FLOOD,DDOS,web,signature,505720,332123,0.6567,0.5635,R1_external,0.0,0.0,0.0,0.6733,0.6043
+DDOS / DDOS HTTP FLOOD,DDOS,web,signature,505720,332123,0.6567,0.5635,R2_service,0.0,0.0,0.0,0.6624,0.5673
+DDOS / DDOS HTTP FLOOD,DDOS,web,signature,505720,332123,0.6567,0.5635,R3_benign_pair,0.0,0.0,0.0,0.6635,0.574
+DDOS / DDOS HTTP FLOOD,DDOS,web,signature,505720,332123,0.6567,0.5635,any,0.0,0.0,0.0,0.6782,0.6074
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_victim,505720,332124,0.6567,0.5635,R1_external,0.0,0.0,0.0,0.6733,0.6043
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_victim,505720,332124,0.6567,0.5635,R2_service,0.0,0.0,0.0,0.6624,0.5673
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_victim,505720,332124,0.6567,0.5635,R3_benign_pair,0.0,0.0,0.0,0.6635,0.574
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_victim,505720,332124,0.6567,0.5635,any,0.0,0.0,0.0,0.6782,0.6074
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_any,505720,397309,0.7856,0.7356,R1_external,0.0001,0.0002,0.0025,0.8054,0.7886
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_any,505720,397309,0.7856,0.7356,R2_service,0.0002,0.0006,0.0157,0.7923,0.7401
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_any,505720,397309,0.7856,0.7356,R3_benign_pair,0.0,0.0,0.0,0.7937,0.7494
+DDOS / DDOS HTTP FLOOD,DDOS,web,attacker_any,505720,397309,0.7856,0.7356,any,0.0002,0.0008,0.0056,0.8111,0.7923
+DOS / DOS HTTP FLOOD,DOS,web,signature,1642744,910618,0.5543,0.4963,R1_external,0.0,0.0,0.0,0.5655,0.5317
+DOS / DOS HTTP FLOOD,DOS,web,signature,1642744,910618,0.5543,0.4963,R2_service,0.0,0.0,0.0,0.5609,0.4999
+DOS / DOS HTTP FLOOD,DOS,web,signature,1642744,910618,0.5543,0.4963,R3_benign_pair,0.0,0.0,0.0,0.555,0.4986
+DOS / DOS HTTP FLOOD,DOS,web,signature,1642744,910618,0.5543,0.4963,any,0.0,0.0,0.0,0.5714,0.5348
+DOS / DOS HTTP FLOOD,DOS,web,attacker_victim,1642744,910618,0.5543,0.4963,R1_external,0.0,0.0,0.0,0.5655,0.5317
+DOS / DOS HTTP FLOOD,DOS,web,attacker_victim,1642744,910618,0.5543,0.4963,R2_service,0.0,0.0,0.0,0.5609,0.4999
+DOS / DOS HTTP FLOOD,DOS,web,attacker_victim,1642744,910618,0.5543,0.4963,R3_benign_pair,0.0,0.0,0.0,0.555,0.4986
+DOS / DOS HTTP FLOOD,DOS,web,attacker_victim,1642744,910618,0.5543,0.4963,any,0.0,0.0,0.0,0.5714,0.5348
+DOS / DOS HTTP FLOOD,DOS,web,attacker_any,1642744,1584725,0.9647,0.9159,R1_external,0.0,0.0,0.0018,0.9842,0.9811
+DOS / DOS HTTP FLOOD,DOS,web,attacker_any,1642744,1584725,0.9647,0.9159,R2_service,0.0001,0.0003,0.0093,0.976,0.9222
+DOS / DOS HTTP FLOOD,DOS,web,attacker_any,1642744,1584725,0.9647,0.9159,R3_benign_pair,0.0,0.0,0.0304,0.9658,0.92
+DOS / DOS HTTP FLOOD,DOS,web,attacker_any,1642744,1584725,0.9647,0.9159,any,0.0001,0.0003,0.0037,0.9942,0.9866
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,signature,2450086,1540525,0.6288,0.6568,R1_external,0.0007,0.0004,0.0167,0.6449,0.6958
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,signature,2450086,1540525,0.6288,0.6568,R2_service,0.0001,0.0,0.0005,0.7134,0.6812
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,signature,2450086,1540525,0.6288,0.6568,R3_benign_pair,0.0,0.0,0.0017,0.6324,0.6688
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,signature,2450086,1540525,0.6288,0.6568,any,0.0008,0.0005,0.0036,0.7283,0.7206
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_victim,2450086,1540651,0.6288,0.6568,R1_external,0.0007,0.0004,0.0167,0.645,0.6958
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_victim,2450086,1540651,0.6288,0.6568,R2_service,0.0001,0.0,0.0005,0.7134,0.6813
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_victim,2450086,1540651,0.6288,0.6568,R3_benign_pair,0.0,0.0,0.0017,0.6325,0.6688
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_victim,2450086,1540651,0.6288,0.6568,any,0.0008,0.0005,0.0036,0.7284,0.7206
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_any,2450086,2268897,0.926,0.9067,R1_external,0.0009,0.0008,0.0327,0.9496,0.9602
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_any,2450086,2268897,0.926,0.9067,R2_service,0.1018,0.028,0.794,0.9438,0.9141
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_any,2450086,2268897,0.926,0.9067,R3_benign_pair,0.0,0.0,0.0017,0.9314,0.9233
+DDOS / DDOS ACK Fragmentation,DDOS,ackfrag,attacker_any,2450086,2268897,0.926,0.9067,any,0.1024,0.0287,0.6901,0.9636,0.9667
+DOS / DOS UDP FLOOD,DOS,udp,signature,5210536,566760,0.1088,0.6135,R1_external,0.0,0.0,0.0,0.1131,0.619
+DOS / DOS UDP FLOOD,DOS,udp,signature,5210536,566760,0.1088,0.6135,R2_service,0.0001,0.0001,0.0005,0.1116,0.6143
+DOS / DOS UDP FLOOD,DOS,udp,signature,5210536,566760,0.1088,0.6135,R3_benign_pair,0.0,0.0,0.0,0.1091,0.614
+DOS / DOS UDP FLOOD,DOS,udp,signature,5210536,566760,0.1088,0.6135,any,0.0001,0.0001,0.0002,0.1151,0.6194
+DOS / DOS UDP FLOOD,DOS,udp,attacker_victim,5210536,640933,0.123,0.6195,R1_external,0.0,0.0,0.0,0.1279,0.6249
+DOS / DOS UDP FLOOD,DOS,udp,attacker_victim,5210536,640933,0.123,0.6195,R2_service,0.0001,0.0001,0.0005,0.1262,0.6202
+DOS / DOS UDP FLOOD,DOS,udp,attacker_victim,5210536,640933,0.123,0.6195,R3_benign_pair,0.0,0.0,0.0,0.1234,0.62
+DOS / DOS UDP FLOOD,DOS,udp,attacker_victim,5210536,640933,0.123,0.6195,any,0.0001,0.0001,0.0003,0.1301,0.6254
+DOS / DOS UDP FLOOD,DOS,udp,attacker_any,5210536,4499846,0.8636,0.9462,R1_external,0.0,0.0,0.0007,0.8978,0.9545
+DOS / DOS UDP FLOOD,DOS,udp,attacker_any,5210536,4499846,0.8636,0.9462,R2_service,0.0002,0.0001,0.0072,0.886,0.9473
+DOS / DOS UDP FLOOD,DOS,udp,attacker_any,5210536,4499846,0.8636,0.9462,R3_benign_pair,0.0,0.0,0.0,0.8666,0.947
+DOS / DOS UDP FLOOD,DOS,udp,attacker_any,5210536,4499846,0.8636,0.9462,any,0.0002,0.0001,0.0034,0.9134,0.9552
+DOS / DOS SYN FLOOD,DOS,syn,signature,7999807,4579468,0.5724,0.6452,R1_external,0.0,0.0,0.0,0.578,0.6502
+DOS / DOS SYN FLOOD,DOS,syn,signature,7999807,4579468,0.5724,0.6452,R2_service,0.0001,0.0001,0.0134,0.5757,0.6459
+DOS / DOS SYN FLOOD,DOS,syn,signature,7999807,4579468,0.5724,0.6452,R3_benign_pair,0.0,0.0,0.0,0.5736,0.646
+DOS / DOS SYN FLOOD,DOS,syn,signature,7999807,4579468,0.5724,0.6452,any,0.0001,0.0001,0.0054,0.5807,0.6507
+DOS / DOS SYN FLOOD,DOS,syn,attacker_victim,7999807,5864462,0.7331,0.7953,R1_external,0.0,0.0,0.0,0.7402,0.8015
+DOS / DOS SYN FLOOD,DOS,syn,attacker_victim,7999807,5864462,0.7331,0.7953,R2_service,0.0001,0.0001,0.0175,0.7373,0.7962
+DOS / DOS SYN FLOOD,DOS,syn,attacker_victim,7999807,5864462,0.7331,0.7953,R3_benign_pair,0.0,0.0,0.0,0.7345,0.7963
+DOS / DOS SYN FLOOD,DOS,syn,attacker_victim,7999807,5864462,0.7331,0.7953,any,0.0001,0.0001,0.0071,0.7436,0.8021
+DOS / DOS SYN FLOOD,DOS,syn,attacker_any,7999807,7877854,0.9848,0.9897,R1_external,0.0,0.0,0.0004,0.9943,0.9974
+DOS / DOS SYN FLOOD,DOS,syn,attacker_any,7999807,7877854,0.9848,0.9897,R2_service,0.0001,0.0001,0.0239,0.9904,0.9907
+DOS / DOS SYN FLOOD,DOS,syn,attacker_any,7999807,7877854,0.9848,0.9897,R3_benign_pair,0.0,0.0,0.0004,0.9867,0.9909
+DOS / DOS SYN FLOOD,DOS,syn,attacker_any,7999807,7877854,0.9848,0.9897,any,0.0001,0.0001,0.0098,0.9989,0.9982

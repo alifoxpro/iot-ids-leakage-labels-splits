@@ -1,0 +1,270 @@
+{
+ "accuracy": 0.9942705290627682,
+ "balanced_accuracy": 0.953226946155535,
+ "macro_f1": 0.9426997489813951,
+ "per_class_f1": {
+  "Benign": 0.9967,
+  "BruteForce": 0.7352,
+  "DDoS": 0.9958,
+  "DoS": 0.9985,
+  "Mirai": 0.9717,
+  "Spoofing": 0.9727,
+  "SQL Injection": 0.9714,
+  "XSS": 0.8996
+ },
+ "per_class_recall": {
+  "Benign": 0.9978,
+  "BruteForce": 0.7997,
+  "DDoS": 0.9951,
+  "DoS": 0.9981,
+  "Mirai": 0.9717,
+  "Spoofing": 0.9758,
+  "SQL Injection": 0.978,
+  "XSS": 0.9096
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.9978,
+  "BruteForce / BruteForce": 0.7997,
+  "DDoS / DDOS ACK Fragmentation": 0.9999,
+  "DDoS / DDOS HTTP FLOOD": 0.9974,
+  "DDoS / DDOS ICMP FLOOD": 0.9496,
+  "DDoS / DDOS ICMP Fragmentation": 0.9832,
+  "DoS / DOS HTTP FLOOD": 0.9976,
+  "DoS / DOS SYN FLOOD": 0.9994,
+  "DoS / DOS UDP FLOOD": 0.9962,
+  "Mirai / Mirai": 0.9717,
+  "Spoofing / ARP Spoofing": 0.9715,
+  "Spoofing / DNS Spoofing": 0.9805,
+  "SQL Injection / Sqlinjection": 0.978,
+  "XSS / XSS": 0.9096
+ },
+ "run": "FT_none",
+ "feature_set": "FT",
+ "features": "81 flow features + Timestamp (raw string, label-encoded in sorted order)",
+ "weighting": "none",
+ "weighting_desc": "no class weights (the published study used no resampling)",
+ "n_features": 82,
+ "description": "identifier necessity control in the published setting: classes Benign, BruteForce, DDoS, DoS, Mirai, Spoofing, SQL Injection, XSS; no de-duplication; DoS/DDoS thinned while reading and capped; stratified random 80/20 split (seed 42); XGBoost (extra_baselines.make) on the CPU; NaN/inf -> 0; text identifiers label-encoded (sorted) over the whole table",
+ "model": "XGBoost",
+ "model_params": {
+  "n_estimators": 200,
+  "max_depth": 8,
+  "learning_rate": 0.1,
+  "tree_method": "hist",
+  "device": "cpu",
+  "n_jobs": 4,
+  "random_state": 42
+ },
+ "split": "stratified random 80/20, seed 42",
+ "n_train": 2595004,
+ "n_test": 648751,
+ "fit_seconds": 261.3,
+ "weighted_f1": 0.9943014977656784,
+ "macro_precision": 0.9334167509519682,
+ "macro_recall": 0.953226946155535,
+ "labels": [
+  "Benign",
+  "BruteForce",
+  "DDoS",
+  "DoS",
+  "Mirai",
+  "Spoofing",
+  "SQL Injection",
+  "XSS"
+ ],
+ "confusion": [
+  [
+   79491,
+   0,
+   173,
+   2,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   579,
+   1,
+   17,
+   12,
+   115,
+   0,
+   0
+  ],
+  [
+   336,
+   0,
+   199012,
+   211,
+   350,
+   15,
+   0,
+   76
+  ],
+  [
+   22,
+   11,
+   268,
+   299432,
+   110,
+   110,
+   47,
+   0
+  ],
+  [
+   0,
+   42,
+   193,
+   31,
+   33929,
+   723,
+   0,
+   0
+  ],
+  [
+   0,
+   219,
+   11,
+   15,
+   517,
+   30685,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   2,
+   27,
+   0,
+   0,
+   1292,
+   0
+  ],
+  [
+   0,
+   0,
+   61,
+   0,
+   0,
+   0,
+   0,
+   614
+  ]
+ ],
+ "class_counts": {
+  "all": {
+   "Benign": 398330,
+   "BruteForce": 3619,
+   "DDoS": 1000000,
+   "DoS": 1500000,
+   "Mirai": 174588,
+   "Spoofing": 157238,
+   "SQL Injection": 6603,
+   "XSS": 3377
+  },
+  "train": {
+   "Benign": 318664,
+   "BruteForce": 2895,
+   "DDoS": 800000,
+   "DoS": 1200000,
+   "Mirai": 139670,
+   "Spoofing": 125791,
+   "SQL Injection": 5282,
+   "XSS": 2702
+  },
+  "test": {
+   "Benign": 79666,
+   "BruteForce": 724,
+   "DDoS": 200000,
+   "DoS": 300000,
+   "Mirai": 34918,
+   "Spoofing": 31447,
+   "SQL Injection": 1321,
+   "XSS": 675
+  }
+ },
+ "test_duplicates": {
+  "definition": "test flow whose 76 raw CICFlowMeter values (NaN == NaN) occur in a training flow (64-bit row hash)",
+  "share_any": 0.0936,
+  "share_same_label": 0.0886,
+  "share_other_label_only": 0.005,
+  "per_class_share_any": {
+   "Benign": 0.0539,
+   "BruteForce": 0.0359,
+   "DDoS": 0.1742,
+   "DoS": 0.0502,
+   "Mirai": 0.1183,
+   "Spoofing": 0.0729,
+   "SQL Injection": 0.0439,
+   "XSS": 0.0252
+  },
+  "per_class_share_same_label": {
+   "Benign": 0.044,
+   "BruteForce": 0.0097,
+   "DDoS": 0.1695,
+   "DoS": 0.0479,
+   "Mirai": 0.1081,
+   "Spoofing": 0.0598,
+   "SQL Injection": 0.0151,
+   "XSS": 0.0044
+  }
+ },
+ "test_subsets": {
+  "with_train_duplicate": {
+   "n": 60697,
+   "accuracy": 0.9957,
+   "macro_f1": 0.9319,
+   "per_class_recall": {
+    "Benign": 0.9972,
+    "BruteForce": 0.9231,
+    "DDoS": 0.9977,
+    "DoS": 0.9967,
+    "Mirai": 0.9893,
+    "Spoofing": 0.9708,
+    "SQL Injection": 1.0,
+    "XSS": 0.6471
+   }
+  },
+  "without_train_duplicate": {
+   "n": 588054,
+   "accuracy": 0.9941,
+   "macro_f1": 0.9426,
+   "per_class_recall": {
+    "Benign": 0.9978,
+    "BruteForce": 0.7951,
+    "DDoS": 0.9945,
+    "DoS": 0.9982,
+    "Mirai": 0.9693,
+    "Spoofing": 0.9762,
+    "SQL Injection": 0.977,
+    "XSS": 0.9164
+   }
+  }
+ },
+ "importance_gain_top15": {
+  "Fwd Packet Length Mean": 0.1303,
+  "Flow Bytes/s": 0.1217,
+  "Timestamp": 0.1194,
+  "Average Packet Size": 0.0702,
+  "RST Flag Count": 0.0622,
+  "ACK Flag Count": 0.052,
+  "Packet Length Min": 0.0504,
+  "Subflow Fwd Bytes": 0.0345,
+  "Total Length of Fwd Packet": 0.0253,
+  "Bwd Bulk Rate Avg": 0.0249,
+  "Total Bwd packets": 0.0228,
+  "Down/Up Ratio": 0.0207,
+  "Flow Duration": 0.0202,
+  "FWD Init Win Bytes": 0.02,
+  "SYN Flag Count": 0.0193
+ },
+ "identifier_importance": {
+  "Timestamp": {
+   "gain_share": 0.1194,
+   "rank": 3
+  }
+ }
+}

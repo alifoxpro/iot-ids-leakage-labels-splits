@@ -1,0 +1,5 @@
+split,cleaning,runs,n_train,n_val,n_test,consistent
+random,r1,43,2122905,454909,454909,True
+random,raw,43,2538550,543976,543976,True
+temporal,r1,50,2122898,454909,454916,True
+temporal,raw,49,2538543,543973,543986,True

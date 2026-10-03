@@ -1,0 +1,53 @@
+{
+ "note": "Adjudicator decisions for the flows on which annotators A and B disagreed (the adjudicator saw only README_annotators.md, the evidence brief of the class, the batch file and the two decisions with their evidence). Every other flow keeps the common decision of A and B.",
+ "adjudicated": {
+  "MI-012": {
+   "decision": "background",
+   "evidence": "adjudicated: Unlisted .129 (its other flow is cloud HTTPS) sends 5x128 B UDP burst to 192.168.1.1:10008, no reply, after window; not GRE flood/Telnet scan; discovery-like"
+  },
+  "MI-050": {
+   "decision": "background",
+   "evidence": "adjudicated: Non-IP pseudo-flow; address bytes decode (like ARP 8.6.0.1) as 802.3 len 6, LLC XID 00/01/AF 81 01 02: Wi-Fi AP layer-2 update on station association; 24 frames/91 s, no GRE flood"
+  },
+  "MI-057": {
+   "decision": "background",
+   "evidence": "adjudicated: Lab host 205.174.165.65 to .58: neither is a flood sender or a listed victim. 7 one-way proto0 pkts over 90 s (0.08/s), unlike a GRE flood stream"
+  },
+  "MI-068": {
+   "decision": "background",
+   "evidence": "adjudicated: Non-IP frames: bytes 00 06|00 01|AF 81 01 02 decode as an 802.3 LLC XID layer-2 update that an AP sends when a station associates. 43 frames, not GRE flood"
+  },
+  "MI-071": {
+   "decision": "background",
+   "evidence": "adjudicated: .171 to .163: neither is a flood sender or a listed victim. 10/2 proto0 pkts over 90 s (0.13/s), starting after the attack window ended; not flood-like"
+  },
+  "MI-072": {
+   "decision": "background",
+   "evidence": "adjudicated: Non-IP frames that decode as 802.3 LLC XID (AF 81 01 02) layer-2 updates an AP sends when a station associates. 169 frames, no reply; not GRE flood"
+  },
+  "MI-076": {
+   "decision": "background",
+   "evidence": "adjudicated: .171 is not one of the seven flood senders and .134 is not a listed victim. 2 one-way proto0 pkts in 5 ms; no flood volume"
+  },
+  "MI-077": {
+   "decision": "background",
+   "evidence": "adjudicated: .171 to .142: neither is a flood sender or a listed victim. 9 one-way proto0 pkts in 10 s (about 1/s, like ping), far below flood rate"
+  },
+  "MI-081": {
+   "decision": "background",
+   "evidence": "adjudicated: .117 to .171: neither is a flood sender or a listed victim. One proto0 request/reply in 9 ms (like ping), whereas the GRE flood is one-way and high-rate"
+  },
+  "SP-005": {
+   "decision": "unclear",
+   "evidence": "adjudicated: One SYN .121 to local .35:443 refused by RST, no payload; not UDP 53, neither host a listed responder; not a completed ordinary service; redirect-target role undecidable at flow level"
+  },
+  "SP-048": {
+   "decision": "background",
+   "evidence": "adjudicated: presumed victim .210 with unlisted .206, symmetric UDP 55444<->55444 keep-alive, 96/95 pkts, fixed 16/8-B payloads, ~2 pkt/s each way; LAN device chatter, not ARP/ICMP, no .89 or gateway path"
+  },
+  "SP-065": {
+   "decision": "background",
+   "evidence": "adjudicated: gateway resolver :53 to unlisted .23, 5 equal 40-B answers ~2 s apart (client retries, queries not in flow); ARP attack uses no DNS, no ARP/ICMP or .89 link"
+  }
+ }
+}

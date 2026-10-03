@@ -1,0 +1,258 @@
+{
+ "Benign": {
+  "flows": 398330,
+  "packets": 10867611,
+  "flow_share": {
+   "0": 0.0207,
+   "6": 0.3608,
+   "17": 0.6185
+  },
+  "packet_share": {
+   "0": 0.0254,
+   "6": 0.8183,
+   "17": 0.1563
+  },
+  "largest_proto0_flow_packets": 833,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "BruteForce": {
+  "flows": 3619,
+  "packets": 15632,
+  "flow_share": {
+   "0": 0.0075,
+   "6": 0.2363,
+   "17": 0.7563
+  },
+  "packet_share": {
+   "0": 0.0202,
+   "6": 0.4143,
+   "17": 0.5655
+  },
+  "largest_proto0_flow_packets": 135,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DDOS / DDOS ACK Fragmentation": {
+  "flows": 2450086,
+  "packets": 19246485,
+  "flow_share": {
+   "0": 0.0017,
+   "6": 0.9726,
+   "17": 0.0258
+  },
+  "packet_share": {
+   "0": 0.6952,
+   "6": 0.2841,
+   "17": 0.0207
+  },
+  "largest_proto0_flow_packets": 94869,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DDOS / DDOS HTTP FLOOD": {
+  "flows": 505720,
+  "packets": 2723549,
+  "flow_share": {
+   "0": 0.0009,
+   "6": 0.9839,
+   "17": 0.0152
+  },
+  "packet_share": {
+   "0": 0.0081,
+   "6": 0.9656,
+   "17": 0.0263
+  },
+  "largest_proto0_flow_packets": 898,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DDOS / DDOS ICMP FLOOD": {
+  "flows": 202251,
+  "packets": 719635485,
+  "flow_share": {
+   "0": 0.0354,
+   "6": 0.3958,
+   "17": 0.5688
+  },
+  "packet_share": {
+   "0": 0.9971,
+   "6": 0.0018,
+   "17": 0.0011
+  },
+  "largest_proto0_flow_packets": 1666774,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DDOS / DDOS ICMP Fragmentation": {
+  "flows": 320757,
+  "packets": 44873040,
+  "flow_share": {
+   "0": 0.0225,
+   "6": 0.3953,
+   "17": 0.5821
+  },
+  "packet_share": {
+   "0": 0.9436,
+   "6": 0.034,
+   "17": 0.0225
+  },
+  "largest_proto0_flow_packets": 181515,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DOS / DOS HTTP FLOOD": {
+  "flows": 1642744,
+  "packets": 7108757,
+  "flow_share": {
+   "0": 0.0005,
+   "6": 0.984,
+   "17": 0.0155
+  },
+  "packet_share": {
+   "0": 0.0041,
+   "6": 0.976,
+   "17": 0.0199
+  },
+  "largest_proto0_flow_packets": 751,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DOS / DOS SYN FLOOD": {
+  "flows": 7999807,
+  "packets": 125430335,
+  "flow_share": {
+   "0": 0.0003,
+   "6": 0.9925,
+   "17": 0.0072
+  },
+  "packet_share": {
+   "0": 0.001,
+   "6": 0.9957,
+   "17": 0.0033
+  },
+  "largest_proto0_flow_packets": 1520,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "DOS / DOS UDP FLOOD": {
+  "flows": 5210536,
+  "packets": 303269228,
+  "flow_share": {
+   "0": 0.0008,
+   "6": 0.0269,
+   "17": 0.9723
+  },
+  "packet_share": {
+   "0": 0.0008,
+   "6": 0.0056,
+   "17": 0.9936
+  },
+  "largest_proto0_flow_packets": 1892,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Mirai": {
+  "flows": 174588,
+  "packets": 98807831,
+  "flow_share": {
+   "0": 0.0348,
+   "6": 0.2551,
+   "17": 0.7101
+  },
+  "packet_share": {
+   "0": 0.986,
+   "6": 0.0075,
+   "17": 0.0065
+  },
+  "largest_proto0_flow_packets": 338728,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Recon": {
+  "flows": 442158,
+  "packets": 3626033,
+  "flow_share": {
+   "0": 0.013,
+   "6": 0.5453,
+   "17": 0.4417
+  },
+  "packet_share": {
+   "0": 0.0493,
+   "6": 0.6544,
+   "17": 0.2963
+  },
+  "largest_proto0_flow_packets": 953,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Spoofing / ARP Spoofing": {
+  "flows": 82382,
+  "packets": 3038721,
+  "flow_share": {
+   "0": 0.0187,
+   "6": 0.332,
+   "17": 0.6493
+  },
+  "packet_share": {
+   "0": 0.0179,
+   "6": 0.7155,
+   "17": 0.2666
+  },
+  "largest_proto0_flow_packets": 561,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Spoofing / DNS Spoofing": {
+  "flows": 74856,
+  "packets": 1754206,
+  "flow_share": {
+   "0": 0.0239,
+   "6": 0.3632,
+   "17": 0.613
+  },
+  "packet_share": {
+   "0": 0.0331,
+   "6": 0.5724,
+   "17": 0.3945
+  },
+  "largest_proto0_flow_packets": 1044,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Web-Based / Sqlinjection": {
+  "flows": 6603,
+  "packets": 50992,
+  "flow_share": {
+   "0": 0.0139,
+   "6": 0.5117,
+   "17": 0.4743
+  },
+  "packet_share": {
+   "0": 0.0512,
+   "6": 0.6288,
+   "17": 0.32
+  },
+  "largest_proto0_flow_packets": 269,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Web-Based / Uploading Attack": {
+  "flows": 1348,
+  "packets": 12301,
+  "flow_share": {
+   "0": 0.0297,
+   "6": 0.2782,
+   "17": 0.6921
+  },
+  "packet_share": {
+   "0": 0.1099,
+   "6": 0.5316,
+   "17": 0.3585
+  },
+  "largest_proto0_flow_packets": 239,
+  "proto0_flows_with_nonzero_port": 0
+ },
+ "Web-Based / XSS": {
+  "flows": 3377,
+  "packets": 37750,
+  "flow_share": {
+   "0": 0.0373,
+   "6": 0.3204,
+   "17": 0.6423
+  },
+  "packet_share": {
+   "0": 0.0735,
+   "6": 0.6014,
+   "17": 0.3251
+  },
+  "largest_proto0_flow_packets": 261,
+  "proto0_flows_with_nonzero_port": 0
+ }
+}

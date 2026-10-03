@@ -1,0 +1,144 @@
+{
+ "class": "DOS",
+ "y": 3,
+ "n_flows": 1500000,
+ "build_seconds": 119.6,
+ "verification": {
+  "n_rebuilt": 1500000,
+  "n_cache": 1500000,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "cache_rows": [
+   1388995,
+   2888995
+  ],
+  "contiguous_at_expected_offset": true,
+  "ok": true
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 440,
+  "files_checked": 22,
+  "features_exact": 440,
+  "features_close": 440,
+  "ts_equal": 440,
+  "ips_equal": 440,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood.pcap_Flow.csv": {
+   "records": 932513,
+   "after_thinning": 139877,
+   "in_sample": 67408
+  },
+  "DOS/DOS HTTP FLOOD/DoS-HTTP_Flood1.pcap_Flow.csv": {
+   "records": 710231,
+   "after_thinning": 106535,
+   "in_sample": 56068
+  },
+  "DOS/DOS SYN FLOOD/DoS-SYN_Flood1.pcap_Flow.csv": {
+   "records": 1373103,
+   "after_thinning": 205965,
+   "in_sample": 143126
+  },
+  "DOS/DOS SYN FLOOD/DoS-SYN_Flood3.pcap_Flow.csv": {
+   "records": 1923524,
+   "after_thinning": 288529,
+   "in_sample": 200691
+  },
+  "DOS/DOS SYN FLOOD/DoS-SYN_Flood5.pcap_Flow.csv": {
+   "records": 1795088,
+   "after_thinning": 269263,
+   "in_sample": 186778
+  },
+  "DOS/DOS SYN FLOOD/DoS-SYN_Flood6.pcap_Flow.csv": {
+   "records": 1503778,
+   "after_thinning": 225567,
+   "in_sample": 156960
+  },
+  "DOS/DOS SYN FLOOD/DoS-SYN_Flood7.pcap_Flow.csv": {
+   "records": 1404314,
+   "after_thinning": 210647,
+   "in_sample": 145941
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood.pcap_Flow.csv": {
+   "records": 934001,
+   "after_thinning": 140100,
+   "in_sample": 98638
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood10.pcap_Flow.csv": {
+   "records": 61907,
+   "after_thinning": 9286,
+   "in_sample": 6498
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood11.pcap_Flow.csv": {
+   "records": 57086,
+   "after_thinning": 8563,
+   "in_sample": 5694
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood12.pcap_Flow.csv": {
+   "records": 50017,
+   "after_thinning": 7503,
+   "in_sample": 5210
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood13.pcap_Flow.csv": {
+   "records": 59885,
+   "after_thinning": 8983,
+   "in_sample": 6309
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood14.pcap_Flow.csv": {
+   "records": 64565,
+   "after_thinning": 9685,
+   "in_sample": 6598
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood15.pcap_Flow.csv": {
+   "records": 66453,
+   "after_thinning": 9968,
+   "in_sample": 6922
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood16.pcap_Flow.csv": {
+   "records": 35173,
+   "after_thinning": 5276,
+   "in_sample": 3659
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood3.pcap_Flow.csv": {
+   "records": 589185,
+   "after_thinning": 88378,
+   "in_sample": 60710
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood4.pcap_Flow.csv": {
+   "records": 901794,
+   "after_thinning": 135269,
+   "in_sample": 94514
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood5.pcap_Flow.csv": {
+   "records": 842995,
+   "after_thinning": 126449,
+   "in_sample": 87790
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood6.pcap_Flow.csv": {
+   "records": 862694,
+   "after_thinning": 129404,
+   "in_sample": 88949
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood7.pcap_Flow.csv": {
+   "records": 539459,
+   "after_thinning": 80919,
+   "in_sample": 56271
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood8.pcap_Flow.csv": {
+   "records": 74524,
+   "after_thinning": 11179,
+   "in_sample": 7796
+  },
+  "DOS/DOS UDP FLOOD/DoS-UDP_Flood9.pcap_Flow.csv": {
+   "records": 70798,
+   "after_thinning": 10620,
+   "in_sample": 7470
+  }
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "classes": [
+  "Benign",
+  "BruteForce",
+  "DDoS",
+  "DoS",
+  "Mirai",
+  "Spoofing",
+  "SQL Injection",
+  "XSS"
+ ],
+ "n_flows": 3243755,
+ "deduplicated": false,
+ "class_counts": {
+  "Benign": 398330,
+  "BruteForce": 3619,
+  "DDoS": 1000000,
+  "DoS": 1500000,
+  "Mirai": 174588,
+  "Spoofing": 157238,
+  "SQL Injection": 6603,
+  "XSS": 3377
+ },
+ "per_class": {
+  "Benign": {
+   "folder": "Benign",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 398330,
+   "after_read_sampling": 398330,
+   "kept": 398330,
+   "groups": {
+    "Benign": {
+     "files": 4,
+     "flows_read": 398330,
+     "after_read_sampling": 398330,
+     "kept": 398330
+    }
+   }
+  },
+  "BruteForce": {
+   "folder": "BruteForce",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 3619,
+   "after_read_sampling": 3619,
+   "kept": 3619,
+   "groups": {
+    "BruteForce": {
+     "files": 1,
+     "flows_read": 3619,
+     "after_read_sampling": 3619,
+     "kept": 3619
+    }
+   }
+  },
+  "DDoS": {
+   "folder": "DDOS",
+   "sample_frac": 0.45,
+   "cap": 1000000,
+   "flows_read": 3478814,
+   "after_read_sampling": 1565465,
+   "kept": 1000000,
+   "groups": {
+    "DDOS ACK Fragmentation": {
+     "files": 13,
+     "flows_read": 2450086,
+     "after_read_sampling": 1102538,
+     "kept": 704522
+    },
+    "DDOS HTTP FLOOD": {
+     "files": 1,
+     "flows_read": 505720,
+     "after_read_sampling": 227574,
+     "kept": 145263
+    },
+    "DDOS ICMP FLOOD": {
+     "files": 27,
+     "flows_read": 202251,
+     "after_read_sampling": 91012,
+     "kept": 57979
+    },
+    "DDOS ICMP Fragmentation": {
+     "files": 20,
+     "flows_read": 320757,
+     "after_read_sampling": 144341,
+     "kept": 92236
+    }
+   }
+  },
+  "DoS": {
+   "folder": "DOS",
+   "sample_frac": 0.15,
+   "cap": 1500000,
+   "flows_read": 14853087,
+   "after_read_sampling": 2227965,
+   "kept": 1500000,
+   "groups": {
+    "DOS HTTP FLOOD": {
+     "files": 2,
+     "flows_read": 1642744,
+     "after_read_sampling": 246412,
+     "kept": 165901
+    },
+    "DOS SYN FLOOD": {
+     "files": 5,
+     "flows_read": 7999807,
+     "after_read_sampling": 1199971,
+     "kept": 808253
+    },
+    "DOS UDP FLOOD": {
+     "files": 15,
+     "flows_read": 5210536,
+     "after_read_sampling": 781582,
+     "kept": 525846
+    }
+   }
+  },
+  "Mirai": {
+   "folder": "Mirai",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 174588,
+   "after_read_sampling": 174588,
+   "kept": 174588,
+   "groups": {
+    "Mirai": {
+     "files": 29,
+     "flows_read": 174588,
+     "after_read_sampling": 174588,
+     "kept": 174588
+    }
+   }
+  },
+  "Spoofing": {
+   "folder": "Spoofing",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 157238,
+   "after_read_sampling": 157238,
+   "kept": 157238,
+   "groups": {
+    "ARP Spoofing": {
+     "files": 2,
+     "flows_read": 82382,
+     "after_read_sampling": 82382,
+     "kept": 82382
+    },
+    "DNS Spoofing": {
+     "files": 1,
+     "flows_read": 74856,
+     "after_read_sampling": 74856,
+     "kept": 74856
+    }
+   }
+  },
+  "SQL Injection": {
+   "folder": "Web-Based",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 6603,
+   "after_read_sampling": 6603,
+   "kept": 6603,
+   "groups": {
+    "Sqlinjection": {
+     "files": 1,
+     "flows_read": 6603,
+     "after_read_sampling": 6603,
+     "kept": 6603
+    }
+   }
+  },
+  "XSS": {
+   "folder": "Web-Based",
+   "sample_frac": 1.0,
+   "cap": null,
+   "flows_read": 3377,
+   "after_read_sampling": 3377,
+   "kept": 3377,
+   "groups": {
+    "XSS": {
+     "files": 1,
+     "flows_read": 3377,
+     "after_read_sampling": 3377,
+     "kept": 3377
+    }
+   }
+  }
+ },
+ "exact_duplicate_share": {
+  "all_classes": 0.07,
+  "Benign": 0.0325,
+  "BruteForce": 0.005,
+  "DDoS": 0.1304,
+  "DoS": 0.0339,
+  "Mirai": 0.0851,
+  "Spoofing": 0.0404,
+  "SQL Injection": 0.0124,
+  "XSS": 0.0036
+ },
+ "rows_whose_raw_vector_occurs_under_another_class": 0.0169,
+ "distinct_values": {
+  "Flow ID": 2523373,
+  "Src IP": 4517,
+  "Src Port": 65536,
+  "Dst IP": 8848,
+  "Dst Port": 65351,
+  "Protocol": 3,
+  "Timestamp": 276634
+ }
+}

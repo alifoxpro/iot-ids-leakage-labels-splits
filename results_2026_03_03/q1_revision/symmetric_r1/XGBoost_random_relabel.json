@@ -1,0 +1,536 @@
+{
+ "accuracy": 0.9080418989073047,
+ "balanced_accuracy": 0.831290959529057,
+ "macro_f1": 0.6070786529521655,
+ "per_class_f1": {
+  "Benign": 0.9053,
+  "BruteForce": 0.0706,
+  "DDOS": 0.9382,
+  "DOS": 0.9848,
+  "Mirai": 0.4695,
+  "Recon": 0.733,
+  "Spoofing": 0.548,
+  "Web-Based": 0.2071
+ },
+ "per_class_recall": {
+  "Benign": 0.8387,
+  "BruteForce": 0.7268,
+  "DDOS": 0.9063,
+  "DOS": 0.9756,
+  "Mirai": 0.8414,
+  "Recon": 0.819,
+  "Spoofing": 0.7568,
+  "Web-Based": 0.7857
+ },
+ "per_subattack_recall": {
+  "Benign / ARP Spoofing": 0.9576,
+  "Benign / Benign": 0.72,
+  "Benign / BruteForce": 0.9132,
+  "Benign / DDOS ACK Fragmentation": 0.834,
+  "Benign / DDOS HTTP FLOOD": 0.9095,
+  "Benign / DDOS ICMP FLOOD": 0.8645,
+  "Benign / DDOS ICMP Fragmentation": 0.8997,
+  "Benign / DNS Spoofing": 0.9513,
+  "Benign / DOS HTTP FLOOD": 0.9325,
+  "Benign / DOS SYN FLOOD": 0.9101,
+  "Benign / DOS UDP FLOOD": 0.8466,
+  "Benign / Mirai": 0.7721,
+  "Benign / Recon": 0.9823,
+  "Benign / Sqlinjection": 0.9744,
+  "Benign / Uploading Attack": 0.9843,
+  "Benign / XSS": 0.9817,
+  "BruteForce / BruteForce": 0.7268,
+  "DDOS / DDOS ACK Fragmentation": 0.9813,
+  "DDOS / DDOS HTTP FLOOD": 0.9363,
+  "DDOS / DDOS ICMP FLOOD": 0.1864,
+  "DDOS / DDOS ICMP Fragmentation": 0.2035,
+  "DOS / DOS HTTP FLOOD": 0.8357,
+  "DOS / DOS SYN FLOOD": 0.994,
+  "DOS / DOS UDP FLOOD": 0.9786,
+  "Mirai / Mirai": 0.8414,
+  "Recon / Recon": 0.819,
+  "Spoofing / ARP Spoofing": 0.7265,
+  "Spoofing / DNS Spoofing": 0.7885,
+  "Web-Based / Sqlinjection": 0.8184,
+  "Web-Based / Uploading Attack": 0.75,
+  "Web-Based / XSS": 0.7365
+ },
+ "attack_macro_f1": 0.5644756688443497,
+ "per_class_precision": {
+  "Benign": 0.9833,
+  "BruteForce": 0.0371,
+  "DDOS": 0.9725,
+  "DOS": 0.9943,
+  "Mirai": 0.3256,
+  "Recon": 0.6633,
+  "Spoofing": 0.4295,
+  "Web-Based": 0.1193
+ },
+ "benign_false_alarm_rate": 0.161265,
+ "attack_missed_as_benign_rate": 0.005266,
+ "confusion": [
+  [
+   123362,
+   1560,
+   763,
+   131,
+   7598,
+   6811,
+   5411,
+   1445
+  ],
+  [
+   5,
+   133,
+   0,
+   0,
+   6,
+   1,
+   30,
+   8
+  ],
+  [
+   1016,
+   195,
+   119019,
+   1072,
+   6101,
+   2347,
+   1250,
+   327
+  ],
+  [
+   466,
+   74,
+   2545,
+   214878,
+   719,
+   1069,
+   360,
+   147
+  ],
+  [
+   230,
+   143,
+   19,
+   9,
+   7814,
+   136,
+   848,
+   88
+  ],
+  [
+   221,
+   801,
+   22,
+   3,
+   983,
+   21134,
+   1550,
+   1090
+  ],
+  [
+   148,
+   627,
+   13,
+   18,
+   763,
+   337,
+   7140,
+   388
+  ],
+  [
+   4,
+   53,
+   1,
+   0,
+   12,
+   25,
+   34,
+   473
+  ]
+ ],
+ "model": "XGBoost",
+ "seed": 42,
+ "split": "random",
+ "condition": "relabel",
+ "description": "all rows kept; R1-flagged attack flows relabelled Benign in training and test; split = raw partition (all rows, folder labels)",
+ "n_train": 2538550,
+ "n_test": 543976,
+ "n_train_per_class": {
+  "Benign": 685002,
+  "BruteForce": 902,
+  "DDOS": 613627,
+  "DOS": 1027710,
+  "Mirai": 43705,
+  "Recon": 120094,
+  "Spoofing": 44470,
+  "Web-Based": 3040
+ },
+ "fit_seconds": 33.2,
+ "n_relabelled_train": 415226,
+ "relabelled_background": {
+  "n_test": 89272,
+  "false_alarm_rate": 0.08436,
+  "predicted_as_folder_class": 0.034837,
+  "predicted_class_share": {
+   "Benign": 0.91564,
+   "BruteForce": 0.006531,
+   "DDOS": 0.005578,
+   "DOS": 0.001434,
+   "Mirai": 0.05565,
+   "Recon": 0.003013,
+   "Spoofing": 0.009745,
+   "Web-Based": 0.002408
+  },
+  "per_folder_class": {
+   "BruteForce": {
+    "n_test": 357,
+    "false_alarm_rate": 0.086835,
+    "predicted_as_folder_class": 0.022409,
+    "predicted_class_share": {
+     "Benign": 0.913165,
+     "BruteForce": 0.022409,
+     "DDOS": 0.0,
+     "DOS": 0.030812,
+     "Mirai": 0.02521,
+     "Recon": 0.0,
+     "Spoofing": 0.008403,
+     "Web-Based": 0.0
+    }
+   },
+   "DDOS": {
+    "n_test": 18673,
+    "false_alarm_rate": 0.121887,
+    "predicted_as_folder_class": 0.015959,
+    "predicted_class_share": {
+     "Benign": 0.878113,
+     "BruteForce": 0.00407,
+     "DDOS": 0.015959,
+     "DOS": 0.002463,
+     "Mirai": 0.083008,
+     "Recon": 0.003535,
+     "Spoofing": 0.011193,
+     "Web-Based": 0.00166
+    }
+   },
+   "DOS": {
+    "n_test": 4742,
+    "false_alarm_rate": 0.128638,
+    "predicted_as_folder_class": 0.005694,
+    "predicted_class_share": {
+     "Benign": 0.871362,
+     "BruteForce": 0.005694,
+     "DDOS": 0.008646,
+     "DOS": 0.005694,
+     "Mirai": 0.063475,
+     "Recon": 0.018347,
+     "Spoofing": 0.018136,
+     "Web-Based": 0.008646
+    }
+   },
+   "Mirai": {
+    "n_test": 14672,
+    "false_alarm_rate": 0.227917,
+    "predicted_as_folder_class": 0.17864,
+    "predicted_class_share": {
+     "Benign": 0.772083,
+     "BruteForce": 0.005793,
+     "DDOS": 0.008247,
+     "DOS": 0.001704,
+     "Mirai": 0.17864,
+     "Recon": 0.004703,
+     "Spoofing": 0.027399,
+     "Web-Based": 0.001431
+    }
+   },
+   "Recon": {
+    "n_test": 36549,
+    "false_alarm_rate": 0.017675,
+    "predicted_as_folder_class": 0.000821,
+    "predicted_class_share": {
+     "Benign": 0.982325,
+     "BruteForce": 0.007196,
+     "DDOS": 0.000192,
+     "DOS": 0.000109,
+     "Mirai": 0.006238,
+     "Recon": 0.000821,
+     "Spoofing": 0.001231,
+     "Web-Based": 0.001888
+    }
+   },
+   "Spoofing": {
+    "n_test": 13199,
+    "false_alarm_rate": 0.045458,
+    "predicted_as_folder_class": 0.009319,
+    "predicted_class_share": {
+     "Benign": 0.954542,
+     "BruteForce": 0.008864,
+     "DDOS": 0.002273,
+     "DOS": 0.001136,
+     "Mirai": 0.018865,
+     "Recon": 0.001212,
+     "Spoofing": 0.009319,
+     "Web-Based": 0.003788
+    }
+   },
+   "Web-Based": {
+    "n_test": 1080,
+    "false_alarm_rate": 0.022222,
+    "predicted_as_folder_class": 0.002778,
+    "predicted_class_share": {
+     "Benign": 0.977778,
+     "BruteForce": 0.006481,
+     "DDOS": 0.000926,
+     "DOS": 0.0,
+     "Mirai": 0.009259,
+     "Recon": 0.000926,
+     "Spoofing": 0.001852,
+     "Web-Based": 0.002778
+    }
+   }
+  },
+  "per_capture_group": {
+   "BruteForce / BruteForce": {
+    "n_test": 357,
+    "false_alarm_rate": 0.086835,
+    "predicted_as_folder_class": 0.022409,
+    "predicted_class_share": {
+     "Benign": 0.913165,
+     "BruteForce": 0.022409,
+     "DDOS": 0.0,
+     "DOS": 0.030812,
+     "Mirai": 0.02521,
+     "Recon": 0.0,
+     "Spoofing": 0.008403,
+     "Web-Based": 0.0
+    }
+   },
+   "DDOS / DDOS ACK Fragmentation": {
+    "n_test": 3091,
+    "false_alarm_rate": 0.165966,
+    "predicted_as_folder_class": 0.010353,
+    "predicted_class_share": {
+     "Benign": 0.834034,
+     "BruteForce": 0.003559,
+     "DDOS": 0.010353,
+     "DOS": 0.003235,
+     "Mirai": 0.128114,
+     "Recon": 0.002588,
+     "Spoofing": 0.018117,
+     "Web-Based": 0.0
+    }
+   },
+   "DDOS / DDOS HTTP FLOOD": {
+    "n_test": 641,
+    "false_alarm_rate": 0.090484,
+    "predicted_as_folder_class": 0.034321,
+    "predicted_class_share": {
+     "Benign": 0.909516,
+     "BruteForce": 0.00468,
+     "DDOS": 0.034321,
+     "DOS": 0.00312,
+     "Mirai": 0.040562,
+     "Recon": 0.00312,
+     "Spoofing": 0.00156,
+     "Web-Based": 0.00312
+    }
+   },
+   "DDOS / DDOS ICMP FLOOD": {
+    "n_test": 5851,
+    "false_alarm_rate": 0.135532,
+    "predicted_as_folder_class": 0.020509,
+    "predicted_class_share": {
+     "Benign": 0.864468,
+     "BruteForce": 0.006324,
+     "DDOS": 0.020509,
+     "DOS": 0.002393,
+     "Mirai": 0.083746,
+     "Recon": 0.007007,
+     "Spoofing": 0.012306,
+     "Web-Based": 0.003247
+    }
+   },
+   "DDOS / DDOS ICMP Fragmentation": {
+    "n_test": 9090,
+    "false_alarm_rate": 0.10033,
+    "predicted_as_folder_class": 0.013641,
+    "predicted_class_share": {
+     "Benign": 0.89967,
+     "BruteForce": 0.00275,
+     "DDOS": 0.013641,
+     "DOS": 0.0022,
+     "Mirai": 0.070187,
+     "Recon": 0.00165,
+     "Spoofing": 0.008801,
+     "Web-Based": 0.0011
+    }
+   },
+   "DOS / DOS HTTP FLOOD": {
+    "n_test": 489,
+    "false_alarm_rate": 0.067485,
+    "predicted_as_folder_class": 0.006135,
+    "predicted_class_share": {
+     "Benign": 0.932515,
+     "BruteForce": 0.006135,
+     "DDOS": 0.00818,
+     "DOS": 0.006135,
+     "Mirai": 0.030675,
+     "Recon": 0.002045,
+     "Spoofing": 0.01227,
+     "Web-Based": 0.002045
+    }
+   },
+   "DOS / DOS SYN FLOOD": {
+    "n_test": 1190,
+    "false_alarm_rate": 0.089916,
+    "predicted_as_folder_class": 0.015966,
+    "predicted_class_share": {
+     "Benign": 0.910084,
+     "BruteForce": 0.005042,
+     "DDOS": 0.004202,
+     "DOS": 0.015966,
+     "Mirai": 0.051261,
+     "Recon": 0.005882,
+     "Spoofing": 0.006723,
+     "Web-Based": 0.00084
+    }
+   },
+   "DOS / DOS UDP FLOOD": {
+    "n_test": 3063,
+    "false_alarm_rate": 0.153444,
+    "predicted_as_folder_class": 0.001632,
+    "predicted_class_share": {
+     "Benign": 0.846556,
+     "BruteForce": 0.005877,
+     "DDOS": 0.010447,
+     "DOS": 0.001632,
+     "Mirai": 0.073457,
+     "Recon": 0.025792,
+     "Spoofing": 0.023506,
+     "Web-Based": 0.012733
+    }
+   },
+   "Mirai / Mirai": {
+    "n_test": 14672,
+    "false_alarm_rate": 0.227917,
+    "predicted_as_folder_class": 0.17864,
+    "predicted_class_share": {
+     "Benign": 0.772083,
+     "BruteForce": 0.005793,
+     "DDOS": 0.008247,
+     "DOS": 0.001704,
+     "Mirai": 0.17864,
+     "Recon": 0.004703,
+     "Spoofing": 0.027399,
+     "Web-Based": 0.001431
+    }
+   },
+   "Recon / Recon": {
+    "n_test": 36549,
+    "false_alarm_rate": 0.017675,
+    "predicted_as_folder_class": 0.000821,
+    "predicted_class_share": {
+     "Benign": 0.982325,
+     "BruteForce": 0.007196,
+     "DDOS": 0.000192,
+     "DOS": 0.000109,
+     "Mirai": 0.006238,
+     "Recon": 0.000821,
+     "Spoofing": 0.001231,
+     "Web-Based": 0.001888
+    }
+   },
+   "Spoofing / ARP Spoofing": {
+    "n_test": 6749,
+    "false_alarm_rate": 0.042377,
+    "predicted_as_folder_class": 0.006964,
+    "predicted_class_share": {
+     "Benign": 0.957623,
+     "BruteForce": 0.009038,
+     "DDOS": 0.001778,
+     "DOS": 0.00163,
+     "Mirai": 0.018669,
+     "Recon": 0.001334,
+     "Spoofing": 0.006964,
+     "Web-Based": 0.002963
+    }
+   },
+   "Spoofing / DNS Spoofing": {
+    "n_test": 6450,
+    "false_alarm_rate": 0.048682,
+    "predicted_as_folder_class": 0.011783,
+    "predicted_class_share": {
+     "Benign": 0.951318,
+     "BruteForce": 0.008682,
+     "DDOS": 0.002791,
+     "DOS": 0.00062,
+     "Mirai": 0.01907,
+     "Recon": 0.001085,
+     "Spoofing": 0.011783,
+     "Web-Based": 0.004651
+    }
+   },
+   "Web-Based / Sqlinjection": {
+    "n_test": 626,
+    "false_alarm_rate": 0.025559,
+    "predicted_as_folder_class": 0.004792,
+    "predicted_class_share": {
+     "Benign": 0.974441,
+     "BruteForce": 0.009585,
+     "DDOS": 0.0,
+     "DOS": 0.0,
+     "Mirai": 0.009585,
+     "Recon": 0.001597,
+     "Spoofing": 0.0,
+     "Web-Based": 0.004792
+    }
+   },
+   "Web-Based / Uploading Attack": {
+    "n_test": 127,
+    "false_alarm_rate": 0.015748,
+    "predicted_as_folder_class": 0.0,
+    "predicted_class_share": {
+     "Benign": 0.984252,
+     "BruteForce": 0.0,
+     "DDOS": 0.007874,
+     "DOS": 0.0,
+     "Mirai": 0.007874,
+     "Recon": 0.0,
+     "Spoofing": 0.0,
+     "Web-Based": 0.0
+    }
+   },
+   "Web-Based / XSS": {
+    "n_test": 327,
+    "false_alarm_rate": 0.018349,
+    "predicted_as_folder_class": 0.0,
+    "predicted_class_share": {
+     "Benign": 0.981651,
+     "BruteForce": 0.003058,
+     "DDOS": 0.0,
+     "DOS": 0.0,
+     "Mirai": 0.009174,
+     "Recon": 0.0,
+     "Spoofing": 0.006116,
+     "Web-Based": 0.0
+    }
+   }
+  }
+ },
+ "genuine_benign": {
+  "n_test": 57809,
+  "false_alarm_rate": 0.280026,
+  "predicted_as_folder_class": 0.719974,
+  "predicted_class_share": {
+   "Benign": 0.719974,
+   "BruteForce": 0.0169,
+   "DDOS": 0.004584,
+   "DOS": 5.2e-05,
+   "Mirai": 0.045495,
+   "Recon": 0.113166,
+   "Spoofing": 0.078552,
+   "Web-Based": 0.021277
+  }
+ }
+}

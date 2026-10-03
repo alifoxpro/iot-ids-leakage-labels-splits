@@ -1,0 +1,128 @@
+{
+ "Web-Based": {
+  "R1_external": {
+   "flagged": 7026,
+   "kept": 4302
+  },
+  "R2_service": {
+   "flagged": 4086,
+   "kept": 7242
+  },
+  "R3_benign_pair": {
+   "flagged": 3946,
+   "kept": 7382
+  },
+  "any": {
+   "flagged": 10319,
+   "kept": 1009
+  }
+ },
+ "BruteForce": {
+  "R1_external": {
+   "flagged": 2322,
+   "kept": 1297
+  },
+  "R2_service": {
+   "flagged": 1667,
+   "kept": 1952
+  },
+  "R3_benign_pair": {
+   "flagged": 581,
+   "kept": 3038
+  },
+  "any": {
+   "flagged": 3361,
+   "kept": 258
+  }
+ },
+ "Spoofing": {
+  "R1_external": {
+   "flagged": 89194,
+   "kept": 68044
+  },
+  "R2_service": {
+   "flagged": 41377,
+   "kept": 115861
+  },
+  "R3_benign_pair": {
+   "flagged": 27761,
+   "kept": 129477
+  },
+  "any": {
+   "flagged": 124216,
+   "kept": 33022
+  }
+ },
+ "Mirai": {
+  "R1_external": {
+   "flagged": 101001,
+   "kept": 73587
+  },
+  "R2_service": {
+   "flagged": 102041,
+   "kept": 72547
+  },
+  "R3_benign_pair": {
+   "flagged": 6545,
+   "kept": 168043
+  },
+  "any": {
+   "flagged": 168642,
+   "kept": 5946
+  }
+ },
+ "DDOS": {
+  "R1_external": {
+   "flagged": 372482,
+   "kept": 3106332
+  },
+  "R2_service": {
+   "flagged": 546826,
+   "kept": 2931988
+  },
+  "R3_benign_pair": {
+   "flagged": 284516,
+   "kept": 3194298
+  },
+  "any": {
+   "flagged": 849665,
+   "kept": 2629149
+  }
+ },
+ "Recon": {
+  "R1_external": {
+   "flagged": 247313,
+   "kept": 194845
+  },
+  "R2_service": {
+   "flagged": 143079,
+   "kept": 299079
+  },
+  "R3_benign_pair": {
+   "flagged": 241224,
+   "kept": 200934
+  },
+  "any": {
+   "flagged": 365902,
+   "kept": 76256
+  }
+ },
+ "DOS": {
+  "R1_external": {
+   "flagged": 308310,
+   "kept": 14544777
+  },
+  "R2_service": {
+   "flagged": 198537,
+   "kept": 14654550
+  },
+  "R3_benign_pair": {
+   "flagged": 35284,
+   "kept": 14817803
+  },
+  "any": {
+   "flagged": 448529,
+   "kept": 14404558
+  }
+ }
+}

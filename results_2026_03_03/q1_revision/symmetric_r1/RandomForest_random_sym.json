@@ -1,0 +1,166 @@
+{
+ "accuracy": 0.9234328168382051,
+ "balanced_accuracy": 0.7075631218981827,
+ "macro_f1": 0.6640145897630685,
+ "per_class_f1": {
+  "Benign": 0.6864,
+  "BruteForce": 0.2393,
+  "DDOS": 0.9435,
+  "DOS": 0.986,
+  "Mirai": 0.6207,
+  "Recon": 0.7554,
+  "Spoofing": 0.6722,
+  "Web-Based": 0.4087
+ },
+ "per_class_recall": {
+  "Benign": 0.8277,
+  "BruteForce": 0.2902,
+  "DDOS": 0.9135,
+  "DOS": 0.98,
+  "Mirai": 0.7709,
+  "Recon": 0.7168,
+  "Spoofing": 0.7017,
+  "Web-Based": 0.4598
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.8277,
+  "BruteForce / BruteForce": 0.2902,
+  "DDOS / DDOS ACK Fragmentation": 0.9836,
+  "DDOS / DDOS HTTP FLOOD": 0.9329,
+  "DDOS / DDOS ICMP FLOOD": 0.296,
+  "DDOS / DDOS ICMP Fragmentation": 0.2486,
+  "DOS / DOS HTTP FLOOD": 0.8725,
+  "DOS / DOS SYN FLOOD": 0.9949,
+  "DOS / DOS UDP FLOOD": 0.9813,
+  "Mirai / Mirai": 0.7709,
+  "Recon / Recon": 0.7168,
+  "Spoofing / ARP Spoofing": 0.745,
+  "Spoofing / DNS Spoofing": 0.6575,
+  "Web-Based / Sqlinjection": 0.4438,
+  "Web-Based / Uploading Attack": 0.5732,
+  "Web-Based / XSS": 0.4415
+ },
+ "attack_macro_f1": 0.6608155966909742,
+ "per_class_precision": {
+  "Benign": 0.5863,
+  "BruteForce": 0.2036,
+  "DDOS": 0.9754,
+  "DOS": 0.9921,
+  "Mirai": 0.5194,
+  "Recon": 0.7984,
+  "Spoofing": 0.6451,
+  "Web-Based": 0.3678
+ },
+ "benign_false_alarm_rate": 0.172333,
+ "attack_missed_as_benign_rate": 0.028849,
+ "confusion": [
+  [
+   16238,
+   41,
+   118,
+   8,
+   505,
+   1712,
+   886,
+   111
+  ],
+  [
+   25,
+   56,
+   5,
+   0,
+   5,
+   32,
+   63,
+   7
+  ],
+  [
+   2677,
+   11,
+   120074,
+   1555,
+   4718,
+   1425,
+   874,
+   109
+  ],
+  [
+   452,
+   7,
+   2407,
+   215813,
+   463,
+   830,
+   210,
+   35
+  ],
+  [
+   965,
+   12,
+   324,
+   67,
+   7200,
+   149,
+   617,
+   6
+  ],
+  [
+   5512,
+   96,
+   81,
+   31,
+   433,
+   18467,
+   936,
+   207
+  ],
+  [
+   1733,
+   34,
+   83,
+   48,
+   523,
+   389,
+   6672,
+   27
+  ],
+  [
+   92,
+   18,
+   5,
+   2,
+   14,
+   127,
+   85,
+   292
+  ]
+ ],
+ "model": "RandomForest",
+ "seed": 42,
+ "split": "random",
+ "condition": "sym",
+ "description": "R1 applied to all classes: flows with an external endpoint removed from every class (Benign included); split made on the kept rows",
+ "n_train": 1944687,
+ "n_test": 416719,
+ "n_train_per_class": {
+  "Benign": 91558,
+  "BruteForce": 900,
+  "DDOS": 613398,
+  "DOS": 1027680,
+  "Mirai": 43584,
+  "Recon": 120226,
+  "Spoofing": 44377,
+  "Web-Based": 2964
+ },
+ "fit_seconds": 107.4,
+ "n_removed_per_class": {
+  "Benign": 254598,
+  "BruteForce": 2315,
+  "DDOS": 123716,
+  "DOS": 31886,
+  "Mirai": 97460,
+  "Recon": 243935,
+  "Spoofing": 87490,
+  "Web-Based": 6977
+ }
+}

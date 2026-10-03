@@ -1,0 +1,240 @@
+{
+ "n_flows": 3626502,
+ "overall": {
+  "n_benign": 385394,
+  "n_benign_external": 254598,
+  "benign_external_share": 0.660617,
+  "n_attack": 3241108,
+  "n_attack_r1": 593779,
+  "attack_r1_share": 0.183202
+ },
+ "per_class_external_share": {
+  "Benign": {
+   "n": 385394,
+   "n_external": 254598,
+   "share": 0.660617
+  },
+  "BruteForce": {
+   "n": 3601,
+   "n_external": 2315,
+   "share": 0.642877
+  },
+  "DDOS": {
+   "n": 1000000,
+   "n_external": 123716,
+   "share": 0.123716
+  },
+  "DOS": {
+   "n": 1500000,
+   "n_external": 31886,
+   "share": 0.021257
+  },
+  "Mirai": {
+   "n": 159724,
+   "n_external": 97460,
+   "share": 0.610178
+  },
+  "Recon": {
+   "n": 415687,
+   "n_external": 243935,
+   "share": 0.586824
+  },
+  "Spoofing": {
+   "n": 150885,
+   "n_external": 87490,
+   "share": 0.579846
+  },
+  "Web-Based": {
+   "n": 11211,
+   "n_external": 6977,
+   "share": 0.622335
+  }
+ },
+ "rowsets": {
+  "raw_and_relabel": {
+   "all_rows": {
+    "n": 3626502,
+    "n_benign": 385394,
+    "n_benign_external": 254598,
+    "benign_external_share": 0.660617,
+    "n_external_any_class": 848377,
+    "external_flows_that_are_benign": 0.3001,
+    "n_attack_r1_flows": 593779,
+    "benign_external_share_after_relabel": 0.866422,
+    "relabelled_share_of_benign_after_relabel": 0.606409
+   },
+   "random": {
+    "train": {
+     "n": 2538550,
+     "n_benign": 269776,
+     "n_benign_external": 178202,
+     "benign_external_share": 0.660555,
+     "n_external_any_class": 593428,
+     "external_flows_that_are_benign": 0.300293,
+     "n_attack_r1_flows": 415226,
+     "benign_external_share_after_relabel": 0.866316,
+     "relabelled_share_of_benign_after_relabel": 0.606168
+    },
+    "test": {
+     "n": 543976,
+     "n_benign": 57809,
+     "n_benign_external": 38176,
+     "benign_external_share": 0.660382,
+     "n_external_any_class": 127448,
+     "external_flows_that_are_benign": 0.299542,
+     "n_attack_r1_flows": 89272,
+     "benign_external_share_after_relabel": 0.866516,
+     "relabelled_share_of_benign_after_relabel": 0.606958
+    }
+   },
+   "temporal": {
+    "train": {
+     "n": 2538543,
+     "n_benign": 269775,
+     "n_benign_external": 174711,
+     "benign_external_share": 0.647617,
+     "n_external_any_class": 566764,
+     "external_flows_that_are_benign": 0.308261,
+     "n_attack_r1_flows": 392053,
+     "benign_external_share_after_relabel": 0.856361,
+     "relabelled_share_of_benign_after_relabel": 0.592379
+    },
+    "test": {
+     "n": 543986,
+     "n_benign": 57810,
+     "n_benign_external": 40422,
+     "benign_external_share": 0.699222,
+     "n_external_any_class": 149733,
+     "external_flows_that_are_benign": 0.269961,
+     "n_attack_r1_flows": 109311,
+     "benign_external_share_after_relabel": 0.895956,
+     "relabelled_share_of_benign_after_relabel": 0.654083
+    }
+   }
+  },
+  "r1_asymmetric": {
+   "all_rows": {
+    "n": 3032723,
+    "n_benign": 385394,
+    "n_benign_external": 254598,
+    "benign_external_share": 0.660617,
+    "n_external_any_class": 254598,
+    "external_flows_that_are_benign": 1.0,
+    "n_attack_r1_flows": 0,
+    "benign_external_share_after_relabel": 0.660617,
+    "relabelled_share_of_benign_after_relabel": 0.0
+   },
+   "random": {
+    "train": {
+     "n": 2122905,
+     "n_benign": 269776,
+     "n_benign_external": 178163,
+     "benign_external_share": 0.660411,
+     "n_external_any_class": 178163,
+     "external_flows_that_are_benign": 1.0,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.660411,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    },
+    "test": {
+     "n": 454909,
+     "n_benign": 57809,
+     "n_benign_external": 38176,
+     "benign_external_share": 0.660382,
+     "n_external_any_class": 38176,
+     "external_flows_that_are_benign": 1.0,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.660382,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    }
+   },
+   "temporal": {
+    "train": {
+     "n": 2122898,
+     "n_benign": 269775,
+     "n_benign_external": 174711,
+     "benign_external_share": 0.647617,
+     "n_external_any_class": 174711,
+     "external_flows_that_are_benign": 1.0,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.647617,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    },
+    "test": {
+     "n": 454916,
+     "n_benign": 57810,
+     "n_benign_external": 40422,
+     "benign_external_share": 0.699222,
+     "n_external_any_class": 40422,
+     "external_flows_that_are_benign": 1.0,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.699222,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    }
+   }
+  },
+  "sym": {
+   "all_rows": {
+    "n": 2778125,
+    "n_benign": 130796,
+    "n_benign_external": 0,
+    "benign_external_share": 0.0,
+    "n_external_any_class": 0,
+    "external_flows_that_are_benign": null,
+    "n_attack_r1_flows": 0,
+    "benign_external_share_after_relabel": 0.0,
+    "relabelled_share_of_benign_after_relabel": 0.0
+   },
+   "random": {
+    "train": {
+     "n": 1944687,
+     "n_benign": 91558,
+     "n_benign_external": 0,
+     "benign_external_share": 0.0,
+     "n_external_any_class": 0,
+     "external_flows_that_are_benign": null,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.0,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    },
+    "test": {
+     "n": 416719,
+     "n_benign": 19619,
+     "n_benign_external": 0,
+     "benign_external_share": 0.0,
+     "n_external_any_class": 0,
+     "external_flows_that_are_benign": null,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.0,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    }
+   },
+   "temporal": {
+    "train": {
+     "n": 1944680,
+     "n_benign": 91557,
+     "n_benign_external": 0,
+     "benign_external_share": 0.0,
+     "n_external_any_class": 0,
+     "external_flows_that_are_benign": null,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.0,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    },
+    "test": {
+     "n": 416726,
+     "n_benign": 19620,
+     "n_benign_external": 0,
+     "benign_external_share": 0.0,
+     "n_external_any_class": 0,
+     "external_flows_that_are_benign": null,
+     "n_attack_r1_flows": 0,
+     "benign_external_share_after_relabel": 0.0,
+     "relabelled_share_of_benign_after_relabel": 0.0
+    }
+   }
+  }
+ },
+ "check_ip_rule_vs_r1_flag_attack_mismatches": 0,
+ "note": "raw_and_relabel = all rows (the relabel condition uses this partition); r1_asymmetric = paper cleaning (R1 on attack classes only); sym = R1 on all classes. *_after_relabel fields describe the relabel condition on the same rows."
+}

@@ -1,0 +1,245 @@
+{
+ "accuracy": 0.8269274846740636,
+ "balanced_accuracy": 0.5930145803192615,
+ "macro_f1": 0.4797532313537778,
+ "per_class_f1": {
+  "Benign": 0.717,
+  "BruteForce": 0.0116,
+  "DDOS": 0.8754,
+  "DOS": 0.952,
+  "Mirai": 0.2268,
+  "Recon": 0.63,
+  "Spoofing": 0.3893,
+  "Web-Based": 0.0359
+ },
+ "per_class_recall": {
+  "Benign": 0.7136,
+  "BruteForce": 0.01,
+  "DDOS": 0.8514,
+  "DOS": 0.9219,
+  "Mirai": 0.773,
+  "Recon": 0.5931,
+  "Spoofing": 0.4362,
+  "Web-Based": 0.445
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.7136,
+  "BruteForce / BruteForce": 0.01,
+  "DDOS / DDOS ACK Fragmentation": 0.9824,
+  "DDOS / DDOS HTTP FLOOD": 0.3265,
+  "DDOS / DDOS ICMP FLOOD": 0.1719,
+  "DDOS / DDOS ICMP Fragmentation": 0.1423,
+  "DOS / DOS HTTP FLOOD": 0.4119,
+  "DOS / DOS SYN FLOOD": 0.9832,
+  "DOS / DOS UDP FLOOD": 0.7128,
+  "Mirai / Mirai": 0.773,
+  "Recon / Recon": 0.5931,
+  "Spoofing / ARP Spoofing": 0.513,
+  "Spoofing / DNS Spoofing": 0.3371,
+  "Web-Based / Sqlinjection": 0.231,
+  "Web-Based / Uploading Attack": 0.8925,
+  "Web-Based / XSS": 0.6571
+ },
+ "model": "XGBoost",
+ "seed": 42,
+ "split": "day_disjoint",
+ "labels": "r1",
+ "train_cleaning": "r1",
+ "test_cleaning": "r1",
+ "description": "Capture-day-disjoint split, labels=r1. multi-day: train = all days before the last capture day, test = last capture day; single day: within-session cut of subattack_temporal_idx (first 70% train, last 15% test). Balanced sample weights, no validation part. Days per group: days.json.",
+ "n_train": 1793012,
+ "n_test": 1239076,
+ "fit_seconds": 25.3,
+ "multi_day_groups": [
+  "Benign / Benign",
+  "BruteForce / BruteForce",
+  "DDOS / DDOS ACK Fragmentation",
+  "DDOS / DDOS HTTP FLOOD",
+  "DDOS / DDOS ICMP FLOOD",
+  "DDOS / DDOS ICMP Fragmentation",
+  "DOS / DOS HTTP FLOOD",
+  "DOS / DOS SYN FLOOD",
+  "DOS / DOS UDP FLOOD",
+  "Mirai / Mirai",
+  "Recon / Recon",
+  "Spoofing / ARP Spoofing",
+  "Spoofing / DNS Spoofing"
+ ],
+ "single_day_groups": [
+  "Web-Based / Sqlinjection",
+  "Web-Based / Uploading Attack",
+  "Web-Based / XSS"
+ ],
+ "contiguous_cut_groups": [
+  "Benign / Benign",
+  "Recon / Recon"
+ ],
+ "note": "macro-F1 restricted to the classes of the multi-day groups is not reported (not meaningful: a class can mix multi-day and single-day groups); compare per_subattack_recall instead.",
+ "reference_run": "results_2026_03_03/tree_protocol/main/XGBoost_temporal_r1_s42.json",
+ "reference_macro_f1": 0.4619320425255602,
+ "reference_balanced_accuracy": 0.5811986168928069,
+ "reference_per_subattack_recall": {
+  "Benign / Benign": 0.7455,
+  "BruteForce / BruteForce": 0.1295,
+  "DDOS / DDOS ACK Fragmentation": 0.9796,
+  "DDOS / DDOS HTTP FLOOD": 0.9632,
+  "DDOS / DDOS ICMP FLOOD": 0.1689,
+  "DDOS / DDOS ICMP Fragmentation": 0.2695,
+  "DOS / DOS HTTP FLOOD": 0.5101,
+  "DOS / DOS SYN FLOOD": 0.9548,
+  "DOS / DOS UDP FLOOD": 0.4337,
+  "Mirai / Mirai": 0.7392,
+  "Recon / Recon": 0.5797,
+  "Spoofing / ARP Spoofing": 0.4774,
+  "Spoofing / DNS Spoofing": 0.331,
+  "Web-Based / Sqlinjection": 0.2255,
+  "Web-Based / Uploading Attack": 0.7527,
+  "Web-Based / XSS": 0.5943
+ },
+ "per_subattack_comparison": {
+  "Benign / Benign": {
+   "multi_day": true,
+   "contiguous_cut": true,
+   "gap_hours": 0.0,
+   "n_train": 182434,
+   "n_test": 202960,
+   "day_disjoint": 0.7136,
+   "within_session_temporal": 0.7455
+  },
+  "BruteForce / BruteForce": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 68.8,
+   "n_train": 85,
+   "n_test": 1201,
+   "day_disjoint": 0.01,
+   "within_session_temporal": 0.1295
+  },
+  "DDOS / DDOS ACK Fragmentation": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 16.75,
+   "n_train": 358745,
+   "n_test": 297432,
+   "day_disjoint": 0.9824,
+   "within_session_temporal": 0.9796
+  },
+  "DDOS / DDOS HTTP FLOOD": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 1295.26,
+   "n_train": 74180,
+   "n_test": 71254,
+   "day_disjoint": 0.3265,
+   "within_session_temporal": 0.9632
+  },
+  "DDOS / DDOS ICMP FLOOD": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 1824.67,
+   "n_train": 27040,
+   "n_test": 1297,
+   "day_disjoint": 0.1719,
+   "within_session_temporal": 0.1689
+  },
+  "DDOS / DDOS ICMP Fragmentation": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 1127.0,
+   "n_train": 45394,
+   "n_test": 942,
+   "day_disjoint": 0.1423,
+   "within_session_temporal": 0.2695
+  },
+  "DOS / DOS HTTP FLOOD": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 17.57,
+   "n_train": 62978,
+   "n_test": 57108,
+   "day_disjoint": 0.4119,
+   "within_session_temporal": 0.5101
+  },
+  "DOS / DOS SYN FLOOD": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 19.72,
+   "n_train": 346519,
+   "n_test": 479004,
+   "day_disjoint": 0.9832,
+   "within_session_temporal": 0.9548
+  },
+  "DOS / DOS UDP FLOOD": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 25.59,
+   "n_train": 521457,
+   "n_test": 1048,
+   "day_disjoint": 0.7128,
+   "within_session_temporal": 0.4337
+  },
+  "Mirai / Mirai": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 20.58,
+   "n_train": 54339,
+   "n_test": 7925,
+   "day_disjoint": 0.773,
+   "within_session_temporal": 0.7392
+  },
+  "Recon / Recon": {
+   "multi_day": true,
+   "contiguous_cut": true,
+   "gap_hours": 0.0,
+   "n_train": 103108,
+   "n_test": 68644,
+   "day_disjoint": 0.5931,
+   "within_session_temporal": 0.5797
+  },
+  "Spoofing / ARP Spoofing": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 14.8,
+   "n_train": 4341,
+   "n_test": 27940,
+   "day_disjoint": 0.513,
+   "within_session_temporal": 0.4774
+  },
+  "Spoofing / DNS Spoofing": {
+   "multi_day": true,
+   "contiguous_cut": false,
+   "gap_hours": 16.2,
+   "n_train": 9429,
+   "n_test": 21685,
+   "day_disjoint": 0.3371,
+   "within_session_temporal": 0.331
+  },
+  "Web-Based / Sqlinjection": {
+   "multi_day": false,
+   "contiguous_cut": false,
+   "gap_hours": 0.04,
+   "n_train": 1715,
+   "n_test": 368,
+   "day_disjoint": 0.231,
+   "within_session_temporal": 0.2255
+  },
+  "Web-Based / Uploading Attack": {
+   "multi_day": false,
+   "contiguous_cut": false,
+   "gap_hours": 0.01,
+   "n_train": 433,
+   "n_test": 93,
+   "day_disjoint": 0.8925,
+   "within_session_temporal": 0.7527
+  },
+  "Web-Based / XSS": {
+   "multi_day": false,
+   "contiguous_cut": false,
+   "gap_hours": 0.08,
+   "n_train": 815,
+   "n_test": 175,
+   "day_disjoint": 0.6571,
+   "within_session_temporal": 0.5943
+  }
+ }
+}

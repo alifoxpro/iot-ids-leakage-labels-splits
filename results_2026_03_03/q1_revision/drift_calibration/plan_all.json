@@ -1,0 +1,29 @@
+{
+ "tag": "all",
+ "groups": [
+  "Benign",
+  "BruteForce",
+  "DDOS / DDOS ACK Fragmentation",
+  "DDOS / DDOS HTTP FLOOD",
+  "DDOS / DDOS ICMP FLOOD",
+  "DDOS / DDOS ICMP Fragmentation",
+  "DOS / DOS HTTP FLOOD",
+  "DOS / DOS SYN FLOOD",
+  "DOS / DOS UDP FLOOD",
+  "Mirai",
+  "Recon",
+  "Spoofing / ARP Spoofing",
+  "Spoofing / DNS Spoofing",
+  "Web-Based / Sqlinjection",
+  "Web-Based / Uploading Attack",
+  "Web-Based / XSS"
+ ],
+ "comparisons": [
+  "main",
+  "ref_adjacent",
+  "main_equal",
+  "last_block",
+  "ref_gap",
+  "ref_half30"
+ ]
+}

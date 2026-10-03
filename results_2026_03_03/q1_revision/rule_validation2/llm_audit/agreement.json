@@ -1,0 +1,988 @@
+{
+ "purpose": "Agreement of the two independent model-assisted annotators (A, B) before adjudication on the 472-flow rule-audit sample.",
+ "flows": 472,
+ "categories": [
+  "attack",
+  "background",
+  "unclear"
+ ],
+ "overall": {
+  "three_categories": {
+   "n": 472,
+   "agree": 460,
+   "percent_agreement": 0.9746,
+   "percent_agreement_ci95_wilson": [
+    0.9561,
+    0.9854
+   ],
+   "cohen_kappa": 0.9388,
+   "kappa_se_analytic": 0.0174,
+   "kappa_ci95_analytic": [
+    0.9047,
+    0.9729
+   ],
+   "kappa_ci95_bootstrap": [
+    0.9016,
+    0.9703
+   ],
+   "bootstrap": {
+    "resamples": 2000,
+    "seed": 42,
+    "undefined_resamples_skipped": 0
+   },
+   "confusion": {
+    "rows": "annotator A",
+    "columns": "annotator B",
+    "labels": [
+     "attack",
+     "background",
+     "unclear"
+    ],
+    "matrix": [
+     [
+      89,
+      0,
+      0
+     ],
+     [
+      0,
+      342,
+      9
+     ],
+     [
+      0,
+      3,
+      29
+     ]
+    ]
+   }
+  },
+  "attack_vs_background": {
+   "note": "flows that neither annotator marked unclear",
+   "n": 431,
+   "agree": 431,
+   "percent_agreement": 1.0,
+   "percent_agreement_ci95_wilson": [
+    0.9912,
+    1.0
+   ],
+   "cohen_kappa": 1.0,
+   "kappa_se_analytic": 0.0,
+   "kappa_ci95_analytic": [
+    1.0,
+    1.0
+   ],
+   "kappa_ci95_bootstrap": [
+    1.0,
+    1.0
+   ],
+   "bootstrap": {
+    "resamples": 2000,
+    "seed": 42,
+    "undefined_resamples_skipped": 0
+   },
+   "confusion": {
+    "rows": "annotator A",
+    "columns": "annotator B",
+    "labels": [
+     "attack",
+     "background"
+    ],
+    "matrix": [
+     [
+      89,
+      0
+     ],
+     [
+      0,
+      342
+     ]
+    ]
+   }
+  },
+  "marginals": {
+   "A": {
+    "attack": 89,
+    "background": 351,
+    "unclear": 32
+   },
+   "B": {
+    "attack": 89,
+    "background": 345,
+    "unclear": 38
+   }
+  }
+ },
+ "per_class": {
+  "BruteForce": {
+   "three_categories": {
+    "n": 71,
+    "agree": 71,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9487,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 1
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       6,
+       0,
+       0
+      ],
+      [
+       0,
+       63,
+       0
+      ],
+      [
+       0,
+       0,
+       2
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 69,
+    "agree": 69,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9473,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 1
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       6,
+       0
+      ],
+      [
+       0,
+       63
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 6,
+     "background": 63,
+     "unclear": 2
+    },
+    "B": {
+     "attack": 6,
+     "background": 63,
+     "unclear": 2
+    }
+   },
+   "final": {
+    "attack": 6,
+    "background": 63,
+    "unclear": 2
+   }
+  },
+  "DDOS": {
+   "three_categories": {
+    "n": 59,
+    "agree": 59,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9389,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       28,
+       0,
+       0
+      ],
+      [
+       0,
+       30,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 58,
+    "agree": 58,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9379,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       28,
+       0
+      ],
+      [
+       0,
+       30
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 28,
+     "background": 30,
+     "unclear": 1
+    },
+    "B": {
+     "attack": 28,
+     "background": 30,
+     "unclear": 1
+    }
+   },
+   "final": {
+    "attack": 28,
+    "background": 30,
+    "unclear": 1
+   }
+  },
+  "DOS": {
+   "three_categories": {
+    "n": 73,
+    "agree": 73,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.95,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       20,
+       0,
+       0
+      ],
+      [
+       0,
+       53,
+       0
+      ],
+      [
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 73,
+    "agree": 73,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.95,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       20,
+       0
+      ],
+      [
+       0,
+       53
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 20,
+     "background": 53,
+     "unclear": 0
+    },
+    "B": {
+     "attack": 20,
+     "background": 53,
+     "unclear": 0
+    }
+   },
+   "final": {
+    "attack": 20,
+    "background": 53,
+    "unclear": 0
+   }
+  },
+  "Mirai": {
+   "three_categories": {
+    "n": 82,
+    "agree": 73,
+    "percent_agreement": 0.8902,
+    "percent_agreement_ci95_wilson": [
+     0.8044,
+     0.9412
+    ],
+    "cohen_kappa": 0.6935,
+    "kappa_se_analytic": 0.0954,
+    "kappa_ci95_analytic": [
+     0.5065,
+     0.8805
+    ],
+    "kappa_ci95_bootstrap": [
+     0.4795,
+     0.8577
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       6,
+       0,
+       0
+      ],
+      [
+       0,
+       60,
+       7
+      ],
+      [
+       0,
+       2,
+       7
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 66,
+    "agree": 66,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.945,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 9
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       6,
+       0
+      ],
+      [
+       0,
+       60
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 6,
+     "background": 67,
+     "unclear": 9
+    },
+    "B": {
+     "attack": 6,
+     "background": 62,
+     "unclear": 14
+    }
+   },
+   "final": {
+    "attack": 6,
+    "background": 69,
+    "unclear": 7
+   }
+  },
+  "Recon": {
+   "three_categories": {
+    "n": 59,
+    "agree": 59,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9389,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       16,
+       0,
+       0
+      ],
+      [
+       0,
+       41,
+       0
+      ],
+      [
+       0,
+       0,
+       2
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 57,
+    "agree": 57,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9369,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       16,
+       0
+      ],
+      [
+       0,
+       41
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 16,
+     "background": 41,
+     "unclear": 2
+    },
+    "B": {
+     "attack": 16,
+     "background": 41,
+     "unclear": 2
+    }
+   },
+   "final": {
+    "attack": 16,
+    "background": 41,
+    "unclear": 2
+   }
+  },
+  "Spoofing": {
+   "three_categories": {
+    "n": 65,
+    "agree": 62,
+    "percent_agreement": 0.9538,
+    "percent_agreement_ci95_wilson": [
+     0.8729,
+     0.9842
+    ],
+    "cohen_kappa": 0.8827,
+    "kappa_se_analytic": 0.066,
+    "kappa_ci95_analytic": [
+     0.7534,
+     1.0121
+    ],
+    "kappa_ci95_bootstrap": [
+     0.727,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       46,
+       2
+      ],
+      [
+       0,
+       1,
+       16
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 46,
+    "agree": 46,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9229,
+     1.0
+    ],
+    "cohen_kappa": null,
+    "kappa_se_analytic": null,
+    "kappa_ci95_analytic": null,
+    "kappa_ci95_bootstrap": null,
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 2000
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       46
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 0,
+     "background": 48,
+     "unclear": 17
+    },
+    "B": {
+     "attack": 0,
+     "background": 47,
+     "unclear": 18
+    }
+   },
+   "final": {
+    "attack": 0,
+    "background": 48,
+    "unclear": 17
+   }
+  },
+  "Web-Based": {
+   "three_categories": {
+    "n": 63,
+    "agree": 63,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9425,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background",
+      "unclear"
+     ],
+     "matrix": [
+      [
+       13,
+       0,
+       0
+      ],
+      [
+       0,
+       49,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ]
+    }
+   },
+   "attack_vs_background": {
+    "note": "flows that neither annotator marked unclear",
+    "n": 62,
+    "agree": 62,
+    "percent_agreement": 1.0,
+    "percent_agreement_ci95_wilson": [
+     0.9417,
+     1.0
+    ],
+    "cohen_kappa": 1.0,
+    "kappa_se_analytic": 0.0,
+    "kappa_ci95_analytic": [
+     1.0,
+     1.0
+    ],
+    "kappa_ci95_bootstrap": [
+     1.0,
+     1.0
+    ],
+    "bootstrap": {
+     "resamples": 2000,
+     "seed": 42,
+     "undefined_resamples_skipped": 0
+    },
+    "confusion": {
+     "rows": "annotator A",
+     "columns": "annotator B",
+     "labels": [
+      "attack",
+      "background"
+     ],
+     "matrix": [
+      [
+       13,
+       0
+      ],
+      [
+       0,
+       49
+      ]
+     ]
+    }
+   },
+   "marginals": {
+    "A": {
+     "attack": 13,
+     "background": 49,
+     "unclear": 1
+    },
+    "B": {
+     "attack": 13,
+     "background": 49,
+     "unclear": 1
+    }
+   },
+   "final": {
+    "attack": 13,
+    "background": 49,
+    "unclear": 1
+   }
+  }
+ },
+ "disputed": [
+  "MI-012",
+  "MI-050",
+  "MI-057",
+  "MI-068",
+  "MI-071",
+  "MI-072",
+  "MI-076",
+  "MI-077",
+  "MI-081",
+  "SP-005",
+  "SP-048",
+  "SP-065"
+ ],
+ "adjudicated_outcome": {
+  "MI-012": {
+   "A": "unclear",
+   "B": "background",
+   "final": "background"
+  },
+  "MI-050": {
+   "A": "unclear",
+   "B": "background",
+   "final": "background"
+  },
+  "MI-057": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-068": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-071": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-072": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-076": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-077": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "MI-081": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  },
+  "SP-005": {
+   "A": "background",
+   "B": "unclear",
+   "final": "unclear"
+  },
+  "SP-048": {
+   "A": "unclear",
+   "B": "background",
+   "final": "background"
+  },
+  "SP-065": {
+   "A": "background",
+   "B": "unclear",
+   "final": "background"
+  }
+ },
+ "final_marginals": {
+  "attack": 89,
+  "background": 353,
+  "unclear": 30
+ },
+ "method": "Cohen's kappa, unweighted; analytic SE of Fleiss, Cohen and Everitt (1969); percentile bootstrap over flows (2000 resamples, seed 42); Wilson interval for percent agreement (functions of score_author_review.py). Kappa is undefined (null) when the expected agreement is 1.",
+ "provenance": {
+  "annotators": "two independent language-model agents (A, B) and a language-model adjudicator, each given README_annotators.md, the evidence brief of the class and the batch files (identifiers and traffic features of each flow), not the rule flags, strata or heuristic labels",
+  "inputs": [
+   "llm_audit/annotator_outputs.json (as returned)",
+   "llm_audit/annotations_AB_raw.tsv",
+   "llm_audit/adjudications.json"
+  ],
+  "spotcheck_annotator_C": "not part of this assembly",
+  "generated": "2026-09-30 16:28:50"
+ }
+}

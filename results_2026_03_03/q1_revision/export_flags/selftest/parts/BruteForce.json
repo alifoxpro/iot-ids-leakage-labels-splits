@@ -1,0 +1,35 @@
+{
+ "class": "BruteForce",
+ "y": 1,
+ "n_flows": 3601,
+ "build_seconds": 0.1,
+ "verification": {
+  "n_rebuilt": 3601,
+  "n_cache": 3601,
+  "columns_checked": 91,
+  "columns_identical": 91,
+  "mismatch": {},
+  "stats_rounding": {},
+  "ok": true,
+  "note": "r3 approximate: Benign pairs taken from the de-duplicated Benign rows of the cache"
+ },
+ "verified": true,
+ "spot_check": {
+  "rows_checked": 3601,
+  "files_checked": 1,
+  "features_exact": 3601,
+  "features_close": 3601,
+  "ts_equal": 3601,
+  "ips_equal": 3601,
+  "max_rel_diff": 0.0,
+  "failures": [],
+  "ok": true
+ },
+ "files": {
+  "BruteForce/BruteForce.pcap_Flow.csv": {
+   "records": 3619,
+   "after_thinning": 3619,
+   "in_sample": 3601
+  }
+ }
+}

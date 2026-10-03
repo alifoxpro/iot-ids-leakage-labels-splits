@@ -1,0 +1,347 @@
+{
+  "confusion_per_subattack_random": {
+    "Benign / Benign": {
+      "Benign": 0.7407,
+      "BruteForce": 0.0643,
+      "Recon": 0.059,
+      "Mirai": 0.0547,
+      "Web-Based": 0.0394,
+      "Spoofing": 0.0386,
+      "DDOS": 0.0031,
+      "DOS": 0.0002
+    },
+    "BruteForce / BruteForce": {
+      "BruteForce": 0.8185,
+      "Spoofing": 0.087,
+      "Benign": 0.0519,
+      "Web-Based": 0.0259,
+      "Mirai": 0.0148,
+      "Recon": 0.0019
+    },
+    "DDOS / DDOS ACK Fragmentation": {
+      "DDOS": 0.9526,
+      "Mirai": 0.0358,
+      "Benign": 0.0048,
+      "Spoofing": 0.0035,
+      "BruteForce": 0.0019,
+      "Web-Based": 0.0008,
+      "Recon": 0.0005,
+      "DOS": 0.0002
+    },
+    "DDOS / DDOS HTTP FLOOD": {
+      "DDOS": 0.9085,
+      "DOS": 0.0466,
+      "Mirai": 0.0234,
+      "Spoofing": 0.008,
+      "Recon": 0.0064,
+      "Benign": 0.0028,
+      "BruteForce": 0.0024,
+      "Web-Based": 0.0019
+    },
+    "DDOS / DDOS ICMP FLOOD": {
+      "Mirai": 0.4712,
+      "DDOS": 0.1464,
+      "Recon": 0.1145,
+      "Benign": 0.0814,
+      "Spoofing": 0.0765,
+      "BruteForce": 0.053,
+      "Web-Based": 0.0479,
+      "DOS": 0.0091
+    },
+    "DDOS / DDOS ICMP Fragmentation": {
+      "Mirai": 0.4089,
+      "Benign": 0.2329,
+      "DDOS": 0.1486,
+      "Recon": 0.101,
+      "Spoofing": 0.0488,
+      "Web-Based": 0.0325,
+      "BruteForce": 0.0244,
+      "DOS": 0.0028
+    },
+    "DOS / DOS HTTP FLOOD": {
+      "DOS": 0.8144,
+      "DDOS": 0.1192,
+      "Mirai": 0.0265,
+      "Recon": 0.0147,
+      "Spoofing": 0.0136,
+      "Benign": 0.0065,
+      "BruteForce": 0.0026,
+      "Web-Based": 0.0025
+    },
+    "DOS / DOS SYN FLOOD": {
+      "DOS": 0.9865,
+      "Mirai": 0.0046,
+      "Recon": 0.0042,
+      "Benign": 0.0015,
+      "Spoofing": 0.001,
+      "DDOS": 0.0008,
+      "Web-Based": 0.0008,
+      "BruteForce": 0.0006
+    },
+    "DOS / DOS UDP FLOOD": {
+      "DOS": 0.9448,
+      "Mirai": 0.0204,
+      "Recon": 0.0168,
+      "Spoofing": 0.0047,
+      "Benign": 0.0044,
+      "Web-Based": 0.0036,
+      "BruteForce": 0.0028,
+      "DDOS": 0.0024
+    },
+    "Mirai / Mirai": {
+      "Mirai": 0.8078,
+      "Benign": 0.0706,
+      "Spoofing": 0.0538,
+      "BruteForce": 0.0367,
+      "Web-Based": 0.0133,
+      "Recon": 0.0084,
+      "DDOS": 0.0069,
+      "DOS": 0.0025
+    },
+    "Recon / Recon": {
+      "Recon": 0.6293,
+      "Benign": 0.1885,
+      "BruteForce": 0.0708,
+      "Web-Based": 0.0503,
+      "Spoofing": 0.0297,
+      "Mirai": 0.0296,
+      "DDOS": 0.0014,
+      "DOS": 0.0004
+    },
+    "Spoofing / ARP Spoofing": {
+      "Spoofing": 0.5519,
+      "BruteForce": 0.1886,
+      "Benign": 0.1043,
+      "Mirai": 0.0658,
+      "Web-Based": 0.0644,
+      "Recon": 0.0222,
+      "DDOS": 0.0017,
+      "DOS": 0.001
+    },
+    "Spoofing / DNS Spoofing": {
+      "Spoofing": 0.5293,
+      "Benign": 0.2294,
+      "Mirai": 0.0913,
+      "BruteForce": 0.0867,
+      "Web-Based": 0.0394,
+      "Recon": 0.0181,
+      "DDOS": 0.0035,
+      "DOS": 0.0023
+    },
+    "Web-Based / Sqlinjection": {
+      "Web-Based": 0.6351,
+      "Benign": 0.1141,
+      "BruteForce": 0.0966,
+      "Spoofing": 0.0781,
+      "Recon": 0.0524,
+      "Mirai": 0.0226,
+      "DDOS": 0.001
+    },
+    "Web-Based / Uploading Attack": {
+      "Web-Based": 0.5349,
+      "BruteForce": 0.2419,
+      "Benign": 0.1349,
+      "Spoofing": 0.0465,
+      "Mirai": 0.0279,
+      "Recon": 0.0093,
+      "DDOS": 0.0047
+    },
+    "Web-Based / XSS": {
+      "Web-Based": 0.5789,
+      "BruteForce": 0.2368,
+      "Benign": 0.0769,
+      "Spoofing": 0.0668,
+      "Mirai": 0.0385,
+      "Recon": 0.002
+    }
+  },
+  "cross_class_duplicates": {
+    "Benign / Benign": {
+      "n": 385394,
+      "shared_fraction": 0.03,
+      "shared_with": {
+        "Recon": 6472,
+        "DDOS": 2590,
+        "Spoofing": 1350
+      }
+    },
+    "BruteForce / BruteForce": {
+      "n": 3601,
+      "shared_fraction": 0.0608,
+      "shared_with": {
+        "Recon": 80,
+        "Benign": 66,
+        "Spoofing": 61
+      }
+    },
+    "DDOS / DDOS ACK Fragmentation": {
+      "n": 676931,
+      "shared_fraction": 0.0006,
+      "shared_with": {
+        "Mirai": 134,
+        "Benign": 118,
+        "Spoofing": 83
+      }
+    },
+    "DDOS / DDOS HTTP FLOOD": {
+      "n": 149556,
+      "shared_fraction": 0.0205,
+      "shared_with": {
+        "DOS": 2713,
+        "Benign": 300,
+        "Recon": 163
+      }
+    },
+    "DDOS / DDOS ICMP FLOOD": {
+      "n": 67396,
+      "shared_fraction": 0.0255,
+      "shared_with": {
+        "Recon": 765,
+        "Benign": 540,
+        "Mirai": 256
+      }
+    },
+    "DDOS / DDOS ICMP Fragmentation": {
+      "n": 106117,
+      "shared_fraction": 0.0367,
+      "shared_with": {
+        "Recon": 1705,
+        "Benign": 1632,
+        "Spoofing": 357
+      }
+    },
+    "DOS / DOS HTTP FLOOD": {
+      "n": 123476,
+      "shared_fraction": 0.0276,
+      "shared_with": {
+        "DDOS": 2926,
+        "Benign": 404,
+        "Recon": 264
+      }
+    },
+    "DOS / DOS SYN FLOOD": {
+      "n": 833496,
+      "shared_fraction": 0.0008,
+      "shared_with": {
+        "Recon": 396,
+        "Benign": 251,
+        "DDOS": 107
+      }
+    },
+    "DOS / DOS UDP FLOOD": {
+      "n": 543028,
+      "shared_fraction": 0.0028,
+      "shared_with": {
+        "Recon": 674,
+        "Benign": 398,
+        "Mirai": 300
+      }
+    },
+    "Mirai / Mirai": {
+      "n": 159724,
+      "shared_fraction": 0.0199,
+      "shared_with": {
+        "Benign": 1130,
+        "DDOS": 791,
+        "Spoofing": 702
+      }
+    },
+    "Recon / Recon": {
+      "n": 415687,
+      "shared_fraction": 0.0277,
+      "shared_with": {
+        "Benign": 6472,
+        "DDOS": 2706,
+        "DOS": 1334
+      }
+    },
+    "Spoofing / ARP Spoofing": {
+      "n": 77256,
+      "shared_fraction": 0.0308,
+      "shared_with": {
+        "Benign": 709,
+        "Recon": 698,
+        "DDOS": 625
+      }
+    },
+    "Spoofing / DNS Spoofing": {
+      "n": 73629,
+      "shared_fraction": 0.0172,
+      "shared_with": {
+        "Benign": 641,
+        "Recon": 343,
+        "Mirai": 199
+      }
+    },
+    "Web-Based / Sqlinjection": {
+      "n": 6521,
+      "shared_fraction": 0.0666,
+      "shared_with": {
+        "Recon": 168,
+        "Benign": 141,
+        "DDOS": 126
+      }
+    },
+    "Web-Based / Uploading Attack": {
+      "n": 1328,
+      "shared_fraction": 0.0264,
+      "shared_with": {
+        "Benign": 14,
+        "Recon": 12,
+        "Spoofing": 6
+      }
+    },
+    "Web-Based / XSS": {
+      "n": 3362,
+      "shared_fraction": 0.0345,
+      "shared_with": {
+        "Recon": 48,
+        "Benign": 45,
+        "Spoofing": 26
+      }
+    }
+  },
+  "total_flows_in_ambiguous_vectors": 45439,
+  "median_profiles": {
+    "DDOS ICMP FLOOD": {
+      "Flow Duration": 346025.96875,
+      "Total Fwd Packet": 2.0,
+      "Total Bwd packets": 1.0,
+      "Packet Length Max": 73.0,
+      "Flow Packets/s": 9.970999717712402,
+      "Fwd Header Length": 32.0
+    },
+    "DDOS ICMP Fragmentation": {
+      "Flow Duration": 309207.0,
+      "Total Fwd Packet": 2.0,
+      "Total Bwd packets": 1.0,
+      "Packet Length Max": 77.0,
+      "Flow Packets/s": 12.598999977111816,
+      "Fwd Header Length": 32.0
+    },
+    "Benign": {
+      "Flow Duration": 309437.5,
+      "Total Fwd Packet": 3.0,
+      "Total Bwd packets": 1.0,
+      "Packet Length Max": 77.0,
+      "Flow Packets/s": 13.352999687194824,
+      "Fwd Header Length": 32.0
+    },
+    "Mirai": {
+      "Flow Duration": 460036.5,
+      "Total Fwd Packet": 2.0,
+      "Total Bwd packets": 1.0,
+      "Packet Length Max": 68.0,
+      "Flow Packets/s": 8.027999877929688,
+      "Fwd Header Length": 16.0
+    },
+    "Recon": {
+      "Flow Duration": 126220.0,
+      "Total Fwd Packet": 2.0,
+      "Total Bwd packets": 1.0,
+      "Packet Length Max": 48.0,
+      "Flow Packets/s": 28.725000381469727,
+      "Fwd Header Length": 24.0
+    }
+  }
+}
