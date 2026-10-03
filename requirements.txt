@@ -1,0 +1,15 @@
+# Python packages used by the experiments of the paper, at the versions of the reference environment
+# (Python 3.11.14, Windows 11, NVIDIA RTX 5070 Laptop GPU, CUDA 12.8).
+# PyTorch: install the build that fits your GPU from https://pytorch.org (reference: torch 2.10.0+cu128).
+numpy==2.1.3
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.2.0
+lightgbm==4.6.0
+torch==2.10.0
+imbalanced-learn==0.14.1
+pyarrow==23.0.1
+psutil==7.0.0
+# Optional, only for experiments/pcap_validation.py (packet-level release, not used for the paper's results):
+# dpkt

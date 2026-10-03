@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------- data (download separately, see README)
+data/
+# ---------------------------------------------------------------- large binaries
+# stored test predictions, cached arrays and trained models are published as GitHub Release assets, not in git
+*.npz
+*.npy
+*.pkl
+*.pt
+*.pth
+*.parquet
+*.h5
+models/
+catboost_info/
+# ---------------------------------------------------------------- caches and logs written by the scripts
+results_2026_03_03/**/stage1_cache/
+results_2026_03_03/**/stage3_cache/
+*.log
+runs/logs/*
+!runs/logs/packages_done.txt
+# ---------------------------------------------------------------- release assets built by tools/make_release_assets.py
+dist/
+# ---------------------------------------------------------------- Python / tooling
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+# ---------------------------------------------------------------- editors / OS / Office temp files
+.claude/
+.idea/
+.vscode/
+nul
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak

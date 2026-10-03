@@ -1,0 +1,11 @@
+2026-09-29 10:25:22  package P0_figures_build finished
+2026-09-29 10:48:43  package P0_figures_build finished
+2026-09-29 14:28:17  package P3a_trees_seeds_proba finished
+2026-09-29 15:38:59  package P4_published_deep finished
+2026-09-29 15:44:04  package P2_cicids2017 finished
+2026-09-29 15:58:48  package P1_rules_drift_flags finished
+2026-09-29 17:16:26  package P3b_variants finished
+2026-09-30 05:47:56  package P5a_deep_seeds finished
+2026-09-30 14:28:19  package P5b_deep_fixed finished
+2026-10-01 01:58:07  package P5c_new_baselines finished
+2026-10-01 11:32:49  package P6_final finished
