@@ -1,0 +1,166 @@
+{
+ "grid": {
+  "ResNet1D": [
+   {
+    "lr": 0.001,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.001,
+    "batch_size": 1024
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 1024
+   }
+  ],
+  "GRU": [
+   {
+    "lr": 0.001,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.001,
+    "batch_size": 1024
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 1024
+   }
+  ],
+  "Transformer": [
+   {
+    "lr": 0.0001,
+    "batch_size": 256
+   },
+   {
+    "lr": 0.0001,
+    "batch_size": 512
+   },
+   {
+    "lr": 3.3333333333333335e-05,
+    "batch_size": 256
+   },
+   {
+    "lr": 3.3333333333333335e-05,
+    "batch_size": 512
+   }
+  ],
+  "MLP": [
+   {
+    "lr": 0.001,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.001,
+    "batch_size": 1024
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 1024
+   }
+  ],
+  "CNN1D_Hossain": [
+   {
+    "lr": 0.001,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.001,
+    "batch_size": 1024
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 512
+   },
+   {
+    "lr": 0.0003333333333333333,
+    "batch_size": 1024
+   }
+  ],
+  "XGBoost": [
+   {
+    "max_depth": 8,
+    "learning_rate": 0.1
+   },
+   {
+    "max_depth": 8,
+    "learning_rate": 0.3
+   },
+   {
+    "max_depth": 12,
+    "learning_rate": 0.1
+   },
+   {
+    "max_depth": 12,
+    "learning_rate": 0.3
+   }
+  ],
+  "LightGBM": [
+   {
+    "num_leaves": 127,
+    "learning_rate": 0.1
+   },
+   {
+    "num_leaves": 127,
+    "learning_rate": 0.05
+   },
+   {
+    "num_leaves": 31,
+    "learning_rate": 0.1
+   },
+   {
+    "num_leaves": 31,
+    "learning_rate": 0.05
+   }
+  ],
+  "RandomForest": [
+   {
+    "max_depth": 24,
+    "max_features": "sqrt"
+   },
+   {
+    "max_depth": 24,
+    "max_features": 0.2
+   },
+   {
+    "max_depth": 32,
+    "max_features": "sqrt"
+   },
+   {
+    "max_depth": 32,
+    "max_features": 0.2
+   }
+  ]
+ },
+ "settings": {
+  "split": "temporal within capture groups (deep_split_noise_study.splits), middle 15% unused",
+  "validation": "in-period: 0.214286 of the training period of every capture group, stratified, seed 42",
+  "max_epochs": 100,
+  "patience": 10,
+  "selection": "highest in-period validation macro-F1, temporal split, raw labels, seed 42; ties -> earlier configuration; test set never used",
+  "final_seeds": [
+   42,
+   17,
+   7
+  ],
+  "labels": [
+   "raw",
+   "r1"
+  ]
+ },
+ "sha256": "7f154499f7a1da0a91a89198efe1d28cf17a45ecb6aaf1003f7208fc70d746d4",
+ "declared": "2026-10-15 20:24:42"
+}

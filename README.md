@@ -274,6 +274,19 @@ $py = "python"                     # the Python of the environment from "Install
 & $py experiments\export_flags.py
 ```
 
+### Second-round revision experiments
+
+Added for the second review round (results in `results_2026_03_03/q1_revision/<folder>/`; the exact commands are in
+each docstring and in the packages `runs/R2a_cpu_controls.ps1` and `runs/R2b_gpu_shared_budget.ps1`):
+
+| Script | Purpose | Folder |
+|---|---|---|
+| `experiments/r3_train_reference.py` | R3 with the reference of Benign IP pairs frozen on the Benign **training** flows of each split (no validation or test flow informs the rule), in the training-only cleaning design; refits of the published variants for comparison | `r3_train_reference/` |
+| `experiments/rolling_origin.py` | forward, reversed and middle-block test periods and three rolling origins inside every capture group, against the random split: direction of time, contiguous-block difficulty and session memorisation | `rolling_origin/` |
+| `experiments/bootstrap_family.py` | the 40 comparisons behind the model ranking of Section 5.4 (Holm over the 40), paired block-bootstrap intervals of the principal differences for block lengths 1 to 20,000 flows and an automatic length (Politis and White) per capture group, and leave-one-capture-group-out values | `bootstrap_family/` |
+| `experiments/audit_design.py` | sampling design of the 472-flow audit: stratum sizes, inclusion probabilities, de-duplication of the 1,120 stratum slots, estimands with unclear decisions excluded or counted either way | `rule_validation2/design/` |
+| `experiments/shared_budget_study.py` | the same predeclared budget of four configurations for every model family (`shared_budget/grid.json`, committed before any run), validation set drawn from the training period, networks with up to 100 epochs, final runs with three seeds, ranking stability and convergence; network and gradient-boosting weights are stored | `shared_budget/` |
+
 A loop runs one model fit per process, which keeps the peak memory at that of a single fit. A script whose runs are
 all finished only reports this and exits, so a loop may be longer than needed. The random-forest fits need several
 GB of RAM each. Optional sensitivity runs (for example `deep_protocol_study.py --fixed-lr val`,
