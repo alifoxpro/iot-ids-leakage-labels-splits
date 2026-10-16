@@ -1,0 +1,91 @@
+split,part,class,capture_group,flows,r3_share,r3tr_share,r3_only,r3tr_only
+random,train,BruteForce,BruteForce,2521,0.1559,0.1559,0,0
+random,train,DDOS,DDOS ACK Fragmentation,474569,0.007,0.0069,27,0
+random,train,DDOS,DDOS HTTP FLOOD,104321,0.0117,0.0117,0,0
+random,train,DDOS,DDOS ICMP FLOOD,46910,0.1423,0.142,11,0
+random,train,DDOS,DDOS ICMP Fragmentation,74200,0.7401,0.7371,219,0
+random,train,DOS,DOS HTTP FLOOD,86415,0.0015,0.0015,0,0
+random,train,DOS,DOS SYN FLOOD,583457,0.002,0.002,0,0
+random,train,DOS,DOS UDP FLOOD,380128,0.0035,0.0035,0,0
+random,train,Mirai,Mirai,111806,0.0405,0.0404,7,0
+random,train,Recon,Recon,290981,0.5522,0.5522,17,0
+random,train,Spoofing,ARP Spoofing,54062,0.2794,0.2794,1,0
+random,train,Spoofing,DNS Spoofing,51557,0.0264,0.0264,1,0
+random,train,Web-Based,Sqlinjection,4562,0.5712,0.571,1,0
+random,train,Web-Based,Uploading Attack,924,0.0281,0.0281,0,0
+random,train,Web-Based,XSS,2361,0.0347,0.0347,0,0
+random,validation,BruteForce,BruteForce,540,0.1667,0.1667,0,0
+random,validation,DDOS,DDOS ACK Fragmentation,101178,0.0073,0.0073,5,0
+random,validation,DDOS,DDOS HTTP FLOOD,22662,0.011,0.011,0,0
+random,validation,DDOS,DDOS ICMP FLOOD,10300,0.14,0.1397,3,0
+random,validation,DDOS,DDOS ICMP Fragmentation,15860,0.7404,0.7379,40,0
+random,validation,DOS,DOS HTTP FLOOD,18501,0.0019,0.0019,0,0
+random,validation,DOS,DOS SYN FLOOD,124934,0.0018,0.0018,0,0
+random,validation,DOS,DOS UDP FLOOD,81565,0.0033,0.0033,0,0
+random,validation,Mirai,Mirai,23959,0.0385,0.0384,3,0
+random,validation,Recon,Recon,62353,0.5555,0.5553,8,0
+random,validation,Spoofing,ARP Spoofing,11626,0.2786,0.2786,0,0
+random,validation,Spoofing,DNS Spoofing,11007,0.029,0.029,0,0
+random,validation,Web-Based,Sqlinjection,986,0.5365,0.5365,0,0
+random,validation,Web-Based,Uploading Attack,189,0.0212,0.0212,0,0
+random,validation,Web-Based,XSS,507,0.0335,0.0335,0,0
+random,test,BruteForce,BruteForce,540,0.1667,0.1667,0,0
+random,test,DDOS,DDOS ACK Fragmentation,101184,0.0073,0.0073,5,0
+random,test,DDOS,DDOS HTTP FLOOD,22573,0.0117,0.0117,0,0
+random,test,DDOS,DDOS ICMP FLOOD,10186,0.1385,0.1383,2,0
+random,test,DDOS,DDOS ICMP Fragmentation,16057,0.7364,0.7327,60,0
+random,test,DOS,DOS HTTP FLOOD,18560,0.0012,0.0012,0,0
+random,test,DOS,DOS SYN FLOOD,125105,0.0019,0.0019,0,0
+random,test,DOS,DOS UDP FLOOD,81335,0.0035,0.0035,0,0
+random,test,Mirai,Mirai,23959,0.0431,0.0429,3,0
+random,test,Recon,Recon,62353,0.5538,0.5538,3,0
+random,test,Spoofing,ARP Spoofing,11568,0.2803,0.2803,0,0
+random,test,Spoofing,DNS Spoofing,11065,0.0265,0.0263,2,0
+random,test,Web-Based,Sqlinjection,973,0.5982,0.5982,0,0
+random,test,Web-Based,Uploading Attack,215,0.0698,0.0698,0,0
+random,test,Web-Based,XSS,494,0.0364,0.0364,0,0
+temporal,train,BruteForce,BruteForce,2520,0.1595,0.1595,0,0
+temporal,train,DDOS,DDOS ACK Fragmentation,473851,0.0058,0.0058,8,0
+temporal,train,DDOS,DDOS HTTP FLOOD,104689,0.0156,0.0156,1,0
+temporal,train,DDOS,DDOS ICMP FLOOD,47177,0.0911,0.0911,3,0
+temporal,train,DDOS,DDOS ICMP Fragmentation,74281,0.7999,0.7981,134,0
+temporal,train,DOS,DOS HTTP FLOOD,86433,0.0018,0.0018,0,0
+temporal,train,DOS,DOS SYN FLOOD,583447,0.0026,0.0026,0,0
+temporal,train,DOS,DOS UDP FLOOD,380119,0.0008,0.0008,0,0
+temporal,train,Mirai,Mirai,111806,0.0379,0.0379,0,0
+temporal,train,Recon,Recon,290980,0.519,0.5189,22,0
+temporal,train,Spoofing,ARP Spoofing,54079,0.2738,0.2738,0,0
+temporal,train,Spoofing,DNS Spoofing,51540,0.0251,0.0251,0,0
+temporal,train,Web-Based,Sqlinjection,4564,0.5465,0.5465,0,0
+temporal,train,Web-Based,Uploading Attack,929,0.0409,0.0409,0,0
+temporal,train,Web-Based,XSS,2353,0.0361,0.0361,0,0
+temporal,validation,BruteForce,BruteForce,540,0.1833,0.1833,0,0
+temporal,validation,DDOS,DDOS ACK Fragmentation,101540,0.0094,0.0094,1,0
+temporal,validation,DDOS,DDOS HTTP FLOOD,22433,0.0024,0.0024,0,0
+temporal,validation,DDOS,DDOS ICMP FLOOD,10109,0.2445,0.2444,1,0
+temporal,validation,DDOS,DDOS ICMP Fragmentation,15918,0.6825,0.6812,20,0
+temporal,validation,DOS,DOS HTTP FLOOD,18521,0.0001,0.0001,0,0
+temporal,validation,DOS,DOS SYN FLOOD,125024,0.0008,0.0008,0,0
+temporal,validation,DOS,DOS UDP FLOOD,81454,0.0004,0.0004,0,0
+temporal,validation,Mirai,Mirai,23959,0.0475,0.0475,0,0
+temporal,validation,Recon,Recon,62353,0.6297,0.6293,23,0
+temporal,validation,Spoofing,ARP Spoofing,11588,0.3168,0.3168,0,0
+temporal,validation,Spoofing,DNS Spoofing,11044,0.0292,0.0292,0,0
+temporal,validation,Web-Based,Sqlinjection,978,0.6227,0.6227,0,0
+temporal,validation,Web-Based,Uploading Attack,199,0.0251,0.0251,0,0
+temporal,validation,Web-Based,XSS,504,0.0278,0.0278,0,0
+temporal,test,BruteForce,BruteForce,541,0.1331,0.1331,0,0
+temporal,test,DDOS,DDOS ACK Fragmentation,101540,0.0106,0.0106,2,0
+temporal,test,DDOS,DDOS HTTP FLOOD,22434,0.002,0.002,0,0
+temporal,test,DDOS,DDOS ICMP FLOOD,10110,0.2725,0.272,5,0
+temporal,test,DDOS,DDOS ICMP Fragmentation,15918,0.5151,0.5148,4,0
+temporal,test,DOS,DOS HTTP FLOOD,18522,0.002,0.0019,1,0
+temporal,test,DOS,DOS SYN FLOOD,125025,0.0005,0.0005,0,0
+temporal,test,DOS,DOS UDP FLOOD,81455,0.0187,0.0187,0,0
+temporal,test,Mirai,Mirai,23959,0.046,0.046,0,0
+temporal,test,Recon,Recon,62354,0.6345,0.6341,23,0
+temporal,test,Spoofing,ARP Spoofing,11589,0.2682,0.2682,0,0
+temporal,test,Spoofing,DNS Spoofing,11045,0.0327,0.0327,0,0
+temporal,test,Web-Based,Sqlinjection,979,0.6272,0.6272,0,0
+temporal,test,Web-Based,Uploading Attack,200,0.01,0.01,0,0
+temporal,test,Web-Based,XSS,505,0.0356,0.0356,0,0

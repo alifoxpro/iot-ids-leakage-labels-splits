@@ -1,0 +1,172 @@
+{
+ "accuracy": 0.8176769110191668,
+ "balanced_accuracy": 0.6430187328962482,
+ "macro_f1": 0.42506442972005287,
+ "per_class_f1": {
+  "Benign": 0.8428,
+  "BruteForce": 0.0015,
+  "DDOS": 0.8741,
+  "DOS": 0.8521,
+  "Mirai": 0.0602,
+  "Recon": 0.2619,
+  "Spoofing": 0.394,
+  "Web-Based": 0.114
+ },
+ "per_class_recall": {
+  "Benign": 0.7519,
+  "BruteForce": 0.0179,
+  "DDOS": 0.9848,
+  "DOS": 0.7451,
+  "Mirai": 0.6796,
+  "Recon": 0.5616,
+  "Spoofing": 0.5699,
+  "Web-Based": 0.8333
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.7519,
+  "BruteForce / BruteForce": 0.0179,
+  "DDOS / DDOS ACK Fragmentation": 0.9976,
+  "DDOS / DDOS HTTP FLOOD": 0.9707,
+  "DDOS / DDOS ICMP FLOOD": 0.4097,
+  "DDOS / DDOS ICMP Fragmentation": 0.4699,
+  "DOS / DOS HTTP FLOOD": 0.5117,
+  "DOS / DOS SYN FLOOD": 0.9585,
+  "DOS / DOS UDP FLOOD": 0.3668,
+  "Mirai / Mirai": 0.6796,
+  "Recon / Recon": 0.5616,
+  "Spoofing / ARP Spoofing": 0.4247,
+  "Spoofing / DNS Spoofing": 0.584,
+  "Web-Based / Sqlinjection": 0.8387,
+  "Web-Based / Uploading Attack": 0.75,
+  "Web-Based / XSS": 0.8571
+ },
+ "attack_macro_f1": 0.3653940201103255,
+ "per_class_precision": {
+  "Benign": 0.9585,
+  "BruteForce": 0.0008,
+  "DDOS": 0.7858,
+  "DOS": 0.9949,
+  "Mirai": 0.0315,
+  "Recon": 0.1708,
+  "Spoofing": 0.3011,
+  "Web-Based": 0.0612
+ },
+ "confusion": [
+  [
+   43469,
+   800,
+   128,
+   32,
+   4129,
+   4301,
+   3601,
+   1350
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   38,
+   13,
+   3
+  ],
+  [
+   214,
+   27,
+   117668,
+   624,
+   462,
+   108,
+   353,
+   30
+  ],
+  [
+   1085,
+   97,
+   31877,
+   148640,
+   16084,
+   511,
+   1158,
+   25
+  ],
+  [
+   44,
+   1,
+   62,
+   3,
+   700,
+   6,
+   186,
+   28
+  ],
+  [
+   51,
+   236,
+   2,
+   1,
+   6,
+   1048,
+   210,
+   312
+  ],
+  [
+   480,
+   154,
+   10,
+   100,
+   841,
+   120,
+   2382,
+   93
+  ],
+  [
+   5,
+   3,
+   0,
+   0,
+   2,
+   5,
+   9,
+   120
+  ]
+ ],
+ "model": "XGBoost",
+ "seed": 42,
+ "split": "temporal",
+ "train_variant": "R1+R3tr",
+ "train_rule": "R1 | R3tr",
+ "r3_reference": "train",
+ "test_set": "All",
+ "test_rule": "test rows not flagged by R1 | R2 | R3",
+ "n_train": 2036623,
+ "n_train_dropped": 501920,
+ "n_test": 384049,
+ "train_class_counts": {
+  "Benign": 269775,
+  "BruteForce": 539,
+  "DDOS": 579580,
+  "DOS": 1035856,
+  "Mirai": 41590,
+  "Recon": 76276,
+  "Spoofing": 31016,
+  "Web-Based": 1991
+ },
+ "test_class_counts": {
+  "Benign": 57810,
+  "BruteForce": 56,
+  "DDOS": 119486,
+  "DOS": 199477,
+  "Mirai": 1030,
+  "Recon": 1866,
+  "Spoofing": 4180,
+  "Web-Based": 144
+ },
+ "missing_train_classes": [],
+ "fit_seconds": 33.4,
+ "validation_part": "not used (no early stopping); its labels and masks play no role",
+ "script": "experiments/r3_train_reference.py",
+ "created": "2026-10-15 21:05:18"
+}

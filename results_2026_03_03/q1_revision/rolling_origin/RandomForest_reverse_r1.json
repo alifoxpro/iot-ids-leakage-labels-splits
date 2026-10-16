@@ -1,0 +1,179 @@
+{
+ "accuracy": 0.8549197625851835,
+ "balanced_accuracy": 0.588477728270564,
+ "macro_f1": 0.5780245225500572,
+ "per_class_f1": {
+  "Benign": 0.7022,
+  "BruteForce": 0.1117,
+  "DDOS": 0.829,
+  "DOS": 0.9561,
+  "Mirai": 0.4546,
+  "Recon": 0.7483,
+  "Spoofing": 0.5246,
+  "Web-Based": 0.2976
+ },
+ "per_class_recall": {
+  "Benign": 0.6585,
+  "BruteForce": 0.1094,
+  "DDOS": 0.7753,
+  "DOS": 0.974,
+  "Mirai": 0.5549,
+  "Recon": 0.9595,
+  "Spoofing": 0.4615,
+  "Web-Based": 0.2148
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.6585,
+  "BruteForce / BruteForce": 0.1094,
+  "DDOS / DDOS ACK Fragmentation": 0.9837,
+  "DDOS / DDOS HTTP FLOOD": 0.1274,
+  "DDOS / DDOS ICMP FLOOD": 0.1845,
+  "DDOS / DDOS ICMP Fragmentation": 0.2193,
+  "DOS / DOS HTTP FLOOD": 0.7347,
+  "DOS / DOS SYN FLOOD": 0.9954,
+  "DOS / DOS UDP FLOOD": 0.9951,
+  "Mirai / Mirai": 0.5549,
+  "Recon / Recon": 0.9595,
+  "Spoofing / ARP Spoofing": 0.6254,
+  "Spoofing / DNS Spoofing": 0.2914,
+  "Web-Based / Sqlinjection": 0.0436,
+  "Web-Based / Uploading Attack": 0.4891,
+  "Web-Based / XSS": 0.431
+ },
+ "attack_macro_f1": 0.560281373265189,
+ "per_class_precision": {
+  "Benign": 0.7522,
+  "BruteForce": 0.1141,
+  "DDOS": 0.8908,
+  "DOS": 0.9389,
+  "Mirai": 0.385,
+  "Recon": 0.6133,
+  "Spoofing": 0.6078,
+  "Web-Based": 0.484
+ },
+ "confusion": [
+  [
+   38067,
+   3,
+   10065,
+   71,
+   1077,
+   7433,
+   1090,
+   3
+  ],
+  [
+   25,
+   21,
+   8,
+   0,
+   7,
+   45,
+   84,
+   2
+  ],
+  [
+   6338,
+   3,
+   101910,
+   12790,
+   5780,
+   3728,
+   824,
+   68
+  ],
+  [
+   2843,
+   3,
+   1609,
+   214481,
+   447,
+   759,
+   67,
+   6
+  ],
+  [
+   1514,
+   5,
+   367,
+   47,
+   5182,
+   1695,
+   523,
+   6
+  ],
+  [
+   463,
+   1,
+   207,
+   162,
+   58,
+   24718,
+   134,
+   19
+  ],
+  [
+   1294,
+   136,
+   198,
+   886,
+   891,
+   1675,
+   4388,
+   41
+  ],
+  [
+   65,
+   12,
+   43,
+   0,
+   17,
+   251,
+   109,
+   136
+  ]
+ ],
+ "model": "RandomForest",
+ "seed": 42,
+ "design": "reverse",
+ "cleaning": "r1",
+ "design_definition": {
+  "train": [
+   [
+    0.3,
+    1.0
+   ]
+  ],
+  "test": [
+   0.0,
+   0.15
+  ],
+  "unit": "fractions of the time-ordered rows of each capture group (cut at int(fraction x n))"
+ },
+ "n_train": 2122913,
+ "n_test": 454900,
+ "train_class_counts": {
+  "Benign": 269776,
+  "BruteForce": 901,
+  "DDOS": 613400,
+  "DOS": 1027682,
+  "Mirai": 43585,
+  "Recon": 120227,
+  "Spoofing": 44377,
+  "Web-Based": 2965
+ },
+ "test_class_counts": {
+  "Benign": 57809,
+  "BruteForce": 192,
+  "DDOS": 131441,
+  "DOS": 220215,
+  "Mirai": 9339,
+  "Recon": 25762,
+  "Spoofing": 9509,
+  "Web-Based": 633
+ },
+ "missing_train_classes": [],
+ "fit_seconds": 128.4,
+ "script": "experiments/rolling_origin.py",
+ "created": "2026-10-15 22:38:19"
+}

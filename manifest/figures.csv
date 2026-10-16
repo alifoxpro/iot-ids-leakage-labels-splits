@@ -1,0 +1,23 @@
+figure,part,source,values_file
+Fig. 3,networks,"experiments/deep_protocol_study.py spec() (src/stage3_ml_models.py _ResNet1DNet, _GRUNet, _TransformerNet; MLPNet, CNN1DHossainNet), instantiated on the CPU with 81 inputs and 8 classes",figures/values/mid_F2_values.json
+Fig. 3,mlp_choice,results_2026_03_03/q1_revision/deep_protocol/mlp_tuning/mlp_config.json,figures/values/mid_F2_values.json
+Fig. 3,cost,results_2026_03_03/q1_revision/deep_protocol/summary/cost.csv (protocols earlystop and trees),figures/values/mid_F2_values.json
+Fig. 3,n_params,"results_2026_03_03/q1_revision/deep_protocol/summary/{cost,runs}.csv",figures/values/mid_F2_values.json
+Fig. 3,trees,experiments/extra_baselines.py make(),figures/values/mid_F2_values.json
+Fig. 5,levels,"results_2026_03_03/q1_revision/deep_protocol/summary/pooled.csv (subset all; protocols earlystop, trees; metrics macro_f1, balanced_accuracy, macro_ap), cross-checked with runs.csv (pooled runs)",figures/values/mid_F3_values.json
+Fig. 5,effects,"results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (per seed, unrounded), cross-checked with effects.csv (metric macro_f1)",figures/values/mid_F3_values.json
+Fig. 5,fixed_epochs,"results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed), cross-checked with effects.csv (protocol fixed)",figures/values/mid_F3_values.json
+Fig. 2,a,"results_2026_03_03/q1_revision/day_disjoint/days.json (conditions.raw.groups[g].capture_days), cross-checked with (manuscript source) (first / last flow)",figures/values/mid_F5_values.json
+Fig. 2,b,"results_2026_03_03/split_pilot/protocol_packet_share.json (flow_share[""0""], packet_share[""0""])",figures/values/mid_F5_values.json
+Fig. 2,c,"results_2026_03_03/split_pilot/relabel_summary.json (per_group: 1 - kept / flows_read, R1_external, R2_service, R3_benign_pair); names from (manuscript source)",figures/values/mid_F5_values.json
+Fig. 2,d,"results_2026_03_03/q1_revision/rule_validation2/rule_validation2.json (summary[c].attacker_victim), unrounded counts from rule_validation2/captures/*.json (definitions.attacker_victim.rules)",figures/values/mid_F5_values.json
+Fig. 2,e,results_2026_03_03/q1_revision/rule_validation2/llm_audit/audit_scores.json (per_class[c].any); Wilson 95% intervals recomputed from the counts,figures/values/mid_F5_values.json
+Fig. 6,main,"results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (pooled runs), cross-checked with effects.csv",figures/values/mid_F6_values.json
+Fig. 6,block_bootstrap,results_2026_03_03/q1_revision/analyses/c_block_bootstrap_effects.csv (variant block5000),figures/values/mid_F6_values.json
+Fig. 6,seeds_cuts_weights,"results_2026_03_03/q1_revision/split_replication/{splits,weights}/*.json",figures/values/mid_F6_values.json
+Fig. 6,cleaning_seeds_cuts,results_2026_03_03/q1_revision/variant_seeds/runs.csv (R1 minus none; median imputation),figures/values/mid_F6_values.json
+Fig. 6,day_disjoint,results_2026_03_03/q1_revision/day_disjoint/*.json,figures/values/mid_F6_values.json
+Fig. 6,training_only,results_2026_03_03/tree_protocol/decomp/*.json; q1_revision/train_only_bootstrap/diffs.csv; q1_revision/cleaning_train_only/*.json,figures/values/mid_F6_values.json
+Fig. 6,symmetric_relabel,results_2026_03_03/q1_revision/symmetric_r1/summary.csv,figures/values/mid_F6_values.json
+Fig. 6,cicids2017,"results_2026_03_03/q1_revision/cicids2017/split_{random,temporal}_{F0,F78}.json",figures/values/mid_F6_values.json
+Fig. 6,held_out,results_2026_03_03/q1_revision/leave_one_subattack_out/summary.csv,figures/values/mid_F6_values.json

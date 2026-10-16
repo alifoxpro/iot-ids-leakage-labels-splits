@@ -33,3 +33,6 @@ desktop.ini
 ~$*
 *.tmp
 *.bak
+# ---------------------------------------------------------------- trained tree models (release assets, not in git)
+*.xgb.json
+*.lgb.txt

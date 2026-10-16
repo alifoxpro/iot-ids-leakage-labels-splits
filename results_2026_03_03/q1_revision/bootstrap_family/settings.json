@@ -1,0 +1,15 @@
+{
+ "B": 1000,
+ "blocks": [
+  1,
+  100,
+  1000,
+  5000,
+  20000
+ ],
+ "min_blocks": 5,
+ "seed": 2026,
+ "auto": "Politis & White (2004), Patton et al. (2009) circular block bootstrap, per capture group, on the per-flow error series (paired: difference of the seed-averaged error indicators)",
+ "family_40": "analyses2/b_differences.csv, view all, model pairs within condition, leader vs the other five of ResNet1D, GRU, Transformer, XGBoost, LightGBM, random forest; Holm over the 40",
+ "created": "2026-10-16 14:41:53"
+}

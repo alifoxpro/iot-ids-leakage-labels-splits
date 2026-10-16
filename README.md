@@ -22,8 +22,13 @@ benchmark code (ResNet1D, GRU, Transformer), an MLP and a re-implementation of t
 | `src/` | the three modules of the author's earlier benchmark code that the deep networks import (see [Deep networks](#deep-networks)) |
 | `runs/` | the PowerShell run packages with the exact arguments of the revision runs |
 | `results_2026_03_03/` | the result files (CSV, JSON, TXT, Markdown) of every run reported in the paper |
-| `tools/make_release_assets.py` | packs the large result files (stored predictions, model weights) for a GitHub Release |
-| `RELEASE_CHECKLIST.md` | the steps that follow acceptance of the paper |
+| `manifest/` | the manifest: every run with its sample, preprocessing, labels, split, configuration, seed, stored predictions and model (`runs.csv`), the analyses (`analyses.csv`), the figure sources (`figures.csv`) and every paragraph, caption and table of the paper with its numbers and their result files (`paper_map.csv`) |
+| `figures/values/` | the source values of every figure (one JSON per figure: every plotted value, unrounded, with its runs, seeds and source files) |
+| `tools/evaluate_predictions.py` | recomputes the reported metrics of every run from its stored predictions and checks them against its result file |
+| `tools/build_manifest.py` | writes `manifest/` |
+| `tools/make_release_assets.py` | packs the large result files (stored predictions, model weights) for the GitHub Release |
+| `environment.yml`, `requirements-lock.txt` | the exact software environment of the runs (conda export and pinned pip versions) |
+| `RELEASE_CHECKLIST.md` | how the release assets are made |
 
 ## Installation
 
@@ -35,7 +40,9 @@ conda activate iot-ids-eval
 pip install -r requirements.txt
 ```
 
-The tree ensembles run on the CPU; the deep networks need a CUDA GPU for reasonable run times.
+The tree ensembles run on the CPU; the deep networks need a CUDA GPU for reasonable run times. The exact environment of
+the runs is in `environment.yml` (conda: `conda env create -f environment.yml`) and `requirements-lock.txt` (every pip
+package with its version); `requirements.txt` lists only the packages the experiments import.
 
 ## Datasets
 
@@ -335,12 +342,44 @@ Run the GPU packages (P4, P5a–P5c) alone, with the charger connected. P4 needs
 `q1_revision/published_control/data.parquet` (`published_protocol_control.py --build-only`, step 7 above), and P6
 reads the outputs of all other packages.
 
-## Large result files
+## Release assets: stored predictions and models
 
-Stored test predictions (`*.npz`), cached arrays and trained model weights are too large for git. They will be
-provided as assets of a GitHub Release, archived with a DOI, when the paper is accepted (`tools/make_release_assets.py`
-packs them; see `RELEASE_CHECKLIST.md`). The figure scripts and the values plotted in every figure will be added at
-the same time.
+Stored test predictions (`*.npz`: true and predicted class, class probabilities where stored, global row positions of
+the test flows and their capture group), cached arrays and trained models (`*.pt`: network weights and the
+standardisation of the shared-budget runs; `*.xgb.json`, `*.lgb.txt`: XGBoost and LightGBM models) are too large for
+git. They are attached as zip files to release **v2.0** of this repository, with `MANIFEST.json` (size and SHA-256 of
+every file). Unzip them into the repository folder: every file lands next to its result file. An archived release with a
+DOI will follow on acceptance of the paper.
+
+## Manifest and evaluation check
+
+`manifest/runs.csv` has one line per model run (589 runs before the shared-budget study): result file, script, model,
+configuration, training seed, sample (the 3,626,502 flows of `export_flags/flow_flags.csv.gz`, whose SHA-256 is in
+`manifest/manifest.json`; the CICIDS2017 and published-setting samples are named), features, preprocessing (missing
+values set to zero, or training medians for the XGBoost pilot and cleaning-variant analyses), class weights, split design
+(with split seed or cut), training and test labels, sizes, macro-F1, balanced accuracy, accuracy, and the release-asset
+path of its predictions and model. Runs of the first review rounds stored no model; they are refitted exactly from the
+script, configuration and seed (the refits of `r3_train_reference.py` and `rolling_origin.py` reproduce the published
+runs to the last digit). `manifest/paper_map.csv` lists every paragraph, caption and table of the paper with the
+numbers it prints and the result files those numbers come from; `manifest/figures.csv` and `figures/values/` do the
+same for the figures.
+
+After unzipping the release assets:
+
+```bash
+python tools/evaluate_predictions.py
+```
+
+recomputes accuracy, balanced accuracy, macro-F1 and macro-AP of every run from its stored predictions and compares them
+with its result file (`results_2026_03_03/evaluation_check.csv`; on the author's machine: 409 runs of the tree, deep,
+training-only cleaning, R3 and rolling-origin studies, largest difference 1.1e-16).
+
+## Figures
+
+`figures/values/mid_F*_values.json` hold every value plotted in the six figures (unrounded, with the runs and seeds it
+is computed from and its source files): F1 = Fig. 1 (study design), F5 = Fig. 2, F2 = Fig. 3, F4 = Fig. 4, F3 = Fig. 5,
+F6 = Fig. 6. The scripts that draw the figures also assert every printed number against the manuscript sources and
+are therefore kept with them.
 
 ## Citation
 

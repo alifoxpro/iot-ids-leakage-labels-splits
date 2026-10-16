@@ -1,0 +1,329 @@
+{
+ "models": {
+  "ResNet1D": {
+   "emb": 128,
+   "rep": 8,
+   "n_blocks": 3,
+   "k": 3,
+   "pad": 1,
+   "head": [
+    {
+     "in": 128,
+     "out": 128,
+     "relu": true,
+     "dropout": 0.3
+    },
+    {
+     "in": 128,
+     "out": 8,
+     "relu": false,
+     "dropout": null
+    }
+   ],
+   "params": 325512,
+   "lr": 0.001,
+   "batch_size": 512,
+   "cost": {
+    "fit_min": "6–24",
+    "fit_s_min": 371.2,
+    "fit_s_max": 1413.9,
+    "pred_ms_1k": "2.13",
+    "pred_s_per_1k_mean": 0.0021321538461538,
+    "runs": 20,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+   }
+  },
+  "GRU": {
+   "emb": 128,
+   "rep": 8,
+   "hidden": 128,
+   "layers": 2,
+   "dropout": 0.3,
+   "head": [
+    {
+     "in": 256,
+     "out": 128,
+     "relu": true,
+     "dropout": 0.3
+    },
+    {
+     "in": 128,
+     "out": 64,
+     "relu": true,
+     "dropout": null
+    },
+    {
+     "in": 64,
+     "out": 8,
+     "relu": false,
+     "dropout": null
+    }
+   ],
+   "params": 547016,
+   "lr": 0.001,
+   "batch_size": 512,
+   "cost": {
+    "fit_min": "9–22",
+    "fit_s_min": 526.6,
+    "fit_s_max": 1312.2,
+    "pred_ms_1k": "3.61",
+    "pred_s_per_1k_mean": 0.0036073333333333,
+    "runs": 20,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+   }
+  },
+  "Transformer": {
+   "proj": 256,
+   "tokens": 16,
+   "d_model": 16,
+   "layers": 2,
+   "heads": 8,
+   "ff": 64,
+   "dropout": 0.1,
+   "head": [
+    {
+     "in": 16,
+     "out": 128,
+     "relu": true,
+     "dropout": 0.2
+    },
+    {
+     "in": 128,
+     "out": 64,
+     "relu": true,
+     "dropout": null
+    },
+    {
+     "in": 64,
+     "out": 8,
+     "relu": false,
+     "dropout": null
+    }
+   ],
+   "params": 38504,
+   "lr": 0.0001,
+   "batch_size": 256,
+   "cost": {
+    "fit_min": "9–113",
+    "fit_s_min": 512.3,
+    "fit_s_max": 6791.1,
+    "pred_ms_1k": "1.82",
+    "pred_s_per_1k_mean": 0.0018185,
+    "runs": 20,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+   }
+  },
+  "MLP": {
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.2,
+   "params": 209032,
+   "lr": 0.001,
+   "batch_size": 512,
+   "cost": {
+    "fit_min": "5–17",
+    "fit_s_min": 318.2,
+    "fit_s_max": 1033.8,
+    "pred_ms_1k": "0.45",
+    "pred_s_per_1k_mean": 0.0004512999999999,
+    "runs": 20,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+   },
+   "grid": [
+    {
+     "hidden": [
+      256,
+      128,
+      64
+     ],
+     "dropout": 0.2
+    },
+    {
+     "hidden": [
+      256,
+      128,
+      64
+     ],
+     "dropout": 0.4
+    },
+    {
+     "hidden": [
+      512,
+      256,
+      128
+     ],
+     "dropout": 0.2
+    },
+    {
+     "hidden": [
+      512,
+      256,
+      128
+     ],
+     "dropout": 0.4
+    }
+   ]
+  },
+  "CNN1D_Hossain": {
+   "conv": [
+    [
+     64,
+     3
+    ],
+    [
+     128,
+     3
+    ]
+   ],
+   "pool": 2,
+   "shapes": [
+    [
+     64,
+     79
+    ],
+    [
+     64,
+     39
+    ],
+    [
+     128,
+     37
+    ],
+    [
+     128,
+     18
+    ],
+    [
+     2304
+    ]
+   ],
+   "head": [
+    {
+     "in": 2304,
+     "out": 128,
+     "relu": true,
+     "dropout": 0.5
+    },
+    {
+     "in": 128,
+     "out": 8,
+     "relu": false,
+     "dropout": null
+    }
+   ],
+   "unused": [
+    79,
+    80,
+    81
+   ],
+   "params": 321032,
+   "lr": 0.001,
+   "batch_size": 512,
+   "cost": {
+    "fit_min": "6–17",
+    "fit_s_min": 342.7,
+    "fit_s_max": 1013.5,
+    "pred_ms_1k": "1.49",
+    "pred_s_per_1k_mean": 0.0014902,
+    "runs": 20,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+   }
+  }
+ },
+ "trees": {
+  "XGBoost": {
+   "n_estimators": 200,
+   "max_depth": 8,
+   "learning_rate": 0.1,
+   "tree_method": "hist",
+   "subsample": null,
+   "colsample_bytree": null,
+   "runs_per_condition": 1,
+   "cost": {
+    "fit_min": "0.5–0.6",
+    "fit_s_min": 28.9,
+    "fit_s_max": 37.0,
+    "pred_ms_1k": "1.27",
+    "pred_s_per_1k_mean": 0.00127025,
+    "runs": 4,
+    "device": "cuda (GPU)"
+   }
+  },
+  "LightGBM": {
+   "n_estimators": 300,
+   "num_leaves": 127,
+   "learning_rate": 0.1,
+   "subsample": 0.8,
+   "colsample_bytree": 0.8,
+   "n_jobs": -1,
+   "seeds": 5,
+   "cost": {
+    "fit_min": "1.3–2.2",
+    "fit_s_min": 77.75,
+    "fit_s_max": 130.7,
+    "pred_ms_1k": "16.62",
+    "pred_s_per_1k_mean": 0.0166185999999999,
+    "runs": 20,
+    "device": "cpu"
+   }
+  },
+  "RandomForest": {
+   "n_estimators": 100,
+   "max_depth": 24,
+   "max_samples": 0.3,
+   "min_samples_leaf": 2,
+   "n_jobs": 2,
+   "seeds": 5,
+   "cost": {
+    "fit_min": "1.1–3.8",
+    "fit_s_min": 67.5,
+    "fit_s_max": 228.45,
+    "pred_ms_1k": "5.42",
+    "pred_s_per_1k_mean": 0.00542485,
+    "runs": 20,
+    "device": "cpu"
+   }
+  }
+ },
+ "training": {
+  "seeds": [
+   7,
+   17,
+   42,
+   123,
+   2024
+  ],
+  "max_epochs": 30,
+  "early_stopping_patience": 10,
+  "lr_plateau_factor": 0.5,
+  "lr_plateau_patience": 5,
+  "gradient_clip_norm": 1.0,
+  "mixed_precision": true,
+  "optimizer": "Adam",
+  "loss": "class-weighted cross-entropy (balanced weights, Eq. (1))",
+  "n_features": 81,
+  "n_classes": 8
+ },
+ "figure": {
+  "id": "F2",
+  "printed": "Fig. 3",
+  "file": "mid_F2.png",
+  "size_cm": [
+   17.0,
+   17.7
+  ],
+  "dpi": 600,
+  "min_font_pt": 10.0,
+  "free_cm_at_bottom": 0.1
+ },
+ "sources": {
+  "networks": "experiments/deep_protocol_study.py spec() (src/stage3_ml_models.py _ResNet1DNet, _GRUNet, _TransformerNet; MLPNet, CNN1DHossainNet), instantiated on the CPU with 81 inputs and 8 classes",
+  "mlp_choice": "results_2026_03_03/q1_revision/deep_protocol/mlp_tuning/mlp_config.json",
+  "cost": "results_2026_03_03/q1_revision/deep_protocol/summary/cost.csv (protocols earlystop and trees)",
+  "n_params": "results_2026_03_03/q1_revision/deep_protocol/summary/{cost,runs}.csv",
+  "trees": "experiments/extra_baselines.py make()"
+ }
+}

@@ -1,0 +1,13 @@
+path,script,content
+results_2026_03_03/split_pilot,"experiments/pilot_temporal_split.py, temporal_split_by_subattack.py, diagnose_icmp_confusion.py, inspect_attack_ips.py, relabel_background.py, rule_sensitivity.py, temporal_drift_analysis.py, protocol_packet_share.py","XGBoost pilot and cleaning variants (training-median imputation), per-capture diagnostics, rule extent, drift"
+results_2026_03_03/tree_protocol/bootstrap.json,experiments/bootstrap_ci.py,"stratified bootstrap intervals, paired tests"
+results_2026_03_03/q1_revision/analyses,experiments/revision_analyses.py,"attack-class macro-F1, predictions on R1-flagged flows, block bootstrap, paired tests, per-class precision/recall, drift-loss association"
+results_2026_03_03/q1_revision/analyses2,experiments/revision_analyses2.py,"capture-level and packet-weighted detection, seed means with intervals, Wilson intervals"
+results_2026_03_03/q1_revision/bootstrap_family,experiments/bootstrap_family.py,"the 40 comparisons of Section 5.4, paired block bootstrap with automatic block length, leave one capture group out"
+results_2026_03_03/q1_revision/train_only_bootstrap,experiments/train_only_bootstrap.py,intervals of the training-only cleaning
+results_2026_03_03/q1_revision/drift_calibration,experiments/drift_calibration.py,within-training drift reference
+results_2026_03_03/q1_revision/rule_validation,experiments/rule_validation.py,signature checks (first captures)
+results_2026_03_03/q1_revision/rule_validation2,"experiments/rule_validation2.py, experiments/audit_design.py","signature checks of all captures, R1 audit, 472-flow audit sample, language-model audit, sampling design"
+results_2026_03_03/q1_revision/export_flags,experiments/export_flags.py,per-flow R1-R3 flags and split assignments
+results_2026_03_03/q1_revision/deep_protocol/summary,experiments/deep_protocol_summary.py,tables of the deep protocol study
+results_2026_03_03/q1_revision/tree_seeds,experiments/tree_seeds_summary.py,tables of the tree-ensemble seeds

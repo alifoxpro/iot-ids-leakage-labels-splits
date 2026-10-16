@@ -1,0 +1,387 @@
+{
+ "figure": "F4",
+ "printed_as": "Fig. 4",
+ "size_cm": [
+  17.0,
+  5.51
+ ],
+ "x_axis": [
+  0.0,
+  1.0
+ ],
+ "design": "landscape stacked gain bars",
+ "rows": [
+  {
+   "key": "pub_xgb",
+   "label": "Approx. published setting: XGBoost",
+   "note": "81 flow features; + timestamp string; + all seven identifier columns; no class weights; one run each",
+   "accuracy": {
+    "flow": 0.8993095964399285,
+    "ts": 0.9942705290627682,
+    "all": 0.9979791938663678
+   },
+   "macro_f1": {
+    "flow": 0.6208691597559772,
+    "ts": 0.9426997489813951,
+    "all": 0.9617995602446294
+   },
+   "printed_accuracy": {
+    "flow": "0.899",
+    "ts": "0.994",
+    "all": "0.998"
+   },
+   "printed_macro_f1": {
+    "flow": "0.621",
+    "ts": "0.943",
+    "all": "0.962"
+   },
+   "printed_gain_timestamp": {
+    "acc": "+0.095",
+    "f1": "+0.322"
+   },
+   "seed_range": {},
+   "per_seed": {},
+   "sources": [
+    "results_2026_03_03/q1_revision/published_control/F0_none.json",
+    "results_2026_03_03/q1_revision/published_control/FT_none.json",
+    "results_2026_03_03/q1_revision/published_control/FA_none.json"
+   ],
+   "manuscript_blocks": [
+    143,
+    146
+   ],
+   "manuscript_phrases": [
+    "row 3: † XGBoost: 81 flow features | random | 0.899 | 0.621",
+    "row 4: † XGBoost + timestamp | random | 0.994 | 0.943",
+    "row 5: † XGBoost + all seven | random | 0.998 | 0.962",
+    "With the 81 flow features it reaches an accuracy of 0.899 and a macro-F1 of 0.621; with the timestamp string label-encoded in sorted text order (not the time order), 0.994 and 0.943",
+    "with all seven identifier columns (flow identifier, addresses, ports, protocol and timestamp), 0.998 and 0.962",
+    "(3,243,755 flows, 77% of them DoS and DDoS"
+   ]
+  },
+  {
+   "key": "pub_cnn",
+   "label": "Approx. published setting: 1-D CNN",
+   "note": "mean over seeds 7, 17, 42 (flow features, + timestamp), range as bars; + all seven identifiers: seed 42 only",
+   "accuracy": {
+    "flow": 0.8740055892014039,
+    "ts": 0.9817598225924377,
+    "all": 0.9841757469352648
+   },
+   "macro_f1": {
+    "flow": 0.4845996444364921,
+    "ts": 0.7659479257133895,
+    "all": 0.7846760871103802
+   },
+   "printed_accuracy": {
+    "flow": "0.874",
+    "ts": "0.982",
+    "all": "0.984"
+   },
+   "printed_macro_f1": {
+    "flow": "0.485",
+    "ts": "0.766",
+    "all": "0.785"
+   },
+   "printed_gain_timestamp": {
+    "acc": "+0.108",
+    "f1": "+0.281"
+   },
+   "seed_range": {
+    "flow": {
+     "acc": [
+      0.8726398880310011,
+      0.8754082845344362
+     ],
+     "f1": [
+      0.4762491727717164,
+      0.5011209428833792
+     ]
+    },
+    "ts": {
+     "acc": [
+      0.9798890483405804,
+      0.9831722802739418
+     ],
+     "f1": [
+      0.7418772672493367,
+      0.7917381222001877
+     ]
+    }
+   },
+   "per_seed": {
+    "flow": {
+     "seed": [
+      7,
+      17,
+      42
+     ],
+     "run": [
+      "CNN1D_F0_none_s7",
+      "CNN1D_F0_none_s17",
+      "CNN1D_F0_none_s42"
+     ],
+     "acc": [
+      0.8726398880310011,
+      0.8739685950387746,
+      0.8754082845344362
+     ],
+     "f1": [
+      0.4762491727717164,
+      0.4764288176543807,
+      0.5011209428833792
+     ]
+    },
+    "ts": {
+     "seed": [
+      7,
+      17,
+      42
+     ],
+     "run": [
+      "CNN1D_FT_none_s7",
+      "CNN1D_FT_none_s17",
+      "CNN1D_FT_none_s42"
+     ],
+     "acc": [
+      0.9822181391627912,
+      0.9798890483405804,
+      0.9831722802739418
+     ],
+     "f1": [
+      0.7418772672493367,
+      0.7642283876906439,
+      0.7917381222001877
+     ]
+    },
+    "all": {
+     "seed": [
+      42
+     ],
+     "run": [
+      "CNN1D_FA_none_s42"
+     ],
+     "acc": [
+      0.9841757469352648
+     ],
+     "f1": [
+      0.7846760871103802
+     ]
+    }
+   },
+   "sources": [
+    "results_2026_03_03/q1_revision/published_deep/summary.csv",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_F0_none_s7.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_F0_none_s17.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_F0_none_s42.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_FT_none_s7.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_FT_none_s17.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_FT_none_s42.json",
+    "results_2026_03_03/q1_revision/published_deep/CNN1D_FA_none_s42.json"
+   ],
+   "manuscript_blocks": [
+    144,
+    146
+   ],
+   "manuscript_phrases": [
+    "row 6: † 1-D CNN: 81 flow features | random | 0.874 | 0.485",
+    "row 7: † 1-D CNN + timestamp | random | 0.982 | 0.766",
+    "row 8: † 1-D CNN + all seven | random | 0.984 | 0.785",
+    "the CNN reaches an accuracy of 0.874 (0.873–0.875 over seeds 7, 17 and 42) and a macro-F1 of 0.485 (0.476–0.501)",
+    "with the timestamp, 0.982 (0.980–0.983) and 0.766 (0.742–0.792)",
+    "with all seven identifier columns (seed 42), 0.984 and 0.785",
+    "mean of seeds 7, 17 and 42, ranges in the text (all seven: seed 42 only)"
+   ]
+  },
+  {
+   "key": "study_random",
+   "label": "This study’s sample: random 80/20",
+   "note": "XGBoost, raw labels, CPU; 81 flow features; + timestamp (seconds since the first flow); + all five identifier columns; one run each",
+   "accuracy": {
+    "flow": 0.829428058144136,
+    "ts": 0.9983441357450217,
+    "all": 0.9988749498484077
+   },
+   "macro_f1": {
+    "flow": 0.5790640034116366,
+    "ts": 0.993288505291209,
+    "all": 0.9953947435779278
+   },
+   "printed_accuracy": {
+    "flow": "0.829",
+    "ts": "0.998",
+    "all": "0.999"
+   },
+   "printed_macro_f1": {
+    "flow": "0.579",
+    "ts": "0.993",
+    "all": "0.995"
+   },
+   "printed_gain_timestamp": {
+    "acc": "+0.169",
+    "f1": "+0.414"
+   },
+   "seed_range": {},
+   "per_seed": {},
+   "sources": [
+    "results_2026_03_03/identifier_leakage_v2/random_F0.json",
+    "results_2026_03_03/identifier_leakage_v2/random_F3.json",
+    "results_2026_03_03/identifier_leakage_v2/random_F4.json"
+   ],
+   "manuscript_blocks": [
+    142,
+    146
+   ],
+   "manuscript_phrases": [
+    "row 9: 81 flow features | random | 0.829 | 0.579",
+    "row 12: + timestamp | random | 0.998 | 0.993",
+    "row 13: + all five | random | 0.999 | 0.995",
+    "With the 81 flow features, XGBoost reaches an accuracy of 0.829 and a macro-F1 of 0.579",
+    "The timestamp alone raises them to 0.998 and 0.993, and all five identifiers together to 0.999 and 0.995"
+   ]
+  },
+  {
+   "key": "study_temporal",
+   "label": "This study’s sample: temporal split",
+   "note": "XGBoost, raw labels, CPU; 81 flow features; + timestamp (seconds since the first flow); + all five identifier columns; one run each",
+   "accuracy": {
+    "flow": 0.6542870588581324,
+    "ts": 0.7772111782288514,
+    "all": 0.793814546697893
+   },
+   "macro_f1": {
+    "flow": 0.42549810952760836,
+    "ts": 0.6813768895126928,
+    "all": 0.7120240689070712
+   },
+   "printed_accuracy": {
+    "flow": "0.654",
+    "ts": "0.777",
+    "all": "0.794"
+   },
+   "printed_macro_f1": {
+    "flow": "0.425",
+    "ts": "0.681",
+    "all": "0.712"
+   },
+   "printed_gain_timestamp": {
+    "acc": "+0.123",
+    "f1": "+0.256"
+   },
+   "seed_range": {},
+   "per_seed": {},
+   "sources": [
+    "results_2026_03_03/identifier_leakage_v2/temporal_F0.json",
+    "results_2026_03_03/identifier_leakage_v2/temporal_F3.json",
+    "results_2026_03_03/identifier_leakage_v2/temporal_F4.json"
+   ],
+   "manuscript_blocks": [
+    142,
+    146
+   ],
+   "manuscript_phrases": [
+    "row 14: 81 flow features | temporal | 0.654 | 0.425",
+    "row 17: + timestamp | temporal | 0.777 | 0.681",
+    "row 18: + all five | temporal | 0.794 | 0.712",
+    "the identifiers raise macro-F1 from 0.425 to 0.712"
+   ]
+  },
+  {
+   "key": "cicids",
+   "label": "CICIDS2017: random 80/20",
+   "note": "77 flow features; + destination port and timestamp; + all seven identifier columns; balanced class weights; accuracy printed to four decimals as in Table 21",
+   "accuracy": {
+    "flow": 0.9988725940338403,
+    "ts": 0.9998408902870339,
+    "all": 0.9999363561148136
+   },
+   "macro_f1": {
+    "flow": 0.9620360186524846,
+    "ts": 0.9920685309845474,
+    "all": 0.9966067391099606
+   },
+   "printed_accuracy": {
+    "flow": "0.9989",
+    "ts": "0.9998",
+    "all": "0.9999"
+   },
+   "printed_macro_f1": {
+    "flow": "0.962",
+    "ts": "0.992",
+    "all": "0.997"
+   },
+   "printed_gain_timestamp": {
+    "acc": "+0.0009",
+    "f1": "+0.030"
+   },
+   "seed_range": {},
+   "per_seed": {},
+   "sources": [
+    "results_2026_03_03/q1_revision/cicids2017/identifiers_F0.json",
+    "results_2026_03_03/q1_revision/cicids2017/identifiers_FT.json",
+    "results_2026_03_03/q1_revision/cicids2017/identifiers_FA.json"
+   ],
+   "manuscript_blocks": [
+    148,
+    149
+   ],
+   "manuscript_phrases": [
+    "row 1: Flow features (77) | random 80/20 | 0.9989 | 0.962",
+    "row 3: + port, timestamp | random 80/20 | 0.9998 | 0.992",
+    "row 4: + all seven identifiers | random 80/20 | 0.9999 | 0.997",
+    "XGBoost reaches an accuracy of 0.9989 and a macro-F1 of 0.962",
+    "with the timestamp in addition to 0.992 and with all seven identifier columns to 0.997",
+    "2,199,736 of the 2,830,743 labelled flows remain in 11 classes"
+   ]
+  }
+ ],
+ "reference_lines": {
+  "acc": [
+   {
+    "x": 0.991,
+    "who": "Hossain (2025)",
+    "label": "0.991"
+   },
+   {
+    "x": 0.9997,
+    "who": "Ghosh et al. (2025)",
+    "label": "0.9997"
+   }
+  ],
+  "f1": [
+   {
+    "x": 0.947,
+    "who": "Hossain (2025), computed from per-class F1",
+    "label": "0.947"
+   }
+  ]
+ },
+ "panels": {
+  "a": {
+   "metric": "Accuracy",
+   "axes_cm": [
+    4.138,
+    1.05,
+    3.512,
+    3.54
+   ]
+  },
+  "b": {
+   "metric": "Macro-F1",
+   "axes_cm": [
+    11.189,
+    1.05,
+    3.512,
+    3.54
+   ]
+  }
+ },
+ "point_sets": {
+  "flow": "flow features",
+  "ts": "+ timestamp",
+  "all": "+ all identifier columns"
+ },
+ "png": "(manuscript source)",
+ "script": "(manuscript source)",
+ "caption": "Figure. 4 Accuracy (left) and macro-F1 (right): flow features alone (grey), gain from the timestamp (blue) and from the other identifier columns (vermillion); right of each panel: timestamp gain and final value. *Approximated published setting (Section 4.3); 1‑D CNN: mean of seeds 7, 17 and 42 (whiskers: range). CICIDS2017: 77 flow features; its timestamp step also adds the destination port. Dashed line and band: published accuracy 0.991 [@hossain2025] to 0.9997 [@ghosh2025]; right panel: macro-F1 0.947 computed from [@hossain2025]"
+}

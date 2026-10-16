@@ -1,0 +1,14 @@
+{
+ "commit_at_build": "094897a2b6cf84b8b76693ceaeed0fdb7f71b801",
+ "sample_definition": "results_2026_03_03/q1_revision/export_flags/flow_flags.csv.gz",
+ "sample_sha256": "74e7e78ee49d6af6332ef671e30249227046febffa74cdb5ed6f17d1bb873576",
+ "runs": 589,
+ "runs_with_predictions": 505,
+ "runs_with_stored_model": 0,
+ "files": [
+  "runs.csv",
+  "analyses.csv",
+  "figures.csv",
+  "paper_map.csv"
+ ]
+}

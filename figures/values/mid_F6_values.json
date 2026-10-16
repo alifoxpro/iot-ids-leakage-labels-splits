@@ -1,0 +1,2896 @@
+{
+ "figure": {
+  "id": "F6",
+  "printed": "Fig. 6",
+  "file": "mid_F6.png",
+  "size_cm": [
+   17.0,
+   13.15
+  ],
+  "dpi": 600,
+  "design": "effect table (a) + held-out sub-attacks (b); chosen by the author on 2026-10-02",
+  "min_font_pt": 10.0,
+  "encoding": {
+   "a": "cells print the estimate (computed before rounding); split loss = random minus temporal macro-F1 (orange, darker = larger), cleaning gain = R1 minus raw macro-F1 (blue > 0, red < 0)",
+   "upright, no double dagger": "the seeds, cuts or runs and, where computed, the 95% block-bootstrap interval lie on one side of 0",
+   "italic": "a single run (seed 42) without interval",
+   "double dagger": "the seeds, cuts or runs or the interval do not lie on one side of 0",
+   "dagger": "trained after all rules, scored on the test flows that no rule flags (one cell across both split-loss columns)",
+   "en dash": "not run or not shown",
+   "b": "recall of the true class, seen in training (filled) vs held out (open); XGBoost, temporal split; sub-attacks with raw labels, means with raw labels and R1"
+  },
+  "notes_a": [
+   "Split loss: random − temporal split; cleaning gain: R1 − raw labels. Single runs",
+   "with seed 42 unless seeds, cuts or runs are given (then means). Upright, no ‡: the",
+   "seeds, cuts or runs and, where computed, the 95% block-bootstrap interval lie on",
+   "one side of 0; ‡: they do not; italic: one run, no interval; –: not run or not shown;",
+   "†: trained after all rules, scored on test flows that no rule flags.",
+   "Shading: orange, split loss (darker = larger); blue, positive and red, negative gain."
+  ],
+  "notes_b": [
+   "Held-out flows assigned to",
+   "any attack class (mean):",
+   "0.85 raw, 0.84 R1"
+  ]
+ },
+ "table_a": [
+  {
+   "group": "Main protocol",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": {
+     "printed": "0.152",
+     "style": "resolved",
+     "est": 0.1523306365490935,
+     "lo": 0.1262,
+     "hi": 0.17569,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.164",
+     "style": "resolved",
+     "est": 0.164408985155722,
+     "lo": 0.13604,
+     "hi": 0.19019,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_random": {
+     "printed": "+0.047",
+     "style": "resolved",
+     "est": 0.04715976545809197,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": [
+      0.025503,
+      0.069475
+     ]
+    },
+    "b_temporal": {
+     "printed": "+0.035",
+     "style": "resolved",
+     "est": 0.03508141685146349,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": [
+      0.004302,
+      0.067987
+     ]
+    }
+   }
+  },
+  {
+   "group": "Main protocol",
+   "label": "LightGBM (5 seeds)",
+   "cells": {
+    "a_raw": {
+     "printed": "0.163",
+     "style": "resolved",
+     "est": 0.16341854318459015,
+     "lo": 0.16147362244002067,
+     "hi": 0.16509216337574412,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.137644,
+      0.187864
+     ]
+    },
+    "a_r1": {
+     "printed": "0.107",
+     "style": "resolved",
+     "est": 0.10700738731847492,
+     "lo": 0.0183397888658694,
+     "hi": 0.15000469016517048,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.058205,
+      0.150406
+     ]
+    },
+    "b_random": {
+     "printed": "−0.059",
+     "style": "resolved",
+     "est": -0.059392504544016754,
+     "lo": -0.1074495108375077,
+     "hi": -0.02709326501498166,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      -0.09558,
+      -0.024043
+     ]
+    },
+    "b_temporal": {
+     "printed": "−0.003‡",
+     "style": "mixed",
+     "est": -0.002981348677901541,
+     "lo": -0.039338092913848044,
+     "hi": 0.03930286367236702,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      -0.040277,
+      0.036283
+     ]
+    }
+   }
+  },
+  {
+   "group": "Main protocol",
+   "label": "Random forest (5 seeds)",
+   "cells": {
+    "a_raw": {
+     "printed": "0.174",
+     "style": "resolved",
+     "est": 0.1744529806384029,
+     "lo": 0.17382945607608674,
+     "hi": 0.17557312726153285,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.1474,
+      0.200388
+     ]
+    },
+    "a_r1": {
+     "printed": "0.200",
+     "style": "resolved",
+     "est": 0.1997619625161146,
+     "lo": 0.19777928124198674,
+     "hi": 0.20270761821895972,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.168801,
+      0.233777
+     ]
+    },
+    "b_random": {
+     "printed": "+0.065",
+     "style": "resolved",
+     "est": 0.06523748427918145,
+     "lo": 0.06338700735897129,
+     "hi": 0.06720112018045288,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.038792,
+      0.093889
+     ]
+    },
+    "b_temporal": {
+     "printed": "+0.040",
+     "style": "resolved",
+     "est": 0.039928502401469744,
+     "lo": 0.0387210043284289,
+     "hi": 0.040971262165338584,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "block_bootstrap_95": [
+      0.006583,
+      0.072996
+     ]
+    }
+   }
+  },
+  {
+   "group": "Split seeds and cut points",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": {
+     "printed": "0.155",
+     "style": "resolved",
+     "est": 0.15455328373845204,
+     "lo": 0.14596990717464325,
+     "hi": 0.1647061979514648,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.159",
+     "style": "resolved",
+     "est": 0.1591430851640957,
+     "lo": 0.14841641297500185,
+     "hi": 0.1656905795155259,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "block_bootstrap_95": null
+    },
+    "b_random": {
+     "printed": "+0.046",
+     "style": "resolved",
+     "est": 0.046019375332581915,
+     "lo": 0.04398506310703154,
+     "hi": 0.04771362128349632,
+     "kind": "range",
+     "n": 5,
+     "runs": "split seeds 42, 1-4; training-median imputation",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.044",
+     "style": "resolved",
+     "est": 0.04438365904364309,
+     "lo": 0.034942380455955546,
+     "hi": 0.05089752182535029,
+     "kind": "range",
+     "n": 3,
+     "runs": "cuts 60/20/20, 70/15/15, 80/10/10; training-median imputation",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Split seeds and cut points",
+   "label": "Random forest",
+   "cells": {
+    "b_random": "–",
+    "b_temporal": "–",
+    "a_raw": {
+     "printed": "0.177",
+     "style": "resolved",
+     "est": 0.17686463385794887,
+     "lo": 0.16760725789301512,
+     "hi": 0.18798574341312924,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.198",
+     "style": "resolved",
+     "est": 0.1980579862562027,
+     "lo": 0.19046449008820027,
+     "hi": 0.21040932236001508,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Day-disjoint split",
+   "label": "XGBoost",
+   "cells": {
+    "b_random": "–",
+    "a_raw": {
+     "printed": "0.126",
+     "style": "single",
+     "est": 0.12563314212017096,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.147",
+     "style": "single",
+     "est": 0.1465877963275044,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.026",
+     "style": "single",
+     "est": 0.026205111250758528,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; day-disjoint split",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Day-disjoint split",
+   "label": "Random forest",
+   "cells": {
+    "b_random": "–",
+    "a_raw": {
+     "printed": "0.149",
+     "style": "single",
+     "est": 0.14912734041178577,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.198",
+     "style": "single",
+     "est": 0.19780918520630908,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.015",
+     "style": "single",
+     "est": 0.015259212889528362,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; day-disjoint split",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Class weights",
+   "label": "XGBoost, no weights",
+   "cells": {
+    "a_r1": "–",
+    "b_random": "–",
+    "b_temporal": "–",
+    "a_raw": {
+     "printed": "0.174",
+     "style": "single",
+     "est": 0.1744664651318838,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; no class weights",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Class weights",
+   "label": "XGBoost, square-root weights",
+   "cells": {
+    "a_r1": "–",
+    "b_random": "–",
+    "b_temporal": "–",
+    "a_raw": {
+     "printed": "0.183",
+     "style": "single",
+     "est": 0.18323570210994172,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; square-root weights",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "30 fixed epochs",
+   "label": "3 networks × 2 seeds",
+   "cells": {
+    "b_random": "–",
+    "a_raw": {
+     "printed": "0.136",
+     "style": "resolved",
+     "est": 0.13649499965415535,
+     "lo": 0.1213278662187644,
+     "hi": 0.14892048336336605,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "block_bootstrap_95": null
+    },
+    "a_r1": {
+     "printed": "0.147",
+     "style": "resolved",
+     "est": 0.14710006665671996,
+     "lo": 0.1332056909483062,
+     "hi": 0.16721197078958255,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.053",
+     "style": "resolved",
+     "est": 0.05306260354811101,
+     "lo": 0.0459439840153682,
+     "hi": 0.057788726221728204,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.032",
+     "style": "resolved",
+     "est": 0.03235542886740839,
+     "lo": 0.02488,
+     "hi": 0.04075,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.058",
+     "style": "resolved",
+     "est": 0.05758675346736142,
+     "lo": 0.04623,
+     "hi": 0.06971,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "Random forest",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.047",
+     "style": "resolved",
+     "est": 0.04670314814498577,
+     "lo": 0.03809,
+     "hi": 0.0552,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.049",
+     "style": "resolved",
+     "est": 0.04910160616194276,
+     "lo": 0.03915,
+     "hi": 0.05821,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "LightGBM (3 seeds)",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "−0.060",
+     "style": "resolved",
+     "est": -0.0600120714133174,
+     "lo": -0.08490352638508958,
+     "hi": -0.02695260057479798,
+     "kind": "range",
+     "n": 3,
+     "runs": "seeds 42, 17, 7",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.003‡",
+     "style": "mixed",
+     "est": 0.002803271867471905,
+     "lo": -0.03696693801741174,
+     "hi": 0.04134861063307965,
+     "kind": "range",
+     "n": 3,
+     "runs": "seeds 42, 17, 7",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Training-only cleaning, unflagged test flows",
+   "label": "XGBoost",
+   "cells": {
+    "a_all_rules": {
+     "printed": "all rules: 0.189†",
+     "style": "single",
+     "est": 0.1893651390262019,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; trained after all rules",
+     "block_bootstrap_95": null
+    },
+    "b_random": {
+     "printed": "+0.023",
+     "style": "resolved",
+     "est": 0.023028475430409534,
+     "lo": 0.014872,
+     "hi": 0.032728,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.054",
+     "style": "resolved",
+     "est": 0.053516928235340155,
+     "lo": 0.043103,
+     "hi": 0.065313,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Training-only cleaning, unflagged test flows",
+   "label": "Random forest",
+   "cells": {
+    "a_all_rules": {
+     "printed": "all rules: 0.223†",
+     "style": "single",
+     "est": 0.22298948401334862,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; trained after all rules",
+     "block_bootstrap_95": null
+    },
+    "b_random": {
+     "printed": "+0.059",
+     "style": "resolved",
+     "est": 0.05948070807057204,
+     "lo": 0.044183,
+     "hi": 0.076516,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.073",
+     "style": "resolved",
+     "est": 0.07346098388966915,
+     "lo": 0.062567,
+     "hi": 0.084809,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Symmetric R1",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.044",
+     "style": "single",
+     "est": 0.044315350945323795,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "−0.006",
+     "style": "single",
+     "est": -0.006396277957107899,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Symmetric R1",
+   "label": "Random forest",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.047",
+     "style": "single",
+     "est": 0.046628313363711205,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "−0.005",
+     "style": "single",
+     "est": -0.005069724325884206,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Relabelling",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.028",
+     "style": "single",
+     "est": 0.027897390728975235,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.055",
+     "style": "single",
+     "est": 0.054780549959062286,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Relabelling",
+   "label": "Random forest",
+   "cells": {
+    "a_raw": "–",
+    "a_r1": "–",
+    "b_random": {
+     "printed": "+0.048",
+     "style": "single",
+     "est": 0.04752982417933205,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "block_bootstrap_95": null
+    },
+    "b_temporal": {
+     "printed": "+0.065",
+     "style": "single",
+     "est": 0.06482349600374304,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "Attack classes only",
+   "label": "XGBoost",
+   "cells": {
+    "a_raw": {
+     "printed": "0.145",
+     "style": "resolved",
+     "est": 0.1451,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "block_bootstrap_95": [
+      0.121389,
+      0.16772
+     ]
+    },
+    "a_r1": {
+     "printed": "0.180",
+     "style": "resolved",
+     "est": 0.18017142857142865,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "block_bootstrap_95": [
+      0.149872,
+      0.21071
+     ]
+    },
+    "b_random": {
+     "printed": "+0.032",
+     "style": "resolved",
+     "est": 0.03207142857142853,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "block_bootstrap_95": [
+      0.009413,
+      0.056503
+     ]
+    },
+    "b_temporal": {
+     "printed": "−0.003‡",
+     "style": "mixed",
+     "est": -0.0030000000000001137,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "block_bootstrap_95": [
+      -0.034769,
+      0.030787
+     ]
+    }
+   }
+  },
+  {
+   "group": "Attack classes only",
+   "label": "Random forest (5 seeds)",
+   "cells": {
+    "a_raw": {
+     "printed": "0.173",
+     "style": "resolved",
+     "est": 0.17331892883807862,
+     "lo": 0.1726421534384604,
+     "hi": 0.1746999999999999,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "block_bootstrap_95": [
+      0.147393,
+      0.19824
+     ]
+    },
+    "a_r1": {
+     "printed": "0.219",
+     "style": "resolved",
+     "est": 0.21850353206055476,
+     "lo": 0.2160428571428572,
+     "hi": 0.22194285714285705,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "block_bootstrap_95": [
+      0.183671,
+      0.255751
+     ]
+    },
+    "b_random": {
+     "printed": "+0.053",
+     "style": "resolved",
+     "est": 0.05250870652005442,
+     "lo": 0.05040000000000011,
+     "hi": 0.05464285714285699,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "block_bootstrap_95": [
+      0.024534,
+      0.08277
+     ]
+    },
+    "b_temporal": {
+     "printed": "+0.007‡",
+     "style": "mixed",
+     "est": 0.007324103297578289,
+     "lo": 0.005814285714285772,
+     "hi": 0.008135695748797245,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "block_bootstrap_95": [
+      -0.026663,
+      0.042177
+     ]
+    }
+   }
+  },
+  {
+   "group": "CICIDS2017",
+   "label": "XGBoost, 77 flow features",
+   "cells": {
+    "a_r1": "–",
+    "b_random": "–",
+    "b_temporal": "–",
+    "a_raw": {
+     "printed": "0.098",
+     "style": "single",
+     "est": 0.09840140076696091,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; 77 flow features; original labels",
+     "block_bootstrap_95": null
+    }
+   }
+  },
+  {
+   "group": "CICIDS2017",
+   "label": "XGBoost, + destination port",
+   "cells": {
+    "a_r1": "–",
+    "b_random": "–",
+    "b_temporal": "–",
+    "a_raw": {
+     "printed": "0.105",
+     "style": "single",
+     "est": 0.10518611299335767,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; 78 features (+ destination port)",
+     "block_bootstrap_95": null
+    }
+   }
+  }
+ ],
+ "panel_b_printed": {
+  "mean_r1": "0.56 → 0.22",
+  "mean_raw": "0.48 → 0.20",
+  "DoS SYN Flood": "0.95 → 0.61",
+  "DDoS ACK Frag.": "0.94 → 0.55",
+  "DDoS HTTP Flood": "0.94 → 0.12",
+  "Uploading": "0.55 → 0.26",
+  "XSS": "0.49 → 0.28",
+  "DoS HTTP Flood": "0.44 → 0.00",
+  "ARP Spoofing": "0.38 → 0.21",
+  "DNS Spoofing": "0.33 → 0.19",
+  "DoS UDP Flood": "0.28 → 0.02",
+  "DDoS ICMP Frag.": "0.19 → 0.03",
+  "DDoS ICMP Flood": "0.12 → 0.06",
+  "SQL Injection": "0.11 → 0.07"
+ },
+ "band_a_range_of_main_means_8_models": {
+  "lo": 0.10389031863840877,
+  "hi": 0.1997619625161146,
+  "lo_at": "MLP, raw labels",
+  "hi_at": "random forest, R1"
+ },
+ "band_b_range_of_main_means_8_models": {
+  "lo": -0.059392504544016754,
+  "hi": 0.07778772300721229,
+  "lo_at": "LightGBM, random split",
+  "hi_at": "Transformer, random split"
+ },
+ "rows": [
+  {
+   "row": 1,
+   "group": "Main protocol",
+   "label": "XGBoost (seed 42)",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.1523306365490935,
+     "lo": 0.1262,
+     "hi": 0.17569,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "0.152 (XGBoost), 0.163 (LightGBM) and 0.174 (random forest), in every seed of every model"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "analyses/c_block_bootstrap_effects.csv (block5000)"
+     },
+     "printed": "0.152"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.164408985155722,
+     "lo": 0.13604,
+     "hi": 0.19019,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (Table 12: 0.626 - 0.462)"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "analyses/c_block_bootstrap_effects.csv (block5000)"
+     },
+     "printed": "0.164"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.04715976545809197,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "by 0.047 to"
+     },
+     "bar_src": null,
+     "bci": [
+      0.025503,
+      0.069475
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.047"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.03508141685146349,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "cleaning adds 0.035 to 0.040 for ResNet1D, GRU, XGBoost and the random forest"
+     },
+     "bar_src": null,
+     "bci": [
+      0.004302,
+      0.067987
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.035"
+    }
+   ]
+  },
+  {
+   "row": 2,
+   "group": "Main protocol",
+   "label": "LightGBM (5 seeds)",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.16341854318459015,
+     "lo": 0.16147362244002067,
+     "hi": 0.16509216337574412,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "0.152 (XGBoost), 0.163 (LightGBM) and 0.174 (random forest), in every seed of every model"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      0.137644,
+      0.187864
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.163"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.10700738731847492,
+     "lo": 0.0183397888658694,
+     "hi": 0.15000469016517048,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "with R1 the mean loss ranges from 0.107 (LightGBM; 0.018 to 0.150 for its five seeds) to 0.200 (random forest)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "with R1 the mean loss ranges from 0.107 (LightGBM; 0.018 to 0.150 for its five seeds) to 0.200 (random forest)"
+     },
+     "bci": [
+      0.058205,
+      0.150406
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.107"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": -0.059392504544016754,
+     "lo": -0.1074495108375077,
+     "hi": -0.02709326501498166,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "LightGBM loses 0.059 (0.027 to 0.107, negative for all five seeds)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "LightGBM loses 0.059 (0.027 to 0.107, negative for all five seeds)"
+     },
+     "bci": [
+      -0.09558,
+      -0.024043
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "−0.059"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": -0.002981348677901541,
+     "lo": -0.039338092913848044,
+     "hi": 0.03930286367236702,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "for LightGBM (mean -0.003;"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      -0.040277,
+      0.036283
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "−0.003"
+    }
+   ]
+  },
+  {
+   "row": 3,
+   "group": "Main protocol",
+   "label": "Random forest (5 seeds)",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.1744529806384029,
+     "lo": 0.17382945607608674,
+     "hi": 0.17557312726153285,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "0.152 (XGBoost), 0.163 (LightGBM) and 0.174 (random forest), in every seed of every model"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      0.1474,
+      0.200388
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.174"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.1997619625161146,
+     "lo": 0.19777928124198674,
+     "hi": 0.20270761821895972,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "with R1 the mean loss ranges from 0.107 (LightGBM; 0.018 to 0.150 for its five seeds) to 0.200 (random forest)"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      0.168801,
+      0.233777
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.200"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.06523748427918145,
+     "lo": 0.06338700735897129,
+     "hi": 0.06720112018045288,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      0.038792,
+      0.093889
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.065"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.039928502401469744,
+     "lo": 0.0387210043284289,
+     "hi": 0.040971262165338584,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 105,
+      "phrase": "cleaning adds 0.035 to 0.040 for ResNet1D, GRU, XGBoost and the random forest"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv"
+     },
+     "bci": [
+      0.006583,
+      0.072996
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.040"
+    }
+   ]
+  },
+  {
+   "row": 4,
+   "group": "Split seeds and cut points",
+   "label": "XGBoost",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.15455328373845204,
+     "lo": 0.14596990717464325,
+     "hi": 0.1647061979514648,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/split_replication/splits/*.json (mean of the 15 pairs)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "across all 15 combinations of seed and cut, the temporal split costs 0.146 to 0.165 (raw labels) and 0.148 to 0.166 (R1) for XGBoost and 0.168 to 0.188 and 0.190 to 0.210 for the random forest"
+     },
+     "printed": "0.155"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.1591430851640957,
+     "lo": 0.14841641297500185,
+     "hi": 0.1656905795155259,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/split_replication/splits/*.json (mean of the 15 pairs)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "across all 15 combinations of seed and cut, the temporal split costs 0.146 to 0.165 (raw labels) and 0.148 to 0.166 (R1) for XGBoost and 0.168 to 0.188 and 0.190 to 0.210 for the random forest"
+     },
+     "printed": "0.159"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.046019375332581915,
+     "lo": 0.04398506310703154,
+     "hi": 0.04771362128349632,
+     "kind": "range",
+     "n": 5,
+     "runs": "split seeds 42, 1-4; training-median imputation",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 99,
+      "phrase": "R1 | +0.046 ± 0.002 | +0.080 ± 0.004 | +0.044 ± 0.008 | +0.055 ± 0.007"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/variant_seeds/runs.csv"
+     },
+     "printed": "+0.046"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.04438365904364309,
+     "lo": 0.034942380455955546,
+     "hi": 0.05089752182535029,
+     "kind": "range",
+     "n": 3,
+     "runs": "cuts 60/20/20, 70/15/15, 80/10/10; training-median imputation",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 99,
+      "phrase": "R1 | +0.046 ± 0.002 | +0.080 ± 0.004 | +0.044 ± 0.008 | +0.055 ± 0.007"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 97,
+      "phrase": "R1 and R2 raise macro-F1 at every cut, by 0.035 to 0.051"
+     },
+     "printed": "+0.044"
+    }
+   ]
+  },
+  {
+   "row": 5,
+   "group": "Split seeds and cut points",
+   "label": "Random forest",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.17686463385794887,
+     "lo": 0.16760725789301512,
+     "hi": 0.18798574341312924,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/split_replication/splits/*.json (mean of the 15 pairs)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "across all 15 combinations of seed and cut, the temporal split costs 0.146 to 0.165 (raw labels) and 0.148 to 0.166 (R1) for XGBoost and 0.168 to 0.188 and 0.190 to 0.210 for the random forest"
+     },
+     "printed": "0.177"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.1980579862562027,
+     "lo": 0.19046449008820027,
+     "hi": 0.21040932236001508,
+     "kind": "range",
+     "n": 15,
+     "runs": "split seeds 42, 1-4 x cuts 60/20/20, 70/15/15, 80/10/10 (15 pairs)",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/split_replication/splits/*.json (mean of the 15 pairs)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "across all 15 combinations of seed and cut, the temporal split costs 0.146 to 0.165 (raw labels) and 0.148 to 0.166 (R1) for XGBoost and 0.168 to 0.188 and 0.190 to 0.210 for the random forest"
+     },
+     "printed": "0.198"
+    }
+   ],
+   "b_cleaning_gain": []
+  },
+  {
+   "row": 6,
+   "group": "Day-disjoint split",
+   "label": "XGBoost",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.12563314212017096,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "0.126"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.1465877963275044,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "0.147"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.026205111250758528,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; day-disjoint split",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "+0.026"
+    }
+   ]
+  },
+  {
+   "row": 7,
+   "group": "Day-disjoint split",
+   "label": "Random forest",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.14912734041178577,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "0.149"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.19780918520630908,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "0.198"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.015259212889528362,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; day-disjoint split",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/day_disjoint/*_day_*_s42.json and split_replication random s42 (levels in Table 7 / [91])"
+     },
+     "bar_src": null,
+     "printed": "+0.015"
+    }
+   ]
+  },
+  {
+   "row": 8,
+   "group": "Class weights",
+   "label": "XGBoost: none / √",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.1744664651318838,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; no class weights",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "the temporal split costs 0.174 and 0.183 macro-F1 with these weightings, against 0.152 with balanced weights"
+     },
+     "bar_src": null,
+     "printed": "0.174"
+    },
+    {
+     "pos": "bot",
+     "cond": "raw",
+     "est": 0.18323570210994172,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; square-root weights",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 90,
+      "phrase": "the temporal split costs 0.174 and 0.183 macro-F1 with these weightings, against 0.152 with balanced weights"
+     },
+     "bar_src": null,
+     "printed": "0.183"
+    }
+   ],
+   "b_cleaning_gain": []
+  },
+  {
+   "row": 9,
+   "group": "30 fixed epochs",
+   "label": "3 networks × 2 seeds",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.13649499965415535,
+     "lo": 0.1213278662187644,
+     "hi": 0.14892048336336605,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed; mean of 6)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 107,
+      "phrase": "lowers macro-F1 by 0.121 to 0.149 with raw labels (0.116 to 0.138 with early stopping) and by 0.133 to 0.167 with R1"
+     },
+     "printed": "0.136"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.14710006665671996,
+     "lo": 0.1332056909483062,
+     "hi": 0.16721197078958255,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed; mean of 6)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 107,
+      "phrase": "lowers macro-F1 by 0.121 to 0.149 with raw labels (0.116 to 0.138 with early stopping) and by 0.133 to 0.167 with R1"
+     },
+     "printed": "0.147"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.05306260354811101,
+     "lo": 0.0459439840153682,
+     "hi": 0.057788726221728204,
+     "kind": "range",
+     "n": 6,
+     "runs": "ResNet1D, GRU, Transformer x seeds 17, 42 (6 runs), temporal split; vs early-stopped random-split runs",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed; mean of 6)"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 107,
+      "phrase": "(0.046 to 0.058 per seed)"
+     },
+     "printed": "+0.053"
+    }
+   ]
+  },
+  {
+   "row": 10,
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "XGBoost",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.03235542886740839,
+     "lo": 0.02488,
+     "hi": 0.04075,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "printed": "+0.032"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.05758675346736142,
+     "lo": 0.04623,
+     "hi": 0.06971,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "printed": "+0.058"
+    }
+   ]
+  },
+  {
+   "row": 11,
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "Random forest",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.04670314814498577,
+     "lo": 0.03809,
+     "hi": 0.0552,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "printed": "+0.047"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.04910160616194276,
+     "lo": 0.03915,
+     "hi": 0.05821,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 116,
+      "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+     },
+     "printed": "+0.049"
+    }
+   ]
+  },
+  {
+   "row": 12,
+   "group": "Training-only cleaning, R1 test flows",
+   "label": "LightGBM (3 seeds)",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": -0.0600120714133174,
+     "lo": -0.08490352638508958,
+     "hi": -0.02695260057479798,
+     "kind": "range",
+     "n": 3,
+     "runs": "seeds 42, 17, 7",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 119,
+      "phrase": "For LightGBM it costs 0.060 under the random split (mean of three seeds, all negative) and changes macro-F1 by +0.003 on average under the temporal split, where the seeds range from -0.037 to +0.041"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "tree_protocol/decomp/LightGBM_* (seeds 42, 17, 7)"
+     },
+     "printed": "−0.060"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.002803271867471905,
+     "lo": -0.03696693801741174,
+     "hi": 0.04134861063307965,
+     "kind": "range",
+     "n": 3,
+     "runs": "seeds 42, 17, 7",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 119,
+      "phrase": "For LightGBM it costs 0.060 under the random split (mean of three seeds, all negative) and changes macro-F1 by +0.003 on average under the temporal split, where the seeds range from -0.037 to +0.041"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 119,
+      "phrase": "For LightGBM it costs 0.060 under the random split (mean of three seeds, all negative) and changes macro-F1 by +0.003 on average under the temporal split, where the seeds range from -0.037 to +0.041"
+     },
+     "printed": "+0.003"
+    }
+   ]
+  },
+  {
+   "row": 13,
+   "group": "Training-only cleaning, unflagged test flows",
+   "label": "XGBoost",
+   "a_split_loss": [
+    {
+     "pos": "mid",
+     "cond": "all",
+     "est": 0.1893651390262019,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; trained after all rules",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 140,
+      "phrase": "XGBoost trained after all rules (Table 11) still loses 0.19 macro-F1 under the temporal split (0.669 to 0.479)"
+     },
+     "bar_src": null,
+     "printed": "0.189"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.023028475430409534,
+     "lo": 0.014872,
+     "hi": 0.032728,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "printed": "+0.023"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.053516928235340155,
+     "lo": 0.043103,
+     "hi": 0.065313,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "printed": "+0.054"
+    }
+   ]
+  },
+  {
+   "row": 14,
+   "group": "Training-only cleaning, unflagged test flows",
+   "label": "Random forest",
+   "a_split_loss": [
+    {
+     "pos": "mid",
+     "cond": "all",
+     "est": 0.22298948401334862,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; trained after all rules",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/cleaning_train_only/*_train-All_test-All.json"
+     },
+     "bar_src": null,
+     "printed": "0.223"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.05948070807057204,
+     "lo": 0.044183,
+     "hi": 0.076516,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "printed": "+0.059"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.07346098388966915,
+     "lo": 0.062567,
+     "hi": 0.084809,
+     "kind": "ci",
+     "n": 1,
+     "runs": "seed 42",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "bar_src": {
+      "source": "full manuscript",
+      "block": 102,
+      "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+     },
+     "printed": "+0.073"
+    }
+   ]
+  },
+  {
+   "row": 15,
+   "group": "Symmetric R1",
+   "label": "XGBoost",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.044315350945323795,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (sym minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.044"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": -0.006396277957107899,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (sym minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "−0.006"
+    }
+   ]
+  },
+  {
+   "row": 16,
+   "group": "Symmetric R1",
+   "label": "Random forest",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.046628313363711205,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (sym minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.047"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": -0.005069724325884206,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; symmetric R1 minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (sym minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "−0.005"
+    }
+   ]
+  },
+  {
+   "row": 17,
+   "group": "Relabelling",
+   "label": "XGBoost",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.027897390728975235,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (relabel minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.028"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.054780549959062286,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (relabel minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.055"
+    }
+   ]
+  },
+  {
+   "row": 18,
+   "group": "Relabelling",
+   "label": "Random forest",
+   "a_split_loss": [],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.04752982417933205,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (relabel minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.048"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.06482349600374304,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; relabelled minus raw",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/symmetric_r1/summary.csv (relabel minus raw; levels in Table 17 / [121])"
+     },
+     "bar_src": null,
+     "printed": "+0.065"
+    }
+   ]
+  },
+  {
+   "row": 19,
+   "group": "Attack classes only",
+   "label": "XGBoost",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.1451,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1; Table 17 levels for seed 42)"
+     },
+     "bar_src": null,
+     "bci": [
+      0.121389,
+      0.16772
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.145"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.18017142857142865,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1; Table 17 levels for seed 42)"
+     },
+     "bar_src": null,
+     "bci": [
+      0.149872,
+      0.21071
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.180"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.03207142857142853,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 114,
+      "phrase": "R1 raises it under the random split for every model except LightGBM (by 0.032 to 0.060, in every seed)"
+     },
+     "bar_src": null,
+     "bci": [
+      0.009413,
+      0.056503
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.032"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": -0.0030000000000001137,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; macro-F1 over the 7 attack classes",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 114,
+      "phrase": "-0.030 (LightGBM) to +0.007 (random forest; XGBoost -0.003, the Transformer -0.011)"
+     },
+     "bar_src": null,
+     "bci": [
+      -0.034769,
+      0.030787
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "−0.003"
+    }
+   ]
+  },
+  {
+   "row": 20,
+   "group": "Attack classes only",
+   "label": "Random forest (5 seeds)",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.17331892883807862,
+     "lo": 0.1726421534384604,
+     "hi": 0.1746999999999999,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 114,
+      "phrase": "The temporal split lowers it by 0.11 to 0.17 with raw labels for the six models, in every seed"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bci": [
+      0.147393,
+      0.19824
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.173"
+    },
+    {
+     "pos": "bot",
+     "cond": "r1",
+     "est": 0.21850353206055476,
+     "lo": 0.2160428571428572,
+     "hi": 0.22194285714285705,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bci": [
+      0.183671,
+      0.255751
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "0.219"
+    }
+   ],
+   "b_cleaning_gain": [
+    {
+     "pos": "top",
+     "cond": "random",
+     "est": 0.05250870652005442,
+     "lo": 0.05040000000000011,
+     "hi": 0.05464285714285699,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "est_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bci": [
+      0.024534,
+      0.08277
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.053"
+    },
+    {
+     "pos": "bot",
+     "cond": "temporal",
+     "est": 0.007324103297578289,
+     "lo": 0.005814285714285772,
+     "hi": 0.008135695748797245,
+     "kind": "range",
+     "n": 5,
+     "runs": "seeds 7, 17, 42, 123, 2024; 7 attack classes",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 114,
+      "phrase": "-0.030 (LightGBM) to +0.007 (random forest; XGBoost -0.003, the Transformer -0.011)"
+     },
+     "bar_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (attack_macro_f1)"
+     },
+     "bci": [
+      -0.026663,
+      0.042177
+     ],
+     "bci_src": {
+      "source": "recomputed from the result files (not printed in the full manuscript)",
+      "from": "q1_revision/tree_seeds/summary_boot_effects.csv (block5000, ci_seeds_test, B = 2,000)"
+     },
+     "printed": "+0.007"
+    }
+   ]
+  },
+  {
+   "row": 21,
+   "group": "CICIDS2017",
+   "label": "XGBoost: 77 / 78 features",
+   "a_split_loss": [
+    {
+     "pos": "top",
+     "cond": "raw",
+     "est": 0.09840140076696091,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; 77 flow features; original labels",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 150,
+      "phrase": "by 0.098 and 0.105 (differences computed before rounding)"
+     },
+     "bar_src": null,
+     "printed": "0.098"
+    },
+    {
+     "pos": "bot",
+     "cond": "raw",
+     "est": 0.10518611299335767,
+     "lo": null,
+     "hi": null,
+     "kind": "single",
+     "n": 1,
+     "runs": "seed 42; 78 features (+ destination port)",
+     "est_src": {
+      "source": "full manuscript",
+      "block": 150,
+      "phrase": "by 0.098 and 0.105 (differences computed before rounding)"
+     },
+     "bar_src": null,
+     "printed": "0.105"
+    }
+   ],
+   "b_cleaning_gain": []
+  }
+ ],
+ "block_bootstrap_split_seed42": {
+  "XGBoost raw": {
+   "diff": 0.15233,
+   "ci_lo": 0.1262,
+   "ci_hi": 0.17569
+  },
+  "XGBoost r1": {
+   "diff": 0.16441,
+   "ci_lo": 0.13604,
+   "ci_hi": 0.19019
+  },
+  "LightGBM raw": {
+   "diff": 0.16147,
+   "ci_lo": 0.1345,
+   "ci_hi": 0.18739
+  },
+  "LightGBM r1": {
+   "diff": 0.1279,
+   "ci_lo": 0.10314,
+   "ci_hi": 0.15546
+  },
+  "RandomForest raw": {
+   "diff": 0.17411,
+   "ci_lo": 0.14782,
+   "ci_hi": 0.20224
+  },
+  "RandomForest r1": {
+   "diff": 0.19778,
+   "ci_lo": 0.16598,
+   "ci_hi": 0.23299
+  }
+ },
+ "b_held_out_subattacks": {
+  "model": "XGBoost",
+  "split": "temporal within capture groups",
+  "per_subattack": {
+   "raw": {
+    "DDoS ACK Frag.": {
+     "seen": 0.9445,
+     "unseen": 0.553,
+     "attack_unseen": 0.9944,
+     "top_class_unseen": "DDOS"
+    },
+    "DDoS HTTP Flood": {
+     "seen": 0.9443,
+     "unseen": 0.1173,
+     "attack_unseen": 0.5848,
+     "top_class_unseen": "Benign"
+    },
+    "DDoS ICMP Flood": {
+     "seen": 0.1179,
+     "unseen": 0.064,
+     "attack_unseen": 0.9192,
+     "top_class_unseen": "Mirai"
+    },
+    "DDoS ICMP Frag.": {
+     "seen": 0.1863,
+     "unseen": 0.0324,
+     "attack_unseen": 0.6255,
+     "top_class_unseen": "Mirai"
+    },
+    "DoS HTTP Flood": {
+     "seen": 0.4439,
+     "unseen": 0.0025,
+     "attack_unseen": 0.9728,
+     "top_class_unseen": "DDOS"
+    },
+    "DoS SYN Flood": {
+     "seen": 0.9471,
+     "unseen": 0.6109,
+     "attack_unseen": 0.9969,
+     "top_class_unseen": "DOS"
+    },
+    "DoS UDP Flood": {
+     "seen": 0.2799,
+     "unseen": 0.0191,
+     "attack_unseen": 0.8395,
+     "top_class_unseen": "Mirai"
+    },
+    "ARP Spoofing": {
+     "seen": 0.3754,
+     "unseen": 0.2129,
+     "attack_unseen": 0.8382,
+     "top_class_unseen": "Mirai"
+    },
+    "DNS Spoofing": {
+     "seen": 0.3349,
+     "unseen": 0.1888,
+     "attack_unseen": 0.6253,
+     "top_class_unseen": "Benign"
+    },
+    "SQL Injection": {
+     "seen": 0.1093,
+     "unseen": 0.0715,
+     "attack_unseen": 0.9377,
+     "top_class_unseen": "Recon"
+    },
+    "Uploading": {
+     "seen": 0.55,
+     "unseen": 0.255,
+     "attack_unseen": 0.955,
+     "top_class_unseen": "BruteForce"
+    },
+    "XSS": {
+     "seen": 0.4851,
+     "unseen": 0.2792,
+     "attack_unseen": 0.8891,
+     "top_class_unseen": "BruteForce"
+    }
+   },
+   "r1": {
+    "DDoS ACK Frag.": {
+     "seen": 0.9796,
+     "unseen": 0.669,
+     "attack_unseen": 0.997,
+     "top_class_unseen": "DDOS"
+    },
+    "DDoS HTTP Flood": {
+     "seen": 0.9632,
+     "unseen": 0.0463,
+     "attack_unseen": 0.3172,
+     "top_class_unseen": "Benign"
+    },
+    "DDoS ICMP Flood": {
+     "seen": 0.1689,
+     "unseen": 0.1068,
+     "attack_unseen": 0.952,
+     "top_class_unseen": "Mirai"
+    },
+    "DDoS ICMP Frag.": {
+     "seen": 0.2695,
+     "unseen": 0.0744,
+     "attack_unseen": 0.7105,
+     "top_class_unseen": "Mirai"
+    },
+    "DoS HTTP Flood": {
+     "seen": 0.5101,
+     "unseen": 0.0013,
+     "attack_unseen": 0.9324,
+     "top_class_unseen": "DDOS"
+    },
+    "DoS SYN Flood": {
+     "seen": 0.9548,
+     "unseen": 0.6675,
+     "attack_unseen": 0.9926,
+     "top_class_unseen": "DOS"
+    },
+    "DoS UDP Flood": {
+     "seen": 0.4337,
+     "unseen": 0.0062,
+     "attack_unseen": 0.5605,
+     "top_class_unseen": "Benign"
+    },
+    "ARP Spoofing": {
+     "seen": 0.4774,
+     "unseen": 0.1664,
+     "attack_unseen": 0.949,
+     "top_class_unseen": "Mirai"
+    },
+    "DNS Spoofing": {
+     "seen": 0.331,
+     "unseen": 0.088,
+     "attack_unseen": 0.7222,
+     "top_class_unseen": "Mirai"
+    },
+    "SQL Injection": {
+     "seen": 0.2255,
+     "unseen": 0.0163,
+     "attack_unseen": 0.9511,
+     "top_class_unseen": "Recon"
+    },
+    "Uploading": {
+     "seen": 0.7527,
+     "unseen": 0.2688,
+     "attack_unseen": 1.0,
+     "top_class_unseen": "Spoofing"
+    },
+    "XSS": {
+     "seen": 0.5943,
+     "unseen": 0.4914,
+     "attack_unseen": 0.9771,
+     "top_class_unseen": "Web-Based"
+    }
+   }
+  },
+  "means": {
+   "raw": {
+    "seen": 0.47655000000000003,
+    "unseen": 0.20054999999999998,
+    "attack_unseen": 0.8482
+   },
+   "r1": {
+    "seen": 0.5550583333333335,
+    "unseen": 0.21686666666666668,
+    "attack_unseen": 0.8384666666666667
+   }
+  },
+  "largest_drops": [
+   "DDoS HTTP Flood",
+   "DoS HTTP Flood"
+  ],
+  "order_in_b": [
+   "DoS SYN Flood",
+   "DDoS ACK Frag.",
+   "DDoS HTTP Flood",
+   "Uploading",
+   "XSS",
+   "DoS HTTP Flood",
+   "ARP Spoofing",
+   "DNS Spoofing",
+   "DoS UDP Flood",
+   "DDoS ICMP Frag.",
+   "DDoS ICMP Flood",
+   "SQL Injection"
+  ]
+ },
+ "note_bands": "band_a/band_b: ranges of the main-protocol means of the eight models, checked against the text; not drawn in the table design",
+ "inputs": {
+  "split_replication_macro_f1": {
+   "XGBoost raw": {
+    "random": {
+     "s42": 0.5791812622231902,
+     "s1": 0.5787776001048691,
+     "s2": 0.5803738621487692,
+     "s3": 0.579860984712,
+     "s4": 0.5807606341127083
+    },
+    "temporal": {
+     "60-20-20": 0.43280769293022586,
+     "70-15-15": 0.4268506256740967,
+     "80-10-10": 0.4160544361612435
+    }
+   },
+   "XGBoost r1": {
+    "random": {
+     "s42": 0.6263410276812822,
+     "s1": 0.6234665485437202,
+     "s2": 0.6249659678402361,
+     "s3": 0.6276226220410861,
+     "s4": 0.6256227073212719
+    },
+    "temporal": {
+     "60-20-20": 0.47505013556871833,
+     "70-15-15": 0.4619320425255602,
+     "80-10-10": 0.46239989046999225
+    }
+   },
+   "RandomForest raw": {
+    "random": {
+     "s42": 0.6173862763993573,
+     "s1": 0.6151615228045446,
+     "s2": 0.6172840916618214,
+     "s3": 0.6177562884358749,
+     "s4": 0.6177912218957706
+    },
+    "temporal": {
+     "60-20-20": 0.4475542649115295,
+     "70-15-15": 0.44327399575040377,
+     "80-10-10": 0.4298054784826414
+    }
+   },
+   "RandomForest r1": {
+    "random": {
+     "s42": 0.681327334083409,
+     "s1": 0.6761048602496347,
+     "s2": 0.6760495156999746,
+     "s3": 0.6876054591836385,
+     "s4": 0.67975145419239
+    },
+    "temporal": {
+     "60-20-20": 0.48558502561177436,
+     "70-15-15": 0.4835480528414222,
+     "80-10-10": 0.4771961368236234
+    }
+   }
+  },
+  "day_disjoint_macro_f1": {
+   "XGBoost raw": 0.45354812010301926,
+   "XGBoost r1": 0.4797532313537778,
+   "RandomForest raw": 0.4682589359875715,
+   "RandomForest r1": 0.4835181488770999
+  },
+  "class_weights_macro_f1": {
+   "balanced": {
+    "random": 0.5791812622231902,
+    "temporal": 0.4268506256740967
+   },
+   "none": {
+    "random": 0.6183813552322652,
+    "temporal": 0.44391489010038143
+   },
+   "sqrt": {
+    "random": 0.6278021902571901,
+    "temporal": 0.44456648814724836
+   }
+  },
+  "variant_seeds_R1_minus_none": {
+   "random": {
+    "values": [
+     0.04761116089549333,
+     0.04398506310703154,
+     0.04460995733645301,
+     0.04771362128349632,
+     0.04617707404043536
+    ],
+    "mean": 0.046019375332581915,
+    "min": 0.04398506310703154,
+    "max": 0.04771362128349632,
+    "n": 5,
+    "seeds": [
+     "s42",
+     "s1",
+     "s2",
+     "s3",
+     "s4"
+    ],
+    "sd": 0.001699559120902937
+   },
+   "temporal": {
+    "values": [
+     0.034942380455955546,
+     0.05089752182535029,
+     0.047311074849623436
+    ],
+    "mean": 0.04438365904364309,
+    "min": 0.034942380455955546,
+    "max": 0.05089752182535029,
+    "n": 3,
+    "seeds": [
+     "60-20-20",
+     "70-15-15",
+     "80-10-10"
+    ],
+    "sd": 0.008370720190352236
+   }
+  },
+  "training_only_R1_test": {
+   "XGBoost random": [
+    0.03235542886740839,
+    0.02488,
+    0.04075
+   ],
+   "XGBoost temporal": [
+    0.05758675346736142,
+    0.04623,
+    0.06971
+   ],
+   "RandomForest random": [
+    0.04670314814498577,
+    0.03809,
+    0.0552
+   ],
+   "RandomForest temporal": [
+    0.04910160616194276,
+    0.03915,
+    0.05821
+   ]
+  },
+  "training_only_LightGBM_R1_test": {
+   "random": {
+    "values": [
+     -0.02695260057479798,
+     -0.06818008728006464,
+     -0.08490352638508958
+    ],
+    "mean": -0.0600120714133174,
+    "min": -0.08490352638508958,
+    "max": -0.02695260057479798,
+    "n": 3,
+    "seeds": [
+     42,
+     17,
+     7
+    ]
+   },
+   "temporal": {
+    "values": [
+     -0.03696693801741174,
+     0.004028142986747807,
+     0.04134861063307965
+    ],
+    "mean": 0.002803271867471905,
+    "min": -0.03696693801741174,
+    "max": 0.04134861063307965,
+    "n": 3,
+    "seeds": [
+     42,
+     17,
+     7
+    ]
+   }
+  },
+  "training_only_unflagged_test": {
+   "XGBoost random": [
+    0.023028475430409534,
+    0.014872,
+    0.032728
+   ],
+   "XGBoost temporal": [
+    0.053516928235340155,
+    0.043103,
+    0.065313
+   ],
+   "RandomForest random": [
+    0.05948070807057204,
+    0.044183,
+    0.076516
+   ],
+   "RandomForest temporal": [
+    0.07346098388966915,
+    0.062567,
+    0.084809
+   ]
+  },
+  "trained_after_all_rules_unflagged_split_loss": {
+   "XGBoost": 0.1893651390262019,
+   "RandomForest": 0.22298948401334862
+  },
+  "symmetric_relabel_levels": {
+   "XGBoost random": {
+    "raw": 0.5791812622231902,
+    "r1": 0.6263410276812822,
+    "sym": 0.623496613168514,
+    "relabel": 0.6070786529521655
+   },
+   "XGBoost temporal": {
+    "raw": 0.4268506256740967,
+    "r1": 0.4619320425255602,
+    "sym": 0.4204543477169888,
+    "relabel": 0.481631175633159
+   },
+   "RandomForest random": {
+    "raw": 0.6173862763993573,
+    "r1": 0.681327334083409,
+    "sym": 0.6640145897630685,
+    "relabel": 0.6649161005786893
+   },
+   "RandomForest temporal": {
+    "raw": 0.4432739957504037,
+    "r1": 0.4835480528414222,
+    "sym": 0.4382042714245195,
+    "relabel": 0.5080974917541468
+   }
+  },
+  "cicids2017_macro_f1": {
+   "F0": {
+    "random": 0.9637759839992263,
+    "temporal": 0.8653745832322653
+   },
+   "F78": {
+    "random": 0.9682827876712806,
+    "temporal": 0.863096674677923
+   }
+  },
+  "fixed_epochs": {
+   "split_raw": {
+    "values": [
+     0.14598366163896803,
+     0.13259450710849868,
+     0.14892048336336605,
+     0.1308923568829058,
+     0.13925112271242912,
+     0.1213278662187644
+    ],
+    "mean": 0.13649499965415535,
+    "min": 0.1213278662187644,
+    "max": 0.14892048336336605,
+    "n": 6
+   },
+   "split_r1": {
+    "values": [
+     0.16721197078958255,
+     0.1332056909483062,
+     0.1391515645628219,
+     0.1544091089695715,
+     0.13491962757919157,
+     0.15370243709084608
+    ],
+    "mean": 0.14710006665671996,
+    "min": 0.1332056909483062,
+    "max": 0.16721197078958255,
+    "n": 6
+   },
+   "early_stop_same_seeds": {
+    "raw": {
+     "values": [
+      0.13815043088918671,
+      0.12462324660152757,
+      0.12899432069547684,
+      0.1161141624461891,
+      0.12090364206185772,
+      0.1213278662187644
+     ],
+     "mean": 0.12501894481883372,
+     "min": 0.1161141624461891,
+     "max": 0.13815043088918671,
+     "n": 6
+    },
+    "r1": {
+     "values": [
+      0.14903231868816025,
+      0.16253781039387055,
+      0.13808199332853277,
+      0.1447125049277091,
+      0.18236941780723037,
+      0.2227243371555186
+     ],
+     "mean": 0.16657639705017027,
+     "min": 0.13808199332853277,
+     "max": 0.2227243371555186,
+     "n": 6
+    }
+   },
+   "cleaning_temporal": {
+    "values": [
+     0.0459439840153682,
+     0.05650586883288289,
+     0.057788726221728204,
+     0.055998632956720695,
+     0.0533574997888317,
+     0.04878090947313435
+    ],
+    "mean": 0.05306260354811101,
+    "min": 0.0459439840153682,
+    "max": 0.057788726221728204,
+    "n": 6
+   }
+  }
+ },
+ "sources": {
+  "main": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (pooled runs), cross-checked with effects.csv",
+  "block_bootstrap": "results_2026_03_03/q1_revision/analyses/c_block_bootstrap_effects.csv (variant block5000)",
+  "seeds_cuts_weights": "results_2026_03_03/q1_revision/split_replication/{splits,weights}/*.json",
+  "cleaning_seeds_cuts": "results_2026_03_03/q1_revision/variant_seeds/runs.csv (R1 minus none; median imputation)",
+  "day_disjoint": "results_2026_03_03/q1_revision/day_disjoint/*.json",
+  "training_only": "results_2026_03_03/tree_protocol/decomp/*.json; q1_revision/train_only_bootstrap/diffs.csv; q1_revision/cleaning_train_only/*.json",
+  "symmetric_relabel": "results_2026_03_03/q1_revision/symmetric_r1/summary.csv",
+  "cicids2017": "results_2026_03_03/q1_revision/cicids2017/split_{random,temporal}_{F0,F78}.json",
+  "held_out": "results_2026_03_03/q1_revision/leave_one_subattack_out/summary.csv"
+ }
+}

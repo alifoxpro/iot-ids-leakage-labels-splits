@@ -1,0 +1,179 @@
+{
+ "accuracy": 0.6765615291570004,
+ "balanced_accuracy": 0.550839605211853,
+ "macro_f1": 0.449348450263481,
+ "per_class_f1": {
+  "Benign": 0.5478,
+  "BruteForce": 0.0244,
+  "DDOS": 0.7892,
+  "DOS": 0.8048,
+  "Mirai": 0.4181,
+  "Recon": 0.5672,
+  "Spoofing": 0.3511,
+  "Web-Based": 0.0922
+ },
+ "per_class_recall": {
+  "Benign": 0.5725,
+  "BruteForce": 0.3715,
+  "DDOS": 0.8115,
+  "DOS": 0.6765,
+  "Mirai": 0.7888,
+  "Recon": 0.5438,
+  "Spoofing": 0.3304,
+  "Web-Based": 0.3118
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.5725,
+  "BruteForce / BruteForce": 0.3715,
+  "DDOS / DDOS ACK Fragmentation": 0.9434,
+  "DDOS / DDOS HTTP FLOOD": 0.9353,
+  "DDOS / DDOS ICMP FLOOD": 0.1123,
+  "DDOS / DDOS ICMP Fragmentation": 0.24,
+  "DOS / DOS HTTP FLOOD": 0.5921,
+  "DOS / DOS SYN FLOOD": 0.947,
+  "DOS / DOS UDP FLOOD": 0.2804,
+  "Mirai / Mirai": 0.7888,
+  "Recon / Recon": 0.5438,
+  "Spoofing / ARP Spoofing": 0.356,
+  "Spoofing / DNS Spoofing": 0.3036,
+  "Web-Based / Sqlinjection": 0.2063,
+  "Web-Based / Uploading Attack": 0.54,
+  "Web-Based / XSS": 0.4257
+ },
+ "attack_macro_f1": 0.4352851616654804,
+ "per_class_precision": {
+  "Benign": 0.5252,
+  "BruteForce": 0.0126,
+  "DDOS": 0.7681,
+  "DOS": 0.9932,
+  "Mirai": 0.2844,
+  "Recon": 0.5928,
+  "Spoofing": 0.3745,
+  "Web-Based": 0.0541
+ },
+ "confusion": [
+  [
+   33094,
+   4883,
+   41,
+   33,
+   3555,
+   10666,
+   2426,
+   3112
+  ],
+  [
+   31,
+   201,
+   0,
+   0,
+   58,
+   17,
+   187,
+   47
+  ],
+  [
+   4450,
+   867,
+   121734,
+   746,
+   16843,
+   2704,
+   2100,
+   558
+  ],
+  [
+   2553,
+   1037,
+   35840,
+   152203,
+   21086,
+   8088,
+   2896,
+   1299
+  ],
+  [
+   2568,
+   536,
+   495,
+   65,
+   18898,
+   186,
+   988,
+   223
+  ],
+  [
+   13954,
+   6162,
+   143,
+   26,
+   1625,
+   33906,
+   3768,
+   2770
+  ],
+  [
+   6193,
+   1965,
+   222,
+   172,
+   4282,
+   1146,
+   7479,
+   1175
+  ],
+  [
+   174,
+   269,
+   7,
+   2,
+   95,
+   485,
+   127,
+   525
+  ]
+ ],
+ "model": "XGBoost",
+ "seed": 42,
+ "design": "roll3",
+ "cleaning": "raw",
+ "design_definition": {
+  "train": [
+   [
+    0.3,
+    0.7
+   ]
+  ],
+  "test": [
+   0.85,
+   1.0
+  ],
+  "unit": "fractions of the time-ordered rows of each capture group (cut at int(fraction x n))"
+ },
+ "n_train": 1450600,
+ "n_test": 543986,
+ "train_class_counts": {
+  "Benign": 154157,
+  "BruteForce": 1440,
+  "DDOS": 400000,
+  "DOS": 600001,
+  "Mirai": 63889,
+  "Recon": 166274,
+  "Spoofing": 60355,
+  "Web-Based": 4484
+ },
+ "test_class_counts": {
+  "Benign": 57810,
+  "BruteForce": 541,
+  "DDOS": 150002,
+  "DOS": 225002,
+  "Mirai": 23959,
+  "Recon": 62354,
+  "Spoofing": 22634,
+  "Web-Based": 1684
+ },
+ "missing_train_classes": [],
+ "fit_seconds": 21.2,
+ "script": "experiments/rolling_origin.py",
+ "created": "2026-10-15 22:08:00"
+}

@@ -1,0 +1,997 @@
+{
+ "figure": {
+  "id": "F5",
+  "printed": "Fig. 2",
+  "file": "mid_F5.png",
+  "size_cm": [
+   17.0,
+   15.27
+  ],
+  "dpi": 600,
+  "min_font_pt": 10.0,
+  "layout_problems": []
+ },
+ "a_capture_days": {
+  "Benign": {
+   "class": "Benign",
+   "days_flows": {
+    "2022-10-07": 182434,
+    "2022-10-08": 202960
+   },
+   "first_day": "2022-10-07",
+   "last_day": "2022-10-08"
+  },
+  "BruteForce": {
+   "class": "BruteForce",
+   "days_flows": {
+    "2022-10-14": 374,
+    "2022-10-17": 3227
+   },
+   "first_day": "2022-10-14",
+   "last_day": "2022-10-17"
+  },
+  "DDoS ACK Frag.": {
+   "class": "DDoS",
+   "days_flows": {
+    "2022-10-25": 368746,
+    "2022-10-26": 308185
+   },
+   "first_day": "2022-10-25",
+   "last_day": "2022-10-26"
+  },
+  "DDoS HTTP Flood": {
+   "class": "DDoS",
+   "days_flows": {
+    "2022-09-14": 75836,
+    "2022-11-07": 73720
+   },
+   "first_day": "2022-09-14",
+   "last_day": "2022-11-07"
+  },
+  "DDoS ICMP Flood": {
+   "class": "DDoS",
+   "days_flows": {
+    "2022-09-06": 19859,
+    "2022-09-07": 17850,
+    "2022-09-08": 7244,
+    "2022-09-12": 17551,
+    "2022-09-13": 1914,
+    "2022-11-28": 2978
+   },
+   "first_day": "2022-09-06",
+   "last_day": "2022-11-28"
+  },
+  "DDoS ICMP Frag.": {
+   "class": "DDoS",
+   "days_flows": {
+    "2022-10-04": 15134,
+    "2022-10-05": 32840,
+    "2022-10-06": 32763,
+    "2022-10-13": 23437,
+    "2022-11-29": 1943
+   },
+   "first_day": "2022-10-04",
+   "last_day": "2022-11-29"
+  },
+  "DoS HTTP Flood": {
+   "class": "DoS",
+   "days_flows": {
+    "2022-08-08": 64547,
+    "2022-08-09": 58929
+   },
+   "first_day": "2022-08-08",
+   "last_day": "2022-08-09"
+  },
+  "DoS SYN Flood": {
+   "class": "DoS",
+   "days_flows": {
+    "2022-08-02": 143126,
+    "2022-08-03": 193551,
+    "2022-08-04": 14268,
+    "2022-08-05": 482551
+   },
+   "first_day": "2022-08-02",
+   "last_day": "2022-08-05"
+  },
+  "DoS UDP Flood": {
+   "class": "DoS",
+   "days_flows": {
+    "2022-08-09": 84661,
+    "2022-08-10": 356040,
+    "2022-08-11": 67298,
+    "2022-08-12": 24054,
+    "2022-08-15": 9435,
+    "2022-08-16": 1540
+   },
+   "first_day": "2022-08-09",
+   "last_day": "2022-08-16"
+  },
+  "Mirai": {
+   "class": "Mirai",
+   "days_flows": {
+    "2023-01-12": 63910,
+    "2023-01-13": 33437,
+    "2023-01-16": 27772,
+    "2023-01-17": 13028,
+    "2023-01-18": 21577
+   },
+   "first_day": "2023-01-12",
+   "last_day": "2023-01-18"
+  },
+  "Recon": {
+   "class": "Recon",
+   "days_flows": {
+    "2022-10-03": 204349,
+    "2022-10-04": 211338
+   },
+   "first_day": "2022-10-03",
+   "last_day": "2022-10-04"
+  },
+  "ARP Spoofing": {
+   "class": "Spoofing",
+   "days_flows": {
+    "2022-10-17": 10381,
+    "2022-10-18": 66875
+   },
+   "first_day": "2022-10-17",
+   "last_day": "2022-10-18"
+  },
+  "DNS Spoofing": {
+   "class": "Spoofing",
+   "days_flows": {
+    "2022-11-15": 27497,
+    "2022-11-16": 46132
+   },
+   "first_day": "2022-11-15",
+   "last_day": "2022-11-16"
+  },
+  "SQL Injection": {
+   "class": "Web-Based",
+   "days_flows": {
+    "2022-10-03": 6521
+   },
+   "first_day": "2022-10-03",
+   "last_day": "2022-10-03"
+  },
+  "Uploading": {
+   "class": "Web-Based",
+   "days_flows": {
+    "2023-02-14": 1328
+   },
+   "first_day": "2023-02-14",
+   "last_day": "2023-02-14"
+  },
+  "XSS": {
+   "class": "Web-Based",
+   "days_flows": {
+    "2023-02-14": 3362
+   },
+   "first_day": "2023-02-14",
+   "last_day": "2023-02-14"
+  }
+ },
+ "a_runs_of_consecutive_days": {
+  "Benign": [
+   [
+    "2022-10-07",
+    "2022-10-08"
+   ]
+  ],
+  "BruteForce": [
+   [
+    "2022-10-14",
+    "2022-10-14"
+   ],
+   [
+    "2022-10-17",
+    "2022-10-17"
+   ]
+  ],
+  "DDoS ACK Frag.": [
+   [
+    "2022-10-25",
+    "2022-10-26"
+   ]
+  ],
+  "DDoS HTTP Flood": [
+   [
+    "2022-09-14",
+    "2022-09-14"
+   ],
+   [
+    "2022-11-07",
+    "2022-11-07"
+   ]
+  ],
+  "DDoS ICMP Flood": [
+   [
+    "2022-09-06",
+    "2022-09-08"
+   ],
+   [
+    "2022-09-12",
+    "2022-09-13"
+   ],
+   [
+    "2022-11-28",
+    "2022-11-28"
+   ]
+  ],
+  "DDoS ICMP Frag.": [
+   [
+    "2022-10-04",
+    "2022-10-06"
+   ],
+   [
+    "2022-10-13",
+    "2022-10-13"
+   ],
+   [
+    "2022-11-29",
+    "2022-11-29"
+   ]
+  ],
+  "DoS HTTP Flood": [
+   [
+    "2022-08-08",
+    "2022-08-09"
+   ]
+  ],
+  "DoS SYN Flood": [
+   [
+    "2022-08-02",
+    "2022-08-05"
+   ]
+  ],
+  "DoS UDP Flood": [
+   [
+    "2022-08-09",
+    "2022-08-12"
+   ],
+   [
+    "2022-08-15",
+    "2022-08-16"
+   ]
+  ],
+  "Mirai": [
+   [
+    "2023-01-12",
+    "2023-01-13"
+   ],
+   [
+    "2023-01-16",
+    "2023-01-18"
+   ]
+  ],
+  "Recon": [
+   [
+    "2022-10-03",
+    "2022-10-04"
+   ]
+  ],
+  "ARP Spoofing": [
+   [
+    "2022-10-17",
+    "2022-10-18"
+   ]
+  ],
+  "DNS Spoofing": [
+   [
+    "2022-11-15",
+    "2022-11-16"
+   ]
+  ],
+  "SQL Injection": [
+   [
+    "2022-10-03",
+    "2022-10-03"
+   ]
+  ],
+  "Uploading": [
+   [
+    "2023-02-14",
+    "2023-02-14"
+   ]
+  ],
+  "XSS": [
+   [
+    "2023-02-14",
+    "2023-02-14"
+   ]
+  ]
+ },
+ "a_note": "capture days of the experimental sample (raw labels); one segment per run of consecutive days, from the start of its first to the end of its last day; runs shorter than 2 days are drawn 2 days wide, centred on the run, so that single days stay visible at print size",
+ "b_protocol0_share_pct": {
+  "Benign": {
+   "flows": 2.07,
+   "packets": 2.54,
+   "printed": [
+    "2.07",
+    "2.54"
+   ],
+   "flows_of_capture": 398330,
+   "packets_of_capture": 10867611
+  },
+  "DDoS ICMP Flood": {
+   "flows": 3.54,
+   "packets": 99.71,
+   "printed": [
+    "3.54",
+    "99.71"
+   ],
+   "flows_of_capture": 202251,
+   "packets_of_capture": 719635485
+  },
+  "DDoS ICMP Frag.": {
+   "flows": 2.25,
+   "packets": 94.36,
+   "printed": [
+    "2.25",
+    "94.36"
+   ],
+   "flows_of_capture": 320757,
+   "packets_of_capture": 44873040
+  },
+  "Mirai": {
+   "flows": 3.48,
+   "packets": 98.6,
+   "printed": [
+    "3.48",
+    "98.60"
+   ],
+   "flows_of_capture": 174588,
+   "packets_of_capture": 98807831
+  },
+  "DDoS ACK Frag.": {
+   "flows": 0.17,
+   "packets": 69.52,
+   "printed": [
+    "0.17",
+    "69.52"
+   ],
+   "flows_of_capture": 2450086,
+   "packets_of_capture": 19246485
+  }
+ },
+ "c_flagged_pct": {
+  "DDoS ICMP Frag.": {
+   "any": 97.13248487955605,
+   "R1": 56.120000000000005,
+   "R2": 49.81,
+   "R3": 73.82,
+   "printed_any": "97.13",
+   "flows_read": 144341,
+   "kept": 4139,
+   "native_tcp_udp_flood": false
+  },
+  "Mirai": {
+   "any": 96.59426764726098,
+   "R1": 57.85,
+   "R2": 58.45,
+   "R3": 3.75,
+   "printed_any": "96.59",
+   "flows_read": 174588,
+   "kept": 5946,
+   "native_tcp_udp_flood": false
+  },
+  "ARP Spoofing": {
+   "any": 96.06952975164478,
+   "R1": 55.60000000000001,
+   "R2": 45.95,
+   "R3": 31.3,
+   "printed_any": "96.07",
+   "flows_read": 82382,
+   "kept": 3238,
+   "native_tcp_udp_flood": false
+  },
+  "XSS": {
+   "any": 93.01154871187445,
+   "R1": 65.47,
+   "R2": 36.01,
+   "R3": 3.46,
+   "printed_any": "93.01",
+   "flows_read": 3377,
+   "kept": 236,
+   "native_tcp_udp_flood": false
+  },
+  "BruteForce": {
+   "any": 92.87095882840563,
+   "R1": 64.16,
+   "R2": 46.06,
+   "R3": 16.05,
+   "printed_any": "92.87",
+   "flows_read": 3619,
+   "kept": 258,
+   "native_tcp_udp_flood": false
+  },
+  "Uploading": {
+   "any": 92.35905044510386,
+   "R1": 52.89,
+   "R2": 45.03,
+   "R3": 3.34,
+   "printed_any": "92.36",
+   "flows_read": 1348,
+   "kept": 103,
+   "native_tcp_udp_flood": false
+  },
+  "DDoS ICMP Flood": {
+   "any": 91.53298466136334,
+   "R1": 58.24,
+   "R2": 44.47,
+   "R3": 14.030000000000001,
+   "printed_any": "91.53",
+   "flows_read": 91012,
+   "kept": 7706,
+   "native_tcp_udp_flood": false
+  },
+  "SQL Injection": {
+   "any": 89.85309707708618,
+   "R1": 62.12,
+   "R2": 34.27,
+   "R3": 57.31,
+   "printed_any": "89.85",
+   "flows_read": 6603,
+   "kept": 670,
+   "native_tcp_udp_flood": false
+  },
+  "Recon": {
+   "any": 82.75367628766188,
+   "R1": 55.93,
+   "R2": 32.36,
+   "R3": 54.559999999999995,
+   "printed_any": "82.75",
+   "flows_read": 442158,
+   "kept": 76256,
+   "native_tcp_udp_flood": false
+  },
+  "DNS Spoofing": {
+   "any": 60.21160628406541,
+   "R1": 57.96,
+   "R2": 4.71,
+   "R3": 2.64,
+   "printed_any": "60.21",
+   "flows_read": 74856,
+   "kept": 29784,
+   "native_tcp_udp_flood": false
+  },
+  "DDoS ACK Frag.": {
+   "any": 13.733041400840607,
+   "R1": 2.5700000000000003,
+   "R2": 11.86,
+   "R3": 0.58,
+   "printed_any": "13.73",
+   "flows_read": 1102538,
+   "kept": 951126,
+   "native_tcp_udp_flood": true
+  },
+  "DoS UDP Flood": {
+   "any": 5.469163824141288,
+   "R1": 3.81,
+   "R2": 2.54,
+   "R3": 0.33999999999999997,
+   "printed_any": "5.47",
+   "flows_read": 781582,
+   "kept": 738836,
+   "native_tcp_udp_flood": true
+  },
+  "DDoS HTTP Flood": {
+   "any": 3.1695184862945647,
+   "R1": 2.4699999999999998,
+   "R2": 0.86,
+   "R3": 1.04,
+   "printed_any": "3.17",
+   "flows_read": 227574,
+   "kept": 220361,
+   "native_tcp_udp_flood": true
+  },
+  "DoS HTTP Flood": {
+   "any": 2.948720029868679,
+   "R1": 1.97,
+   "R2": 1.17,
+   "R3": 0.12,
+   "printed_any": "2.95",
+   "flows_read": 246412,
+   "kept": 239146,
+   "native_tcp_udp_flood": true
+  },
+  "DoS SYN Flood": {
+   "any": 1.4262011331940494,
+   "R1": 0.95,
+   "R2": 0.59,
+   "R3": 0.2,
+   "printed_any": "1.43",
+   "flows_read": 1199971,
+   "kept": 1182857,
+   "native_tcp_udp_flood": true
+  }
+ },
+ "c_d_row_order": [
+  "DDoS ICMP Frag.",
+  "Mirai",
+  "ARP Spoofing",
+  "XSS",
+  "BruteForce",
+  "Uploading",
+  "DDoS ICMP Flood",
+  "SQL Injection",
+  "Recon",
+  "DNS Spoofing",
+  "DDoS ACK Frag.",
+  "DoS UDP Flood",
+  "DDoS HTTP Flood",
+  "DoS HTTP Flood",
+  "DoS SYN Flood"
+ ],
+ "d_signature_census": {
+  "DDoS ICMP Frag.": {
+   "flows": 320757,
+   "attack_flows": 1374,
+   "attack_flows_removed": 497,
+   "removed_flows_pct": 36.171761280931584,
+   "removed_packets_pct": 0.02,
+   "kept_attack_share_R1_pct": 0.9745372012199447,
+   "kept_attack_share_all_pct": 9.81203848735735,
+   "removing_rules": [
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "36.17 / 0.02",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "Mirai": {
+   "flows": 174588,
+   "attack_flows": 773,
+   "attack_flows_removed": 6,
+   "removed_flows_pct": 0.7761966364812419,
+   "removed_packets_pct": 0.78,
+   "kept_attack_share_R1_pct": 1.0504572818568496,
+   "kept_attack_share_all_pct": 12.89942818701648,
+   "removing_rules": [
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0.78 / 0.78",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "ARP Spoofing": {
+   "flows": 82382,
+   "attack_flows": 438,
+   "attack_flows_removed": 146,
+   "removed_flows_pct": 33.333333333333336,
+   "removed_packets_pct": 96.21,
+   "kept_attack_share_R1_pct": 0.7983158815649178,
+   "kept_attack_share_all_pct": 9.017912291537986,
+   "removing_rules": [
+    "R1",
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": true,
+   "printed_removed_flows_packets": "33.33 / 96.21",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "XSS": {
+   "flows": 3377,
+   "attack_flows": 96,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 8.23327615780446,
+   "kept_attack_share_all_pct": 40.67796610169491,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": true,
+   "printed_kept_R1_all": "8.2 / 40.7"
+  },
+  "BruteForce": {
+   "flows": 3619,
+   "attack_flows": 79,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 6.0909791827293756,
+   "kept_attack_share_all_pct": 30.62015503875969,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": true,
+   "printed_kept_R1_all": "6.1 / 30.6"
+  },
+  "Uploading": {
+   "flows": 1348,
+   "attack_flows": 59,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 9.291338582677165,
+   "kept_attack_share_all_pct": 57.28155339805825,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": true,
+   "printed_kept_R1_all": "9.3 / 57.3"
+  },
+  "DDoS ICMP Flood": {
+   "flows": 202251,
+   "attack_flows": 946,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 1.1126401091469367,
+   "kept_attack_share_all_pct": 5.5568609022556394,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "SQL Injection": {
+   "flows": 6603,
+   "attack_flows": 484,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 19.352259096361454,
+   "kept_attack_share_all_pct": 72.23880597014926,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": true,
+   "printed_kept_R1_all": "19.4 / 72.2"
+  },
+  "Recon": {
+   "flows": 442158,
+   "attack_flows": 80451,
+   "attack_flows_removed": 6573,
+   "removed_flows_pct": 8.170190550770034,
+   "removed_packets_pct": 8.14,
+   "kept_attack_share_R1_pct": 41.28974312915394,
+   "kept_attack_share_all_pct": 96.88155686109945,
+   "removing_rules": [
+    "R2",
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": true,
+   "printed_removed_flows_packets": "8.17 / 8.14",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DNS Spoofing": {
+   "flows": 74856,
+   "attack_flows": 1862,
+   "attack_flows_removed": 404,
+   "removed_flows_pct": 21.697099892588614,
+   "removed_packets_pct": 31.53,
+   "kept_attack_share_R1_pct": 5.9173101979851905,
+   "kept_attack_share_all_pct": 4.895245769540693,
+   "removing_rules": [
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": true,
+   "printed_removed_flows_packets": "21.70 / 31.53",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DDoS ACK Frag.": {
+   "flows": 2450086,
+   "attack_flows": 1540651,
+   "attack_flows_removed": 1207,
+   "removed_flows_pct": 0.07834350544023273,
+   "removed_packets_pct": 0.05,
+   "kept_attack_share_R1_pct": 64.49776251771009,
+   "kept_attack_share_all_pct": 72.84043555386059,
+   "removing_rules": [
+    "R1",
+    "R2",
+    "R3"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": true,
+   "printed_removed_flows_packets": "0.08 / 0.05",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DoS UDP Flood": {
+   "flows": 5210536,
+   "attack_flows": 640933,
+   "attack_flows_removed": 73,
+   "removed_flows_pct": 0.011389646031644494,
+   "removed_packets_pct": 0.01,
+   "kept_attack_share_R1_pct": 12.788586360315083,
+   "kept_attack_share_all_pct": 13.011920792272194,
+   "removing_rules": [
+    "R2"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0.01 / 0.01",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DDoS HTTP Flood": {
+   "flows": 505720,
+   "attack_flows": 332124,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 67.33230480415034,
+   "kept_attack_share_all_pct": 67.81639237146241,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DoS HTTP Flood": {
+   "flows": 1642744,
+   "attack_flows": 910618,
+   "attack_flows_removed": 0,
+   "removed_flows_pct": 0.0,
+   "removed_packets_pct": 0.0,
+   "kept_attack_share_R1_pct": 56.55457414738181,
+   "kept_attack_share_all_pct": 57.13677983574598,
+   "removing_rules": [],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0 / 0",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  },
+  "DoS SYN Flood": {
+   "flows": 7999807,
+   "attack_flows": 5864462,
+   "attack_flows_removed": 812,
+   "removed_flows_pct": 0.013846112397011013,
+   "removed_packets_pct": 0.01,
+   "kept_attack_share_R1_pct": 74.01949876439836,
+   "kept_attack_share_all_pct": 74.35866578083605,
+   "removing_rules": [
+    "R2"
+   ],
+   "packet_source_decimals": 4,
+   "weak_signature_hatched": false,
+   "printed_removed_flows_packets": "0.01 / 0.01",
+   "kept_share_plotted": false,
+   "printed_kept_R1_all": null
+  }
+ },
+ "e_audit_union": {
+  "BruteForce": {
+   "flagged_abu": [
+    0,
+    20,
+    0
+   ],
+   "kept_abu": [
+    6,
+    12,
+    2
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8388748419471806,
+    1.0
+   ],
+   "kept_attack_share": 0.3333333333333333,
+   "kept_attack_share_ci95": [
+    0.1627877475083369,
+    0.5625053270405489
+   ],
+   "flagged_flows_of_class": 3361,
+   "kept_flows_of_class": 258
+  },
+  "DDoS": {
+   "flagged_abu": [
+    8,
+    12,
+    0
+   ],
+   "kept_abu": [
+    19,
+    0,
+    1
+   ],
+   "precision_background": 0.6,
+   "precision_ci95": [
+    0.3865815007622531,
+    0.781193467627183
+   ],
+   "kept_attack_share": 1.0,
+   "kept_attack_share_ci95": [
+    0.8318207759473837,
+    1.0
+   ],
+   "flagged_flows_of_class": 849665,
+   "kept_flows_of_class": 2629149
+  },
+  "DoS": {
+   "flagged_abu": [
+    0,
+    20,
+    0
+   ],
+   "kept_abu": [
+    20,
+    0,
+    0
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8388748419471806,
+    1.0
+   ],
+   "kept_attack_share": 1.0,
+   "kept_attack_share_ci95": [
+    0.8388748419471806,
+    1.0
+   ],
+   "flagged_flows_of_class": 448529,
+   "kept_flows_of_class": 14404558
+  },
+  "Mirai": {
+   "flagged_abu": [
+    0,
+    19,
+    1
+   ],
+   "kept_abu": [
+    6,
+    8,
+    6
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8318207759473837,
+    1.0
+   ],
+   "kept_attack_share": 0.42857142857142855,
+   "kept_attack_share_ci95": [
+    0.21380798904474121,
+    0.6740935542034926
+   ],
+   "flagged_flows_of_class": 168642,
+   "kept_flows_of_class": 5946
+  },
+  "Recon": {
+   "flagged_abu": [
+    0,
+    20,
+    0
+   ],
+   "kept_abu": [
+    16,
+    2,
+    2
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8388748419471806,
+    1.0
+   ],
+   "kept_attack_share": 0.8888888888888888,
+   "kept_attack_share_ci95": [
+    0.672002348698212,
+    0.9689804773543876
+   ],
+   "flagged_flows_of_class": 365902,
+   "kept_flows_of_class": 76256
+  },
+  "Spoofing": {
+   "flagged_abu": [
+    0,
+    19,
+    1
+   ],
+   "kept_abu": [
+    0,
+    10,
+    10
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8318207759473837,
+    1.0
+   ],
+   "kept_attack_share": 0.0,
+   "kept_attack_share_ci95": [
+    0.0,
+    0.2775327998628892
+   ],
+   "flagged_flows_of_class": 124216,
+   "kept_flows_of_class": 33022
+  },
+  "Web-Based": {
+   "flagged_abu": [
+    0,
+    20,
+    0
+   ],
+   "kept_abu": [
+    13,
+    6,
+    1
+   ],
+   "precision_background": 1.0,
+   "precision_ci95": [
+    0.8388748419471806,
+    1.0
+   ],
+   "kept_attack_share": 0.6842105263157895,
+   "kept_attack_share_ci95": [
+    0.46010407675327475,
+    0.8463562091220773
+   ],
+   "flagged_flows_of_class": 10319,
+   "kept_flows_of_class": 1009
+  }
+ },
+ "e_flows_shown": {
+  "flagged_by_any_rule": 140,
+  "kept_by_all_rules": 140,
+  "total": 280,
+  "of_audited_flows": 472,
+  "note": "panel (e) shows the union stratum only: per class 20 flows flagged by any rule and 20 kept by all rules; shares exclude the unclear flows"
+ },
+ "recomputed_not_in_full_text": [
+  {
+   "panel": "b",
+   "quantity": "protocol-0 share of flows / packets, DDoS ACK Fragmentation",
+   "values_pct": [
+    0.17,
+    69.52
+   ],
+   "note": "not printed in the full text (its Fig. 2 shows the flow shares of every group)"
+  },
+  {
+   "panel": "b",
+   "quantity": "protocol-0 share of flows printed with two decimals",
+   "values_pct": {
+    "Benign": 2.07,
+    "DDoS ICMP Flood": 3.54,
+    "DDoS ICMP Frag.": 2.25,
+    "Mirai": 3.48,
+    "DDoS ACK Frag.": 0.17
+   },
+   "note": "the full text prints them rounded (2-4%, 2% in Benign); checked against those"
+  },
+  {
+   "panel": "d",
+   "quantity": "share of the attack packets removed, DNS Spoofing (%)",
+   "value": 31.53,
+   "note": "Table 3 of the full version gives flows only; source rule_validation2.json"
+  },
+  {
+   "panel": "d",
+   "quantity": "share of the attack packets removed, ARP Spoofing (%)",
+   "value": 96.21,
+   "note": "the full text prints it rounded (\"96% of their packets\")"
+  },
+  {
+   "panel": "d",
+   "quantity": "share of the attack packets removed, BruteForce and web captures",
+   "value": 0,
+   "note": "no attack flow removed, hence no packet; Table 3 gives flows only"
+  }
+ ],
+ "sources": {
+  "a": "results_2026_03_03/q1_revision/day_disjoint/days.json (conditions.raw.groups[g].capture_days), cross-checked with (manuscript source) (first / last flow)",
+  "b": "results_2026_03_03/split_pilot/protocol_packet_share.json (flow_share[\"0\"], packet_share[\"0\"])",
+  "c": "results_2026_03_03/split_pilot/relabel_summary.json (per_group: 1 - kept / flows_read, R1_external, R2_service, R3_benign_pair); names from (manuscript source)",
+  "d": "results_2026_03_03/q1_revision/rule_validation2/rule_validation2.json (summary[c].attacker_victim), unrounded counts from rule_validation2/captures/*.json (definitions.attacker_victim.rules)",
+  "e": "results_2026_03_03/q1_revision/rule_validation2/llm_audit/audit_scores.json (per_class[c].any); Wilson 95% intervals recomputed from the counts"
+ }
+}

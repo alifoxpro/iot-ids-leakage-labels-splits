@@ -1,0 +1,73 @@
+model,cleaning,contrast,meaning,metric,a,b,diff
+RandomForest,r1,random - forward,loss of the paper temporal split,macro_f1,0.681327334083409,0.4835480528414222,0.1978
+RandomForest,r1,random - forward,loss of the paper temporal split,attack_macro_f1,0.6551685699384187,0.43911862678411245,0.216
+RandomForest,r1,random - forward,loss of the paper temporal split,balanced_accuracy,0.7312738335660323,0.5480268484630627,0.1832
+RandomForest,r1,random - reverse,loss when testing on the earliest block,macro_f1,0.681327334083409,0.5780245225500572,0.1033
+RandomForest,r1,random - reverse,loss when testing on the earliest block,attack_macro_f1,0.6551685699384187,0.560281373265189,0.0949
+RandomForest,r1,random - reverse,loss when testing on the earliest block,balanced_accuracy,0.7312738335660323,0.588477728270564,0.1428
+RandomForest,r1,random - middle,loss when testing on a middle block,macro_f1,0.681327334083409,0.5631358145862977,0.1182
+RandomForest,r1,random - middle,loss when testing on a middle block,attack_macro_f1,0.6551685699384187,0.5392985609390158,0.1159
+RandomForest,r1,random - middle,loss when testing on a middle block,balanced_accuracy,0.7312738335660323,0.5988506309632758,0.1324
+RandomForest,r1,reverse - forward,direction of time (forward vs mirrored),macro_f1,0.5780245225500572,0.4835480528414222,0.0945
+RandomForest,r1,reverse - forward,direction of time (forward vs mirrored),attack_macro_f1,0.560281373265189,0.43911862678411245,0.1212
+RandomForest,r1,reverse - forward,direction of time (forward vs mirrored),balanced_accuracy,0.588477728270564,0.5480268484630627,0.0405
+RandomForest,r1,middle - forward,forward vs middle block,macro_f1,0.5631358145862977,0.4835480528414222,0.0796
+RandomForest,r1,middle - forward,forward vs middle block,attack_macro_f1,0.5392985609390158,0.43911862678411245,0.1002
+RandomForest,r1,middle - forward,forward vs middle block,balanced_accuracy,0.5988506309632758,0.5480268484630627,0.0508
+RandomForest,r1,roll1 - roll3,rolling origin: earliest vs latest window,macro_f1,0.5252474720000415,0.49995668759828943,0.0253
+RandomForest,r1,roll1 - roll3,rolling origin: earliest vs latest window,attack_macro_f1,0.4951037010743749,0.45446749353288063,0.0406
+RandomForest,r1,roll1 - roll3,rolling origin: earliest vs latest window,balanced_accuracy,0.5743586840302599,0.5630983965727051,0.0113
+RandomForest,raw,random - forward,loss of the paper temporal split,macro_f1,0.6173862763993573,0.44327399575040377,0.1741
+RandomForest,raw,random - forward,loss of the paper temporal split,attack_macro_f1,0.6040074460872408,0.4311498057885075,0.1729
+RandomForest,raw,random - forward,loss of the paper temporal split,balanced_accuracy,0.67071160945295,0.4900346330902138,0.1807
+RandomForest,raw,random - reverse,loss when testing on the earliest block,macro_f1,0.6173862763993573,0.43091272301983796,0.1865
+RandomForest,raw,random - reverse,loss when testing on the earliest block,attack_macro_f1,0.6040074460872408,0.4194444953365772,0.1846
+RandomForest,raw,random - reverse,loss when testing on the earliest block,balanced_accuracy,0.67071160945295,0.43727464153294376,0.2334
+RandomForest,raw,random - middle,loss when testing on a middle block,macro_f1,0.6173862763993573,0.5364803915290972,0.0809
+RandomForest,raw,random - middle,loss when testing on a middle block,attack_macro_f1,0.6040074460872408,0.5209036120360183,0.0831
+RandomForest,raw,random - middle,loss when testing on a middle block,balanced_accuracy,0.67071160945295,0.5846625024619795,0.086
+RandomForest,raw,reverse - forward,direction of time (forward vs mirrored),macro_f1,0.43091272301983796,0.44327399575040377,-0.0124
+RandomForest,raw,reverse - forward,direction of time (forward vs mirrored),attack_macro_f1,0.4194444953365772,0.4311498057885075,-0.0117
+RandomForest,raw,reverse - forward,direction of time (forward vs mirrored),balanced_accuracy,0.43727464153294376,0.4900346330902138,-0.0528
+RandomForest,raw,middle - forward,forward vs middle block,macro_f1,0.5364803915290972,0.44327399575040377,0.0932
+RandomForest,raw,middle - forward,forward vs middle block,attack_macro_f1,0.5209036120360183,0.4311498057885075,0.0898
+RandomForest,raw,middle - forward,forward vs middle block,balanced_accuracy,0.5846625024619795,0.4900346330902138,0.0946
+RandomForest,raw,roll1 - roll3,rolling origin: earliest vs latest window,macro_f1,0.5126750505536877,0.4659476238811462,0.0467
+RandomForest,raw,roll1 - roll3,rolling origin: earliest vs latest window,attack_macro_f1,0.5022030310346653,0.45078269086047884,0.0514
+RandomForest,raw,roll1 - roll3,rolling origin: earliest vs latest window,balanced_accuracy,0.5379647859696693,0.5039682062857757,0.034
+XGBoost,r1,random - forward,loss of the paper temporal split,macro_f1,0.6263410276812822,0.4619320425255602,0.1644
+XGBoost,r1,random - forward,loss of the paper temporal split,attack_macro_f1,0.595042937901993,0.41490172908717227,0.1801
+XGBoost,r1,random - forward,loss of the paper temporal split,balanced_accuracy,0.8207737901033908,0.5811986168928069,0.2396
+XGBoost,r1,random - reverse,loss when testing on the earliest block,macro_f1,0.6263410276812822,0.567362839544019,0.059
+XGBoost,r1,random - reverse,loss when testing on the earliest block,attack_macro_f1,0.595042937901993,0.5454352166457302,0.0496
+XGBoost,r1,random - reverse,loss when testing on the earliest block,balanced_accuracy,0.8207737901033908,0.6612128064105474,0.1596
+XGBoost,r1,random - middle,loss when testing on a middle block,macro_f1,0.6263410276812822,0.539797076194368,0.0865
+XGBoost,r1,random - middle,loss when testing on a middle block,attack_macro_f1,0.595042937901993,0.5106621481685666,0.0844
+XGBoost,r1,random - middle,loss when testing on a middle block,balanced_accuracy,0.8207737901033908,0.6981500885504927,0.1226
+XGBoost,r1,reverse - forward,direction of time (forward vs mirrored),macro_f1,0.567362839544019,0.4619320425255602,0.1054
+XGBoost,r1,reverse - forward,direction of time (forward vs mirrored),attack_macro_f1,0.5454352166457302,0.41490172908717227,0.1305
+XGBoost,r1,reverse - forward,direction of time (forward vs mirrored),balanced_accuracy,0.6612128064105474,0.5811986168928069,0.08
+XGBoost,r1,middle - forward,forward vs middle block,macro_f1,0.539797076194368,0.4619320425255602,0.0779
+XGBoost,r1,middle - forward,forward vs middle block,attack_macro_f1,0.5106621481685666,0.41490172908717227,0.0958
+XGBoost,r1,middle - forward,forward vs middle block,balanced_accuracy,0.6981500885504927,0.5811986168928069,0.117
+XGBoost,r1,roll1 - roll3,rolling origin: earliest vs latest window,macro_f1,0.52430348064075,0.4817105381404166,0.0426
+XGBoost,r1,roll1 - roll3,rolling origin: earliest vs latest window,attack_macro_f1,0.49767989330931744,0.4336712569911202,0.064
+XGBoost,r1,roll1 - roll3,rolling origin: earliest vs latest window,balanced_accuracy,0.6214064988363135,0.5999578202559936,0.0214
+XGBoost,raw,random - forward,loss of the paper temporal split,macro_f1,0.5791812622231902,0.4268506256740967,0.1523
+XGBoost,raw,random - forward,loss of the paper temporal split,attack_macro_f1,0.5629939532935265,0.41787050687304744,0.1451
+XGBoost,raw,random - forward,loss of the paper temporal split,balanced_accuracy,0.7388241775293888,0.536351955251656,0.2025
+XGBoost,raw,random - reverse,loss when testing on the earliest block,macro_f1,0.5791812622231902,0.4347842243958936,0.1444
+XGBoost,raw,random - reverse,loss when testing on the earliest block,attack_macro_f1,0.5629939532935265,0.42205990037900465,0.1409
+XGBoost,raw,random - reverse,loss when testing on the earliest block,balanced_accuracy,0.7388241775293888,0.5221824869949628,0.2166
+XGBoost,raw,random - middle,loss when testing on a middle block,macro_f1,0.5791812622231902,0.5185636441620827,0.0606
+XGBoost,raw,random - middle,loss when testing on a middle block,attack_macro_f1,0.5629939532935265,0.5072174453058027,0.0558
+XGBoost,raw,random - middle,loss when testing on a middle block,balanced_accuracy,0.7388241775293888,0.6610032429050768,0.0778
+XGBoost,raw,reverse - forward,direction of time (forward vs mirrored),macro_f1,0.4347842243958936,0.4268506256740967,0.0079
+XGBoost,raw,reverse - forward,direction of time (forward vs mirrored),attack_macro_f1,0.42205990037900465,0.41787050687304744,0.0042
+XGBoost,raw,reverse - forward,direction of time (forward vs mirrored),balanced_accuracy,0.5221824869949628,0.536351955251656,-0.0142
+XGBoost,raw,middle - forward,forward vs middle block,macro_f1,0.5185636441620827,0.4268506256740967,0.0917
+XGBoost,raw,middle - forward,forward vs middle block,attack_macro_f1,0.5072174453058027,0.41787050687304744,0.0893
+XGBoost,raw,middle - forward,forward vs middle block,balanced_accuracy,0.6610032429050768,0.536351955251656,0.1247
+XGBoost,raw,roll1 - roll3,rolling origin: earliest vs latest window,macro_f1,0.4941739869623065,0.449348450263481,0.0448
+XGBoost,raw,roll1 - roll3,rolling origin: earliest vs latest window,attack_macro_f1,0.48782595706417636,0.4352851616654804,0.0525
+XGBoost,raw,roll1 - roll3,rolling origin: earliest vs latest window,balanced_accuracy,0.6010655126763479,0.550839605211853,0.0502

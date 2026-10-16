@@ -1,0 +1,697 @@
+{
+ "figure": "F1",
+ "printed_as": "Fig. 1",
+ "size_cm": [
+  17.0,
+  13.64
+ ],
+ "dpi": 600,
+ "min_font_pt": 10.0,
+ "design": "author (fig/mid_F1_author.png), redrawn at >= 10 pt in two rows",
+ "stages": [
+  {
+   "stage": 1,
+   "boxes": [
+    {
+     "id": "data",
+     "number": "1",
+     "title": "Data",
+     "tag": "Sec. 3.1, 4.1",
+     "lines": [
+      "CIC IoT-DIAD 2024",
+      "flow release:",
+      "129 CSV files,",
+      "≈19.5 million flows",
+      "8 classes,",
+      "16 capture groups",
+      "sample of",
+      "3,626,502 flows",
+      "81 flow features",
+      "(identifier columns",
+      "excluded)"
+     ],
+     "thread": "common",
+     "colour": "#009E73"
+    }
+   ]
+  },
+  {
+   "stage": 2,
+   "boxes": [
+    {
+     "id": "evidence",
+     "number": "2",
+     "title": "Label-noise evidence",
+     "tag": "Sec. 3.1 · Fig. 2",
+     "lines": [
+      "labels = capture folder;",
+      "attack captures also hold",
+      "background traffic",
+      "ICMP and GRE floods:",
+      "2–4% of flows",
+      "(protocol 0) carry",
+      "94.4–99.7% of packets",
+      "IP pairs also seen in",
+      "Benign: up to 73.8%",
+      "of flows"
+     ],
+     "thread": "labels",
+     "colour": "#D55E00"
+    }
+   ]
+  },
+  {
+   "stage": 3,
+   "boxes": [
+    {
+     "id": "rules",
+     "number": "3",
+     "title": "Background rules",
+     "tag": "Sec. 3.2–3.3 · Table 2",
+     "lines": [
+      "R1 external endpoint",
+      "R2 service ports",
+      "R3 Benign IP pair",
+      "Validation",
+      "signatures in",
+      "15 attack captures",
+      "R1 endpoint checks",
+      "audit of 472 flows by",
+      "language-model",
+      "annotators (blind; not",
+      "verified by a human)"
+     ],
+     "thread": "labels",
+     "colour": "#D55E00"
+    }
+   ]
+  },
+  {
+   "stage": 4,
+   "boxes": [
+    {
+     "id": "labels",
+     "number": "4",
+     "title": "Label conditions",
+     "tag": "Sec. 3.4 · Table 3",
+     "lines": [
+      "raw folder labels",
+      "R1 (main): flagged",
+      "flows removed",
+      "Controls",
+      "six rule variants",
+      "training-only cleaning",
+      "symmetric R1",
+      "(Benign included)",
+      "relabelling instead",
+      "of removal",
+      "R3 reference from",
+      "training flows"
+     ],
+     "thread": "labels",
+     "colour": "#D55E00"
+    }
+   ]
+  },
+  {
+   "stage": 5,
+   "boxes": [
+    {
+     "id": "splits",
+     "number": "5",
+     "title": "Split designs",
+     "tag": "Sec. 3.4 · Table 3",
+     "lines": [
+      "random 70/15/15",
+      "temporal within",
+      "capture groups (main),",
+      "70/15/15",
+      "Controls",
+      "4 more seeds; cuts",
+      "60/20/20, 80/10/10",
+      "temporal within class",
+      "day-disjoint",
+      "(13 groups)",
+      "12 held-out sub-attacks",
+      "reverse, middle,",
+      "rolling (Table 4)"
+     ],
+     "thread": "split",
+     "colour": "#0072B2"
+    }
+   ]
+  },
+  {
+   "stage": 6,
+   "boxes": [
+    {
+     "id": "models",
+     "number": "6",
+     "title": "Models",
+     "tag": "Sec. 4.2 · Fig. 3",
+     "lines": [
+      "5 deep networks × 5 seeds",
+      "LightGBM, RF × 5 seeds",
+      "XGBoost × 1"
+     ],
+     "thread": "common",
+     "colour": "#009E73"
+    }
+   ]
+  },
+  {
+   "stage": 7,
+   "boxes": [
+    {
+     "id": "evaluation",
+     "number": "7",
+     "title": "Evaluation",
+     "tag": "Sec. 4.4 · Figs. 4–6",
+     "lines": [
+      "macro-F1, BA, macro-AP",
+      "per-class and",
+      "packet-weighted recall",
+      "i.i.d. and block bootstrap,",
+      "Wilson intervals",
+      "each capture group left out"
+     ],
+     "thread": "common",
+     "colour": "#009E73"
+    }
+   ]
+  }
+ ],
+ "controls": [
+  {
+   "id": "identifiers",
+   "number": "8.1",
+   "title": "Identifier columns",
+   "tag": "Sec. 5.1 · Fig. 4",
+   "lines": [
+    "+ port, protocol, addresses, timestamp: XGBoost;",
+    "approximated published setting: XGBoost, 1-D CNN"
+   ],
+   "threads": [
+    "ident"
+   ],
+   "colours": [
+    "#CC79A7"
+   ]
+  },
+  {
+   "id": "cicids2017",
+   "number": "8.2",
+   "title": "CICIDS2017",
+   "tag": "Sec. 5.6 · Figs. 4, 6",
+   "lines": [
+    "XGBoost: identifier columns;",
+    "random vs temporal split"
+   ],
+   "threads": [
+    "ident",
+    "split"
+   ],
+   "colours": [
+    "#CC79A7",
+    "#0072B2"
+   ]
+  },
+  {
+   "id": "fixed_epochs",
+   "number": "8.3",
+   "title": "Training protocol",
+   "tag": "Sec. 4.3, 5.4 · Fig. 6",
+   "lines": [
+    "30 fixed epochs (3 networks, seeds 17, 42); shared",
+    "tuning budget, 4 configurations per model (all 8,",
+    "seeds 42, 17, 7); temporal split"
+   ],
+   "threads": [
+    "common"
+   ],
+   "colours": [
+    "#009E73"
+   ]
+  },
+  {
+   "id": "drift",
+   "number": "8.4",
+   "title": "Drift",
+   "tag": "Sec. 5.5",
+   "lines": [
+    "adversarial validation with a within-training reference"
+   ],
+   "threads": [
+    "split"
+   ],
+   "colours": [
+    "#0072B2"
+   ]
+  }
+ ],
+ "legend": {
+  "common": {
+   "colour": "#009E73",
+   "label": "data, models, evaluation"
+  },
+  "labels": {
+   "colour": "#D55E00",
+   "label": "label noise (folder labels)"
+  },
+  "split": {
+   "colour": "#0072B2",
+   "label": "split design"
+  },
+  "ident": {
+   "colour": "#CC79A7",
+   "label": "identifier columns"
+  }
+ },
+ "evidence": {
+  "129 CSV files": {
+   "manuscript_blocks": [
+    23
+   ],
+   "manuscript_phrases": [
+    "contains 129 comma-separated values (CSV) files"
+   ]
+  },
+  "19.5 million flows": {
+   "manuscript_blocks": [
+    23
+   ],
+   "manuscript_phrases": [
+    "about 19.5 million flows"
+   ]
+  },
+  "8 classes, 16 capture groups": {
+   "manuscript_blocks": [
+    23
+   ],
+   "manuscript_phrases": [
+    "grouped into eight class folders",
+    "which gives 16 capture groups"
+   ],
+   "recomputed": {
+    "classes": 8,
+    "capture_groups": 16,
+    "file": "split_pilot/relabel_summary.json"
+   }
+  },
+  "3,626,502 flows": {
+   "manuscript_blocks": [
+    67
+   ],
+   "manuscript_phrases": [
+    "The resulting sample contains 3,626,502 flows",
+    "DoS and DDoS were randomly sub-sampled"
+   ],
+   "recomputed": {
+    "n_kept": 3626502,
+    "file": "q1_revision/day_disjoint/days.json"
+   }
+  },
+  "81 flow features": {
+   "manuscript_blocks": [
+    23
+   ],
+   "manuscript_phrases": [
+    "for 81 model features",
+    "Identifier columns (flow ID, Internet Protocol (IP) addresses, ports, protocol and timestamp) are not used as model features"
+   ]
+  },
+  "folder labels, background traffic": {
+   "manuscript_blocks": [
+    24
+   ],
+   "manuscript_phrases": [
+    "The class labels are derived solely from the folder",
+    "so every attack pcap also contains the ordinary traffic"
+   ]
+  },
+  "2-4% of flows carry 94.4-99.7% of packets": {
+   "manuscript_blocks": [
+    27
+   ],
+   "manuscript_phrases": [
+    "the 2–4% of flows with protocol 0 carry 99.7% (ICMP Flood), 94.4% (ICMP Fragmentation) and 98.6% (Mirai"
+   ],
+   "recomputed": {
+    "flow_share_protocol0": {
+     "DDOS / DDOS ICMP FLOOD": 0.0354,
+     "DDOS / DDOS ICMP Fragmentation": 0.0225,
+     "Mirai": 0.0348
+    },
+    "packet_share_protocol0": {
+     "DDOS / DDOS ICMP FLOOD": 0.9971,
+     "DDOS / DDOS ICMP Fragmentation": 0.9436,
+     "Mirai": 0.986
+    },
+    "file": "split_pilot/protocol_packet_share.json"
+   }
+  },
+  "IP pairs shared with Benign up to 73.8%": {
+   "manuscript_blocks": [
+    30
+   ],
+   "manuscript_phrases": [
+    "reaches 73.8% for ICMP Fragmentation"
+   ],
+   "recomputed": {
+    "max_R3_benign_pair": 0.7382,
+    "file": "split_pilot/relabel_summary.json"
+   }
+  },
+  "R1 external endpoint (main)": {
+   "manuscript_blocks": [
+    34,
+    37
+   ],
+   "manuscript_phrases": [
+    "**R1 — external endpoint.**",
+    "R1 is used as the main cleaning variant"
+   ]
+  },
+  "R2 service ports": {
+   "manuscript_blocks": [
+    35
+   ],
+   "manuscript_phrases": [
+    "**R2 — infrastructure services.**",
+    "multicast DNS (mDNS; 5353)"
+   ],
+   "recomputed": {
+    "service_ports": [
+     53,
+     67,
+     68,
+     123,
+     137,
+     138,
+     1900,
+     5353
+    ]
+   }
+  },
+  "R3 Benign IP pair": {
+   "manuscript_blocks": [
+    36
+   ],
+   "manuscript_phrases": [
+    "**R3 — benign IP pair.**"
+   ]
+  },
+  "flagged flows removed": {
+   "manuscript_blocks": [
+    37
+   ],
+   "manuscript_phrases": [
+    "Flows matched by any rule were removed rather than relabelled"
+   ]
+  },
+  "signatures in 15 attack captures": {
+   "manuscript_blocks": [
+    6
+   ],
+   "manuscript_phrases": [
+    "a signature-based check of the rules in all 15 attack captures"
+   ],
+   "recomputed": {
+    "captures": 15,
+    "file": "q1_revision/rule_validation2/rule_validation2.json"
+   }
+  },
+  "R1 endpoint checks": {
+   "manuscript_blocks": [
+    76
+   ],
+   "manuscript_phrases": [
+    "comparison of the external endpoints flagged by R1 with those of Benign"
+   ]
+  },
+  "audit of 472 flows": {
+   "manuscript_blocks": [
+    51
+   ],
+   "manuscript_phrases": [
+    "stratified random sample of 472 flows",
+    "No human verified these labels"
+   ],
+   "recomputed": {
+    "flows": 472,
+    "file": "q1_revision/rule_validation2/llm_audit/agreement.json"
+   }
+  },
+  "label conditions": {
+   "manuscript_blocks": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    119
+   ],
+   "manuscript_phrases": [
+    "**Raw:** folder labels as distributed",
+    "**R1-cleaned (main):**",
+    "**Six cleaning variants**",
+    "**Training-set versus test-set cleaning.**",
+    "R1 is applied to all classes, Benign included, or used to relabel instead of remove"
+   ]
+  },
+  "random 70/15/15": {
+   "manuscript_blocks": [
+    56
+   ],
+   "manuscript_phrases": [
+    "**Random:** stratified 70/15/15 split"
+   ],
+   "recomputed": {
+    "train_share": 0.7,
+    "file": "q1_revision/deep_protocol/summary/runs.csv"
+   }
+  },
+  "temporal within capture groups 70/15/15 (main)": {
+   "manuscript_blocks": [
+    57
+   ],
+   "manuscript_phrases": [
+    "**Temporal within capture groups (main):**",
+    "the first 70% form the training set, the next 15% the validation set and the last 15% the test set"
+   ]
+  },
+  "split controls": {
+   "manuscript_blocks": [
+    58,
+    76
+   ],
+   "manuscript_phrases": [
+    "the random split is repeated with four further seeds",
+    "the temporal cut is moved to 60/20/20 and 80/10/10",
+    "**Temporal within class**",
+    "in each of the 13 capture groups whose flows span several capture days",
+    "Each of the 12 sub-attacks of the classes with more than one capture group is held out"
+   ],
+   "recomputed": {
+    "day_disjoint_groups": 13,
+    "held_out_sub_attacks": 12
+   }
+  },
+  "5 deep networks x 5 seeds": {
+   "manuscript_blocks": [
+    69,
+    73
+   ],
+   "manuscript_phrases": [
+    "Each configuration was trained with five seeds (7, 17, 42, 123 and 2024)",
+    "on the same sample, splits and label conditions with the same five seeds"
+   ],
+   "recomputed": {
+    "ResNet1D": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ],
+    "GRU": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ],
+    "Transformer": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ],
+    "MLP": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ],
+    "CNN1D_Hossain": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ]
+   }
+  },
+  "LightGBM, RF x 5 seeds; XGBoost x 1": {
+   "manuscript_blocks": [
+    72
+   ],
+   "manuscript_phrases": [
+    "LightGBM and the random forest were trained with five seeds (7, 17, 42, 123 and 2024)",
+    "it was trained once (seed 42)"
+   ],
+   "recomputed": {
+    "XGBoost": [
+     42
+    ],
+    "LightGBM": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ],
+    "RandomForest": [
+     7,
+     17,
+     42,
+     123,
+     2024
+    ]
+   }
+  },
+  "metrics": {
+   "manuscript_blocks": [
+    8,
+    80,
+    82
+   ],
+   "manuscript_phrases": [
+    "macro-F1 is therefore the primary metric, complemented by balanced accuracy",
+    "the threshold-free macro-averaged average precision (macro-AP)",
+    "recall is also weighted by the packets of each flow"
+   ]
+  },
+  "bootstrap and Wilson intervals": {
+   "manuscript_blocks": [
+    80
+   ],
+   "manuscript_phrases": [
+    "a block bootstrap instead resamples contiguous blocks",
+    "receive Wilson score intervals"
+   ]
+  },
+  "identifier columns": {
+   "manuscript_blocks": [
+    77
+   ],
+   "manuscript_phrases": [
+    "destination port and protocol (as numbers), source and destination addresses",
+    "In the approximation of the published setting (Section 5.6), XGBoost and a re-implementation of the 1-D CNN"
+   ]
+  },
+  "CICIDS2017": {
+   "manuscript_blocks": [
+    78
+   ],
+   "manuscript_phrases": [
+    "The identifier and split experiments are repeated with XGBoost on the original labelled flow files of CICIDS2017"
+   ]
+  },
+  "fixed 30 epochs": {
+   "manuscript_blocks": [
+    69
+   ],
+   "manuscript_phrases": [
+    "the three networks were also trained under the temporal split with both label conditions and seeds 17 and 42 for exactly 30 epochs without early stopping"
+   ],
+   "recomputed": {
+    "runs": 12,
+    "models": [
+     "GRU",
+     "ResNet1D",
+     "Transformer"
+    ],
+    "seeds": [
+     17,
+     42
+    ]
+   }
+  },
+  "drift": {
+   "manuscript_blocks": [
+    80,
+    135
+   ],
+   "manuscript_phrases": [
+    "the same AUC is therefore computed for a within-training reference",
+    "adversarial validation"
+   ]
+  }
+ },
+ "box8": {
+  "number": "8",
+  "title": "Further experiments and controls"
+ },
+ "numbers_printed": [
+  "0",
+  "1",
+  "10",
+  "12",
+  "129",
+  "13",
+  "15",
+  "16",
+  "17",
+  "19.5",
+  "2",
+  "20",
+  "2017",
+  "2024",
+  "3",
+  "3,626,502",
+  "30",
+  "4",
+  "42",
+  "472",
+  "5",
+  "60",
+  "7",
+  "70",
+  "73.8",
+  "8",
+  "80",
+  "81",
+  "94.4",
+  "99.7"
+ ],
+ "png": "(manuscript source)",
+ "script": "(manuscript source)",
+ "vertical_slack_cm": {
+  "data": 0.45,
+  "evidence": 0.91,
+  "rules": 0.4,
+  "labels": 0.0,
+  "splits": 0.03,
+  "models": 0.14,
+  "evaluation": 0.14,
+  "box8": 0.0,
+  "identifiers": 0.0,
+  "cicids2017": 0.0,
+  "fixed_epochs": 0.0,
+  "drift": 0.0
+ },
+ "caption": "Figure. 1 Study design: the flow files of CIC IoT-DIAD 2024, the evidence of label noise, the background-removal rules R1–R3 and their validation, the label conditions crossed (⊗) with the split designs, the eight models (× n: number of training seeds, or runs) and their evaluation, with the further experiments and controls below; colour shows the question that each step addresses, and grey text gives the section (Sec.), figure and table of this paper (CSV: comma-separated values; ICMP: Internet Control Message Protocol; GRE: Generic Routing Encapsulation; IP: Internet Protocol; RF: random forest; BA: balanced accuracy; macro-AP: macro-averaged average precision; i.i.d.: independent and identically distributed; 1-D CNN: one-dimensional convolutional neural network)"
+}

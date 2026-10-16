@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'dist' / 'release_assets'
-PATTERNS = ('*.npz', '*.npy', '*.pt', '*.pth', '*.pkl')
+PATTERNS = ('*.npz', '*.npy', '*.pt', '*.pth', '*.pkl', '*.xgb.json', '*.lgb.txt')   # + round-2 tree models
 IJIES = ['q1_revision', 'tree_protocol', 'deep_split', 'extra_baselines', 'identifier_leakage_v2', 'split_pilot']
 
 ap = argparse.ArgumentParser()

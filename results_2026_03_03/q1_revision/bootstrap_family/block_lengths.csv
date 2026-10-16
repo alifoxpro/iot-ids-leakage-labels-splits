@@ -1,0 +1,2945 @@
+effect,side,L,group,class,n,block_used,blocks
+leader_macro_f1_random_raw,both,20000,Benign,Benign,57809,11561,6
+leader_macro_f1_random_raw,both,20000,BruteForce,BruteForce,540,108,5
+leader_macro_f1_random_raw,both,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+leader_macro_f1_random_raw,both,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+leader_macro_f1_random_raw,both,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+leader_macro_f1_random_raw,both,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+leader_macro_f1_random_raw,both,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+leader_macro_f1_random_raw,both,20000,DOS SYN FLOOD,DOS,125105,20000,7
+leader_macro_f1_random_raw,both,20000,DOS UDP FLOOD,DOS,81335,16267,5
+leader_macro_f1_random_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader_macro_f1_random_raw,both,20000,Recon,Recon,62353,12470,6
+leader_macro_f1_random_raw,both,20000,ARP Spoofing,Spoofing,11568,2313,6
+leader_macro_f1_random_raw,both,20000,DNS Spoofing,Spoofing,11065,2213,5
+leader_macro_f1_random_raw,both,20000,Sqlinjection,Web-Based,973,194,6
+leader_macro_f1_random_raw,both,20000,Uploading Attack,Web-Based,215,43,5
+leader_macro_f1_random_raw,both,20000,XSS,Web-Based,494,98,6
+leader_macro_f1_random_raw,both,auto,Benign,Benign,57809,432,134
+leader_macro_f1_random_raw,both,auto,BruteForce,BruteForce,540,2,270
+leader_macro_f1_random_raw,both,auto,DDOS ACK Fragmentation,DDOS,101184,46,2200
+leader_macro_f1_random_raw,both,auto,DDOS HTTP FLOOD,DDOS,22573,73,310
+leader_macro_f1_random_raw,both,auto,DDOS ICMP FLOOD,DDOS,10186,3,3396
+leader_macro_f1_random_raw,both,auto,DDOS ICMP Fragmentation,DDOS,16057,142,114
+leader_macro_f1_random_raw,both,auto,DOS HTTP FLOOD,DOS,18560,16,1160
+leader_macro_f1_random_raw,both,auto,DOS SYN FLOOD,DOS,125105,67,1868
+leader_macro_f1_random_raw,both,auto,DOS UDP FLOOD,DOS,81335,236,345
+leader_macro_f1_random_raw,both,auto,Mirai,Mirai,23959,2,11980
+leader_macro_f1_random_raw,both,auto,Recon,Recon,62353,544,115
+leader_macro_f1_random_raw,both,auto,ARP Spoofing,Spoofing,11568,28,414
+leader_macro_f1_random_raw,both,auto,DNS Spoofing,Spoofing,11065,4,2767
+leader_macro_f1_random_raw,both,auto,Sqlinjection,Web-Based,973,1,973
+leader_macro_f1_random_raw,both,auto,Uploading Attack,Web-Based,215,2,108
+leader_macro_f1_random_raw,both,auto,XSS,Web-Based,494,2,247
+leader42_macro_f1_random_raw,both,20000,Benign,Benign,57809,11561,6
+leader42_macro_f1_random_raw,both,20000,BruteForce,BruteForce,540,108,5
+leader42_macro_f1_random_raw,both,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+leader42_macro_f1_random_raw,both,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+leader42_macro_f1_random_raw,both,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+leader42_macro_f1_random_raw,both,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+leader42_macro_f1_random_raw,both,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+leader42_macro_f1_random_raw,both,20000,DOS SYN FLOOD,DOS,125105,20000,7
+leader42_macro_f1_random_raw,both,20000,DOS UDP FLOOD,DOS,81335,16267,5
+leader42_macro_f1_random_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader42_macro_f1_random_raw,both,20000,Recon,Recon,62353,12470,6
+leader42_macro_f1_random_raw,both,20000,ARP Spoofing,Spoofing,11568,2313,6
+leader42_macro_f1_random_raw,both,20000,DNS Spoofing,Spoofing,11065,2213,5
+leader42_macro_f1_random_raw,both,20000,Sqlinjection,Web-Based,973,194,6
+leader42_macro_f1_random_raw,both,20000,Uploading Attack,Web-Based,215,43,5
+leader42_macro_f1_random_raw,both,20000,XSS,Web-Based,494,98,6
+leader42_macro_f1_random_raw,both,auto,Benign,Benign,57809,134,432
+leader42_macro_f1_random_raw,both,auto,BruteForce,BruteForce,540,3,180
+leader42_macro_f1_random_raw,both,auto,DDOS ACK Fragmentation,DDOS,101184,33,3067
+leader42_macro_f1_random_raw,both,auto,DDOS HTTP FLOOD,DDOS,22573,72,314
+leader42_macro_f1_random_raw,both,auto,DDOS ICMP FLOOD,DDOS,10186,9,1132
+leader42_macro_f1_random_raw,both,auto,DDOS ICMP Fragmentation,DDOS,16057,25,643
+leader42_macro_f1_random_raw,both,auto,DOS HTTP FLOOD,DOS,18560,12,1547
+leader42_macro_f1_random_raw,both,auto,DOS SYN FLOOD,DOS,125105,48,2607
+leader42_macro_f1_random_raw,both,auto,DOS UDP FLOOD,DOS,81335,35,2324
+leader42_macro_f1_random_raw,both,auto,Mirai,Mirai,23959,2,11980
+leader42_macro_f1_random_raw,both,auto,Recon,Recon,62353,23,2711
+leader42_macro_f1_random_raw,both,auto,ARP Spoofing,Spoofing,11568,4,2892
+leader42_macro_f1_random_raw,both,auto,DNS Spoofing,Spoofing,11065,5,2213
+leader42_macro_f1_random_raw,both,auto,Sqlinjection,Web-Based,973,1,973
+leader42_macro_f1_random_raw,both,auto,Uploading Attack,Web-Based,215,1,215
+leader42_macro_f1_random_raw,both,auto,XSS,Web-Based,494,1,494
+leader_balanced_accuracy_random_raw,both,20000,Benign,Benign,57809,11561,6
+leader_balanced_accuracy_random_raw,both,20000,BruteForce,BruteForce,540,108,5
+leader_balanced_accuracy_random_raw,both,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+leader_balanced_accuracy_random_raw,both,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+leader_balanced_accuracy_random_raw,both,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+leader_balanced_accuracy_random_raw,both,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+leader_balanced_accuracy_random_raw,both,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+leader_balanced_accuracy_random_raw,both,20000,DOS SYN FLOOD,DOS,125105,20000,7
+leader_balanced_accuracy_random_raw,both,20000,DOS UDP FLOOD,DOS,81335,16267,5
+leader_balanced_accuracy_random_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader_balanced_accuracy_random_raw,both,20000,Recon,Recon,62353,12470,6
+leader_balanced_accuracy_random_raw,both,20000,ARP Spoofing,Spoofing,11568,2313,6
+leader_balanced_accuracy_random_raw,both,20000,DNS Spoofing,Spoofing,11065,2213,5
+leader_balanced_accuracy_random_raw,both,20000,Sqlinjection,Web-Based,973,194,6
+leader_balanced_accuracy_random_raw,both,20000,Uploading Attack,Web-Based,215,43,5
+leader_balanced_accuracy_random_raw,both,20000,XSS,Web-Based,494,98,6
+leader_balanced_accuracy_random_raw,both,auto,Benign,Benign,57809,19,3043
+leader_balanced_accuracy_random_raw,both,auto,BruteForce,BruteForce,540,1,540
+leader_balanced_accuracy_random_raw,both,auto,DDOS ACK Fragmentation,DDOS,101184,183,553
+leader_balanced_accuracy_random_raw,both,auto,DDOS HTTP FLOOD,DDOS,22573,4,5644
+leader_balanced_accuracy_random_raw,both,auto,DDOS ICMP FLOOD,DDOS,10186,2,5093
+leader_balanced_accuracy_random_raw,both,auto,DDOS ICMP Fragmentation,DDOS,16057,1,16057
+leader_balanced_accuracy_random_raw,both,auto,DOS HTTP FLOOD,DOS,18560,374,50
+leader_balanced_accuracy_random_raw,both,auto,DOS SYN FLOOD,DOS,125105,103,1215
+leader_balanced_accuracy_random_raw,both,auto,DOS UDP FLOOD,DOS,81335,856,96
+leader_balanced_accuracy_random_raw,both,auto,Mirai,Mirai,23959,9,2663
+leader_balanced_accuracy_random_raw,both,auto,Recon,Recon,62353,68,917
+leader_balanced_accuracy_random_raw,both,auto,ARP Spoofing,Spoofing,11568,3,3856
+leader_balanced_accuracy_random_raw,both,auto,DNS Spoofing,Spoofing,11065,29,382
+leader_balanced_accuracy_random_raw,both,auto,Sqlinjection,Web-Based,973,2,487
+leader_balanced_accuracy_random_raw,both,auto,Uploading Attack,Web-Based,215,3,72
+leader_balanced_accuracy_random_raw,both,auto,XSS,Web-Based,494,1,494
+leader42_balanced_accuracy_random_raw,both,20000,Benign,Benign,57809,11561,6
+leader42_balanced_accuracy_random_raw,both,20000,BruteForce,BruteForce,540,108,5
+leader42_balanced_accuracy_random_raw,both,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+leader42_balanced_accuracy_random_raw,both,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+leader42_balanced_accuracy_random_raw,both,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+leader42_balanced_accuracy_random_raw,both,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+leader42_balanced_accuracy_random_raw,both,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+leader42_balanced_accuracy_random_raw,both,20000,DOS SYN FLOOD,DOS,125105,20000,7
+leader42_balanced_accuracy_random_raw,both,20000,DOS UDP FLOOD,DOS,81335,16267,5
+leader42_balanced_accuracy_random_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader42_balanced_accuracy_random_raw,both,20000,Recon,Recon,62353,12470,6
+leader42_balanced_accuracy_random_raw,both,20000,ARP Spoofing,Spoofing,11568,2313,6
+leader42_balanced_accuracy_random_raw,both,20000,DNS Spoofing,Spoofing,11065,2213,5
+leader42_balanced_accuracy_random_raw,both,20000,Sqlinjection,Web-Based,973,194,6
+leader42_balanced_accuracy_random_raw,both,20000,Uploading Attack,Web-Based,215,43,5
+leader42_balanced_accuracy_random_raw,both,20000,XSS,Web-Based,494,98,6
+leader42_balanced_accuracy_random_raw,both,auto,Benign,Benign,57809,4,14453
+leader42_balanced_accuracy_random_raw,both,auto,BruteForce,BruteForce,540,1,540
+leader42_balanced_accuracy_random_raw,both,auto,DDOS ACK Fragmentation,DDOS,101184,183,553
+leader42_balanced_accuracy_random_raw,both,auto,DDOS HTTP FLOOD,DDOS,22573,4,5644
+leader42_balanced_accuracy_random_raw,both,auto,DDOS ICMP FLOOD,DDOS,10186,2,5093
+leader42_balanced_accuracy_random_raw,both,auto,DDOS ICMP Fragmentation,DDOS,16057,1,16057
+leader42_balanced_accuracy_random_raw,both,auto,DOS HTTP FLOOD,DOS,18560,307,61
+leader42_balanced_accuracy_random_raw,both,auto,DOS SYN FLOOD,DOS,125105,74,1691
+leader42_balanced_accuracy_random_raw,both,auto,DOS UDP FLOOD,DOS,81335,856,96
+leader42_balanced_accuracy_random_raw,both,auto,Mirai,Mirai,23959,2,11980
+leader42_balanced_accuracy_random_raw,both,auto,Recon,Recon,62353,5,12471
+leader42_balanced_accuracy_random_raw,both,auto,ARP Spoofing,Spoofing,11568,2,5784
+leader42_balanced_accuracy_random_raw,both,auto,DNS Spoofing,Spoofing,11065,27,410
+leader42_balanced_accuracy_random_raw,both,auto,Sqlinjection,Web-Based,973,1,973
+leader42_balanced_accuracy_random_raw,both,auto,Uploading Attack,Web-Based,215,3,72
+leader42_balanced_accuracy_random_raw,both,auto,XSS,Web-Based,494,1,494
+treenet_random_raw,both,20000,Benign,Benign,57809,11561,6
+treenet_random_raw,both,20000,BruteForce,BruteForce,540,108,5
+treenet_random_raw,both,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+treenet_random_raw,both,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+treenet_random_raw,both,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+treenet_random_raw,both,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+treenet_random_raw,both,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+treenet_random_raw,both,20000,DOS SYN FLOOD,DOS,125105,20000,7
+treenet_random_raw,both,20000,DOS UDP FLOOD,DOS,81335,16267,5
+treenet_random_raw,both,20000,Mirai,Mirai,23959,4791,6
+treenet_random_raw,both,20000,Recon,Recon,62353,12470,6
+treenet_random_raw,both,20000,ARP Spoofing,Spoofing,11568,2313,6
+treenet_random_raw,both,20000,DNS Spoofing,Spoofing,11065,2213,5
+treenet_random_raw,both,20000,Sqlinjection,Web-Based,973,194,6
+treenet_random_raw,both,20000,Uploading Attack,Web-Based,215,43,5
+treenet_random_raw,both,20000,XSS,Web-Based,494,98,6
+treenet_random_raw,both,auto,Benign,Benign,57809,722,81
+treenet_random_raw,both,auto,BruteForce,BruteForce,540,1,540
+treenet_random_raw,both,auto,DDOS ACK Fragmentation,DDOS,101184,516,197
+treenet_random_raw,both,auto,DDOS HTTP FLOOD,DDOS,22573,443,51
+treenet_random_raw,both,auto,DDOS ICMP FLOOD,DDOS,10186,152,68
+treenet_random_raw,both,auto,DDOS ICMP Fragmentation,DDOS,16057,351,46
+treenet_random_raw,both,auto,DOS HTTP FLOOD,DOS,18560,409,46
+treenet_random_raw,both,auto,DOS SYN FLOOD,DOS,125105,314,399
+treenet_random_raw,both,auto,DOS UDP FLOOD,DOS,81335,856,96
+treenet_random_raw,both,auto,Mirai,Mirai,23959,52,461
+treenet_random_raw,both,auto,Recon,Recon,62353,750,84
+treenet_random_raw,both,auto,ARP Spoofing,Spoofing,11568,5,2314
+treenet_random_raw,both,auto,DNS Spoofing,Spoofing,11065,284,39
+treenet_random_raw,both,auto,Sqlinjection,Web-Based,973,3,325
+treenet_random_raw,both,auto,Uploading Attack,Web-Based,215,1,215
+treenet_random_raw,both,auto,XSS,Web-Based,494,2,247
+leader_macro_f1_random_r1,both,20000,Benign,Benign,57809,11561,6
+leader_macro_f1_random_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader_macro_f1_random_r1,both,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+leader_macro_f1_random_r1,both,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+leader_macro_f1_random_r1,both,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+leader_macro_f1_random_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+leader_macro_f1_random_r1,both,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+leader_macro_f1_random_r1,both,20000,DOS SYN FLOOD,DOS,124042,20000,7
+leader_macro_f1_random_r1,both,20000,DOS UDP FLOOD,DOS,78217,15643,6
+leader_macro_f1_random_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader_macro_f1_random_r1,both,20000,Recon,Recon,25763,5152,6
+leader_macro_f1_random_r1,both,20000,ARP Spoofing,Spoofing,4855,971,5
+leader_macro_f1_random_r1,both,20000,DNS Spoofing,Spoofing,4654,930,6
+leader_macro_f1_random_r1,both,20000,Sqlinjection,Web-Based,383,76,6
+leader_macro_f1_random_r1,both,20000,Uploading Attack,Web-Based,81,16,6
+leader_macro_f1_random_r1,both,20000,XSS,Web-Based,171,34,6
+leader_macro_f1_random_r1,both,auto,Benign,Benign,57809,169,343
+leader_macro_f1_random_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader_macro_f1_random_r1,both,auto,DDOS ACK Fragmentation,DDOS,98226,54,1819
+leader_macro_f1_random_r1,both,auto,DDOS HTTP FLOOD,DDOS,21961,419,53
+leader_macro_f1_random_r1,both,auto,DDOS ICMP FLOOD,DDOS,4296,16,269
+leader_macro_f1_random_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6960,27,258
+leader_macro_f1_random_r1,both,auto,DOS HTTP FLOOD,DOS,17958,230,79
+leader_macro_f1_random_r1,both,auto,DOS SYN FLOOD,DOS,124042,179,693
+leader_macro_f1_random_r1,both,auto,DOS UDP FLOOD,DOS,78217,833,94
+leader_macro_f1_random_r1,both,auto,Mirai,Mirai,9340,4,2335
+leader_macro_f1_random_r1,both,auto,Recon,Recon,25763,431,60
+leader_macro_f1_random_r1,both,auto,ARP Spoofing,Spoofing,4855,4,1214
+leader_macro_f1_random_r1,both,auto,DNS Spoofing,Spoofing,4654,4,1164
+leader_macro_f1_random_r1,both,auto,Sqlinjection,Web-Based,383,15,26
+leader_macro_f1_random_r1,both,auto,Uploading Attack,Web-Based,81,4,21
+leader_macro_f1_random_r1,both,auto,XSS,Web-Based,171,1,171
+leader42_macro_f1_random_r1,both,20000,Benign,Benign,57809,11561,6
+leader42_macro_f1_random_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader42_macro_f1_random_r1,both,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+leader42_macro_f1_random_r1,both,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+leader42_macro_f1_random_r1,both,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+leader42_macro_f1_random_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+leader42_macro_f1_random_r1,both,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+leader42_macro_f1_random_r1,both,20000,DOS SYN FLOOD,DOS,124042,20000,7
+leader42_macro_f1_random_r1,both,20000,DOS UDP FLOOD,DOS,78217,15643,6
+leader42_macro_f1_random_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader42_macro_f1_random_r1,both,20000,Recon,Recon,25763,5152,6
+leader42_macro_f1_random_r1,both,20000,ARP Spoofing,Spoofing,4855,971,5
+leader42_macro_f1_random_r1,both,20000,DNS Spoofing,Spoofing,4654,930,6
+leader42_macro_f1_random_r1,both,20000,Sqlinjection,Web-Based,383,76,6
+leader42_macro_f1_random_r1,both,20000,Uploading Attack,Web-Based,81,16,6
+leader42_macro_f1_random_r1,both,20000,XSS,Web-Based,171,34,6
+leader42_macro_f1_random_r1,both,auto,Benign,Benign,57809,85,681
+leader42_macro_f1_random_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader42_macro_f1_random_r1,both,auto,DDOS ACK Fragmentation,DDOS,98226,31,3169
+leader42_macro_f1_random_r1,both,auto,DDOS HTTP FLOOD,DDOS,21961,421,53
+leader42_macro_f1_random_r1,both,auto,DDOS ICMP FLOOD,DDOS,4296,17,253
+leader42_macro_f1_random_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6960,4,1740
+leader42_macro_f1_random_r1,both,auto,DOS HTTP FLOOD,DOS,17958,357,51
+leader42_macro_f1_random_r1,both,auto,DOS SYN FLOOD,DOS,124042,169,734
+leader42_macro_f1_random_r1,both,auto,DOS UDP FLOOD,DOS,78217,827,95
+leader42_macro_f1_random_r1,both,auto,Mirai,Mirai,9340,3,3114
+leader42_macro_f1_random_r1,both,auto,Recon,Recon,25763,409,63
+leader42_macro_f1_random_r1,both,auto,ARP Spoofing,Spoofing,4855,4,1214
+leader42_macro_f1_random_r1,both,auto,DNS Spoofing,Spoofing,4654,5,931
+leader42_macro_f1_random_r1,both,auto,Sqlinjection,Web-Based,383,16,24
+leader42_macro_f1_random_r1,both,auto,Uploading Attack,Web-Based,81,4,21
+leader42_macro_f1_random_r1,both,auto,XSS,Web-Based,171,1,171
+leader_balanced_accuracy_random_r1,both,20000,Benign,Benign,57809,11561,6
+leader_balanced_accuracy_random_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader_balanced_accuracy_random_r1,both,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+leader_balanced_accuracy_random_r1,both,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+leader_balanced_accuracy_random_r1,both,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+leader_balanced_accuracy_random_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+leader_balanced_accuracy_random_r1,both,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+leader_balanced_accuracy_random_r1,both,20000,DOS SYN FLOOD,DOS,124042,20000,7
+leader_balanced_accuracy_random_r1,both,20000,DOS UDP FLOOD,DOS,78217,15643,6
+leader_balanced_accuracy_random_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader_balanced_accuracy_random_r1,both,20000,Recon,Recon,25763,5152,6
+leader_balanced_accuracy_random_r1,both,20000,ARP Spoofing,Spoofing,4855,971,5
+leader_balanced_accuracy_random_r1,both,20000,DNS Spoofing,Spoofing,4654,930,6
+leader_balanced_accuracy_random_r1,both,20000,Sqlinjection,Web-Based,383,76,6
+leader_balanced_accuracy_random_r1,both,20000,Uploading Attack,Web-Based,81,16,6
+leader_balanced_accuracy_random_r1,both,20000,XSS,Web-Based,171,34,6
+leader_balanced_accuracy_random_r1,both,auto,Benign,Benign,57809,169,343
+leader_balanced_accuracy_random_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader_balanced_accuracy_random_r1,both,auto,DDOS ACK Fragmentation,DDOS,98226,54,1819
+leader_balanced_accuracy_random_r1,both,auto,DDOS HTTP FLOOD,DDOS,21961,419,53
+leader_balanced_accuracy_random_r1,both,auto,DDOS ICMP FLOOD,DDOS,4296,16,269
+leader_balanced_accuracy_random_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6960,27,258
+leader_balanced_accuracy_random_r1,both,auto,DOS HTTP FLOOD,DOS,17958,230,79
+leader_balanced_accuracy_random_r1,both,auto,DOS SYN FLOOD,DOS,124042,179,693
+leader_balanced_accuracy_random_r1,both,auto,DOS UDP FLOOD,DOS,78217,833,94
+leader_balanced_accuracy_random_r1,both,auto,Mirai,Mirai,9340,4,2335
+leader_balanced_accuracy_random_r1,both,auto,Recon,Recon,25763,431,60
+leader_balanced_accuracy_random_r1,both,auto,ARP Spoofing,Spoofing,4855,4,1214
+leader_balanced_accuracy_random_r1,both,auto,DNS Spoofing,Spoofing,4654,4,1164
+leader_balanced_accuracy_random_r1,both,auto,Sqlinjection,Web-Based,383,15,26
+leader_balanced_accuracy_random_r1,both,auto,Uploading Attack,Web-Based,81,4,21
+leader_balanced_accuracy_random_r1,both,auto,XSS,Web-Based,171,1,171
+leader42_balanced_accuracy_random_r1,both,20000,Benign,Benign,57809,11561,6
+leader42_balanced_accuracy_random_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader42_balanced_accuracy_random_r1,both,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+leader42_balanced_accuracy_random_r1,both,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+leader42_balanced_accuracy_random_r1,both,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+leader42_balanced_accuracy_random_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+leader42_balanced_accuracy_random_r1,both,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+leader42_balanced_accuracy_random_r1,both,20000,DOS SYN FLOOD,DOS,124042,20000,7
+leader42_balanced_accuracy_random_r1,both,20000,DOS UDP FLOOD,DOS,78217,15643,6
+leader42_balanced_accuracy_random_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader42_balanced_accuracy_random_r1,both,20000,Recon,Recon,25763,5152,6
+leader42_balanced_accuracy_random_r1,both,20000,ARP Spoofing,Spoofing,4855,971,5
+leader42_balanced_accuracy_random_r1,both,20000,DNS Spoofing,Spoofing,4654,930,6
+leader42_balanced_accuracy_random_r1,both,20000,Sqlinjection,Web-Based,383,76,6
+leader42_balanced_accuracy_random_r1,both,20000,Uploading Attack,Web-Based,81,16,6
+leader42_balanced_accuracy_random_r1,both,20000,XSS,Web-Based,171,34,6
+leader42_balanced_accuracy_random_r1,both,auto,Benign,Benign,57809,85,681
+leader42_balanced_accuracy_random_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader42_balanced_accuracy_random_r1,both,auto,DDOS ACK Fragmentation,DDOS,98226,31,3169
+leader42_balanced_accuracy_random_r1,both,auto,DDOS HTTP FLOOD,DDOS,21961,421,53
+leader42_balanced_accuracy_random_r1,both,auto,DDOS ICMP FLOOD,DDOS,4296,17,253
+leader42_balanced_accuracy_random_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6960,4,1740
+leader42_balanced_accuracy_random_r1,both,auto,DOS HTTP FLOOD,DOS,17958,357,51
+leader42_balanced_accuracy_random_r1,both,auto,DOS SYN FLOOD,DOS,124042,169,734
+leader42_balanced_accuracy_random_r1,both,auto,DOS UDP FLOOD,DOS,78217,827,95
+leader42_balanced_accuracy_random_r1,both,auto,Mirai,Mirai,9340,3,3114
+leader42_balanced_accuracy_random_r1,both,auto,Recon,Recon,25763,409,63
+leader42_balanced_accuracy_random_r1,both,auto,ARP Spoofing,Spoofing,4855,4,1214
+leader42_balanced_accuracy_random_r1,both,auto,DNS Spoofing,Spoofing,4654,5,931
+leader42_balanced_accuracy_random_r1,both,auto,Sqlinjection,Web-Based,383,16,24
+leader42_balanced_accuracy_random_r1,both,auto,Uploading Attack,Web-Based,81,4,21
+leader42_balanced_accuracy_random_r1,both,auto,XSS,Web-Based,171,1,171
+treenet_random_r1,both,20000,Benign,Benign,57809,11561,6
+treenet_random_r1,both,20000,BruteForce,BruteForce,193,38,6
+treenet_random_r1,both,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+treenet_random_r1,both,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+treenet_random_r1,both,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+treenet_random_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+treenet_random_r1,both,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+treenet_random_r1,both,20000,DOS SYN FLOOD,DOS,124042,20000,7
+treenet_random_r1,both,20000,DOS UDP FLOOD,DOS,78217,15643,6
+treenet_random_r1,both,20000,Mirai,Mirai,9340,1868,5
+treenet_random_r1,both,20000,Recon,Recon,25763,5152,6
+treenet_random_r1,both,20000,ARP Spoofing,Spoofing,4855,971,5
+treenet_random_r1,both,20000,DNS Spoofing,Spoofing,4654,930,6
+treenet_random_r1,both,20000,Sqlinjection,Web-Based,383,76,6
+treenet_random_r1,both,20000,Uploading Attack,Web-Based,81,16,6
+treenet_random_r1,both,20000,XSS,Web-Based,171,34,6
+treenet_random_r1,both,auto,Benign,Benign,57809,577,101
+treenet_random_r1,both,auto,BruteForce,BruteForce,193,1,193
+treenet_random_r1,both,auto,DDOS ACK Fragmentation,DDOS,98226,181,543
+treenet_random_r1,both,auto,DDOS HTTP FLOOD,DDOS,21961,397,56
+treenet_random_r1,both,auto,DDOS ICMP FLOOD,DDOS,4296,37,117
+treenet_random_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6960,199,35
+treenet_random_r1,both,auto,DOS HTTP FLOOD,DOS,17958,403,45
+treenet_random_r1,both,auto,DOS SYN FLOOD,DOS,124042,138,899
+treenet_random_r1,both,auto,DOS UDP FLOOD,DOS,78217,840,94
+treenet_random_r1,both,auto,Mirai,Mirai,9340,5,1868
+treenet_random_r1,both,auto,Recon,Recon,25763,438,59
+treenet_random_r1,both,auto,ARP Spoofing,Spoofing,4855,2,2428
+treenet_random_r1,both,auto,DNS Spoofing,Spoofing,4654,70,67
+treenet_random_r1,both,auto,Sqlinjection,Web-Based,383,4,96
+treenet_random_r1,both,auto,Uploading Attack,Web-Based,81,2,41
+treenet_random_r1,both,auto,XSS,Web-Based,171,2,86
+leader_macro_f1_temporal_raw,both,20000,Benign,Benign,57810,11562,5
+leader_macro_f1_temporal_raw,both,20000,BruteForce,BruteForce,541,108,6
+leader_macro_f1_temporal_raw,both,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+leader_macro_f1_temporal_raw,both,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+leader_macro_f1_temporal_raw,both,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+leader_macro_f1_temporal_raw,both,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+leader_macro_f1_temporal_raw,both,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+leader_macro_f1_temporal_raw,both,20000,DOS SYN FLOOD,DOS,125025,20000,7
+leader_macro_f1_temporal_raw,both,20000,DOS UDP FLOOD,DOS,81455,16291,5
+leader_macro_f1_temporal_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader_macro_f1_temporal_raw,both,20000,Recon,Recon,62354,12470,6
+leader_macro_f1_temporal_raw,both,20000,ARP Spoofing,Spoofing,11589,2317,6
+leader_macro_f1_temporal_raw,both,20000,DNS Spoofing,Spoofing,11045,2209,5
+leader_macro_f1_temporal_raw,both,20000,Sqlinjection,Web-Based,979,195,6
+leader_macro_f1_temporal_raw,both,20000,Uploading Attack,Web-Based,200,40,5
+leader_macro_f1_temporal_raw,both,20000,XSS,Web-Based,505,101,5
+leader_macro_f1_temporal_raw,both,auto,Benign,Benign,57810,14,4130
+leader_macro_f1_temporal_raw,both,auto,BruteForce,BruteForce,541,3,181
+leader_macro_f1_temporal_raw,both,auto,DDOS ACK Fragmentation,DDOS,101540,16,6347
+leader_macro_f1_temporal_raw,both,auto,DDOS HTTP FLOOD,DDOS,22434,25,898
+leader_macro_f1_temporal_raw,both,auto,DDOS ICMP FLOOD,DDOS,10110,212,48
+leader_macro_f1_temporal_raw,both,auto,DDOS ICMP Fragmentation,DDOS,15918,105,152
+leader_macro_f1_temporal_raw,both,auto,DOS HTTP FLOOD,DOS,18522,20,927
+leader_macro_f1_temporal_raw,both,auto,DOS SYN FLOOD,DOS,125025,527,238
+leader_macro_f1_temporal_raw,both,auto,DOS UDP FLOOD,DOS,81455,80,1019
+leader_macro_f1_temporal_raw,both,auto,Mirai,Mirai,23959,430,56
+leader_macro_f1_temporal_raw,both,auto,Recon,Recon,62354,5,12471
+leader_macro_f1_temporal_raw,both,auto,ARP Spoofing,Spoofing,11589,26,446
+leader_macro_f1_temporal_raw,both,auto,DNS Spoofing,Spoofing,11045,5,2209
+leader_macro_f1_temporal_raw,both,auto,Sqlinjection,Web-Based,979,2,490
+leader_macro_f1_temporal_raw,both,auto,Uploading Attack,Web-Based,200,1,200
+leader_macro_f1_temporal_raw,both,auto,XSS,Web-Based,505,3,169
+leader42_macro_f1_temporal_raw,both,20000,Benign,Benign,57810,11562,5
+leader42_macro_f1_temporal_raw,both,20000,BruteForce,BruteForce,541,108,6
+leader42_macro_f1_temporal_raw,both,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+leader42_macro_f1_temporal_raw,both,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+leader42_macro_f1_temporal_raw,both,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+leader42_macro_f1_temporal_raw,both,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+leader42_macro_f1_temporal_raw,both,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+leader42_macro_f1_temporal_raw,both,20000,DOS SYN FLOOD,DOS,125025,20000,7
+leader42_macro_f1_temporal_raw,both,20000,DOS UDP FLOOD,DOS,81455,16291,5
+leader42_macro_f1_temporal_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader42_macro_f1_temporal_raw,both,20000,Recon,Recon,62354,12470,6
+leader42_macro_f1_temporal_raw,both,20000,ARP Spoofing,Spoofing,11589,2317,6
+leader42_macro_f1_temporal_raw,both,20000,DNS Spoofing,Spoofing,11045,2209,5
+leader42_macro_f1_temporal_raw,both,20000,Sqlinjection,Web-Based,979,195,6
+leader42_macro_f1_temporal_raw,both,20000,Uploading Attack,Web-Based,200,40,5
+leader42_macro_f1_temporal_raw,both,20000,XSS,Web-Based,505,101,5
+leader42_macro_f1_temporal_raw,both,auto,Benign,Benign,57810,13,4447
+leader42_macro_f1_temporal_raw,both,auto,BruteForce,BruteForce,541,3,181
+leader42_macro_f1_temporal_raw,both,auto,DDOS ACK Fragmentation,DDOS,101540,32,3174
+leader42_macro_f1_temporal_raw,both,auto,DDOS HTTP FLOOD,DDOS,22434,4,5609
+leader42_macro_f1_temporal_raw,both,auto,DDOS ICMP FLOOD,DDOS,10110,120,85
+leader42_macro_f1_temporal_raw,both,auto,DDOS ICMP Fragmentation,DDOS,15918,12,1327
+leader42_macro_f1_temporal_raw,both,auto,DOS HTTP FLOOD,DOS,18522,13,1425
+leader42_macro_f1_temporal_raw,both,auto,DOS SYN FLOOD,DOS,125025,537,233
+leader42_macro_f1_temporal_raw,both,auto,DOS UDP FLOOD,DOS,81455,51,1598
+leader42_macro_f1_temporal_raw,both,auto,Mirai,Mirai,23959,137,175
+leader42_macro_f1_temporal_raw,both,auto,Recon,Recon,62354,4,15589
+leader42_macro_f1_temporal_raw,both,auto,ARP Spoofing,Spoofing,11589,25,464
+leader42_macro_f1_temporal_raw,both,auto,DNS Spoofing,Spoofing,11045,5,2209
+leader42_macro_f1_temporal_raw,both,auto,Sqlinjection,Web-Based,979,1,979
+leader42_macro_f1_temporal_raw,both,auto,Uploading Attack,Web-Based,200,1,200
+leader42_macro_f1_temporal_raw,both,auto,XSS,Web-Based,505,2,253
+leader_balanced_accuracy_temporal_raw,both,20000,Benign,Benign,57810,11562,5
+leader_balanced_accuracy_temporal_raw,both,20000,BruteForce,BruteForce,541,108,6
+leader_balanced_accuracy_temporal_raw,both,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+leader_balanced_accuracy_temporal_raw,both,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+leader_balanced_accuracy_temporal_raw,both,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+leader_balanced_accuracy_temporal_raw,both,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+leader_balanced_accuracy_temporal_raw,both,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+leader_balanced_accuracy_temporal_raw,both,20000,DOS SYN FLOOD,DOS,125025,20000,7
+leader_balanced_accuracy_temporal_raw,both,20000,DOS UDP FLOOD,DOS,81455,16291,5
+leader_balanced_accuracy_temporal_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader_balanced_accuracy_temporal_raw,both,20000,Recon,Recon,62354,12470,6
+leader_balanced_accuracy_temporal_raw,both,20000,ARP Spoofing,Spoofing,11589,2317,6
+leader_balanced_accuracy_temporal_raw,both,20000,DNS Spoofing,Spoofing,11045,2209,5
+leader_balanced_accuracy_temporal_raw,both,20000,Sqlinjection,Web-Based,979,195,6
+leader_balanced_accuracy_temporal_raw,both,20000,Uploading Attack,Web-Based,200,40,5
+leader_balanced_accuracy_temporal_raw,both,20000,XSS,Web-Based,505,101,5
+leader_balanced_accuracy_temporal_raw,both,auto,Benign,Benign,57810,15,3854
+leader_balanced_accuracy_temporal_raw,both,auto,BruteForce,BruteForce,541,3,181
+leader_balanced_accuracy_temporal_raw,both,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+leader_balanced_accuracy_temporal_raw,both,auto,DDOS HTTP FLOOD,DDOS,22434,1,22434
+leader_balanced_accuracy_temporal_raw,both,auto,DDOS ICMP FLOOD,DDOS,10110,18,562
+leader_balanced_accuracy_temporal_raw,both,auto,DDOS ICMP Fragmentation,DDOS,15918,31,514
+leader_balanced_accuracy_temporal_raw,both,auto,DOS HTTP FLOOD,DOS,18522,5,3705
+leader_balanced_accuracy_temporal_raw,both,auto,DOS SYN FLOOD,DOS,125025,16,7815
+leader_balanced_accuracy_temporal_raw,both,auto,DOS UDP FLOOD,DOS,81455,782,105
+leader_balanced_accuracy_temporal_raw,both,auto,Mirai,Mirai,23959,175,137
+leader_balanced_accuracy_temporal_raw,both,auto,Recon,Recon,62354,176,355
+leader_balanced_accuracy_temporal_raw,both,auto,ARP Spoofing,Spoofing,11589,11,1054
+leader_balanced_accuracy_temporal_raw,both,auto,DNS Spoofing,Spoofing,11045,4,2762
+leader_balanced_accuracy_temporal_raw,both,auto,Sqlinjection,Web-Based,979,1,979
+leader_balanced_accuracy_temporal_raw,both,auto,Uploading Attack,Web-Based,200,3,67
+leader_balanced_accuracy_temporal_raw,both,auto,XSS,Web-Based,505,7,73
+leader42_balanced_accuracy_temporal_raw,both,20000,Benign,Benign,57810,11562,5
+leader42_balanced_accuracy_temporal_raw,both,20000,BruteForce,BruteForce,541,108,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+leader42_balanced_accuracy_temporal_raw,both,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DOS SYN FLOOD,DOS,125025,20000,7
+leader42_balanced_accuracy_temporal_raw,both,20000,DOS UDP FLOOD,DOS,81455,16291,5
+leader42_balanced_accuracy_temporal_raw,both,20000,Mirai,Mirai,23959,4791,6
+leader42_balanced_accuracy_temporal_raw,both,20000,Recon,Recon,62354,12470,6
+leader42_balanced_accuracy_temporal_raw,both,20000,ARP Spoofing,Spoofing,11589,2317,6
+leader42_balanced_accuracy_temporal_raw,both,20000,DNS Spoofing,Spoofing,11045,2209,5
+leader42_balanced_accuracy_temporal_raw,both,20000,Sqlinjection,Web-Based,979,195,6
+leader42_balanced_accuracy_temporal_raw,both,20000,Uploading Attack,Web-Based,200,40,5
+leader42_balanced_accuracy_temporal_raw,both,20000,XSS,Web-Based,505,101,5
+leader42_balanced_accuracy_temporal_raw,both,auto,Benign,Benign,57810,14,4130
+leader42_balanced_accuracy_temporal_raw,both,auto,BruteForce,BruteForce,541,2,271
+leader42_balanced_accuracy_temporal_raw,both,auto,DDOS ACK Fragmentation,DDOS,101540,796,128
+leader42_balanced_accuracy_temporal_raw,both,auto,DDOS HTTP FLOOD,DDOS,22434,1,22434
+leader42_balanced_accuracy_temporal_raw,both,auto,DDOS ICMP FLOOD,DDOS,10110,10,1011
+leader42_balanced_accuracy_temporal_raw,both,auto,DDOS ICMP Fragmentation,DDOS,15918,29,549
+leader42_balanced_accuracy_temporal_raw,both,auto,DOS HTTP FLOOD,DOS,18522,6,3087
+leader42_balanced_accuracy_temporal_raw,both,auto,DOS SYN FLOOD,DOS,125025,29,4312
+leader42_balanced_accuracy_temporal_raw,both,auto,DOS UDP FLOOD,DOS,81455,694,118
+leader42_balanced_accuracy_temporal_raw,both,auto,Mirai,Mirai,23959,153,157
+leader42_balanced_accuracy_temporal_raw,both,auto,Recon,Recon,62354,53,1177
+leader42_balanced_accuracy_temporal_raw,both,auto,ARP Spoofing,Spoofing,11589,5,2318
+leader42_balanced_accuracy_temporal_raw,both,auto,DNS Spoofing,Spoofing,11045,3,3682
+leader42_balanced_accuracy_temporal_raw,both,auto,Sqlinjection,Web-Based,979,2,490
+leader42_balanced_accuracy_temporal_raw,both,auto,Uploading Attack,Web-Based,200,5,40
+leader42_balanced_accuracy_temporal_raw,both,auto,XSS,Web-Based,505,6,85
+treenet_temporal_raw,both,20000,Benign,Benign,57810,11562,5
+treenet_temporal_raw,both,20000,BruteForce,BruteForce,541,108,6
+treenet_temporal_raw,both,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+treenet_temporal_raw,both,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+treenet_temporal_raw,both,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+treenet_temporal_raw,both,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+treenet_temporal_raw,both,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+treenet_temporal_raw,both,20000,DOS SYN FLOOD,DOS,125025,20000,7
+treenet_temporal_raw,both,20000,DOS UDP FLOOD,DOS,81455,16291,5
+treenet_temporal_raw,both,20000,Mirai,Mirai,23959,4791,6
+treenet_temporal_raw,both,20000,Recon,Recon,62354,12470,6
+treenet_temporal_raw,both,20000,ARP Spoofing,Spoofing,11589,2317,6
+treenet_temporal_raw,both,20000,DNS Spoofing,Spoofing,11045,2209,5
+treenet_temporal_raw,both,20000,Sqlinjection,Web-Based,979,195,6
+treenet_temporal_raw,both,20000,Uploading Attack,Web-Based,200,40,5
+treenet_temporal_raw,both,20000,XSS,Web-Based,505,101,5
+treenet_temporal_raw,both,auto,Benign,Benign,57810,36,1606
+treenet_temporal_raw,both,auto,BruteForce,BruteForce,541,3,181
+treenet_temporal_raw,both,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+treenet_temporal_raw,both,auto,DDOS HTTP FLOOD,DDOS,22434,443,51
+treenet_temporal_raw,both,auto,DDOS ICMP FLOOD,DDOS,10110,271,38
+treenet_temporal_raw,both,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+treenet_temporal_raw,both,auto,DOS HTTP FLOOD,DOS,18522,409,46
+treenet_temporal_raw,both,auto,DOS SYN FLOOD,DOS,125025,578,217
+treenet_temporal_raw,both,auto,DOS UDP FLOOD,DOS,81455,857,96
+treenet_temporal_raw,both,auto,Mirai,Mirai,23959,446,54
+treenet_temporal_raw,both,auto,Recon,Recon,62354,750,84
+treenet_temporal_raw,both,auto,ARP Spoofing,Spoofing,11589,137,85
+treenet_temporal_raw,both,auto,DNS Spoofing,Spoofing,11045,7,1578
+treenet_temporal_raw,both,auto,Sqlinjection,Web-Based,979,2,490
+treenet_temporal_raw,both,auto,Uploading Attack,Web-Based,200,1,200
+treenet_temporal_raw,both,auto,XSS,Web-Based,505,3,169
+leader_macro_f1_temporal_r1,both,20000,Benign,Benign,57810,11562,5
+leader_macro_f1_temporal_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader_macro_f1_temporal_r1,both,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+leader_macro_f1_temporal_r1,both,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+leader_macro_f1_temporal_r1,both,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+leader_macro_f1_temporal_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+leader_macro_f1_temporal_r1,both,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+leader_macro_f1_temporal_r1,both,20000,DOS SYN FLOOD,DOS,123829,20000,7
+leader_macro_f1_temporal_r1,both,20000,DOS UDP FLOOD,DOS,78376,15675,6
+leader_macro_f1_temporal_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader_macro_f1_temporal_r1,both,20000,Recon,Recon,25763,5152,6
+leader_macro_f1_temporal_r1,both,20000,ARP Spoofing,Spoofing,4843,968,6
+leader_macro_f1_temporal_r1,both,20000,DNS Spoofing,Spoofing,4668,933,6
+leader_macro_f1_temporal_r1,both,20000,Sqlinjection,Web-Based,368,73,6
+leader_macro_f1_temporal_r1,both,20000,Uploading Attack,Web-Based,93,18,6
+leader_macro_f1_temporal_r1,both,20000,XSS,Web-Based,175,35,5
+leader_macro_f1_temporal_r1,both,auto,Benign,Benign,57810,16,3614
+leader_macro_f1_temporal_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader_macro_f1_temporal_r1,both,auto,DDOS ACK Fragmentation,DDOS,98427,392,252
+leader_macro_f1_temporal_r1,both,auto,DDOS HTTP FLOOD,DDOS,21816,406,54
+leader_macro_f1_temporal_r1,both,auto,DDOS ICMP FLOOD,DDOS,4251,151,29
+leader_macro_f1_temporal_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6951,94,74
+leader_macro_f1_temporal_r1,both,auto,DOS HTTP FLOOD,DOS,18013,103,175
+leader_macro_f1_temporal_r1,both,auto,DOS SYN FLOOD,DOS,123829,646,192
+leader_macro_f1_temporal_r1,both,auto,DOS UDP FLOOD,DOS,78376,518,152
+leader_macro_f1_temporal_r1,both,auto,Mirai,Mirai,9340,239,40
+leader_macro_f1_temporal_r1,both,auto,Recon,Recon,25763,482,54
+leader_macro_f1_temporal_r1,both,auto,ARP Spoofing,Spoofing,4843,165,30
+leader_macro_f1_temporal_r1,both,auto,DNS Spoofing,Spoofing,4668,9,519
+leader_macro_f1_temporal_r1,both,auto,Sqlinjection,Web-Based,368,1,368
+leader_macro_f1_temporal_r1,both,auto,Uploading Attack,Web-Based,93,2,47
+leader_macro_f1_temporal_r1,both,auto,XSS,Web-Based,175,2,88
+leader42_macro_f1_temporal_r1,both,20000,Benign,Benign,57810,11562,5
+leader42_macro_f1_temporal_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader42_macro_f1_temporal_r1,both,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+leader42_macro_f1_temporal_r1,both,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+leader42_macro_f1_temporal_r1,both,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+leader42_macro_f1_temporal_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+leader42_macro_f1_temporal_r1,both,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+leader42_macro_f1_temporal_r1,both,20000,DOS SYN FLOOD,DOS,123829,20000,7
+leader42_macro_f1_temporal_r1,both,20000,DOS UDP FLOOD,DOS,78376,15675,6
+leader42_macro_f1_temporal_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader42_macro_f1_temporal_r1,both,20000,Recon,Recon,25763,5152,6
+leader42_macro_f1_temporal_r1,both,20000,ARP Spoofing,Spoofing,4843,968,6
+leader42_macro_f1_temporal_r1,both,20000,DNS Spoofing,Spoofing,4668,933,6
+leader42_macro_f1_temporal_r1,both,20000,Sqlinjection,Web-Based,368,73,6
+leader42_macro_f1_temporal_r1,both,20000,Uploading Attack,Web-Based,93,18,6
+leader42_macro_f1_temporal_r1,both,20000,XSS,Web-Based,175,35,5
+leader42_macro_f1_temporal_r1,both,auto,Benign,Benign,57810,15,3854
+leader42_macro_f1_temporal_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader42_macro_f1_temporal_r1,both,auto,DDOS ACK Fragmentation,DDOS,98427,399,247
+leader42_macro_f1_temporal_r1,both,auto,DDOS HTTP FLOOD,DDOS,21816,3,7272
+leader42_macro_f1_temporal_r1,both,auto,DDOS ICMP FLOOD,DDOS,4251,151,29
+leader42_macro_f1_temporal_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6951,120,58
+leader42_macro_f1_temporal_r1,both,auto,DOS HTTP FLOOD,DOS,18013,90,201
+leader42_macro_f1_temporal_r1,both,auto,DOS SYN FLOOD,DOS,123829,642,193
+leader42_macro_f1_temporal_r1,both,auto,DOS UDP FLOOD,DOS,78376,515,153
+leader42_macro_f1_temporal_r1,both,auto,Mirai,Mirai,9340,233,41
+leader42_macro_f1_temporal_r1,both,auto,Recon,Recon,25763,482,54
+leader42_macro_f1_temporal_r1,both,auto,ARP Spoofing,Spoofing,4843,165,30
+leader42_macro_f1_temporal_r1,both,auto,DNS Spoofing,Spoofing,4668,5,934
+leader42_macro_f1_temporal_r1,both,auto,Sqlinjection,Web-Based,368,1,368
+leader42_macro_f1_temporal_r1,both,auto,Uploading Attack,Web-Based,93,2,47
+leader42_macro_f1_temporal_r1,both,auto,XSS,Web-Based,175,2,88
+leader_balanced_accuracy_temporal_r1,both,20000,Benign,Benign,57810,11562,5
+leader_balanced_accuracy_temporal_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader_balanced_accuracy_temporal_r1,both,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+leader_balanced_accuracy_temporal_r1,both,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+leader_balanced_accuracy_temporal_r1,both,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+leader_balanced_accuracy_temporal_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+leader_balanced_accuracy_temporal_r1,both,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+leader_balanced_accuracy_temporal_r1,both,20000,DOS SYN FLOOD,DOS,123829,20000,7
+leader_balanced_accuracy_temporal_r1,both,20000,DOS UDP FLOOD,DOS,78376,15675,6
+leader_balanced_accuracy_temporal_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader_balanced_accuracy_temporal_r1,both,20000,Recon,Recon,25763,5152,6
+leader_balanced_accuracy_temporal_r1,both,20000,ARP Spoofing,Spoofing,4843,968,6
+leader_balanced_accuracy_temporal_r1,both,20000,DNS Spoofing,Spoofing,4668,933,6
+leader_balanced_accuracy_temporal_r1,both,20000,Sqlinjection,Web-Based,368,73,6
+leader_balanced_accuracy_temporal_r1,both,20000,Uploading Attack,Web-Based,93,18,6
+leader_balanced_accuracy_temporal_r1,both,20000,XSS,Web-Based,175,35,5
+leader_balanced_accuracy_temporal_r1,both,auto,Benign,Benign,57810,16,3614
+leader_balanced_accuracy_temporal_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader_balanced_accuracy_temporal_r1,both,auto,DDOS ACK Fragmentation,DDOS,98427,392,252
+leader_balanced_accuracy_temporal_r1,both,auto,DDOS HTTP FLOOD,DDOS,21816,406,54
+leader_balanced_accuracy_temporal_r1,both,auto,DDOS ICMP FLOOD,DDOS,4251,151,29
+leader_balanced_accuracy_temporal_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6951,94,74
+leader_balanced_accuracy_temporal_r1,both,auto,DOS HTTP FLOOD,DOS,18013,103,175
+leader_balanced_accuracy_temporal_r1,both,auto,DOS SYN FLOOD,DOS,123829,646,192
+leader_balanced_accuracy_temporal_r1,both,auto,DOS UDP FLOOD,DOS,78376,518,152
+leader_balanced_accuracy_temporal_r1,both,auto,Mirai,Mirai,9340,239,40
+leader_balanced_accuracy_temporal_r1,both,auto,Recon,Recon,25763,482,54
+leader_balanced_accuracy_temporal_r1,both,auto,ARP Spoofing,Spoofing,4843,165,30
+leader_balanced_accuracy_temporal_r1,both,auto,DNS Spoofing,Spoofing,4668,9,519
+leader_balanced_accuracy_temporal_r1,both,auto,Sqlinjection,Web-Based,368,1,368
+leader_balanced_accuracy_temporal_r1,both,auto,Uploading Attack,Web-Based,93,2,47
+leader_balanced_accuracy_temporal_r1,both,auto,XSS,Web-Based,175,2,88
+leader42_balanced_accuracy_temporal_r1,both,20000,Benign,Benign,57810,11562,5
+leader42_balanced_accuracy_temporal_r1,both,20000,BruteForce,BruteForce,193,38,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DOS SYN FLOOD,DOS,123829,20000,7
+leader42_balanced_accuracy_temporal_r1,both,20000,DOS UDP FLOOD,DOS,78376,15675,6
+leader42_balanced_accuracy_temporal_r1,both,20000,Mirai,Mirai,9340,1868,5
+leader42_balanced_accuracy_temporal_r1,both,20000,Recon,Recon,25763,5152,6
+leader42_balanced_accuracy_temporal_r1,both,20000,ARP Spoofing,Spoofing,4843,968,6
+leader42_balanced_accuracy_temporal_r1,both,20000,DNS Spoofing,Spoofing,4668,933,6
+leader42_balanced_accuracy_temporal_r1,both,20000,Sqlinjection,Web-Based,368,73,6
+leader42_balanced_accuracy_temporal_r1,both,20000,Uploading Attack,Web-Based,93,18,6
+leader42_balanced_accuracy_temporal_r1,both,20000,XSS,Web-Based,175,35,5
+leader42_balanced_accuracy_temporal_r1,both,auto,Benign,Benign,57810,15,3854
+leader42_balanced_accuracy_temporal_r1,both,auto,BruteForce,BruteForce,193,2,97
+leader42_balanced_accuracy_temporal_r1,both,auto,DDOS ACK Fragmentation,DDOS,98427,399,247
+leader42_balanced_accuracy_temporal_r1,both,auto,DDOS HTTP FLOOD,DDOS,21816,3,7272
+leader42_balanced_accuracy_temporal_r1,both,auto,DDOS ICMP FLOOD,DDOS,4251,151,29
+leader42_balanced_accuracy_temporal_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6951,120,58
+leader42_balanced_accuracy_temporal_r1,both,auto,DOS HTTP FLOOD,DOS,18013,90,201
+leader42_balanced_accuracy_temporal_r1,both,auto,DOS SYN FLOOD,DOS,123829,642,193
+leader42_balanced_accuracy_temporal_r1,both,auto,DOS UDP FLOOD,DOS,78376,515,153
+leader42_balanced_accuracy_temporal_r1,both,auto,Mirai,Mirai,9340,233,41
+leader42_balanced_accuracy_temporal_r1,both,auto,Recon,Recon,25763,482,54
+leader42_balanced_accuracy_temporal_r1,both,auto,ARP Spoofing,Spoofing,4843,165,30
+leader42_balanced_accuracy_temporal_r1,both,auto,DNS Spoofing,Spoofing,4668,5,934
+leader42_balanced_accuracy_temporal_r1,both,auto,Sqlinjection,Web-Based,368,1,368
+leader42_balanced_accuracy_temporal_r1,both,auto,Uploading Attack,Web-Based,93,2,47
+leader42_balanced_accuracy_temporal_r1,both,auto,XSS,Web-Based,175,2,88
+treenet_temporal_r1,both,20000,Benign,Benign,57810,11562,5
+treenet_temporal_r1,both,20000,BruteForce,BruteForce,193,38,6
+treenet_temporal_r1,both,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+treenet_temporal_r1,both,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+treenet_temporal_r1,both,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+treenet_temporal_r1,both,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+treenet_temporal_r1,both,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+treenet_temporal_r1,both,20000,DOS SYN FLOOD,DOS,123829,20000,7
+treenet_temporal_r1,both,20000,DOS UDP FLOOD,DOS,78376,15675,6
+treenet_temporal_r1,both,20000,Mirai,Mirai,9340,1868,5
+treenet_temporal_r1,both,20000,Recon,Recon,25763,5152,6
+treenet_temporal_r1,both,20000,ARP Spoofing,Spoofing,4843,968,6
+treenet_temporal_r1,both,20000,DNS Spoofing,Spoofing,4668,933,6
+treenet_temporal_r1,both,20000,Sqlinjection,Web-Based,368,73,6
+treenet_temporal_r1,both,20000,Uploading Attack,Web-Based,93,18,6
+treenet_temporal_r1,both,20000,XSS,Web-Based,175,35,5
+treenet_temporal_r1,both,auto,Benign,Benign,57810,27,2142
+treenet_temporal_r1,both,auto,BruteForce,BruteForce,193,4,49
+treenet_temporal_r1,both,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+treenet_temporal_r1,both,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+treenet_temporal_r1,both,auto,DDOS ICMP FLOOD,DDOS,4251,160,27
+treenet_temporal_r1,both,auto,DDOS ICMP Fragmentation,DDOS,6951,224,32
+treenet_temporal_r1,both,auto,DOS HTTP FLOOD,DOS,18013,368,49
+treenet_temporal_r1,both,auto,DOS SYN FLOOD,DOS,123829,609,204
+treenet_temporal_r1,both,auto,DOS UDP FLOOD,DOS,78376,828,95
+treenet_temporal_r1,both,auto,Mirai,Mirai,9340,255,37
+treenet_temporal_r1,both,auto,Recon,Recon,25763,452,57
+treenet_temporal_r1,both,auto,ARP Spoofing,Spoofing,4843,160,31
+treenet_temporal_r1,both,auto,DNS Spoofing,Spoofing,4668,167,28
+treenet_temporal_r1,both,auto,Sqlinjection,Web-Based,368,2,184
+treenet_temporal_r1,both,auto,Uploading Attack,Web-Based,93,1,93
+treenet_temporal_r1,both,auto,XSS,Web-Based,175,1,175
+split_XGBoost_raw,a,20000,Benign,Benign,57809,11561,6
+split_XGBoost_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_XGBoost_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_XGBoost_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_XGBoost_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_XGBoost_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_XGBoost_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_XGBoost_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_XGBoost_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_XGBoost_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_XGBoost_raw,a,20000,Recon,Recon,62353,12470,6
+split_XGBoost_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_XGBoost_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_XGBoost_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_XGBoost_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_XGBoost_raw,a,20000,XSS,Web-Based,494,98,6
+split_XGBoost_raw,b,20000,Benign,Benign,57810,11562,5
+split_XGBoost_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_XGBoost_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_XGBoost_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_XGBoost_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_XGBoost_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_XGBoost_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_XGBoost_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_XGBoost_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_XGBoost_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_XGBoost_raw,b,20000,Recon,Recon,62354,12470,6
+split_XGBoost_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_XGBoost_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_XGBoost_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_XGBoost_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_XGBoost_raw,b,20000,XSS,Web-Based,505,101,5
+split_XGBoost_raw,a,auto,Benign,Benign,57809,722,81
+split_XGBoost_raw,a,auto,BruteForce,BruteForce,540,7,78
+split_XGBoost_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,897,113
+split_XGBoost_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_XGBoost_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,172,60
+split_XGBoost_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,364,45
+split_XGBoost_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_XGBoost_raw,a,auto,DOS SYN FLOOD,DOS,125105,406,309
+split_XGBoost_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_XGBoost_raw,a,auto,Mirai,Mirai,23959,310,78
+split_XGBoost_raw,a,auto,Recon,Recon,62353,750,84
+split_XGBoost_raw,a,auto,ARP Spoofing,Spoofing,11568,15,772
+split_XGBoost_raw,a,auto,DNS Spoofing,Spoofing,11065,294,38
+split_XGBoost_raw,a,auto,Sqlinjection,Web-Based,973,3,325
+split_XGBoost_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_XGBoost_raw,a,auto,XSS,Web-Based,494,3,165
+split_XGBoost_raw,b,auto,Benign,Benign,57810,722,81
+split_XGBoost_raw,b,auto,BruteForce,BruteForce,541,16,34
+split_XGBoost_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_XGBoost_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,141,160
+split_XGBoost_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,267,38
+split_XGBoost_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+split_XGBoost_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_XGBoost_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_XGBoost_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_XGBoost_raw,b,auto,Mirai,Mirai,23959,464,52
+split_XGBoost_raw,b,auto,Recon,Recon,62354,750,84
+split_XGBoost_raw,b,auto,ARP Spoofing,Spoofing,11589,154,76
+split_XGBoost_raw,b,auto,DNS Spoofing,Spoofing,11045,260,43
+split_XGBoost_raw,b,auto,Sqlinjection,Web-Based,979,61,17
+split_XGBoost_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_XGBoost_raw,b,auto,XSS,Web-Based,505,3,169
+split_XGBoost_r1,a,20000,Benign,Benign,57809,11561,6
+split_XGBoost_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_XGBoost_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_XGBoost_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_XGBoost_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_XGBoost_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_XGBoost_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_XGBoost_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_XGBoost_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_XGBoost_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_XGBoost_r1,a,20000,Recon,Recon,25763,5152,6
+split_XGBoost_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_XGBoost_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_XGBoost_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_XGBoost_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_XGBoost_r1,a,20000,XSS,Web-Based,171,34,6
+split_XGBoost_r1,b,20000,Benign,Benign,57810,11562,5
+split_XGBoost_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_XGBoost_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_XGBoost_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_XGBoost_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_XGBoost_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_XGBoost_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_XGBoost_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_XGBoost_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_XGBoost_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_XGBoost_r1,b,20000,Recon,Recon,25763,5152,6
+split_XGBoost_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_XGBoost_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_XGBoost_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_XGBoost_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_XGBoost_r1,b,20000,XSS,Web-Based,175,35,5
+split_XGBoost_r1,a,auto,Benign,Benign,57809,722,81
+split_XGBoost_r1,a,auto,BruteForce,BruteForce,193,2,97
+split_XGBoost_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,548,180
+split_XGBoost_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_XGBoost_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,109,40
+split_XGBoost_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,196,36
+split_XGBoost_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_XGBoost_r1,a,auto,DOS SYN FLOOD,DOS,124042,203,612
+split_XGBoost_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_XGBoost_r1,a,auto,Mirai,Mirai,9340,153,62
+split_XGBoost_r1,a,auto,Recon,Recon,25763,482,54
+split_XGBoost_r1,a,auto,ARP Spoofing,Spoofing,4855,11,442
+split_XGBoost_r1,a,auto,DNS Spoofing,Spoofing,4654,169,28
+split_XGBoost_r1,a,auto,Sqlinjection,Web-Based,383,3,128
+split_XGBoost_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_XGBoost_r1,a,auto,XSS,Web-Based,171,3,57
+split_XGBoost_r1,b,auto,Benign,Benign,57810,23,2514
+split_XGBoost_r1,b,auto,BruteForce,BruteForce,193,2,97
+split_XGBoost_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_XGBoost_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,162,135
+split_XGBoost_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,153,28
+split_XGBoost_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,221,32
+split_XGBoost_r1,b,auto,DOS HTTP FLOOD,DOS,18013,400,46
+split_XGBoost_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_XGBoost_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_XGBoost_r1,b,auto,Mirai,Mirai,9340,246,38
+split_XGBoost_r1,b,auto,Recon,Recon,25763,476,55
+split_XGBoost_r1,b,auto,ARP Spoofing,Spoofing,4843,175,28
+split_XGBoost_r1,b,auto,DNS Spoofing,Spoofing,4668,170,28
+split_XGBoost_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_XGBoost_r1,b,auto,Uploading Attack,Web-Based,93,3,31
+split_XGBoost_r1,b,auto,XSS,Web-Based,175,2,88
+clean_XGBoost_random,a,20000,Benign,Benign,57809,11561,6
+clean_XGBoost_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_XGBoost_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_XGBoost_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_XGBoost_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_XGBoost_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_XGBoost_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_XGBoost_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_XGBoost_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_XGBoost_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_XGBoost_random,a,20000,Recon,Recon,25763,5152,6
+clean_XGBoost_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_XGBoost_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_XGBoost_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_XGBoost_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_XGBoost_random,a,20000,XSS,Web-Based,171,34,6
+clean_XGBoost_random,b,20000,Benign,Benign,57809,11561,6
+clean_XGBoost_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_XGBoost_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_XGBoost_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_XGBoost_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_XGBoost_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_XGBoost_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_XGBoost_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_XGBoost_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_XGBoost_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_XGBoost_random,b,20000,Recon,Recon,62353,12470,6
+clean_XGBoost_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_XGBoost_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_XGBoost_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_XGBoost_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_XGBoost_random,b,20000,XSS,Web-Based,494,98,6
+clean_XGBoost_random,a,auto,Benign,Benign,57809,722,81
+clean_XGBoost_random,a,auto,BruteForce,BruteForce,193,2,97
+clean_XGBoost_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,548,180
+clean_XGBoost_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_XGBoost_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,109,40
+clean_XGBoost_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,196,36
+clean_XGBoost_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_XGBoost_random,a,auto,DOS SYN FLOOD,DOS,124042,203,612
+clean_XGBoost_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_XGBoost_random,a,auto,Mirai,Mirai,9340,153,62
+clean_XGBoost_random,a,auto,Recon,Recon,25763,482,54
+clean_XGBoost_random,a,auto,ARP Spoofing,Spoofing,4855,11,442
+clean_XGBoost_random,a,auto,DNS Spoofing,Spoofing,4654,169,28
+clean_XGBoost_random,a,auto,Sqlinjection,Web-Based,383,3,128
+clean_XGBoost_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_XGBoost_random,a,auto,XSS,Web-Based,171,3,57
+clean_XGBoost_random,b,auto,Benign,Benign,57809,722,81
+clean_XGBoost_random,b,auto,BruteForce,BruteForce,540,7,78
+clean_XGBoost_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,897,113
+clean_XGBoost_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_XGBoost_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,172,60
+clean_XGBoost_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,364,45
+clean_XGBoost_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_XGBoost_random,b,auto,DOS SYN FLOOD,DOS,125105,406,309
+clean_XGBoost_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_XGBoost_random,b,auto,Mirai,Mirai,23959,310,78
+clean_XGBoost_random,b,auto,Recon,Recon,62353,750,84
+clean_XGBoost_random,b,auto,ARP Spoofing,Spoofing,11568,15,772
+clean_XGBoost_random,b,auto,DNS Spoofing,Spoofing,11065,294,38
+clean_XGBoost_random,b,auto,Sqlinjection,Web-Based,973,3,325
+clean_XGBoost_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_XGBoost_random,b,auto,XSS,Web-Based,494,3,165
+clean_XGBoost_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_XGBoost_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_XGBoost_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_XGBoost_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_XGBoost_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_XGBoost_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_XGBoost_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_XGBoost_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_XGBoost_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_XGBoost_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_XGBoost_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_XGBoost_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_XGBoost_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_XGBoost_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_XGBoost_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_XGBoost_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_XGBoost_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_XGBoost_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_XGBoost_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_XGBoost_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_XGBoost_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_XGBoost_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_XGBoost_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_XGBoost_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_XGBoost_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_XGBoost_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_XGBoost_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_XGBoost_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_XGBoost_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_XGBoost_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_XGBoost_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_XGBoost_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_XGBoost_temporal,a,auto,Benign,Benign,57810,23,2514
+clean_XGBoost_temporal,a,auto,BruteForce,BruteForce,193,2,97
+clean_XGBoost_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_XGBoost_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,162,135
+clean_XGBoost_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,153,28
+clean_XGBoost_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,221,32
+clean_XGBoost_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,400,46
+clean_XGBoost_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_XGBoost_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_XGBoost_temporal,a,auto,Mirai,Mirai,9340,246,38
+clean_XGBoost_temporal,a,auto,Recon,Recon,25763,476,55
+clean_XGBoost_temporal,a,auto,ARP Spoofing,Spoofing,4843,175,28
+clean_XGBoost_temporal,a,auto,DNS Spoofing,Spoofing,4668,170,28
+clean_XGBoost_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_XGBoost_temporal,a,auto,Uploading Attack,Web-Based,93,3,31
+clean_XGBoost_temporal,a,auto,XSS,Web-Based,175,2,88
+clean_XGBoost_temporal,b,auto,Benign,Benign,57810,722,81
+clean_XGBoost_temporal,b,auto,BruteForce,BruteForce,541,16,34
+clean_XGBoost_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_XGBoost_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,141,160
+clean_XGBoost_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,267,38
+clean_XGBoost_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+clean_XGBoost_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_XGBoost_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_XGBoost_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_XGBoost_temporal,b,auto,Mirai,Mirai,23959,464,52
+clean_XGBoost_temporal,b,auto,Recon,Recon,62354,750,84
+clean_XGBoost_temporal,b,auto,ARP Spoofing,Spoofing,11589,154,76
+clean_XGBoost_temporal,b,auto,DNS Spoofing,Spoofing,11045,260,43
+clean_XGBoost_temporal,b,auto,Sqlinjection,Web-Based,979,61,17
+clean_XGBoost_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_XGBoost_temporal,b,auto,XSS,Web-Based,505,3,169
+split_LightGBM_raw,a,20000,Benign,Benign,57809,11561,6
+split_LightGBM_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_LightGBM_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_LightGBM_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_LightGBM_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_LightGBM_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_LightGBM_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_LightGBM_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_LightGBM_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_LightGBM_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_LightGBM_raw,a,20000,Recon,Recon,62353,12470,6
+split_LightGBM_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_LightGBM_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_LightGBM_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_LightGBM_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_LightGBM_raw,a,20000,XSS,Web-Based,494,98,6
+split_LightGBM_raw,b,20000,Benign,Benign,57810,11562,5
+split_LightGBM_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_LightGBM_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_LightGBM_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_LightGBM_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_LightGBM_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_LightGBM_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_LightGBM_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_LightGBM_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_LightGBM_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_LightGBM_raw,b,20000,Recon,Recon,62354,12470,6
+split_LightGBM_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_LightGBM_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_LightGBM_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_LightGBM_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_LightGBM_raw,b,20000,XSS,Web-Based,505,101,5
+split_LightGBM_raw,a,auto,Benign,Benign,57809,722,81
+split_LightGBM_raw,a,auto,BruteForce,BruteForce,540,7,78
+split_LightGBM_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,892,114
+split_LightGBM_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_LightGBM_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,162,63
+split_LightGBM_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,361,45
+split_LightGBM_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_LightGBM_raw,a,auto,DOS SYN FLOOD,DOS,125105,408,307
+split_LightGBM_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_LightGBM_raw,a,auto,Mirai,Mirai,23959,287,84
+split_LightGBM_raw,a,auto,Recon,Recon,62353,750,84
+split_LightGBM_raw,a,auto,ARP Spoofing,Spoofing,11568,6,1928
+split_LightGBM_raw,a,auto,DNS Spoofing,Spoofing,11065,292,38
+split_LightGBM_raw,a,auto,Sqlinjection,Web-Based,973,3,325
+split_LightGBM_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_LightGBM_raw,a,auto,XSS,Web-Based,494,2,247
+split_LightGBM_raw,b,auto,Benign,Benign,57810,722,81
+split_LightGBM_raw,b,auto,BruteForce,BruteForce,541,13,42
+split_LightGBM_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_LightGBM_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,159,142
+split_LightGBM_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,260,39
+split_LightGBM_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+split_LightGBM_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_LightGBM_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_LightGBM_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_LightGBM_raw,b,auto,Mirai,Mirai,23959,465,52
+split_LightGBM_raw,b,auto,Recon,Recon,62354,750,84
+split_LightGBM_raw,b,auto,ARP Spoofing,Spoofing,11589,266,44
+split_LightGBM_raw,b,auto,DNS Spoofing,Spoofing,11045,268,42
+split_LightGBM_raw,b,auto,Sqlinjection,Web-Based,979,62,16
+split_LightGBM_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_LightGBM_raw,b,auto,XSS,Web-Based,505,2,253
+split_LightGBM_r1,a,20000,Benign,Benign,57809,11561,6
+split_LightGBM_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_LightGBM_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_LightGBM_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_LightGBM_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_LightGBM_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_LightGBM_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_LightGBM_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_LightGBM_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_LightGBM_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_LightGBM_r1,a,20000,Recon,Recon,25763,5152,6
+split_LightGBM_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_LightGBM_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_LightGBM_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_LightGBM_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_LightGBM_r1,a,20000,XSS,Web-Based,171,34,6
+split_LightGBM_r1,b,20000,Benign,Benign,57810,11562,5
+split_LightGBM_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_LightGBM_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_LightGBM_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_LightGBM_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_LightGBM_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_LightGBM_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_LightGBM_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_LightGBM_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_LightGBM_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_LightGBM_r1,b,20000,Recon,Recon,25763,5152,6
+split_LightGBM_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_LightGBM_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_LightGBM_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_LightGBM_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_LightGBM_r1,b,20000,XSS,Web-Based,175,35,5
+split_LightGBM_r1,a,auto,Benign,Benign,57809,722,81
+split_LightGBM_r1,a,auto,BruteForce,BruteForce,193,3,65
+split_LightGBM_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,941,105
+split_LightGBM_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_LightGBM_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,117,37
+split_LightGBM_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,196,36
+split_LightGBM_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_LightGBM_r1,a,auto,DOS SYN FLOOD,DOS,124042,1057,118
+split_LightGBM_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_LightGBM_r1,a,auto,Mirai,Mirai,9340,167,56
+split_LightGBM_r1,a,auto,Recon,Recon,25763,482,54
+split_LightGBM_r1,a,auto,ARP Spoofing,Spoofing,4855,16,304
+split_LightGBM_r1,a,auto,DNS Spoofing,Spoofing,4654,151,31
+split_LightGBM_r1,a,auto,Sqlinjection,Web-Based,383,2,192
+split_LightGBM_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_LightGBM_r1,a,auto,XSS,Web-Based,171,4,43
+split_LightGBM_r1,b,auto,Benign,Benign,57810,722,81
+split_LightGBM_r1,b,auto,BruteForce,BruteForce,193,2,97
+split_LightGBM_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_LightGBM_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_LightGBM_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,157,28
+split_LightGBM_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,222,32
+split_LightGBM_r1,b,auto,DOS HTTP FLOOD,DOS,18013,403,45
+split_LightGBM_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_LightGBM_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_LightGBM_r1,b,auto,Mirai,Mirai,9340,249,38
+split_LightGBM_r1,b,auto,Recon,Recon,25763,475,55
+split_LightGBM_r1,b,auto,ARP Spoofing,Spoofing,4843,176,28
+split_LightGBM_r1,b,auto,DNS Spoofing,Spoofing,4668,169,28
+split_LightGBM_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_LightGBM_r1,b,auto,Uploading Attack,Web-Based,93,2,47
+split_LightGBM_r1,b,auto,XSS,Web-Based,175,1,175
+clean_LightGBM_random,a,20000,Benign,Benign,57809,11561,6
+clean_LightGBM_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_LightGBM_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_LightGBM_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_LightGBM_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_LightGBM_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_LightGBM_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_LightGBM_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_LightGBM_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_LightGBM_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_LightGBM_random,a,20000,Recon,Recon,25763,5152,6
+clean_LightGBM_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_LightGBM_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_LightGBM_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_LightGBM_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_LightGBM_random,a,20000,XSS,Web-Based,171,34,6
+clean_LightGBM_random,b,20000,Benign,Benign,57809,11561,6
+clean_LightGBM_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_LightGBM_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_LightGBM_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_LightGBM_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_LightGBM_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_LightGBM_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_LightGBM_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_LightGBM_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_LightGBM_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_LightGBM_random,b,20000,Recon,Recon,62353,12470,6
+clean_LightGBM_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_LightGBM_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_LightGBM_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_LightGBM_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_LightGBM_random,b,20000,XSS,Web-Based,494,98,6
+clean_LightGBM_random,a,auto,Benign,Benign,57809,722,81
+clean_LightGBM_random,a,auto,BruteForce,BruteForce,193,3,65
+clean_LightGBM_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,941,105
+clean_LightGBM_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_LightGBM_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,117,37
+clean_LightGBM_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,196,36
+clean_LightGBM_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_LightGBM_random,a,auto,DOS SYN FLOOD,DOS,124042,1057,118
+clean_LightGBM_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_LightGBM_random,a,auto,Mirai,Mirai,9340,167,56
+clean_LightGBM_random,a,auto,Recon,Recon,25763,482,54
+clean_LightGBM_random,a,auto,ARP Spoofing,Spoofing,4855,16,304
+clean_LightGBM_random,a,auto,DNS Spoofing,Spoofing,4654,151,31
+clean_LightGBM_random,a,auto,Sqlinjection,Web-Based,383,2,192
+clean_LightGBM_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_LightGBM_random,a,auto,XSS,Web-Based,171,4,43
+clean_LightGBM_random,b,auto,Benign,Benign,57809,722,81
+clean_LightGBM_random,b,auto,BruteForce,BruteForce,540,7,78
+clean_LightGBM_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,892,114
+clean_LightGBM_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_LightGBM_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,162,63
+clean_LightGBM_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,361,45
+clean_LightGBM_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_LightGBM_random,b,auto,DOS SYN FLOOD,DOS,125105,408,307
+clean_LightGBM_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_LightGBM_random,b,auto,Mirai,Mirai,23959,287,84
+clean_LightGBM_random,b,auto,Recon,Recon,62353,750,84
+clean_LightGBM_random,b,auto,ARP Spoofing,Spoofing,11568,6,1928
+clean_LightGBM_random,b,auto,DNS Spoofing,Spoofing,11065,292,38
+clean_LightGBM_random,b,auto,Sqlinjection,Web-Based,973,3,325
+clean_LightGBM_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_LightGBM_random,b,auto,XSS,Web-Based,494,2,247
+clean_LightGBM_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_LightGBM_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_LightGBM_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_LightGBM_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_LightGBM_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_LightGBM_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_LightGBM_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_LightGBM_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_LightGBM_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_LightGBM_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_LightGBM_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_LightGBM_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_LightGBM_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_LightGBM_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_LightGBM_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_LightGBM_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_LightGBM_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_LightGBM_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_LightGBM_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_LightGBM_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_LightGBM_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_LightGBM_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_LightGBM_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_LightGBM_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_LightGBM_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_LightGBM_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_LightGBM_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_LightGBM_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_LightGBM_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_LightGBM_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_LightGBM_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_LightGBM_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_LightGBM_temporal,a,auto,Benign,Benign,57810,722,81
+clean_LightGBM_temporal,a,auto,BruteForce,BruteForce,193,2,97
+clean_LightGBM_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_LightGBM_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_LightGBM_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,157,28
+clean_LightGBM_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,222,32
+clean_LightGBM_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,403,45
+clean_LightGBM_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_LightGBM_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_LightGBM_temporal,a,auto,Mirai,Mirai,9340,249,38
+clean_LightGBM_temporal,a,auto,Recon,Recon,25763,475,55
+clean_LightGBM_temporal,a,auto,ARP Spoofing,Spoofing,4843,176,28
+clean_LightGBM_temporal,a,auto,DNS Spoofing,Spoofing,4668,169,28
+clean_LightGBM_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_LightGBM_temporal,a,auto,Uploading Attack,Web-Based,93,2,47
+clean_LightGBM_temporal,a,auto,XSS,Web-Based,175,1,175
+clean_LightGBM_temporal,b,auto,Benign,Benign,57810,722,81
+clean_LightGBM_temporal,b,auto,BruteForce,BruteForce,541,13,42
+clean_LightGBM_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_LightGBM_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,159,142
+clean_LightGBM_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,260,39
+clean_LightGBM_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+clean_LightGBM_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_LightGBM_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_LightGBM_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_LightGBM_temporal,b,auto,Mirai,Mirai,23959,465,52
+clean_LightGBM_temporal,b,auto,Recon,Recon,62354,750,84
+clean_LightGBM_temporal,b,auto,ARP Spoofing,Spoofing,11589,266,44
+clean_LightGBM_temporal,b,auto,DNS Spoofing,Spoofing,11045,268,42
+clean_LightGBM_temporal,b,auto,Sqlinjection,Web-Based,979,62,16
+clean_LightGBM_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_LightGBM_temporal,b,auto,XSS,Web-Based,505,2,253
+split_RandomForest_raw,a,20000,Benign,Benign,57809,11561,6
+split_RandomForest_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_RandomForest_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_RandomForest_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_RandomForest_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_RandomForest_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_RandomForest_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_RandomForest_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_RandomForest_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_RandomForest_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_RandomForest_raw,a,20000,Recon,Recon,62353,12470,6
+split_RandomForest_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_RandomForest_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_RandomForest_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_RandomForest_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_RandomForest_raw,a,20000,XSS,Web-Based,494,98,6
+split_RandomForest_raw,b,20000,Benign,Benign,57810,11562,5
+split_RandomForest_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_RandomForest_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_RandomForest_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_RandomForest_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_RandomForest_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_RandomForest_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_RandomForest_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_RandomForest_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_RandomForest_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_RandomForest_raw,b,20000,Recon,Recon,62354,12470,6
+split_RandomForest_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_RandomForest_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_RandomForest_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_RandomForest_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_RandomForest_raw,b,20000,XSS,Web-Based,505,101,5
+split_RandomForest_raw,a,auto,Benign,Benign,57809,722,81
+split_RandomForest_raw,a,auto,BruteForce,BruteForce,540,7,78
+split_RandomForest_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,889,114
+split_RandomForest_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_RandomForest_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,177,58
+split_RandomForest_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,358,45
+split_RandomForest_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_RandomForest_raw,a,auto,DOS SYN FLOOD,DOS,125105,404,310
+split_RandomForest_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_RandomForest_raw,a,auto,Mirai,Mirai,23959,279,86
+split_RandomForest_raw,a,auto,Recon,Recon,62353,750,84
+split_RandomForest_raw,a,auto,ARP Spoofing,Spoofing,11568,84,138
+split_RandomForest_raw,a,auto,DNS Spoofing,Spoofing,11065,290,39
+split_RandomForest_raw,a,auto,Sqlinjection,Web-Based,973,20,49
+split_RandomForest_raw,a,auto,Uploading Attack,Web-Based,215,2,108
+split_RandomForest_raw,a,auto,XSS,Web-Based,494,1,494
+split_RandomForest_raw,b,auto,Benign,Benign,57810,722,81
+split_RandomForest_raw,b,auto,BruteForce,BruteForce,541,7,78
+split_RandomForest_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_RandomForest_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,100,225
+split_RandomForest_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,274,37
+split_RandomForest_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+split_RandomForest_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_RandomForest_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_RandomForest_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_RandomForest_raw,b,auto,Mirai,Mirai,23959,465,52
+split_RandomForest_raw,b,auto,Recon,Recon,62354,750,84
+split_RandomForest_raw,b,auto,ARP Spoofing,Spoofing,11589,274,43
+split_RandomForest_raw,b,auto,DNS Spoofing,Spoofing,11045,271,41
+split_RandomForest_raw,b,auto,Sqlinjection,Web-Based,979,63,16
+split_RandomForest_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_RandomForest_raw,b,auto,XSS,Web-Based,505,2,253
+split_RandomForest_r1,a,20000,Benign,Benign,57809,11561,6
+split_RandomForest_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_RandomForest_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_RandomForest_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_RandomForest_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_RandomForest_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_RandomForest_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_RandomForest_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_RandomForest_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_RandomForest_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_RandomForest_r1,a,20000,Recon,Recon,25763,5152,6
+split_RandomForest_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_RandomForest_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_RandomForest_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_RandomForest_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_RandomForest_r1,a,20000,XSS,Web-Based,171,34,6
+split_RandomForest_r1,b,20000,Benign,Benign,57810,11562,5
+split_RandomForest_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_RandomForest_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_RandomForest_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_RandomForest_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_RandomForest_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_RandomForest_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_RandomForest_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_RandomForest_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_RandomForest_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_RandomForest_r1,b,20000,Recon,Recon,25763,5152,6
+split_RandomForest_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_RandomForest_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_RandomForest_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_RandomForest_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_RandomForest_r1,b,20000,XSS,Web-Based,175,35,5
+split_RandomForest_r1,a,auto,Benign,Benign,57809,722,81
+split_RandomForest_r1,a,auto,BruteForce,BruteForce,193,3,65
+split_RandomForest_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,549,179
+split_RandomForest_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_RandomForest_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,119,37
+split_RandomForest_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,198,36
+split_RandomForest_r1,a,auto,DOS HTTP FLOOD,DOS,17958,398,46
+split_RandomForest_r1,a,auto,DOS SYN FLOOD,DOS,124042,201,618
+split_RandomForest_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_RandomForest_r1,a,auto,Mirai,Mirai,9340,140,67
+split_RandomForest_r1,a,auto,Recon,Recon,25763,482,54
+split_RandomForest_r1,a,auto,ARP Spoofing,Spoofing,4855,59,83
+split_RandomForest_r1,a,auto,DNS Spoofing,Spoofing,4654,170,28
+split_RandomForest_r1,a,auto,Sqlinjection,Web-Based,383,29,14
+split_RandomForest_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_RandomForest_r1,a,auto,XSS,Web-Based,171,3,57
+split_RandomForest_r1,b,auto,Benign,Benign,57810,722,81
+split_RandomForest_r1,b,auto,BruteForce,BruteForce,193,1,193
+split_RandomForest_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_RandomForest_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,441,50
+split_RandomForest_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,158,27
+split_RandomForest_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,223,32
+split_RandomForest_r1,b,auto,DOS HTTP FLOOD,DOS,18013,392,46
+split_RandomForest_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_RandomForest_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_RandomForest_r1,b,auto,Mirai,Mirai,9340,255,37
+split_RandomForest_r1,b,auto,Recon,Recon,25763,482,54
+split_RandomForest_r1,b,auto,ARP Spoofing,Spoofing,4843,175,28
+split_RandomForest_r1,b,auto,DNS Spoofing,Spoofing,4668,167,28
+split_RandomForest_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_RandomForest_r1,b,auto,Uploading Attack,Web-Based,93,2,47
+split_RandomForest_r1,b,auto,XSS,Web-Based,175,3,59
+clean_RandomForest_random,a,20000,Benign,Benign,57809,11561,6
+clean_RandomForest_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_RandomForest_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_RandomForest_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_RandomForest_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_RandomForest_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_RandomForest_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_RandomForest_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_RandomForest_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_RandomForest_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_RandomForest_random,a,20000,Recon,Recon,25763,5152,6
+clean_RandomForest_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_RandomForest_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_RandomForest_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_RandomForest_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_RandomForest_random,a,20000,XSS,Web-Based,171,34,6
+clean_RandomForest_random,b,20000,Benign,Benign,57809,11561,6
+clean_RandomForest_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_RandomForest_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_RandomForest_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_RandomForest_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_RandomForest_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_RandomForest_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_RandomForest_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_RandomForest_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_RandomForest_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_RandomForest_random,b,20000,Recon,Recon,62353,12470,6
+clean_RandomForest_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_RandomForest_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_RandomForest_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_RandomForest_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_RandomForest_random,b,20000,XSS,Web-Based,494,98,6
+clean_RandomForest_random,a,auto,Benign,Benign,57809,722,81
+clean_RandomForest_random,a,auto,BruteForce,BruteForce,193,3,65
+clean_RandomForest_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,549,179
+clean_RandomForest_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_RandomForest_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,119,37
+clean_RandomForest_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,198,36
+clean_RandomForest_random,a,auto,DOS HTTP FLOOD,DOS,17958,398,46
+clean_RandomForest_random,a,auto,DOS SYN FLOOD,DOS,124042,201,618
+clean_RandomForest_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_RandomForest_random,a,auto,Mirai,Mirai,9340,140,67
+clean_RandomForest_random,a,auto,Recon,Recon,25763,482,54
+clean_RandomForest_random,a,auto,ARP Spoofing,Spoofing,4855,59,83
+clean_RandomForest_random,a,auto,DNS Spoofing,Spoofing,4654,170,28
+clean_RandomForest_random,a,auto,Sqlinjection,Web-Based,383,29,14
+clean_RandomForest_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_RandomForest_random,a,auto,XSS,Web-Based,171,3,57
+clean_RandomForest_random,b,auto,Benign,Benign,57809,722,81
+clean_RandomForest_random,b,auto,BruteForce,BruteForce,540,7,78
+clean_RandomForest_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,889,114
+clean_RandomForest_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_RandomForest_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,177,58
+clean_RandomForest_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,358,45
+clean_RandomForest_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_RandomForest_random,b,auto,DOS SYN FLOOD,DOS,125105,404,310
+clean_RandomForest_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_RandomForest_random,b,auto,Mirai,Mirai,23959,279,86
+clean_RandomForest_random,b,auto,Recon,Recon,62353,750,84
+clean_RandomForest_random,b,auto,ARP Spoofing,Spoofing,11568,84,138
+clean_RandomForest_random,b,auto,DNS Spoofing,Spoofing,11065,290,39
+clean_RandomForest_random,b,auto,Sqlinjection,Web-Based,973,20,49
+clean_RandomForest_random,b,auto,Uploading Attack,Web-Based,215,2,108
+clean_RandomForest_random,b,auto,XSS,Web-Based,494,1,494
+clean_RandomForest_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_RandomForest_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_RandomForest_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_RandomForest_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_RandomForest_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_RandomForest_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_RandomForest_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_RandomForest_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_RandomForest_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_RandomForest_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_RandomForest_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_RandomForest_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_RandomForest_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_RandomForest_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_RandomForest_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_RandomForest_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_RandomForest_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_RandomForest_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_RandomForest_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_RandomForest_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_RandomForest_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_RandomForest_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_RandomForest_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_RandomForest_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_RandomForest_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_RandomForest_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_RandomForest_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_RandomForest_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_RandomForest_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_RandomForest_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_RandomForest_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_RandomForest_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_RandomForest_temporal,a,auto,Benign,Benign,57810,722,81
+clean_RandomForest_temporal,a,auto,BruteForce,BruteForce,193,1,193
+clean_RandomForest_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_RandomForest_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,441,50
+clean_RandomForest_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,158,27
+clean_RandomForest_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,223,32
+clean_RandomForest_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,392,46
+clean_RandomForest_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_RandomForest_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_RandomForest_temporal,a,auto,Mirai,Mirai,9340,255,37
+clean_RandomForest_temporal,a,auto,Recon,Recon,25763,482,54
+clean_RandomForest_temporal,a,auto,ARP Spoofing,Spoofing,4843,175,28
+clean_RandomForest_temporal,a,auto,DNS Spoofing,Spoofing,4668,167,28
+clean_RandomForest_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_RandomForest_temporal,a,auto,Uploading Attack,Web-Based,93,2,47
+clean_RandomForest_temporal,a,auto,XSS,Web-Based,175,3,59
+clean_RandomForest_temporal,b,auto,Benign,Benign,57810,722,81
+clean_RandomForest_temporal,b,auto,BruteForce,BruteForce,541,7,78
+clean_RandomForest_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_RandomForest_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,100,225
+clean_RandomForest_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,274,37
+clean_RandomForest_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,379,42
+clean_RandomForest_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_RandomForest_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_RandomForest_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_RandomForest_temporal,b,auto,Mirai,Mirai,23959,465,52
+clean_RandomForest_temporal,b,auto,Recon,Recon,62354,750,84
+clean_RandomForest_temporal,b,auto,ARP Spoofing,Spoofing,11589,274,43
+clean_RandomForest_temporal,b,auto,DNS Spoofing,Spoofing,11045,271,41
+clean_RandomForest_temporal,b,auto,Sqlinjection,Web-Based,979,63,16
+clean_RandomForest_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_RandomForest_temporal,b,auto,XSS,Web-Based,505,2,253
+split_ResNet1D_raw,a,20000,Benign,Benign,57809,11561,6
+split_ResNet1D_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_ResNet1D_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_ResNet1D_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_ResNet1D_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_ResNet1D_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_ResNet1D_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_ResNet1D_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_ResNet1D_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_ResNet1D_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_ResNet1D_raw,a,20000,Recon,Recon,62353,12470,6
+split_ResNet1D_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_ResNet1D_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_ResNet1D_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_ResNet1D_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_ResNet1D_raw,a,20000,XSS,Web-Based,494,98,6
+split_ResNet1D_raw,b,20000,Benign,Benign,57810,11562,5
+split_ResNet1D_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_ResNet1D_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_ResNet1D_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_ResNet1D_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_ResNet1D_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_ResNet1D_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_ResNet1D_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_ResNet1D_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_ResNet1D_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_ResNet1D_raw,b,20000,Recon,Recon,62354,12470,6
+split_ResNet1D_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_ResNet1D_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_ResNet1D_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_ResNet1D_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_ResNet1D_raw,b,20000,XSS,Web-Based,505,101,5
+split_ResNet1D_raw,a,auto,Benign,Benign,57809,722,81
+split_ResNet1D_raw,a,auto,BruteForce,BruteForce,540,3,180
+split_ResNet1D_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,905,112
+split_ResNet1D_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_ResNet1D_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,146,70
+split_ResNet1D_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,252,64
+split_ResNet1D_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_ResNet1D_raw,a,auto,DOS SYN FLOOD,DOS,125105,401,312
+split_ResNet1D_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_ResNet1D_raw,a,auto,Mirai,Mirai,23959,362,67
+split_ResNet1D_raw,a,auto,Recon,Recon,62353,750,84
+split_ResNet1D_raw,a,auto,ARP Spoofing,Spoofing,11568,19,609
+split_ResNet1D_raw,a,auto,DNS Spoofing,Spoofing,11065,300,37
+split_ResNet1D_raw,a,auto,Sqlinjection,Web-Based,973,3,325
+split_ResNet1D_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_ResNet1D_raw,a,auto,XSS,Web-Based,494,2,247
+split_ResNet1D_raw,b,auto,Benign,Benign,57810,722,81
+split_ResNet1D_raw,b,auto,BruteForce,BruteForce,541,16,34
+split_ResNet1D_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_ResNet1D_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+split_ResNet1D_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,240,43
+split_ResNet1D_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,368,44
+split_ResNet1D_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_ResNet1D_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_ResNet1D_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_ResNet1D_raw,b,auto,Mirai,Mirai,23959,456,53
+split_ResNet1D_raw,b,auto,Recon,Recon,62354,750,84
+split_ResNet1D_raw,b,auto,ARP Spoofing,Spoofing,11589,255,46
+split_ResNet1D_raw,b,auto,DNS Spoofing,Spoofing,11045,263,42
+split_ResNet1D_raw,b,auto,Sqlinjection,Web-Based,979,61,17
+split_ResNet1D_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_ResNet1D_raw,b,auto,XSS,Web-Based,505,2,253
+split_ResNet1D_r1,a,20000,Benign,Benign,57809,11561,6
+split_ResNet1D_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_ResNet1D_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_ResNet1D_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_ResNet1D_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_ResNet1D_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_ResNet1D_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_ResNet1D_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_ResNet1D_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_ResNet1D_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_ResNet1D_r1,a,20000,Recon,Recon,25763,5152,6
+split_ResNet1D_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_ResNet1D_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_ResNet1D_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_ResNet1D_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_ResNet1D_r1,a,20000,XSS,Web-Based,171,34,6
+split_ResNet1D_r1,b,20000,Benign,Benign,57810,11562,5
+split_ResNet1D_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_ResNet1D_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_ResNet1D_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_ResNet1D_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_ResNet1D_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_ResNet1D_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_ResNet1D_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_ResNet1D_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_ResNet1D_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_ResNet1D_r1,b,20000,Recon,Recon,25763,5152,6
+split_ResNet1D_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_ResNet1D_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_ResNet1D_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_ResNet1D_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_ResNet1D_r1,b,20000,XSS,Web-Based,175,35,5
+split_ResNet1D_r1,a,auto,Benign,Benign,57809,2,28905
+split_ResNet1D_r1,a,auto,BruteForce,BruteForce,193,6,33
+split_ResNet1D_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,730,135
+split_ResNet1D_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_ResNet1D_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,17,253
+split_ResNet1D_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,78,90
+split_ResNet1D_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_ResNet1D_r1,a,auto,DOS SYN FLOOD,DOS,124042,339,366
+split_ResNet1D_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_ResNet1D_r1,a,auto,Mirai,Mirai,9340,199,47
+split_ResNet1D_r1,a,auto,Recon,Recon,25763,482,54
+split_ResNet1D_r1,a,auto,ARP Spoofing,Spoofing,4855,156,32
+split_ResNet1D_r1,a,auto,DNS Spoofing,Spoofing,4654,175,27
+split_ResNet1D_r1,a,auto,Sqlinjection,Web-Based,383,30,13
+split_ResNet1D_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_ResNet1D_r1,a,auto,XSS,Web-Based,171,1,171
+split_ResNet1D_r1,b,auto,Benign,Benign,57810,19,3043
+split_ResNet1D_r1,b,auto,BruteForce,BruteForce,193,4,49
+split_ResNet1D_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_ResNet1D_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_ResNet1D_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,67,64
+split_ResNet1D_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,149,47
+split_ResNet1D_r1,b,auto,DOS HTTP FLOOD,DOS,18013,384,47
+split_ResNet1D_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_ResNet1D_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_ResNet1D_r1,b,auto,Mirai,Mirai,9340,248,38
+split_ResNet1D_r1,b,auto,Recon,Recon,25763,482,54
+split_ResNet1D_r1,b,auto,ARP Spoofing,Spoofing,4843,174,28
+split_ResNet1D_r1,b,auto,DNS Spoofing,Spoofing,4668,28,167
+split_ResNet1D_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_ResNet1D_r1,b,auto,Uploading Attack,Web-Based,93,2,47
+split_ResNet1D_r1,b,auto,XSS,Web-Based,175,2,88
+clean_ResNet1D_random,a,20000,Benign,Benign,57809,11561,6
+clean_ResNet1D_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_ResNet1D_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_ResNet1D_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_ResNet1D_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_ResNet1D_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_ResNet1D_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_ResNet1D_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_ResNet1D_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_ResNet1D_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_ResNet1D_random,a,20000,Recon,Recon,25763,5152,6
+clean_ResNet1D_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_ResNet1D_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_ResNet1D_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_ResNet1D_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_ResNet1D_random,a,20000,XSS,Web-Based,171,34,6
+clean_ResNet1D_random,b,20000,Benign,Benign,57809,11561,6
+clean_ResNet1D_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_ResNet1D_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_ResNet1D_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_ResNet1D_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_ResNet1D_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_ResNet1D_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_ResNet1D_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_ResNet1D_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_ResNet1D_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_ResNet1D_random,b,20000,Recon,Recon,62353,12470,6
+clean_ResNet1D_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_ResNet1D_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_ResNet1D_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_ResNet1D_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_ResNet1D_random,b,20000,XSS,Web-Based,494,98,6
+clean_ResNet1D_random,a,auto,Benign,Benign,57809,2,28905
+clean_ResNet1D_random,a,auto,BruteForce,BruteForce,193,6,33
+clean_ResNet1D_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,730,135
+clean_ResNet1D_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_ResNet1D_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,17,253
+clean_ResNet1D_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,78,90
+clean_ResNet1D_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_ResNet1D_random,a,auto,DOS SYN FLOOD,DOS,124042,339,366
+clean_ResNet1D_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_ResNet1D_random,a,auto,Mirai,Mirai,9340,199,47
+clean_ResNet1D_random,a,auto,Recon,Recon,25763,482,54
+clean_ResNet1D_random,a,auto,ARP Spoofing,Spoofing,4855,156,32
+clean_ResNet1D_random,a,auto,DNS Spoofing,Spoofing,4654,175,27
+clean_ResNet1D_random,a,auto,Sqlinjection,Web-Based,383,30,13
+clean_ResNet1D_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_ResNet1D_random,a,auto,XSS,Web-Based,171,1,171
+clean_ResNet1D_random,b,auto,Benign,Benign,57809,722,81
+clean_ResNet1D_random,b,auto,BruteForce,BruteForce,540,3,180
+clean_ResNet1D_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,905,112
+clean_ResNet1D_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_ResNet1D_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,146,70
+clean_ResNet1D_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,252,64
+clean_ResNet1D_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_ResNet1D_random,b,auto,DOS SYN FLOOD,DOS,125105,401,312
+clean_ResNet1D_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_ResNet1D_random,b,auto,Mirai,Mirai,23959,362,67
+clean_ResNet1D_random,b,auto,Recon,Recon,62353,750,84
+clean_ResNet1D_random,b,auto,ARP Spoofing,Spoofing,11568,19,609
+clean_ResNet1D_random,b,auto,DNS Spoofing,Spoofing,11065,300,37
+clean_ResNet1D_random,b,auto,Sqlinjection,Web-Based,973,3,325
+clean_ResNet1D_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_ResNet1D_random,b,auto,XSS,Web-Based,494,2,247
+clean_ResNet1D_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_ResNet1D_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_ResNet1D_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_ResNet1D_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_ResNet1D_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_ResNet1D_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_ResNet1D_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_ResNet1D_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_ResNet1D_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_ResNet1D_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_ResNet1D_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_ResNet1D_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_ResNet1D_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_ResNet1D_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_ResNet1D_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_ResNet1D_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_ResNet1D_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_ResNet1D_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_ResNet1D_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_ResNet1D_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_ResNet1D_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_ResNet1D_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_ResNet1D_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_ResNet1D_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_ResNet1D_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_ResNet1D_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_ResNet1D_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_ResNet1D_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_ResNet1D_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_ResNet1D_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_ResNet1D_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_ResNet1D_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_ResNet1D_temporal,a,auto,Benign,Benign,57810,19,3043
+clean_ResNet1D_temporal,a,auto,BruteForce,BruteForce,193,4,49
+clean_ResNet1D_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_ResNet1D_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_ResNet1D_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,67,64
+clean_ResNet1D_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,149,47
+clean_ResNet1D_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,384,47
+clean_ResNet1D_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_ResNet1D_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_ResNet1D_temporal,a,auto,Mirai,Mirai,9340,248,38
+clean_ResNet1D_temporal,a,auto,Recon,Recon,25763,482,54
+clean_ResNet1D_temporal,a,auto,ARP Spoofing,Spoofing,4843,174,28
+clean_ResNet1D_temporal,a,auto,DNS Spoofing,Spoofing,4668,28,167
+clean_ResNet1D_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_ResNet1D_temporal,a,auto,Uploading Attack,Web-Based,93,2,47
+clean_ResNet1D_temporal,a,auto,XSS,Web-Based,175,2,88
+clean_ResNet1D_temporal,b,auto,Benign,Benign,57810,722,81
+clean_ResNet1D_temporal,b,auto,BruteForce,BruteForce,541,16,34
+clean_ResNet1D_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_ResNet1D_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+clean_ResNet1D_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,240,43
+clean_ResNet1D_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,368,44
+clean_ResNet1D_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_ResNet1D_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_ResNet1D_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_ResNet1D_temporal,b,auto,Mirai,Mirai,23959,456,53
+clean_ResNet1D_temporal,b,auto,Recon,Recon,62354,750,84
+clean_ResNet1D_temporal,b,auto,ARP Spoofing,Spoofing,11589,255,46
+clean_ResNet1D_temporal,b,auto,DNS Spoofing,Spoofing,11045,263,42
+clean_ResNet1D_temporal,b,auto,Sqlinjection,Web-Based,979,61,17
+clean_ResNet1D_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_ResNet1D_temporal,b,auto,XSS,Web-Based,505,2,253
+split_GRU_raw,a,20000,Benign,Benign,57809,11561,6
+split_GRU_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_GRU_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_GRU_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_GRU_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_GRU_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_GRU_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_GRU_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_GRU_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_GRU_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_GRU_raw,a,20000,Recon,Recon,62353,12470,6
+split_GRU_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_GRU_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_GRU_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_GRU_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_GRU_raw,a,20000,XSS,Web-Based,494,98,6
+split_GRU_raw,b,20000,Benign,Benign,57810,11562,5
+split_GRU_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_GRU_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_GRU_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_GRU_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_GRU_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_GRU_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_GRU_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_GRU_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_GRU_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_GRU_raw,b,20000,Recon,Recon,62354,12470,6
+split_GRU_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_GRU_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_GRU_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_GRU_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_GRU_raw,b,20000,XSS,Web-Based,505,101,5
+split_GRU_raw,a,auto,Benign,Benign,57809,722,81
+split_GRU_raw,a,auto,BruteForce,BruteForce,540,19,29
+split_GRU_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,906,112
+split_GRU_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_GRU_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,165,62
+split_GRU_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,61,264
+split_GRU_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_GRU_raw,a,auto,DOS SYN FLOOD,DOS,125105,399,314
+split_GRU_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_GRU_raw,a,auto,Mirai,Mirai,23959,365,66
+split_GRU_raw,a,auto,Recon,Recon,62353,750,84
+split_GRU_raw,a,auto,ARP Spoofing,Spoofing,11568,18,643
+split_GRU_raw,a,auto,DNS Spoofing,Spoofing,11065,302,37
+split_GRU_raw,a,auto,Sqlinjection,Web-Based,973,2,487
+split_GRU_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_GRU_raw,a,auto,XSS,Web-Based,494,2,247
+split_GRU_raw,b,auto,Benign,Benign,57810,722,81
+split_GRU_raw,b,auto,BruteForce,BruteForce,541,8,68
+split_GRU_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_GRU_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+split_GRU_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,248,41
+split_GRU_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,13,1225
+split_GRU_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_GRU_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_GRU_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_GRU_raw,b,auto,Mirai,Mirai,23959,452,54
+split_GRU_raw,b,auto,Recon,Recon,62354,750,84
+split_GRU_raw,b,auto,ARP Spoofing,Spoofing,11589,263,45
+split_GRU_raw,b,auto,DNS Spoofing,Spoofing,11045,265,42
+split_GRU_raw,b,auto,Sqlinjection,Web-Based,979,62,16
+split_GRU_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_GRU_raw,b,auto,XSS,Web-Based,505,2,253
+split_GRU_r1,a,20000,Benign,Benign,57809,11561,6
+split_GRU_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_GRU_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_GRU_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_GRU_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_GRU_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_GRU_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_GRU_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_GRU_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_GRU_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_GRU_r1,a,20000,Recon,Recon,25763,5152,6
+split_GRU_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_GRU_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_GRU_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_GRU_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_GRU_r1,a,20000,XSS,Web-Based,171,34,6
+split_GRU_r1,b,20000,Benign,Benign,57810,11562,5
+split_GRU_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_GRU_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_GRU_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_GRU_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_GRU_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_GRU_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_GRU_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_GRU_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_GRU_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_GRU_r1,b,20000,Recon,Recon,25763,5152,6
+split_GRU_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_GRU_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_GRU_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_GRU_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_GRU_r1,b,20000,XSS,Web-Based,175,35,5
+split_GRU_r1,a,auto,Benign,Benign,57809,722,81
+split_GRU_r1,a,auto,BruteForce,BruteForce,193,2,97
+split_GRU_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,722,137
+split_GRU_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_GRU_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,100,43
+split_GRU_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,79,89
+split_GRU_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_GRU_r1,a,auto,DOS SYN FLOOD,DOS,124042,205,606
+split_GRU_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_GRU_r1,a,auto,Mirai,Mirai,9340,172,55
+split_GRU_r1,a,auto,Recon,Recon,25763,482,54
+split_GRU_r1,a,auto,ARP Spoofing,Spoofing,4855,108,45
+split_GRU_r1,a,auto,DNS Spoofing,Spoofing,4654,172,28
+split_GRU_r1,a,auto,Sqlinjection,Web-Based,383,32,12
+split_GRU_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_GRU_r1,a,auto,XSS,Web-Based,171,1,171
+split_GRU_r1,b,auto,Benign,Benign,57810,722,81
+split_GRU_r1,b,auto,BruteForce,BruteForce,193,1,193
+split_GRU_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_GRU_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_GRU_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,114,38
+split_GRU_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,18,387
+split_GRU_r1,b,auto,DOS HTTP FLOOD,DOS,18013,403,45
+split_GRU_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_GRU_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_GRU_r1,b,auto,Mirai,Mirai,9340,228,41
+split_GRU_r1,b,auto,Recon,Recon,25763,482,54
+split_GRU_r1,b,auto,ARP Spoofing,Spoofing,4843,174,28
+split_GRU_r1,b,auto,DNS Spoofing,Spoofing,4668,168,28
+split_GRU_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_GRU_r1,b,auto,Uploading Attack,Web-Based,93,2,47
+split_GRU_r1,b,auto,XSS,Web-Based,175,1,175
+clean_GRU_random,a,20000,Benign,Benign,57809,11561,6
+clean_GRU_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_GRU_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_GRU_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_GRU_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_GRU_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_GRU_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_GRU_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_GRU_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_GRU_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_GRU_random,a,20000,Recon,Recon,25763,5152,6
+clean_GRU_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_GRU_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_GRU_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_GRU_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_GRU_random,a,20000,XSS,Web-Based,171,34,6
+clean_GRU_random,b,20000,Benign,Benign,57809,11561,6
+clean_GRU_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_GRU_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_GRU_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_GRU_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_GRU_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_GRU_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_GRU_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_GRU_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_GRU_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_GRU_random,b,20000,Recon,Recon,62353,12470,6
+clean_GRU_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_GRU_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_GRU_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_GRU_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_GRU_random,b,20000,XSS,Web-Based,494,98,6
+clean_GRU_random,a,auto,Benign,Benign,57809,722,81
+clean_GRU_random,a,auto,BruteForce,BruteForce,193,2,97
+clean_GRU_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,722,137
+clean_GRU_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_GRU_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,100,43
+clean_GRU_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,79,89
+clean_GRU_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_GRU_random,a,auto,DOS SYN FLOOD,DOS,124042,205,606
+clean_GRU_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_GRU_random,a,auto,Mirai,Mirai,9340,172,55
+clean_GRU_random,a,auto,Recon,Recon,25763,482,54
+clean_GRU_random,a,auto,ARP Spoofing,Spoofing,4855,108,45
+clean_GRU_random,a,auto,DNS Spoofing,Spoofing,4654,172,28
+clean_GRU_random,a,auto,Sqlinjection,Web-Based,383,32,12
+clean_GRU_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_GRU_random,a,auto,XSS,Web-Based,171,1,171
+clean_GRU_random,b,auto,Benign,Benign,57809,722,81
+clean_GRU_random,b,auto,BruteForce,BruteForce,540,19,29
+clean_GRU_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,906,112
+clean_GRU_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_GRU_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,165,62
+clean_GRU_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,61,264
+clean_GRU_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_GRU_random,b,auto,DOS SYN FLOOD,DOS,125105,399,314
+clean_GRU_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_GRU_random,b,auto,Mirai,Mirai,23959,365,66
+clean_GRU_random,b,auto,Recon,Recon,62353,750,84
+clean_GRU_random,b,auto,ARP Spoofing,Spoofing,11568,18,643
+clean_GRU_random,b,auto,DNS Spoofing,Spoofing,11065,302,37
+clean_GRU_random,b,auto,Sqlinjection,Web-Based,973,2,487
+clean_GRU_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_GRU_random,b,auto,XSS,Web-Based,494,2,247
+clean_GRU_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_GRU_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_GRU_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_GRU_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_GRU_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_GRU_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_GRU_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_GRU_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_GRU_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_GRU_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_GRU_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_GRU_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_GRU_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_GRU_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_GRU_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_GRU_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_GRU_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_GRU_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_GRU_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_GRU_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_GRU_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_GRU_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_GRU_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_GRU_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_GRU_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_GRU_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_GRU_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_GRU_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_GRU_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_GRU_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_GRU_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_GRU_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_GRU_temporal,a,auto,Benign,Benign,57810,722,81
+clean_GRU_temporal,a,auto,BruteForce,BruteForce,193,1,193
+clean_GRU_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_GRU_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_GRU_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,114,38
+clean_GRU_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,18,387
+clean_GRU_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,403,45
+clean_GRU_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_GRU_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_GRU_temporal,a,auto,Mirai,Mirai,9340,228,41
+clean_GRU_temporal,a,auto,Recon,Recon,25763,482,54
+clean_GRU_temporal,a,auto,ARP Spoofing,Spoofing,4843,174,28
+clean_GRU_temporal,a,auto,DNS Spoofing,Spoofing,4668,168,28
+clean_GRU_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_GRU_temporal,a,auto,Uploading Attack,Web-Based,93,2,47
+clean_GRU_temporal,a,auto,XSS,Web-Based,175,1,175
+clean_GRU_temporal,b,auto,Benign,Benign,57810,722,81
+clean_GRU_temporal,b,auto,BruteForce,BruteForce,541,8,68
+clean_GRU_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_GRU_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+clean_GRU_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,248,41
+clean_GRU_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,13,1225
+clean_GRU_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_GRU_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_GRU_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_GRU_temporal,b,auto,Mirai,Mirai,23959,452,54
+clean_GRU_temporal,b,auto,Recon,Recon,62354,750,84
+clean_GRU_temporal,b,auto,ARP Spoofing,Spoofing,11589,263,45
+clean_GRU_temporal,b,auto,DNS Spoofing,Spoofing,11045,265,42
+clean_GRU_temporal,b,auto,Sqlinjection,Web-Based,979,62,16
+clean_GRU_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_GRU_temporal,b,auto,XSS,Web-Based,505,2,253
+split_Transformer_raw,a,20000,Benign,Benign,57809,11561,6
+split_Transformer_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_Transformer_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_Transformer_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_Transformer_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_Transformer_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_Transformer_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_Transformer_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_Transformer_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_Transformer_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_Transformer_raw,a,20000,Recon,Recon,62353,12470,6
+split_Transformer_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_Transformer_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_Transformer_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_Transformer_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_Transformer_raw,a,20000,XSS,Web-Based,494,98,6
+split_Transformer_raw,b,20000,Benign,Benign,57810,11562,5
+split_Transformer_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_Transformer_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_Transformer_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_Transformer_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_Transformer_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_Transformer_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_Transformer_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_Transformer_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_Transformer_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_Transformer_raw,b,20000,Recon,Recon,62354,12470,6
+split_Transformer_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_Transformer_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_Transformer_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_Transformer_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_Transformer_raw,b,20000,XSS,Web-Based,505,101,5
+split_Transformer_raw,a,auto,Benign,Benign,57809,722,81
+split_Transformer_raw,a,auto,BruteForce,BruteForce,540,2,270
+split_Transformer_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,907,112
+split_Transformer_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_Transformer_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,14,728
+split_Transformer_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,45,357
+split_Transformer_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_Transformer_raw,a,auto,DOS SYN FLOOD,DOS,125105,403,311
+split_Transformer_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_Transformer_raw,a,auto,Mirai,Mirai,23959,379,64
+split_Transformer_raw,a,auto,Recon,Recon,62353,750,84
+split_Transformer_raw,a,auto,ARP Spoofing,Spoofing,11568,109,107
+split_Transformer_raw,a,auto,DNS Spoofing,Spoofing,11065,299,38
+split_Transformer_raw,a,auto,Sqlinjection,Web-Based,973,20,49
+split_Transformer_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_Transformer_raw,a,auto,XSS,Web-Based,494,3,165
+split_Transformer_raw,b,auto,Benign,Benign,57810,722,81
+split_Transformer_raw,b,auto,BruteForce,BruteForce,541,2,271
+split_Transformer_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_Transformer_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+split_Transformer_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,48,211
+split_Transformer_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,54,295
+split_Transformer_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_Transformer_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_Transformer_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_Transformer_raw,b,auto,Mirai,Mirai,23959,449,54
+split_Transformer_raw,b,auto,Recon,Recon,62354,750,84
+split_Transformer_raw,b,auto,ARP Spoofing,Spoofing,11589,282,42
+split_Transformer_raw,b,auto,DNS Spoofing,Spoofing,11045,278,40
+split_Transformer_raw,b,auto,Sqlinjection,Web-Based,979,62,16
+split_Transformer_raw,b,auto,Uploading Attack,Web-Based,200,3,67
+split_Transformer_raw,b,auto,XSS,Web-Based,505,1,505
+split_Transformer_r1,a,20000,Benign,Benign,57809,11561,6
+split_Transformer_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_Transformer_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_Transformer_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_Transformer_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_Transformer_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_Transformer_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_Transformer_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_Transformer_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_Transformer_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_Transformer_r1,a,20000,Recon,Recon,25763,5152,6
+split_Transformer_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_Transformer_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_Transformer_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_Transformer_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_Transformer_r1,a,20000,XSS,Web-Based,171,34,6
+split_Transformer_r1,b,20000,Benign,Benign,57810,11562,5
+split_Transformer_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_Transformer_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_Transformer_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_Transformer_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_Transformer_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_Transformer_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_Transformer_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_Transformer_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_Transformer_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_Transformer_r1,b,20000,Recon,Recon,25763,5152,6
+split_Transformer_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_Transformer_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_Transformer_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_Transformer_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_Transformer_r1,b,20000,XSS,Web-Based,175,35,5
+split_Transformer_r1,a,auto,Benign,Benign,57809,1,57809
+split_Transformer_r1,a,auto,BruteForce,BruteForce,193,3,65
+split_Transformer_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,610,162
+split_Transformer_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_Transformer_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,6,716
+split_Transformer_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,24,290
+split_Transformer_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_Transformer_r1,a,auto,DOS SYN FLOOD,DOS,124042,255,487
+split_Transformer_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_Transformer_r1,a,auto,Mirai,Mirai,9340,194,49
+split_Transformer_r1,a,auto,Recon,Recon,25763,482,54
+split_Transformer_r1,a,auto,ARP Spoofing,Spoofing,4855,163,30
+split_Transformer_r1,a,auto,DNS Spoofing,Spoofing,4654,174,27
+split_Transformer_r1,a,auto,Sqlinjection,Web-Based,383,31,13
+split_Transformer_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_Transformer_r1,a,auto,XSS,Web-Based,171,2,86
+split_Transformer_r1,b,auto,Benign,Benign,57810,21,2753
+split_Transformer_r1,b,auto,BruteForce,BruteForce,193,1,193
+split_Transformer_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_Transformer_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_Transformer_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,27,158
+split_Transformer_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,113,62
+split_Transformer_r1,b,auto,DOS HTTP FLOOD,DOS,18013,403,45
+split_Transformer_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_Transformer_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_Transformer_r1,b,auto,Mirai,Mirai,9340,254,37
+split_Transformer_r1,b,auto,Recon,Recon,25763,482,54
+split_Transformer_r1,b,auto,ARP Spoofing,Spoofing,4843,175,28
+split_Transformer_r1,b,auto,DNS Spoofing,Spoofing,4668,159,30
+split_Transformer_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_Transformer_r1,b,auto,Uploading Attack,Web-Based,93,3,31
+split_Transformer_r1,b,auto,XSS,Web-Based,175,2,88
+clean_Transformer_random,a,20000,Benign,Benign,57809,11561,6
+clean_Transformer_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_Transformer_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_Transformer_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_Transformer_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_Transformer_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_Transformer_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_Transformer_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_Transformer_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_Transformer_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_Transformer_random,a,20000,Recon,Recon,25763,5152,6
+clean_Transformer_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_Transformer_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_Transformer_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_Transformer_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_Transformer_random,a,20000,XSS,Web-Based,171,34,6
+clean_Transformer_random,b,20000,Benign,Benign,57809,11561,6
+clean_Transformer_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_Transformer_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_Transformer_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_Transformer_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_Transformer_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_Transformer_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_Transformer_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_Transformer_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_Transformer_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_Transformer_random,b,20000,Recon,Recon,62353,12470,6
+clean_Transformer_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_Transformer_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_Transformer_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_Transformer_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_Transformer_random,b,20000,XSS,Web-Based,494,98,6
+clean_Transformer_random,a,auto,Benign,Benign,57809,1,57809
+clean_Transformer_random,a,auto,BruteForce,BruteForce,193,3,65
+clean_Transformer_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,610,162
+clean_Transformer_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_Transformer_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,6,716
+clean_Transformer_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,24,290
+clean_Transformer_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_Transformer_random,a,auto,DOS SYN FLOOD,DOS,124042,255,487
+clean_Transformer_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_Transformer_random,a,auto,Mirai,Mirai,9340,194,49
+clean_Transformer_random,a,auto,Recon,Recon,25763,482,54
+clean_Transformer_random,a,auto,ARP Spoofing,Spoofing,4855,163,30
+clean_Transformer_random,a,auto,DNS Spoofing,Spoofing,4654,174,27
+clean_Transformer_random,a,auto,Sqlinjection,Web-Based,383,31,13
+clean_Transformer_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_Transformer_random,a,auto,XSS,Web-Based,171,2,86
+clean_Transformer_random,b,auto,Benign,Benign,57809,722,81
+clean_Transformer_random,b,auto,BruteForce,BruteForce,540,2,270
+clean_Transformer_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,907,112
+clean_Transformer_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_Transformer_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,14,728
+clean_Transformer_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,45,357
+clean_Transformer_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_Transformer_random,b,auto,DOS SYN FLOOD,DOS,125105,403,311
+clean_Transformer_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_Transformer_random,b,auto,Mirai,Mirai,23959,379,64
+clean_Transformer_random,b,auto,Recon,Recon,62353,750,84
+clean_Transformer_random,b,auto,ARP Spoofing,Spoofing,11568,109,107
+clean_Transformer_random,b,auto,DNS Spoofing,Spoofing,11065,299,38
+clean_Transformer_random,b,auto,Sqlinjection,Web-Based,973,20,49
+clean_Transformer_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_Transformer_random,b,auto,XSS,Web-Based,494,3,165
+clean_Transformer_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_Transformer_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_Transformer_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_Transformer_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_Transformer_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_Transformer_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_Transformer_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_Transformer_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_Transformer_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_Transformer_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_Transformer_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_Transformer_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_Transformer_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_Transformer_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_Transformer_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_Transformer_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_Transformer_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_Transformer_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_Transformer_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_Transformer_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_Transformer_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_Transformer_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_Transformer_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_Transformer_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_Transformer_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_Transformer_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_Transformer_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_Transformer_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_Transformer_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_Transformer_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_Transformer_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_Transformer_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_Transformer_temporal,a,auto,Benign,Benign,57810,21,2753
+clean_Transformer_temporal,a,auto,BruteForce,BruteForce,193,1,193
+clean_Transformer_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_Transformer_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_Transformer_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,27,158
+clean_Transformer_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,113,62
+clean_Transformer_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,403,45
+clean_Transformer_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_Transformer_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_Transformer_temporal,a,auto,Mirai,Mirai,9340,254,37
+clean_Transformer_temporal,a,auto,Recon,Recon,25763,482,54
+clean_Transformer_temporal,a,auto,ARP Spoofing,Spoofing,4843,175,28
+clean_Transformer_temporal,a,auto,DNS Spoofing,Spoofing,4668,159,30
+clean_Transformer_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_Transformer_temporal,a,auto,Uploading Attack,Web-Based,93,3,31
+clean_Transformer_temporal,a,auto,XSS,Web-Based,175,2,88
+clean_Transformer_temporal,b,auto,Benign,Benign,57810,722,81
+clean_Transformer_temporal,b,auto,BruteForce,BruteForce,541,2,271
+clean_Transformer_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_Transformer_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+clean_Transformer_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,48,211
+clean_Transformer_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,54,295
+clean_Transformer_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_Transformer_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_Transformer_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_Transformer_temporal,b,auto,Mirai,Mirai,23959,449,54
+clean_Transformer_temporal,b,auto,Recon,Recon,62354,750,84
+clean_Transformer_temporal,b,auto,ARP Spoofing,Spoofing,11589,282,42
+clean_Transformer_temporal,b,auto,DNS Spoofing,Spoofing,11045,278,40
+clean_Transformer_temporal,b,auto,Sqlinjection,Web-Based,979,62,16
+clean_Transformer_temporal,b,auto,Uploading Attack,Web-Based,200,3,67
+clean_Transformer_temporal,b,auto,XSS,Web-Based,505,1,505
+split_MLP_raw,a,20000,Benign,Benign,57809,11561,6
+split_MLP_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_MLP_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_MLP_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_MLP_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_MLP_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_MLP_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_MLP_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_MLP_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_MLP_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_MLP_raw,a,20000,Recon,Recon,62353,12470,6
+split_MLP_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_MLP_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_MLP_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_MLP_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_MLP_raw,a,20000,XSS,Web-Based,494,98,6
+split_MLP_raw,b,20000,Benign,Benign,57810,11562,5
+split_MLP_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_MLP_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_MLP_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_MLP_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_MLP_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_MLP_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_MLP_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_MLP_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_MLP_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_MLP_raw,b,20000,Recon,Recon,62354,12470,6
+split_MLP_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_MLP_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_MLP_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_MLP_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_MLP_raw,b,20000,XSS,Web-Based,505,101,5
+split_MLP_raw,a,auto,Benign,Benign,57809,722,81
+split_MLP_raw,a,auto,BruteForce,BruteForce,540,2,270
+split_MLP_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,907,112
+split_MLP_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_MLP_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,19,537
+split_MLP_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,2,8029
+split_MLP_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_MLP_raw,a,auto,DOS SYN FLOOD,DOS,125105,410,306
+split_MLP_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_MLP_raw,a,auto,Mirai,Mirai,23959,438,55
+split_MLP_raw,a,auto,Recon,Recon,62353,750,84
+split_MLP_raw,a,auto,ARP Spoofing,Spoofing,11568,30,386
+split_MLP_raw,a,auto,DNS Spoofing,Spoofing,11065,302,37
+split_MLP_raw,a,auto,Sqlinjection,Web-Based,973,2,487
+split_MLP_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_MLP_raw,a,auto,XSS,Web-Based,494,3,165
+split_MLP_raw,b,auto,Benign,Benign,57810,37,1563
+split_MLP_raw,b,auto,BruteForce,BruteForce,541,8,68
+split_MLP_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_MLP_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+split_MLP_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,136,75
+split_MLP_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,11,1448
+split_MLP_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_MLP_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_MLP_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_MLP_raw,b,auto,Mirai,Mirai,23959,461,52
+split_MLP_raw,b,auto,Recon,Recon,62354,750,84
+split_MLP_raw,b,auto,ARP Spoofing,Spoofing,11589,284,41
+split_MLP_raw,b,auto,DNS Spoofing,Spoofing,11045,259,43
+split_MLP_raw,b,auto,Sqlinjection,Web-Based,979,62,16
+split_MLP_raw,b,auto,Uploading Attack,Web-Based,200,2,100
+split_MLP_raw,b,auto,XSS,Web-Based,505,3,169
+split_MLP_r1,a,20000,Benign,Benign,57809,11561,6
+split_MLP_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_MLP_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_MLP_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_MLP_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_MLP_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_MLP_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_MLP_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_MLP_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_MLP_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_MLP_r1,a,20000,Recon,Recon,25763,5152,6
+split_MLP_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_MLP_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_MLP_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_MLP_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_MLP_r1,a,20000,XSS,Web-Based,171,34,6
+split_MLP_r1,b,20000,Benign,Benign,57810,11562,5
+split_MLP_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_MLP_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_MLP_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_MLP_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_MLP_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_MLP_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_MLP_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_MLP_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_MLP_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_MLP_r1,b,20000,Recon,Recon,25763,5152,6
+split_MLP_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_MLP_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_MLP_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_MLP_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_MLP_r1,b,20000,XSS,Web-Based,175,35,5
+split_MLP_r1,a,auto,Benign,Benign,57809,3,19270
+split_MLP_r1,a,auto,BruteForce,BruteForce,193,6,33
+split_MLP_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,605,163
+split_MLP_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_MLP_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,5,860
+split_MLP_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,25,279
+split_MLP_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_MLP_r1,a,auto,DOS SYN FLOOD,DOS,124042,246,505
+split_MLP_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_MLP_r1,a,auto,Mirai,Mirai,9340,249,38
+split_MLP_r1,a,auto,Recon,Recon,25763,482,54
+split_MLP_r1,a,auto,ARP Spoofing,Spoofing,4855,153,32
+split_MLP_r1,a,auto,DNS Spoofing,Spoofing,4654,175,27
+split_MLP_r1,a,auto,Sqlinjection,Web-Based,383,32,12
+split_MLP_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_MLP_r1,a,auto,XSS,Web-Based,171,9,19
+split_MLP_r1,b,auto,Benign,Benign,57810,23,2514
+split_MLP_r1,b,auto,BruteForce,BruteForce,193,2,97
+split_MLP_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_MLP_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_MLP_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,66,65
+split_MLP_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,94,74
+split_MLP_r1,b,auto,DOS HTTP FLOOD,DOS,18013,403,45
+split_MLP_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_MLP_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_MLP_r1,b,auto,Mirai,Mirai,9340,250,38
+split_MLP_r1,b,auto,Recon,Recon,25763,8,3221
+split_MLP_r1,b,auto,ARP Spoofing,Spoofing,4843,163,30
+split_MLP_r1,b,auto,DNS Spoofing,Spoofing,4668,18,260
+split_MLP_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_MLP_r1,b,auto,Uploading Attack,Web-Based,93,4,24
+split_MLP_r1,b,auto,XSS,Web-Based,175,1,175
+clean_MLP_random,a,20000,Benign,Benign,57809,11561,6
+clean_MLP_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_MLP_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_MLP_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_MLP_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_MLP_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_MLP_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_MLP_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_MLP_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_MLP_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_MLP_random,a,20000,Recon,Recon,25763,5152,6
+clean_MLP_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_MLP_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_MLP_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_MLP_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_MLP_random,a,20000,XSS,Web-Based,171,34,6
+clean_MLP_random,b,20000,Benign,Benign,57809,11561,6
+clean_MLP_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_MLP_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_MLP_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_MLP_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_MLP_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_MLP_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_MLP_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_MLP_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_MLP_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_MLP_random,b,20000,Recon,Recon,62353,12470,6
+clean_MLP_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_MLP_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_MLP_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_MLP_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_MLP_random,b,20000,XSS,Web-Based,494,98,6
+clean_MLP_random,a,auto,Benign,Benign,57809,3,19270
+clean_MLP_random,a,auto,BruteForce,BruteForce,193,6,33
+clean_MLP_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,605,163
+clean_MLP_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_MLP_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,5,860
+clean_MLP_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,25,279
+clean_MLP_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_MLP_random,a,auto,DOS SYN FLOOD,DOS,124042,246,505
+clean_MLP_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_MLP_random,a,auto,Mirai,Mirai,9340,249,38
+clean_MLP_random,a,auto,Recon,Recon,25763,482,54
+clean_MLP_random,a,auto,ARP Spoofing,Spoofing,4855,153,32
+clean_MLP_random,a,auto,DNS Spoofing,Spoofing,4654,175,27
+clean_MLP_random,a,auto,Sqlinjection,Web-Based,383,32,12
+clean_MLP_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_MLP_random,a,auto,XSS,Web-Based,171,9,19
+clean_MLP_random,b,auto,Benign,Benign,57809,722,81
+clean_MLP_random,b,auto,BruteForce,BruteForce,540,2,270
+clean_MLP_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,907,112
+clean_MLP_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_MLP_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,19,537
+clean_MLP_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,2,8029
+clean_MLP_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_MLP_random,b,auto,DOS SYN FLOOD,DOS,125105,410,306
+clean_MLP_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_MLP_random,b,auto,Mirai,Mirai,23959,438,55
+clean_MLP_random,b,auto,Recon,Recon,62353,750,84
+clean_MLP_random,b,auto,ARP Spoofing,Spoofing,11568,30,386
+clean_MLP_random,b,auto,DNS Spoofing,Spoofing,11065,302,37
+clean_MLP_random,b,auto,Sqlinjection,Web-Based,973,2,487
+clean_MLP_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_MLP_random,b,auto,XSS,Web-Based,494,3,165
+clean_MLP_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_MLP_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_MLP_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_MLP_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_MLP_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_MLP_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_MLP_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_MLP_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_MLP_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_MLP_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_MLP_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_MLP_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_MLP_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_MLP_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_MLP_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_MLP_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_MLP_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_MLP_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_MLP_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_MLP_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_MLP_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_MLP_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_MLP_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_MLP_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_MLP_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_MLP_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_MLP_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_MLP_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_MLP_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_MLP_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_MLP_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_MLP_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_MLP_temporal,a,auto,Benign,Benign,57810,23,2514
+clean_MLP_temporal,a,auto,BruteForce,BruteForce,193,2,97
+clean_MLP_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_MLP_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_MLP_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,66,65
+clean_MLP_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,94,74
+clean_MLP_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,403,45
+clean_MLP_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_MLP_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_MLP_temporal,a,auto,Mirai,Mirai,9340,250,38
+clean_MLP_temporal,a,auto,Recon,Recon,25763,8,3221
+clean_MLP_temporal,a,auto,ARP Spoofing,Spoofing,4843,163,30
+clean_MLP_temporal,a,auto,DNS Spoofing,Spoofing,4668,18,260
+clean_MLP_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_MLP_temporal,a,auto,Uploading Attack,Web-Based,93,4,24
+clean_MLP_temporal,a,auto,XSS,Web-Based,175,1,175
+clean_MLP_temporal,b,auto,Benign,Benign,57810,37,1563
+clean_MLP_temporal,b,auto,BruteForce,BruteForce,541,8,68
+clean_MLP_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_MLP_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+clean_MLP_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,136,75
+clean_MLP_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,11,1448
+clean_MLP_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_MLP_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_MLP_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_MLP_temporal,b,auto,Mirai,Mirai,23959,461,52
+clean_MLP_temporal,b,auto,Recon,Recon,62354,750,84
+clean_MLP_temporal,b,auto,ARP Spoofing,Spoofing,11589,284,41
+clean_MLP_temporal,b,auto,DNS Spoofing,Spoofing,11045,259,43
+clean_MLP_temporal,b,auto,Sqlinjection,Web-Based,979,62,16
+clean_MLP_temporal,b,auto,Uploading Attack,Web-Based,200,2,100
+clean_MLP_temporal,b,auto,XSS,Web-Based,505,3,169
+split_CNN1D_Hossain_raw,a,20000,Benign,Benign,57809,11561,6
+split_CNN1D_Hossain_raw,a,20000,BruteForce,BruteForce,540,108,5
+split_CNN1D_Hossain_raw,a,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+split_CNN1D_Hossain_raw,a,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+split_CNN1D_Hossain_raw,a,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+split_CNN1D_Hossain_raw,a,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+split_CNN1D_Hossain_raw,a,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+split_CNN1D_Hossain_raw,a,20000,DOS SYN FLOOD,DOS,125105,20000,7
+split_CNN1D_Hossain_raw,a,20000,DOS UDP FLOOD,DOS,81335,16267,5
+split_CNN1D_Hossain_raw,a,20000,Mirai,Mirai,23959,4791,6
+split_CNN1D_Hossain_raw,a,20000,Recon,Recon,62353,12470,6
+split_CNN1D_Hossain_raw,a,20000,ARP Spoofing,Spoofing,11568,2313,6
+split_CNN1D_Hossain_raw,a,20000,DNS Spoofing,Spoofing,11065,2213,5
+split_CNN1D_Hossain_raw,a,20000,Sqlinjection,Web-Based,973,194,6
+split_CNN1D_Hossain_raw,a,20000,Uploading Attack,Web-Based,215,43,5
+split_CNN1D_Hossain_raw,a,20000,XSS,Web-Based,494,98,6
+split_CNN1D_Hossain_raw,b,20000,Benign,Benign,57810,11562,5
+split_CNN1D_Hossain_raw,b,20000,BruteForce,BruteForce,541,108,6
+split_CNN1D_Hossain_raw,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+split_CNN1D_Hossain_raw,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+split_CNN1D_Hossain_raw,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+split_CNN1D_Hossain_raw,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+split_CNN1D_Hossain_raw,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+split_CNN1D_Hossain_raw,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+split_CNN1D_Hossain_raw,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+split_CNN1D_Hossain_raw,b,20000,Mirai,Mirai,23959,4791,6
+split_CNN1D_Hossain_raw,b,20000,Recon,Recon,62354,12470,6
+split_CNN1D_Hossain_raw,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+split_CNN1D_Hossain_raw,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+split_CNN1D_Hossain_raw,b,20000,Sqlinjection,Web-Based,979,195,6
+split_CNN1D_Hossain_raw,b,20000,Uploading Attack,Web-Based,200,40,5
+split_CNN1D_Hossain_raw,b,20000,XSS,Web-Based,505,101,5
+split_CNN1D_Hossain_raw,a,auto,Benign,Benign,57809,722,81
+split_CNN1D_Hossain_raw,a,auto,BruteForce,BruteForce,540,2,270
+split_CNN1D_Hossain_raw,a,auto,DDOS ACK Fragmentation,DDOS,101184,906,112
+split_CNN1D_Hossain_raw,a,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+split_CNN1D_Hossain_raw,a,auto,DDOS ICMP FLOOD,DDOS,10186,76,135
+split_CNN1D_Hossain_raw,a,auto,DDOS ICMP Fragmentation,DDOS,16057,1,16057
+split_CNN1D_Hossain_raw,a,auto,DOS HTTP FLOOD,DOS,18560,409,46
+split_CNN1D_Hossain_raw,a,auto,DOS SYN FLOOD,DOS,125105,401,312
+split_CNN1D_Hossain_raw,a,auto,DOS UDP FLOOD,DOS,81335,856,96
+split_CNN1D_Hossain_raw,a,auto,Mirai,Mirai,23959,382,63
+split_CNN1D_Hossain_raw,a,auto,Recon,Recon,62353,750,84
+split_CNN1D_Hossain_raw,a,auto,ARP Spoofing,Spoofing,11568,32,362
+split_CNN1D_Hossain_raw,a,auto,DNS Spoofing,Spoofing,11065,301,37
+split_CNN1D_Hossain_raw,a,auto,Sqlinjection,Web-Based,973,15,65
+split_CNN1D_Hossain_raw,a,auto,Uploading Attack,Web-Based,215,1,215
+split_CNN1D_Hossain_raw,a,auto,XSS,Web-Based,494,2,247
+split_CNN1D_Hossain_raw,b,auto,Benign,Benign,57810,722,81
+split_CNN1D_Hossain_raw,b,auto,BruteForce,BruteForce,541,18,31
+split_CNN1D_Hossain_raw,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+split_CNN1D_Hossain_raw,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+split_CNN1D_Hossain_raw,b,auto,DDOS ICMP FLOOD,DDOS,10110,262,39
+split_CNN1D_Hossain_raw,b,auto,DDOS ICMP Fragmentation,DDOS,15918,39,409
+split_CNN1D_Hossain_raw,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+split_CNN1D_Hossain_raw,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+split_CNN1D_Hossain_raw,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+split_CNN1D_Hossain_raw,b,auto,Mirai,Mirai,23959,460,53
+split_CNN1D_Hossain_raw,b,auto,Recon,Recon,62354,750,84
+split_CNN1D_Hossain_raw,b,auto,ARP Spoofing,Spoofing,11589,274,43
+split_CNN1D_Hossain_raw,b,auto,DNS Spoofing,Spoofing,11045,271,41
+split_CNN1D_Hossain_raw,b,auto,Sqlinjection,Web-Based,979,62,16
+split_CNN1D_Hossain_raw,b,auto,Uploading Attack,Web-Based,200,9,23
+split_CNN1D_Hossain_raw,b,auto,XSS,Web-Based,505,2,253
+split_CNN1D_Hossain_r1,a,20000,Benign,Benign,57809,11561,6
+split_CNN1D_Hossain_r1,a,20000,BruteForce,BruteForce,193,38,6
+split_CNN1D_Hossain_r1,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+split_CNN1D_Hossain_r1,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+split_CNN1D_Hossain_r1,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+split_CNN1D_Hossain_r1,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+split_CNN1D_Hossain_r1,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+split_CNN1D_Hossain_r1,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+split_CNN1D_Hossain_r1,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+split_CNN1D_Hossain_r1,a,20000,Mirai,Mirai,9340,1868,5
+split_CNN1D_Hossain_r1,a,20000,Recon,Recon,25763,5152,6
+split_CNN1D_Hossain_r1,a,20000,ARP Spoofing,Spoofing,4855,971,5
+split_CNN1D_Hossain_r1,a,20000,DNS Spoofing,Spoofing,4654,930,6
+split_CNN1D_Hossain_r1,a,20000,Sqlinjection,Web-Based,383,76,6
+split_CNN1D_Hossain_r1,a,20000,Uploading Attack,Web-Based,81,16,6
+split_CNN1D_Hossain_r1,a,20000,XSS,Web-Based,171,34,6
+split_CNN1D_Hossain_r1,b,20000,Benign,Benign,57810,11562,5
+split_CNN1D_Hossain_r1,b,20000,BruteForce,BruteForce,193,38,6
+split_CNN1D_Hossain_r1,b,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+split_CNN1D_Hossain_r1,b,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+split_CNN1D_Hossain_r1,b,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+split_CNN1D_Hossain_r1,b,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+split_CNN1D_Hossain_r1,b,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+split_CNN1D_Hossain_r1,b,20000,DOS SYN FLOOD,DOS,123829,20000,7
+split_CNN1D_Hossain_r1,b,20000,DOS UDP FLOOD,DOS,78376,15675,6
+split_CNN1D_Hossain_r1,b,20000,Mirai,Mirai,9340,1868,5
+split_CNN1D_Hossain_r1,b,20000,Recon,Recon,25763,5152,6
+split_CNN1D_Hossain_r1,b,20000,ARP Spoofing,Spoofing,4843,968,6
+split_CNN1D_Hossain_r1,b,20000,DNS Spoofing,Spoofing,4668,933,6
+split_CNN1D_Hossain_r1,b,20000,Sqlinjection,Web-Based,368,73,6
+split_CNN1D_Hossain_r1,b,20000,Uploading Attack,Web-Based,93,18,6
+split_CNN1D_Hossain_r1,b,20000,XSS,Web-Based,175,35,5
+split_CNN1D_Hossain_r1,a,auto,Benign,Benign,57809,4,14453
+split_CNN1D_Hossain_r1,a,auto,BruteForce,BruteForce,193,6,33
+split_CNN1D_Hossain_r1,a,auto,DDOS ACK Fragmentation,DDOS,98226,608,162
+split_CNN1D_Hossain_r1,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+split_CNN1D_Hossain_r1,a,auto,DDOS ICMP FLOOD,DDOS,4296,6,716
+split_CNN1D_Hossain_r1,a,auto,DDOS ICMP Fragmentation,DDOS,6960,28,249
+split_CNN1D_Hossain_r1,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+split_CNN1D_Hossain_r1,a,auto,DOS SYN FLOOD,DOS,124042,246,505
+split_CNN1D_Hossain_r1,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+split_CNN1D_Hossain_r1,a,auto,Mirai,Mirai,9340,224,42
+split_CNN1D_Hossain_r1,a,auto,Recon,Recon,25763,482,54
+split_CNN1D_Hossain_r1,a,auto,ARP Spoofing,Spoofing,4855,156,32
+split_CNN1D_Hossain_r1,a,auto,DNS Spoofing,Spoofing,4654,175,27
+split_CNN1D_Hossain_r1,a,auto,Sqlinjection,Web-Based,383,32,12
+split_CNN1D_Hossain_r1,a,auto,Uploading Attack,Web-Based,81,1,81
+split_CNN1D_Hossain_r1,a,auto,XSS,Web-Based,171,1,171
+split_CNN1D_Hossain_r1,b,auto,Benign,Benign,57810,5,11562
+split_CNN1D_Hossain_r1,b,auto,BruteForce,BruteForce,193,23,9
+split_CNN1D_Hossain_r1,b,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+split_CNN1D_Hossain_r1,b,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+split_CNN1D_Hossain_r1,b,auto,DDOS ICMP FLOOD,DDOS,4251,43,99
+split_CNN1D_Hossain_r1,b,auto,DDOS ICMP Fragmentation,DDOS,6951,131,54
+split_CNN1D_Hossain_r1,b,auto,DOS HTTP FLOOD,DOS,18013,403,45
+split_CNN1D_Hossain_r1,b,auto,DOS SYN FLOOD,DOS,123829,1056,118
+split_CNN1D_Hossain_r1,b,auto,DOS UDP FLOOD,DOS,78376,840,94
+split_CNN1D_Hossain_r1,b,auto,Mirai,Mirai,9340,251,38
+split_CNN1D_Hossain_r1,b,auto,Recon,Recon,25763,482,54
+split_CNN1D_Hossain_r1,b,auto,ARP Spoofing,Spoofing,4843,174,28
+split_CNN1D_Hossain_r1,b,auto,DNS Spoofing,Spoofing,4668,21,223
+split_CNN1D_Hossain_r1,b,auto,Sqlinjection,Web-Based,368,35,11
+split_CNN1D_Hossain_r1,b,auto,Uploading Attack,Web-Based,93,2,47
+split_CNN1D_Hossain_r1,b,auto,XSS,Web-Based,175,2,88
+clean_CNN1D_Hossain_random,a,20000,Benign,Benign,57809,11561,6
+clean_CNN1D_Hossain_random,a,20000,BruteForce,BruteForce,193,38,6
+clean_CNN1D_Hossain_random,a,20000,DDOS ACK Fragmentation,DDOS,98226,19645,6
+clean_CNN1D_Hossain_random,a,20000,DDOS HTTP FLOOD,DDOS,21961,4392,6
+clean_CNN1D_Hossain_random,a,20000,DDOS ICMP FLOOD,DDOS,4296,859,6
+clean_CNN1D_Hossain_random,a,20000,DDOS ICMP Fragmentation,DDOS,6960,1392,5
+clean_CNN1D_Hossain_random,a,20000,DOS HTTP FLOOD,DOS,17958,3591,6
+clean_CNN1D_Hossain_random,a,20000,DOS SYN FLOOD,DOS,124042,20000,7
+clean_CNN1D_Hossain_random,a,20000,DOS UDP FLOOD,DOS,78217,15643,6
+clean_CNN1D_Hossain_random,a,20000,Mirai,Mirai,9340,1868,5
+clean_CNN1D_Hossain_random,a,20000,Recon,Recon,25763,5152,6
+clean_CNN1D_Hossain_random,a,20000,ARP Spoofing,Spoofing,4855,971,5
+clean_CNN1D_Hossain_random,a,20000,DNS Spoofing,Spoofing,4654,930,6
+clean_CNN1D_Hossain_random,a,20000,Sqlinjection,Web-Based,383,76,6
+clean_CNN1D_Hossain_random,a,20000,Uploading Attack,Web-Based,81,16,6
+clean_CNN1D_Hossain_random,a,20000,XSS,Web-Based,171,34,6
+clean_CNN1D_Hossain_random,b,20000,Benign,Benign,57809,11561,6
+clean_CNN1D_Hossain_random,b,20000,BruteForce,BruteForce,540,108,5
+clean_CNN1D_Hossain_random,b,20000,DDOS ACK Fragmentation,DDOS,101184,20000,6
+clean_CNN1D_Hossain_random,b,20000,DDOS HTTP FLOOD,DDOS,22573,4514,6
+clean_CNN1D_Hossain_random,b,20000,DDOS ICMP FLOOD,DDOS,10186,2037,6
+clean_CNN1D_Hossain_random,b,20000,DDOS ICMP Fragmentation,DDOS,16057,3211,6
+clean_CNN1D_Hossain_random,b,20000,DOS HTTP FLOOD,DOS,18560,3712,5
+clean_CNN1D_Hossain_random,b,20000,DOS SYN FLOOD,DOS,125105,20000,7
+clean_CNN1D_Hossain_random,b,20000,DOS UDP FLOOD,DOS,81335,16267,5
+clean_CNN1D_Hossain_random,b,20000,Mirai,Mirai,23959,4791,6
+clean_CNN1D_Hossain_random,b,20000,Recon,Recon,62353,12470,6
+clean_CNN1D_Hossain_random,b,20000,ARP Spoofing,Spoofing,11568,2313,6
+clean_CNN1D_Hossain_random,b,20000,DNS Spoofing,Spoofing,11065,2213,5
+clean_CNN1D_Hossain_random,b,20000,Sqlinjection,Web-Based,973,194,6
+clean_CNN1D_Hossain_random,b,20000,Uploading Attack,Web-Based,215,43,5
+clean_CNN1D_Hossain_random,b,20000,XSS,Web-Based,494,98,6
+clean_CNN1D_Hossain_random,a,auto,Benign,Benign,57809,4,14453
+clean_CNN1D_Hossain_random,a,auto,BruteForce,BruteForce,193,6,33
+clean_CNN1D_Hossain_random,a,auto,DDOS ACK Fragmentation,DDOS,98226,608,162
+clean_CNN1D_Hossain_random,a,auto,DDOS HTTP FLOOD,DDOS,21961,445,50
+clean_CNN1D_Hossain_random,a,auto,DDOS ICMP FLOOD,DDOS,4296,6,716
+clean_CNN1D_Hossain_random,a,auto,DDOS ICMP Fragmentation,DDOS,6960,28,249
+clean_CNN1D_Hossain_random,a,auto,DOS HTTP FLOOD,DOS,17958,403,45
+clean_CNN1D_Hossain_random,a,auto,DOS SYN FLOOD,DOS,124042,246,505
+clean_CNN1D_Hossain_random,a,auto,DOS UDP FLOOD,DOS,78217,840,94
+clean_CNN1D_Hossain_random,a,auto,Mirai,Mirai,9340,224,42
+clean_CNN1D_Hossain_random,a,auto,Recon,Recon,25763,482,54
+clean_CNN1D_Hossain_random,a,auto,ARP Spoofing,Spoofing,4855,156,32
+clean_CNN1D_Hossain_random,a,auto,DNS Spoofing,Spoofing,4654,175,27
+clean_CNN1D_Hossain_random,a,auto,Sqlinjection,Web-Based,383,32,12
+clean_CNN1D_Hossain_random,a,auto,Uploading Attack,Web-Based,81,1,81
+clean_CNN1D_Hossain_random,a,auto,XSS,Web-Based,171,1,171
+clean_CNN1D_Hossain_random,b,auto,Benign,Benign,57809,722,81
+clean_CNN1D_Hossain_random,b,auto,BruteForce,BruteForce,540,2,270
+clean_CNN1D_Hossain_random,b,auto,DDOS ACK Fragmentation,DDOS,101184,906,112
+clean_CNN1D_Hossain_random,b,auto,DDOS HTTP FLOOD,DDOS,22573,451,51
+clean_CNN1D_Hossain_random,b,auto,DDOS ICMP FLOOD,DDOS,10186,76,135
+clean_CNN1D_Hossain_random,b,auto,DDOS ICMP Fragmentation,DDOS,16057,1,16057
+clean_CNN1D_Hossain_random,b,auto,DOS HTTP FLOOD,DOS,18560,409,46
+clean_CNN1D_Hossain_random,b,auto,DOS SYN FLOOD,DOS,125105,401,312
+clean_CNN1D_Hossain_random,b,auto,DOS UDP FLOOD,DOS,81335,856,96
+clean_CNN1D_Hossain_random,b,auto,Mirai,Mirai,23959,382,63
+clean_CNN1D_Hossain_random,b,auto,Recon,Recon,62353,750,84
+clean_CNN1D_Hossain_random,b,auto,ARP Spoofing,Spoofing,11568,32,362
+clean_CNN1D_Hossain_random,b,auto,DNS Spoofing,Spoofing,11065,301,37
+clean_CNN1D_Hossain_random,b,auto,Sqlinjection,Web-Based,973,15,65
+clean_CNN1D_Hossain_random,b,auto,Uploading Attack,Web-Based,215,1,215
+clean_CNN1D_Hossain_random,b,auto,XSS,Web-Based,494,2,247
+clean_CNN1D_Hossain_temporal,a,20000,Benign,Benign,57810,11562,5
+clean_CNN1D_Hossain_temporal,a,20000,BruteForce,BruteForce,193,38,6
+clean_CNN1D_Hossain_temporal,a,20000,DDOS ACK Fragmentation,DDOS,98427,19685,6
+clean_CNN1D_Hossain_temporal,a,20000,DDOS HTTP FLOOD,DDOS,21816,4363,6
+clean_CNN1D_Hossain_temporal,a,20000,DDOS ICMP FLOOD,DDOS,4251,850,6
+clean_CNN1D_Hossain_temporal,a,20000,DDOS ICMP Fragmentation,DDOS,6951,1390,6
+clean_CNN1D_Hossain_temporal,a,20000,DOS HTTP FLOOD,DOS,18013,3602,6
+clean_CNN1D_Hossain_temporal,a,20000,DOS SYN FLOOD,DOS,123829,20000,7
+clean_CNN1D_Hossain_temporal,a,20000,DOS UDP FLOOD,DOS,78376,15675,6
+clean_CNN1D_Hossain_temporal,a,20000,Mirai,Mirai,9340,1868,5
+clean_CNN1D_Hossain_temporal,a,20000,Recon,Recon,25763,5152,6
+clean_CNN1D_Hossain_temporal,a,20000,ARP Spoofing,Spoofing,4843,968,6
+clean_CNN1D_Hossain_temporal,a,20000,DNS Spoofing,Spoofing,4668,933,6
+clean_CNN1D_Hossain_temporal,a,20000,Sqlinjection,Web-Based,368,73,6
+clean_CNN1D_Hossain_temporal,a,20000,Uploading Attack,Web-Based,93,18,6
+clean_CNN1D_Hossain_temporal,a,20000,XSS,Web-Based,175,35,5
+clean_CNN1D_Hossain_temporal,b,20000,Benign,Benign,57810,11562,5
+clean_CNN1D_Hossain_temporal,b,20000,BruteForce,BruteForce,541,108,6
+clean_CNN1D_Hossain_temporal,b,20000,DDOS ACK Fragmentation,DDOS,101540,20000,6
+clean_CNN1D_Hossain_temporal,b,20000,DDOS HTTP FLOOD,DDOS,22434,4486,6
+clean_CNN1D_Hossain_temporal,b,20000,DDOS ICMP FLOOD,DDOS,10110,2022,5
+clean_CNN1D_Hossain_temporal,b,20000,DDOS ICMP Fragmentation,DDOS,15918,3183,6
+clean_CNN1D_Hossain_temporal,b,20000,DOS HTTP FLOOD,DOS,18522,3704,6
+clean_CNN1D_Hossain_temporal,b,20000,DOS SYN FLOOD,DOS,125025,20000,7
+clean_CNN1D_Hossain_temporal,b,20000,DOS UDP FLOOD,DOS,81455,16291,5
+clean_CNN1D_Hossain_temporal,b,20000,Mirai,Mirai,23959,4791,6
+clean_CNN1D_Hossain_temporal,b,20000,Recon,Recon,62354,12470,6
+clean_CNN1D_Hossain_temporal,b,20000,ARP Spoofing,Spoofing,11589,2317,6
+clean_CNN1D_Hossain_temporal,b,20000,DNS Spoofing,Spoofing,11045,2209,5
+clean_CNN1D_Hossain_temporal,b,20000,Sqlinjection,Web-Based,979,195,6
+clean_CNN1D_Hossain_temporal,b,20000,Uploading Attack,Web-Based,200,40,5
+clean_CNN1D_Hossain_temporal,b,20000,XSS,Web-Based,505,101,5
+clean_CNN1D_Hossain_temporal,a,auto,Benign,Benign,57810,5,11562
+clean_CNN1D_Hossain_temporal,a,auto,BruteForce,BruteForce,193,23,9
+clean_CNN1D_Hossain_temporal,a,auto,DDOS ACK Fragmentation,DDOS,98427,942,105
+clean_CNN1D_Hossain_temporal,a,auto,DDOS HTTP FLOOD,DDOS,21816,444,50
+clean_CNN1D_Hossain_temporal,a,auto,DDOS ICMP FLOOD,DDOS,4251,43,99
+clean_CNN1D_Hossain_temporal,a,auto,DDOS ICMP Fragmentation,DDOS,6951,131,54
+clean_CNN1D_Hossain_temporal,a,auto,DOS HTTP FLOOD,DOS,18013,403,45
+clean_CNN1D_Hossain_temporal,a,auto,DOS SYN FLOOD,DOS,123829,1056,118
+clean_CNN1D_Hossain_temporal,a,auto,DOS UDP FLOOD,DOS,78376,840,94
+clean_CNN1D_Hossain_temporal,a,auto,Mirai,Mirai,9340,251,38
+clean_CNN1D_Hossain_temporal,a,auto,Recon,Recon,25763,482,54
+clean_CNN1D_Hossain_temporal,a,auto,ARP Spoofing,Spoofing,4843,174,28
+clean_CNN1D_Hossain_temporal,a,auto,DNS Spoofing,Spoofing,4668,21,223
+clean_CNN1D_Hossain_temporal,a,auto,Sqlinjection,Web-Based,368,35,11
+clean_CNN1D_Hossain_temporal,a,auto,Uploading Attack,Web-Based,93,2,47
+clean_CNN1D_Hossain_temporal,a,auto,XSS,Web-Based,175,2,88
+clean_CNN1D_Hossain_temporal,b,auto,Benign,Benign,57810,722,81
+clean_CNN1D_Hossain_temporal,b,auto,BruteForce,BruteForce,541,18,31
+clean_CNN1D_Hossain_temporal,b,auto,DDOS ACK Fragmentation,DDOS,101540,956,107
+clean_CNN1D_Hossain_temporal,b,auto,DDOS HTTP FLOOD,DDOS,22434,450,50
+clean_CNN1D_Hossain_temporal,b,auto,DDOS ICMP FLOOD,DDOS,10110,262,39
+clean_CNN1D_Hossain_temporal,b,auto,DDOS ICMP Fragmentation,DDOS,15918,39,409
+clean_CNN1D_Hossain_temporal,b,auto,DOS HTTP FLOOD,DOS,18522,409,46
+clean_CNN1D_Hossain_temporal,b,auto,DOS SYN FLOOD,DOS,125025,1061,118
+clean_CNN1D_Hossain_temporal,b,auto,DOS UDP FLOOD,DOS,81455,857,96
+clean_CNN1D_Hossain_temporal,b,auto,Mirai,Mirai,23959,460,53
+clean_CNN1D_Hossain_temporal,b,auto,Recon,Recon,62354,750,84
+clean_CNN1D_Hossain_temporal,b,auto,ARP Spoofing,Spoofing,11589,274,43
+clean_CNN1D_Hossain_temporal,b,auto,DNS Spoofing,Spoofing,11045,271,41
+clean_CNN1D_Hossain_temporal,b,auto,Sqlinjection,Web-Based,979,62,16
+clean_CNN1D_Hossain_temporal,b,auto,Uploading Attack,Web-Based,200,9,23
+clean_CNN1D_Hossain_temporal,b,auto,XSS,Web-Based,505,2,253
+cleantrain_XGBoost_random_testR1,both,20000,Benign,Benign,57809,11561,6
+cleantrain_XGBoost_random_testR1,both,20000,BruteForce,BruteForce,183,36,6
+cleantrain_XGBoost_random_testR1,both,20000,DDOS ACK Fragmentation,DDOS,98093,19618,6
+cleantrain_XGBoost_random_testR1,both,20000,DDOS HTTP FLOOD,DDOS,21932,4386,6
+cleantrain_XGBoost_random_testR1,both,20000,DDOS ICMP FLOOD,DDOS,4335,867,5
+cleantrain_XGBoost_random_testR1,both,20000,DDOS ICMP Fragmentation,DDOS,6967,1393,6
+cleantrain_XGBoost_random_testR1,both,20000,DOS HTTP FLOOD,DOS,18071,3614,6
+cleantrain_XGBoost_random_testR1,both,20000,DOS SYN FLOOD,DOS,123915,20000,7
+cleantrain_XGBoost_random_testR1,both,20000,DOS UDP FLOOD,DOS,78272,15654,6
+cleantrain_XGBoost_random_testR1,both,20000,Mirai,Mirai,9287,1857,6
+cleantrain_XGBoost_random_testR1,both,20000,Recon,Recon,25804,5160,6
+cleantrain_XGBoost_random_testR1,both,20000,ARP Spoofing,Spoofing,4819,963,6
+cleantrain_XGBoost_random_testR1,both,20000,DNS Spoofing,Spoofing,4615,923,5
+cleantrain_XGBoost_random_testR1,both,20000,Sqlinjection,Web-Based,347,69,6
+cleantrain_XGBoost_random_testR1,both,20000,Uploading Attack,Web-Based,88,17,6
+cleantrain_XGBoost_random_testR1,both,20000,XSS,Web-Based,167,33,6
+cleantrain_XGBoost_random_testR1,both,auto,Benign,Benign,57809,722,81
+cleantrain_XGBoost_random_testR1,both,auto,BruteForce,BruteForce,183,2,92
+cleantrain_XGBoost_random_testR1,both,auto,DDOS ACK Fragmentation,DDOS,98093,5,19619
+cleantrain_XGBoost_random_testR1,both,auto,DDOS HTTP FLOOD,DDOS,21932,420,53
+cleantrain_XGBoost_random_testR1,both,auto,DDOS ICMP FLOOD,DDOS,4335,5,867
+cleantrain_XGBoost_random_testR1,both,auto,DDOS ICMP Fragmentation,DDOS,6967,25,279
+cleantrain_XGBoost_random_testR1,both,auto,DOS HTTP FLOOD,DOS,18071,275,66
+cleantrain_XGBoost_random_testR1,both,auto,DOS SYN FLOOD,DOS,123915,27,4590
+cleantrain_XGBoost_random_testR1,both,auto,DOS UDP FLOOD,DOS,78272,94,833
+cleantrain_XGBoost_random_testR1,both,auto,Mirai,Mirai,9287,10,929
+cleantrain_XGBoost_random_testR1,both,auto,Recon,Recon,25804,482,54
+cleantrain_XGBoost_random_testR1,both,auto,ARP Spoofing,Spoofing,4819,3,1607
+cleantrain_XGBoost_random_testR1,both,auto,DNS Spoofing,Spoofing,4615,160,29
+cleantrain_XGBoost_random_testR1,both,auto,Sqlinjection,Web-Based,347,1,347
+cleantrain_XGBoost_random_testR1,both,auto,Uploading Attack,Web-Based,88,1,88
+cleantrain_XGBoost_random_testR1,both,auto,XSS,Web-Based,167,1,167
+cleantrain_XGBoost_random_testAll,both,20000,Benign,Benign,57809,11561,6
+cleantrain_XGBoost_random_testAll,both,20000,BruteForce,BruteForce,31,6,6
+cleantrain_XGBoost_random_testAll,both,20000,DDOS ACK Fragmentation,DDOS,90363,18072,6
+cleantrain_XGBoost_random_testAll,both,20000,DDOS HTTP FLOOD,DDOS,21759,4351,6
+cleantrain_XGBoost_random_testAll,both,20000,DDOS ICMP FLOOD,DDOS,857,171,6
+cleantrain_XGBoost_random_testAll,both,20000,DDOS ICMP Fragmentation,DDOS,450,90,5
+cleantrain_XGBoost_random_testAll,both,20000,DOS HTTP FLOOD,DOS,17795,3559,5
+cleantrain_XGBoost_random_testAll,both,20000,DOS SYN FLOOD,DOS,123278,20000,7
+cleantrain_XGBoost_random_testAll,both,20000,DOS UDP FLOOD,DOS,76933,15386,6
+cleantrain_XGBoost_random_testAll,both,20000,Mirai,Mirai,915,183,5
+cleantrain_XGBoost_random_testAll,both,20000,Recon,Recon,9478,1895,6
+cleantrain_XGBoost_random_testAll,both,20000,ARP Spoofing,Spoofing,489,97,6
+cleantrain_XGBoost_random_testAll,both,20000,DNS Spoofing,Spoofing,4365,873,5
+cleantrain_XGBoost_random_testAll,both,20000,Sqlinjection,Web-Based,93,18,6
+cleantrain_XGBoost_random_testAll,both,20000,Uploading Attack,Web-Based,18,3,6
+cleantrain_XGBoost_random_testAll,both,20000,XSS,Web-Based,34,6,6
+cleantrain_XGBoost_random_testAll,both,auto,Benign,Benign,57809,722,81
+cleantrain_XGBoost_random_testAll,both,auto,BruteForce,BruteForce,31,1,31
+cleantrain_XGBoost_random_testAll,both,auto,DDOS ACK Fragmentation,DDOS,90363,14,6455
+cleantrain_XGBoost_random_testAll,both,auto,DDOS HTTP FLOOD,DDOS,21759,420,52
+cleantrain_XGBoost_random_testAll,both,auto,DDOS ICMP FLOOD,DDOS,857,2,429
+cleantrain_XGBoost_random_testAll,both,auto,DDOS ICMP Fragmentation,DDOS,450,2,225
+cleantrain_XGBoost_random_testAll,both,auto,DOS HTTP FLOOD,DOS,17795,289,62
+cleantrain_XGBoost_random_testAll,both,auto,DOS SYN FLOOD,DOS,123278,45,2740
+cleantrain_XGBoost_random_testAll,both,auto,DOS UDP FLOOD,DOS,76933,89,865
+cleantrain_XGBoost_random_testAll,both,auto,Mirai,Mirai,915,1,915
+cleantrain_XGBoost_random_testAll,both,auto,Recon,Recon,9478,255,38
+cleantrain_XGBoost_random_testAll,both,auto,ARP Spoofing,Spoofing,489,2,245
+cleantrain_XGBoost_random_testAll,both,auto,DNS Spoofing,Spoofing,4365,154,29
+cleantrain_XGBoost_random_testAll,both,auto,Sqlinjection,Web-Based,93,2,47
+cleantrain_XGBoost_random_testAll,both,auto,Uploading Attack,Web-Based,18,1,18
+cleantrain_XGBoost_random_testAll,both,auto,XSS,Web-Based,34,3,12
+cleantrain_XGBoost_temporal_testR1,both,20000,Benign,Benign,57810,11562,5
+cleantrain_XGBoost_temporal_testR1,both,20000,BruteForce,BruteForce,174,34,6
+cleantrain_XGBoost_temporal_testR1,both,20000,DDOS ACK Fragmentation,DDOS,97920,19584,5
+cleantrain_XGBoost_temporal_testR1,both,20000,DDOS HTTP FLOOD,DDOS,21958,4391,6
+cleantrain_XGBoost_temporal_testR1,both,20000,DDOS ICMP FLOOD,DDOS,3971,794,6
+cleantrain_XGBoost_temporal_testR1,both,20000,DDOS ICMP Fragmentation,DDOS,7208,1441,6
+cleantrain_XGBoost_temporal_testR1,both,20000,DOS HTTP FLOOD,DOS,17715,3543,5
+cleantrain_XGBoost_temporal_testR1,both,20000,DOS SYN FLOOD,DOS,123858,20000,7
+cleantrain_XGBoost_temporal_testR1,both,20000,DOS UDP FLOOD,DOS,65630,13126,5
+cleantrain_XGBoost_temporal_testR1,both,20000,Mirai,Mirai,9291,1858,6
+cleantrain_XGBoost_temporal_testR1,both,20000,Recon,Recon,19622,3924,6
+cleantrain_XGBoost_temporal_testR1,both,20000,ARP Spoofing,Spoofing,4746,949,6
+cleantrain_XGBoost_temporal_testR1,both,20000,DNS Spoofing,Spoofing,4111,822,6
+cleantrain_XGBoost_temporal_testR1,both,20000,Sqlinjection,Web-Based,348,69,6
+cleantrain_XGBoost_temporal_testR1,both,20000,Uploading Attack,Web-Based,124,24,6
+cleantrain_XGBoost_temporal_testR1,both,20000,XSS,Web-Based,189,37,6
+cleantrain_XGBoost_temporal_testR1,both,auto,Benign,Benign,57810,722,81
+cleantrain_XGBoost_temporal_testR1,both,auto,BruteForce,BruteForce,174,1,174
+cleantrain_XGBoost_temporal_testR1,both,auto,DDOS ACK Fragmentation,DDOS,97920,465,211
+cleantrain_XGBoost_temporal_testR1,both,auto,DDOS HTTP FLOOD,DDOS,21958,50,440
+cleantrain_XGBoost_temporal_testR1,both,auto,DDOS ICMP FLOOD,DDOS,3971,11,361
+cleantrain_XGBoost_temporal_testR1,both,auto,DDOS ICMP Fragmentation,DDOS,7208,114,64
+cleantrain_XGBoost_temporal_testR1,both,auto,DOS HTTP FLOOD,DOS,17715,400,45
+cleantrain_XGBoost_temporal_testR1,both,auto,DOS SYN FLOOD,DOS,123858,198,626
+cleantrain_XGBoost_temporal_testR1,both,auto,DOS UDP FLOOD,DOS,65630,480,137
+cleantrain_XGBoost_temporal_testR1,both,auto,Mirai,Mirai,9291,5,1859
+cleantrain_XGBoost_temporal_testR1,both,auto,Recon,Recon,19622,421,47
+cleantrain_XGBoost_temporal_testR1,both,auto,ARP Spoofing,Spoofing,4746,19,250
+cleantrain_XGBoost_temporal_testR1,both,auto,DNS Spoofing,Spoofing,4111,150,28
+cleantrain_XGBoost_temporal_testR1,both,auto,Sqlinjection,Web-Based,348,1,348
+cleantrain_XGBoost_temporal_testR1,both,auto,Uploading Attack,Web-Based,124,1,124
+cleantrain_XGBoost_temporal_testR1,both,auto,XSS,Web-Based,189,2,95
+cleantrain_XGBoost_temporal_testAll,both,20000,Benign,Benign,57810,11562,5
+cleantrain_XGBoost_temporal_testAll,both,20000,BruteForce,BruteForce,56,11,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DDOS ACK Fragmentation,DDOS,95882,19176,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DDOS HTTP FLOOD,DDOS,21898,4379,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DDOS ICMP FLOOD,DDOS,725,145,5
+cleantrain_XGBoost_temporal_testAll,both,20000,DDOS ICMP Fragmentation,DDOS,981,196,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DOS HTTP FLOOD,DOS,17293,3458,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DOS SYN FLOOD,DOS,123322,20000,7
+cleantrain_XGBoost_temporal_testAll,both,20000,DOS UDP FLOOD,DOS,58862,11772,6
+cleantrain_XGBoost_temporal_testAll,both,20000,Mirai,Mirai,1030,206,5
+cleantrain_XGBoost_temporal_testAll,both,20000,Recon,Recon,1866,373,6
+cleantrain_XGBoost_temporal_testAll,both,20000,ARP Spoofing,Spoofing,372,74,6
+cleantrain_XGBoost_temporal_testAll,both,20000,DNS Spoofing,Spoofing,3808,761,6
+cleantrain_XGBoost_temporal_testAll,both,20000,Sqlinjection,Web-Based,93,18,6
+cleantrain_XGBoost_temporal_testAll,both,20000,Uploading Attack,Web-Based,16,3,6
+cleantrain_XGBoost_temporal_testAll,both,20000,XSS,Web-Based,35,7,5
+cleantrain_XGBoost_temporal_testAll,both,auto,Benign,Benign,57810,722,81
+cleantrain_XGBoost_temporal_testAll,both,auto,BruteForce,BruteForce,56,2,28
+cleantrain_XGBoost_temporal_testAll,both,auto,DDOS ACK Fragmentation,DDOS,95882,125,768
+cleantrain_XGBoost_temporal_testAll,both,auto,DDOS HTTP FLOOD,DDOS,21898,51,430
+cleantrain_XGBoost_temporal_testAll,both,auto,DDOS ICMP FLOOD,DDOS,725,12,61
+cleantrain_XGBoost_temporal_testAll,both,auto,DDOS ICMP Fragmentation,DDOS,981,4,246
+cleantrain_XGBoost_temporal_testAll,both,auto,DOS HTTP FLOOD,DOS,17293,395,44
+cleantrain_XGBoost_temporal_testAll,both,auto,DOS SYN FLOOD,DOS,123322,197,626
+cleantrain_XGBoost_temporal_testAll,both,auto,DOS UDP FLOOD,DOS,58862,3,19621
+cleantrain_XGBoost_temporal_testAll,both,auto,Mirai,Mirai,1030,7,148
+cleantrain_XGBoost_temporal_testAll,both,auto,Recon,Recon,1866,2,933
+cleantrain_XGBoost_temporal_testAll,both,auto,ARP Spoofing,Spoofing,372,2,186
+cleantrain_XGBoost_temporal_testAll,both,auto,DNS Spoofing,Spoofing,3808,141,28
+cleantrain_XGBoost_temporal_testAll,both,auto,Sqlinjection,Web-Based,93,1,93
+cleantrain_XGBoost_temporal_testAll,both,auto,Uploading Attack,Web-Based,16,1,16
+cleantrain_XGBoost_temporal_testAll,both,auto,XSS,Web-Based,35,2,18
+cleantrain_RandomForest_random_testR1,both,20000,Benign,Benign,57809,11561,6
+cleantrain_RandomForest_random_testR1,both,20000,BruteForce,BruteForce,183,36,6
+cleantrain_RandomForest_random_testR1,both,20000,DDOS ACK Fragmentation,DDOS,98093,19618,6
+cleantrain_RandomForest_random_testR1,both,20000,DDOS HTTP FLOOD,DDOS,21932,4386,6
+cleantrain_RandomForest_random_testR1,both,20000,DDOS ICMP FLOOD,DDOS,4335,867,5
+cleantrain_RandomForest_random_testR1,both,20000,DDOS ICMP Fragmentation,DDOS,6967,1393,6
+cleantrain_RandomForest_random_testR1,both,20000,DOS HTTP FLOOD,DOS,18071,3614,6
+cleantrain_RandomForest_random_testR1,both,20000,DOS SYN FLOOD,DOS,123915,20000,7
+cleantrain_RandomForest_random_testR1,both,20000,DOS UDP FLOOD,DOS,78272,15654,6
+cleantrain_RandomForest_random_testR1,both,20000,Mirai,Mirai,9287,1857,6
+cleantrain_RandomForest_random_testR1,both,20000,Recon,Recon,25804,5160,6
+cleantrain_RandomForest_random_testR1,both,20000,ARP Spoofing,Spoofing,4819,963,6
+cleantrain_RandomForest_random_testR1,both,20000,DNS Spoofing,Spoofing,4615,923,5
+cleantrain_RandomForest_random_testR1,both,20000,Sqlinjection,Web-Based,347,69,6
+cleantrain_RandomForest_random_testR1,both,20000,Uploading Attack,Web-Based,88,17,6
+cleantrain_RandomForest_random_testR1,both,20000,XSS,Web-Based,167,33,6
+cleantrain_RandomForest_random_testR1,both,auto,Benign,Benign,57809,722,81
+cleantrain_RandomForest_random_testR1,both,auto,BruteForce,BruteForce,183,1,183
+cleantrain_RandomForest_random_testR1,both,auto,DDOS ACK Fragmentation,DDOS,98093,14,7007
+cleantrain_RandomForest_random_testR1,both,auto,DDOS HTTP FLOOD,DDOS,21932,427,52
+cleantrain_RandomForest_random_testR1,both,auto,DDOS ICMP FLOOD,DDOS,4335,2,2168
+cleantrain_RandomForest_random_testR1,both,auto,DDOS ICMP Fragmentation,DDOS,6967,3,2323
+cleantrain_RandomForest_random_testR1,both,auto,DOS HTTP FLOOD,DOS,18071,48,377
+cleantrain_RandomForest_random_testR1,both,auto,DOS SYN FLOOD,DOS,123915,30,4131
+cleantrain_RandomForest_random_testR1,both,auto,DOS UDP FLOOD,DOS,78272,5,15655
+cleantrain_RandomForest_random_testR1,both,auto,Mirai,Mirai,9287,3,3096
+cleantrain_RandomForest_random_testR1,both,auto,Recon,Recon,25804,482,54
+cleantrain_RandomForest_random_testR1,both,auto,ARP Spoofing,Spoofing,4819,2,2410
+cleantrain_RandomForest_random_testR1,both,auto,DNS Spoofing,Spoofing,4615,15,308
+cleantrain_RandomForest_random_testR1,both,auto,Sqlinjection,Web-Based,347,1,347
+cleantrain_RandomForest_random_testR1,both,auto,Uploading Attack,Web-Based,88,8,11
+cleantrain_RandomForest_random_testR1,both,auto,XSS,Web-Based,167,5,34
+cleantrain_RandomForest_random_testAll,both,20000,Benign,Benign,57809,11561,6
+cleantrain_RandomForest_random_testAll,both,20000,BruteForce,BruteForce,31,6,6
+cleantrain_RandomForest_random_testAll,both,20000,DDOS ACK Fragmentation,DDOS,90363,18072,6
+cleantrain_RandomForest_random_testAll,both,20000,DDOS HTTP FLOOD,DDOS,21759,4351,6
+cleantrain_RandomForest_random_testAll,both,20000,DDOS ICMP FLOOD,DDOS,857,171,6
+cleantrain_RandomForest_random_testAll,both,20000,DDOS ICMP Fragmentation,DDOS,450,90,5
+cleantrain_RandomForest_random_testAll,both,20000,DOS HTTP FLOOD,DOS,17795,3559,5
+cleantrain_RandomForest_random_testAll,both,20000,DOS SYN FLOOD,DOS,123278,20000,7
+cleantrain_RandomForest_random_testAll,both,20000,DOS UDP FLOOD,DOS,76933,15386,6
+cleantrain_RandomForest_random_testAll,both,20000,Mirai,Mirai,915,183,5
+cleantrain_RandomForest_random_testAll,both,20000,Recon,Recon,9478,1895,6
+cleantrain_RandomForest_random_testAll,both,20000,ARP Spoofing,Spoofing,489,97,6
+cleantrain_RandomForest_random_testAll,both,20000,DNS Spoofing,Spoofing,4365,873,5
+cleantrain_RandomForest_random_testAll,both,20000,Sqlinjection,Web-Based,93,18,6
+cleantrain_RandomForest_random_testAll,both,20000,Uploading Attack,Web-Based,18,3,6
+cleantrain_RandomForest_random_testAll,both,20000,XSS,Web-Based,34,6,6
+cleantrain_RandomForest_random_testAll,both,auto,Benign,Benign,57809,722,81
+cleantrain_RandomForest_random_testAll,both,auto,BruteForce,BruteForce,31,3,11
+cleantrain_RandomForest_random_testAll,both,auto,DDOS ACK Fragmentation,DDOS,90363,21,4303
+cleantrain_RandomForest_random_testAll,both,auto,DDOS HTTP FLOOD,DDOS,21759,425,52
+cleantrain_RandomForest_random_testAll,both,auto,DDOS ICMP FLOOD,DDOS,857,2,429
+cleantrain_RandomForest_random_testAll,both,auto,DDOS ICMP Fragmentation,DDOS,450,1,450
+cleantrain_RandomForest_random_testAll,both,auto,DOS HTTP FLOOD,DOS,17795,94,190
+cleantrain_RandomForest_random_testAll,both,auto,DOS SYN FLOOD,DOS,123278,18,6849
+cleantrain_RandomForest_random_testAll,both,auto,DOS UDP FLOOD,DOS,76933,6,12823
+cleantrain_RandomForest_random_testAll,both,auto,Mirai,Mirai,915,3,305
+cleantrain_RandomForest_random_testAll,both,auto,Recon,Recon,9478,254,38
+cleantrain_RandomForest_random_testAll,both,auto,ARP Spoofing,Spoofing,489,1,489
+cleantrain_RandomForest_random_testAll,both,auto,DNS Spoofing,Spoofing,4365,19,230
+cleantrain_RandomForest_random_testAll,both,auto,Sqlinjection,Web-Based,93,1,93
+cleantrain_RandomForest_random_testAll,both,auto,Uploading Attack,Web-Based,18,1,18
+cleantrain_RandomForest_random_testAll,both,auto,XSS,Web-Based,34,1,34
+cleantrain_RandomForest_temporal_testR1,both,20000,Benign,Benign,57810,11562,5
+cleantrain_RandomForest_temporal_testR1,both,20000,BruteForce,BruteForce,174,34,6
+cleantrain_RandomForest_temporal_testR1,both,20000,DDOS ACK Fragmentation,DDOS,97920,19584,5
+cleantrain_RandomForest_temporal_testR1,both,20000,DDOS HTTP FLOOD,DDOS,21958,4391,6
+cleantrain_RandomForest_temporal_testR1,both,20000,DDOS ICMP FLOOD,DDOS,3971,794,6
+cleantrain_RandomForest_temporal_testR1,both,20000,DDOS ICMP Fragmentation,DDOS,7208,1441,6
+cleantrain_RandomForest_temporal_testR1,both,20000,DOS HTTP FLOOD,DOS,17715,3543,5
+cleantrain_RandomForest_temporal_testR1,both,20000,DOS SYN FLOOD,DOS,123858,20000,7
+cleantrain_RandomForest_temporal_testR1,both,20000,DOS UDP FLOOD,DOS,65630,13126,5
+cleantrain_RandomForest_temporal_testR1,both,20000,Mirai,Mirai,9291,1858,6
+cleantrain_RandomForest_temporal_testR1,both,20000,Recon,Recon,19622,3924,6
+cleantrain_RandomForest_temporal_testR1,both,20000,ARP Spoofing,Spoofing,4746,949,6
+cleantrain_RandomForest_temporal_testR1,both,20000,DNS Spoofing,Spoofing,4111,822,6
+cleantrain_RandomForest_temporal_testR1,both,20000,Sqlinjection,Web-Based,348,69,6
+cleantrain_RandomForest_temporal_testR1,both,20000,Uploading Attack,Web-Based,124,24,6
+cleantrain_RandomForest_temporal_testR1,both,20000,XSS,Web-Based,189,37,6
+cleantrain_RandomForest_temporal_testR1,both,auto,Benign,Benign,57810,722,81
+cleantrain_RandomForest_temporal_testR1,both,auto,BruteForce,BruteForce,174,1,174
+cleantrain_RandomForest_temporal_testR1,both,auto,DDOS ACK Fragmentation,DDOS,97920,18,5440
+cleantrain_RandomForest_temporal_testR1,both,auto,DDOS HTTP FLOOD,DDOS,21958,259,85
+cleantrain_RandomForest_temporal_testR1,both,auto,DDOS ICMP FLOOD,DDOS,3971,4,993
+cleantrain_RandomForest_temporal_testR1,both,auto,DDOS ICMP Fragmentation,DDOS,7208,61,119
+cleantrain_RandomForest_temporal_testR1,both,auto,DOS HTTP FLOOD,DOS,17715,400,45
+cleantrain_RandomForest_temporal_testR1,both,auto,DOS SYN FLOOD,DOS,123858,157,789
+cleantrain_RandomForest_temporal_testR1,both,auto,DOS UDP FLOOD,DOS,65630,127,517
+cleantrain_RandomForest_temporal_testR1,both,auto,Mirai,Mirai,9291,95,98
+cleantrain_RandomForest_temporal_testR1,both,auto,Recon,Recon,19622,407,49
+cleantrain_RandomForest_temporal_testR1,both,auto,ARP Spoofing,Spoofing,4746,5,950
+cleantrain_RandomForest_temporal_testR1,both,auto,DNS Spoofing,Spoofing,4111,62,67
+cleantrain_RandomForest_temporal_testR1,both,auto,Sqlinjection,Web-Based,348,4,87
+cleantrain_RandomForest_temporal_testR1,both,auto,Uploading Attack,Web-Based,124,4,31
+cleantrain_RandomForest_temporal_testR1,both,auto,XSS,Web-Based,189,1,189
+cleantrain_RandomForest_temporal_testAll,both,20000,Benign,Benign,57810,11562,5
+cleantrain_RandomForest_temporal_testAll,both,20000,BruteForce,BruteForce,56,11,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DDOS ACK Fragmentation,DDOS,95882,19176,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DDOS HTTP FLOOD,DDOS,21898,4379,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DDOS ICMP FLOOD,DDOS,725,145,5
+cleantrain_RandomForest_temporal_testAll,both,20000,DDOS ICMP Fragmentation,DDOS,981,196,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DOS HTTP FLOOD,DOS,17293,3458,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DOS SYN FLOOD,DOS,123322,20000,7
+cleantrain_RandomForest_temporal_testAll,both,20000,DOS UDP FLOOD,DOS,58862,11772,6
+cleantrain_RandomForest_temporal_testAll,both,20000,Mirai,Mirai,1030,206,5
+cleantrain_RandomForest_temporal_testAll,both,20000,Recon,Recon,1866,373,6
+cleantrain_RandomForest_temporal_testAll,both,20000,ARP Spoofing,Spoofing,372,74,6
+cleantrain_RandomForest_temporal_testAll,both,20000,DNS Spoofing,Spoofing,3808,761,6
+cleantrain_RandomForest_temporal_testAll,both,20000,Sqlinjection,Web-Based,93,18,6
+cleantrain_RandomForest_temporal_testAll,both,20000,Uploading Attack,Web-Based,16,3,6
+cleantrain_RandomForest_temporal_testAll,both,20000,XSS,Web-Based,35,7,5
+cleantrain_RandomForest_temporal_testAll,both,auto,Benign,Benign,57810,722,81
+cleantrain_RandomForest_temporal_testAll,both,auto,BruteForce,BruteForce,56,1,56
+cleantrain_RandomForest_temporal_testAll,both,auto,DDOS ACK Fragmentation,DDOS,95882,51,1881
+cleantrain_RandomForest_temporal_testAll,both,auto,DDOS HTTP FLOOD,DDOS,21898,259,85
+cleantrain_RandomForest_temporal_testAll,both,auto,DDOS ICMP FLOOD,DDOS,725,9,81
+cleantrain_RandomForest_temporal_testAll,both,auto,DDOS ICMP Fragmentation,DDOS,981,1,981
+cleantrain_RandomForest_temporal_testAll,both,auto,DOS HTTP FLOOD,DOS,17293,395,44
+cleantrain_RandomForest_temporal_testAll,both,auto,DOS SYN FLOOD,DOS,123322,156,791
+cleantrain_RandomForest_temporal_testAll,both,auto,DOS UDP FLOOD,DOS,58862,328,180
+cleantrain_RandomForest_temporal_testAll,both,auto,Mirai,Mirai,1030,9,115
+cleantrain_RandomForest_temporal_testAll,both,auto,Recon,Recon,1866,1,1866
+cleantrain_RandomForest_temporal_testAll,both,auto,ARP Spoofing,Spoofing,372,4,93
+cleantrain_RandomForest_temporal_testAll,both,auto,DNS Spoofing,Spoofing,3808,61,63
+cleantrain_RandomForest_temporal_testAll,both,auto,Sqlinjection,Web-Based,93,2,47
+cleantrain_RandomForest_temporal_testAll,both,auto,Uploading Attack,Web-Based,16,1,16
+cleantrain_RandomForest_temporal_testAll,both,auto,XSS,Web-Based,35,1,35
