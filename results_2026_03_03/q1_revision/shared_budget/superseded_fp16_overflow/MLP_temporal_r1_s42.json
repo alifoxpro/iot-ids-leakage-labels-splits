@@ -1,0 +1,375 @@
+{
+ "accuracy": 0.7263538763200239,
+ "balanced_accuracy": 0.4887152977956682,
+ "macro_f1": 0.4081772568222488,
+ "per_class_f1": {
+  "Benign": 0.6765,
+  "BruteForce": 0.0,
+  "DDOS": 0.9139,
+  "DOS": 0.8565,
+  "Mirai": 0.2174,
+  "Recon": 0.4219,
+  "Spoofing": 0.1584,
+  "Web-Based": 0.0209
+ },
+ "per_class_recall": {
+  "Benign": 0.5635,
+  "BruteForce": 0.0,
+  "DDOS": 0.8585,
+  "DOS": 0.7541,
+  "Mirai": 0.4327,
+  "Recon": 0.3004,
+  "Spoofing": 0.7348,
+  "Web-Based": 0.2657
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.5635,
+  "BruteForce / BruteForce": 0.0,
+  "DDOS / DDOS ACK Fragmentation": 0.9752,
+  "DDOS / DDOS HTTP FLOOD": 0.7645,
+  "DDOS / DDOS ICMP FLOOD": 0.0245,
+  "DDOS / DDOS ICMP Fragmentation": 0.0108,
+  "DOS / DOS HTTP FLOOD": 0.7706,
+  "DOS / DOS SYN FLOOD": 0.9575,
+  "DOS / DOS UDP FLOOD": 0.429,
+  "Mirai / Mirai": 0.4327,
+  "Recon / Recon": 0.3004,
+  "Spoofing / ARP Spoofing": 0.8437,
+  "Spoofing / DNS Spoofing": 0.6219,
+  "Web-Based / Sqlinjection": 0.1793,
+  "Web-Based / Uploading Attack": 0.2581,
+  "Web-Based / XSS": 0.4514
+ },
+ "attack_macro_f1": 0.369846017076318,
+ "per_class_precision": {
+  "Benign": 0.8461,
+  "BruteForce": 0.0,
+  "DDOS": 0.9769,
+  "DOS": 0.9909,
+  "Mirai": 0.1452,
+  "Recon": 0.7084,
+  "Spoofing": 0.0888,
+  "Web-Based": 0.0109
+ },
+ "confusion": [
+  [
+   32577,
+   0,
+   15,
+   111,
+   3990,
+   752,
+   18222,
+   2143
+  ],
+  [
+   3,
+   0,
+   0,
+   0,
+   19,
+   38,
+   131,
+   2
+  ],
+  [
+   3788,
+   212,
+   112841,
+   1232,
+   4824,
+   125,
+   5958,
+   2465
+  ],
+  [
+   1340,
+   37,
+   2604,
+   166074,
+   13548,
+   1476,
+   29609,
+   5530
+  ],
+  [
+   125,
+   4,
+   20,
+   23,
+   4041,
+   37,
+   4929,
+   161
+  ],
+  [
+   333,
+   35,
+   0,
+   0,
+   755,
+   7739,
+   12491,
+   4410
+  ],
+  [
+   320,
+   0,
+   32,
+   156,
+   627,
+   750,
+   6989,
+   637
+  ],
+  [
+   15,
+   0,
+   0,
+   0,
+   28,
+   8,
+   416,
+   169
+  ]
+ ],
+ "per_class_test_support": {
+  "Benign": 57810,
+  "BruteForce": 193,
+  "DDOS": 131445,
+  "DOS": 220218,
+  "Mirai": 9340,
+  "Recon": 25763,
+  "Spoofing": 9511,
+  "Web-Based": 636
+ },
+ "per_class_prevalence": {
+  "Benign": 0.127078,
+  "BruteForce": 0.000424,
+  "DDOS": 0.288943,
+  "DOS": 0.484085,
+  "Mirai": 0.020531,
+  "Recon": 0.056632,
+  "Spoofing": 0.020907,
+  "Web-Based": 0.001398
+ },
+ "per_class_ap": {
+  "Benign": 0.779696,
+  "BruteForce": 0.00228,
+  "DDOS": 0.963462,
+  "DOS": 0.920589,
+  "Mirai": 0.152163,
+  "Recon": 0.508102,
+  "Spoofing": 0.126748,
+  "Web-Based": 0.134217
+ },
+ "macro_ap": 0.4484072591507524,
+ "attack_macro_ap": 0.40108031039359615,
+ "macro_ap_float16": 0.44938919193205096,
+ "per_class_roc_auc": {
+  "Benign": 0.94084,
+  "BruteForce": 0.898128,
+  "DDOS": 0.977929,
+  "DOS": 0.873271,
+  "Mirai": 0.914083,
+  "Recon": 0.922854,
+  "Spoofing": 0.907398,
+  "Web-Based": 0.873433
+ },
+ "macro_roc_auc": 0.9134918652653936,
+ "val_macro_f1": 0.4831456709634858,
+ "epochs_run": 10,
+ "best_epoch": 10,
+ "stopped_early": true,
+ "hit_ceiling": false,
+ "val_best_epoch": 1,
+ "val_loss_min": NaN,
+ "history": {
+  "train_loss": [
+   1.153828,
+   1.02439,
+   0.9713,
+   0.941513,
+   0.920937,
+   0.900249,
+   0.84957,
+   0.840159,
+   0.829851,
+   0.823082
+  ],
+  "train_acc": [
+   0.80582,
+   0.838583,
+   0.847975,
+   0.853453,
+   0.856675,
+   0.859304,
+   0.865785,
+   0.868098,
+   0.869604,
+   0.870429
+  ],
+  "val_loss": [
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN,
+   NaN
+  ],
+  "val_acc": [
+   0.823498,
+   0.809423,
+   0.816367,
+   0.834867,
+   0.834498,
+   0.877425,
+   0.839853,
+   0.851833,
+   0.824626,
+   0.831464
+  ],
+  "val_macro_f1": [
+   0.474245,
+   0.4542,
+   0.482953,
+   0.503539,
+   0.493607,
+   0.552776,
+   0.500292,
+   0.518857,
+   0.477537,
+   0.483146
+  ],
+  "lr_after_epoch": [
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.0005,
+   0.0005,
+   0.0005,
+   0.0005,
+   0.0005
+  ],
+  "seconds": [
+   19.615363,
+   19.710071,
+   21.412835,
+   21.727746,
+   21.752704,
+   21.627209,
+   19.642959,
+   18.090294,
+   18.046916,
+   18.130256
+  ],
+  "val_seconds": [
+   0.104088,
+   0.108556,
+   0.105608,
+   0.065819,
+   0.111077,
+   0.103777,
+   0.095781,
+   0.084537,
+   0.100279,
+   0.084399
+  ]
+ },
+ "n_params": 209032,
+ "fit_seconds": 203.7,
+ "inference": {
+  "seconds": 0.2247,
+  "seconds_repeats": [
+   0.2247
+  ],
+  "seconds_per_1000_flows": 0.000494,
+  "flows_per_second": 2024973.6,
+  "forward_seconds": 0.1578,
+  "forward_seconds_per_1000_flows": 0.000347,
+  "latency_one_flow_ms_median": 0.4092,
+  "latency_one_flow_ms_p95": 0.4473,
+  "n_flows": 454916,
+  "batch": 8192,
+  "repeats": 1,
+  "warmup": "one untimed chunk of 8192 flows",
+  "load_before_timing": {
+   "cpu_load_percent": 7.9,
+   "ram_available_gb": 6.3,
+   "gpu_utilization_percent": 0.0,
+   "gpu_memory_used_mib": 216.0
+  },
+  "precision": "fp32 (no autocast, as the paper predict())",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "what": "standardisation (CPU) + host-to-device copy + forward + argmax + softmax + copy back, whole test set"
+ },
+ "arch": {
+  "config": {
+   "hidden": [
+    512,
+    256,
+    128
+   ],
+   "dropout": 0.2
+  },
+  "optimizer": "Adam",
+  "scheduler": "ReduceLROnPlateau(0.5, 5) on val loss",
+  "amp": true,
+  "loss": "cross-entropy, balanced class weights"
+ },
+ "class_weights": {
+  "Benign": 0.9836429953575134,
+  "BruteForce": 294.9064636230469,
+  "DDOS": 0.43261098861694336,
+  "DOS": 0.2582150101661682,
+  "Mirai": 6.088447093963623,
+  "Recon": 2.2072019577026367,
+  "Spoofing": 5.980006217956543,
+  "Web-Based": 89.56137084960938
+ },
+ "weights": "MLP_temporal_r1_s42.pt",
+ "model": "MLP",
+ "family": "network",
+ "role": "final",
+ "config_index": 0,
+ "config": {
+  "lr": 0.001,
+  "batch_size": 512
+ },
+ "config_tag": "lr1.00e-03-b512",
+ "split": "temporal",
+ "cleaning": "r1",
+ "seed": 42,
+ "validation": "in-period: 0.214286 of the training period of every capture group, stratified, seed 42",
+ "grid_sha256": "7f154499f7a1da0a91a89198efe1d28cf17a45ecb6aaf1003f7208fc70d746d4",
+ "n_train": 1667991,
+ "n_val": 454907,
+ "n_test": 454916,
+ "hardware": {
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "logical_cpus": 24,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "physical_cpus": 24,
+  "ram_total_gb": 31.4,
+  "ram_available_gb_at_start": 8.7,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "gpu_smi": "NVIDIA GeForce RTX 5070 Laptop GPU, 8151 MiB, 581.08",
+  "versions": {
+   "python": "3.11.14",
+   "torch": "2.10.0+cu128",
+   "cuda": "12.8",
+   "cudnn": 91002,
+   "numpy": "2.1.3",
+   "sklearn": "1.8.0"
+  },
+  "device_used": "cuda"
+ },
+ "script": "experiments/shared_budget_study.py",
+ "created": "2026-10-18 09:30:46"
+}

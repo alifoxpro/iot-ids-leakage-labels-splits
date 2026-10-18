@@ -16,5 +16,7 @@
  "inputs": "pack/README_annotators.md, the evidence brief of the class (pack/evidence_<class>.md) and the batch files (pack/batch_*.md; annotator C: pack/spotcheck.md); no rule flags, strata or signature labels",
  "human_verification": "none: no human checked any label (the planned 50-flow check by the author was not carried out)",
  "source": "model identifiers recorded in the local Claude Code session logs of these runs (workflow wf_3ac28cf0-584 of session 1f9668f4-7ea9-4251-9dc0-2e7b019a9a50 for A, B and the adjudicator; agent af395af53d548ebbb of workflow wf_c1db5c7c-fd9 of session 699da9b7-66bb-487e-863c-a57aaca40a3d for C, which wrote annotator_C/spotcheck_third.csv); every model response logged in these runs is from claude-opus-5-5; the logs themselves are not released",
- "recorded": "2026-10-01"
+ "recorded": "2026-10-01",
+ "resume": "the annotation workflow was interrupted while only the final assembly was pending and was resumed on 2026-09-30: batches 01-09 of A and B were replayed unchanged, batches 10-19 were annotated again in new sessions with the same instructions and inputs; the released labels are those of the second pass, the first pass is in first_pass_20260930/ (11 of 472 final decisions differ, all between unclear and background)",
+ "resume_noted": "2026-10-18"
 }

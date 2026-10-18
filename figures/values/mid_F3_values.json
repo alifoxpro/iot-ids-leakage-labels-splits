@@ -2867,131 +2867,163 @@
  "printed_mean_column": [
   {
    "model": "ResNet1D",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.126"
   },
   {
    "model": "ResNet1D",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.148"
   },
   {
    "model": "GRU",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.124"
   },
   {
    "model": "GRU",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.156"
   },
   {
    "model": "Transformer",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.116"
   },
   {
    "model": "Transformer",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.183"
   },
   {
    "model": "MLP",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.104"
   },
   {
    "model": "MLP",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.131"
   },
   {
    "model": "CNN1D_Hossain",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.117"
   },
   {
    "model": "CNN1D_Hossain",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.142"
   },
   {
    "model": "XGBoost",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.152"
   },
   {
    "model": "XGBoost",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.164"
   },
   {
    "model": "LightGBM",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.163"
   },
   {
    "model": "LightGBM",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.107"
   },
   {
    "model": "RandomForest",
-   "condition": "raw"
+   "condition": "raw",
+   "text": "0.174"
   },
   {
    "model": "RandomForest",
-   "condition": "r1"
+   "condition": "r1",
+   "text": "0.200"
   },
   {
    "model": "ResNet1D",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.058"
   },
   {
    "model": "ResNet1D",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.037"
   },
   {
    "model": "GRU",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.070"
   },
   {
    "model": "GRU",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.039"
   },
   {
    "model": "Transformer",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.078"
   },
   {
    "model": "Transformer",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.011"
   },
   {
    "model": "MLP",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.065"
   },
   {
    "model": "MLP",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.038"
   },
   {
    "model": "CNN1D_Hossain",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.052"
   },
   {
    "model": "CNN1D_Hossain",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.027"
   },
   {
    "model": "XGBoost",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.047"
   },
   {
    "model": "XGBoost",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.035"
   },
   {
    "model": "LightGBM",
-   "condition": "random"
+   "condition": "random",
+   "text": "−0.059"
   },
   {
    "model": "LightGBM",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "−0.003"
   },
   {
    "model": "RandomForest",
-   "condition": "random"
+   "condition": "random",
+   "text": "+0.065"
   },
   {
    "model": "RandomForest",
-   "condition": "temporal"
+   "condition": "temporal",
+   "text": "+0.040"
   }
  ],
  "recomputed_not_in_full_text": {
@@ -3059,9 +3091,587 @@
    "printed": "0.174"
   }
  ],
+ "checked_against_full_manuscript": [
+  {
+   "quantity": "macro-AP seeds",
+   "block": 127,
+   "phrase": "ResNet1D, GRU and the Transformer seeds 7, 123 and 2024 (ResNet1D, Temp. R1: also 42), LightGBM, random forest, MLP and 1-D CNN seeds 42, 17, 7, 123 and 2024, XGBoost one run"
+  },
+  {
+   "quantity": "macro_f1 ResNet1D random raw mean and SD",
+   "block": 110,
+   "phrase": "0.521 / 0.005"
+  },
+  {
+   "quantity": "macro_f1 ResNet1D random r1 mean and SD",
+   "block": 110,
+   "phrase": "0.579 / 0.016"
+  },
+  {
+   "quantity": "macro_f1 ResNet1D temporal raw mean and SD",
+   "block": 110,
+   "phrase": "0.395 / 0.004"
+  },
+  {
+   "quantity": "macro_f1 ResNet1D temporal r1 mean and SD",
+   "block": 110,
+   "phrase": "0.432 / 0.017"
+  },
+  {
+   "quantity": "macro_f1 GRU random raw mean and SD",
+   "block": 110,
+   "phrase": "0.514 / 0.008"
+  },
+  {
+   "quantity": "macro_f1 GRU random r1 mean and SD",
+   "block": 110,
+   "phrase": "0.584 / 0.009"
+  },
+  {
+   "quantity": "macro_f1 GRU temporal raw mean and SD",
+   "block": 110,
+   "phrase": "0.390 / 0.004"
+  },
+  {
+   "quantity": "macro_f1 GRU temporal r1 mean and SD",
+   "block": 110,
+   "phrase": "0.429 / 0.005"
+  },
+  {
+   "quantity": "macro_f1 Transformer random raw mean and SD",
+   "block": 110,
+   "phrase": "0.505 / 0.007"
+  },
+  {
+   "quantity": "macro_f1 Transformer random r1 mean and SD",
+   "block": 110,
+   "phrase": "0.583 / 0.013"
+  },
+  {
+   "quantity": "macro_f1 Transformer temporal raw mean and SD",
+   "block": 110,
+   "phrase": "0.389 / 0.004"
+  },
+  {
+   "quantity": "macro_f1 Transformer temporal r1 mean and SD",
+   "block": 110,
+   "phrase": "0.400 / 0.024"
+  },
+  {
+   "quantity": "macro_f1 XGBoost random raw mean",
+   "block": 110,
+   "phrase": "0.579 / n = 1"
+  },
+  {
+   "quantity": "macro_f1 XGBoost random r1 mean",
+   "block": 110,
+   "phrase": "0.626 / n = 1"
+  },
+  {
+   "quantity": "macro_f1 XGBoost temporal raw mean",
+   "block": 110,
+   "phrase": "0.427 / n = 1"
+  },
+  {
+   "quantity": "macro_f1 XGBoost temporal r1 mean",
+   "block": 110,
+   "phrase": "0.462 / n = 1"
+  },
+  {
+   "quantity": "macro_f1 LightGBM random raw mean and SD",
+   "block": 110,
+   "phrase": "0.599 / <0.001"
+  },
+  {
+   "quantity": "macro_f1 LightGBM random r1 mean and SD",
+   "block": 110,
+   "phrase": "0.539 / 0.038"
+  },
+  {
+   "quantity": "macro_f1 LightGBM temporal raw mean and SD",
+   "block": 110,
+   "phrase": "0.435 / 0.001"
+  },
+  {
+   "quantity": "macro_f1 LightGBM temporal r1 mean and SD",
+   "block": 110,
+   "phrase": "0.432 / 0.029"
+  },
+  {
+   "quantity": "macro_f1 RandomForest random raw mean and SD",
+   "block": 110,
+   "phrase": "0.618 / 0.001"
+  },
+  {
+   "quantity": "macro_f1 RandomForest random r1 mean and SD",
+   "block": 110,
+   "phrase": "0.683 / 0.001"
+  },
+  {
+   "quantity": "macro_f1 RandomForest temporal raw mean and SD",
+   "block": 110,
+   "phrase": "0.443 / 0.001"
+  },
+  {
+   "quantity": "macro_f1 RandomForest temporal r1 mean and SD",
+   "block": 110,
+   "phrase": "0.483 / 0.001"
+  },
+  {
+   "quantity": "balanced_accuracy ResNet1D random raw mean and SD",
+   "block": 111,
+   "phrase": "0.643 / 0.004"
+  },
+  {
+   "quantity": "balanced_accuracy ResNet1D random r1 mean and SD",
+   "block": 111,
+   "phrase": "0.719 / 0.020"
+  },
+  {
+   "quantity": "balanced_accuracy ResNet1D temporal raw mean and SD",
+   "block": 111,
+   "phrase": "0.483 / 0.004"
+  },
+  {
+   "quantity": "balanced_accuracy ResNet1D temporal r1 mean and SD",
+   "block": 111,
+   "phrase": "0.534 / 0.018"
+  },
+  {
+   "quantity": "balanced_accuracy GRU random raw mean and SD",
+   "block": 111,
+   "phrase": "0.639 / 0.007"
+  },
+  {
+   "quantity": "balanced_accuracy GRU random r1 mean and SD",
+   "block": 111,
+   "phrase": "0.749 / 0.013"
+  },
+  {
+   "quantity": "balanced_accuracy GRU temporal raw mean and SD",
+   "block": 111,
+   "phrase": "0.475 / 0.013"
+  },
+  {
+   "quantity": "balanced_accuracy GRU temporal r1 mean and SD",
+   "block": 111,
+   "phrase": "0.531 / 0.009"
+  },
+  {
+   "quantity": "balanced_accuracy Transformer random raw mean and SD",
+   "block": 111,
+   "phrase": "0.577 / 0.006"
+  },
+  {
+   "quantity": "balanced_accuracy Transformer random r1 mean and SD",
+   "block": 111,
+   "phrase": "0.678 / 0.012"
+  },
+  {
+   "quantity": "balanced_accuracy Transformer temporal raw mean and SD",
+   "block": 111,
+   "phrase": "0.447 / 0.007"
+  },
+  {
+   "quantity": "balanced_accuracy Transformer temporal r1 mean and SD",
+   "block": 111,
+   "phrase": "0.483 / 0.035"
+  },
+  {
+   "quantity": "balanced_accuracy XGBoost random raw mean",
+   "block": 111,
+   "phrase": "0.739 / n = 1"
+  },
+  {
+   "quantity": "balanced_accuracy XGBoost random r1 mean",
+   "block": 111,
+   "phrase": "0.821 / n = 1"
+  },
+  {
+   "quantity": "balanced_accuracy XGBoost temporal raw mean",
+   "block": 111,
+   "phrase": "0.536 / n = 1"
+  },
+  {
+   "quantity": "balanced_accuracy XGBoost temporal r1 mean",
+   "block": 111,
+   "phrase": "0.581 / n = 1"
+  },
+  {
+   "quantity": "balanced_accuracy LightGBM random raw mean and SD",
+   "block": 111,
+   "phrase": "0.738 / 0.002"
+  },
+  {
+   "quantity": "balanced_accuracy LightGBM random r1 mean and SD",
+   "block": 111,
+   "phrase": "0.729 / 0.022"
+  },
+  {
+   "quantity": "balanced_accuracy LightGBM temporal raw mean and SD",
+   "block": 111,
+   "phrase": "0.522 / 0.002"
+  },
+  {
+   "quantity": "balanced_accuracy LightGBM temporal r1 mean and SD",
+   "block": 111,
+   "phrase": "0.527 / 0.029"
+  },
+  {
+   "quantity": "balanced_accuracy RandomForest random raw mean and SD",
+   "block": 111,
+   "phrase": "0.670 / 0.001"
+  },
+  {
+   "quantity": "balanced_accuracy RandomForest random r1 mean and SD",
+   "block": 111,
+   "phrase": "0.732 / 0.001"
+  },
+  {
+   "quantity": "balanced_accuracy RandomForest temporal raw mean and SD",
+   "block": 111,
+   "phrase": "0.489 / <0.001"
+  },
+  {
+   "quantity": "balanced_accuracy RandomForest temporal r1 mean and SD",
+   "block": 111,
+   "phrase": "0.547 / 0.001"
+  },
+  {
+   "quantity": "macro_f1 MLP random raw mean and SD",
+   "block": 113,
+   "phrase": "0.477 / 0.014"
+  },
+  {
+   "quantity": "macro_f1 MLP random r1 mean and SD",
+   "block": 113,
+   "phrase": "0.542 / 0.011"
+  },
+  {
+   "quantity": "macro_f1 MLP temporal raw mean and SD",
+   "block": 113,
+   "phrase": "0.373 / 0.007"
+  },
+  {
+   "quantity": "macro_f1 MLP temporal r1 mean and SD",
+   "block": 113,
+   "phrase": "0.410 / 0.037"
+  },
+  {
+   "quantity": "balanced_accuracy MLP random raw mean and SD",
+   "block": 113,
+   "phrase": "0.575 / 0.022"
+  },
+  {
+   "quantity": "balanced_accuracy MLP random r1 mean and SD",
+   "block": 113,
+   "phrase": "0.681 / 0.017"
+  },
+  {
+   "quantity": "balanced_accuracy MLP temporal raw mean and SD",
+   "block": 113,
+   "phrase": "0.445 / 0.011"
+  },
+  {
+   "quantity": "balanced_accuracy MLP temporal r1 mean and SD",
+   "block": 113,
+   "phrase": "0.514 / 0.043"
+  },
+  {
+   "quantity": "macro_f1 CNN1D_Hossain random raw mean and SD",
+   "block": 113,
+   "phrase": "0.509 / 0.017"
+  },
+  {
+   "quantity": "macro_f1 CNN1D_Hossain random r1 mean and SD",
+   "block": 113,
+   "phrase": "0.561 / 0.018"
+  },
+  {
+   "quantity": "macro_f1 CNN1D_Hossain temporal raw mean and SD",
+   "block": 113,
+   "phrase": "0.392 / 0.004"
+  },
+  {
+   "quantity": "macro_f1 CNN1D_Hossain temporal r1 mean and SD",
+   "block": 113,
+   "phrase": "0.419 / 0.005"
+  },
+  {
+   "quantity": "balanced_accuracy CNN1D_Hossain random raw mean and SD",
+   "block": 113,
+   "phrase": "0.609 / 0.012"
+  },
+  {
+   "quantity": "balanced_accuracy CNN1D_Hossain random r1 mean and SD",
+   "block": 113,
+   "phrase": "0.694 / 0.023"
+  },
+  {
+   "quantity": "balanced_accuracy CNN1D_Hossain temporal raw mean and SD",
+   "block": 113,
+   "phrase": "0.466 / 0.006"
+  },
+  {
+   "quantity": "balanced_accuracy CNN1D_Hossain temporal r1 mean and SD",
+   "block": 113,
+   "phrase": "0.528 / 0.014"
+  },
+  {
+   "quantity": "macro_ap ResNet1D random raw mean and SD",
+   "block": 127,
+   "phrase": "0.568 / 0.003"
+  },
+  {
+   "quantity": "macro_ap ResNet1D random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.664 / 0.025"
+  },
+  {
+   "quantity": "macro_ap ResNet1D temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.435 / 0.009"
+  },
+  {
+   "quantity": "macro_ap ResNet1D temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.482 / 0.014"
+  },
+  {
+   "quantity": "macro_ap GRU random raw mean and SD",
+   "block": 127,
+   "phrase": "0.564 / 0.008"
+  },
+  {
+   "quantity": "macro_ap GRU random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.687 / 0.002"
+  },
+  {
+   "quantity": "macro_ap GRU temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.423 / 0.010"
+  },
+  {
+   "quantity": "macro_ap GRU temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.497 / 0.003"
+  },
+  {
+   "quantity": "macro_ap Transformer random raw mean and SD",
+   "block": 127,
+   "phrase": "0.535 / 0.003"
+  },
+  {
+   "quantity": "macro_ap Transformer random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.648 / 0.005"
+  },
+  {
+   "quantity": "macro_ap Transformer temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.408 / 0.012"
+  },
+  {
+   "quantity": "macro_ap Transformer temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.477 / 0.003"
+  },
+  {
+   "quantity": "macro_ap XGBoost random raw mean",
+   "block": 127,
+   "phrase": "0.658 / n = 1"
+  },
+  {
+   "quantity": "macro_ap XGBoost random r1 mean",
+   "block": 127,
+   "phrase": "0.753 / n = 1"
+  },
+  {
+   "quantity": "macro_ap XGBoost temporal raw mean",
+   "block": 127,
+   "phrase": "0.474 / n = 1"
+  },
+  {
+   "quantity": "macro_ap XGBoost temporal r1 mean",
+   "block": 127,
+   "phrase": "0.530 / n = 1"
+  },
+  {
+   "quantity": "macro_ap LightGBM random raw mean and SD",
+   "block": 127,
+   "phrase": "0.683 / <0.001"
+  },
+  {
+   "quantity": "macro_ap LightGBM random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.463 / 0.058"
+  },
+  {
+   "quantity": "macro_ap LightGBM temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.487 / 0.007"
+  },
+  {
+   "quantity": "macro_ap LightGBM temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.412 / 0.075"
+  },
+  {
+   "quantity": "macro_ap RandomForest random raw mean and SD",
+   "block": 127,
+   "phrase": "0.666 / 0.001"
+  },
+  {
+   "quantity": "macro_ap RandomForest random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.741 / <0.001"
+  },
+  {
+   "quantity": "macro_ap RandomForest temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.471 / 0.001"
+  },
+  {
+   "quantity": "macro_ap RandomForest temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.534 / 0.001"
+  },
+  {
+   "quantity": "macro_ap MLP random raw mean and SD",
+   "block": 127,
+   "phrase": "0.528 / 0.014"
+  },
+  {
+   "quantity": "macro_ap MLP random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.633 / 0.009"
+  },
+  {
+   "quantity": "macro_ap MLP temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.416 / 0.007"
+  },
+  {
+   "quantity": "macro_ap MLP temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.467 / 0.025"
+  },
+  {
+   "quantity": "macro_ap CNN1D_Hossain random raw mean and SD",
+   "block": 127,
+   "phrase": "0.553 / 0.009"
+  },
+  {
+   "quantity": "macro_ap CNN1D_Hossain random r1 mean and SD",
+   "block": 127,
+   "phrase": "0.648 / 0.015"
+  },
+  {
+   "quantity": "macro_ap CNN1D_Hossain temporal raw mean and SD",
+   "block": 127,
+   "phrase": "0.431 / 0.006"
+  },
+  {
+   "quantity": "macro_ap CNN1D_Hossain temporal r1 mean and SD",
+   "block": 127,
+   "phrase": "0.491 / 0.006"
+  },
+  {
+   "quantity": "RF leads macro-F1",
+   "block": 108,
+   "phrase": "The random forest obtains the highest macro-F1 in all four conditions (0.618, 0.683, 0.443, 0.483)"
+  },
+  {
+   "quantity": "XGBoost leads BA",
+   "block": 108,
+   "phrase": "In balanced accuracy, XGBoost has the highest mean in every condition"
+  },
+  {
+   "quantity": "BA tie, random raw",
+   "block": 108,
+   "phrase": "(0.739 against 0.738 for LightGBM"
+  },
+  {
+   "quantity": "macro-AP leaders",
+   "block": 125,
+   "phrase": "it is LightGBM with raw labels under both splits (0.683 and 0.487), XGBoost under the random split with R1 (0.753) and the random forest under the temporal split with R1 (0.534)"
+  },
+  {
+   "quantity": "split loss, raw labels, six models",
+   "block": 105,
+   "phrase": "lowers macro-F1 by 0.126 (ResNet1D), 0.124 (GRU), 0.116 (Transformer), 0.152 (XGBoost), 0.163 (LightGBM) and 0.174 (random forest), in every seed of every model (per seed 0.104 to 0.176)"
+  },
+  {
+   "quantity": "split loss, R1, six models",
+   "block": 105,
+   "phrase": "with R1 the mean loss ranges from 0.107 (LightGBM; 0.018 to 0.150 for its five seeds) to 0.200 (random forest)"
+  },
+  {
+   "quantity": "cleaning gain, random split",
+   "block": 105,
+   "phrase": "R1 cleaning raises random-split macro-F1 by 0.047 to 0.078 for five models, in every seed, while LightGBM loses 0.059 (0.027 to 0.107, negative for all five seeds)"
+  },
+  {
+   "quantity": "cleaning gain, temporal split, four models",
+   "block": 105,
+   "phrase": "cleaning adds 0.035 to 0.040 for ResNet1D, GRU, XGBoost and the random forest (positive in every seed)"
+  },
+  {
+   "quantity": "cleaning, temporal, LightGBM",
+   "block": 105,
+   "phrase": "for LightGBM (mean -0.003; two seeds positive, three negative)"
+  },
+  {
+   "quantity": "cleaning, temporal, Transformer",
+   "block": 105,
+   "phrase": "the Transformer (mean +0.011, standard deviation 0.026; three seeds positive, two negative)"
+  },
+  {
+   "quantity": "split loss, MLP and 1-D CNN",
+   "block": 109,
+   "phrase": "lowers their macro-F1 by 0.104 (MLP) and 0.117 (1-D CNN) with raw labels and by 0.131 and 0.142 with R1, in every seed (0.073 to 0.201 per seed)"
+  },
+  {
+   "quantity": "cleaning, random, MLP and 1-D CNN",
+   "block": 109,
+   "phrase": "R1 raises random-split macro-F1 by 0.065 and 0.052, in every seed"
+  },
+  {
+   "quantity": "cleaning, temporal, MLP and 1-D CNN",
+   "block": 109,
+   "phrase": "it adds 0.027 for the 1-D CNN, in every seed, and 0.038 on average for the MLP"
+  },
+  {
+   "quantity": "fixed epochs, cleaning gain",
+   "block": 107,
+   "phrase": "by 0.051 (ResNet1D), 0.057 (GRU) and 0.051 (Transformer) on average (0.046 to 0.058 per seed)"
+  },
+  {
+   "quantity": "fixed epochs, split loss",
+   "block": 107,
+   "phrase": "lowers macro-F1 by 0.121 to 0.149 with raw labels (0.116 to 0.138 with early stopping) and by 0.133 to 0.167 with R1 (0.138 to 0.223"
+  },
+  {
+   "quantity": "Table 14 ResNet1D: ES and fixed-epoch runs, seeds 17 and 42, and gains",
+   "block": 112,
+   "phrase": "0.392 | 0.397 | 0.384 | 0.389 | 0.448 | 0.416 | 0.430 | 0.445 | +0.056 | +0.019 | +0.046 | +0.057"
+  },
+  {
+   "quantity": "Table 14 GRU: ES and fixed-epoch runs, seeds 17 and 42, and gains",
+   "block": 112,
+   "phrase": "0.394 | 0.385 | 0.375 | 0.370 | 0.433 | 0.436 | 0.432 | 0.426 | +0.039 | +0.051 | +0.058 | +0.056"
+  },
+  {
+   "quantity": "Table 14 Transformer: ES and fixed-epoch runs, seeds 17 and 42, and gains",
+   "block": 112,
+   "phrase": "0.393 | 0.388 | 0.374 | 0.388 | 0.380 | 0.368 | 0.428 | 0.437 | -0.012 | -0.020 | +0.053 | +0.049"
+  }
+ ],
  "sources": {
   "levels": "results_2026_03_03/q1_revision/deep_protocol/summary/pooled.csv (subset all; protocols earlystop, trees; metrics macro_f1, balanced_accuracy, macro_ap), cross-checked with runs.csv (pooled runs)",
   "effects": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (per seed, unrounded), cross-checked with effects.csv (metric macro_f1)",
-  "fixed_epochs": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed), cross-checked with effects.csv (protocol fixed)"
+  "fixed_epochs": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (protocol fixed), cross-checked with effects.csv (protocol fixed)",
+  "text": "(manuscript source)"
  }
 }

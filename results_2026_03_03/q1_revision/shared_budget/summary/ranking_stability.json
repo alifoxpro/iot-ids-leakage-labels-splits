@@ -1,0 +1,25 @@
+{
+ "rankings": 6,
+ "models": 8,
+ "kendalls_w": 0.6257,
+ "mean_rank": {
+  "RandomForest": 1.33,
+  "XGBoost": 2.0,
+  "LightGBM": 4.33,
+  "CNN1D_Hossain": 5.0,
+  "Transformer": 5.0,
+  "GRU": 5.5,
+  "ResNet1D": 5.67,
+  "MLP": 7.17
+ },
+ "every_tree_above_every_network": "4 of 6",
+ "best_tree_minus_best_network": {
+  "raw/s42": 0.0438,
+  "raw/s17": 0.0392,
+  "raw/s7": 0.0443,
+  "r1/s42": 0.0395,
+  "r1/s17": 0.0244,
+  "r1/s7": 0.0288
+ },
+ "best_tree_above_best_network": "6 of 6"
+}

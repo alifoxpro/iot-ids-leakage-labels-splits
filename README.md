@@ -186,8 +186,12 @@ The audit was carried out by language-model annotators only: two blind annotator
 annotator on a 40-flow spot check, all separate sessions of one language model. **No human checked any label.** The
 instructions, evidence briefs and batch files given to the annotators, their decisions, the adjudications, the final
 decisions, the agreement statistics, the scores and a record of the model and the dates are in
-`rule_validation2/llm_audit/` (see its `README.md`). `rule_validation2/audit_author_review_50.md` and `.xlsx` are
-unused, empty templates for a planned check by the author that was not carried out.
+`rule_validation2/llm_audit/` (see its `README.md`). The annotation workflow was interrupted while only the final
+assembly was pending and was resumed, so batches 10-19 of annotators A and B were annotated a second time with the same
+instructions; the released labels are those of the second pass, and the first pass is kept in
+`rule_validation2/llm_audit/first_pass_20260930/` (11 of the 472 final decisions differ, all between unclear and
+background). `rule_validation2/audit_author_review_50.md` and `.xlsx` are unused, empty templates for a planned check by
+the author that was not carried out.
 
 ## Deep networks
 
@@ -284,7 +288,8 @@ $py = "python"                     # the Python of the environment from "Install
 ### Second-round revision experiments
 
 Added for the second review round (results in `results_2026_03_03/q1_revision/<folder>/`; the exact commands are in
-each docstring and in the packages `runs/R2a_cpu_controls.ps1` and `runs/R2b_gpu_shared_budget.ps1`):
+each docstring and in the packages `runs/R2a_cpu_controls.ps1`, `runs/R2b_gpu_shared_budget.ps1` and
+`runs/R2c_gpu_r1_rerun.ps1`):
 
 | Script | Purpose | Folder |
 |---|---|---|
@@ -292,7 +297,7 @@ each docstring and in the packages `runs/R2a_cpu_controls.ps1` and `runs/R2b_gpu
 | `experiments/rolling_origin.py` | forward, reversed and middle-block test periods and three rolling origins inside every capture group, against the random split: direction of time, contiguous-block difficulty and session memorisation | `rolling_origin/` |
 | `experiments/bootstrap_family.py` | the 40 comparisons behind the model ranking of Section 5.4 (Holm over the 40), paired block-bootstrap intervals of the principal differences for block lengths 1 to 20,000 flows and an automatic length (Politis and White) per capture group, and leave-one-capture-group-out values | `bootstrap_family/` |
 | `experiments/audit_design.py` | sampling design of the 472-flow audit: stratum sizes, inclusion probabilities, de-duplication of the 1,120 stratum slots, estimands with unclear decisions excluded or counted either way | `rule_validation2/design/` |
-| `experiments/shared_budget_study.py` | the same predeclared budget of four configurations for every model family (`shared_budget/grid.json`, committed before any run), validation set drawn from the training period, networks with up to 100 epochs, final runs with three seeds, ranking stability and convergence; network and gradient-boosting weights are stored | `shared_budget/` |
+| `experiments/shared_budget_study.py` | the same predeclared budget of four configurations for every model family (`shared_budget/grid.json`, committed before any run), validation set drawn from the training period, networks with up to 100 epochs, final runs with three seeds, ranking stability and convergence; network, XGBoost and LightGBM weights are stored (random forests: refit from configuration and seed). In a first pass, one validation flow overflowed half precision in the validation pass of the R1 runs of ResNet1D, GRU, the Transformer and the MLP, so their validation loss was not finite and they stopped after 10 epochs; such a chunk is now evaluated in single precision (`deep_protocol_study.train`), the 12 runs were repeated (`runs/R2c_gpu_r1_rerun.ps1`) and the superseded runs are kept in `shared_budget/superseded_fp16_overflow/` with a README | `shared_budget/` |
 
 A loop runs one model fit per process, which keeps the peak memory at that of a single fit. A script whose runs are
 all finished only reports this and exits, so a loop may be longer than needed. The random-forest fits need several
@@ -333,12 +338,15 @@ after an error or a reboot. The logs are not versioned (`*.log`).
 | `P5c_new_baselines.ps1` | `deep_protocol_study.py`: MLP tuning (four configurations), then MLP and the re-implemented 1-D CNN under the four conditions with five seeds | 12 h, GPU |
 | `P5c_gpu.ps1` | the same runs as `P5c_new_baselines.ps1` (with `--device auto`; the script refuses to start without CUDA and never falls back to the CPU), with safeguards for an unattended overnight run: before every fit it waits while the laptop is on battery and runs `gpu_check.py`; a second window shows `nvidia-smi` live and `runs/logs/P5c_gpu_usage.csv` records the GPU load every 30 s | 12 h, GPU |
 | `P6_final.ps1` | summaries of all runs (`tree_seeds_summary.py`, also with `--prefer-refit`, `deep_protocol_summary.py`, `published_deep_control.py --summary`, `cleaning_train_only.py --summary`, `train_only_bootstrap.py`, `revision_analyses2.py --force`), then figures, manuscript build and PDF export (sources not in this repository while the paper is under review) | 20–30 min |
+| `R2a_cpu_controls.ps1` | second round: `r3_train_reference.py`, `rolling_origin.py`, `bootstrap_family.py` | 3–5 h |
+| `R2b_gpu_shared_budget.ps1` | second round: `shared_budget_study.py` (tuning, final runs, summary), with the safeguards of `P5c_gpu.ps1` | 1–2 days, GPU |
+| `R2c_gpu_r1_rerun.ps1` | second round: the 12 R1 network runs of the shared budget repeated after the half-precision fix, then the summary again | 6–8 h, GPU |
 
 Helpers in `runs/` that are not packages: `_common.ps1` (shared settings and helpers, see above), `gpu_check.py`
 (GPU pre-flight check: runs a matrix product and a backward pass on the GPU and exits with code 0 only if they
 succeed) and `keep_awake.ps1` (keeps Windows awake while a package runs in another window).
 
-Run the GPU packages (P4, P5a–P5c) alone, with the charger connected. P4 needs
+Run the GPU packages (P4, P5a–P5c, R2b, R2c) alone, with the charger connected. P4 needs
 `q1_revision/published_control/data.parquet` (`published_protocol_control.py --build-only`, step 7 above), and P6
 reads the outputs of all other packages.
 
@@ -346,21 +354,25 @@ reads the outputs of all other packages.
 
 Stored test predictions (`*.npz`: true and predicted class, class probabilities where stored, global row positions of
 the test flows and their capture group), cached arrays and trained models (`*.pt`: network weights and the
-standardisation of the shared-budget runs; `*.xgb.json`, `*.lgb.txt`: XGBoost and LightGBM models) are too large for
-git. They are attached as zip files to release **v2.0** of this repository, with `MANIFEST.json` (size and SHA-256 of
-every file). Unzip them into the repository folder: every file lands next to its result file. An archived release with a
+standardisation of the shared-budget runs; `*.xgb.json`, `*.lgb.txt`: XGBoost and LightGBM models; the random forests
+are not stored) are too large for git. They are attached as zip files to release **v2.0** of this repository
+(`q1_revision_part1.zip`, `q1_revision_part2.zip`, `tree_protocol.zip`; 695 files, 2.45 GB, including the superseded
+first-pass shared-budget runs), with `MANIFEST.json` (size and SHA-256 of every file). Unzip them into the repository folder: every file lands next to its result file. An archived release with a
 DOI will follow on acceptance of the paper.
 
 ## Manifest and evaluation check
 
-`manifest/runs.csv` has one line per model run (589 runs before the shared-budget study): result file, script, model,
+`manifest/runs.csv` has one line per model run (703 runs: every result file with a macro-F1, the 24 held-out
+sub-attack runs, which report recalls, the 14 rule-sensitivity runs of `split_pilot/rule_sensitivity.json` and the 76
+shared-budget runs; 605 with stored predictions, 66 with a stored model): result file, script, model,
 configuration, training seed, sample (the 3,626,502 flows of `export_flags/flow_flags.csv.gz`, whose SHA-256 is in
 `manifest/manifest.json`; the CICIDS2017 and published-setting samples are named), features, preprocessing (missing
 values set to zero, or training medians for the XGBoost pilot and cleaning-variant analyses), class weights, split design
-(with split seed or cut), training and test labels, sizes, macro-F1, balanced accuracy, accuracy, and the release-asset
-path of its predictions and model. Runs of the first review rounds stored no model; they are refitted exactly from the
-script, configuration and seed (the refits of `r3_train_reference.py` and `rolling_origin.py` reproduce the published
-runs to the last digit). `manifest/paper_map.csv` lists every paragraph, caption and table of the paper with the
+(with split seed or cut), training and test labels, sizes, macro-F1, balanced accuracy, accuracy, the release-asset
+path of its predictions and model, and notes. The configuration is the one named by the run or, where the result file
+names none, the fixed settings of its script. Runs of the first review rounds and the random forests stored no model;
+they can be refitted from the script, configuration and seed (the refits of `r3_train_reference.py` and
+`rolling_origin.py` reproduce the published tree-ensemble runs to the last digit). `manifest/paper_map.csv` lists every paragraph, caption and table of the paper with the
 numbers it prints and the result files those numbers come from; `manifest/figures.csv` and `figures/values/` do the
 same for the figures.
 
@@ -371,8 +383,9 @@ python tools/evaluate_predictions.py
 ```
 
 recomputes accuracy, balanced accuracy, macro-F1 and macro-AP of every run from its stored predictions and compares them
-with its result file (`results_2026_03_03/evaluation_check.csv`; on the author's machine: 409 runs of the tree, deep,
-training-only cleaning, R3 and rolling-origin studies, largest difference 1.1e-16).
+with its result file over the classes present in each run (`results_2026_03_03/evaluation_check.csv`; on the author's
+machine: 593 runs with stored predictions and a macro-F1, of the tree, deep, training-only cleaning, R3, rolling-origin
+and shared-budget studies, the superseded first-pass runs included; largest difference 2.2e-16).
 
 ## Figures
 

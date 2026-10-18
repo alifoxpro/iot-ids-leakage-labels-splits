@@ -1,0 +1,222 @@
+{
+ "accuracy": 0.6654895530399679,
+ "balanced_accuracy": 0.5210090933664386,
+ "macro_f1": 0.4352061861099227,
+ "per_class_f1": {
+  "Benign": 0.5051,
+  "BruteForce": 0.0264,
+  "DDOS": 0.7824,
+  "DOS": 0.798,
+  "Mirai": 0.407,
+  "Recon": 0.5261,
+  "Spoofing": 0.357,
+  "Web-Based": 0.0796
+ },
+ "per_class_recall": {
+  "Benign": 0.531,
+  "BruteForce": 0.2791,
+  "DDOS": 0.8265,
+  "DOS": 0.667,
+  "Mirai": 0.6986,
+  "Recon": 0.4919,
+  "Spoofing": 0.4091,
+  "Web-Based": 0.2648
+ },
+ "per_subattack_recall": {
+  "Benign / Benign": 0.531,
+  "BruteForce / BruteForce": 0.2791,
+  "DDOS / DDOS ACK Fragmentation": 0.9499,
+  "DDOS / DDOS HTTP FLOOD": 0.9503,
+  "DDOS / DDOS ICMP FLOOD": 0.203,
+  "DDOS / DDOS ICMP Fragmentation": 0.2605,
+  "DOS / DOS HTTP FLOOD": 0.4468,
+  "DOS / DOS SYN FLOOD": 0.9475,
+  "DOS / DOS UDP FLOOD": 0.2865,
+  "Mirai / Mirai": 0.6986,
+  "Recon / Recon": 0.4919,
+  "Spoofing / ARP Spoofing": 0.4364,
+  "Spoofing / DNS Spoofing": 0.3805,
+  "Web-Based / Sqlinjection": 0.0981,
+  "Web-Based / Uploading Attack": 0.575,
+  "Web-Based / XSS": 0.4653
+ },
+ "attack_macro_f1": 0.4252254587588969,
+ "per_class_precision": {
+  "Benign": 0.4815,
+  "BruteForce": 0.0138,
+  "DDOS": 0.7428,
+  "DOS": 0.993,
+  "Mirai": 0.2872,
+  "Recon": 0.5655,
+  "Spoofing": 0.3167,
+  "Web-Based": 0.0469
+ },
+ "confusion": [
+  [
+   30700,
+   3258,
+   298,
+   34,
+   4157,
+   12376,
+   4088,
+   2899
+  ],
+  [
+   28,
+   151,
+   0,
+   0,
+   21,
+   48,
+   232,
+   61
+  ],
+  [
+   5621,
+   590,
+   123975,
+   602,
+   14358,
+   1665,
+   2727,
+   464
+  ],
+  [
+   2932,
+   796,
+   39998,
+   150077,
+   17257,
+   7489,
+   5271,
+   1182
+  ],
+  [
+   2219,
+   363,
+   2088,
+   68,
+   16737,
+   187,
+   2032,
+   265
+  ],
+  [
+   16606,
+   4234,
+   214,
+   211,
+   1831,
+   30671,
+   5429,
+   3158
+  ],
+  [
+   5546,
+   1332,
+   323,
+   144,
+   3861,
+   1126,
+   9260,
+   1042
+  ],
+  [
+   105,
+   181,
+   16,
+   1,
+   64,
+   673,
+   198,
+   446
+  ]
+ ],
+ "per_class_test_support": {
+  "Benign": 57810,
+  "BruteForce": 541,
+  "DDOS": 150002,
+  "DOS": 225002,
+  "Mirai": 23959,
+  "Recon": 62354,
+  "Spoofing": 22634,
+  "Web-Based": 1684
+ },
+ "per_class_prevalence": {
+  "Benign": 0.106271,
+  "BruteForce": 0.000995,
+  "DDOS": 0.275746,
+  "DOS": 0.413617,
+  "Mirai": 0.044043,
+  "Recon": 0.114624,
+  "Spoofing": 0.041608,
+  "Web-Based": 0.003096
+ },
+ "per_class_ap": {
+  "Benign": 0.505453,
+  "BruteForce": 0.025297,
+  "DDOS": 0.927467,
+  "DOS": 0.963178,
+  "Mirai": 0.366037,
+  "Recon": 0.635744,
+  "Spoofing": 0.340681,
+  "Web-Based": 0.142743
+ },
+ "macro_ap": 0.48832494801608417,
+ "attack_macro_ap": 0.4858780316496057,
+ "macro_ap_float16": 0.48817505818241724,
+ "per_class_roc_auc": {
+  "Benign": 0.927509,
+  "BruteForce": 0.922046,
+  "DDOS": 0.95708,
+  "DOS": 0.966325,
+  "Mirai": 0.929337,
+  "Recon": 0.929707,
+  "Spoofing": 0.892739,
+  "Web-Based": 0.897716
+ },
+ "macro_roc_auc": 0.9278074293748679,
+ "val_macro_f1": 0.6167258130802192,
+ "fit_seconds": 26.1,
+ "predict_seconds": 0.64,
+ "weights": "XGBoost_c1_max_depth8-learning_rate0.3_temporal_raw_s42.xgb.json",
+ "model": "XGBoost",
+ "family": "tree ensemble",
+ "role": "tuning",
+ "config_index": 1,
+ "config": {
+  "max_depth": 8,
+  "learning_rate": 0.3
+ },
+ "config_tag": "max_depth8-learning_rate0.3",
+ "split": "temporal",
+ "cleaning": "raw",
+ "seed": null,
+ "validation": "in-period: 0.214286 of the training period of every capture group, stratified, seed 42",
+ "grid_sha256": "7f154499f7a1da0a91a89198efe1d28cf17a45ecb6aaf1003f7208fc70d746d4",
+ "n_train": 1994569,
+ "n_val": 543974,
+ "n_test": 543986,
+ "hardware": {
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "logical_cpus": 24,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "physical_cpus": 24,
+  "ram_total_gb": 31.4,
+  "ram_available_gb_at_start": 8.5,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "gpu_smi": "NVIDIA GeForce RTX 5070 Laptop GPU, 8151 MiB, 581.08",
+  "versions": {
+   "python": "3.11.14",
+   "torch": "2.10.0+cu128",
+   "cuda": "12.8",
+   "cudnn": 91002,
+   "numpy": "2.1.3",
+   "sklearn": "1.8.0"
+  },
+  "device_used": "cuda"
+ },
+ "script": "experiments/shared_budget_study.py",
+ "created": "2026-10-17 17:01:53"
+}

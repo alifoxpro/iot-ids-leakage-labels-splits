@@ -1,0 +1,17 @@
+model,cleaning,paper_protocol_mean,paper_protocol_runs,shared_budget_mean,shared_budget_runs
+ResNet1D,raw,0.3947,5,0.3978,3
+ResNet1D,r1,0.4318,5,0.4274,3
+GRU,raw,0.3896,5,0.3957,3
+GRU,r1,0.4286,5,0.439,3
+Transformer,raw,0.3888,5,0.3976,3
+Transformer,r1,0.3999,5,0.4399,3
+MLP,raw,0.3728,5,0.3773,3
+MLP,r1,0.4104,5,0.4317,3
+CNN1D_Hossain,raw,0.3922,5,0.4004,3
+CNN1D_Hossain,r1,0.4191,5,0.4367,3
+XGBoost,raw,0.4269,1,0.4405,1
+XGBoost,r1,0.4619,1,0.4769,1
+LightGBM,raw,0.4354,5,0.4356,3
+LightGBM,r1,0.4324,5,0.4149,3
+RandomForest,raw,0.4432,5,0.4444,3
+RandomForest,r1,0.4831,5,0.4767,3

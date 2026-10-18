@@ -2882,6 +2882,198 @@
    }
   }
  },
+ "checked_against_full_manuscript": [
+  {
+   "quantity": "band (a), lower edge: MLP, raw labels",
+   "block": 109,
+   "phrase": "lowers their macro-F1 by 0.104 (MLP)"
+  },
+  {
+   "quantity": "band (a), upper edge: random forest, R1",
+   "block": 105,
+   "phrase": "to 0.200 (random forest)"
+  },
+  {
+   "quantity": "band (b), edges",
+   "block": 105,
+   "phrase": "R1 cleaning raises random-split macro-F1 by 0.047 to 0.078 for five models, in every seed, while LightGBM loses 0.059"
+  },
+  {
+   "quantity": "split loss, raw labels, tree ensembles",
+   "block": 105,
+   "phrase": "0.152 (XGBoost), 0.163 (LightGBM) and 0.174 (random forest), in every seed of every model"
+  },
+  {
+   "quantity": "split loss, R1, LightGBM (seed range) and random forest",
+   "block": 105,
+   "phrase": "with R1 the mean loss ranges from 0.107 (LightGBM; 0.018 to 0.150 for its five seeds) to 0.200 (random forest)"
+  },
+  {
+   "quantity": "cleaning, random split, LightGBM",
+   "block": 105,
+   "phrase": "LightGBM loses 0.059 (0.027 to 0.107, negative for all five seeds)"
+  },
+  {
+   "quantity": "cleaning, temporal split, XGBoost and RF",
+   "block": 105,
+   "phrase": "cleaning adds 0.035 to 0.040 for ResNet1D, GRU, XGBoost and the random forest"
+  },
+  {
+   "quantity": "cleaning, random, XGBoost",
+   "block": 105,
+   "phrase": "by 0.047 to"
+  },
+  {
+   "quantity": "cleaning, temporal split, LightGBM",
+   "block": 105,
+   "phrase": "for LightGBM (mean -0.003;"
+  },
+  {
+   "quantity": "block bootstrap: lowest lower bound of the split effect",
+   "block": 116,
+   "phrase": "still far narrower than the split effect, which is 0.103 or more at the lower bound for every tree ensemble"
+  },
+  {
+   "quantity": "Table 7 (split seeds, cut points, day-disjoint, class weights)",
+   "block": 92,
+   "phrase": "table cells (see sources)"
+  },
+  {
+   "quantity": "split loss over the 15 seed x cut pairs",
+   "block": 90,
+   "phrase": "across all 15 combinations of seed and cut, the temporal split costs 0.146 to 0.165 (raw labels) and 0.148 to 0.166 (R1) for XGBoost and 0.168 to 0.188 and 0.190 to 0.210 for the random forest"
+  },
+  {
+   "quantity": "Table 10 (R1 row)",
+   "block": 99,
+   "phrase": "table cells (see sources)"
+  },
+  {
+   "quantity": "R1 cleaning gain over the three cuts (range)",
+   "block": 97,
+   "phrase": "R1 and R2 raise macro-F1 at every cut, by 0.035 to 0.051"
+  },
+  {
+   "quantity": "day-disjoint macro-F1 levels",
+   "block": 91,
+   "phrase": "Macro-F1 is 0.454 and 0.480 for XGBoost (raw, R1) and 0.468 and 0.484 for the random forest"
+  },
+  {
+   "quantity": "random-split reference (seed 42)",
+   "block": 91,
+   "phrase": "0.579 to 0.681 under the random split (seed 42)"
+  },
+  {
+   "quantity": "split loss without / with square-root weights",
+   "block": 90,
+   "phrase": "the temporal split costs 0.174 and 0.183 macro-F1 with these weightings, against 0.152 with balanced weights"
+  },
+  {
+   "quantity": "fixed epochs, split loss",
+   "block": 107,
+   "phrase": "lowers macro-F1 by 0.121 to 0.149 with raw labels (0.116 to 0.138 with early stopping) and by 0.133 to 0.167 with R1"
+  },
+  {
+   "quantity": "fixed epochs, cleaning gain",
+   "block": 107,
+   "phrase": "(0.046 to 0.058 per seed)"
+  },
+  {
+   "quantity": "training-only cleaning, R1 test flows: estimates and block-bootstrap intervals",
+   "block": 116,
+   "phrase": "With blocks of 5,000 flows, the train-cleaning effects of Table 16 keep their sign: XGBoost +0.032 [+0.025, +0.041] (random) and +0.058 [+0.046, +0.070] (temporal), the random forest +0.047 [+0.038, +0.055] and +0.049 [+0.039, +0.058]"
+  },
+  {
+   "quantity": "training-only cleaning, LightGBM (three seeds)",
+   "block": 119,
+   "phrase": "For LightGBM it costs 0.060 under the random split (mean of three seeds, all negative) and changes macro-F1 by +0.003 on average under the temporal split, where the seeds range from -0.037 to +0.041"
+  },
+  {
+   "quantity": "training-only cleaning, R1 test flows, XGBoost and RF",
+   "block": 119,
+   "phrase": "adds 0.032 (random split) and 0.058 (temporal split) for XGBoost and 0.047 and 0.049 for the random forest"
+  },
+  {
+   "quantity": "Table 16 cells raw/R1 and R1/R1",
+   "block": 120,
+   "phrase": "table cells"
+  },
+  {
+   "quantity": "split loss on the unflagged test flows, XGBoost trained after all rules",
+   "block": 140,
+   "phrase": "XGBoost trained after all rules (Table 11) still loses 0.19 macro-F1 under the temporal split (0.669 to 0.479)"
+  },
+  {
+   "quantity": "Table 11 cells (Not cleaned, R1, All)",
+   "block": 103,
+   "phrase": "table cells"
+  },
+  {
+   "quantity": "training-only R1 cleaning on the unflagged test flows (block bootstrap)",
+   "block": 102,
+   "phrase": "on the all-rules test set by +0.023 [+0.015, +0.033] (random) and +0.054 [+0.043, +0.065] (temporal) for XGBoost and by +0.059 [+0.044, +0.077] and +0.073 [+0.063, +0.085] for the random forest"
+  },
+  {
+   "quantity": "symmetric R1, random split",
+   "block": 121,
+   "phrase": "macro-F1 is 0.623 against 0.626 with R1 and 0.579 raw for XGBoost and 0.664, 0.681 and 0.617 for the random forest"
+  },
+  {
+   "quantity": "symmetric R1, temporal split",
+   "block": 121,
+   "phrase": "(0.420 against 0.462 and 0.427; 0.438, 0.484 and 0.443)"
+  },
+  {
+   "quantity": "relabelling",
+   "block": 121,
+   "phrase": "gives 0.607 (random) and 0.482 (temporal) for XGBoost and 0.665 and 0.508 for the random forest"
+  },
+  {
+   "quantity": "Table 17 (macro-F1 and attack-class macro-F1)",
+   "block": 122,
+   "phrase": "table cells (see sources)"
+  },
+  {
+   "quantity": "attack-class split loss, raw labels",
+   "block": 114,
+   "phrase": "The temporal split lowers it by 0.11 to 0.17 with raw labels for the six models, in every seed"
+  },
+  {
+   "quantity": "attack-class cleaning gain, random split",
+   "block": 114,
+   "phrase": "R1 raises it under the random split for every model except LightGBM (by 0.032 to 0.060, in every seed)"
+  },
+  {
+   "quantity": "attack-class cleaning effect, temporal split",
+   "block": 114,
+   "phrase": "-0.030 (LightGBM) to +0.007 (random forest; XGBoost -0.003, the Transformer -0.011)"
+  },
+  {
+   "quantity": "CICIDS2017 split loss, 77 and 78 features",
+   "block": 150,
+   "phrase": "by 0.098 and 0.105 (differences computed before rounding)"
+  },
+  {
+   "quantity": "Table 21 split rows",
+   "block": 149,
+   "phrase": "table cells"
+  },
+  {
+   "quantity": "Table 8 (seen -> unseen recall, attack share, per sub-attack and mean)",
+   "block": 94,
+   "phrase": "table cells (see sources)"
+  },
+  {
+   "quantity": "held-out sub-attacks: means and collapses",
+   "block": 93,
+   "phrase": "falls on average from 0.48 to 0.20 with raw labels and from 0.56 to 0.22 with R1; it collapses for DoS HTTP Flood (0.44 to 0.003) and DDoS HTTP Flood (0.94 to 0.12)"
+  },
+  {
+   "quantity": "share of held-out flows assigned to an attack class",
+   "block": 93,
+   "phrase": "(on average 0.85 raw and 0.84 with R1)"
+  }
+ ],
  "sources": {
   "main": "results_2026_03_03/q1_revision/deep_protocol/summary/runs.csv (pooled runs), cross-checked with effects.csv",
   "block_bootstrap": "results_2026_03_03/q1_revision/analyses/c_block_bootstrap_effects.csv (variant block5000)",
@@ -2891,6 +3083,7 @@
   "training_only": "results_2026_03_03/tree_protocol/decomp/*.json; q1_revision/train_only_bootstrap/diffs.csv; q1_revision/cleaning_train_only/*.json",
   "symmetric_relabel": "results_2026_03_03/q1_revision/symmetric_r1/summary.csv",
   "cicids2017": "results_2026_03_03/q1_revision/cicids2017/split_{random,temporal}_{F0,F78}.json",
-  "held_out": "results_2026_03_03/q1_revision/leave_one_subattack_out/summary.csv"
+  "held_out": "results_2026_03_03/q1_revision/leave_one_subattack_out/summary.csv",
+  "text": "(manuscript source)"
  }
 }

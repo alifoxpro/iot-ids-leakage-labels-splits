@@ -48,6 +48,15 @@ Summary (--summary): tuning.csv, runs.csv, cells.csv (mean, SD, min-max per mode
 rank, share of rankings with every tree ensemble above every network, best tree - best network per ranking),
 convergence.csv, versus_paper.csv (same cells under the paper's protocol, for reference).
 
+Repeated runs (2026-10-18): in the first pass, one R1 in-period validation flow (a DOS flow whose feat_min lies
+1.2e5 standard deviations from the training mean) overflowed half precision in the AMP validation pass of the four
+networks that read that feature, so the validation loss was NaN in every epoch and the 12 R1 runs of ResNet1D, GRU,
+Transformer and MLP stopped after the 10-epoch patience without early stopping on a finite loss (the 1-D CNN, whose
+valid convolutions and pooling never reach the last three features, and all raw and tuning runs had finite losses).
+deep_protocol_study.train now evaluates such a chunk again in single precision; those 12 runs were moved to
+shared_budget/superseded_fp16_overflow/ and run again; --summary refuses a network run with a non-finite
+validation loss. Tuning and the configuration choice are unaffected (raw labels, all losses finite).
+
 Output: results_2026_03_03/q1_revision/shared_budget/{grid.json, tuning/, final/, summary/}
 Run (PowerShell, from the project folder):
   $py = "C:\Users\lenovo\.conda\envs\MyProject\python.exe"
@@ -236,6 +245,7 @@ def run_net(j, cfg, data, hw, last):
               'best_epoch': info['best_epoch'], 'stopped_early': info['stopped_early'],
               'hit_ceiling': (not info['stopped_early']) and info['epochs_run'] == MAX_EPOCHS,
               'val_best_epoch': info['val_best_epoch'], 'val_loss_min': info['val_loss_min'],
+              'val_chunks_fp32': info['val_chunks_fp32'],
               'history': {k: [round(v, 6) for v in vals] for k, vals in hist.items()},
               'n_params': n_params, 'fit_seconds': round(fit_s, 1), 'inference': inf,
               'arch': {'config': sp['config'], 'optimizer': 'Adam', 'scheduler': 'ReduceLROnPlateau(0.5, 5) on val loss',
@@ -331,6 +341,10 @@ def summary():
     load = lambda f: json.load(open(f, encoding='utf-8'))
     results = lambda d: [load(f) for f in sorted(d.glob('*.json')) if not f.name.endswith('.xgb.json')]   # not weights
     tune, fin = results(OUT / 'tuning'), results(OUT / 'final')
+    bad = [f'{r["role"]} {r["model"]} {r["cleaning"]} s{r["seed"]}' for r in tune + fin
+           if r.get('history') and not np.all(np.isfinite(np.asarray(r['history']['val_loss'], float)))]
+    if bad:                                     # module docstring, "Repeated runs"
+        raise SystemExit(f'network runs with a non-finite validation loss (run them again): {bad}')
     if tune:
         t = pd.DataFrame([{'model': r['model'], 'config_index': r['config_index'], 'config': r['config_tag'],
                            'val_macro_f1': r['val_macro_f1'], 'test_macro_f1': r['macro_f1'],
@@ -346,6 +360,7 @@ def summary():
                        'macro_ap': r.get('macro_ap'), 'val_macro_f1': r['val_macro_f1'],
                        'epochs_run': r.get('epochs_run'), 'best_epoch': r.get('best_epoch'),
                        'stopped_early': r.get('stopped_early'), 'hit_ceiling': r.get('hit_ceiling'),
+                       'val_chunks_fp32': r.get('val_chunks_fp32', 0) if r['model'] in NETS else None,
                        'fit_seconds': r['fit_seconds']} for r in fin])
     d.to_csv(S / 'runs.csv', index=False)
     cells = d.groupby(['model', 'family', 'cleaning']).agg(
@@ -354,7 +369,7 @@ def summary():
     cells.to_csv(S / 'cells.csv', index=False)
     print(cells.round(4).to_string(index=False))
     d.loc[d['family'] == 'network', ['model', 'cleaning', 'seed', 'epochs_run', 'best_epoch', 'stopped_early',
-                                     'hit_ceiling']].to_csv(S / 'convergence.csv', index=False)
+                                     'hit_ceiling', 'val_chunks_fp32']].to_csv(S / 'convergence.csv', index=False)
     # rankings: one per (labels, seed); XGBoost (seed-independent) enters every ranking with its single run
     ranks, stab = [], {}
     for c in CLEANINGS:

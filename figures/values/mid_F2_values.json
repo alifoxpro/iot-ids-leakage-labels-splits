@@ -319,11 +319,254 @@
   "min_font_pt": 10.0,
   "free_cm_at_bottom": 0.1
  },
+ "checked_against_full_manuscript": [
+  {
+   "quantity": "ResNet1D layer stack",
+   "block": 69,
+   "phrase": "maps the standardised features to a 128-dimensional embedding, repeats it over eight positions and applies three residual blocks of 128 channels (kernel size 3)"
+  },
+  {
+   "quantity": "GRU layer stack",
+   "block": 69,
+   "phrase": "(GRU; two layers, hidden size 128, dropout 0.3) reads a 128-dimensional embedding repeated over eight steps"
+  },
+  {
+   "quantity": "Transformer layer stack",
+   "block": 69,
+   "phrase": "projects the features linearly to 256 values, read as 16 tokens of dimension 16 without positional encoding (two layers, eight heads, feed-forward size 64, dropout 0.1), and averages the output tokens"
+  },
+  {
+   "quantity": "MLP layer stack and parameters",
+   "block": 73,
+   "phrase": "(512, 256 and 128 units, dropout 0.2; 209,032 parameters)"
+  },
+  {
+   "quantity": "MLP choice",
+   "block": 73,
+   "phrase": "were chosen among the four combinations by the validation macro-F1"
+  },
+  {
+   "quantity": "1-D CNN layer stack",
+   "block": 144,
+   "phrase": "two convolutional layers with 64 and 128 filters of width 3, each followed by max pooling, a dense layer of 128 units with dropout 0.5 and a softmax output"
+  },
+  {
+   "quantity": "1-D CNN parameters",
+   "block": 73,
+   "phrase": "with the layer stack of Section 5.6 (321,032 parameters)"
+  },
+  {
+   "quantity": "1-D CNN unused inputs",
+   "block": 73,
+   "phrase": "the last three inputs (the minimum, maximum and range of the 76 CICFlowMeter values of a flow, three of the five row statistics) do not reach the dense layer"
+  },
+  {
+   "quantity": "learning rates and batch sizes",
+   "block": 69,
+   "phrase": "ResNet1D and GRU use a learning rate of 0.001 and batches of 512 flows, the Transformer 0.0001 and 256"
+  },
+  {
+   "quantity": "MLP / 1-D CNN optimiser settings",
+   "block": 73,
+   "phrase": "trained exactly as ResNet1D and GRU (same loss, optimiser, learning rate, batch size"
+  },
+  {
+   "quantity": "training time per fit, ResNet1D (min)",
+   "block": 127,
+   "phrase": "ResNet1D 6–24"
+  },
+  {
+   "quantity": "prediction time, ResNet1D (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "ResNet1D | ... | 2.13"
+  },
+  {
+   "quantity": "training time per fit, GRU (min)",
+   "block": 127,
+   "phrase": "GRU 9–22"
+  },
+  {
+   "quantity": "prediction time, GRU (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "GRU | ... | 3.61"
+  },
+  {
+   "quantity": "training time per fit, Transformer (min)",
+   "block": 127,
+   "phrase": "Transformer 9–113"
+  },
+  {
+   "quantity": "prediction time, Transformer (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "Transformer | ... | 1.82"
+  },
+  {
+   "quantity": "training time per fit, MLP (min)",
+   "block": 127,
+   "phrase": "MLP 5–17"
+  },
+  {
+   "quantity": "prediction time, MLP (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "MLP | ... | 0.45"
+  },
+  {
+   "quantity": "training time per fit, CNN1D_Hossain (min)",
+   "block": 127,
+   "phrase": "1-D CNN 6–17"
+  },
+  {
+   "quantity": "prediction time, CNN1D_Hossain (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "1-D CNN | ... | 1.49"
+  },
+  {
+   "quantity": "training time per fit, XGBoost (min)",
+   "block": 127,
+   "phrase": "XGBoost 0.5–0.6"
+  },
+  {
+   "quantity": "prediction time, XGBoost (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "XGBoost | ... | 1.27"
+  },
+  {
+   "quantity": "training time per fit, LightGBM (min)",
+   "block": 127,
+   "phrase": "LightGBM 1.3–2.2"
+  },
+  {
+   "quantity": "prediction time, LightGBM (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "LightGBM | ... | 16.62"
+  },
+  {
+   "quantity": "training time per fit, RandomForest (min)",
+   "block": 127,
+   "phrase": "random forest 1.1–3.8"
+  },
+  {
+   "quantity": "prediction time, RandomForest (ms per 1,000 flows)",
+   "block": 127,
+   "phrase": "Random forest | ... | 5.42"
+  },
+  {
+   "quantity": "gradient clipping",
+   "block": 69,
+   "phrase": "gradient clipping (norm 1.0)"
+  },
+  {
+   "quantity": "schedule, early stopping, epoch limit",
+   "block": 69,
+   "phrase": "halving of the learning rate on a plateau of the class-weighted validation loss (patience 5), early stopping on the same loss (patience 10) with the weights of the best epoch restored, and at most 30 epochs"
+  },
+  {
+   "quantity": "seeds",
+   "block": 69,
+   "phrase": "Each configuration was trained with five seeds (7, 17, 42, 123 and 2024)"
+  },
+  {
+   "quantity": "loss",
+   "block": 69,
+   "phrase": "All use class-weighted cross-entropy with the weights of Eq. (1)"
+  },
+  {
+   "quantity": "optimiser, AMP",
+   "block": 69,
+   "phrase": "the Adam optimiser [@kingma2015], mixed-precision training"
+  },
+  {
+   "quantity": "standardisation",
+   "block": 69,
+   "phrase": "The deep models standardise the features with training statistics"
+  },
+  {
+   "quantity": "XGBoost settings",
+   "block": 69,
+   "phrase": "XGBoost [@chen2016] (200 trees, depth 8, learning rate 0.1, histogram method) with balanced sample weights"
+  },
+  {
+   "quantity": "LightGBM settings",
+   "block": 72,
+   "phrase": "LightGBM [@ke2017] (300 trees, 127 leaves, learning rate 0.1, row and feature sub-sampling 0.8)"
+  },
+  {
+   "quantity": "random forest settings",
+   "block": 72,
+   "phrase": "random forest [@breiman2001] (100 trees, depth at most 24, 30% of the training flows per tree, at least two flows per leaf)"
+  },
+  {
+   "quantity": "tree inputs",
+   "block": 72,
+   "phrase": "Both use balanced sample weights, and missing or infinite feature values are set to zero"
+  },
+  {
+   "quantity": "XGBoost missing values",
+   "block": 72,
+   "phrase": "XGBoost also has missing values set to zero in the factorial comparison"
+  },
+  {
+   "quantity": "tree features unscaled",
+   "block": 69,
+   "phrase": "the tree ensembles use unscaled features"
+  },
+  {
+   "quantity": "trees: training part only",
+   "block": 72,
+   "phrase": "All tree ensembles are fitted on the training part alone"
+  },
+  {
+   "quantity": "XGBoost one run",
+   "block": 72,
+   "phrase": "XGBoost uses neither row nor column sub-sampling, so its seed has no effect on training; it was trained once"
+  },
+  {
+   "quantity": "tree seeds",
+   "block": 72,
+   "phrase": "LightGBM and the random forest were trained with five seeds"
+  },
+  {
+   "quantity": "tree threads",
+   "block": 74,
+   "phrase": "LightGBM (all 24 threads) and the random forest (two threads) on the CPU"
+  },
+  {
+   "quantity": "devices",
+   "block": 74,
+   "phrase": "XGBoost and the deep models were trained on the GPU"
+  },
+  {
+   "quantity": "MLP note: hidden sizes",
+   "block": 73,
+   "phrase": "Its hidden sizes ("
+  },
+  {
+   "quantity": "MLP note: dropout rate",
+   "block": 73,
+   "phrase": ") and dropout rate ("
+  },
+  {
+   "quantity": "MLP note: test set not used",
+   "block": 73,
+   "phrase": "the test set was not used"
+  },
+  {
+   "quantity": "XGBoost: median imputation (scope)",
+   "block": 69,
+   "phrase": "in the split-design and cleaning-sensitivity analyses"
+  },
+  {
+   "quantity": "XGBoost: median imputation",
+   "block": 69,
+   "phrase": "missing values are imputed with training medians"
+  }
+ ],
  "sources": {
   "networks": "experiments/deep_protocol_study.py spec() (src/stage3_ml_models.py _ResNet1DNet, _GRUNet, _TransformerNet; MLPNet, CNN1DHossainNet), instantiated on the CPU with 81 inputs and 8 classes",
   "mlp_choice": "results_2026_03_03/q1_revision/deep_protocol/mlp_tuning/mlp_config.json",
   "cost": "results_2026_03_03/q1_revision/deep_protocol/summary/cost.csv (protocols earlystop and trees)",
   "n_params": "results_2026_03_03/q1_revision/deep_protocol/summary/{cost,runs}.csv",
-  "trees": "experiments/extra_baselines.py make()"
+  "trees": "experiments/extra_baselines.py make()",
+  "text": "(manuscript source)"
  }
 }

@@ -5,10 +5,13 @@ and through the figure, table and paragraph maps every reported value, to its sa
 model configuration, seed, stored predictions and stored model.
 
 Output (manifest/):
-  runs.csv            one line per model run (every result JSON with a macro-F1 under the result folders of the paper):
-                      run, folder, script, model, configuration, training seed, sample, features, preprocessing, class
-                      weights, split design (with split seed or cut), training labels, test labels, n_train, n_test,
-                      macro-F1, balanced accuracy, accuracy, predictions (release-asset path or 'not stored'), stored model
+  runs.csv            one line per model run (every result JSON with a macro-F1 under the result folders of the paper, the
+                      held-out sub-attack runs, which report recalls only, and the 14 runs of split_pilot/
+                      rule_sensitivity.json; the superseded shared-budget runs are not listed): run, folder, script,
+                      model, configuration (named by the run, else the fixed settings of its script), training seed,
+                      sample, features, preprocessing, class weights, split design (with split seed or cut), training
+                      labels, test labels, n_train, n_test, macro-F1, balanced accuracy, accuracy, predictions
+                      (release-asset path or 'not stored'), stored model, notes
   analyses.csv        the files of the analyses computed from stored runs (bootstrap, drift, audit, flags), with script
   figures/            the source values of every figure (one JSON per figure, from the figure scripts) and figures.csv:
                       figure, panel, quantity and source files
@@ -29,23 +32,36 @@ SAMPLE = 'flagged sample: 3,626,502 flows of CIC IoT-DIAD 2024 (export_flags/flo
 ZERO = 'NaN/inf -> 0'
 MEDIAN = 'NaN/inf -> median of the training rows'
 STD = '; networks: standardised with training statistics'
+SEED42 = '42 (random_state = SEED of pilot_temporal_split.py)'
+# model settings of runs whose result file names no configuration (experiments/extra_baselines.make, used by every tree
+# study, and pilot_temporal_split.fit_eval; networks: deep_protocol_study.spec, the paper settings of src/stage3)
+TREE_CFG = {'XGBoost': '200 trees, max_depth 8, learning_rate 0.1, hist',
+            'LightGBM': '300 trees, 127 leaves, learning_rate 0.1, subsample 0.8, colsample_bytree 0.8',
+            'RandomForest': '100 trees, max_depth 24, max_features sqrt, min_samples_leaf 2, max_samples 0.3'}
+NET_CFG = {'ResNet1D': 'Adam lr 1e-3, batch 512', 'GRU': 'Adam lr 1e-3, batch 512',
+           'Transformer': 'Adam lr 1e-4, batch 256', 'MLP': 'Adam lr 1e-3, batch 512',
+           'CNN1D_Hossain': 'Adam lr 1e-3, batch 512', 'CNN1D': 'Adam lr 1e-3, batch 512'}
+SYM = {'sym': 'R1 applied to every class (symmetric R1)', 'relabel': 'R1-flagged flows relabelled Benign'}
 
 # folder (relative to results_2026_03_03) -> defaults of its runs
 FOLDERS = {
     'deep_split': dict(script='experiments/deep_split_noise_study.py', preprocessing=ZERO + STD),
-    'extra_baselines': dict(script='experiments/extra_baselines.py', preprocessing=ZERO),
+    'extra_baselines': dict(script='experiments/extra_baselines.py', preprocessing=ZERO, seed=SEED42),
     'tree_protocol/main': dict(script='experiments/tree_protocol_study.py', preprocessing=ZERO),
     'tree_protocol/decomp': dict(script='experiments/tree_protocol_study.py', preprocessing=ZERO),
-    'identifier_leakage_v2': dict(script='experiments/identifier_leakage.py', preprocessing=ZERO, model='XGBoost'),
-    'q1_revision/cicids2017': dict(script='experiments/cicids2017_replication.py', preprocessing=ZERO,
+    'identifier_leakage_v2': dict(script='experiments/identifier_leakage.py', preprocessing=ZERO, model='XGBoost',
+                                  seed=SEED42),
+    'q1_revision/cicids2017': dict(script='experiments/cicids2017_replication.py', preprocessing=ZERO, seed=SEED42,
                                    sample='CICIDS2017 labelled flows, de-duplicated within each class (2,199,736 flows)'),
     'q1_revision/cleaning_train_only': dict(script='experiments/cleaning_train_only.py', preprocessing=ZERO),
     'q1_revision/day_disjoint': dict(script='experiments/day_disjoint_split.py', preprocessing=ZERO),
     'q1_revision/deep_protocol/earlystop': dict(script='experiments/deep_protocol_study.py', preprocessing=ZERO + STD),
     'q1_revision/deep_protocol/fixed': dict(script='experiments/deep_protocol_study.py', preprocessing=ZERO + STD),
     'q1_revision/deep_protocol/mlp_tuning': dict(script='experiments/deep_protocol_study.py', preprocessing=ZERO + STD),
-    'q1_revision/leave_one_subattack_out': dict(script='experiments/leave_one_subattack_out.py', preprocessing=ZERO),
+    'q1_revision/leave_one_subattack_out': dict(script='experiments/leave_one_subattack_out.py', preprocessing=ZERO,
+                                                seed=SEED42),
     'q1_revision/published_control': dict(script='experiments/published_protocol_control.py', preprocessing=ZERO,
+                                          seed=SEED42,
                                           sample='approximated published setting: 3,243,755 flows, eight classes of '
                                                  'Hossain (2025), no de-duplication'),
     'q1_revision/published_deep': dict(script='experiments/published_deep_control.py', preprocessing=ZERO + STD,
@@ -101,11 +117,33 @@ def first(r, *keys, default=''):
 
 def labels(r, folder):
     if 'train_variant' in r:
-        return r['train_variant'], f'test rows not flagged by {r.get("test_set", "")}'.replace('by R1', 'by R1')
+        return r['train_variant'], f'test rows not flagged by {r.get("test_set", "")}'
     if 'train_cleaning' in r:
         return r['train_cleaning'], r.get('test_cleaning', r['train_cleaning'])
+    if r.get('condition') in SYM:                       # symmetric_r1: training and test labels alike
+        return SYM[r['condition']], SYM[r['condition']]
+    if isinstance(r.get('labels'), str):                # leave_one_subattack_out (raw / r1)
+        return r['labels'], r['labels']
+    if 'variant' in r and 'label' in r:                 # variant_seeds: rule variant, cleaned jointly
+        v = f'{r["label"]} ({r["variant"]})'
+        return v, v
     c = first(r, 'cleaning', 'variant', default='raw')
     return c, c
+
+
+def configuration(r, model):
+    """Model settings: the configuration named by the run, else the fixed settings of its script."""
+    cfg = first(r, 'config_tag', default='')
+    if not cfg and model in TREE_CFG:
+        cfg = TREE_CFG[model]
+    if not cfg and model in NET_CFG:
+        epochs = first(r, 'max_epochs', default='')
+        cfg = NET_CFG[model] + '; ' + (r.get('protocol') or 'earlystop') + (f', at most {epochs} epochs' if epochs else '')
+    elif r.get('protocol'):
+        cfg += '; ' + r['protocol']
+    if isinstance(r.get('mlp_config'), dict):
+        cfg = (cfg + '; ' if cfg else '') + r['mlp_config'].get('tag', '')
+    return cfg
 
 
 def split_of(r, folder):
@@ -154,23 +192,50 @@ def main():
                 r = json.loads(js.read_text(encoding='utf-8'))
             except Exception:
                 continue
-            if not isinstance(r, dict) or 'macro_f1' not in r:
+            if not isinstance(r, dict):
                 continue
+            notes = ''
+            if 'macro_f1' not in r:
+                if 'recall_unseen' not in r:                # summaries and diagnostics, not model runs
+                    continue
+                notes = (f'held-out sub-attack {r.get("held_out_class")} / {r.get("held_out_subattack")}: recall '
+                         f'{r["recall_seen"]} when seen in training, {r["recall_unseen"]} when held out (no macro-F1)')
             tr, te = labels(r, folder)
             pred, model_file = stored(js)
-            cfg = first(r, 'config_tag', 'protocol', default='')
-            if isinstance(r.get('mlp_config'), dict):
-                cfg = (cfg + '; ' if cfg else '') + r['mlp_config'].get('tag', '')
+            model = first(r, 'model', default=d.get('model', ''))
+            seed = first(r, 'seed', 'model_seed', default=d.get('seed', ''))
+            if model == 'XGBoost' and 'seed' not in r:
+                notes = (notes + '; ' if notes else '') + 'XGBoost: training does not depend on the seed'
             rows.append({
                 'run': js.relative_to(RES).with_suffix('').as_posix(), 'folder': folder, 'script': d['script'],
-                'model': first(r, 'model', default=d.get('model', '')), 'configuration': cfg,
-                'training_seed': first(r, 'seed', default=''), 'sample': d.get('sample', SAMPLE),
+                'model': model, 'configuration': configuration(r, model),
+                'training_seed': seed, 'sample': d.get('sample', SAMPLE),
                 'features': first(r, 'feature_set', default='81 flow features'),
                 'preprocessing': d['preprocessing'], 'class_weights': first(r, 'weights', default='balanced'),
                 'split': split_of(r, folder), 'training_labels': tr, 'test_labels': te,
                 'n_train': first(r, 'n_train', default=''), 'n_test': first(r, 'n_test', default=''),
                 'macro_f1': r.get('macro_f1'), 'balanced_accuracy': r.get('balanced_accuracy'),
-                'accuracy': r.get('accuracy'), 'predictions': pred, 'stored_model': model_file})
+                'accuracy': r.get('accuracy'), 'predictions': pred, 'stored_model': model_file, 'notes': notes})
+    # the 14 XGBoost runs of the rule-sensitivity pilot are stored inside one file (variant -> split design)
+    rs = RES / 'split_pilot' / 'rule_sensitivity.json'
+    if rs.exists():
+        designs = {'A_random': 'random 70/15/15, stratified by class (split seed 42)',
+                   'D_temporal_subattack': 'temporal 70/15/15 within capture groups'}
+        for variant, parts in json.loads(rs.read_text(encoding='utf-8')).items():
+            for dsg, m in parts.items():
+                if dsg not in designs:
+                    continue
+                rows.append({
+                    'run': f'split_pilot/rule_sensitivity#{variant}/{dsg}', 'folder': 'split_pilot',
+                    'script': 'experiments/rule_sensitivity.py', 'model': 'XGBoost',
+                    'configuration': TREE_CFG['XGBoost'] + ' (pilot_temporal_split.fit_eval)', 'training_seed': SEED42,
+                    'sample': SAMPLE, 'features': '81 flow features', 'preprocessing': MEDIAN, 'class_weights': 'balanced',
+                    'split': designs[dsg], 'training_labels': f'rule variant {variant} (flagged rows removed before the split)',
+                    'test_labels': f'rule variant {variant}', 'n_train': m.get('n_train', ''), 'n_test': m.get('n_test', ''),
+                    'macro_f1': m.get('macro_f1'), 'balanced_accuracy': m.get('balanced_accuracy'),
+                    'accuracy': m.get('accuracy'), 'predictions': 'not stored',
+                    'stored_model': 'not stored (refit from the script, configuration and seed)',
+                    'notes': 'XGBoost: training does not depend on the seed'})
     with open(OUT / 'runs.csv', 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader(); w.writerows(rows)
@@ -183,11 +248,16 @@ def main():
     figrows = []
     for src in sorted((ROOT / 'figures' / 'values').glob('mid_F*_values.json')) if (ROOT / 'figures' / 'values').exists() else []:
         v = json.loads(src.read_text(encoding='utf-8'))
-        if not isinstance(v.get('figure'), dict):
-            continue
-        fid = v['figure'].get('printed', src.stem)
-        for k, s in (v.get('sources') or {}).items():
-            figrows.append({'figure': fid, 'part': k, 'source': s, 'values_file': src.relative_to(ROOT).as_posix()})
+        fig = v.get('figure')
+        fid = fig.get('printed', src.stem) if isinstance(fig, dict) else str(v.get('printed_as') or fig or src.stem)
+        vf = src.relative_to(ROOT).as_posix()
+        if v.get('sources'):
+            for k, s in v['sources'].items():
+                figrows.append({'figure': fid, 'part': k, 'source': s, 'values_file': vf})
+        else:                                           # no 'sources' key: the result folders its values cite
+            cited = sorted({p.rsplit('/', 1)[0] for p in re.findall(r'results_2026_03_03/[\w./-]+', json.dumps(v))})
+            for p in cited or ['study design: counts from the result folders listed in paper_map.csv']:
+                figrows.append({'figure': fid, 'part': 'values from', 'source': p, 'values_file': vf})
     if figrows:
         with open(OUT / 'figures.csv', 'w', newline='', encoding='utf-8') as f:
             w = csv.DictWriter(f, fieldnames=list(figrows[0])); w.writeheader(); w.writerows(figrows)

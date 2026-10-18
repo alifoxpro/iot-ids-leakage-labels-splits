@@ -987,11 +987,314 @@
    "note": "no attack flow removed, hence no packet; Table 3 gives flows only"
   }
  ],
+ "checked_against_full_manuscript": [
+  {
+   "quantity": "(a) DoS capture days",
+   "block": 24,
+   "phrase": "DoS in August 2022"
+  },
+  {
+   "quantity": "(a) DDoS capture days",
+   "block": 24,
+   "phrase": "the four DDoS groups on separate days between 6 September and 29 November 2022"
+  },
+  {
+   "quantity": "(a) Benign capture days",
+   "block": 24,
+   "phrase": "Benign on 7–8 October 2022"
+  },
+  {
+   "quantity": "(a) Recon and SQL Injection capture days",
+   "block": 24,
+   "phrase": "Recon and SQL Injection on 3–4 October 2022"
+  },
+  {
+   "quantity": "(a) Mirai capture days",
+   "block": 24,
+   "phrase": "Mirai in January 2023"
+  },
+  {
+   "quantity": "(a) XSS and Uploading capture day",
+   "block": 24,
+   "phrase": "(XSS) and Uploading on 14 February 2023"
+  },
+  {
+   "quantity": "(b) packet shares of protocol 0",
+   "block": 27,
+   "phrase": "carry 99.7% (ICMP Flood), 94.4% (ICMP Fragmentation) and 98.6% (Mirai, a GRE flood) of all packets, against 2.5% in Benign"
+  },
+  {
+   "quantity": "(b) flow shares of protocol 0, ICMP floods",
+   "block": 27,
+   "phrase": "2–4% protocol-0 flows"
+  },
+  {
+   "quantity": "(b) flow share of protocol 0, Benign",
+   "block": 27,
+   "phrase": "and 2% protocol 0 in Benign"
+  },
+  {
+   "quantity": "(b) flow share of protocol 0, Mirai",
+   "block": 27,
+   "phrase": "the 2–4% of flows with protocol 0 carry"
+  },
+  {
+   "quantity": "(c) BruteForce: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: BruteForce | 92.87 | 64.16 | 46.06 | 16.05"
+  },
+  {
+   "quantity": "(c) DDoS ACK Frag.: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DDoS ACK Frag. | 13.73 | 2.57 | 11.86 | 0.58"
+  },
+  {
+   "quantity": "(c) DDoS HTTP Flood: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DDoS HTTP Flood | 3.17 | 2.47 | 0.86 | 1.04"
+  },
+  {
+   "quantity": "(c) DDoS ICMP Flood: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DDoS ICMP Flood | 91.53 | 58.24 | 44.47 | 14.03"
+  },
+  {
+   "quantity": "(c) DDoS ICMP Frag.: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DDoS ICMP Frag. | 97.13 | 56.12 | 49.81 | 73.82"
+  },
+  {
+   "quantity": "(c) DoS HTTP Flood: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DoS HTTP Flood | 2.95 | 1.97 | 1.17 | 0.12"
+  },
+  {
+   "quantity": "(c) DoS SYN Flood: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DoS SYN Flood | 1.43 | 0.95 | 0.59 | 0.20"
+  },
+  {
+   "quantity": "(c) DoS UDP Flood: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DoS UDP Flood | 5.47 | 3.81 | 2.54 | 0.34"
+  },
+  {
+   "quantity": "(c) Mirai: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: Mirai | 96.59 | 57.85 | 58.45 | 3.75"
+  },
+  {
+   "quantity": "(c) Recon: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: Recon | 82.75 | 55.93 | 32.36 | 54.56"
+  },
+  {
+   "quantity": "(c) ARP Spoofing: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: ARP Spoofing | 96.07 | 55.60 | 45.95 | 31.30"
+  },
+  {
+   "quantity": "(c) DNS Spoofing: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: DNS Spoofing | 60.21 | 57.96 | 4.71 | 2.64"
+  },
+  {
+   "quantity": "(c) SQL Injection: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: SQL Injection | 89.85 | 62.12 | 34.27 | 57.31"
+  },
+  {
+   "quantity": "(c) Uploading: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: Uploading | 92.36 | 52.89 | 45.03 | 3.34"
+  },
+  {
+   "quantity": "(c) XSS: any, R1, R2, R3 (%)",
+   "block": 41,
+   "phrase": "row: XSS | 93.01 | 65.47 | 36.01 | 3.46"
+  },
+  {
+   "quantity": "(c) any rule, floods",
+   "block": 40,
+   "phrase": "The rules flag only 1.4–5.5% of the DoS floods and 3.2% of DDoS HTTP Flood, and 13.7% of DDoS ACK Fragmentation"
+  },
+  {
+   "quantity": "(c) any rule, minority captures",
+   "block": 40,
+   "phrase": "82.8% of Recon, 89.9–93.0% of the three Web-Based sub-attacks, 92.9% of BruteForce, 91.5% of ICMP Flood, 96.1% of ARP Spoofing, 96.6% of Mirai and 97.1% of ICMP Fragmentation flows match at least one rule"
+  },
+  {
+   "quantity": "(c) any rule, DNS Spoofing",
+   "block": 40,
+   "phrase": "reaches 60.2%"
+  },
+  {
+   "quantity": "(c) R1, minority captures",
+   "block": 40,
+   "phrase": "R1 alone already flags 52.9–65.5% of the flows of each of these captures"
+  },
+  {
+   "quantity": "(d) BruteForce: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: BruteForce | 3,619 | 79 (2.2) | 0.0 | 6.1 | 30.6"
+  },
+  {
+   "quantity": "(d) SQL Injection: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: SQL Injection | 6,603 | 484 (7.3) | 0.0 | 19.4 | 72.2"
+  },
+  {
+   "quantity": "(d) XSS: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: XSS | 3,377 | 96 (2.8) | 0.0 | 8.2 | 40.7"
+  },
+  {
+   "quantity": "(d) Uploading: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: Uploading | 1,348 | 59 (4.4) | 0.0 | 9.3 | 57.3"
+  },
+  {
+   "quantity": "(d) DNS Spoofing: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: DNS Spoofing | 74,856 | 1,862 (2.5) | 21.7 (R3) | 5.9 | 4.9"
+  },
+  {
+   "quantity": "(d) ARP Spoofing: flows, attack flows, removed, kept attack share R1 / all",
+   "block": 46,
+   "phrase": "row: ARP Spoofing | 82,382 | 438 (0.5) | 33.3 (R1, R3) | 0.8 | 9.0"
+  },
+  {
+   "quantity": "(d) DDoS ACK Frag.: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DDoS ACK Frag. | 2,450,086 | 62.9 / 65.7 | 0.08 / 0.05 (R1, R2, R3)"
+  },
+  {
+   "quantity": "(d) DDoS HTTP Flood: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DDoS HTTP Flood | 505,720 | 65.7 / 56.4 | 0.00 / 0.00"
+  },
+  {
+   "quantity": "(d) DDoS ICMP Flood: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DDoS ICMP Flood | 202,251 | 0.5 / 49.6 | 0.00 / 0.00"
+  },
+  {
+   "quantity": "(d) DDoS ICMP Frag.: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DDoS ICMP Frag. | 320,757 | 0.4 / 49.8 | 36.17 / 0.02 (R3)"
+  },
+  {
+   "quantity": "(d) DoS HTTP Flood: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DoS HTTP Flood | 1,642,744 | 55.4 / 49.6 | 0.00 / 0.00"
+  },
+  {
+   "quantity": "(d) DoS SYN Flood: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DoS SYN Flood | 7,999,807 | 73.3 / 79.5 | 0.01 / 0.01 (R2)"
+  },
+  {
+   "quantity": "(d) DoS UDP Flood: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: DoS UDP Flood | 5,210,536 | 12.3 / 62.0 | 0.01 / 0.01 (R2)"
+  },
+  {
+   "quantity": "(d) Mirai: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: Mirai | 174,588 | 0.4 / 50.8 | 0.78 / 0.78 (R3)"
+  },
+  {
+   "quantity": "(d) Recon: removed share of the attack flows / packets",
+   "block": 48,
+   "phrase": "row: Recon | 442,158 | 18.2 / 19.3 | 8.17 / 8.14 (R2, R3)"
+  },
+  {
+   "quantity": "(d) ICMP Fragmentation, flows",
+   "block": 49,
+   "phrase": "and 36.2% of its attack flows"
+  },
+  {
+   "quantity": "(d) ICMP Fragmentation, packets",
+   "block": 49,
+   "phrase": "they carry 0.02% of the attack packets"
+  },
+  {
+   "quantity": "(d) ARP Spoofing, flows and packets",
+   "block": 44,
+   "phrase": "R1 and R3 remove the 146 ARP pseudo-flows (33.3% of the ARP Spoofing attack flows and 96% of their packets"
+  },
+  {
+   "quantity": "(d) DNS Spoofing, flows",
+   "block": 44,
+   "phrase": "R3 removes 404 of the 1,862 DNS Spoofing attack flows (21.7%"
+  },
+  {
+   "quantity": "(d) kept attack share, BruteForce and web",
+   "block": 44,
+   "phrase": "at least 31–72% of the remaining BruteForce and web flows, and after R1 alone at least 6.1–19.4%"
+  },
+  {
+   "quantity": "(e) sample size",
+   "block": 51,
+   "phrase": "stratified random sample of 472 flows"
+  },
+  {
+   "quantity": "(e) no human verification",
+   "block": 51,
+   "phrase": "No human verified these labels."
+  },
+  {
+   "quantity": "(e) 20 flagged and 20 kept per class and rule",
+   "block": 51,
+   "phrase": "20 flows flagged and 20 flows kept by the rule"
+  },
+  {
+   "quantity": "(e) BruteForce: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: BruteForce | 0/20/0; 1.00 (0.84–1.00) | 6/12/2; 0.33 (0.16–0.56)"
+  },
+  {
+   "quantity": "(e) DDoS: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: DDoS | 8/12/0; 0.60 (0.39–0.78) | 19/0/1; 1.00 (0.83–1.00)"
+  },
+  {
+   "quantity": "(e) DoS: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: DoS | 0/20/0; 1.00 (0.84–1.00) | 20/0/0; 1.00 (0.84–1.00)"
+  },
+  {
+   "quantity": "(e) Mirai: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: Mirai | 0/19/1; 1.00 (0.83–1.00) | 6/8/6; 0.43 (0.21–0.67)"
+  },
+  {
+   "quantity": "(e) Recon: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: Recon | 0/20/0; 1.00 (0.84–1.00) | 16/2/2; 0.89 (0.67–0.97)"
+  },
+  {
+   "quantity": "(e) Spoofing: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: Spoofing | 0/19/1; 1.00 (0.83–1.00) | 0/10/10; 0.00 (0.00–0.28)"
+  },
+  {
+   "quantity": "(e) Web-Based: flagged a/b/u, precision (Wilson 95%); kept a/b/u, attack share",
+   "block": 54,
+   "phrase": "row: Web-Based | 0/20/0; 1.00 (0.84–1.00) | 13/6/1; 0.68 (0.46–0.85)"
+  },
+  {
+   "quantity": "(e) precision outside DDoS",
+   "block": 52,
+   "phrase": "the background precision of the union is 1.00, with lower 95% bounds of 0.83–0.84"
+  }
+ ],
  "sources": {
   "a": "results_2026_03_03/q1_revision/day_disjoint/days.json (conditions.raw.groups[g].capture_days), cross-checked with (manuscript source) (first / last flow)",
   "b": "results_2026_03_03/split_pilot/protocol_packet_share.json (flow_share[\"0\"], packet_share[\"0\"])",
   "c": "results_2026_03_03/split_pilot/relabel_summary.json (per_group: 1 - kept / flows_read, R1_external, R2_service, R3_benign_pair); names from (manuscript source)",
   "d": "results_2026_03_03/q1_revision/rule_validation2/rule_validation2.json (summary[c].attacker_victim), unrounded counts from rule_validation2/captures/*.json (definitions.attacker_victim.rules)",
-  "e": "results_2026_03_03/q1_revision/rule_validation2/llm_audit/audit_scores.json (per_class[c].any); Wilson 95% intervals recomputed from the counts"
+  "e": "results_2026_03_03/q1_revision/rule_validation2/llm_audit/audit_scores.json (per_class[c].any); Wilson 95% intervals recomputed from the counts",
+  "text": "(manuscript source)"
  }
 }

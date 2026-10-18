@@ -1,0 +1,9 @@
+{
+ "note": "Adjudicator decisions for the flows on which annotators A and B disagreed (the adjudicator saw only the README, the evidence brief of the class, the batch file and the two decisions with their evidence). Every other flow keeps the common decision of A and B.",
+ "adjudicated": {
+  "MI-012": {"decision": "unclear", "evidence": "adjudicated: Unlisted .129 to 192.168.1.1 UDP 10008, 5x128 B in 5 us, no reply, after window; not GRE/proto0 flood, but no recognisable ordinary service"},
+  "MI-055": {"decision": "background", "evidence": "adjudicated: Unlisted .163 to gateway (not a victim), 20 one-way proto0 pkts spread over 108 s (0.18/s vs 540/s flood median); a flood on this pair would fill this flow; no attack role"},
+  "SP-005": {"decision": "background", "evidence": "adjudicated: TCP SYN from .121 to .35:443 refused by RST/ACK, no payload; neither host is a DNS responder; not UDP 53; redirect to a non-listening host is unsupported."},
+  "SP-048": {"decision": "background", "evidence": "adjudicated: Device-to-device heartbeat .206:55444<->.210:55444, fixed 16 B request/8 B reply, ~2/s both ways; no spoofer .89, not ARP/ICMP, outside victim-gateway relay path"}
+ }
+}

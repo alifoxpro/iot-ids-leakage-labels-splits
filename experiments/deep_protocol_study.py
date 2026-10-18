@@ -42,6 +42,11 @@ Training (identical for every model)
   Checked on synthetic data (CPU and GPU): the loop reproduces the weights of _train_pytorch_model exactly,
   and run_one(--protocol earlystop) reproduces deep_split_noise_study.run_one exactly (identical test
   predictions for ResNet1D, GRU and Transformer, random/raw and temporal/r1).
+  Round 2 (2026-10-18): a validation chunk whose half-precision (AMP) loss is not finite is evaluated again in
+  single precision, as the test pass always is. With the in-period validation sample of shared_budget_study.py
+  one R1 validation flow (feat_min 1.2e5 standard deviations from the training mean) overflowed fp16 and made
+  the validation loss NaN in every epoch. Chunks with a finite fp16 loss are computed exactly as before, so every
+  earlier run (all with finite validation losses) is unchanged; info['val_chunks_fp32'] counts the repeats.
   --protocol earlystop  the paper's protocol: the LR schedule monitors the validation loss; training
                         stops after 10 epochs without a lower validation loss and the weights of the
                         best epoch are restored.
@@ -113,7 +118,7 @@ feature matrix is read column by column (~1.2 GB); the training / validation / t
 (~1.2 GB) and the full matrix is released before the last fit of a process, so one fit per process
 (--max-fits 1) peaks at about 3 GB of RAM (incl. the CUDA runtime). --plan lists the runs and their status without loading data.
 
-Run (PowerShell, from the project folder). Approximate times on the
+Run (PowerShell, from the project folder <project folder>). Approximate times on the
 RTX 5070 laptop GPU, from the fit times of deep_split (35-47 s per epoch for ResNet1D / GRU, 47-59 s for the
 Transformer, plus about 1 min to load the data in every process): ResNet1D / GRU up to about 23 min,
 Transformer up to about 30 min per 30-epoch run. MLP and CNN1D_Hossain: a short timing on synthetic data
@@ -344,6 +349,7 @@ def train(net, Xtr, ytr, Xva, yva, class_weights, epochs, batch_size, lr, protoc
     scaler = torch.amp.GradScaler('cuda') if use_amp else None
 
     best_val_loss, best_state, best_epoch, wait, stopped = float('inf'), None, None, 0, False
+    val_chunks_fp32 = 0
     hist = {k: [] for k in ('train_loss', 'train_acc', 'val_loss', 'val_acc', 'val_macro_f1', 'lr_after_epoch',
                             'seconds', 'val_seconds')}
     for epoch in range(epochs):
@@ -383,6 +389,10 @@ def train(net, Xtr, ytr, Xva, yva, class_weights, epochs, batch_size, lr, protoc
                 with torch.amp.autocast('cuda', enabled=use_amp):
                     logits_vb = net(xvb)
                     vl = criterion(logits_vb, yvb).item()
+                if use_amp and not np.isfinite(vl):              # fp16 overflow on an extreme flow: this chunk
+                    logits_vb = net(xvb)                         # again in fp32 (module docstring, round 2)
+                    vl = criterion(logits_vb, yvb).item()
+                    val_chunks_fp32 += 1
                 val_loss_sum += vl * xvb.size(0)
                 pv = logits_vb.argmax(dim=1)
                 val_correct += (pv == yvb).sum().item()
@@ -431,7 +441,7 @@ def train(net, Xtr, ytr, Xva, yva, class_weights, epochs, batch_size, lr, protoc
             'val_loss_selected': hist['val_loss'][best_epoch - 1],
             'val_macro_f1_selected': hist['val_macro_f1'][best_epoch - 1],
             'val_macro_f1_max': max(hist['val_macro_f1']),
-            'val_seconds': float(sum(hist['val_seconds'])), 'amp': use_amp}
+            'val_seconds': float(sum(hist['val_seconds'])), 'amp': use_amp, 'val_chunks_fp32': val_chunks_fp32}
     return net, hist, info
 
 

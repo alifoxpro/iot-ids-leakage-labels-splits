@@ -17,6 +17,7 @@ same language model; model, dates and source of this record: `provenance.json`.
 | `audit_template_blind_filled.md`, `audit_scores.json`, `audit_scores.csv` | the final decisions in the audit template and their scores per class and rule |
 | `audit_summary.json` | precision, kept attack share, estimated false-removal rate with Jeffreys intervals (Monte Carlo and, without Monte Carlo error, by numerical integration; the manuscript uses the latter) |
 | `provenance.json` | language model, dates and roles of the annotation |
+| `first_pass_20260930/` | the first annotation pass: the workflow was interrupted while only the final assembly was pending and was resumed, so batches 10-19 of A and B were annotated a second time in new sessions with the same instructions; the labels above are those of the second pass. 11 of the 472 final decisions differ from the first pass, all between unclear and background (none involves attack); see its `README.md` |
 
 `../audit_author_review_50.md` and `../audit_author_review_50.xlsx` are unused templates for a planned check of
 50 flows by the author; that check was not carried out and the templates are empty.
