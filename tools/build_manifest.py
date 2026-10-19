@@ -273,6 +273,38 @@ def main():
                     'accuracy': m.get('accuracy'), 'predictions': 'not stored',
                     'stored_model': 'not stored (refit from the script, configuration and seed)',
                     'notes': 'XGBoost: training does not depend on the seed'})
+    # the XGBoost fits of the split pilot, of the sub-attack split study and of the cleaning comparison of
+    # relabel_background.py, stored inside their summary files (the 0.368 and 29.5% of Section 5.2 come from the pilot)
+    designs2 = {'A_random': 'random 70/15/15, stratified by class (split seed 42)',
+                'B_temporal': 'temporal 70/15/15 within classes', 'B_temporal_class': 'temporal 70/15/15 within classes',
+                'D_temporal_subattack': 'temporal 70/15/15 within capture groups',
+                'C_unseen_uploading': 'training rows of the temporal split within classes without the Uploading '
+                                      'sub-attack; test: all 1,328 Uploading flows'}
+    for fname, script, stages in (('pilot_results.json', 'experiments/pilot_temporal_split.py', None),
+                                  ('subattack_results.json', 'experiments/temporal_split_by_subattack.py', None),
+                                  ('relabel_summary.json', 'experiments/relabel_background.py', ('before', 'after'))):
+        p = RES / 'split_pilot' / fname
+        if not p.exists():
+            continue
+        js = json.loads(p.read_text(encoding='utf-8'))
+        for stage, blk in ([(None, js)] if stages is None else [(s, js[s]) for s in stages if s in js]):
+            for dsg, m in blk.items():
+                if dsg not in designs2 or not isinstance(m, dict):
+                    continue
+                lab = 'flows flagged by R1, R2 or R3 removed before the split' if stage == 'after' else 'raw folder labels'
+                rows.append({
+                    'run': f'split_pilot/{p.stem}#{stage + "/" if stage else ""}{dsg}', 'folder': 'split_pilot',
+                    'script': script, 'model': 'XGBoost',
+                    'configuration': TREE_CFG['XGBoost'] + ' (pilot_temporal_split.fit_eval)', 'training_seed': SEED42,
+                    'sample': SAMPLE, 'features': '81 flow features', 'preprocessing': MEDIAN, 'class_weights': 'balanced',
+                    'split': designs2[dsg],
+                    'training_labels': lab + (' (Uploading flows left out)' if dsg == 'C_unseen_uploading' else ''),
+                    'test_labels': lab, 'n_train': m.get('n_train', ''), 'n_test': m.get('n_test', ''),
+                    'macro_f1': m.get('macro_f1'), 'balanced_accuracy': m.get('balanced_accuracy'),
+                    'accuracy': m.get('accuracy'), 'predictions': 'not stored',
+                    'stored_model': 'not stored (refit from the script, configuration and seed)',
+                    'notes': (f'Web-Based recall of the held-out Uploading flows {m["web_based_recall"]:.4f}'
+                              if 'web_based_recall' in m else 'XGBoost: training does not depend on the seed')})
     with open(OUT / 'runs.csv', 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader(); w.writerows(rows)

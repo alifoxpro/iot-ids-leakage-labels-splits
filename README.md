@@ -69,9 +69,13 @@ and record count, to check the download.
 | Validation of the rules and the audit of 472 flows (Section 3.3, Table 2, Fig. 2) | `rule_validation.py`, `rule_validation2.py` | `q1_revision/rule_validation/`, `q1_revision/rule_validation2/` |
 | Main factorial: four protocol conditions, eight models, seeds (Sections 4.2 and 5.2–5.4, Table 6, Fig. 5) | `extra_baselines.py`, `deep_split_noise_study.py`, `tree_seeds_proba.py`, `tree_seeds_summary.py`, `deep_protocol_study.py`, `deep_protocol_summary.py` | `extra_baselines/`, `deep_split/`, `q1_revision/tree_seeds/`, `q1_revision/deep_protocol/` |
 | Identifier columns and the published setting (Sections 4.3 and 5.1, Fig. 4) | `identifier_leakage.py`, `published_protocol_control.py`, `published_deep_control.py` | `identifier_leakage_v2/`, `q1_revision/published_control/`, `q1_revision/published_deep/` |
-| Further split designs: split seeds, cut points, day-disjoint split, held-out sub-attacks (Section 5.2, Table 5, Fig. 6) | `split_replication.py`, `day_disjoint_split.py`, `leave_one_subattack_out.py` | `q1_revision/split_replication/`, `q1_revision/day_disjoint/`, `q1_revision/leave_one_subattack_out/` |
+| Split controls: split seeds, cut points, day-disjoint split, held-out sub-attacks (Section 5.2, Table 5, Fig. 6) | `split_replication.py`, `day_disjoint_split.py`, `leave_one_subattack_out.py` | `q1_revision/split_replication/`, `q1_revision/day_disjoint/`, `q1_revision/leave_one_subattack_out/` |
+| Direction of time and test block: reversed, middle-block and rolling-origin designs (Sections 4.3 and 5.2, Table 4) | `rolling_origin.py` | `q1_revision/rolling_origin/` |
 | Training-only and symmetric cleaning (Section 5.3, Table 5) | `cleaning_train_only.py`, `train_only_bootstrap.py`, `variant_seeds.py`, `symmetric_r1.py` | `q1_revision/cleaning_train_only/`, `q1_revision/train_only_bootstrap/`, `q1_revision/variant_seeds/`, `q1_revision/symmetric_r1/` |
-| Uncertainty, drift, packet- and window-level detection (Sections 4.4 and 5.5) | `bootstrap_ci.py`, `temporal_drift_analysis.py`, `drift_calibration.py`, `revision_analyses.py`, `revision_analyses2.py` | `tree_protocol/`, `split_pilot/`, `q1_revision/drift_calibration/`, `q1_revision/analyses/`, `q1_revision/analyses2/` |
+| R3 reference fixed on the Benign training flows (Section 5.3, "R3 reference") | `r3_train_reference.py` | `q1_revision/r3_train_reference/` |
+| Shared tuning budget (Sections 4.3 and 5.4, Table 7) | `shared_budget_study.py` | `q1_revision/shared_budget/` |
+| Sampling design and estimands of the audit (Section 3.3, Table 2) | `audit_design.py` | `q1_revision/rule_validation2/design/` |
+| Uncertainty, drift, packet- and window-level detection; family of 40 comparisons and block bootstrap (Sections 4.4, 5.2-5.5) | `bootstrap_ci.py`, `temporal_drift_analysis.py`, `drift_calibration.py`, `revision_analyses.py`, `revision_analyses2.py`, `bootstrap_family.py` | `tree_protocol/`, `split_pilot/`, `q1_revision/drift_calibration/`, `q1_revision/analyses/`, `q1_revision/analyses2/`, `q1_revision/bootstrap_family/` |
 | Replication on CICIDS2017 (Sections 4.3, 5.1 and 5.6) | `cicids2017_replication.py` | `q1_revision/cicids2017/` |
 | Per-flow flags and split assignments (Data availability) | `export_flags.py` | `q1_revision/export_flags/` |
 
@@ -149,7 +153,14 @@ Numbering in older result files: `cicids2017/summary.json` (key `temporal (Algor
 `cicids2017/split_temporal_F0.json` / `split_temporal_F78.json` (`split_desc`) were written when the temporal split
 within capture groups was Algorithm 2 of the manuscript; there, 'Algorithm 2' means that split (Section 3.4 of the
 submitted manuscript). The result files are kept as written; the script now uses the new wording. Some result files
-also record the absolute local paths of the machine on which they were written.
+also record the absolute local paths of the machine on which they were written. Likewise, table and figure numbers in
+the docstrings and comments of scripts and run packages written for the earlier review (for example Table 4 in
+`variant_seeds.py`, `cleaning_train_only.py`, `export_flags.py` and `runs/P3b_variants.ps1`, Table 7 in
+`revision_analyses.py`, Table 8 in `cleaning_train_only.py` and `train_only_bootstrap.py`) and the table and block
+numbers in the `checked_against_full_manuscript`, `from` and `note` entries of `figures/values/*.json` refer to the
+longer full version of the manuscript, not to the IJIES paper. In the IJIES paper, Table 4 gives the further split
+designs, Table 5 the controls (former Fig. 6a), Table 6 the levels of the eight models (former Fig. 5a-c), Table 7 the
+shared tuning budget and Table 8 the diagnostic questions.
 
 ## Per-flow flags and split assignments
 
@@ -367,9 +378,11 @@ DOI will follow on acceptance of the paper.
 
 ## Manifest and evaluation check
 
-`manifest/runs.csv` has one line per model run (703 runs: every result file with a macro-F1, the 24 held-out
-sub-attack runs, which report recalls, the 14 rule-sensitivity runs of `split_pilot/rule_sensitivity.json` and the 76
-shared-budget runs; 605 with stored predictions, 66 with a stored model): result file, script, model,
+`manifest/runs.csv` has one line per model run (713 runs: every result file with a macro-F1, the 24 held-out
+sub-attack runs, which report recalls, the 14 rule-sensitivity runs of `split_pilot/rule_sensitivity.json`, the 10
+XGBoost fits stored inside `split_pilot/pilot_results.json`, `subattack_results.json` and `relabel_summary.json`
+(among them the within-class split and the held-out Uploading fit of Section 5.2) and the 76 shared-budget runs; 605
+with stored predictions, 66 with a stored model): result file, script, model,
 configuration, training seed, sample (the 3,626,502 flows of `export_flags/flow_flags.csv.gz`, whose SHA-256 is in
 `manifest/manifest.json`; the CICIDS2017 and published-setting samples are named), features, preprocessing (missing
 values set to zero, or training medians for the XGBoost pilot and cleaning-variant analyses), class weights, split design
@@ -398,7 +411,11 @@ and shared-budget studies, the superseded first-pass runs included; largest diff
 is computed from and its source files): F1 = Fig. 1 (study design), F5 = Fig. 2, F2 = Fig. 3, F4 = Fig. 4, F3 = Fig. 5
 and Table 6, F6 = Fig. 6 and Table 5. In the revised manuscript the numeric panels of the former Figs. 5a-c (the
 levels of the three metrics) and 6a (the controls) are printed as Tables 6 and 5, with the values of these files; the
-`figure` column of `manifest/figures.csv` gives the printed table or figure of each part. The scripts that draw the
+`figure` column of `manifest/figures.csv` gives the printed table or figure of each part. Inside
+`mid_F3_values.json` and `mid_F6_values.json`, the panel letters and the `figure` header (file, size, design) are those
+of the first-round composite drawings: in `mid_F3_values.json`, panels d and e (for example in
+`rounding_differences_d_e_vs_a`) are Fig. 5a and 5b and the `levels` are Table 6; in `mid_F6_values.json`, panel b
+(`b_held_out_subattacks`, `panel_b_printed`) is Fig. 6 and `table_a` is Table 5. The scripts that draw the
 figures also assert every printed number against the manuscript sources and are therefore kept with them.
 
 ## Citation
