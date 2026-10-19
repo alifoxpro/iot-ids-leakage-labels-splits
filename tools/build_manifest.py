@@ -74,8 +74,10 @@ FOLDERS = {
     'q1_revision/symmetric_r1': dict(script='experiments/symmetric_r1.py', preprocessing=ZERO),
     'q1_revision/tree_seeds/runs': dict(script='experiments/tree_seeds_proba.py', preprocessing=ZERO),
     'q1_revision/variant_seeds': dict(script='experiments/variant_seeds.py', preprocessing=MEDIAN),
-    'q1_revision/shared_budget/tuning': dict(script='experiments/shared_budget_study.py', preprocessing=ZERO + STD),
-    'q1_revision/shared_budget/final': dict(script='experiments/shared_budget_study.py', preprocessing=ZERO + STD),
+    'q1_revision/shared_budget/tuning': dict(script='experiments/shared_budget_study.py', preprocessing=ZERO + STD,
+                                             seed=SEED42),           # XGBoost rows: seed-independent, random_state 42
+    'q1_revision/shared_budget/final': dict(script='experiments/shared_budget_study.py', preprocessing=ZERO + STD,
+                                            seed=SEED42),
 }
 ANALYSES = [
     ('split_pilot', 'experiments/pilot_temporal_split.py, temporal_split_by_subattack.py, diagnose_icmp_confusion.py, '
@@ -115,6 +117,26 @@ def first(r, *keys, default=''):
     return default
 
 
+# feature-set codes of the identifier controls (published_protocol_control.FSETS, cicids2017_replication.FSET_DESC),
+# for result files that name the code without its description
+FSET_DESC = {'cicids2017': {'F0': '77 flow features', 'F78': '77 flow features + Destination Port',
+                            'FT': '77 flow features + Destination Port + Timestamp',
+                            'FA': '77 flow features + all seven identifier columns'},
+             'default': {'F0': '81 flow features', 'FT': '81 flow features + Timestamp',
+                         'FA': '81 flow features + all seven identifier columns'}}
+
+
+def features_of(r, folder):
+    """'code: description' of a run's features ('81 flow features' when the result file names none)."""
+    fs = str(first(r, 'feature_set', default=''))
+    desc = r['features'] if isinstance(r.get('features'), str) else ''
+    if fs and not desc:
+        desc = FSET_DESC['cicids2017' if 'cicids2017' in folder else 'default'].get(fs, '')
+    if fs and desc and not desc.startswith(fs):
+        return f'{fs}: {desc}'
+    return fs or desc or '81 flow features'
+
+
 def labels(r, folder):
     if 'train_variant' in r:
         return r['train_variant'], f'test rows not flagged by {r.get("test_set", "")}'
@@ -124,6 +146,8 @@ def labels(r, folder):
         return SYM[r['condition']], SYM[r['condition']]
     if isinstance(r.get('labels'), str):                # leave_one_subattack_out (raw / r1)
         return r['labels'], r['labels']
+    if folder == 'q1_revision/published_deep':          # 'variant' is an input layout there, not a label mask
+        return 'raw (folder labels)', 'raw (folder labels)'
     if 'variant' in r and 'label' in r:                 # variant_seeds: rule variant, cleaned jointly
         v = f'{r["label"]} ({r["variant"]})'
         return v, v
@@ -143,7 +167,18 @@ def configuration(r, model):
         cfg += '; ' + r['protocol']
     if isinstance(r.get('mlp_config'), dict):
         cfg = (cfg + '; ' if cfg else '') + r['mlp_config'].get('tag', '')
+    if r.get('variant') in ('default', 'nopad', 'idsfirst'):          # published_deep input layouts
+        cfg = (cfg + '; ' if cfg else '') + f'input layout {r["variant"]}'
     return cfg
+
+
+def class_weights(r):
+    """'balanced', 'none' or 'sqrt' (never the name of a stored model file, which some runs keep under 'weights')."""
+    w = first(r, 'weighting', default='')
+    if not w:
+        v = r.get('weights')
+        w = v if isinstance(v, str) and not v.endswith(('.pt', '.json', '.txt')) else 'balanced'
+    return w
 
 
 def split_of(r, folder):
@@ -156,6 +191,8 @@ def split_of(r, folder):
     if isinstance(r.get('design_definition'), dict):
         d = r['design_definition']
         extra.append(f'train {d.get("train")} / test {d.get("test")}')
+    if isinstance(r.get('validation'), str) and r['validation'].startswith('in-period'):     # shared budget
+        extra.append(f'validation {r["validation"]}')
     return '; '.join([str(s)] + extra)
 
 
@@ -210,8 +247,8 @@ def main():
                 'run': js.relative_to(RES).with_suffix('').as_posix(), 'folder': folder, 'script': d['script'],
                 'model': model, 'configuration': configuration(r, model),
                 'training_seed': seed, 'sample': d.get('sample', SAMPLE),
-                'features': first(r, 'feature_set', default='81 flow features'),
-                'preprocessing': d['preprocessing'], 'class_weights': first(r, 'weights', default='balanced'),
+                'features': features_of(r, folder),
+                'preprocessing': d['preprocessing'], 'class_weights': class_weights(r),
                 'split': split_of(r, folder), 'training_labels': tr, 'test_labels': te,
                 'n_train': first(r, 'n_train', default=''), 'n_test': first(r, 'n_test', default=''),
                 'macro_f1': r.get('macro_f1'), 'balanced_accuracy': r.get('balanced_accuracy'),
@@ -244,16 +281,29 @@ def main():
         for p, s, c in ANALYSES:
             if (RES / p).exists():
                 w.writerow([f'results_2026_03_03/{p}', s, c])
-    # figures: sanitised copies of the source values written by the figure scripts (if present)
+    # figures: sanitised copies of the source values written by the figure scripts (if present). Round 2: the numeric
+    # panels of the former Figs. 5a-c and 6a are printed as Tables 6 and 5 (same values files); the dot plots of
+    # Fig. 5 and the held-out sub-attacks of Fig. 6 stay figures
+    def printed_as(fid, part):
+        if fid == 'Fig. 3':                  # the tree settings are no longer drawn: text of Section 4.2
+            return {'trees': 'Section 4.2 (text; formerly drawn in Fig. 3)'}.get(part, fid)
+        if fid == 'Fig. 5':
+            return {'levels': 'Table 6 (former Fig. 5a-c)', 'text': 'Fig. 5; Table 6'}.get(part, fid)
+        if fid == 'Fig. 6':
+            return {'held_out': fid, 'text': 'Fig. 6; Table 5'}.get(part, 'Table 5 (former Fig. 6a)')
+        return fid
     figrows = []
-    for src in sorted((ROOT / 'figures' / 'values').glob('mid_F*_values.json')) if (ROOT / 'figures' / 'values').exists() else []:
+    vals = ROOT / 'figures' / 'values'
+    # one file per figure; the glob alone is case-insensitive on Windows and would also take mid_figure_values.json
+    for src in sorted(p for p in vals.glob('mid_F*_values.json') if re.fullmatch(r'mid_F\d_values\.json', p.name)) \
+            if vals.exists() else []:
         v = json.loads(src.read_text(encoding='utf-8'))
         fig = v.get('figure')
         fid = fig.get('printed', src.stem) if isinstance(fig, dict) else str(v.get('printed_as') or fig or src.stem)
         vf = src.relative_to(ROOT).as_posix()
         if v.get('sources'):
             for k, s in v['sources'].items():
-                figrows.append({'figure': fid, 'part': k, 'source': s, 'values_file': vf})
+                figrows.append({'figure': printed_as(fid, k), 'part': k, 'source': s, 'values_file': vf})
         else:                                           # no 'sources' key: the result folders its values cite
             cited = sorted({p.rsplit('/', 1)[0] for p in re.findall(r'results_2026_03_03/[\w./-]+', json.dumps(v))})
             for p in cited or ['study design: counts from the result folders listed in paper_map.csv']:
@@ -265,7 +315,7 @@ def main():
         commit = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     except Exception:
         commit = ''
-    meta = {'commit_at_build': commit, 'sample_definition': 'results_2026_03_03/q1_revision/export_flags/flow_flags.csv.gz',
+    meta = {'version': 'v2.0', 'commit_at_build': commit, 'sample_definition': 'results_2026_03_03/q1_revision/export_flags/flow_flags.csv.gz',
             'sample_sha256': sha256(FLAGS) if FLAGS.exists() else None, 'runs': len(rows),
             'runs_with_predictions': sum(r['predictions'] != 'not stored' for r in rows),
             'runs_with_stored_model': sum(not r['stored_model'].startswith('not stored') for r in rows),

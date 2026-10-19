@@ -15,7 +15,8 @@ appears once in the sample (de-duplication on file and row) and is used in every
 (column selected_strata). 7 classes x 8 strata x 20 = 1,120 stratum slots give the 472 distinct flows.
 Inclusion probabilities
   within a stratum            pi_s = n_s / N_s (exact: bottom-k of i.i.d. uniform keys is an SRS)
-  of a flow in the 472        between max_s pi_s and min(1, sum_s pi_s) over the strata that contain it
+  of a flow in the 472        between max_s pi_s and min(1, sum_s pi_s) over the four strata that contain it (its
+                              rule flags; column member_strata), whether or not it was selected for each
                               (the selections share the keys, so they are positively dependent)
 Estimands (all per class; unclear decisions excluded unless stated; flows judged by the language-model audit,
 not verified by a human):
@@ -33,8 +34,8 @@ not verified by a human):
 Output: results_2026_03_03/q1_revision/rule_validation2/design/
           strata.csv      class x rule x status: N, n, pi, decisions (attack, background, unclear),
                           flows also selected for other strata
-          flows.csv       the 472 flows: class, capture, strata, pi per stratum, bounds of the overall pi,
-                          final decision
+          flows.csv       the 472 flows: class, capture, strata selected for, the four strata that contain it,
+                          pi per containing stratum, bounds of the overall pi, final decision
           estimands.csv   per class and rule: the three estimands with intervals, unclear excluded / as attack /
                           as background
           design.json     the description above and the totals (1,120 slots, 472 flows, 280 in the any-rule strata)
@@ -119,9 +120,15 @@ def main():
 
     flows = []
     for i, r in sample.iterrows():
-        ps = {k: pi[(r['class'], k)] for k in st[i]}
+        # every flow lies in four strata (flagged or kept by R1, by R2 and by R3; flagged by any rule or kept by all),
+        # given by its rule flags; the bounds of its overall inclusion probability run over all four, not only over the
+        # strata it was selected for (round 2, 2026-10-19: the first version used the selected strata only)
+        member = [f'{rule}:{"flagged" if str(r[rule]) == "True" else "kept"}' for rule in RULES]
+        assert set(st[i]) <= set(member), (r['sample_id'], st[i], member)
+        ps = {k: pi[(r['class'], k)] for k in member}
         flows.append({'sample_id': r['sample_id'], 'class': r['class'], 'capture': r['capture'], 'file': r['file'],
                       'row': r['row'], 'strata': ';'.join(st[i]), 'n_strata': len(st[i]),
+                      'member_strata': ';'.join(member),
                       'pi_by_stratum': json.dumps({k: round(v, 8) for k, v in ps.items()}),
                       'pi_lower': round(max(ps.values()), 8), 'pi_upper': round(min(1.0, sum(ps.values())), 8),
                       'in_any_rule_strata': any(k.startswith('any:') for k in st[i]), 'decision': r['decision']})

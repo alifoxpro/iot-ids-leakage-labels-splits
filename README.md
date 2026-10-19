@@ -54,7 +54,11 @@ The datasets are not included. Download them and place them under `data/`:
 | CICIDS2017 (replication; generated labelled flows) | https://www.unb.ca/cic/datasets/ids-2017.html | `data/cic-ids-2017/labelled-flows/` |
 
 CIC IoT-DIAD 2024 is used with its eight folder-level classes (Benign, BruteForce, DDOS, DOS, Mirai, Recon, Spoofing,
-Web-Based); the labels are taken from the folder names (`Label = NeedManualLabel` in the CSV files).
+Web-Based); the labels are taken from the folder names (`Label = NeedManualLabel` in the CSV files). Keep the folder
+layout of the download, `data/CIC IoT-DIAD 2024/<class>/[<sub-attack>/]<capture>.pcap_Flow.csv` (for example
+`DDOS/DDOS ICMP FLOOD/...`, `Web-Based/Uploading Attack/...`): the class folder gives the label and the sub-attack folder
+the capture group. `results_2026_03_03/q1_revision/export_flags/files.csv` lists every file that is read, with its path
+and record count, to check the download.
 
 ## Where to find each part of the paper
 
@@ -63,10 +67,10 @@ Web-Based); the labels are taken from the folder names (`Label = NeedManualLabel
 | Evidence of label noise, capture groups, protocol 0 (Section 3.1, Fig. 2) | `pilot_temporal_split.py`, `temporal_split_by_subattack.py`, `diagnose_icmp_confusion.py`, `inspect_attack_ips.py`, `protocol_packet_share.py` | `split_pilot/` |
 | Background rules R1–R3 and cleaning variants (Sections 3.2 and 5.3) | `relabel_background.py`, `flagged_loader.py`, `rule_sensitivity.py`, `tree_protocol_study.py` | `split_pilot/`, `tree_protocol/` |
 | Validation of the rules and the audit of 472 flows (Section 3.3, Table 2, Fig. 2) | `rule_validation.py`, `rule_validation2.py` | `q1_revision/rule_validation/`, `q1_revision/rule_validation2/` |
-| Main factorial: four protocol conditions, eight models, seeds (Sections 4.2 and 5.2–5.4, Fig. 5) | `extra_baselines.py`, `deep_split_noise_study.py`, `tree_seeds_proba.py`, `tree_seeds_summary.py`, `deep_protocol_study.py`, `deep_protocol_summary.py` | `extra_baselines/`, `deep_split/`, `q1_revision/tree_seeds/`, `q1_revision/deep_protocol/` |
+| Main factorial: four protocol conditions, eight models, seeds (Sections 4.2 and 5.2–5.4, Table 6, Fig. 5) | `extra_baselines.py`, `deep_split_noise_study.py`, `tree_seeds_proba.py`, `tree_seeds_summary.py`, `deep_protocol_study.py`, `deep_protocol_summary.py` | `extra_baselines/`, `deep_split/`, `q1_revision/tree_seeds/`, `q1_revision/deep_protocol/` |
 | Identifier columns and the published setting (Sections 4.3 and 5.1, Fig. 4) | `identifier_leakage.py`, `published_protocol_control.py`, `published_deep_control.py` | `identifier_leakage_v2/`, `q1_revision/published_control/`, `q1_revision/published_deep/` |
-| Further split designs: split seeds, cut points, day-disjoint split, held-out sub-attacks (Section 5.2, Fig. 6) | `split_replication.py`, `day_disjoint_split.py`, `leave_one_subattack_out.py` | `q1_revision/split_replication/`, `q1_revision/day_disjoint/`, `q1_revision/leave_one_subattack_out/` |
-| Training-only and symmetric cleaning (Section 5.3, Fig. 6) | `cleaning_train_only.py`, `train_only_bootstrap.py`, `variant_seeds.py`, `symmetric_r1.py` | `q1_revision/cleaning_train_only/`, `q1_revision/train_only_bootstrap/`, `q1_revision/variant_seeds/`, `q1_revision/symmetric_r1/` |
+| Further split designs: split seeds, cut points, day-disjoint split, held-out sub-attacks (Section 5.2, Table 5, Fig. 6) | `split_replication.py`, `day_disjoint_split.py`, `leave_one_subattack_out.py` | `q1_revision/split_replication/`, `q1_revision/day_disjoint/`, `q1_revision/leave_one_subattack_out/` |
+| Training-only and symmetric cleaning (Section 5.3, Table 5) | `cleaning_train_only.py`, `train_only_bootstrap.py`, `variant_seeds.py`, `symmetric_r1.py` | `q1_revision/cleaning_train_only/`, `q1_revision/train_only_bootstrap/`, `q1_revision/variant_seeds/`, `q1_revision/symmetric_r1/` |
 | Uncertainty, drift, packet- and window-level detection (Sections 4.4 and 5.5) | `bootstrap_ci.py`, `temporal_drift_analysis.py`, `drift_calibration.py`, `revision_analyses.py`, `revision_analyses2.py` | `tree_protocol/`, `split_pilot/`, `q1_revision/drift_calibration/`, `q1_revision/analyses/`, `q1_revision/analyses2/` |
 | Replication on CICIDS2017 (Sections 4.3, 5.1 and 5.6) | `cicids2017_replication.py` | `q1_revision/cicids2017/` |
 | Per-flow flags and split assignments (Data availability) | `export_flags.py` | `q1_revision/export_flags/` |
@@ -102,7 +106,8 @@ Results are written to `results_2026_03_03/split_pilot/`, `deep_split/`, `extra_
 described in its docstring, that the paper does not use). Per-class precision, recall and F1 of every run are in
 `results_2026_03_03/q1_revision/deep_protocol/summary/pooled_per_class.csv` (deep networks) and
 `results_2026_03_03/q1_revision/tree_seeds/summary_per_class.csv` (tree ensembles). The cleaning rules and splits are
-deterministic (seed 42). Test predictions (`*.npz`) are too large for git and will be provided as release assets.
+deterministic (seed 42). Test predictions (`*.npz`) are too large for git; they are attached to release v2.0 (see
+[Release assets](#release-assets-stored-predictions-and-models)).
 
 The scripts take the feature list and class order (through `pilot_temporal_split.py`) from
 `results_2026_03_03/multiclass/stage1_cache/metadata.json` when it exists (it is not versioned), and otherwise from
@@ -294,7 +299,7 @@ each docstring and in the packages `runs/R2a_cpu_controls.ps1`, `runs/R2b_gpu_sh
 | Script | Purpose | Folder |
 |---|---|---|
 | `experiments/r3_train_reference.py` | R3 with the reference of Benign IP pairs frozen on the Benign **training** flows of each split (no validation or test flow informs the rule), in the training-only cleaning design; refits of the published variants for comparison | `r3_train_reference/` |
-| `experiments/rolling_origin.py` | forward, reversed and middle-block test periods and three rolling origins inside every capture group, against the random split: direction of time, contiguous-block difficulty and session memorisation | `rolling_origin/` |
+| `experiments/rolling_origin.py` | forward, reversed and middle-block test periods and three rolling origins inside every capture group, against the random split: the direction of time and the position of the test block, separated from the advantage of a random split (contiguous-block difficulty and the memorisation of neighbouring flows together); single runs, seed 42 | `rolling_origin/` |
 | `experiments/bootstrap_family.py` | the 40 comparisons behind the model ranking of Section 5.4 (Holm over the 40), paired block-bootstrap intervals of the principal differences for block lengths 1 to 20,000 flows and an automatic length (Politis and White) per capture group, and leave-one-capture-group-out values | `bootstrap_family/` |
 | `experiments/audit_design.py` | sampling design of the 472-flow audit: stratum sizes, inclusion probabilities, de-duplication of the 1,120 stratum slots, estimands with unclear decisions excluded or counted either way | `rule_validation2/design/` |
 | `experiments/shared_budget_study.py` | the same predeclared budget of four configurations for every model family (`shared_budget/grid.json`, committed before any run), validation set drawn from the training period, networks with up to 100 epochs, final runs with three seeds, ranking stability and convergence; network, XGBoost and LightGBM weights are stored (random forests: refit from configuration and seed). In a first pass, one validation flow overflowed half precision in the validation pass of the R1 runs of ResNet1D, GRU, the Transformer and the MLP, so their validation loss was not finite and they stopped after 10 epochs; such a chunk is now evaluated in single precision (`deep_protocol_study.train`), the 12 runs were repeated (`runs/R2c_gpu_r1_rerun.ps1`) and the superseded runs are kept in `shared_budget/superseded_fp16_overflow/` with a README | `shared_budget/` |
@@ -390,9 +395,11 @@ and shared-budget studies, the superseded first-pass runs included; largest diff
 ## Figures
 
 `figures/values/mid_F*_values.json` hold every value plotted in the six figures (unrounded, with the runs and seeds it
-is computed from and its source files): F1 = Fig. 1 (study design), F5 = Fig. 2, F2 = Fig. 3, F4 = Fig. 4, F3 = Fig. 5,
-F6 = Fig. 6. The scripts that draw the figures also assert every printed number against the manuscript sources and
-are therefore kept with them.
+is computed from and its source files): F1 = Fig. 1 (study design), F5 = Fig. 2, F2 = Fig. 3, F4 = Fig. 4, F3 = Fig. 5
+and Table 6, F6 = Fig. 6 and Table 5. In the revised manuscript the numeric panels of the former Figs. 5a-c (the
+levels of the three metrics) and 6a (the controls) are printed as Tables 6 and 5, with the values of these files; the
+`figure` column of `manifest/figures.csv` gives the printed table or figure of each part. The scripts that draw the
+figures also assert every printed number against the manuscript sources and are therefore kept with them.
 
 ## Citation
 

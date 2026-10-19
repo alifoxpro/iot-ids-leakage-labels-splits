@@ -5,8 +5,8 @@ pilot_temporal_split.py
 Pilot for the "split design" question: does a random flow-level split inflate the
 scores compared with a per-class temporal split?
 
-Same data, same model (XGBoost, class-weighted, same hyper-parameters as
-run_smote_leakage_demo.py), two splits:
+Same data, same model (XGBoost, class-weighted: n_estimators=200, max_depth=8,
+learning_rate=0.1, balanced sample weights; see fit_eval), two splits:
   A  random stratified 70/15/15 split (the protocol used in the paper)
   B  per-class temporal split: within each class, flows are ordered by Timestamp;
      the first 70% train, next 15% validation, last 15% test

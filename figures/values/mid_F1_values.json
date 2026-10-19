@@ -202,7 +202,7 @@
    "id": "cicids2017",
    "number": "8.2",
    "title": "CICIDS2017",
-   "tag": "Sec. 5.6 · Figs. 4, 6",
+   "tag": "Sec. 5.6 · Fig. 4",
    "lines": [
     "XGBoost: identifier columns;",
     "random vs temporal split"
@@ -220,7 +220,7 @@
    "id": "fixed_epochs",
    "number": "8.3",
    "title": "Training protocol",
-   "tag": "Sec. 4.3, 5.4 · Fig. 6",
+   "tag": "Sec. 5.4 · Tables 5, 7",
    "lines": [
     "30 fixed epochs (3 networks, seeds 17, 42); shared",
     "tuning budget, 4 configurations per model (all 8,",
